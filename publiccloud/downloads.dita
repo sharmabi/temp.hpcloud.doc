@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1736">
+<title>HP Helion Public Cloud Software Downloads</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--PUBLISHED-->
+ <!--./publiccloud/downloads.md-->
+ <!--permalink: /publiccloud/downloads/--></p>
+<p>HP Helion Public Cloud has a few software downloads, each of which is on its appropriate page--the Ruby Fog Bindings download is on the Ruby Fog Bindings page, for example.  But to give you quick and easy access, we have also consolidated our list of downloads here on this page.  Find what you're looking for and download away!</p>
+<p>Here's what we have for you:</p>
+<ul>
+<li>
+<xref href="#topic1736/WinCLIInstall">Windows CLI</xref>
+</li>
+<li>
+<xref href="#topic1736/OpenstackCLI">OpenStack CLI Tools</xref>
+</li>
+<li>
+<xref href="#topic1736/RubyFogBindingsInstall">Ruby Fog Bindings</xref>
+</li>
+<li>
+<xref href="#topic1736/jcloudsBindingsInstall">Java/Clojure jclouds Bindings</xref>
+</li>
+<li>
+<xref href="#topic1736/PHPBindingsInstall">PHP Bindings</xref>
+</li>
+<li>
+<xref href="#topic1736/NetBindingsInstall">.NET Bindings</xref>
+</li>
+<li>
+<xref href="#topic1736/JavascriptBindingsInstall">Javascript Bindings</xref>
+</li>
+</ul>
+<section>
+<title>Command-line Interface (CLI) Packages</title>
+</section>
+<section>
+<required-cleanup>
+<title>Windows CLI</title>
+<ul>
+<li>
+<xref href="/file/WinCLI-1.3.5.7.zip" >Installation package, Version 1.3.5.7</xref>  (for software version 13.5)</li>
+<li>
+<xref href="/publiccloud/cli/windows" >Overview page</xref>
+</li>
+<li>
+<xref href="/publiccloud/cli/windows/release-notes" >Release Notes</xref>
+</li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>OpenStack CLI Tools</title>
+<ul>
+<li>
+<xref href="/publiccloud/cli/openstack" >Overview page</xref>
+</li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<title>Language Bindings</title>
+</section>
+<section>
+<required-cleanup>
+<title>Ruby Fog Bindings</title>
+<p>We have moved all our Ruby Fog bindings to the Fog Community; please continue to use them and contribute back as well!</p>
+<ul>
+<li>
+<xref href="http://rubygems.org/gems/fog" scope="external" format="html" >Installation page</xref>
+</li>
+<li>
+<xref href="https://github.com/fog/fog/blob/master/lib/fog/hp/README.md" scope="external" format="html" >Overview page</xref> </li>
+<li>
+<xref href="http://fog.io/" scope="external" format="html" >Ruby Fog Community Documentation</xref>
+</li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Java/Clojure jclouds Bindings</title>
+<ul>
+<li>
+<xref href="http://jclouds.apache.org/start/install/" scope="external" format="html" >Installation page</xref> (This is the <xref href="http://www.jclouds.org" scope="external" format="html" >jclouds.org</xref> installation page)</li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>PHP Bindings</title>
+<ul>
+<li>
+<xref href="http://hpcloud.github.com/HPCloud-PHP/" scope="external" format="html" >Installation page</xref> (This is the GitHub repository page for the installation package)</li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>.NET Bindings</title>
+<ul>
+<li>
+<xref href="http://hpcloud.codeplex.com/releases/view/95187" scope="external" format="html" >Installation page</xref> (This is the Codeplex repository page for the installation package)</li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Javascript Bindings for node.js</title>
+<ul>
+<li>
+<xref href="https://github.com/hpcloud/hpcloud-js" scope="external" format="html" >Installation page</xref> (This is the GitHub repository page for the installation package)</li>
+<li>
+<xref href="http://hpcloud.github.io/hpcloud-js/" scope="external" format="html" >Overview page</xref>
+</li>
+</ul>
+<p>If you need any more information about these downloads, or our software in general, we urge you to visit our <xref href="/publiccloud/sitemap" >site map</xref> to locate the information you're looking for.  In addition, you can try our <xref href="https://community.hpcloud.com/knowledge-base" scope="external" format="html" >knowledge base</xref>, or our <xref href="https://community.hpcloud.com/forum" scope="external" format="html" >forums</xref>.</p>
+</required-cleanup>
+</section>
+</body>
+</topic>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1718">
+<title>HP Helion OpenStack® 1.1: Managing access to a flavor</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--PUBLISHED-->
+ <!--./UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.flavors.access.md-->
+ <!--permalink: /helion/commercial/1.1/dashboard/managing/flavors/access/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/1.1/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/1.1/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/1.1/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>Compute flavors are machine configurations that describe the amount of memory, number of CPUs, and storage capacity of instances.</p>
+<p>As an admin, you can <xref href="#topic1718/add">allow specific projects to have access to a flavor</xref> or <xref href="#topic1718/remove">prevent a project from accessing a flavor</xref>.</p>
+<section>
+<required-cleanup>
+<title>Allowing a project to access a flavor</title>
+<ol>
+<li>
+<p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Flavors</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
+
+<p>The flavors for in the domain are listed.</p>
+</li>
+<li>
+<p>For the flavor you want to modify, click <b>More &gt; Modify Access</b>.</p>
+</li>
+<li>
+<p>Click the <b>+</b> icon next to a project in the <b>All Projects</b> column to allow the project to access the flavor.</p>
+
+<p>By default, no project is specified as having access the flavor. If none is specified, all projects can access the flavor.</p>
+</li>
+<li>
+<p>Click <b>Save</b> to create a new the flavor.</p>
+
+<p>A message is displayed on successful change.</p>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Preventing a project from accessing a flavor</title>
+<ol>
+<li>
+<p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Flavors</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
+
+<p>The flavors for in the domain are listed.</p>
+</li>
+<li>
+<p>For the flavor you want to modify, click <b>More &gt; Modify Access</b>.</p>
+</li>
+<li>
+<p>Click the <b>-</b> icon next to a project in the <b>Selected projects</b> column to remove the flavor from the project.</p>
+
+<p>By default, no project is specified as having access the flavor. If none is specified, all projects can access the flavor.</p>
+</li>
+<li>
+<p>Click <b>Save</b> to create a new the flavor.<!--A BR tag was used here in the original source.-->
+A message is displayed on successful change.</p>
+</li>
+</ol>
+<p>
+  <xref href="#topic1718/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</required-cleanup>
+</section>
+</body>
+</topic>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1668">
+<title>How To's with the HP Cloud OS Telemetry and Reporting (Ceilometer) Service</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--PUBLISHED-->
+ <!--./cloudos/services-reporting-howto.md-->
+ <!--permalink: /cloudos/services/reporting/howto/--></p>
+<p>Collection</p>
+<p>Except where noted, the collection actions for Ceilometer are internal functions that are triggered by messaging queue activity and generalized for all the services (i.e. Ceilometer's service-specific "plugins" all utilize the same methodology for outputting all data collected by Ceilometer). Output can be driven to queue-based messaging agents, log files, or data stores. Verification for non-API-driven use cases can be accomplished by checking for this output in the configured target (MySQL database by default).</p>
+<section>
+<required-cleanup>
+<title>Record Metering Data</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Create/Update/Delete Alarm (API)</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Record Alarm Change (API)</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Record Metering Event</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Clear Expired Metering Data (CLI)</title>
+<p>Reporting</p>
+<p>The reporting actions for Ceilometer are accessible via the Ceilometer API.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get list of Meters (types of measurements)</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get list of Samples (usage data) for a specific Meter</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get list of computed statistics for samples in a time range</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get list of Resources (instance)</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get details about one Resource</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get list of API capabilities supported by current driver</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get list of Alarms based on filter criteria</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get details on a specific alarm</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get the history of a specific alarm</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Get the state of an alarm</title>
+</required-cleanup>
+</section>
+<section>
+<title>For more information</title>
+<p>Also see the Help topics that are available in the Operational Dashboard and Administration Dashboard.  Website copies are available:</p>
+<ul>
+<li>
+<xref href="../cloudos/manage.operational-dashboard.dita" >HP Cloud OS Operational Dashboard Help</xref>
+</li>
+<li>
+<xref href="../cloudos/manage.administration-dashboard.dita" >HP Cloud OS Administration Dashboard Help</xref>
+</li>
+</ul>
+</section>
+</body>
+</topic>

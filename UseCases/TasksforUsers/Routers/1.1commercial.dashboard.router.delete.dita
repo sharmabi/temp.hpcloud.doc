@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1170">
+<title>HP Helion OpenStack® 1.1: Deleting a Router</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--PUBLISHED-->
+ <!--./UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.delete.md-->
+ <!--permalink: /helion/commercial/1.1/dashboard/managing/router/delete/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/1.1/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/1.1/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/1.1/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>A network connects to the router through an interface.</p>
+<p>You must remove all router interfaces before deleting the router, by removing all internal interfaces.</p>
+<section>
+<required-cleanup>
+<title>Delete a router</title>
+<ol>
+<li>
+<p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Network Topology</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
+
+<p>Determine if the router is connected to a network using the <xref href="../../../UseCases/TasksforUsers/Networks/1.1commercial.dashboard.network.viewing.dita" >Network Topology screen</xref>:</p>
+
+<p>
+<!--A BR tag was used here in the original source.-->
+<image href="NetworkConnections.png" placement="break">
+<alt/>
+</image>
+</p>
+</li>
+<li>
+<p>Click the <b>Routers</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
+
+<p>The routers for the selected project appear.</p>
+
+<p>If the router is connected to a network:</p>
+
+<codeblock>
+<codeph>a. Click the name of the router you want to delete.&lt;/li&gt;
+b. On the **Router Details** screen, select the interface(s) for the router and click **Delete Interface**.&lt;/li&gt;
+c. Return to the **Routers** screen.&lt;/li&gt;
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>For the router you want to delete, click <b>More &gt; Delete Router</b>.</p>
+</li>
+<li>
+<p>In the confirmation window, click <b>Delete Router</b>.</p>
+</li>
+</ol>
+<p>
+  <xref href="#topic1170/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</required-cleanup>
+</section>
+</body>
+</topic>

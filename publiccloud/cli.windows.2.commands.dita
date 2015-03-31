@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1774">
+<title>HP Helion Public Cloud CLI Software for Windows PowerShell Non-Service Specific Commands</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--PUBLISHED-->
+ <!--./publiccloud/cli.windows.2.commands.md-->
+ <!--permalink: /publiccloud/cli/windows/commands/--></p>
+<p>The HP Helion Public Cloud CLI software for Windows PowerShell commands (also sometimes called "cmdlets") allow you to access and control the HP Helion Public Cloud services from your Windows command line.  There are commands that are specific to each type of service you are accessing--<xref href="/cli/windows/compute" >compute</xref>, <xref href="/cli/windows/containers-and-folders" >object storage</xref>, <xref href="/cli/windows/reference#CDN" >CDN</xref>, and so on--as well as other commands that are not reliant on a particular service, or work across multiple different service types.</p>
+<p>For a complete list of the commands available to you, please take a look at the full CLI Reference](/cli/windows/reference) page; the commands listed on that page are organized based on service.  In addition, for examples of how to use commands on a per-service basis, just surf to the appropriate examples page, listed in the right-hand navigation bar at the top of this page.</p>
+<p>The following commands are not specific to any particular service:</p>
+<ul>
+<li>
+<xref href="/cli/windows/reference#getversion" >get-version</xref>
+</li>
+<li>
+<xref href="/cli/windows/reference#getnotes" >get-notes</xref>
+</li>
+<li>
+<xref href="/cli/windows/reference#setcredentials" >set-credentials</xref>
+</li>
+<li>
+<xref href="/cli/windows/reference#getcatalog" >get-catalog</xref>
+</li>
+<li>
+<xref href="/cli/windows/reference#getconfig" >get-config</xref>
+</li>
+<li>
+<xref href="/cli/windows/reference#setconfig" >set-config</xref>
+</li>
+<li>
+<xref href="/cli/windows/reference#getzone" >get-zone</xref>
+</li>
+<li>
+<xref href="/cli/windows/reference#getzones" >get-zones</xref>
+</li>
+<li>
+<xref href="/cli/windows/reference#setzone" >set-zone</xref>
+</li>
+</ul>
+<p>The following commands function across multiple services:</p>
+<ul>
+<li>
+<xref href="/cli/windows/reference#getmetadata" >get-metadata</xref>
+</li>
+<li>
+<xref href="/cli/windows/reference#setmetadata" >set-metadata</xref>
+</li>
+</ul>
+<p>For a complete list of the HP Helion Public Cloud CLI software for Windows PowerShell commands along with their descriptions, please take a look at the <xref href="/cli/windows/reference" >CLI Command Reference</xref> page.</p>
+<p>
+<b>Note:</b> When referencing an argument, like a container name, that has a space, use quotes to access that resource. For example:</p>
+<codeblock>
+  <codeph> PS: HPCS:\&gt; cd "my container:"
+ PS: HPCS:\&gt; new-container "my new container"
+</codeph>
+</codeblock>
+</body>
+</topic>

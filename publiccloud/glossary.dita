@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic12405">
+<title>Glossary of HP Helion Public Cloud Terms</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--PUBLISHED-->
+ <!--./publiccloud/glossary.md-->
+ <!--permalink: /publiccloud/glossary/--></p>
+<p>Sometimes it's a little easy to become lost in the weeds of the cloud nomenclature; for such times, we've created this glossary to help you through.  While this glossary concentrates primarily on terms that are more specific to the HP Helion Public Cloud environment, we have tried to include a salad of general cloud computing terms to help you along.  If you need additional definitions, we suggest going on over to the <xref href="http://cloudglossary.com/" scope="external" format="html" >Open Stack Glossary</xref> and checking there.</p>
+<p>For a quick search of the <xref href="https://community.hpcloud.com/knowledge-base" scope="external" format="html" >Knowledge Base</xref>, just click on the blue highlighted term!</p>
+<section>
+<title>A</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Abstraction Layer</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A coding layer that provides an intermediary (i.e., an "abstraction") between a programmer and a more complex underlying base code set.  For example, with Ruby Fog, the abstraction layer simplifies the complexities of the underlying <xref href="#topic12405/REST">REST</xref> <xref href="#topic12405/API">API</xref> and JSON/XML formatting of the <xref href="#topic12405/RequestAbstraction">request layer</xref> code.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>ACL</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Access control list; a list of permissions attached to an object.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Allocation</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Provisioning cloud resources.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Apache Maven</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>See <xref href="#topic12405/Maven">Maven</xref>
+</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>API</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Application programming interface.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>API key</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An API-based key used for authentication purposes (similar to a password, for example).</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Authentication</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>In the context of the Identity Service, the act of confirming the identity of a user or the truth of a claim. The Identity Service will confirm that incoming request are being made by the user who claims to be making the call by validating a set of claims that the user is making. These claims are initially in the form of a set of credentials (username &amp; password, or user access keys). After initial confirmation, the Identity Service will issue the user a token which the user can then provide to demonstrate that their identity has been authenticated when making subsequent requests.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Authentication Token</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>String which must be used for subsequent requests to other services.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Availability Zone</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A segment of the cloud and the largest organizational unit within it. Typically, a single availability zone is equivalent to a single data center, but this is not a requirement.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>B</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Bindings</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Short for "language binding"--a library which provides an interface to functionality from a different programming language library.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Block Storage</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Information stored in raw form, with no consideration as to the type of information.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Bootable Image</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>
+<i>See</i> <xref href="#topic12405/VolumeBootable">Volume (bootable)</xref>
+</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Bucket</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A collection of cloud objects with a unique, user-assigned key.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Burst</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A temporary increase in the amount of server resources required by the system.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>C</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>CDN</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Content delivery network; an HP Helion Public Cloud service that provides distributed caching of object storage objects on geographically dispersed caching servers. Copies of the object are stored at a location more convenient to the end user system, allowing for better performance.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>CDN-enabled</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A container that has been enabled for a content delivery network.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>CLI</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Command-line interface.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Cloud Compute</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>HP's cloud computing platform, designed to provision and manage large networks of virtual machines.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Cloud Compute Unit (CCU)</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An HP Helion Public Cloud Compute Unit (CCU) is a unit of CPU capacity that describes the amount of compute power that a virtual core has available to it. Thus 6.5 CCUs are roughly equivalent to the minimum power of one logical core (a hardware hyper-thread) of an Intel® 2012 Xeon® 2.60 GHz CPU.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>CodePlex</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An open source project-hosting web site maintained by Microsoft.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Compute Cluster</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A set of networked, loosely coupled computer systems acting together to perform very large tasks.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Container</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A compartment for storing <xref href="#topic12405/object">objects</xref>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Credentials</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Data that belongs to, is owned by, and generally only known by a user that the user can present to prove they are who they are (since nobody else should know that data).</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>D</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Dependency Management</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Coordinating and overseeing the dependencies between compute modules (e.g., in jclouds development), usually via project management tools such as <xref href="#topic12405/Maven">Apache Maven</xref>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Deprovisioning</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Deallocating a cloud resource. See <xref href="#topic12405/Provisioning">Provisioning</xref>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Drupal</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A free software package that software source organization, management and content publishing capabilities.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>E</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>EC2</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Elastic compute cloud; Amazon's cloud computing platform.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Endpoint</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A network-accessible address, usually described by URL, where a service may be accessed.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>F</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Flavor</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A combination of disk space, memory (RAM), and usable CPU.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Floating IP Address</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An on-demand, allocatable public IP address on a network. In the context of HPCloud Services, you can allocate a number of floating IP addresses up to the quota limit, and then assign them to server <xref href="#topic12405/Instance">instances</xref>.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>G</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>gem</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A package format of the RubyGems package manager for the Ruby programming language library.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>git</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A distributed revision control and source management tool.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>GitHub</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A web-based hosting service for software projects using the git source management tool.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>H</title>
+</section>
+<section>
+<title>I</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Identity Management</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Allocation and dynamic distribution of identity information across security domains.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>IKE</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Internet Key Exchange</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Image</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>1) An installable release package of a program, application, or software system.  As in, "We need to install the new image of Ruby Fog."  2) A copy of a virtual server including the operating system information, system state, and application configurations.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Image (bootable)</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>
+<i>See</i> <xref href="#topic12405/VolumeBootable">Volume (bootable)</xref>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Image (partner)</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A server volume made available by HP partners. <i>See</i> <xref href="#topic12405/Image">Image</xref>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Image (private)</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A server volume you created from a <xref href="#topic12405/Snapshot">snapshot</xref> of an instance. <i>See</i> <xref href="#topic12405/Image">Image</xref>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Image (public)</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A server volume provided by HP. <i>See</i> <xref href="#topic12405/Image">Image</xref>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Instance</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A virtual machine or server in the cloud environment.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>IPsec</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Internet Protocol Security (IPsec) is a technology protocol suite for securing Internet Protocol (IP) communications by authenticating and/or encrypting each IP packet of a communication session. IPsec also includes protocols for establishing mutual authentication between agents at the beginning of the session and negotiation of cryptographic keys to be used during the session.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>J</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>jclouds</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An open source library that provides clojure and java functionality in the HP Helion Public Cloud environment.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>K</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Key</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An identifying value used for verification purposes (for example, for logging in).</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Key Pair</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A pair of key values used for verification purposes; generally one key value is private, and the other public (i.e. user-owned).</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>L</title>
+</section>
+<section>
+<title>M</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Management Console</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>The primary access location for the HP Helion Public Cloud interface.  The console consists of a main dashboard panel, along with compute, storage, and account panels.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Maven</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An open source software project management and comprehension tool. (Also: <xref href="#topic12405/ApacheMaven">Apache Maven</xref> )</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Metadata</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Information about the object or container.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Model Abstraction</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A coding layer that provides a more functional and user-friendly abstraction for the <xref href="#topic12405/Rest">REST</xref> API programming calls. For example, instead of a direct call to GET containers, via the model abstraction layer the programming call for GET container <b>container-name</b> is <codeph>directories.get("container-name")</codeph> .</p>
+</dd>
+<dd>A model layer can also include particular kinds of objects, and expose those objects characteristics using simple properties or attributes. For example, "Server" is a model that represents the concept of a virtual <xref href="#topic12405/Instance">instance</xref>, with the "Server" model including properties and attributes such as name, <xref href="#topic12405/Flavor">flavor</xref>, <xref href="#topic12405/Image">image</xref>, addresses, and so on.   See also, <xref href="#topic12405/AbstractionLayer">abstraction layer</xref>.</dd>
+</dlentry>
+
+
+
+</dl>
+</section>
+<section>
+<title>N</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>NAT-T</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Network Address Translation - Traversal</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>O</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Object</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Basic cloud computing storage entity, most typically a file.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>OpenStack</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An open-source cloud computing operating system.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>P</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Partner Image</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>
+<i>See</i> <xref href="#topic12405/ImagePartner">Image (partner)</xref>
+</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>PHP</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Hypertext pre-processor--a general-purpose server-side scripting language used to create dynamic (as opposed to static, i.e. that adjust to the device and software with which they are displayed) web pages.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>PowerShell</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A Microsoft Windows command-line shell task automation framework which includes an interactive prompt and a scripting environment that can be used independently or in combination.  PowerShell is built on top of the .NET Framework common language runtime (CLR) and the .NET Framework, and accepts and returns .NET Framework objects.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Private Image</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>
+<i>See</i> <xref href="#topic12405/ImagePrivate">Image (private)</xref>
+</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Provisioning</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Allocating, auditing, and monitoring cloud resources for those who accesses and utilizes them.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Public Image</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>
+<i>See</i> <xref href="#topic12405/ImagePublic">Image (public)</xref>
+</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>Q</title>
+</section>
+<section>
+<title>R</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>REST</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Representational State Transfer; a model for providing web services of HTTP.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Request Abstraction</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A coding layer that provides programming language-specific access to the underlying core code base REST API HTTP calls.  For example, instead of including a call to the REST API by using HTTP <b>verb</b> (GET), path (/flavors), format (?format=json), and the other HTTP attributes, using the request layer you can simplify the call to <codeph>list_flavors()</codeph> (the specific call depends on the details of your specific request layer syntax).  The request layer handles all HTTP request and response parsing and exception handling.  Also <b>request layer</b>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Role</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A personality that a user assumes when performing a specific set of operations. A role includes a set of rights and privileges. A user assuming that role inherits those rights and privileges.  A token that is issued to a user includes the list of roles that user can assume. Services that are being called by that user determine how they interpret the set of roles a user has and which operations or resources each roles grants access to.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Ruby</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An object-oriented programming language, similar to Perl.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Ruby Fog</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Language binding for the Ruby programming language.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Rule</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>See <xref href="#topic12405/SecurityGroupRule">Security group rule</xref>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>RVM</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Ruby version manager; a command-line tool which allows you to install, manage, and work with multiple ruby environments</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>S</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Security Group</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>The security details for a particular <i>instance</i>, which must be defined at the creation of an instance.  These details include which ports, protocols, and IP addresses are opened by the remote virtual machine. The default security group allows SSH access only.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Security Group Rule</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>The conditions and restrictions under which a particular security group operates, e.g. the protocols and ports for that group.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>SendGrid</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A cloud-based email infrastructure.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Server</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A compute instance that is created from a <xref href="#topic12405/Flavor">flavor</xref> combined with an <xref href="#topic12405/Image">image</xref>.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Service Catalog</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>List of services available to your and the endpoints that you access using the Authentication Token.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Snapshot</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A replica of an instance or volume that can be used to create new images or volumes.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>SSL</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>Acronym for the secure socket layer encryption protocol.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>strongSwan</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>strongSwan is an open source IPsec implementation for Linux 2.6 and 3.x kernels. The focus of the project is on strong authentication mechanisms using X.509 public key certificates and optional secure storage of private keys on smartcards through a standardized PKCS#11 interface.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>T</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Tenant</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A collection of HP service subscriptions and/or resources (Compute, Object Storage, etc).</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Tenant ID</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An ID linking one or more accounts to one or more subscribed services. APIs and Bindings often require a Tenant ID in addition to authentication information.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Token</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>An arbitrary bit of text that is used to access resources. Each token has a scope which describes which resources are accessible with it.  While the Identity Service supports token-based authentication in this release, the intention is for it to support additional protocols in the future.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>U</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>User</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A digital representation of a person, system, or service who uses HP Helion Public Cloud. The Identity Service will validate that incoming request are being made by the user who claims to be making the call. Users have a login and may be assigned tokens to access resources. Users can scope their authentication to a tenant which then limits where and how their tokens can be used to interact with services. Users are associated with tenants based on roles assigned to them with that tenant.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>V</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Volume</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A defined partition of block-level storage that can be attached to an instance.</p>
+</dd>
+</dlentry>
+
+
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Volume (bootable)</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A previously-saved (by a user) bootable server <xref href="#topic12405/Volume">volume</xref> (also sometimes called an <xref href="#topic12405/Image">image</xref>).</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>W</title>
+<dl>
+<dlentry>
+<dt>
+<required-cleanup>
+<p>
+<b>[deprecated heading h3 ]: </b>Web Farm</p>
+</required-cleanup>
+</dt>
+<dd>
+<p>A bundle of HTTP servers used for handling web traffic.</p>
+</dd>
+</dlentry>
+
+</dl>
+</section>
+<section>
+<title>X</title>
+</section>
+<section>
+<title>Y</title>
+</section>
+<section>
+<title>Z</title>
+</section>
+</body>
+</topic>

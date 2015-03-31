@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic5089">
+<title>HP Helion 1.0 Development Platform: Documentation</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion Development Platform"/>
+<othermeta name="product-version" content="HP Helion Development Platform 1.0"/>
+<othermeta name="role" content="Systems Administrator"/>
+<othermeta name="role" content="System Engineer"/>
+<othermeta name="role" content="Cloud Administrator"/>
+<othermeta name="role" content="Network Administrator"/>
+<othermeta name="role" content="Application Developer"/>
+<othermeta name="role" content="ISV Developer"/>
+<othermeta name="role" content="Service Developer"/>
+<othermeta name="role" content="Jayme P"/>
+<othermeta name="product-version1" content="HP Helion Development Platform"/>
+<othermeta name="product-version2" content="HP Helion Development Platform 1.0"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--PUBLISHED-->
+ <!--./devplatform/1.0devplatform.index.md-->
+ <!--permalink: /helion/devplatform/--></p>
+<p>
+  <xref href="../devplatform/1.1devplatform.index.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+</p>
+<p>Welcome! The HP Helion Development Platform is a Platform-as-a-Service (PaaS) that helps developers build great cloud-native applications across private and public clouds.  Based on <xref href="http://cloudfoundry.org/index.html" scope="external" format="html" >Cloud Foundry</xref>™ and fully integrated with <xref href="../commercial/GA1/1.0commercial.index.dita" >HP Helion OpenStack</xref>®, the HP Helion Development Platform is open and interoperable, ensuring that developers can focus on building the right app for any environment.</p>
+<p>This documentation will help you get up to speed on the  Helion Development Platform as a Developer or Administrator.</p>
+<section>
+<title>Platform Overview</title>
+<p>The <xref href="../devplatform/helion/1.0index.dita" >Application Lifecycle Service (ALS)</xref> is a Cloud Foundry-based, managed runtime environment for applications.</p>
+<ul>
+<li>It supports <xref href="/helion/devplatform/appdev#java" >Java</xref>, <xref href="/helion/devplatform/appdev#node" >Node</xref>, <xref href="/helion/devplatform/appdev#PHP" >PHP</xref>, and other language runtimes.</li>
+<li>It provides easy access to services like MySQL, PostgreSQL, RabbitMQ, and Memcache.</li>
+<li>It allows Disk, Memory and Placement Zone constraints to be set per application.</li>
+<li>It provides auto-scaling and application log drains.</li>
+</ul>
+<p>The Application Lifecycle Service is <xref href="/helion/devplatform/install#install-als" >installed</xref> as part of the Helion Development Platform. You can easily <xref href="/als/v1/admin#wizard-based-cluster-creation" >create and configure</xref> Application Lifecycle Service clusters from the Horizon management console, or explore this service by setting up a <xref href="../devplatform/1.0devplatform.ALS-developer-trial-quick-start.dita" >Quick Start Developer Trial</xref> in the public cloud.</p>
+</section>
+<section>
+<title>Application Services</title>
+<p>The HP Helion Development Platform provides additional Application Services that integrate into the Application Lifecycle Service. These currently include:</p>
+</section>
+<section>
+<required-cleanup>
+<title>Database as a Service</title>
+<p>The <xref href="../devplatform/1.0devplatform.database-instance.dita" >Database as a Service (DBaaS)</xref> provides lifecycle services for MySQL database instances. Lifecycle services includes provisioning, configuration, patching, backups, restores, and monitoring that can be administered from either a CLI interface, RESTful APIs or the Horizon dashboard.</p>
+<ul>
+<li>An implementation of <xref href="https://wiki.openstack.org/wiki/Trove" scope="external" format="html" >OpenStack Trove</xref>, <xref href="../devplatform/1.0devplatform.database-instance.dita" >Database as a Service</xref> provides scalable and reliable cloud database provisioning functionality for both relational and non-relational databases.  </li>
+<li>The Database service provides a simple and easy way to access and utilize features in a database without the overhead of administration.  </li>
+</ul>
+<p>The <xref href="../devplatform/1.0devplatform.database-ALS.dita/" >Database as a Service</xref> is optionally <xref href="/helion/devplatform/install#install-database" >installed and configured</xref> as part of the Helion Development Platform. If not installed as part of the platform, you can install it and then configure it for <xref href="./devplatform/1.0devplatform.database-ALS.dita" >use from within the Application Lifecycle Service</xref>.</p>
+<table>
+<tgroup cols="2">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<tbody>
+<row>
+    <entry>
+      <xref href="install#install-database" >Install</xref>
+      <!--A BR tag was used here in the original source.-->
+    </entry>
+    <entry>
+      <xref href="databaseservice" >Provision</xref>
+      <!--A BR tag was used here in the original source.-->
+      <xref href="connectdatabase" >Connect with ALS</xref>
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Messaging Service (Beta)</title>
+<p>The <xref href="../devplatform/1.0devplatform.using-the-messaging-service.dita" >Messaging Service</xref>  provides developers with the ability to provision RabbitMQ clusters using a wizard-based UI directly from Horizon.</p>
+<ul>
+<li>The Messaging Service integrates with <xref href="../commercial/GA1/1.0commerical.services-identity-overview.dita" >Keystone</xref> to remove the need to create separate credentials for RabbitMQ access. </li>
+<li>The Messaging Service allows developers to focus on building their apps without worrying about installing, configuring, and troubleshooting RabbitMQ.</li>
+</ul>
+<p>The Messaging Service is optionally installed as part of the Helion Development Platform. If not installed as part of the platform, you can <xref href="/helion/devplatform/install#install-messaging" >install</xref> it and then <xref href="../devplatform/1.0devplatform.using-the-messaging-service.dita" >configure</xref> it for <xref href="/helion/devplatform/msgaas/als" >use from within the Application Lifecycle Service</xref>.</p>
+<table>
+<tgroup cols="2">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<tbody>
+<row>
+    <entry>
+      <xref href="install#install-messaging" >Install</xref>
+      <!--A BR tag was used here in the original source.-->
+    </entry>
+    <entry>
+      <xref href="messageservice" >Provision</xref>
+      <!--A BR tag was used here in the original source.-->
+      <xref href="msgaas/als" >Connect with ALS</xref>
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>The Marketplace (Beta)</title>
+<p>The <xref href="../devplatform/1.0devplatform.marketplace.install.dita" >Marketplace</xref> (Beta) is a product catalog that will be used to deliver the best of breed applications and services required to support world-class, enterprise-grade applications.</p>
+<ul>
+<li>It automates installation and enablement of supported applications and services.</li>
+<li>The Beta version allows you to install an instance of Vertica Community Edition.</li>
+</ul>
+<p>The Marketplace is optionally installed as part of the Helion Development Platform, you can <xref href="/helion/devplatform/install#install-marketplace" >install</xref> and <xref href="../devplatform/1.0devplatform.marketplace.install.dita" >use</xref> it to easily install applications and services to accelerate your development efforts.</p>
+<table>
+<tgroup cols="2">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<tbody>
+<row>
+    <entry>
+      <xref href="install#install-marketplace" >Install</xref>
+      <!--A BR tag was used here in the original source.-->
+    </entry>
+    <entry>
+      <xref href="marketplace" >Provision</xref>
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</required-cleanup>
+</section>
+<section>
+<title>Platform Tools</title>
+<p>The Helion Development Platform is accessible via the following tools:</p>
+<p>
+  <b>Helion Command-Line Interface (CLI)</b>
+  <!--A BR tag was used here in the original source.-->
+</p>
+<p>Use the Helion CLI to deploy your app to the development platform through the command line. <xref href="/als/v1/user/client#helion-client-setup" >Setup</xref> instructions are available for here both Windows® and Unix/Mac operating systems.</p>
+<p>
+<b>Eclipse Plugin</b>
+<!--A BR tag was used here in the original source.-->
+ If your developers work in the Eclipse IDE, <xref href="../devplatform/1.0devplatform.eclipse.dita" >install and use</xref> the Eclipse plug-in to quickly configure the Helion Development Platform as a deployment target for your app.</p>
+</section>
+<section>
+<title>Installation Options</title>
+<p>Most of the Helion Development Platform documentation assumes that you've already provisioned an environment where you can deploy your apps. There are two ways to deploy Development Platform technology:</p>
+<ul>
+<li>
+<b>Quick Start Developer Trial</b>: The fastest way to set up a functional Helion Development Platform environment is the <xref href="../devplatform/1.0devplatform.ALS-developer-trial-quick-start.dita" >Quick Start Developer Trial</xref> (sandbox) on the public cloud.</li>
+<li>
+<b>Standard Installation</b>: Install a <xref href="../commercial/GA1/1.0commercial.install-GA-overview.dita/" >Commercial HP Helion OpenStack</xref>® cloud and then <xref href="./devplatform/1.0devplatform_commercial_install.dita" >install</xref> the Helion Development Platform.  </li>
+</ul>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+<section>
+<required-cleanup>
+<title>
+  Resources for Application Developers
+</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+  Resources for IT Ops
+</title>
+<!--### [Resources for OpenStack Integration, Extension, and Service Development](/helion/devplatform/servicedev/) -->
+<!-- ===================== horizontal rule ===================== -->
+</required-cleanup>
+</section>
+</body>
+</topic>

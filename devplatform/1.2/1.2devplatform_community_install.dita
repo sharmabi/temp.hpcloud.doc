@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic30372">
+<title>HP Helion 1.2 Development Platform: Community Installation and Configuration</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion Development Platform"/>
+<othermeta name="product-version" content="HP Helion Development Platform 1.1"/>
+<othermeta name="role" content="Systems Administrator"/>
+<othermeta name="role" content="System Engineer"/>
+<othermeta name="role" content="Cloud Administrator"/>
+<othermeta name="role" content="Network Administrator"/>
+<othermeta name="role" content="Application Developer"/>
+<othermeta name="role" content="Application Developer"/>
+<othermeta name="role" content="ISV Developer"/>
+<othermeta name="role" content="Service Developer"/>
+<othermeta name="role" content="Jayme P Patrick F"/>
+<othermeta name="product-version1" content="HP Helion Development Platform"/>
+<othermeta name="product-version2" content="HP Helion Development Platform 1.1"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./devplatform/1.2/1.2devplatform_community_install.md-->
+ <!--permalink: /helion/devplatform/1.2/install/community/--></p>
+<p>
+  <xref href="../../devplatform/1.0devplatform_community_install.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+</p>
+<p>The HP Helion Development Platform currently contains four products: <xref href="../../devplatform/1.2/1.2devplatform.index.dita" >Application Lifecycle Service (ALS), Marketplace Service, Messaging Service and Database Service</xref>.</p>
+<p>
+<b>NOTE</b>: If you are installing the HP Helion Development Platform <b>Commercial</b> edition, follow the <xref href="../../devplatform/1.2/1.2devplatform_commercial_install.dita" >HP Helion Development Commercial Installation and Configuration</xref> instructions instead.</p>
+<p>The following topics explain how to install and configure the HP Helion Development Platform.</p>
+<ul>
+<li>
+<xref href="#topic30372/prerequisites">Prerequisites</xref>
+</li>
+<li>
+<xref href="#topic30372/installing-the-hp-helion-development-platform">Installing the HP Helion Development Platform</xref>
+</li>
+<li>
+<xref href="#topic30372/messaging-install">Install the Messaging Service</xref>
+</li>
+<li>
+<xref href="#topic30372/als-install">Install the Application Lifecycle Service</xref>
+</li>
+<li>
+<xref href="#topic30372/database-install">Install the Database Service</xref>
+</li>
+<li>
+<xref href="#topic30372/marketplace-install">Install the Marketplace Service</xref>
+</li>
+<li>
+<xref href="#topic30372/troubleshooting">Troubleshooting</xref>
+</li>
+</ul>
+<section>
+<title>Prerequisites</title>
+<p>The HP Helion Development Platform is installed in the overcloud of HP Helion OpenStack®.</p>
+<ul>
+<li>
+<p>If you installed HP Helion OpenStack with KVM hypervisor support, you should configure HP StoreVirtual VSA for Block Storage or configure HP 3PAR StoreServ Storage.</p>
+</li>
+<li>
+<p>If you installed with ESX hypervisor support, then deploy the compute proxy on the ESX hosts and deploy OVSvApp for HP Virtual Cloud Networking.</p>
+</li>
+</ul>
+<p>The system running the installer needs to have Python 2.7. Most modern operating systems include this as part of their base toolkit. This document is geared toward a Linux operating system but this does not preclude the installer from running on other operating systems with some minor modifications to the command-line statements used in this document.</p>
+<p>The installer requires the following packages. If they are not found, it will prompt you to install them.</p>
+<ul>
+<li>python-dev </li>
+<li>libffi-dev </li>
+<li>libssl-dev </li>
+<li>python-virtualenv</li>
+<li>python-pip</li>
+</ul>
+<p>Use the following command:</p>
+<codeblock>
+  <codeph>sudo apt-get install -y python-dev libffi-dev libssl-dev python-virtualenv python-pip
+</codeph>
+</codeblock>
+</section>
+<section>
+<title>Installing the HP Helion Development Platform</title>
+<p>This section describes how to download and install the HP Helion Development Platform.</p>
+<ul>
+<li>
+<xref href="#topic30372/download">Downloading and unpacking the installation file</xref>
+</li>
+<li>
+<xref href="#topic30372/prepare">Preparing to run the installer</xref>
+</li>
+</ul>
+</section>
+<section>
+<required-cleanup>
+<title>Downloading and unpacking the installation file</title>
+<p>The installation of the HP Helion Development Platform for the HP Helion OpenStack Community Edition is provided as a small compressed TAR file.  The images for the actual services will be downloaded by the installer.</p>
+<p>
+<b>Note</b>: Should you need more assistance during installation, the install script also has a help feature.</p>
+<codeblock>
+  <codeph>./DevelopmentPlatform_Setup.sh -h
+</codeph>
+</codeblock>
+<ol>
+<li>
+<p>Register and download the package from the <xref href="https://helion.hpwsportal.com/catalog.html#/Home/Show" scope="external" format="html" >HP Helion Development Platform</xref> (HDN)</p>
+</li>
+<li>
+<p>Before you begin the installation, unpack the tar file.</p>
+
+<codeblock>
+<codeph>tar -zxvf hp_helion_devplatform_community.tar.gz.csu
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Run this command to create and populate a <i>dev-platform-installer</i> directory.</p>
+
+<codeblock>
+<codeph>cd dev-platform-installer
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>If your network uses a proxy, it may be necessary to set the proxy shell variable.</p>
+
+<codeblock>
+<codeph>export https_proxy=&lt;ip address or url of https proxy&gt;
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Run this command to prepare the installer and ensure prerequisites are met.</p>
+
+<codeblock>
+<codeph>./DevelopmentPlatform_Setup.sh -p {admin_user_password} -a {auth_host_ip_address}
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Optionally, you can specify the Username, Tenant and Region at this time.<!--A BR tag was used here in the original source.--> By default the Username is <i>admin</i>, the Tenant Name is <i>admin</i> and the Region is <i>regionOne</i>.</p>
+
+<codeblock>
+<codeph>./DevelopmentPlatform_Setup.sh -p {admin_user_password} -a {auth_host_ip_address} -u {username} -t {tenant_name} -r {region_name}
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Once the installation is complete, you should see output similar to the following:</p>
+
+<codeblock>
+<codeph>2014-06-17 16:53:19.765       INFO Install Complete
+</codeph>
+</codeblock>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<title>Install the Messaging Service</title>
+<p>This section provides details on installing the HP Helion Development Platform Messaging service.</p>
+</section>
+<section>
+<required-cleanup>
+<title>Download the Messaging Service</title>
+<ol>
+<li>
+<p>Open Horizon and login as the <i>Admin</i> user. Then click on the <b>Admin</b> panel in Horizon and select <b>Development Platform</b>. Finally, click <b>Configure Services</b>.</p>
+</li>
+<li>
+<p>Click the <b>Connect</b> button on the <b>Configure Services</b> panel and enter your username and password for the HP Download Network (HDN).</p>
+
+<p>If you do not have an account, click the <b>Sign-up</b> button.</p>
+</li>
+<li>
+<p>As the <i>Admin</i> user, in the <b>Configure Services</b> panel locate the <b>Messaging</b> item in the <b>Configure Services</b> table and select <b>Download Service</b> and wait for the download to complete.</p>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+<!--Removed anchor point horizon-->Install the Horizon UI</title>
+<p>This section describes how to install the Horizon UI for the Messaging service.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 1: Retrieve the Messaging Service Update from CODN</title>
+<p>Use the <b>Helion Development Platform UI</b> to check CODN for a new Service Update for the messaging service.</p>
+<p>
+<b>NOTE:</b> Be sure that the "Admin" project is checked (check mark beside it) from the Project selector before you check for service updates. The Project selector is located at the top of the page to the right of the OpenStack logo.</p>
+<p>If there is a new Service Update for the messaging service, retrieve it from CODN. This will retrieve the Messaging package from CODN and push it into a container in Swift within your local cloud.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 2: Install the Messaging Service Update</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Preparation</title>
+<p>You will need the following pieces of information in order to run the Messaging Service Update.</p>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<thead>
+<row>
+    <entry>
+      Identifier
+    </entry>
+    <entry>
+      Description
+    </entry>
+  </row>
+</thead>
+<tbody>
+<row>
+    <entry>
+      BASE_NODE_IP
+    </entry>
+    <entry>
+      The IP address of the base node for your Helion installation.
+    </entry>
+  </row>
+<row>
+    <entry>
+      SEED_NODE_IP
+    </entry>
+    <entry>
+      The IP address of the seed node for your Helion installation.
+    </entry>
+  </row>
+<row>
+    <entry>
+      USERNAME
+    </entry>
+    <entry>
+      The username of a cloud admin that has rights to perform an HDP Messaging Service Update.
+    </entry>
+  </row>
+<row>
+    <entry>
+      PASSWORD
+    </entry>
+    <entry>
+      The password of a cloud admin that has rights to perform an HDP Messaging Service Update.
+    </entry>
+  </row>
+<row>
+    <entry>
+      HEAT_ADMIN_KEY
+    </entry>
+    <entry>
+      The private key file for the **heat-admin** user. 
+Usually available within the root user account on the seed node here: **~/.ssh/id_rsa**
+    </entry>
+  </row>
+<row>
+    <entry>
+      CONTAINER_NAME
+    </entry>
+    <entry>
+      The Swift container that contains the messaging service update.
+ 
+Defaults to **cue-dashboard-horizon-ui**.
+    </entry>
+  </row>
+<row>
+    <entry>
+      SERVICE_UPDATE_FILENAME
+    </entry>
+    <entry>
+      The filename of the messaging service update.
+ 
+Typically can be found inside the above container in Swift.
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Let's get to it!</title>
+<p>a) SSH to the seed node of your cloud:</p>
+<codeblock>
+  <codeph># SSH to the base node
+ssh USERNAME@BASE_NODE_IP
+
+# Become root
+sudo su (will prompt for the PASSWORD)
+
+# SSH to seed node
+ssh SEED_NODE_IP
+</codeph>
+</codeblock>
+<p>b) Ensure your environment has the proper credentials to perform the download from Swift:</p>
+<codeblock>
+  <codeph># Source the overcloud credentials to reach Swift 
+export TE_DATAFILE="/root/tripleo/ce_env.json"
+source /root/tripleo/tripleo-incubator/overcloudrc
+</codeph>
+</codeblock>
+<p>c) Use the Swift client to download the Service Update:</p>
+<codeblock>
+  <codeph># List the contents of the Swift container
+swift list cue-dashboard-horizon-ui
+
+# Take note of the name of the file within the container
+# ex: SERVICE_UPDATE_FILENAME.tar.gz
+
+# Download the installation file
+swift download CONTAINER_NAME SERVICE_UPDATE_FILENAME
+</codeph>
+</codeblock>
+<p>d)  Once the file is downloaded, unzip/tar the file:</p>
+<codeblock>
+  <codeph>tar -zxvf SERVICE_UPDATE_FILENAME.tar.gz
+</codeph>
+</codeblock>
+<p>e) Go into the newly created folder and execute the install script, passing in the location of the private key of the heat-admin account:</p>
+<codeblock>
+  <codeph># Source undercloud creds from the same location as the overcloudrc
+source /root/tripleo/tripleo-incubator/undercloudrc
+
+# Fire up the install!
+cd SERVICE_UPDATE_FILENAME
+./install.sh HEAT_ADMIN_KEY
+</codeph>
+</codeblock>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 3: Configure the Service</title>
+<ol>
+<li>
+<p>In the <b>Helion Development Platform UI</b> , click the <b>Configure Service</b> button to configure the messaging service and wait for the configuration step to complete.</p>
+</li>
+<li>
+<p>Log out of the Horizon dashboard.</p>
+</li>
+<li>
+<p>Log back into the Horizon dashboard as a non-admin user and click on the <b>Messaging</b> panel under the current project to begin using the messaging service.</p>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<title>Install the Application Lifecycle Service (ALS)</title>
+<p>This section provides details on installing the HP Helion Development Platform Application Lifecycle service.</p>
+</section>
+<section>
+<required-cleanup>
+<title>Prerequisites</title>
+<p>For the Application Lifecycle service to install dependencies for deployed applications, you must provide Application Lifecycle service with outbound Internet connectivity.</p>
+<p>This process is documented in Step 7 of <xref href="/helion/community/install#startseed" >"Starting the seed and building your cloud"</xref> in the baremetal installation instructions.  If an HTTP Proxy is required for Internet downloads, follow the instructions in the <xref href="/helion/devplatform/1.2/als/admin/server/configuration#http-proxy" >Administration Guide</xref>.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Download the Application Lifecycle Service {#als-download}{#als-connect}</title>
+<ol>
+<li>
+<p>Open Horizon and log in as the <i>Admin</i> user. Then click on the <b>Admin</b> panel in Horizon and select <b>Development Platform</b>. Finally, click the <b>Configure Services</b> sub-panel.</p>
+</li>
+<li>
+<p>Click the <b>Connect</b> button on the <b>Configure Services</b> panel and enter your user name and password for the HP Download Network (HDN). If you do not have an account, click the <b>Sign-up</b> button.</p>
+</li>
+<li>
+<p>In the <b>Configure Services</b> panel locate the Application Lifecycle Service item in the <b>Configure Services</b> table and select <b>Download Service</b> and wait for the download to complete.</p>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+<!--Removed anchor point horizon-->Install the Horizon UI</title>
+<p>This section describes how to install the Horizon UI for the ALS service.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 1: Retrieve the ALS Service Update from CODN</title>
+<p>Use the <b>Helion Development Platform UI</b> to check CODN for a new Service Update for ALS.</p>
+<p>
+<b>NOTE:</b> Be sure that the "Admin" project is checked (check mark beside it) from the Project selector before you check for service updates. The Project selector is located at the top of the page to the right of the OpenStack logo.</p>
+<p>If there is a new Service Update for ALS, retrieve it from CODN. This will retrieve the ALS package from CODN and push it into a container in Swift within your local cloud.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 2: Install the ALS Service Update</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Preparation</title>
+<p>You will need the following pieces of information in order to run the ALS Service Update.</p>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<thead>
+<row>
+    <entry>
+      Identifier
+    </entry>
+    <entry>
+      Description
+    </entry>
+  </row>
+</thead>
+<tbody>
+<row>
+    <entry>
+      BASE_NODE_IP
+    </entry>
+    <entry>
+      The IP address of the base node for your Helion installation.
+    </entry>
+  </row>
+<row>
+    <entry>
+      SEED_NODE_IP
+    </entry>
+    <entry>
+      The IP address of the seed node for your Helion installation.
+    </entry>
+  </row>
+<row>
+    <entry>
+      USERNAME
+    </entry>
+    <entry>
+      The username of a cloud admin that has rights to perform an HDP ALS Service Update.
+    </entry>
+  </row>
+<row>
+    <entry>
+      PASSWORD
+    </entry>
+    <entry>
+      The password of a cloud admin that has rights to perform an HDP ALS Service Update.
+    </entry>
+  </row>
+<row>
+    <entry>
+      HEAT_ADMIN_KEY
+    </entry>
+    <entry>
+      The private key file for the **heat-admin** user. 
+Usually available within the root user account on the seed node here: **~/.ssh/id_rsa**
+    </entry>
+  </row>
+<row>
+    <entry>
+      CONTAINER_NAME
+    </entry>
+    <entry>
+      The Swift container that contains the ALS service update.
+ 
+Defaults to **als-horizon-ui**.
+    </entry>
+  </row>
+<row>
+    <entry>
+      SERVICE_UPDATE_FILENAME
+    </entry>
+    <entry>
+      The filename of the ALS service update.
+ 
+Typically can be found inside the above container in Swift.
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Let's get to it!</title>
+<p>a) SSH to the seed node of your cloud:</p>
+<codeblock>
+  <codeph># SSH to the base node
+ssh USERNAME@BASE_NODE_IP
+
+# Become root
+sudo su (will prompt for the PASSWORD)
+
+# SSH to seed node
+ssh SEED_NODE_IP
+</codeph>
+</codeblock>
+<p>b) Ensure your environment has the proper credentials to perform the download from Swift:</p>
+<codeblock>
+  <codeph># Source the overcloud credentials to reach Swift 
+export TE_DATAFILE="/root/tripleo/ce_env.json"
+source /root/tripleo/tripleo-incubator/overcloudrc
+</codeph>
+</codeblock>
+<p>c) Use the Swift client to download the Service Update:</p>
+<codeblock>
+  <codeph># List the contents of the Swift container
+swift list als-horizon-ui
+
+# Take note of the name of the file within the container
+# ex: SERVICE_UPDATE_FILENAME.tar.gz
+
+# Download the installation file
+swift download CONTAINER_NAME SERVICE_UPDATE_FILENAME
+</codeph>
+</codeblock>
+<p>d)  Once the file is downloaded, unzip/tar the file:</p>
+<codeblock>
+  <codeph>tar -zxvf SERVICE_UPDATE_FILENAME.tar.gz
+</codeph>
+</codeblock>
+<p>e) Go into the newly created folder and execute the install script, passing in the location of the private key of the heat-admin account:</p>
+<codeblock>
+  <codeph># Source undercloud creds from the same location as the overcloudrc
+source /root/tripleo/tripleo-incubator/undercloudrc
+
+# Fire up the install!
+cd SERVICE_UPDATE_FILENAME
+./install.sh HEAT_ADMIN_KEY
+</codeph>
+</codeblock>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 3: Configure the Service</title>
+<ol>
+<li>
+<p>In the Configure Services panel in the <b>Helion Development Platform UI</b>, click the <b>Configure Service</b> button to configure the Application Lifecycle Service and wait for the configuration step to complete.</p>
+
+<p>
+<image href="../../media/dev_install_application-life-cycle.png"/>
+</p>
+</li>
+<li>
+<p>Log out from the Horizon dashboard. Log back into the Horizon dashboard as a non-admin user and click on the <b>Application Lifecycle Service</b> panel under the current Project to being using Application Lifecycle Services.</p>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<title>Install the Database Service</title>
+<p>This section provides details on installing the HP Helion Development Platform Database service.</p>
+</section>
+<section>
+<required-cleanup>
+<title>Prerequisites</title>
+<p>Before installing, make sure the following prerequisites are met:</p>
+<ul>
+<li>
+<xref href="#topic30372/databse-service">Configure the Service Network</xref>
+</li>
+<li>
+<xref href="#topic30372/database-quota">Check Project Quotas</xref>
+</li>
+<li>
+<xref href="#topic30372/database-connect">Connect to the Download Service</xref>
+</li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Configure the Service Network</title>
+<p>The database service needs an additional network for administrative purposes. This network is currently not used in Community edition but must exist in order for Database Service to properly install.</p>
+<ol>
+<li>
+<p>Open Horizon and login as the <i>Admin</i> user.</p>
+</li>
+<li>
+<p>Click <b>Project</b>.</p>
+</li>
+<li>
+<p>Click <b>Network</b> and then the <b>Networks</b> tab.</p>
+</li>
+<li>
+<p>Click <b>Create Network</b>.</p>
+</li>
+<li>
+<p>In <b>Network Name</b> field, enter <codeph>SVC</codeph> for the name of the network.</p>
+</li>
+<li>
+<p>Click <b>Next</b>.</p>
+</li>
+<li>
+<p>In the <b>Network Address</b> field, enter a CIDR that does not conflict with other services (such as: 172.10.0.0/24).</p>
+</li>
+<li>
+<p>Click <b>Next</b>.</p>
+</li>
+<li>
+<p>Click <b>Create</b>.</p>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Check Project Quotas</title>
+<p>The database service will be installed into the <b>Admin</b> project of the Helion OpenStack overcloud. The <b>Admin</b> project must have sufficient quotas available for the service to use. To check existing quota availability, log in to Horizon as the <b>Admin</b> user and open the <b>Overview</b> panel under the <b>Compute</b> tab.</p>
+<p>For the Community edition, the database service requires that the Admin project have the following quotas available:</p>
+<table>
+<tgroup cols="2">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<thead>
+<row>
+<entry>Resource</entry>
+  <entry align="right">Usage</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Floating IPs</entry>
+  <entry align="right">6</entry>
+</row>
+<row>
+<entry>Instances</entry>
+  <entry align="right">6</entry>
+</row>
+<row>
+<entry>Networks</entry>
+  <entry align="right">2</entry>
+</row>
+<row>
+<entry>RAM (GB)</entry>
+  <entry align="right">24</entry>
+</row>
+<row>
+<entry>Routers</entry>
+  <entry align="right">2</entry>
+</row>
+<row>
+<entry>Security Groups</entry>
+  <entry align="right">6</entry>
+</row>
+<row>
+<entry>Volumes</entry>
+  <entry align="right">4</entry>
+</row>
+<row>
+<entry>Volume Storage (GB)</entry>
+  <entry align="right">160</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<p>In addition to the quotas mentioned above, for every database instance that is created by a user, the necessary resources to create that instance will be deducted from the Admin project quota. The user's Database service quota will also be affected.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Download the Database Service {#database-connect}{#database-connect}</title>
+<ol>
+<li>
+<p>Open Horizon and login as the <i>Admin</i> user. Then click on the <b>Admin</b> panel in Horizon and select the <b>Development Platform</b> panel under Admin. Then click the <b>Configure Services</b> sub-panel.</p>
+</li>
+<li>
+<p>Click the <b>Connect</b> button on the <b>Configure Services</b> panel and enter your username and password for the HP Download Network (HDN). If you do not have an account, click <b>Sign-up</b>.</p>
+</li>
+<li>
+<p>In the <b>Configure Services</b> panel locate the <b>Database Service</b> item in the <b>Configure Services</b> table and select <b>Download Service</b> and wait for the download to complete.</p>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+<!--Removed anchor point horizon-->Install the Horizon UI</title>
+<p>This section describes how to install the Horizon UI for the database service.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 1: Retrieve the Database Service Update from CODN</title>
+<p>Use the <b>Helion Development Platform UI</b> to check CODN for a new Service Update for the database service.</p>
+<p>
+<b>NOTE:</b> Be sure that the "Admin" project is checked (check mark beside it) from the Project selector before you check for service updates. The Project selector is located at the top of the page to the right of the OpenStack logo.</p>
+<p>If there is a new Service Update for the database service, retrieve it from CODN. This will retrieve the database service package from CODN and push it into a container in Swift within your local cloud.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 2: Install the Database Service Update</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Preparation</title>
+<p>You will need the following pieces of information in order to run the Database Service Update.</p>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<thead>
+<row>
+    <entry>
+      Identifier
+    </entry>
+    <entry>
+      Description
+    </entry>
+  </row>
+</thead>
+<tbody>
+<row>
+    <entry>
+      BASE_NODE_IP
+    </entry>
+    <entry>
+      The IP address of the base node for your Helion installation.
+    </entry>
+  </row>
+<row>
+    <entry>
+      SEED_NODE_IP
+    </entry>
+    <entry>
+      The IP address of the seed node for your Helion installation.
+    </entry>
+  </row>
+<row>
+    <entry>
+      USERNAME
+    </entry>
+    <entry>
+      The username of a cloud admin that has rights to perform an HDP Database Service Update.
+    </entry>
+  </row>
+<row>
+    <entry>
+      PASSWORD
+    </entry>
+    <entry>
+      The password of a cloud admin that has rights to perform an HDP Database Service Update.
+    </entry>
+  </row>
+<row>
+    <entry>
+      HEAT_ADMIN_KEY
+    </entry>
+    <entry>
+      The private key file for the **heat-admin** user. 
+Usually available within the root user account on the seed node here: **~/.ssh/id_rsa**
+    </entry>
+  </row>
+<row>
+    <entry>
+      CONTAINER_NAME
+    </entry>
+    <entry>
+      The Swift container that contains the Database Service Update.
+ 
+Defaults to **dbaas-horizon-ui**.
+    </entry>
+  </row>
+<row>
+    <entry>
+      SERVICE_UPDATE_FILENAME
+    </entry>
+    <entry>
+      The filename of the Database Service Update.
+ 
+Typically can be found inside the above container in Swift.
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Let's get to it!</title>
+<p>a) SSH to the seed node of your cloud:</p>
+<codeblock>
+  <codeph># SSH to the base node
+ssh USERNAME@BASE_NODE_IP
+
+# Become root
+sudo su (will prompt for the PASSWORD)
+
+# SSH to seed node
+ssh SEED_NODE_IP
+</codeph>
+</codeblock>
+<p>b) Ensure your environment has the proper credentials to perform the download from Swift:</p>
+<codeblock>
+  <codeph># Source the overcloud credentials to reach Swift 
+export TE_DATAFILE="/root/tripleo/ce_env.json"
+source /root/tripleo/tripleo-incubator/overcloudrc
+</codeph>
+</codeblock>
+<p>c) Use the Swift client to download the Service Update:</p>
+<codeblock>
+  <codeph># List the contents of the Swift container
+swift list dbaas-horizon-ui
+
+# Take note of the name of the file within the container
+# ex: SERVICE_UPDATE_FILENAME.tar.gz
+
+# Download the installation file
+swift download CONTAINER_NAME SERVICE_UPDATE_FILENAME
+</codeph>
+</codeblock>
+<p>d)  Once the file is downloaded, unzip/tar the file:</p>
+<codeblock>
+  <codeph>tar -zxvf SERVICE_UPDATE_FILENAME.tar.gz
+</codeph>
+</codeblock>
+<p>e) Go into the newly created folder and execute the install script, passing in the location of the private key of the heat-admin account:</p>
+<codeblock>
+  <codeph># Source undercloud creds from the same location as the overcloudrc
+source /root/tripleo/tripleo-incubator/undercloudrc
+
+# Fire up the install!
+cd SERVICE_UPDATE_FILENAME
+./install.sh HEAT_ADMIN_KEY
+</codeph>
+</codeblock>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 3: Configure the Service</title>
+<ol>
+<li>
+<p>In the Configure Services panel in the <b>Helion Development Platform UI</b>, click the <b>Configure Service</b> button to begin configuration of the service. In the configuration dialog, specify the following configuration options:</p>
+
+<ul>
+<li>
+<b>Service User Password</b> (Required) - The password for the Admin user that is currently logged in. This password MUST match the password used to log in to Horizon.</li>
+<li>
+<b>Key Pair</b> (Required) - Key Pair to install on all instances created as part of the database service. The public key can be used by an admin to get SSH access to all instances.</li>
+<li>
+<b>External Network</b> (Required) - Network Name for the network that has external network access. For HP Helion OpenStack Commercial Edition this network is named <b>ext-net</b> .</li>
+<li>
+<b>Provider Network</b> (Required) - Network Name for the network that has network access to cloud infrastructure services. For HP Helion OpenStack Commercial Edition this network is named <b>SVC</b>.</li>
+<li>
+<b>NTP Server IP</b> - IP Address to an NTP server to use if instances will not have outbound access to the internet.</li>
+<li>
+<b>Logstash RabbitMQ IP Address</b> (Required) - Specify the IP address of the RabbitMQ Server publishing to the central Logstash server.</li>
+<li>
+<b>Logstash RabbitMQ Password</b> (Required) - Specify the password for the RabbitMQ Server publishing to the central Logstash server.</li>
+<li>
+<b>Ephemeral CA Password</b> (Required) - Specify the password for the Ephemeral CA server. </li>
+<li>
+<b>Ephemeral CA IP Address</b> (Required) - Specify the IP address of Ephemeral CA server.</li>
+<li>
+<b>Volume Type</b> (Required) -  The volume type to use when creating database instances.</li>
+<li>
+<p>
+<b>Enable HA</b> - Specify if the database service is to be set up in a high-availability (HA) configuration. If selected, each component of the service will have three instances created and active at all times. 
+<!--A BR tag was used here in the original source.--></p>
+
+<p>
+<image href="../../media/dev_install_database_new.png"/>
+</p>
+</li>
+</ul>
+</li>
+<li>
+<p>After all configuration options have been provided, select the <b>Configure</b> button to complete the configuration step. Wait for the configuration step to complete and the status to change to <b>Configured</b>.</p>
+</li>
+</ol>
+<!-- ===================== horizontal rule ===================== -->
+<p>The following steps will configure HAProxy to receive and forward HTTP requests to the VM that hosts the REST API endpoint for Marketplace. To perform these steps you must be connected to the overcloud node.</p>
+<ol>
+<li>
+<p>Identify the API server IPs on the SVC network. You should have as many API servers (and IPs) as you have Availability Zones in your Helion OpenStack install.</p>
+
+<codeblock>
+<codeph>nova list | awk '/trove[0-9]*_api/{ print $4,"\t", substr($12,5) }' 
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Identify the Virtual IP used by the controller nodes to be able to load balance the Helion   OpenStack services:</p>
+
+<codeblock>
+<codeph>keystone endpoint-list | awk '/8779/{ print $6 }' | egrep -o "[0-9]+.[0-9]+.[0-9]+.[0-9]+"
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Update configuration on each of the Helion OpenStack controller nodes by connecting to the controller and doing the following:</p>
+
+<p>a. Edit the <i>/etc/haproxy/manual/paas.cfg</i> file and add the following lines. The last line should be repeated once for each API server identified in step 1.</p>
+
+<codeblock>
+<codeph>listen trove_api
+bind &lt;Virtual IP from step 2&gt;:8779
+option httpchk GET /
+server trove-trove&lt;n&gt;_api-&lt;uniqueid&gt; &lt;API server n's IP Address&gt; check inter 2000 rise 2 fall 5 check-ssl ca-file /etc/ssl/certs/ca-certificates.crt
+</codeph>
+</codeblock>
+
+<p>b. Edit the /etc/iptables/rules.v4 file and add to it:</p>
+
+<codeblock>
+<codeph>-I INPUT -p tcp --dport 8779 -j ACCEPT
+</codeph>
+</codeblock>
+
+<p>c. Run the following command as root:</p>
+
+<codeblock>
+<codeph>sudo iptables -I INPUT -p tcp --dport 8779 -j ACCEPT
+</codeph>
+</codeblock>
+
+<p>d. Reload the haproxy service configuration</p>
+
+<codeblock>
+<codeph>sudo service haproxy reload
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Log out from the Horizon dashboard. Log back into the Horizon dashboard as a non-admin user and click on the <b>Database Service</b> panel under the current Project to being using Database Service.</p>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<title>Install the Marketplace Service</title>
+<p>This section provides details on installing the HP Helion Development Platform Marketplace service.</p>
+<ul>
+<li>
+<xref href="#topic30372/marketplace-install">Prerequisites</xref>
+</li>
+<li>
+<xref href="#topic30372/marketplace-download-c">Connect to the Marketplace Service</xref>
+</li>
+<li>
+<xref href="#topic30372/marketplace-download">Download and Configure the Marketplace Service</xref>
+</li>
+</ul>
+</section>
+<section>
+<required-cleanup>
+<title>Prerequisites</title>
+<p>Before installing, make sure the following prerequisites are met:</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Check Project Quotas</title>
+<p>The Marketplace service will be installed into the Admin project of the Helion OpenStack overcloud. The Admin project must have sufficient quota available and unused for the resources the service uses.</p>
+<p>To check existing quota availability:</p>
+<ol>
+<li>
+<p>Log in to Horizon as the <b>admin</b> user.</p>
+</li>
+<li>
+<p>Open the <b>Overview</b> panel under the <b>Compute</b> tab.</p>
+
+<p>The quotas should meet or exceed the following:</p>
+
+<table>
+<tgroup cols="2">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<thead>
+<row>
+<entry>Resource</entry>
+<entry align="right">Usage</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Floating IPs</entry>
+<entry align="right">16</entry>
+</row>
+<row>
+<entry>Instances</entry>
+<entry align="right">4</entry>
+</row>
+<row>
+<entry>Networks</entry>
+<entry align="right">1</entry>
+</row>
+<row>
+<entry>RAM (GB)</entry>
+<entry align="right">8</entry>
+</row>
+<row>
+<entry>Routers</entry>
+<entry align="right">2</entry>
+</row>
+<row>
+<entry>Security Groups</entry>
+<entry align="right">4</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Download the Marketplace Service {#marketplace-download}{#marketplace-download-c}</title>
+<ol>
+<li>
+<p>Open Horizon and login as the "admin" user. Then click on the admin panel in Horizon and select the <b>Development Platform</b> Panel under <b>Admin</b>. Then click on the <b>Configure Services</b> sub-panel.</p>
+</li>
+<li>
+<p>Click the <b>Connect</b> button on the <b>Configure Services</b> panel and enter your username and password for the HP Download Network (HDN). Select the Sign-up button if you do not have an account.</p>
+</li>
+<li>
+<p>In the <b>Configure Services</b> panel locate the Marketplace item in the Configure Services table and select <b>Download Service</b> and wait for the download to complete.</p>
+</li>
+</ol>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+<!--Removed anchor point horizon-->Install the Horizon UI Update for the Marketplace Service</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 1: Retrieve the Marketplace Service Update from CODN</title>
+<p>Use the <b>Helion Development Platform UI</b> to check CODN for a new Service Update for Marketplace.</p>
+<p>
+<b>NOTE:</b> Be sure that the "Admin" project is checked (check mark beside it) from the Project selector before you check for service updates. The Project selector is located at the top of the page to the right of the OpenStack logo.</p>
+<p>If there is a new Service Update for Marketplace, retrieve it from CODN. This will retrieve the Marketplace package from CODN and push it into a container in Swift within your local cloud.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 2: Install the Marketplace Service Update</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Preparation</title>
+<p>You will need the following pieces of information in order to run the Marketplace Service Update.</p>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<thead>
+<row>
+    <entry>
+      Identifier
+    </entry>
+    <entry>
+      Description
+    </entry>
+  </row>
+</thead>
+<tbody>
+<row>
+    <entry>
+      BASE_NODE_IP
+    </entry>
+    <entry>
+      The IP address of the base node for your Helion installation.
+    </entry>
+  </row>
+<row>
+    <entry>
+      SEED_NODE_IP
+    </entry>
+    <entry>
+      The IP address of the seed node for your Helion installation.
+    </entry>
+  </row>
+<row>
+    <entry>
+      USERNAME
+    </entry>
+    <entry>
+      The username of a cloud admin that has rights to perform an HDP Marketplace Service Update.
+    </entry>
+  </row>
+<row>
+    <entry>
+      PASSWORD
+    </entry>
+    <entry>
+      The password of a cloud admin that has rights to perform an HDP Marketplace Service Update.
+    </entry>
+  </row>
+<row>
+    <entry>
+      HEAT_ADMIN_KEY
+    </entry>
+    <entry>
+      The private key file for the **heat-admin** user. 
+Usually available within the root user account on the seed node here: **~/.ssh/id_rsa**
+    </entry>
+  </row>
+<row>
+    <entry>
+      CONTAINER_NAME
+    </entry>
+    <entry>
+      The Swift container that contains the Marketplace service update.
+ 
+Defaults to **murano-dashboard-horizon-ui**.
+    </entry>
+  </row>
+<row>
+    <entry>
+      SERVICE_UPDATE_FILENAME
+    </entry>
+    <entry>
+      The filename of the Marketplace service update.
+ 
+Typically can be found inside the above container in Swift.
+    </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Let's get to it!</title>
+<p>a) SSH to the seed node of your cloud:</p>
+<codeblock>
+  <codeph># SSH to the base node
+ssh USERNAME@BASE_NODE_IP
+
+# Become root
+sudo su (will prompt for the PASSWORD)
+
+# SSH to seed node
+ssh SEED_NODE_IP
+</codeph>
+</codeblock>
+<p>b) Ensure your environment has the proper credentials to perform the download from Swift:</p>
+<codeblock>
+  <codeph># Source the overcloud credentials to reach Swift 
+export TE_DATAFILE="/root/tripleo/ce_env.json"
+source /root/tripleo/tripleo-incubator/overcloudrc
+</codeph>
+</codeblock>
+<p>c) Use the Swift client to download the Service Update:</p>
+<codeblock>
+  <codeph># List the contents of the Swift container
+swift list murano-dashboard-horizon-ui
+
+# Take note of the name of the file within the container
+# ex: SERVICE_UPDATE_FILENAME.tar.gz
+
+# Download the installation file
+swift download CONTAINER_NAME SERVICE_UPDATE_FILENAME
+</codeph>
+</codeblock>
+<p>d)  Once the file is downloaded, unzip/tar the file:</p>
+<codeblock>
+  <codeph>tar -zxvf SERVICE_UPDATE_FILENAME.tar.gz
+</codeph>
+</codeblock>
+<p>e) Go into the newly created folder and execute the install script, passing in the location of the private key of the <b>heat-admin</b> account:</p>
+<codeblock>
+  <codeph># Source undercloud creds from the same location as the overcloudrc
+source /root/tripleo/tripleo-incubator/undercloudrc
+
+# Fire up the install!
+cd SERVICE_UPDATE_FILENAME
+./install.sh HEAT_ADMIN_KEY
+</codeph>
+</codeblock>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Step 3: Configure the Service</title>
+<ol>
+<li>
+<p>In the <b>Helion Development Platform UI</b> , click the <b>Configure Service</b> button to begin configuration of the service. In the configuration dialog, specify the following configuration options:</p>
+
+<ul>
+<li>
+<b>Service User Password</b> (Required) -  The password for the Admin user that is currently logged in. This password MUST match the password used to log in to Horizon.</li>
+<li>
+<b>Key Pair</b> (Required) -  Key Pair to install on all instances created as part of the database service. The public key can be used by an admin to get SSH access to all instances.</li>
+<li>
+<b>External Network</b> (Required) - Network Name for the network that has external network access. For HP Helion OpenStack Commercial Edition this network is named 'ext-net'</li>
+<li>
+<b>Provider Network</b> (Required) - Network Name for the network that has network access to cloud infrastructure services. For HP Helion OpenStack Commercial Edition this network is named 'SVC'</li>
+<li>
+<b>NTP Server IP</b> - IP Address to an NTP server to use if instances will not have outbound access to the internet.</li>
+<li>
+<b>Logstash RabbitMQ IP Address</b> (Required) - Specify the IP address of the RabbitMQ Server publishing to the central Logstash server.</li>
+<li>
+<b>Logstash RabbitMQ Password</b> (Required) -  Specify the password for the RabbitMQ Server publishing to the central Logstash server.</li>
+<li>
+<b>Ephemeral CA Password</b> (Required) - Specify the password for the Ephemeral CA server.</li>
+<li>
+<b>Ephemeral CA IP Address</b> (Required) - Specify the IP address of Ephemeral CA server.</li>
+<li>
+<b>Subnet range</b> (Required) - The subnet to use for Marketplace. <!--A BR tag was used here in the original source.--></li>
+</ul>
+<p>
+<image href="../../media/dev_install_marketplace.png"/>
+</p>
+</li>
+<li>
+<p>Do not attempt to install any Marketplace packages yet. Log out from the Horizon console.</p>
+</li>
+<li>
+<p>The following steps will configure HAProxy to receive and forward HTTP requests to the VM that hosts the REST API endpoint for Marketplace. To perform these steps you must be connected to the overcloud node.</p>
+
+<ol>
+<li>
+<p>Identify the API server IPs on the SVC network:</p>
+
+<codeblock>
+<codeph>nova list | awk'/marketplace-api/{ print $14 }' | cut -d "=" -f 2
+</codeph>
+</codeblock>
+
+<p>Note that you should have as many API servers (and IPs) as you have Availability Zones in your Helion OpenStack install.</p>
+</li>
+<li>
+<p>Identify the Virtual IP used by the controller nodes to be able to load balance the Helion OpenStack services:</p>
+
+<codeblock>
+<codeph>keystone endpoint-list | awk '/8082/{ print $6}' | egrep -o "[0-9].[0-9].[0-9].[0-9]"
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Update configuration on each of the Helion OpenStack controller nodes. <!--A BR tag was used here in the original source.--> For EACH node:</p>
+
+<ol>
+<li>Connect to the controller.</li>
+<li>
+<p>Open the <i>/etc/haproxy/manual/paas.cfg</i> file and add the following lines. <!--A BR tag was used here in the original source.--><b>Note</b>: The last line should be repeated once for <b>each</b> API server identified in step 1.</p>
+
+<codeblock>
+<codeph>listen marketplace_api
+bind &lt;Virtual IP from step 2&gt;:8082
+option httpchk GET /
+server marketplace&lt;n&gt;_api-&lt;uniqueid&gt; &lt;API server n's IP Address&gt; check inter 2000 rise 2 fall 5 check-ssl ca-file /etc/ssl/certs/ca-certificates.crt 
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Edit the <i>/etc/iptables/iptables</i> file and add to the file:</p>
+
+<codeblock>
+<codeph>-I INPUT -p tcp --dport 8082 -j ACCEPT
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Run the following command as root:</p>
+
+<codeblock>
+<codeph>sudo iptables -I INPUT -p tcp --dport 8082 -j ACCEPT
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Reload the haproxy service configuration.</p>
+
+<codeblock>
+<codeph>sudo service haproxy reload
+</codeph>
+</codeblock>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Download the Vertica package.</p>
+
+<p>a) Open Horizon and log in as the "admin" user. Then click on the admin panel in Horizon and select the Development Platform Panel under Admin. Then click on the Configure Services sub-panel.</p>
+
+<p>b) Select the "Vertica Trial Package for Marketplace".</p>
+
+<p>
+<image href="../../media/dev_install_vertica_1.png"/>
+</p>
+
+<p>c) Select <b>Download Service</b>, and confirm the download.</p>
+
+<p>
+<image href="../../media/dev_install_vertica_confirm.png"/>
+</p>
+
+<p>d) Wait for the service to finish downloading.</p>
+
+<p>
+<image href="../../media/dev_install_vertica_2.png"/>
+</p>
+</li>
+<li>
+<p>Log back into the Horizon console as a non-admin user. Click on the <b>Marketplace</b> panel under the current Project to begin using the Marketplace Service. You may now install <xref href="/helion/devplatform/1.2/marketplace#install" >Marketplace packages</xref>.</p>
+</li>
+</ol>
+<p>Refer to the following topics if you experience problems with the installation.</p>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>Service is stuck in download</title>
+<p>There are situations in which a download will not complete.  One cause which is documented, is because the <codeph>tmp</codeph> directory ran out of space. There is a prerequisite to mount the <codeph>tmp</codeph> directory to a larger partition.  If you have completed this step and the download is still failing, then we will need to reset the download. In the current release, this requires a manual process.</p>
+<p>As the <i>admin</i> user, in the Admin project, click on <b>Project</b>, then <b>Object Store</b>. Open the <codeph>sherpa-cache</codeph> folder and delete the <codeph>wscatalog.&lt;id&gt;</codeph> folder which contains the cached download. The service should now be available to download again.</p>
+<p>
+  <xref href="#topic30372/top"> Return to Top ↑ </xref>
+</p>
+</required-cleanup>
+</section>
+</body>
+</topic>

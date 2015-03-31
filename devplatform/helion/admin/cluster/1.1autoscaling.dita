@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic5740">
+<title>HP Helion 1.1 Development Platform: DEA Auto Scaling</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion Development Platform"/>
+<othermeta name="product-version" content="HP Helion Development Platform 1.1"/>
+<othermeta name="role" content="Application Developer"/>
+<othermeta name="role" content="Security Engineer"/>
+<othermeta name="role" content="ISV Developer"/>
+<othermeta name="role" content="Service Developer"/>
+<othermeta name="role" content="Network Administrator"/>
+<othermeta name="role" content="Systems Administrator"/>
+<othermeta name="role" content="Storage Engineer"/>
+<othermeta name="role" content="Net Ops Engineer"/>
+<othermeta name="role" content="NOC Engineer"/>
+<othermeta name="role" content="Jayme P"/>
+<othermeta name="product-version1" content="HP Helion Development Platform"/>
+<othermeta name="product-version2" content="HP Helion Development Platform 1.1"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--PUBLISHED-->
+ <!--./devplatform/helion/admin/cluster/1.1autoscaling.md-->
+ <!--permalink: /helion/devplatform/1.1/als/admin/cluster/autoscaling/--></p>
+<p>
+  <xref href="../../../../devplatform/helion/admin/cluster/1.0autoscaling.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+</p>
+<ul>
+<li>
+<xref href="#topic5740/dea-template">DEA Template</xref>
+</li>
+<li>
+<xref href="#topic5740/dea-scaling-configuration">DEA Scaling configuration</xref>
+</li>
+<li>
+<xref href="#topic5740/enabling-auto-scaling">Enabling Auto-Scaling</xref>
+</li>
+<li>
+<xref href="#topic5740/configuration-and-tuning-advanced">Configuration and Tuning (Advanced)</xref>
+</li>
+<li>
+<xref href="#topic5740/writing-custom-scaling-plugins-advanced">Writing custom scaling plugins (Advanced)</xref>
+</li>
+<li>
+<xref href="#topic5740/troubleshooting">Troubleshooting</xref>
+</li>
+<li>
+<xref href="#topic5740/testing">Testing</xref>
+</li>
+</ul>
+<p>Application Lifecycle Service can automatically add DEA nodes to a cluster to handle
+increasing numbers of user application instances.</p>
+<p>When auto scaling is enabled, the Application Lifecycle Service will automatically grow the pool of DEA nodes to accommodate new app deployments. Scaling events are triggered when the available memory in the pool falls below a certain threshold.</p>
+<section>
+<title>DEA Template</title>
+<p>Before enabling auto scaling, you will need to create a DEA template
+from the standard Application Lifecycle Service VM. Typically you would do this by running the following commands on a fresh Application Lifecycle Service VM:</p>
+<codeblock>
+  <codeph>kato op defer "node attach -e dea CORE_IP" --run-as-root
+</codeph>
+</codeblock>
+<p>This defers the <codeph>attach</codeph> command and enables the DEA
+role on the next boot. Shut down the VM once this is done.</p>
+</section>
+<section>
+<title>DEA Scaling configuration</title>
+<p>The DEA auto scaling configuration file is:</p>
+<codeblock>
+  <codeph>/s/etc/autoscaling/autoscaling.yaml
+</codeph>
+</codeblock>
+<p>This file must be modified on each node running the Controller role.</p>
+<p>Comments throughout the file describe in detail what each option does,
+and what information is required for each infrastructure platform.</p>
+<p>The <codeph>enabled_plugins</codeph> key must be set to OpenStack.</p>
+<p>Each platform has specific tunable settings under the <codeph>platform</codeph> key in <i>autoscaling.yaml</i> for setting authorization credentials, DEA template IDs and so forth. Configure the settings for your platform in this file before proceeding.</p>
+<p>It is possible to enable multiple plugins, but this is generally <b>not</b> recommended. You could use this feature to implement a "ping" plugin that doesn't provision a DEA, but sends a notification email instead or pings a remote API.</p>
+</section>
+<section>
+<title>Enabling Auto-Scaling</title>
+<p>Run the following command on the Primary node:</p>
+<codeblock>
+  <codeph>kato config set cloud_controller_ng autoscaling/enabled true
+kato config set health_manager autoscaling/enabled true
+</codeph>
+</codeblock>
+<p>
+  <b>Note</b>
+</p>
+<p>If you are running more than one cloud controller in your cluster,
+enable the scaling plugin on <b>only one</b> of the cloud controllers,
+otherwise each one will provision a separate DEA on every scaling event.</p>
+<p>After saving this change, restart the following processes:</p>
+<codeblock>
+  <codeph>kato process restart health_manager cloud_controller_ng
+</codeph>
+</codeblock>
+<p>You should then start seeing some scaling information in the Health
+Manager's log file:</p>
+<codeblock>
+  <codeph>kato log tail health_manager
+</codeph>
+</codeblock>
+</section>
+<section>
+<title>Configuration and Tuning (Advanced)</title>
+<p>A number of configuration options in the autoscaling file can be customized to fit your particular requirements.</p>
+<p>The options in <i>/s/etc/autoscaling/autoscaling.yaml</i> are:</p>
+<ul>
+<li>
+<codeph>scale_op_timeout</codeph>
+
+<ul>
+<li>Specifies how long the scaler will wait for the plugin to complete a scale up operation (Default: 300, Unit: seconds).</li>
+</ul>
+</li>
+<li>
+<codeph>cooldown_period</codeph>
+
+<ul>
+<li>After a scaling event, ignore subsequent scaling requests until this period expires. Prevents duplicate scaling events. (Default: 120, Unit: seconds)</li>
+</ul>
+</li>
+<li>
+<codeph>vm_name_prefix</codeph>
+
+<ul>
+<li>Gives the new Application Lifecycle Service VM instance a name with this prefix to easily</li>
+</ul>
+</li>
+<li>identify autoscaled instances.</li>
+</ul>
+<p>Further settings are found in the health_manager configuration (see <codeph>kato config get health_manager autoscaling</codeph>)</p>
+<ul>
+<li>
+<codeph>scaleup_threshold</codeph>
+
+<ul>
+<li>Number of cycles to wait before issuing a scaling request. The health manager monitors the DEA pool continually. If the forward buffer is not maintained during the number of cycles indicated by this value, the scaling event will be sent to the cloud controller. Decrease this value to make autoscaling more aggressive. (Default: 3)</li>
+</ul>
+</li>
+<li>
+<codeph>forward_buffer</codeph>
+
+<ul>
+<li>The number of megabytes of free memory to maintain in the DEA pool. Note that app memory usage on each DEA is also accounted for. (Default: 4096, Unit: MB)</li>
+</ul>
+</li>
+<li>
+<codeph>cooldown_period</codeph>
+
+<ul>
+<li>After a scaling event, ignore subsequent scaling requests until this period expires (Default: 180, Unit: seconds)</li>
+</ul>
+</li>
+<li>
+<codeph>dea_staleness</codeph>
+
+<ul>
+<li>Maximum time to wait for DEAs to report their status via NATS. If a DEA fails to report in during this period (e.g. it becomes unresponsive) it will be removed from the pool, which may lead to a new scaling event being triggered. (Default: 180, Unit: seconds)</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<title>Writing custom scaling plugins (Advanced)</title>
+<p>Autoscaling plugins are written in Ruby. You can see the built-in
+plugins in the <i>/s/etc/autoscaling/plugins/</i> directory. A simpler
+"skeleton" plugin might look like this:</p>
+<codeblock>
+  <codeph>require 'rubygems'
+
+class SkeletonPlugin &lt; Plugin
+
+  def platform_name
+    "Skeleton"
+  end
+
+  def scale_up
+    log "Scaling up..."
+    log platform_config.inspect
+  end
+
+  def handle_command
+    log "Handling command: #{cmd}"
+  end
+
+end
+</codeph>
+</codeblock>
+<p>The <codeph>log</codeph> function is available to all plugins and
+operates at the cloud controllers global log level.</p>
+<p>Once you have written a plugin, install the file in
+<i>/s/etc/autoscaling/plugins/</i>. Add configuration for the plugin in
+<i>/s/etc/autoscaling/autoscaling.yaml</i> under the
+<codeph>platform_config</codeph> key in a new section corresponding
+to the plugin name (in this case above: <codeph>skeleton</codeph>).
+Enable the plugin by adding it to the <codeph>enabled_plugins</codeph> list.</p>
+</section>
+<section>
+<title>Troubleshooting</title>
+<p>Most of the output from the scaling triggers comes from the health
+manager:</p>
+<codeblock>
+  <codeph>kato log tail health_manager
+</codeph>
+</codeblock>
+<p>Once scaling has been triggered by the health manager, you can check for
+the relevant platform API output in the controller:</p>
+<codeblock>
+  <codeph>kato log tail cloud_controller
+</codeph>
+</codeblock>
+</section>
+<section>
+<title>Testing</title>
+<p>If you want to emulate a scaling trigger, you can force a scale-up operation by issuing the following on the cloud controller node:</p>
+<codeblock>
+  <codeph>nats-pub health.scale '{"op": "up"}'
+</codeph>
+</codeblock>
+</section>
+</body>
+</topic>

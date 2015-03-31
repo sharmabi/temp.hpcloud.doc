@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1858">
+<title>HP Cloud OS Site Index</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--PUBLISHED-->
+ <!--./cloudos/siteindex.md-->
+ <!--permalink: /cloudos/siteindex/--></p>
+<p> <xref href="../cloudos/index.dita/" >◀ PREV</xref> | <xref href="./cloudos/index.dita" >▲ UP</xref> | NEXT ▶ </p>
+<section>
+<required-cleanup>
+<title>
+  HP Cloud OS Home
+</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+  Connect on the HP Cloud Community Forum
+</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+  HP Cloud OS Open Source and Third-Party Software License Agreements
+</title>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+  Prepare: Getting Started with HP Cloud OS
+</title>
+<ul>
+<li>
+<xref href="../cloudos/prepare.releasenotes.dita" >HP Cloud OS Release Notes</xref> </li>
+<li>
+<xref href="../cloudos/prepare.supportmatrix.dita" >HP Cloud OS Support Matrix for Hardware and Software</xref> </li>
+<li>
+<xref href="../cloudos/prepare.videos.dita" >Video Tutorials</xref> </li>
+<li>
+<xref href="../cloudos/prepare.faqs.dita" >FAQs</xref>  </li>
+<li>
+<xref href="../cloudos/prepare.overview.dita" >Technical Overview</xref>  </li>
+<li>
+<xref href="../cloudos/prepare.cloudtypes.dita" >Introduction to Cloud Types</xref> </li>
+<li>
+<xref href="../cloudos/prepare.glossary.dita" >Glossary</xref>
+</li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+  Install &amp; Configure Your Cloud
+</title>
+<ul>
+<li>
+<xref href="../cloudos/install.overview.dita" >Installation Overview</xref>
+</li>
+<li>
+<xref href="../cloudos/install.beforeyouinstall.dita" >Before You Install</xref>
+</li>
+<li>
+<xref href="../cloudos/install.admin-node-prerequisites.dita" >Set Admin Node Prerequisites (Required)</xref>
+</li>
+<li>
+<xref href="../cloudos/install.customize-server-types.dita" >Customize Server Types (Optional)</xref>
+</li>
+<li>
+<xref href="../cloudos/install.customize-network-connections.dita" >Customize Network Connections (Optional)</xref>
+</li>
+<li>
+<xref href="../cloudos/install.customize-network-settings.dita" >Customize Network Settings (Required)</xref>
+</li>
+<li>
+<xref href="../cloudos/install.complete-admin-node-installation.dita" >Complete Admin Node Installation (Required)</xref>
+</li>
+<li>
+<xref href="../cloudos/install.create-cloud.dita" >Create a Cloud</xref> </li>
+<li>
+<xref href="../cloudos/install.launch-admin-dashboard.dita" >Launch Administration Dashboard</xref>
+</li>
+<li>
+<xref href="../cloudos/install.license.dita" >Check the HP Cloud OS License</xref>
+</li>
+<li>
+<xref href="../cloudos/install.hotfixes.dita" >Install Hot Fixes</xref>
+</li>
+<li>
+<xref href="../cloudos/install.updates-and-extensions.dita" >Updates and Extensions</xref>
+</li>
+<li>
+<xref href="../cloudos/install.advanced-cloud-setup.dita" >Advanced Cloud Setup</xref>
+</li>
+<li>
+<xref href="../cloudos/install.install-modules-reference.dita" >Install Modules Reference</xref> </li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+  Manage your Cloud
+</title>
+<ul>
+<li>
+<xref href="../cloudos/manage.utilities.dita" >HP Cloud OS Utilities</xref>
+</li>
+<li>
+<xref href="../cloudos/manage.troubleshooting.dita" >HP Cloud OS Troubleshooting</xref> </li>
+<li>
+<xref href="../cloudos/manage.operational-dashboard.dita" >HP Cloud OS Operational Dashboard Help</xref> 
+
+<ul>
+<li>
+<xref href="/cloudos/manage/operational-dashboard/how-opdash-works" >How the Operational Dashboard Works</xref>
+</li>
+<li>
+<xref href="/cloudos/manage/operational-dashboard/environment-tab" >Operational Dashboard: Environment Tab</xref>
+</li>
+<li>
+<xref href="/cloudos/manage/operational-dashboard/cloud-tab" >Operational Dashboard: Cloud Tab</xref>
+</li>
+<li>
+<xref href="/cloudos/manage/operational-dashboard/settings-tab" >Operational Dashboard: Settings Tab</xref>
+</li>
+</ul>
+</li>
+<li>
+<xref href="../cloudos/manage.administration-dashboard.dita" >HP Cloud OS Administration Dashboard Help</xref>
+<!--A BR tag was used here in the original source.-->
+<ul>
+<li>
+<xref href="../cloudos/manage.administration-dashboard.before-you-begin.dita" >Before You Begin with the Administration Dashboard Help</xref>
+</li>
+<li>
+<xref href="../cloudos/manage.administration-dashboard.welcome.dita" >Welcome to the HP Cloud OS Administration Dashboard</xref>
+</li>
+<li>
+<xref href="../cloudos/manage.administration-dashboard.getting-started.dita" >Getting Started with the Administration Dashboard</xref>
+</li>
+<li>
+<xref href="../cloudos/manage.administration-dashboard.topology-designs.dita" >Topology Designs</xref>
+</li>
+<li>
+<xref href="../cloudos/manage.administration-dashboard.tasks-by-role.dita" >Administration Dashboard Tasks by Role</xref>
+</li>
+<li>
+<xref href="../cloudos/manage.administration-dashboard.tasks-by-tab.dita" >Administration Dashboard Tasks by Tab</xref>
+</li>
+</ul>
+</li>
+</ul>
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+  Develop
+</title>
+<ul>
+<li>
+<xref href="../cloudos/develop.quickstart-intro.dita" >API Quick Start</xref>
+</li>
+</ul>
+<!-- * [Value-Added Services](/cloudos/api/services/)   -->
+</required-cleanup>
+</section>
+<section>
+<required-cleanup>
+<title>
+  OpenStack Links
+</title>
+<ul>
+<li>
+<xref href="http://docs.openstack.org/" scope="external" format="html" >OpenStack documentation home page</xref>
+</li>
+<li>
+<xref href="http://docs.openstack.org/glossary/content/glossary.html" scope="external" format="html" >OpenStack Glossary</xref>
+</li>
+<li>
+<xref href="http://docs.openstack.org/user-guide/content/index.html" scope="external" format="html" >OpenStack End User Guide</xref>
+</li>
+<li>
+<xref href="http://docs.openstack.org/trunk/openstack-compute/admin/content/index.html" scope="external" format="html" >OpenStack Cloud Administrator Guide</xref>
+</li>
+<li>
+<xref href="http://docs.openstack.org/trunk/openstack-network/admin/content/index.html" scope="external" format="html" >OpenStack Networking Administration Guide</xref>
+</li>
+<li>
+<xref href="http://docs.openstack.org/trunk/openstack-ops/content/index.html" scope="external" format="html" >OpenStack Operations Guide</xref>
+</li>
+</ul>
+<p>
+  <xref href="#topic1858/top"> Return to Top ↑ </xref>
+</p>
+</required-cleanup>
+</section>
+</body>
+</topic>
