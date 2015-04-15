@@ -11,7 +11,9 @@
 <p>
 <!--UNDER REVISION-->
  <!--./master-toc.md-->
- <!--permalink: /mastertoc/--></p>
+ <!--permalink: /mastertoc/-->
+ <!--Greg's Change-->
+ </p>
 <p>This file is rebuilt each time docs-emergency-build is run.
 The file is not copied to the master branch and not pushed to production.</p>
 <ul>
