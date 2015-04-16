@@ -73,7 +73,7 @@ Cinder - /var/log/upstart
 </codeph>
 </codeblock>
 
-<p>Gather these logs and contact HP support team.</p>
+<p>Gather these logs and contact the HP support team.</p>
 </li>
 <li>
 <p>If any Placement Group (PG)-related issues occur in the Ceph cluster, refer to the following link:</p>
