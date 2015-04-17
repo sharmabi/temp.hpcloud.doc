@@ -14,7 +14,7 @@
 	<target name="webhelp" depends="integrate" description="Builds webhelp files and TOC.">
 		<property name="transtype" value="webhelp"/>
 		<property name="output.dir" value="${source.dir}/out/webhelp"/>
-		<property name="args.input" value="${source.dir}/en_us/docs.hpcloud.com.ditamap"/>
+		<property name="args.input" value="${source.dir}/docs.hpcloud.com.ditamap"/>
 		<property name="dita.temp.dir" value="${source.dir}/temp/webhelp"/>   
 		<ant antfile="${dita-ot.dir}${file.separator}build.xml" target="init"/>
 	</target>
