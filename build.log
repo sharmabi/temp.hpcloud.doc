@@ -1,0 +1,1234 @@
+Building HTML docs:
+Buildfile: /Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/build.xml
+
+init:
+
+start-process:
+
+init-logger:
+
+init-URIResolver:
+
+use-init:
+
+check-arg:
+[DOTA012W][WARN] Argument "dita.input.valfile" is deprecated. Please use the argument "args.filter" instead.
+     [echo] *****************************************************************
+     [echo] * basedir = /Users/scottb/Documents/git/hpcloud_docs_temp
+     [echo] * dita.dir = /Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT
+     [echo] * input = /Users/scottb/Documents/git/hpcloud_docs_temp/docs.hpcloud.com.ditamap
+     [echo] * inputdir = /Users/scottb/Documents/git/hpcloud_docs_temp
+     [echo] * transtype = webhelp
+     [echo] * tempdir = /Users/scottb/Documents/git/hpcloud_docs_temp/temp/webhelp
+     [echo] * outputdir = /Users/scottb/Documents/git/hpcloud_docs_temp/../../products/en_us/
+     [echo] * extname = ${dita.ext}
+     [echo] * clean.temp = true
+     [echo] * DITA-OT version = 1.7.5
+     [echo] * XML parser = Xerces
+     [echo] * XSLT processor = Xalan
+     [echo] * collator = ICU
+     [echo] *****************************************************************
+     [echo] #Ant properties
+     [echo] #Thu Apr 16 18:11:39 PDT 2015
+     [echo] args.css.file.temp=${args.css}
+     [echo] args.css.real=${args.css}
+     [echo] args.default.language=en-US
+     [echo] args.filter=/Applications/oxygen/samples/dita/my_ditaval.ditaval
+     [echo] args.grammar.cache=yes
+     [echo] args.hide.parent.link=no
+     [echo] args.input=/Users/scottb/Documents/git/hpcloud_docs_temp/docs.hpcloud.com.ditamap
+     [echo] args.logdir=/Users/scottb/Documents/git/hpcloud_docs_temp/../../products/en_us/
+     [echo] args.message.file=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/resource/messages.xml
+     [echo] args.xhtml.classattr=yes
+     [echo] args.xml.systemid.set=yes
+     [echo] dita.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT
+     [echo] dita.empty=
+     [echo] dita.input.dirname=/Users/scottb/Documents/git/hpcloud_docs_temp
+     [echo] dita.input.filename=docs.hpcloud.com.ditamap
+     [echo] dita.input.valfile=/Applications/oxygen/samples/dita/my_ditaval.ditaval
+     [echo] dita.map.filename.root=docs.hpcloud.com
+     [echo] dita.plugin.com.citrix.qa.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/com.citrix.qa
+     [echo] dita.plugin.com.oxygenxml.dita-ot.plugin.webhelp.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/com.oxygenxml.webhelp
+     [echo] dita.plugin.com.oxygenxml.highlight.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/com.oxygenxml.highlight
+     [echo] dita.plugin.com.reallysi.xmldomain.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.xmldomain.html
+     [echo] dita.plugin.com.sophos.tocjs.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/com.sophos.tocjs
+     [echo] dita.plugin.net.sourceforge.d4p.graphviz.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.graphviz
+     [echo] dita.plugin.net.sourceforge.d4p.subjectscheme2navmap.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.subjectscheme2navmap
+     [echo] dita.plugin.net.sourceforge.dita4publishers.common.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.common.html
+     [echo] dita.plugin.net.sourceforge.dita4publishers.common.mapdriven.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.common.mapdriven
+     [echo] dita.plugin.net.sourceforge.dita4publishers.common.xslfo.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.common.xslfo
+     [echo] dita.plugin.net.sourceforge.dita4publishers.common.xslt.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.common.xslt
+     [echo] dita.plugin.net.sourceforge.dita4publishers.doctypes.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.doctypes
+     [echo] dita.plugin.net.sourceforge.dita4publishers.enumeration-d.fo.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.enumeration-d.fo
+     [echo] dita.plugin.net.sourceforge.dita4publishers.enumeration-d.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.enumeration-d.html
+     [echo] dita.plugin.net.sourceforge.dita4publishers.epub.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.epub
+     [echo] dita.plugin.net.sourceforge.dita4publishers.epub3.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.epub3
+     [echo] dita.plugin.net.sourceforge.dita4publishers.formatting-d.fo.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.formatting-d.fo
+     [echo] dita.plugin.net.sourceforge.dita4publishers.formatting-d.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.formatting-d.html
+     [echo] dita.plugin.net.sourceforge.dita4publishers.html2.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.html2
+     [echo] dita.plugin.net.sourceforge.dita4publishers.html5.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.html5
+     [echo] dita.plugin.net.sourceforge.dita4publishers.kindle.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.kindle
+     [echo] dita.plugin.net.sourceforge.dita4publishers.math-d.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.math-d.html
+     [echo] dita.plugin.net.sourceforge.dita4publishers.math.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.math
+     [echo] dita.plugin.net.sourceforge.dita4publishers.media-d.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.media-d.html
+     [echo] dita.plugin.net.sourceforge.dita4publishers.pubContent-d.fo.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.pubContent-d.fo
+     [echo] dita.plugin.net.sourceforge.dita4publishers.pubmap.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.pubmap.html
+     [echo] dita.plugin.net.sourceforge.dita4publishers.rss.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.rss
+     [echo] dita.plugin.net.sourceforge.dita4publishers.ruby-d.fo.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.ruby.fo
+     [echo] dita.plugin.net.sourceforge.dita4publishers.ruby.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.ruby.html
+     [echo] dita.plugin.net.sourceforge.dita4publishers.sample.epub_override.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.sample.epub_override
+     [echo] dita.plugin.net.sourceforge.dita4publishers.shakespear.doctypes.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.shakespear.doctypes
+     [echo] dita.plugin.net.sourceforge.dita4publishers.shakespear.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.shakespear.html
+     [echo] dita.plugin.net.sourceforge.dita4publishers.variables-d.html.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.variables-d.html
+     [echo] dita.plugin.net.sourceforge.dita4publishers.variables-d.pdf.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.variables-d.pdf
+     [echo] dita.plugin.net.sourceforge.dita4publishers.word2dita.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.word2dita
+     [echo] dita.plugin.net.sourceforge.dita4publishers.xmldomain.doctypes.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.xmldomain.doctypes
+     [echo] dita.plugin.net.sourceforge.dita4publishers.xmldomain.fo.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/net.sourceforge.dita4publishers.xmldomain.fo
+     [echo] dita.plugin.org.dita.base.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT
+     [echo] dita.plugin.org.dita.docbook.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita.docbook
+     [echo] dita.plugin.org.dita.eclipsecontent.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita.eclipsecontent
+     [echo] dita.plugin.org.dita.eclipsehelp.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT
+     [echo] dita.plugin.org.dita.htmlhelp.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT
+     [echo] dita.plugin.org.dita.javahelp.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT
+     [echo] dita.plugin.org.dita.legacypdf.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/legacypdf
+     [echo] dita.plugin.org.dita.odt.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT
+     [echo] dita.plugin.org.dita.pdf.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita.pdf
+     [echo] dita.plugin.org.dita.pdf2.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita.pdf2
+     [echo] dita.plugin.org.dita.specialization.dita11.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita.specialization.dita11
+     [echo] dita.plugin.org.dita.specialization.dita132.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita.specialization.dita132
+     [echo] dita.plugin.org.dita.specialization.eclipsemap.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita.specialization.eclipsemap
+     [echo] dita.plugin.org.dita.specialization.h2d.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/h2d
+     [echo] dita.plugin.org.dita.troff.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita.troff
+     [echo] dita.plugin.org.dita.wordrtf.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita.wordrtf
+     [echo] dita.plugin.org.dita.xhtml.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT
+     [echo] dita.plugin.org.dita2indesign.dita2indesign.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.dita2indesign.dita2indesign
+     [echo] dita.plugin.org.ditafromxliff.x2d.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/demo/ditafromxliff
+     [echo] dita.plugin.org.example.d4p.html2extensions.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.example.d4p.html2extensions
+     [echo] dita.plugin.org.example.d4p.word2ditaextension.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/plugins/org.example.d4p.word2ditaextension
+     [echo] dita.plugin.org.xliff.d2x.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/demo/xliff
+     [echo] dita.preprocess.reloadstylesheet=false
+     [echo] dita.resource.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/resource
+     [echo] dita.script.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/xsl
+     [echo] dita.temp.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/temp/webhelp
+     [echo] dita.topic.filename.root=docs.hpcloud.com.ditamap
+     [echo] dita2wordToDita.buildfile.dir=/Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT
+     [echo] *****************************************************************
+
+output-css-warn-message:
+
+output-msg:
+
+build-init:
+
+check-license:
+     [java] 
+     [java] Oxygen Webhelp version 15.2, build number 2014012017
+     [java] 
+     [java] Oxygen Webhelp license valid, licensed to: Eucalyptus Systems, start date: Nov 8, 2013, license version: 15
+
+dita.map.webhelp.init:
+
+gen-list:
+ [gen-list] GenMapAndTopicListModule.execute(): Starting...
+ [gen-list] Using Xerces grammar pool for DTD and schema caching.
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/docs.hpcloud.com.ditamap
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.delete.dita
+ [gen-list] [DOTX008W][WARN] File '/Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Routers/NetworkConnections.png' cannot be loaded, and no navigation title is specified for the table of contents.
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1dancer.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/hpcloudconsole.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/client/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-management.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.glossary.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.utilities.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.reference.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/identity.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-organizations.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.1node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.release-notes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/IP_Addresses/1.1commercial.managing.ipaddress.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.dashboard.projects.users.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-information.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.managing.domains.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/1.2stackatoyml.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/services/1.2port-service.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.block-storage.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/server/1.2aok.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.0glossary.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.administration-dashboard.before-you-begin.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-icinga.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Security/1.1commercial.managing.security.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform_commercial_install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial-ceph-helion-openstack-nova-ceph-Storage.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1catalyst.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/1.2clojure.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.0php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.hotfixes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/cluster/1.2autoscaling.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.installation.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-history.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-miscellaneous.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/helion/devplatform/1.1/install/community/index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/helion/devplatform/1.1/install/index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.1known-issues.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.1app-logs.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/1.1commercial.dashboard.admin.dita
+ [gen-list] [DOTX008W][WARN] File '/Users/scottb/Documents/git/hpcloud_docs_temp/media/HorizonUI_Admin_beta.png' cannot be loaded, and no navigation title is specified for the table of contents.
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.admin.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-imaging-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1glossary.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-control.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.1configuration.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.1add-service.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/console/1.2app-store.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2cgiapppsgi.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.1aok.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/services/1.2data-services.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.0app-logs.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.1harbor.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Images/1.1commercial.dashboard.snapshot.public.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/python/1.2django.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.0harbor.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.0router.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.1router.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-sherpa-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/1.2orgs-spaces.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.eclipse.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.pause.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/1.2java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Object_Storage/1.1commercial.dashboard.container.upload.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/dns.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-serviceplans.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.install.virtual.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-spaces.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.dashboard.projects.quotas.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.database-instance.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.networking-maskedIP.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.1cloud-init.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/1.2buildpack.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/workbook/helloworld/1.2helloworld.php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-reporting-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.delete.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-peer-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/plugins.teamcity.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-volume-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/site-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-spacequotas.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-securitygroups.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/reference/1.2groups.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.launch-admin-dashboard.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-networking-howto.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-networking-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.snapshot.public.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.customize-network-connections.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.admin.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Security/1.1commercial.dashboard.security.groups.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-prereqs-network.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-ironic-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-helion-openstack-glance-ceph-interoperability.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/python/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.marketplace.install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.using-the-messaging-service.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-identity-howto.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/reference/1.2troubleshoot.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/api.copyright.v13.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/404error.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-quotas.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.1php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.0memcached.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-volume-howto.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/best-practices/1.1logging-examples.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.commands.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.troubleshooting.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.license.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1environment.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/release-notes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-applications.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-intro.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.domains.flavors.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-buildpacks.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/downloads.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.0clojure.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/database/1.0database.node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-pre-installation-hardware-software.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-object-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-troubleshooting.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.start.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cdn.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/best-practices/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.0port-service.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/helloworld/1.1helloworld.java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/workbook/database/1.2database.node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-object-howto.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.database-ALS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-automated-install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/develop.quickstart-usecase1.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.administration-dashboard.tasks-by-role.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.1kato-ref.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.1docker.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-quotas.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.related-topics.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commerical.services-reporting-bestpractice.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.1app-debug.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/1.2node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-brokers.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/1.1commercial.dashboard.managing.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-user-management.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commerical.services-ceph-archref.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.ports.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/console/1.2customize.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.0orgs-spaces.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/console/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.0newrelic.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.operational-dashboard.settings-tab.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-object-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-domains.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-imaging-howto.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.1ruby.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-flags.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-imaging-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/1.2manifestyml.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-rados-gateway-client.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/block-storage.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Object_Storage/1.1commercial.managing.objects.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.1autoscaling.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1mason.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-spaces.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commerical.services-reporting-APIExtensions.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.install-modules-reference.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.0user-provided.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-pre-installation-high-availability-cloud-networking.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/compute.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/console/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-applications.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.1operations.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.using-messaging-service-with-ALS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.0environment.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-reporting-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-brokers.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/server/1.2logging.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.release-notes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-imaging-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-routes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.extend.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-compute-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-manual-install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.operational-dashboard.environment-tab.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.1troubleshoot.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.dashboard.projects.view.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/database/1.1database.php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.deploy-ALS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-administration.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.faqs.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/workbook/messaging/1.2messaging.node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.advanced-cloud-setup.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/workbook/database/1.2database.java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.deploy-swift.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/helloworld/1.1helloworld.node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/messaging/1.1messaging.php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.appdev.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.deploy-ALS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-information.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.0ruby.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.troubleshooting.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.1memcached.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/api.copyright.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.troubleshooting.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/siteindex.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.snapshot.protect.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/console/1.1customize.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.database-ALS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/master-toc.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-pre-installation.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.thirdparty.licensing.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/database/1.0database.java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-tripleo-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/reference/1.2architecture.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-rados-gateway-dmz-ha-proxy.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/best-practices/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.0kato-ref.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/reference/1.2kato-ref.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.1newrelic.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-focus-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-helion-openstack-ceph-storage-administration.dita
+ [gen-list] [DOTX008W][WARN] File '/Users/scottb/Documents/git/hpcloud_docs_temp/media/communication_diagram_from_helion_ceph.png' cannot be loaded, and no navigation title is specified for the table of contents.
+ [gen-list] [DOTX008W][WARN] File '/Users/scottb/Documents/git/hpcloud_docs_temp/media/ceph_icinga.png' cannot be loaded, and no navigation title is specified for the table of contents.
+ [gen-list] [DOTX008W][WARN] File '/Users/scottb/Documents/git/hpcloud_docs_temp/media/icinga_check_mk.png.png' cannot be loaded, and no navigation title is specified for the table of contents.
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.release-notes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/helloworld/1.0helloworld.php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/server/1.2router.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/messaging/1.0messaging.node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.1data-services.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-helion-openstack-ceph-hp-helion-openstack-cinder-storage.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.1filesystem.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.metadata.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.administration-dashboard.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.horizonui.install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.suspend.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.updates-and-extensions.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/1.2app-debug.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.services.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.managing.volumes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.0groups.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/community.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/workbook/helloworld/1.2helloworld.node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/database/1.0database.php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.setup-swift.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.operational-dashboard.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-identity-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.0known-issues.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.related-topics.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1cgiapppsgi.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commerical.services-reporting-RBAC.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/develop.quickstart-usecase3.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.administration-dashboard.getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.dashboard.network.shared.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-domains.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial-ceph-hp-helion-openstack-ceph-configuration.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-cluster-client-node-configuration-ansible.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.related-topics.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.identity.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/helloworld/1.0helloworld.java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-dcn-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/quick-start/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/best-practices/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/python/1.1django.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2mojo.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.sysadmin.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.0cloud-init.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/quick-start/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-identity-using.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-compute-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.troubleshoot.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/401error.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.projects.primary.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.beforeyouinstall.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/develop.quickstart-usecase2.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.videos.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.using-the-messaging-service.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-service-management.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.install.baremetal.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/server/1.2upgrade.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2perlcgi.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-control.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.deploy-ALS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/sitemap.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.dashboard.network.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.terminate.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.eula.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1troubleshoot.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/1.2newrelic.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/1.2ruby.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.3rd-party-license-agreements.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.details.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-serviceplans.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-tokens.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/services/1.2memcached.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.0node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.1buildpack.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.0troubleshoot.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.network.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-prereqs.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/console/1.0customize.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-object-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Object_Storage/1.1commercial.dashboard.container.edit.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/upload-publish-partner-images135.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform_community_install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-compute-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.1user-provided.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/messaging/1.1messaging.java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.marketplace.install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.eclipse.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.password.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/glossary.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.connect.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.folder-operations.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/best-practices/1.0logging-examples.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/os-3rd-party-licenses.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.supportmatrix.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-technical-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-post-installation-configure-DNaaS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.managing.instances.users.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-compute-howto.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/cluster/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/automation/csa.index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.1upgrade.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.using-the-messaging-service.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.security.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.operational-dashboard.cloud-tab.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.dashboard.network.viewing.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/messaging/1.0messaging.php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/reference/1.2add-service.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-post-installation-neutron-integration.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.misc.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.name-resolution.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Object_Storage/1.1commercial.dashboard.container.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.hwsw-requirements.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.1architecture.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/1.2other-frameworks.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.thirdparty.licensing.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.subnet.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/client/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.release-notes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-routes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-organizations.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commerical.services-reporting-metertypes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.0manifestyml.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Security/1.1commercial.dashboard.security.keypairs.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/workbook/helloworld/1.2helloworld.java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-horizon-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2environment.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/object-storage.tutorial.introduction.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.administration-dashboard.welcome.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.install-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.sysadmin.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.cloudtypes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.aggregate.managing.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/server/1.2operations.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/workbook/messaging/1.2messaging.php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-flags.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Security/1.1commercial.dashboard.users.password.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.flavors.access.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/cluster/1.2harbor.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.0go.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.0stackatoyml.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.1groups.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.marketplace.install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.shared.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.attach.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/1.2app-logs.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.administration-dashboard.topology-designs.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform_commercial_install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-compute-howto.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/services/1.2filesystem.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.using-messaging-service-with-ALS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/dbaas.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/quick-start/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/console/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/console/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.create-cloud.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.0troubleshoot.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-tokens.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.complete-admin-node-installation.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/workbook/messaging/1.2messaging.java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/database/1.1database.node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.1external-db.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/services/1.2user-provided.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commercial.services-reporting-alarms.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.0other-frameworks.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.managing.projects.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/workbook/database/1.2database.php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/maas.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.managing.network.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.database-ALS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2glossary.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-monitoring.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/cluster/1.2cloud-init.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.eclipse.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.0docker.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-volume-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-rados-gateway.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.0configuration.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commercial.services-reporting-troubleshoot.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.sysadmin.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-user-management.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.0java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/1.2go.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/1.2php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-identity-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.snapshot.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/console/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-service-management.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.database-instance.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2troubleshoot.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-placement.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.rebuild.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2dancer.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.compute.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.dashboard.how-works.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.1java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/object-storage.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/client/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/develop.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-orchestration-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.0aok.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-spacequotas.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-identity-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.network-requirements.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.thirdparty.licensing.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-post-installation.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/vpn-quickstart.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.eula.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/database/1.1database.java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/vpn-multisite.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.0app-debug.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/publiccloud-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-placement.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-pre-requisite.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/messaging/1.0messaging.java.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.1port-service.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.related-topics.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.admin-node-prerequisites.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.release-notes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.1clojure.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-securitygroups.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/develop.quickstart-intro.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercia.ceph-high-availability-RADOSGW-authentication.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform_community_install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.managing.users.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/IP_Addresses/1.1commercial.dashboard.ipaddress.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/console/1.0app-store.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.reboot.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.dashboard.projects.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-post-installation-configure-network.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-hlm.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.operational-dashboard.how-opdash-works.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/codar-landing-page.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.1go.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/dbaas.tutorial.introduction.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Routers/1.1commercial.managing.routers.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/cluster/1.2external-db.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-volume-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.containers-and-folders.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.0filesystem.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.1manifestyml.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/server/1.2docker.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/server/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/helloworld/1.1helloworld.php.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.1orgs-spaces.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-management.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.eula.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-eve-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.using-messaging-service-with-ALS.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudsystem.landingpage.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commerical.services-reporting-components.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-identity-configure-v3.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1perlcgi.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/server/1.2configuration.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.reference.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.0operations.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2mason.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/helloworld/1.0helloworld.node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.0external-db.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.database-instance.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/best-practices/1.2logging-examples.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-services.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.storage.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.enable.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-buildpacks.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-network.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/1.1commercial.dashboard.users.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.1logging.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.0logging.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.verify.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-authentication.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.0client-ref.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-reporting-howto.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.dashboard.network.disable.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-glossary.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/bindings.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.appdev.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-networking-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/services/1.0data-services.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.create.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1mojo.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/workbook/messaging/1.1messaging.node.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-support-matrix.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.0architecture.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.0buildpack.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-miscellaneous.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.appdev.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/hz.whatsnewjan.2014.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/openstack.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-focus-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.site-index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.0autoscaling.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.dashboard.launch.dita
+ [gen-list] [DOTX008W][WARN] File '/Users/scottb/Documents/git/hpcloud_docs_temp/media/HorizonProjectMenu.png' cannot be loaded, and no navigation title is specified for the table of contents.
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-logging-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.faq.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/python/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/rdb.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-related-topics.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.3rd-party-licenses.old.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-eve-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-reporting-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.customize-network-settings.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-networking-getting-started.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.modify.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.customize-server-types.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-services.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/helion.rack.solution.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.openstack.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2catalyst.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.0add-service.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/server/1.0upgrade.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.help.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/console/1.1app-store.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.managing.images.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-peer-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-history.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-post.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/reference/1.2known-issues.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.1index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/services.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/1.1stackatoyml.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/console/1.0index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.eula.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/lbaas.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-administration.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.administration-dashboard.tasks-by-tab.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.releasenotes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.dashboard.launch.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/manage.troubleshooting.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/manage.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/manage.administration-dashboard.welcome.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/manage.administration-dashboard.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/install.updates-and-extensions.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Images/UseCases/TasksforUsers/Images/1.1commercial.dashboard.snapshot.protect.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.ALS-developer-trial-quick-start.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/manage.utilities.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/dns-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-vsa.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-3par.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/install.license.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/UseCases/TasksforAdmins/Images/1.1commercial.dashboard.snapshot.public.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-prereqs.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.technical-overview.ga.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/install.overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/install.hotfixes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commerical.services-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-supportmatrix.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.dashboard.how-works.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.faq.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-post-kvm.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-esx.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-post-esx.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-kvm.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/commercial/GA1/ceph/1.1commenrcial.ceph-pre-requisite.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/manage.operational-dashboard.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/cinder-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-add-nodes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.backup-restore-GA.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commerical.services-remove-replace-failed-overcloud-nodes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commerical.services-object-pyringos.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/prepare.videos.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform_commercial_install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commerical.services-identity-integrate-ldap.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-NTP.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/commercial/GA1/1.1commercial.install-GA-prereqs.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-JSON.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community/community.services-orchestration-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community/community.services-networking-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/manage.administration-dashboard.before-you-begin.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/devplatform/1.2/1.2devplatform.database-instance.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/devplatform/1.2/1.2devplatform.marketplace.install.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commerical.services-identity-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commerical.services-identity-configure-v3.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commerical.services-identity-using.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/install.beforeyouinstall.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/prepare.overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.13rd-party-license-agreements.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.ALS-developer-trial-quick-start.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/prepare.cloudtypes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/lbaas-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/nova-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/glance-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/maas-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/cdn-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/keystone-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/keystonev2-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/neutron-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/swift-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/apidocs/c1.1/dbaas-api.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/prepare.glossary.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.ALS-developer-trial-quick-start.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-rados-gateway-pools.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/prepare.releasenotes.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.0commerical.services-object-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/UseCases/TasksforUsers/Images/1.1commercial.dashboard.snapshot.protect.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/commercial/GA1/1.1commercial.index.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/commercial/GA1/1.1commercial.install-GA-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/install.customize-server-types.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.install-GA-ESX-Proxy.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commerical.services-scale-out-swift.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.1commercial.-vsa-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/commercial/GA1/1.1commercial.install-GA-supportmatrix.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.0commercial.install-GA-overview.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/install.customize-network-settings.dita
+ [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.03rd-party-license-agreements.dita
+ [gen-list] Serializing job specification
+ [gen-list] GenMapAndTopicListModule.execute(): Execution time: 2.242 seconds
+
+debug-filter:
+   [filter] DebugAndFilterModule.execute(): Starting...
+   [filter] Using Xerces grammar pool for DTD and schema caching.
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.database-ALS.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.admin.create.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/api.copyright.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.deploy-ALS.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/1.2go.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-service-management.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.thirdparty.licensing.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/vpn-multisite.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.0autoscaling.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.extend.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Object_Storage/1.1commercial.dashboard.container.edit.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.0client-ref.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-object-howto.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.eclipse.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/block-storage.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Object_Storage/1.1commercial.dashboard.container.create.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-pre-installation-hardware-software.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-brokers.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-administration.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-rados-gateway-client.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/openstack.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/index.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-domains.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-spaces.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-organizations.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/index.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.admin.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-identity-configure-v3.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.snapshot.public.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../../../UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.create.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-flags.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-control.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-buildpacks.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.enable.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-securitygroups.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1api.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-getting-started.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.dashboard.projects.users.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Security/1.1commercial.dashboard.security.groups.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.thirdparty.licensing.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.network.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/hz.whatsnewjan.2014.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.customize-server-types.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/install.admin-node-prerequisites.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './cloudos/install.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-placement.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/cluster/1.2autoscaling.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.launch-admin-dashboard.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/install.create-cloud.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './cloudos/install.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.related-topics.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.reboot.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-tokens.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-logging-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-tripleo-overview.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../community/community.services-compute-overview.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './community/community.services-networking-overview.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-services.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-reporting-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-object-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/maas.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.faqs.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/prepare.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.network-requirements.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-reporting-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.related-topics.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/rdb.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.overview.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/prepare.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-quotas.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-rados-gateway-dmz-ha-proxy.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercia.ceph-high-availability-RADOSGW-authentication.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-service-management.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/admin/reference/1.2kato-ref.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.shared.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.dashboard.projects.quotas.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.reference.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.projects.primary.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-ironic-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.verify.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-applications.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.install.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commerical.services-reporting-APIExtensions.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.utilities.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/manage.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './cloudos/manage.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Images/1.1commercial.dashboard.snapshot.public.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../../../UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.create.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.aggregate.managing.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.eula.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'www.hp.com', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2glossary.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-flags.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.details.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/1.2clojure.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commerical.services-reporting-components.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/vpn-quickstart.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1mojo.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.1clojure.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/IP_Addresses/1.1commercial.dashboard.ipaddress.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-volume-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-management.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.index.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/community.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/index.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-focus-getting-started.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-post-installation.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-miscellaneous.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-orchestration-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-eve-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudsystem.landingpage.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-tokens.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-buildpacks.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-helion-openstack-ceph-storage-administration.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.reference.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-pre-installation-high-availability-cloud-networking.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/Ha-resilient-cloud-infrastructure.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/ha-architecture.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/Ha-api-request-flow.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/ha-nodefailure-1.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/ha-nodefailure-2.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/ha-nodefailure-3.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/mysql-galera-cluster.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/ha-cinder-volume.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/ha-availability-zone.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/ha-block-storage.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/ha-swift.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-eve-getting-started.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-imaging-howto.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Security/1.1commercial.managing.security.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/plugins.teamcity.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.install-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1cgiapppsgi.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.create.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1mason.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.managing.domains.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-hlm.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.managing.users.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.eula.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'www.hp.com', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.flavors.access.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.admin-node-prerequisites.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/install.beforeyouinstall.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './cloudos/install.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.eclipse.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.troubleshoot.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-identity-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-applications.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.0go.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-compute-howto.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/codar-landing-page.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.administration-dashboard.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/manage.operational-dashboard.settings-tab.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './cloudos/manage.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-spaces.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.marketplace.install.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial-ceph-helion-openstack-nova-ceph-Storage.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-rados-gateway.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.identity.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1catalyst.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.openstack.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/api.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-prereqs-network.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/topology_kvm.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/topology_esxnew.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-management.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/helion.rack.solution.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/IP_Addresses/1.1commercial.managing.ipaddress.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2api.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-network.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-serviceplans.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-troubleshooting.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial-ceph-hp-helion-openstack-ceph-configuration.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/dbaas.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.create.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Object_Storage/1.1commercial.managing.objects.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-organizations.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.attach.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.ports.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-routes.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.windows.2.help.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-miscellaneous.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-automated-install.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-user-management.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-index.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-quotas.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/automation/csa.index.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2mojo.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.dashboard.projects.create.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/dns.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.managing.images.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.related-topics.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-information.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.cloudtypes.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/prepare.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-pre-requisite.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../../../commercial/GA1/ceph/1.1commerical.services-ceph-archref.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './commercial/GA1/1.1commercial.index.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-volume-howto.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.license.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/install.launch-admin-dashboard.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './cloudos/install.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/install.hotfixes.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/index.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/index.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.rebuild.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.eula.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'www.hp.com', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.horizonui.install.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../../devplatform/1.2/helion/1.2index.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './devplatform/1.2/1.2devplatform.database-instance.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.networking-maskedIP.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.deploy-ALS.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.marketplace.install.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.hotfixes.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/install.license.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './cloudos/install.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.dashboard.how-works.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.snapshot.create.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../../../UseCases/TasksforAdmins/Images/1.1commercial.dashboard.snapshot.public.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.password.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.connect.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-control.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.dashboard.projects.view.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-domains.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-glossary.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-post-installation-configure-DNaaS.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.operational-dashboard.settings-tab.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/manage.operational-dashboard.cloud-tab.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.thirdparty.licensing.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/api.copyright.v13.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-getting-started.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-serviceplans.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.1autoscaling.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.terminate.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-dcn-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.eclipse.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.related-topics.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.modify.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-post-installation-neutron-integration.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/object-storage.tutorial.introduction.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-reporting-getting-started.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.delete.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-peer-getting-started.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.start.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.1devplatform.database-ALS.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/install.overview.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/install.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './cloudos/install.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2mason.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/1.2devplatform.marketplace.install.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.0kato-ref.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.eula.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'www.hp.com', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.site-index.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.0glossary.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-focus-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/os-3rd-party-licenses.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-helion-openstack-glance-ceph-interoperability.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.create.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Security/1.1commercial.dashboard.security.keypairs.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-history.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.dashboard.network.create.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/perl/1.1dancer.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.database-ALS.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/docs.hpcloud.com.ditamap
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.0clojure.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2cgiapppsgi.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.create.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/CarrierGrade/carrier-grade-install-overview.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../../../commercial/GA1/1.1commercial.index.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/services.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.release-notes.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/bindings.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.storage.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.0devplatform.deploy-ALS.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/1.1commercial.dashboard.users.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-securitygroups.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commercial.services-reporting-alarms.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-reporting-howto.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Images/1.1commercial.dashboard.snapshot.protect.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-pre-installation.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../../../commercial/GA1/1.1commercial.install-GA-prereqs.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.managing.instances.users.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-brokers.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-icinga.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Volumes/1.1commercial.managing.volumes.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.managing.network.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/Landing/1.1commercial.landing.security.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.dashboard.network.shared.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.subnet.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-helion-openstack-ceph-hp-helion-openstack-cinder-storage.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.pause.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-administration.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/1.1commercial.dashboard.admin.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.dashboard.network.viewing.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-history.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-information.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/neutron/1.1commercial_neutron-intro.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/commercial_cloud-network-integration-openstack-services.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.delete.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/lbaas.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceilometer/1.1commercial.services-reporting-troubleshoot.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.administration-dashboard.before-you-begin.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/manage.administration-dashboard.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file './cloudos/manage.administration-dashboard.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-compute-howto.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.dashboard.launch.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commerical.services-ceph-archref.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '%20/helion/openstack/1.1/services/ceph/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../../../commercial/GA1/1.1commercial.index.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/helion-openstack.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/helion-cephcomm.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/helion-cephlogicalarch.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/helion-cephdeploy.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file 'javascript:window.open('/media/ceph-deployment-example.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Security/1.1commercial.dashboard.users.password.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commenrcial.ceph-monitoring.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Projects/1.1commercial.managing.projects.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.domains.flavors.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/publiccloud/cli.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1client-ref-placement.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2dancer.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/cluster/1.0cloud-init.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.1go.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/prepare.videos.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/prepare.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/deploy/languages/1.0java.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Object_Storage/1.1commercial.dashboard.container.upload.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.create.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-compute-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/manage.dita
+   [filter] [DOTJ028E][ERROR] No format attribute was found on a reference to file '../cloudos/index.dita/', which does not appear to be a DITA file. If this is not a DITA file, set the format attribute to an appropriate value, otherwise set the format attribute to "dita".
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/index.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-networking-howto.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/user/reference/1.1glossary.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.suspend.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-user-management.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/UseCases/TasksforUsers/Networks/1.1commercial.dashboard.network.disable.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/helion/admin/reference/1.1kato-ref.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-sherpa-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-services.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-peer-overview.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/services-identity-howto.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/ceph/1.1commercial.ceph-authentication.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-identity-using.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-routes.dita
+   [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2catalyst.dita
+   [filter] Execution time: 0.886 seconds
+
+copy-image-check:
+
+copy-image-uplevels:
+
+copy-image-noraml:
+
+copy-image:
+
+copy-html-check:
+
+copy-html:
+
+copy-flag-check:
+
+copy-flag:
+
+copy-subsidiary-check:
+
+copy-subsidiary:
+
+copy-generated-files:
+     [copy] Copying 2 files to /Users/scottb/Documents/products/en_us
+
+copy-files:
+
+conrefpush-check:
+
+conrefpush:
+
+conref-check:
+
+conref:
+
+move-meta-entries-check:
+
+move-meta-entries:
+[move-meta] Reading /Users/scottb/Documents/git/hpcloud_docs_temp/temp/webhelp/docs.hpcloud.com.ditamap
+
+keyref-check:
+
+keyref:
+
+coderef-check:
+
+coderef:
+
+mapref-check:
+
+mapref:
+   [mapref] Transforming into /Users/scottb/Documents/git/hpcloud_docs_temp/temp/webhelp
+   [mapref] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/temp/webhelp/docs.hpcloud.com.ditamap to /Users/scottb/Documents/git/hpcloud_docs_temp/temp/webhelp/docs.hpcloud.com.ditamap.ref
+   [mapref] Loading stylesheet /Users/scottb/Documents/git/hpcloud_docs_temp/tools/DITA-OT/xsl/preprocess/mapref.xsl
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.
+   [mapref] Warning:  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+   [mapref] : Error! -1
+   [mapref] Failed to process null
