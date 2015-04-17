@@ -29,7 +29,7 @@ check-arg:
      [echo] * collator = ICU
      [echo] *****************************************************************
      [echo] #Ant properties
-     [echo] #Thu Apr 16 11:03:36 PDT 2015
+     [echo] #Thu Apr 16 18:11:39 PDT 2015
      [echo] args.css.file.temp=${args.css}
      [echo] args.css.real=${args.css}
      [echo] args.default.language=en-US
@@ -810,7 +810,7 @@ gen-list:
  [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/cloudos/cloudos/install.customize-network-settings.dita
  [gen-list] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/commercial/GA1/1.03rd-party-license-agreements.dita
  [gen-list] Serializing job specification
- [gen-list] GenMapAndTopicListModule.execute(): Execution time: 2.146 seconds
+ [gen-list] GenMapAndTopicListModule.execute(): Execution time: 2.242 seconds
 
 debug-filter:
    [filter] DebugAndFilterModule.execute(): Starting...
@@ -1166,7 +1166,7 @@ debug-filter:
    [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/community/community.services-identity-using.dita
    [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/reference/1.2client-ref-routes.dita
    [filter] Processing /Users/scottb/Documents/git/hpcloud_docs_temp/devplatform/1.2/helion/user/deploy/languages/perl/1.2catalyst.dita
-   [filter] Execution time: 0.966 seconds
+   [filter] Execution time: 0.886 seconds
 
 copy-image-check:
 
