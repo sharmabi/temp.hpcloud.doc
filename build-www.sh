@@ -15,7 +15,7 @@ echo "Building HTML docs:"
 DITA_OT_INSTALL_DIR=$DITA_HOME
 
 # The path of the Saxon 9.1.0.8 install directory  
-SAXON_9_DIR=../../tools/saxonb9-1-0-8j
+SAXON_9_DIR=./tools/saxonb9-1-0-8j
 
 # One of the following three values: 
 #      webhelp
