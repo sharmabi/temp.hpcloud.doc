@@ -142,114 +142,14 @@ gem 'rails'
 </li>
 </ul>
 </section>
-<section>
-<required-cleanup>
-<title>Ruby on Rails 3.1+</title>
-<p>To get the asset pipeline working on Application Lifecycle Service, precompile your assets in
-your development environment, which compiles them into public/assets:</p>
-<codeblock>
-  <codeph>bundle exec rake assets:precompile
-</codeph>
-</codeblock>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Gems and Libraries</title>
-<p>A <i>Gemfile</i> must be included in your app that lists all required gems.
-Run:</p>
-<codeblock>
-  <codeph>bundle install
-bundle package
-</codeph>
-</codeblock>
-<p>any time you modify the <i>Gemfile</i> and prior to pushing an app to
-Application Lifecycle Service.</p>
-<p>If VCAP sees a Gemfile.lock in the application, it will ensure the
-needed gems are packaged, and set the BUNDLE_PATH environment variable
-to point at them.</p>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Unsupported <i>Gemfile</i> features</title>
-<ol>
-<li>git urls or branch dependencies</li>
-<li>gem :path =&gt; "some/path"</li>
-<li>platform-conditional gems</li>
-</ol>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Database Services</title>
-<p>Cloud Foundry supports database auto-reconfiguration for Rails
-applications.</p>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Worker Applications</title>
-<p>Non-HTTP apps that run as an Application Lifecycle Service application under the control of
-the Health Manager.</p>
-<p>To deploy worker applications, you need to use the
-<xref href="/helion/devplatform/1.2/als/user/deploy/manifestyml#command" >
-<i>command</i>
-</xref> key and set the
-<xref href="/helion/devplatform/1.2/als/user/deploy/manifestyml#web" >
-<i>processes: web</i>
-</xref>
-key to Null ("\~").</p>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Example</title>
-<codeblock>
-  <codeph>name: ruby-app
-framework:
-  type: rails3
-  runtime: ruby19
-command: ruby worker.rb
-processes:
-  web: ~
-</codeph>
-</codeblock>
-</required-cleanup>
-</section>
+
+ 
 <section>
 <title>General Guidelines</title>
 </section>
-<section>
-<required-cleanup>
-<title>App/Web Servers</title>
-<p>For the best performance, <xref href="https://devcenter.heroku.com/articles/ruby#webserver" scope="external" format="html" >using the Thin Ruby webserver</xref> is recommended.
-Include <codeph>gem 'thin'</codeph> in your <i>Gemfile</i>.</p>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Bundler</title>
-<p>You need bundler and rails installed locally. This can be done
-via:</p>
-<codeblock>
-  <codeph>sudo gem install rails bundler --no-ri --no-rdoc
-</codeph>
-</codeblock>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Running rake commands</title>
-<p>Generally, <codeph>bundle exec</codeph> must be used when running any commands that are installed through Gemfile/bundler.</p>
-<p>To run <codeph>rake stats</codeph>, for instance, use the <codeph>helion run</codeph> command:</p>
-<codeblock>
-  <codeph>helion run *appname* bundle exec rake stats
-</codeph>
-</codeblock>
-<p>See the <xref href="/helion/devplatform/1.2/als/user/reference/client-ref#command-ref-client" >ALS Command Reference</xref> for details on the use of <codeph>helion run</codeph>.</p>
-</required-cleanup>
-</section>
+ 
+ 
+ 
 <section>
 <title>References</title>
 <ul>
