@@ -10,5 +10,5 @@ available in the base directory of this Oxygen Webhelp plugin.
 @import "print.css";
 
  body {
-    background-color: yellow;
+    background-color: yellow !important
 }
