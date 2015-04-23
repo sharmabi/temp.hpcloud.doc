@@ -15,7 +15,7 @@
 <p>HP Helion Public Cloud Monitoring provides you with a managed service that facilitates monitoring usage and performance metrics about your cloud. Since it is a pre-built framework, you can just turn it on and go!</p>
 <section>
 <title>API</title>
-<p>Do you need low-level, raw REST API access to HP Helion Public Cloud Monitoring?  Take a look at the <xref href="../publiccloud/apidocs/c1.1/maas-api.dita" >Monitoring v1.1 API page</xref>.</p>
+<p>Do you need low-level, raw REST API access to HP Helion Public Cloud Monitoring?  Take a look at the Monitoring v1.1 API page .</p>
 </section>
 </body>
 </topic>
