@@ -237,7 +237,7 @@ available in the base directory of this Oxygen Webhelp plugin.
             </link>
 			
             <link rel="stylesheet" type="text/css"
-              href="oxygen-webhelp/resources/css/blah1.css">
+              href="../../../../css/blah1.css">
               <xsl:comment/>
             </link>		
 			
