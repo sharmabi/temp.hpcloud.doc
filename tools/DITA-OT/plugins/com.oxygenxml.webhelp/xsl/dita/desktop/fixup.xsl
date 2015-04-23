@@ -96,6 +96,17 @@ available in the base directory of this Oxygen Webhelp plugin.
         </link>
     </xsl:template>
     
+	
+	    <!-- 
+   test
+  -->
+    <xsl:template match="link[ends-with(@href, 'webhelp_topic.css')]" mode="fixup_desktop">
+        <link rel="stylesheet" type="text/css" href="{$PATH2PROJ}oxygen-webhelp/resources/css/blah2.css">
+            <xsl:comment/>
+        </link>
+    </xsl:template>
+	
+	
   
   <!-- 
     Adds the highlight/initializing JavaScript to the body element. 
