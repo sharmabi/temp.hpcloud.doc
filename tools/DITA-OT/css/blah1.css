@@ -16,4 +16,6 @@
 
 /* list item support */
 
-body (color:green)
+body {
+    background-color: yellow;
+}
