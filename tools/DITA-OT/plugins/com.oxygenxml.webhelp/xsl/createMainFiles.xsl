@@ -235,6 +235,12 @@ available in the base directory of this Oxygen Webhelp plugin.
               href="oxygen-webhelp/resources/css/toc.css">
               <xsl:comment/>
             </link>
+			
+            <link rel="stylesheet" type="text/css"
+              href="oxygen-webhelp/resources/css/blah1.css">
+              <xsl:comment/>
+            </link>		
+			
             <link rel="stylesheet" type="text/css" 
                     href="oxygen-webhelp/resources/skins/{$skinName}/toc_custom.css">
                 <xsl:comment/>
