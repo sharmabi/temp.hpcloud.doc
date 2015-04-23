@@ -23,7 +23,7 @@
 <entry>
 <!--Original: <span @class=>-->
 <ph>
-<xref href="../commercial/GA1/1.1commercial.index.dita" >HP Helion OpenStack®</xref>
+ 
 </ph>
 </entry>
 <entry>A commercial grade software solution that enables customers to deploy private, managed, hybrid, and public cloud services based on OpenStack.  HP Helion OpenStack reduces complexity of cloud deployments, and is the underlying platform for the Helion Development Platform.</entry>
@@ -32,7 +32,7 @@
 <entry>
 <!--Original: <span @class=>-->
 <ph>
-<xref href="../community/community.index.dita" >HP Helion OpenStack® Community</xref>
+ 
 </ph>
 </entry>
 <entry>Pure and free-to-license distribution of OpenStack technology for small scale open cloud environments. </entry>
@@ -41,7 +41,7 @@
 <entry>
 <!--Original: <span @class=>-->
 <ph>
-<xref href="../devplatform/1.1devplatform.index.dita" >HP Helion Development Platform</xref>
+ 
 </ph>
 </entry>
 <entry>Based on Cloud Foundry™, this free add-on for HP Helion OpenStack Community empowers developers and IT professionals with an open development platform designed for agility.
@@ -51,7 +51,7 @@
 <entry>
 <!--Original: <span @class=>-->
 <ph>
-<xref href="../publiccloud/publiccloud-overview.dita" >HP Helion Public Cloud</xref>
+ 
 </ph>
 </entry>
 <entry>Provides a transparent, enterprise-grade public cloud based on OpenStack technology with on-demand, pay-as-you-go cloud services for computing and storage infrastructure as well as platform services.
@@ -61,7 +61,7 @@
 <entry>
 <!--Original: <span @class=>-->
 <ph>
-<xref href="../automation/csa.index.dita" >HP Cloud Service Automation</xref>
+ 
 </ph>
 </entry>
 <entry>Provides open, heterogeneous, extensible enterprise-grade cloud service lifecycle management to design and orchestrate full stack services. CSA embraces existing automation assets with an enhanced orchestration engine, which provides IT with an informed, transparent delivery of secure compliant services for the hybrid cloud.
@@ -71,7 +71,7 @@
 <entry>
 <!--Original: <span @class=>-->
 <ph>
-<xref href="../cloudsystem.landingpage.dita" >HP CloudSystem Foundation</xref>
+ 
 </ph>
 </entry>
 <entry>Integrates hardware and software to deliver core Infrastructure as a Service provisioning and lifecycle management of compute, network and storage resources.
@@ -81,7 +81,7 @@
 <entry>
 <!--Original: <span @class=>-->
 <ph>
-<xref href="../cloudsystem.landingpage.dita" >HP CloudSystem Enterprise</xref>
+ 
 </ph>
 </entry>
 <entry>Expands on CloudSystem Foundation to integrate servers, storage, networking, security, and management to automate the lifecycle for hybrid service delivery.
@@ -91,7 +91,7 @@
 <entry>
 <!--Original: <span @class=>-->
 <ph>
-<xref href="../helion.rack.solution.dita" >HP Helion Cloud Solutions </xref>
+ 
 </ph>
 </entry>
 <entry>Built, tested, and validated by HP cloud experts, our optimized cloud solutions are based on HP Helion OpenStack, industry-leading HP ProLiant servers and supporting HP Helion product and service offerings. Solutions like HP Helion Content Depot and HP Helion Rack include everything you need to be successful when facing a demanding cloud use case. 
@@ -102,7 +102,7 @@
 <entry>
 <!--Original: <span @class=>-->
 <ph>
-<xref href="../codar-landing-page.dita" >HP Codar </xref>
+ 
 </ph>
 </entry>
 <entry>A continuous delivery solution that provides automated deployment and release management of complex multi-tier applications across the application lifecycle.
