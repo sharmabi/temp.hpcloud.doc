@@ -17,8 +17,9 @@
 -->
 <p>As an admin, you can <xref href="#topic1584/createuser">create</xref> and <xref href="#topic1584/deleteuser">delete</xref> users.</p>
 <section>
-<required-cleanup>
-<title>Create a user</title>
+<title>
+<!-- id="createuser" -->
+<!-- id="createuser" -->Create a user</title>
 <p>To create a user:</p>
 <p>
 <b>Note:</b> At least <xref href="../../../UseCases/TasksforAdmins/Projects/1.1commercial.managing.projects.dita" >one project must exist</xref> before you can create users.</p>
@@ -51,11 +52,10 @@
 <p>The user is created and appears in the user list.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Delete a user</title>
+<title id="deleteuser">
+<!-- id="deleteuser" -->Delete a user</title>
 <p>To delete a user:</p>
 <ol>
 <li>
@@ -78,7 +78,6 @@
   <xref href="#topic1584/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

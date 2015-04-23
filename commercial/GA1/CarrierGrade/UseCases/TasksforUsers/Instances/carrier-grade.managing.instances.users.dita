@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1108">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Managing Instances</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.managing.instances.users.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/instances/users/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>You can use the dashboards to manage instances created by other users.</p>
+<p>Use the <b>Compute</b> panel on the <b>Project</b> dashboard to:</p>
+<ul>
+<li>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.dita" >Create a new instance</xref>
+</li>
+<li>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.terminate.dita" >Terminate an instance</xref>
+</li>
+<li>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.reboot.dita" >Reboot an instance</xref>
+</li>
+<li>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.rebuild.dita" >Rebuild an instance</xref>
+</li>
+<li>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.suspend.dita" >Suspend and resume an instance</xref>
+</li>
+<li>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.pause.dita" >Pause and un-pausing an instance</xref>
+</li>
+<li>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.images.public.dita" >Create an instance snapshot</xref>
+</li>
+<li>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.managing.instances.ipaddress.dita" >Associate, or assign, a floating IP address to an instance</xref> </li>
+<li>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.console.dita" >Launch a console session to an instance</xref>
+</li>
+</ul>
+<p>To work with instances <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >launch the HP Helion OpenStack Helion Dashboard</xref>. Then, click <b>Project</b> &gt; <b>Compute</b> &gt; <b>Instances</b>. The instances in the current project are listed.</p>
+<p>The <b>Instances</b> panel looks similar to the following. Click the image to view in a new window:</p>
+<p>
+  <image href="../../../../../../media/CGH-Helion-Instance"/>
+</p>
+<p>
+  <xref href="javascript:window.open('/media/CGH-Helion-Instance','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')" >Click here to view a larger image in a new window.</xref>
+</p>
+<p>For details on an instance, click the image name.</p>
+<p>
+  <xref href="#topic1108/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</body>
+</topic>

@@ -29,8 +29,9 @@
 </li>
 </ul>
 <section>
-<required-cleanup>
-<title>Create a flavor</title>
+<title>
+<!-- id="createflavor" -->
+<!-- id="createflavor" -->Create a flavor</title>
 <p>To create a flavor:</p>
 <ol>
 <li>
@@ -70,11 +71,11 @@
 A message is displayed on successful creation.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Edit a flavor</title>
+<title>
+<!-- id="editflavor" -->
+<!-- id="editflavor" -->Edit a flavor</title>
 <p>To edit a flavor:</p>
 <ol>
 <li>
@@ -100,11 +101,11 @@ A message is displayed on successful creation.</p>
 </li>
 </ol>
 <p>A message is displayed on successful edit.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Delete a flavor</title>
+<title>
+<!-- id="deleteflavor" -->
+<!-- id="deleteflavor" -->Delete a flavor</title>
 <p>Instances that use the flavor are not affected when a flavor is deleted.</p>
 <p>To delete a flavor:</p>
 <ol>
@@ -129,7 +130,6 @@ A message is displayed on successful creation.</p>
   <xref href="#topic2910/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

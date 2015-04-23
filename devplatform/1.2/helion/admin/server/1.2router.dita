@@ -44,7 +44,8 @@ between multiple instances (containers) as required.</p>
 <xref href="http://www.websocket.org/aboutwebsocket" scope="external" format="html" >WebSocket</xref> (including
 "wss://" secure web sockets) and <xref href="http://www.chromium.org/spdy" scope="external" format="html" >SPDY</xref>.</p>
 <section>
-<title>Settings</title>
+<title id="settings">
+<!-- id="settings" -->Settings</title>
 <p>The Router is configured using <xref href="/helion/devplatform/1.2/als/admin/reference/kato-ref#kato-command-ref-config" >
 <i>kato config</i>
 </xref>. The following settings are configurable:</p>
@@ -106,7 +107,8 @@ configuration. Disabled if empty (default). Valid values are:</p>
 snippets to help prevent frame based clickjacking.</p>
 </section>
 <section>
-<title>WebSockets</title>
+<title id="websockets">
+<!-- id="websockets" -->WebSockets</title>
 <p>Applications using web sockets must use the VCAP_APP_PORT or PORT
 <xref href="/helion/devplatform/1.2/als/user/reference/environment#environment-variables" >
 <i>environment variables</i>
@@ -114,7 +116,8 @@ snippets to help prevent frame based clickjacking.</p>
 to set the default listener port of the WebSocket server.</p>
 </section>
 <section>
-<title>SPDY</title>
+<title id="router-spdy">
+<!-- id="router-spdy" -->SPDY</title>
 <p>
 <xref href="http://dev.chromium.org/spdy/" scope="external" format="html" >SPDY</xref> is a protocol developed by Google
 for reducing web page load time. The router supports SPDY versions 2 and

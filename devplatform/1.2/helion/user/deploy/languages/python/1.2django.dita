@@ -47,7 +47,9 @@ mysql-python
 </codeph>
 </codeblock>
 <section>
-<title>Configuring the Database</title>
+<title>
+<!-- id="configuring-database" -->
+<!-- id="configuring-database" -->Configuring the Database</title>
 <p>See <xref href="/helion/devplatform/1.2/als/user/services/data-services#database-accessing" >Using Configured Database Services</xref> for more information on connecting with database services.</p>
 <ol>
 <li>
@@ -95,8 +97,9 @@ else:
 </ol>
 </section>
 <section>
-<required-cleanup>
-<title>Initializing database</title>
+<title>
+<!-- id="initializing-database" -->
+<!-- id="initializing-database" -->Initializing database</title>
 <p>Run the <codeph>syncdb</codeph> command to initialize the database
 tables:</p>
 <codeblock>
@@ -109,10 +112,10 @@ tables:</p>
   <codeph>helion run &lt;appname&gt; python manage.py migrate
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<title>Configuring static media</title>
+<title id="configuring-static-media">
+<!-- id="configuring-static-media" -->Configuring static media</title>
 <p>There are various ways to serve static files for a Django application. While Option #1 is the most recommended for production deployments, option #3 is the simplest for non-production/development/test/QA deployments.</p>
 <ol>
 <li>Directly serve static files with uWSGI. See <xref href="index.dita">
@@ -129,7 +132,9 @@ recommended for production applications.</li>
 </ol>
 </section>
 <section>
-<title>Configuring project location</title>
+<title>
+<!-- id="configuring-project-location" -->
+<!-- id="configuring-project-location" -->Configuring project location</title>
 <p>Your project's <i>settings.py</i> may not always reside at the root directory. Furthermore, you may want to extend <codeph>sys.path</codeph> to point to certain project sub-directories.</p>
 <p>To persist such environment changes (across wsgi.py, settings.py, manage.py, etc.), add the following to manifest.yml:</p>
 <codeblock>

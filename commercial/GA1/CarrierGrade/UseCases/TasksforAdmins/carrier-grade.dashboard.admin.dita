@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1976">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Using as an Admin User</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.admin.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/admin/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>The Admin dashboard enables you to work within the current cloud domain. You can access tools to work with the Compute, Network, Object Operations, and Orchestration services.</p>
+<p>As an administrator (admin), you can perform all of the <xref href="../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/1.1commercial.dashboard.users.dita" >user tasks</xref> in addition to the admin tasks.
+<image href="../../../../../media/HorizonUI_Admin_beta.png">
+<alt/>
+</image>
+</p>
+<section>
+<title id="managing-domains">
+<!-- id="managing-domains" -->Managing Domains</title>
+<p>A domain is a high-level container for projects, users, and groups that defines administrative boundaries for management of those entities. A domain can represent an individual, company, or operator owned space.</p>
+<p>You can manage:</p>
+<ul>
+<li>flavors</li>
+<li>images</li>
+<li>quotas</li>
+<li>host aggregates</li>
+<li>services</li>
+</ul>
+<p>For more information, see <xref href="../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Domains/carrier-grade.managing.domains.dita" >Managing Domains</xref>.</p>
+<p>
+  <xref href="#topic1976/top"> Return to Top ↑ </xref>
+</p>
+</section>
+<section>
+<title id="managing-projects">
+<!-- id="managing-projects" -->Managing projects</title>
+<p>You can create new projects and manage existing projects, such as controlling access to projects by assigning roles to users and groups.</p>
+<p>For more information, see <xref href="../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Projects/carrier-grade.managing.projects.dita" >Managing Projects</xref>.</p>
+<p>
+  <xref href="#topic1976/top"> Return to Top ↑ </xref>
+</p>
+</section>
+<section>
+<title id="managing-networks">
+<!-- id="managing-networks" -->Managing networks</title>
+<p>A network is a pluggable, scalable system for managing networks and IP addresses.</p>
+<p>You can use the dashboards to create, delete, and configure your HP Helion OpenStack subnet(s) and ports.</p>
+<p>For more information, see <xref href="../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.managing.network.dita" >Managing Networks</xref>.</p>
+<p>
+  <xref href="#topic1976/top"> Return to Top ↑ </xref>
+</p>
+</section>
+<section>
+<title>
+<!-- id="managing-users" -->
+<!-- id="managing-users" -->Managing users</title>
+<p>You can use the dashboard to create new users, assign users to projects, and change a user password as needed.</p>
+<p>For more information, see <xref href="../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.managing.users.dita" >Managing Users</xref>.</p>
+<p>
+  <xref href="#topic1976/top"> Return to Top ↑ </xref>
+</p>
+</section>
+<section>
+<title>
+<!-- id="managing-images" -->
+<!-- id="managing-images" -->Managing images</title>
+<p>You can use the dashboards to determine if an image snapshot is available only in the current project or to all projects in the domain.</p>
+<p>For more information, see <xref href="../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.images.public.dita" >Making an Image Public</xref>.</p>
+</section>
+<section>
+<title id="managing-security">
+<!-- id="managing-security" -->Managing security</title>
+<p>You can use the dashboards to change the password for a user, as needed.</p>
+<p>For more information, see <xref href="../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Security/carrier-grade.dashboard.users.password.dita" >Changing a User Password</xref>.</p>
+<!-- Not  in UI yet
+### Managing roles ###
+
+You can use the dashboard to define user roles that can be used to control access to projects and domains. 
+
+For more information, see [Managing Roles](/helion/commercial/carrier/dashboard/managing/roles/).
+
+<a href="#top" style="padding:14px 0px 14px 0px; text-decoration: none;"> Return to Top &#8593; </a>
+
+
+### Managing instances ###
+
+You can use the dashboards to manage instances created by other users. You can lock, pause, suspend a particular instance and you can also migrate an instance to a different host system. 
+with minimal downtime (live migrate).
+
+For more information, see [Managing Instances](/helion/commercial/carrier/dashboard/instances/).
+-->
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

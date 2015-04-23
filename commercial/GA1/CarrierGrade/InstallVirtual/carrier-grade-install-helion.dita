@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic6621">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Install Helion OpenStack</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Install HP Helion OpenStack</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-helion.md-->
+ <!--permalink: /helion/openstack/carrier/install/helion/--></p>
+<p>To install of HP Helion OpenStack:</p>
+<section>
+<title>
+<!-- id="create-blank-vms-for-the-installation" -->
+<!-- id="create-blank-vms-for-the-installation" -->Create blank VMs for the installation</title>
+<ol>
+<li>
+<p>Use a tool such as KVM virt-manager to create three blank VMs (no operating system) on the KVM host, called <codeph>ccn1</codeph>, <codeph>ccn2</codeph>, and <codeph>cpn1</codeph> using the xml files [ccn1.xml, ccn2.xml, ccn3.xml</p>
+</li>
+<li>
+<p>Create three blank VM image files and resize them using the following commands:</p>
+
+<codeblock>
+<codeph>touch /var/lib/libvirt/images/ccn1.img
+touch /var/lib/libvirt/images/ccn2.img
+touch /var/lib/libvirt/images/cpn1.img
+
+qemu-img resize /var/lib/libvirt/images/ccn1.img +20G
+qemu-img resize /var/lib/libvirt/images/ccn2.img +20G
+qemu-img resize /var/lib/libvirt/images/cpn1.img +20G
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Verify the size of the blank images using the following command:</p>
+
+<codeblock>
+<codeph>ls -ltr /var/lib/libvirt/images/
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Provision the virtual machines using the following commands:</p>
+
+<codeblock>
+<codeph>virsh define ccn1.xml
+virsh autostart ccn1
+virsh start ccn1
+
+virsh define ccn2.xml
+virsh autostart ccn2
+virsh start ccn2
+
+virsh define ccn3.xml
+virsh autostart ccn3
+virsh start ccn3
+</codeph>
+</codeblock>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="configuring-the-installation-environment" -->
+<!-- id="configuring-the-installation-environment" -->Configuring the installation environment</title>
+<p>The process for deploying HP Helion OpenStack includes populating HLM node with required files, enabling Cobbler for PXE booting.</p>
+<p>
+<xref href="http://www.cobblerd.org/" scope="external" format="html" >Cobbler</xref> is a Linux installation server.</p>
+<p>To configure the installation environment:</p>
+<ol>
+<li>
+<p>Copy the <codeph>cg-hos.tar.gz.gpg</codeph> file and HLM node image file (<codeph>cg-hlm.qcow2</codeph>) to the /root directory on the KVM host.</p>
+</li>
+<li>
+<p>Decrypt and extract the file using the following command:</p>
+
+<codeblock>
+<codeph>gpg -d cg-hos.tar.gz.gpg | tar -xzvf -
+(password to decrypt: cghelion)
+</codeph>
+</codeblock>
+
+<p>This will extract following folders:</p>
+
+<ul>
+<li>packages (includes all debs + pips)</li>
+<li>hlm-files (includes hlinux distro to be pxe booted)</li>
+<li>kenobi-configuration-processor (includes Kenobi source code)</li>
+<li>kenobi-node-configuration (includes Kenobi source code)</li>
+<li>cg-hlm (includes source code to populate environment on HLM and deploy cloud)</li>
+</ul>
+</li>
+<li>
+<p>Populate HLM node with required contents using the following command:</p>
+
+<codeblock>
+<codeph>./hlm_updatepackages.sh
+</codeph>
+</codeblock>
+
+<p>This command syncs the debian and pip files in the <codeph>packages</codeph> directory onto static repo on HLM node.</p>
+</li>
+<li>
+<p>Run the following command to configure Cobbler:</p>
+
+<codeblock>
+<codeph>./hlm_configurecobbler.sh &lt;eth1 pxe ip of HLM node&gt; &lt;netmask&gt; &lt;gateway&gt; &lt;dhcp start address&gt; &lt;dhcp end address&gt;
+</codeph>
+</codeblock>
+
+<p>
+<b>Example:</b>
+</p>
+
+<codeblock>
+<codeph>./hlm_configurecobbler.sh 192.168.122.203 255.255.255.0 192.168.122.1 192.68.122.100 192.168.122.200
+</codeph>
+</codeblock>
+
+<p>You will be prompted with following questions:</p>
+
+<p>
+<i>What is the IP address for this boot server virtual machine?</i> This is the IP address of the eth1 PXE interface of the HLM node</p>
+
+<codeblock>
+<codeph>Example: 192.168.122.203
+</codeph>
+</codeblock>
+
+<p>
+<i>What is the netmask for this boot server virtual machine?</i>
+</p>
+
+<codeblock>
+<codeph>Example: 255.255.255.0
+</codeph>
+</codeblock>
+
+<p>
+<i>What is the IP address of the default gateway for network?</i>
+</p>
+
+<codeblock>
+<codeph>Example: 192.168.122.1
+</codeph>
+</codeblock>
+
+<p>
+<i>What is the starting IP address for your dhcp range?</i>
+</p>
+
+<codeblock>
+<codeph>Example: 192.168.122.100
+</codeph>
+</codeblock>
+
+<p>
+<i>What is the ending IP address for your dhcp range?</i>
+</p>
+
+<codeblock>
+<codeph>Example: 192.168.122.200
+</codeph>
+</codeblock>
+
+<p>This command restarts networking. If you SSH session gets disconnected, you will need to restart the session to the HLM console.</p>
+</li>
+<li>
+<p>Use the following command to import the hlinux distribution into Cobbler.</p>
+
+<codeblock>
+<codeph> /hlm_importiso.sh:
+</codeph>
+</codeblock>
+
+<p>At this point Cobbler is up and running.</p>
+</li>
+<li>
+<p>Use KVM virt-manager to restart the VMs you created previously: <codeph>ccn1</codeph>, <codeph>ccn2</codeph> and <codeph>cpn1</codeph>. Make sure you select <codeph>network pxe boot</codeph> before restarting.</p>
+
+<p>Once the nodes start PXE booting, set the boot order back to hard disk to avoid repeated cycles of pxe boot.</p>
+</li>
+</ol>
+<p>If you want to login onto any of the client VMs, use credentials <codeph>root/iforgot</codeph>
+</p>
+</section>
+<section>
+<title id="prepare-the-environment-for-installation">
+<!-- id="prepare-the-environment-for-installation" -->Prepare the environment for installation</title>
+<p>At this point, the networking settings and PXE clients are ready to proceed deploy the HLM VM on those 3 nodes using CLM network.</p>
+<ol>
+<li>
+<p>Change to the HLM node:</p>
+
+<codeblock>
+<codeph>cd ~/cg-hlm/hlm-build
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Prepare environment for the installation</p>
+
+<p>This command brings new code from kenobi source folders and will install the code into <codeph>/opt/share/hlm</codeph> on HLM node.</p>
+
+<codeblock>
+<codeph>./hlm_prepare-env.sh
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Create new cloud template:</p>
+
+<p>This command creates a directory <required-cleanup remap="cloudname">
+<ph> in root folder.</ph>
+</required-cleanup>
+</p>
+
+<codeblock>
+<codeph>cd ~
+hnewcloud &lt;cloudname&gt; demo
+</codeph>
+</codeblock>
+
+<p>Example: <codeph>hnewcloud hlmcloud demo</codeph> will create ~/juno cloud config files from the demo sample.</p>
+</li>
+<li>
+<p>Update cloud template JSON files:</p>
+
+<p>a. Change to the new cloud directory you created</p>
+
+<codeblock>
+<codeph>cd ~/&lt;cloudname&gt;
+</codeph>
+</codeblock>
+
+<p>b. Modify the <codeph>serverConfig.json</codeph> with the IP address of the PXE eth1 interface of the cloud nodes.</p>
+
+<p>c. Modify <codeph>environmentConfig.json</codeph> to add details of CLM network:</p>
+
+<codeblock>
+<codeph>"cidr":&lt;IP_Address&gt;
+"start-address":&lt;IP_Address&gt;
+</codeph>
+</codeblock>
+
+<p>
+<b>Example:</b>
+</p>
+
+<codeblock>
+<codeph>"cidr": "192.168.101.0/24",
+"start-address": "192.168.101.100"
+</codeph>
+</codeblock>
+
+<p>
+<b>NOTE:</b> The HP Helion Configuration Processor will assign the first address of the CLM address range to itself for serving python and debian repositories.Make sure that you set the first IP address of the CLM range for the eth2 (CLM) address of the HLM node.</p>
+
+<p>d. Modify <codeph>ccp-1x3-as.json</codeph> to specify the number of controllers; enter 2.</p>
+
+<codeblock>
+<codeph>"member-count": 2, //number of controllers on the plane
+</codeph>
+</codeblock>
+
+<p>e. Modify the <codeph>definition.json</codeph> file to specify the number of compute nodes; enter 1.</p>
+
+<p>"count": 1, //number of computes in the resource pool</p>
+</li>
+</ol>
+<p>For baremetal environment or virtual env with fancy networking - you will have to edit the logical network and environment config json files to represent your desired configuration.</p>
+</section>
+<section>
+<title>
+<!-- id="deploy-the-hlm-vm" -->
+<!-- id="deploy-the-hlm-vm" -->Deploy the HLM VM</title>
+<p>After you have modified each the JSON Cloud Model files, you can run the Helion Configuration Processor against the files.</p>
+<ol>
+<li>
+<p>On the HLM Node, execute the following command:</p>
+
+<codeblock>
+<codeph>cd &lt;cloudname&gt; 
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Execute the following command. The <codeph>hcfgproc</codeph> script gets installed in /usr/local/bin by the prepare-env script and will generate a clouds/ directory within the <required-cleanup remap="cloudname">
+<ph> dir.</ph>
+</required-cleanup>
+</p>
+
+<codeblock>
+<codeph>hcfgproc -d definition.json
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>In this generated cloud, verify that the CloudDiagram, <codeph>hosts.hf</codeph>, and <codeph>net/interfaces.d/eth.cfg</codeph> files to make sure the network settings are correct.</p>
+</li>
+<li>
+<p>Initialize the network interfaces on all the cloud nodes using the following command:</p>
+
+<codeblock>
+<codeph>hnetinit &lt;cloudname&gt;
+</codeph>
+</codeblock>
+
+<p>You can run this command from anywhere. The script looks for <required-cleanup remap="cloudname">
+<ph> under the ~ directory and will run Ansible from it to initialize network interfaces for that cloud.</ph>
+</required-cleanup>
+</p>
+
+<p>When this script completes, all cloud nodes CLM network interfaces should be set correctly.</p>
+</li>
+<li>
+<p>Deploy and configure the cloud services using the following command:</p>
+
+<codeblock>
+<codeph>hdeploy &lt;cloudname&gt; 
+</codeph>
+</codeblock>
+
+<p>You can run this command from anywhere. The script looks for <required-cleanup remap="cloudname">
+<ph> under the ~ directory and will run Ansible from it to install and configure all the cloud services.</ph>
+</required-cleanup>
+</p>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="next-step" -->
+<!-- id="next-step" -->Next Step</title>
+<p>
+  <xref href="#topic6621/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

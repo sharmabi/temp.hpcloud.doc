@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3009">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Deploying the HLM Cloud</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion OpenStack 1.1"/>
+<othermeta name="role" content="Storage Administrator"/>
+<othermeta name="role" content="Storage Architect"/>
+<othermeta name="role" content="Michael B,"/>
+<othermeta name="product-version1" content="HP Helion OpenStack 1.1"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-cloud.md-->
+ <!--permalink: /helion/openstack/carrier/install/bm/hlm-cloud/--></p>
+<!--
+<p style="font-size: small;"><a href="../../../commercial/GA1/1.1commercial.technical-overview.ga.dita/">&#9664; Technical Overview</a> | <a href="./commercial/GA1/1.1commercial.install-GA-overview.dita">&#9650; Installation Overview</a> | <a href="/helion/openstack/1.1/install/kvm">Installing on a KVM hypervisor &#9654;</a> OR <a href="/helion/openstack/1.1/install/esx"> Installing on an ESX hypervisor&#9654;</a> </p> 
+-->
+<p>At this point, the networking settings and PXE clients are up and running.</p>
+<p>The network configuration appears similar to the following image:</p>
+<p>
+  <image href="../../../media/CGH-Install-3Node-Network.png"/>
+</p>
+<p>You will now configure the HLM cloud on those three nodes using CLM network.</p>
+<p>To configure the HLM cloud:</p>
+<ol>
+<li>
+<p>Change to the following directory:</p>
+
+<codeblock>
+<codeph>cd ~/cg-hlm/hlm-build
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Run the following command to import code from the installation files and copy the code to <codeph>/opt/share/hlm</codeph> on the HLM node:</p>
+
+<codeblock>
+<codeph>./hlm_prepare-env.sh
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Use the following commands to create new cloud template. This command will create a directory <required-cleanup remap="cloudname">
+<ph> in root folder)</ph>
+</required-cleanup>
+</p>
+
+<codeblock>
+<codeph>cd ~
+hnewcloud &lt;cloudname&gt; demo
+</codeph>
+</codeblock>
+
+<p>This command creates a new cloud called <required-cleanup remap="cloudname">
+<ph> from the <i>demo</i> sample.</ph>
+</required-cleanup>
+</p>
+
+<p>For example, the following command creates ~/HLMcloud cloud config files from the demo sample:</p>
+
+<codeblock>
+<codeph>hnewcloud HLMcloud demo
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Change to the new cloud directory:</p>
+
+<p>cd ~/<required-cleanup remap="cloudname">
+<ph/>
+</required-cleanup>
+</p>
+</li>
+<li>
+<p>Update cloud template json files:</p>
+
+<p>a. Modify the <codeph>serverConfig.json</codeph> with the IP address of the PXE eth1 interface of the cloud nodes</p>
+
+<p>b. Modify the <codeph>environmentConfig.json</codeph> file to add details of CLM network:</p>
+
+<codeblock>
+<codeph>Example:
+
+"cidr": "192.168.101.0/24",
+"start-address": "192.168.101.100"
+</codeph>
+</codeblock>
+
+<p>
+<b>IMPORTANT</b>: The Helion Configuration Processor assigns the first address of the CLM address range to itself for serving python and debian repositories. Make sure that you set the first IP address of the CLM range for the <codeph>eth2</codeph> (CLM) address of the HLM node.</p>
+
+<p>c. Modify the <codeph>ccp-1x3-as.json</codeph> file to set the number of controllers on the plane to 2.</p>
+
+<codeblock>
+<codeph>"member-count": 2, //number of controllers on the plane
+</codeph>
+</codeblock>
+
+<p>d. Modify the <codeph>definition.json</codeph> file to set the number of computes in the resource pool to 1.</p>
+
+<codeblock>
+<codeph>"count": 1, //number of computes in the resource pool. 
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Edit the logical network and environment configuration JSON files to represent the network configuration.</p>
+</li>
+<li>
+<p>Run the Helion Configuration Processor on the configuration files you have modified:</p>
+
+<codeblock>
+<codeph>cd &lt;cloudname&gt; 
+hcfgproc -d definition.json
+</codeph>
+</codeblock>
+
+<p>The <codeph>hcfgproc script</codeph> is installed in <codeph>/usr/local/bin</codeph> by the <codeph>prepare-env</codeph> script and generates a <codeph>clouds/</codeph> directory in the <required-cleanup remap="cloudname">
+<ph> dir.</ph>
+</required-cleanup>
+</p>
+</li>
+<li>
+<p>In this generated cloud, review the CloudDiagram, <codeph>hosts.hf</codeph>, and <codeph>net/interfaces.d/eth.cfg</codeph> files to make sure the network settings are correct.</p>
+</li>
+<li>
+<p>Initialize network interfaces on all the cloud nodes using the following command:</p>
+
+<codeblock>
+<codeph>hnetinit &lt;cloudname&gt; 
+</codeph>
+</codeblock>
+
+<p>You can run this command from any directory.</p>
+
+<p>After this command completes, all cloud nodes and CLM network interfaces should be set correctly.</p>
+</li>
+<li>
+<p>Deploy and configure the cloud services using the following command:</p>
+
+<codeblock>
+<codeph>hdeploy &lt;cloudname&gt; 
+</codeph>
+</codeblock>
+
+<p>You can run this command from anywhere.</p>
+</li>
+</ol>
+<p>When this command completes, the HP Helion OpenStack Carrier Grade (Alpha) installation is complete.</p>
+<p>
+  <xref href="#topic3009/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</body>
+</topic>

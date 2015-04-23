@@ -29,7 +29,9 @@ web:</xref> is set to
 "\~").</p>
 <p>If your application requires additional TCP or UDP ports, use the Harbor service to allocate them.</p>
 <section>
-<title>Requesting a Port</title>
+<title>
+<!-- id="requesting-a-port" -->
+<!-- id="requesting-a-port" -->Requesting a Port</title>
 <p>Additional ports are provisioned like any other data service. To request a port with the Helion command-line client:</p>
 <codeblock>
   <codeph>helion create-service harbor debug-port
@@ -110,8 +112,8 @@ service</b>
 </xref> command.</p>
 </section>
 <section>
-<required-cleanup>
-<title>Harbor Environment Variables</title>
+<title id="harbor-environment-variables">
+<!-- id="harbor-environment-variables" -->Harbor Environment Variables</title>
 <p>If there is only one Harbor service, the <b>HELION_HARBOR</b> environment variable can be used to get the internal port
 number.</p>
 <p>If there is more than one Harbor service, <b>HELION_HARBOR</b> is not available. Instead, a custom
@@ -153,10 +155,10 @@ UDP_SERVICE_PORT=${!UDP_SERVICE_NAME}
 <i>hooks</i>
 </xref>, put them in a
 separate bash script. Brace expansion and grouping cannot be used directly in YAML files.</p>
-</required-cleanup>
 </section>
 <section>
-<title>Setting the Port Protocols</title>
+<title id="setting-the-port-protocols">
+<!-- id="setting-the-port-protocols" -->Setting the Port Protocols</title>
 <p>Harbor supports both the TCP and UDP protocols. When you provision a service with Harbor it will create a TCP enabled port by default. If you want to have a UDP port provisioned instead, you simply prefix your
 service name with udp, for example:</p>
 <codeblock>
@@ -172,7 +174,8 @@ For example:</p>
 <p>Harbor will then create UDP and TCP proxies for your application so that applications like DNS can use both protocols on the same provisioned port.</p>
 </section>
 <section>
-<title>Multiple Application Instances</title>
+<title id="multiple-application-instances">
+<!-- id="multiple-application-instances" -->Multiple Application Instances</title>
 <p>Harbor recognizes when you have multiple instances of your app running and will update the available app backends accordingly.</p>
 <ul>
 <li>For TCP connections it will round-robin between your available
@@ -185,7 +188,9 @@ added later are queued.</li>
 </ul>
 </section>
 <section>
-<title>HTTPS via Harbor</title>
+<title>
+<!-- id="https-via-harbor" -->
+<!-- id="https-via-harbor" -->HTTPS via Harbor</title>
 <p>SSL termination of HTTPS to applications hosted on Application Lifecycle Service normally
 happens at the Router.</p>
 <p>There is currently no mechanism for users to add SSL certificates for their own applications to the Router, but you can expose an external HTTPS interface via the Harbor port service which uses your SSL certificates.</p>
@@ -204,8 +209,8 @@ specification must always be added.</p>
 </ul>
 </section>
 <section>
-<required-cleanup>
-<title>HTTPS Container Proxy</title>
+<title id="https-container-proxy">
+<!-- id="https-container-proxy" -->HTTPS Container Proxy</title>
 <p>If you are using a framework such as Python or Perl which sets up uWSGI
 (or any other framework that provides its own intermediate web server)
 Harbor can provision an HTTPS server in the app container that forwards
@@ -231,11 +236,10 @@ directory. For example:</p>
 </codeblock>
 <p>Alternatively, use a standalone or buildpack setup which provisions its
 own intermediate web server instead.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Multiple SSL Certificates</title>
+<title id="multiple-ssl-certificates">
+<!-- id="multiple-ssl-certificates" -->Multiple SSL Certificates</title>
 <p>If your application uses multiple SSL certificates, use the following
 naming scheme:</p>
 <ul>
@@ -254,7 +258,6 @@ naming scheme:</p>
 </codeph>
 </codeblock>
 <p>The proxy will look for these certs before reverting to <codeph>harbor.crt</codeph> and <codeph>harbor.key</codeph>.</p>
-</required-cleanup>
 </section>
 </body>
 </topic>

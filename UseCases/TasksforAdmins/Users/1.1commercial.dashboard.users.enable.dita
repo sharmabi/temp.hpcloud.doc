@@ -18,8 +18,8 @@
 <p>Users can be disabled in the domain. After you disable a user, the user account remains in the domain, but cannot be used to log in.</p>
 <p>As an admin, you can <xref href="#topic1066/disableuser">disable</xref> and <xref href="#topic1066/enableuser">enable</xref> users, as needed.</p>
 <section>
-<required-cleanup>
-<title>Disable a user</title>
+<title id="disableuser">
+<!-- id="disableuser" -->Disable a user</title>
 <p>To disable a user:</p>
 <ol>
 <li>
@@ -35,11 +35,10 @@
 <p>The user is disabled and cannot be used to log in.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Enable a user</title>
+<title id="enableuser">
+<!-- id="enableuser" -->Enable a user</title>
 <p>To enable a user:</p>
 <ol>
 <li>
@@ -59,7 +58,6 @@
   <xref href="#topic1066/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

@@ -46,7 +46,8 @@ allows you to set PSGI-specific configurations in a separate file.</p>
 </xref> framework is also available for
 running traditional Perl CGI applications without PSGI.</p>
 <section>
-<title>Deploying Applications</title>
+<title id="deploying-applications">
+<!-- id="deploying-applications" -->Deploying Applications</title>
 <p>The following is a list of pages with details for deploying various
 application types.</p>
 <ul>
@@ -71,14 +72,17 @@ application types.</p>
 </ul>
 </section>
 <section>
-<title>Database Services</title>
+<title>
+<!-- id="database-services" -->
+<!-- id="database-services" -->Database Services</title>
 <p>Authentication details for your configured database services can be
 found in the <codeph>$ENV</codeph> variable, under
 <codeph>DATABASE_URL</codeph> or <codeph>VCAP_SERVICES</codeph>. Here is an example of getting the correct credentials.</p>
 </section>
 <section>
-<required-cleanup>
-<title>MYSQL_URL</title>
+<title>
+<!-- id="mysql-url" -->
+<!-- id="mysql-url" -->MYSQL_URL</title>
 <codeblock>
   <codeph>my($user,$password,$host,$port,$name) = $ENV{MYSQL_URL} =~ m{mysql://(.+?):(.+)\@(.+?):(\d+)/(.*)}
     or die "MySQL service not configured";
@@ -89,11 +93,10 @@ print $port;
 print $user;
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>VCAP_SERVICES</title>
+<title id="vcap-services">
+<!-- id="vcap-services" -->VCAP_SERVICES</title>
 <codeblock>
   <codeph>use DBI;
 use DBD::mysql;
@@ -119,10 +122,10 @@ else {
 }
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<title>Worker Applications</title>
+<title id="worker-applications">
+<!-- id="worker-applications" -->Worker Applications</title>
 <p>Non-HTTP apps that run as an Application Lifecycle Service application under the control of
 the Health Manager.</p>
 <p>To deploy worker applications, you need to use the
@@ -136,8 +139,8 @@ web</i>
 Null ("\~").</p>
 </section>
 <section>
-<required-cleanup>
-<title>Example</title>
+<title id="example">
+<!-- id="example" -->Example</title>
 <codeblock>
   <codeph>name: perl-app
 framework: perl
@@ -146,18 +149,19 @@ processes:
   web: ~
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<title>Installing module dependencies</title>
+<title>
+<!-- id="installing-module-dependencies" -->
+<!-- id="installing-module-dependencies" -->Installing module dependencies</title>
 <p>If the modules your app needs are available via PPM or CPAN, let
 Application Lifecycle Service install them and their dependencies using one of the following
 methods rather than including them in the source tree of your
 application code.</p>
 </section>
 <section>
-<required-cleanup>
-<title>CPAN Modules via PPM</title>
+<title id="cpan-modules-via-ppm">
+<!-- id="cpan-modules-via-ppm" -->CPAN Modules via PPM</title>
 <p>
 <xref href="http://code.activestate.com/ppm" scope="external" format="html" >PPM</xref> is the binary package manager for
 ActivePerl. It is usually the fastest and most reliable way of
@@ -206,11 +210,11 @@ use MyCustomPM;
 specified explicitly in <i>requirements.txt</i>, <i>manifest.yml</i> or
 <i>Makefile.PL</i> (see below) otherwise those dependencies will not be
 packed in the application droplet.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>CPAN Modules via cpanm</title>
+<title>
+<!-- id="cpan-modules-via-cpanm" -->
+<!-- id="cpan-modules-via-cpanm" -->CPAN Modules via cpanm</title>
 <p>If the module you require is not available in the HP PPM
 repositories, or if you need a
 specific version (PPM provides only the current release), you can use
@@ -219,11 +223,10 @@ them. Any dependencies included in ActivePerl or installed by PPM will
 be reused rather than being rebuilt.</p>
 <p>You can specify modules for installation via <codeph>cpanm</codeph>
 by including them in one of the following files:</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>manifest.yml</title>
+<title id="manifest-yml">
+<!-- id="manifest-yml" -->manifest.yml</title>
 <p>Add a <codeph>cpan:</codeph> section to <i>manifest.yml</i> that
 specifies version conditions, requests a module via HTTP URL, or fetches
 a branch from a git repo. For example:</p>
@@ -240,30 +243,28 @@ but prior to 3.50. Since no such version exists on CPAN, it is fetched
 from the BackPAN archive. It then installs the Try-Tiny-0.09 tag from
 the try-tiny.git repository (could also be a branch or commit name), and
 finally installs Data-Dump-1.20.tar.gz from an absolute download URL.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Makefile.PL</title>
+<title>
+<!-- id="makefile-pl" -->
+<!-- id="makefile-pl" -->Makefile.PL</title>
 <p>
 <xref href="https://metacpan.org/module/ExtUtils::MakeMaker::Tutorial" scope="external" format="html" >Makefile.PL</xref>
 is a standard format for specifying dependencies in Perl modules.
 Application Lifecycle Service will use this if there is no <i>cpanfile</i> or <i>carton.lock</i> file.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>cpanfile</title>
+<title id="cpanfile">
+<!-- id="cpanfile" -->cpanfile</title>
 <p>The <xref href="https://metacpan.org/module/MIYAGAWA/Module-CPANfile-0.9031/lib/cpanfile.pod" scope="external" format="html" >cpanfile</xref> format is preferable for Perl web applications, as <i>Makefile.PL</i> is
 generally intended for Perl modules. It allows for more elaborate
 specification of module dependencies (see the <xref href="https://metacpan.org/module/MIYAGAWA/Module-CPANfile-0.9031/lib/cpanfile.pod#SYNOPSIS" scope="external" format="html" >cpanfile
 SYNOPSIS</xref>
 for more information).</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>carton.lock</title>
+<title id="carton-lock">
+<!-- id="carton-lock" -->carton.lock</title>
 <p>The <xref href="https://metacpan.org/module/Carton" scope="external" format="html" >carton</xref> module dependency
 manager is similar in concept to Ruby's Bundler.</p>
 <p>To use it, first install carton locally using <codeph>ppm</codeph>
@@ -275,11 +276,10 @@ locally and creates a <i>carton.lock</i> file.</p>
 repository, run <codeph>carton bundle</codeph> to add the source
 packages in a <i>local/cache</i> sub-directory of the application. Application Lifecycle Service
 will install those modules from the cached files.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Disable Testing</title>
+<title id="disable-testing">
+<!-- id="disable-testing" -->Disable Testing</title>
 <p>Disabling tests in cpanm can decrease staging times for applications
 with numerous module dependencies, especially if those dependencies have
 large test suites.</p>
@@ -294,11 +294,11 @@ env:
   PERL_CPANM_OPT: --notest
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Custom CPAN Mirror</title>
+<title>
+<!-- id="custom-cpan-mirror" -->
+<!-- id="custom-cpan-mirror" -->Custom CPAN Mirror</title>
 <p>To make cpanminus use a specific CPAN repository (e.g. a local mirror or
 private repo), instead of the default public ones, set the
 <codeph>--mirror</codeph> and <codeph>--mirror-only</codeph>
@@ -308,11 +308,11 @@ options in PERL_CPANM_OPT:</p>
   PERL_CPANM_OPT: --mirror http://cpan.example.com --mirror-only
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Serving Static Files with uWSGI</title>
+<title>
+<!-- id="serving-static-files-with-uwsgi" -->
+<!-- id="serving-static-files-with-uwsgi" -->Serving Static Files with uWSGI</title>
 <p>It is possible to serve static files with uWSGI using
 <codeph>processes: web:</codeph> in the
 <xref href="../../../../../../devplatform/helion/user/deploy/1.1manifestyml.dita" >
@@ -338,19 +338,22 @@ doesn't exist, then uWSGI will forward the request to the app.</p>
 <p>
 <b>Note</b>: Serving static files via uWSGI is only available for Perl and Python
 frameworks.</p>
-</required-cleanup>
 </section>
 <section>
-<title>Runtime</title>
+<title>
+<!-- id="runtime" -->
+<!-- id="runtime" -->Runtime</title>
 <p>Application Lifecycle Service deploys Perl applications with <xref href="http://docs.activestate.com/activeperl/5.14/" scope="external" format="html" >ActivePerl
 5.14</xref>.</p>
 </section>
 <section>
-<title>Troubleshooting</title>
+<title id="troubleshooting">
+<!-- id="troubleshooting" -->Troubleshooting</title>
 </section>
 <section>
-<required-cleanup>
-<title>General</title>
+<title>
+<!-- id="general" -->
+<!-- id="general" -->General</title>
 <p>If your application fails to stage or launch successfully, use the
 helion logs command to check the stdout and stderr logs.</p>
 <p>If there are no helpful messages in those files, there are two
@@ -361,11 +364,10 @@ with the helion files command:</p>
 helion files myapp logs/ppm4.log
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Other Issues</title>
+<title id="other-issues">
+<!-- id="other-issues" -->Other Issues</title>
 <dl>
 <dlentry>
 <dt>
@@ -400,10 +402,11 @@ builder {
 
 
 </dl>
-</required-cleanup>
 </section>
 <section>
-<title>Examples</title>
+<title>
+<!-- id="examples" -->
+<!-- id="examples" -->Examples</title>
 <p>Several Perl samples are available in
 <xref href="https://github.com/Stackato-Apps" scope="external" format="html" >Application Lifecycle Service-Apps</xref> on GitHub.</p>
 <ul>

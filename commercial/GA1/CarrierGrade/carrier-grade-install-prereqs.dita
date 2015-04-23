@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic8933">
-<title>HP Helion OpenStack® 1.1: Installation Prerequisites</title>
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic6713">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Installation Prerequisites</title>
 <prolog>
 <metadata>
 <othermeta name="layout" content="default"/>
@@ -19,9 +19,6 @@
  <!--permalink: /helion/openstack/carrier/install/prereqs/--></p>
 <p>
 <xref href="../../../commercial/GA1/1.1commercial.technical-overview.ga.dita/" >◀ Technical Overview</xref> | <xref href="./commercial/GA1/1.1commercial.install-GA-overview.dita" >▲ Installation Overview</xref> | <xref href="/helion/openstack/1.1/install/kvm" >Installing on a KVM hypervisor ▶</xref> OR <xref href="/helion/openstack/1.1/install/esx" > Installing on an ESX hypervisor▶</xref> </p>
-<p>
-  <xref href="../../../commercial/GA1/1.0commercial.install-GA-prereqs.dita" >See the Helion OpenStack 1.0 version of this page</xref>
-</p>
 <p>Before you begin the installation process, take a few minutes to read this page for information about:</p>
 <p>Make sure the following required tasks are completed before you begin the installation.</p>
 <ul>
@@ -37,27 +34,34 @@
 <li>Install Debian/Ubuntu packages</li>
 <li>Install and configure NTP</li>
 <li>Configure proxy information </li>
-<li>Download the installation packages</li>
-<li>Create the JSON environment variables file</li>
-<li>Create the baremetal.csv file</li>
 <li>Set DNS servers name-resolution</li>
-<li>Integrating LDAP (Lightweight Directory Access Protocol)</li>
-<li>Disabling SR-IOV</li>
+<li>Disabling SR-IOV
+<!--
+    - Download the installation packages
+    - Create the JSON environment variables file
+    - Create the baremetal.csv file
+    - Integrating LDAP (Lightweight Directory Access Protocol) --></li>
 </ul>
 </li>
 </ul>
 <section>
-<title>Hardware and software requirements</title>
+<title>
+<!-- id="hardware" -->
+<!-- id="hardware" -->Hardware and software requirements</title>
 <p>Before you start, if you have not done so already, make sure your environment meets the hardware and software requirements. See the <xref href="../../../commercial/GA1/1.1commercial.install-GA-supportmatrix.dita" >HP Helion OpenStack Support Matrix</xref>.</p>
+<!-- hiding
+## Preparing the network {#network_prepare}
+
+Before installing HP Helion OpenStack, you are responsible for preparing the network for all installations. You must also prepare the network based on the type of hypervisor you are installing, KVM or ESX. 
+
+The network is not installed or managed by the cloud. You must install and manage the network and make sure there is a route to the Management network as described in this section.
+
+See the [Preparing the Network](/helion/openstack/1.1/install/prereqs/network/) page.
+-->
 </section>
 <section>
-<title>Preparing the network</title>
-<p>Before installing HP Helion OpenStack, you are responsible for preparing the network for all installations. You must also prepare the network based on the type of hypervisor you are installing, KVM or ESX.</p>
-<p>The network is not installed or managed by the cloud. You must install and manage the network and make sure there is a route to the Management network as described in this section.</p>
-<p>See the <xref href="../../../commercial/GA1/1.1commercial.install-GA-prereqs-network.dita" >Preparing the Network</xref> page.</p>
-</section>
-<section>
-<title>Preparing the baremetal systems</title>
+<title id="prepbare">
+<!-- id="prepbare" -->Preparing the baremetal systems</title>
 <p>Perform the following tasks on each baremetal system before starting the install:</p>
 <ul>
 <li>
@@ -84,38 +88,43 @@
 </ul>
 </section>
 <section>
-<title>Preparing the seed cloud host</title>
+<title>
+<!-- id="seed" -->
+<!-- id="seed" -->Preparing the seed cloud host</title>
 <p>The following tasks need to be performed on the seed cloud host, where the seed VM will be installed. The seed cloud host is alternatively known as the installer system.</p>
 <ul>
-<li>Install Ubuntu or Debian 8</li>
+<li>Install Ubuntu Debian 8.</li>
 <li>Configure SSH</li>
 <li>Obtain a public key</li>
 <li>Install Debian/Ubuntu packages</li>
+<li>Configure the xrdp display</li>
 <li>Install and configure NTP</li>
 <li>Configure proxy information </li>
-<li>Download the installation packages</li>
-<li>Create the JSON environment variables file</li>
-<li>Create the baremetal.csv file</li>
 <li>Set DNS servers name-resolution</li>
-<li>Integrating LDAP (Lightweight Directory Access Protocol)</li>
+<li>Disabling SR-IOV
+<!--
+    - Download the installation packages
+    - Create the JSON environment variables file
+    - Create the baremetal.csv file
+    - Integrating LDAP (Lightweight Directory Access Protocol) --></li>
 </ul>
 </section>
 <section>
-<required-cleanup>
-<title>Install Ubuntu or Debian 8</title>
+<title>
+<!-- id="ubuntu" -->
+<!-- id="ubuntu" -->Install Ubuntu or Debian 8</title>
 <p>The seed cloud host must have Ubuntu or Debian 8 installed before performing the HP Helion OpenStack installation.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Configure SSH</title>
-<p>On the seed cloud host, the OpenSSH server must be running and the firewall
- configuration should allow access to the SSH ports.</p>
-</required-cleanup>
+<title>
+<!-- id="ssh" -->
+<!-- id="ssh" -->Configure SSH</title>
+<p>On the seed cloud host, the OpenSSH server must be running and the firewall configuration should allow access to the SSH ports.</p>
 </section>
 <section>
-<required-cleanup>
-<title>Obtain a public key</title>
+<title>
+<!-- id="pub-key" -->
+<!-- id="pub-key" -->Obtain a public key</title>
 <p>On the seed cloud host, the user <codeph>root</codeph> must have a public key, for example:</p>
 <codeblock>
   <codeph>/root/.ssh/id_rsa
@@ -123,27 +132,73 @@
 </codeph>
 </codeblock>
 <p>If user <codeph>root</codeph> does not have a public key, you can create one using the <codeph>ssh-keygen -t rsa -N ""</codeph> command.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Install Debian or Ubuntu packages</title>
+<title>
+<!-- id="packages" -->
+<!-- id="packages" -->Install Debian or Ubuntu packages</title>
 <p>Before starting the installation, you must first install Debian or Ubuntu.</p>
-<p>For more information about the Debian or Ubuntu packages that are required for the seed cloud host, see <xref href="/helion/openstack/1.1/support-matrix#software-requirements-jumplink-span" >Support Matrix</xref>.</p>
-</required-cleanup>
+<p>Run the following all in one command to install packages:</p>
+<codeblock>
+  <codeph>sudo su -l -c "apt-get install -y ntp firefox gedit xrdp xfce4 qemu-kvm libvirt-bin openvswitch-switch openvswitch-common python-libvirt qemu-system-x86 libssl-dev libffi-dev git python-virtualenv python-dev virt-manager xorg gnome-core gnome-system-tools gnome-app-install vlan sudo"
+</codeph>
+</codeblock>
+<!--
+For more information about the Debian or Ubuntu packages that are required for the seed cloud host, see [Support Matrix](/helion/openstack/carrier/support-matrix/).
+-->
 </section>
 <section>
-<required-cleanup>
-<title>Install and configure NTP</title>
+<title>
+<!-- id="configure-the-xrdp-display" -->
+<!-- id="configure-the-xrdp-display" -->Configure the xrdp display</title>
+<p>When you connect to xrdp from some remote desktop applications, the xrdp display might appear gray. Use the following steps before starting the HP Helion OpenStack Carrier Grade installation to prevent the problem.</p>
+<ol>
+<li>
+<p>Update the startwm.sh file to point to the <codeph>xsession</codeph> file. The xsession program is a session manager.</p>
+
+<p>a. Open the <codeph>startwm.sh</codeph> file:</p>
+
+<codeblock>
+<codeph>vi /etc/xrdp/startwm.sh
+</codeph>
+</codeblock>
+
+<p>b. Modify the file as follows:</p>
+
+<codeblock>
+<codeph>!/bin/sh
+
+if [ -r /etc/default/locale ]; then
+. /etc/default/locale
+export LANG LANGUAGE
+fi
+
+. /etc/X11/Xsession
+. /usr/bin/startxfce4
+</codeph>
+</codeblock>
+
+<p>c. Save and close the file.</p>
+</li>
+<li>
+<p>Restart the xrdp service:</p>
+
+<p>sudo /etc/init.d/xrdp restart</p>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="ntp" -->
+<!-- id="ntp" -->Install and configure NTP</title>
 <p>NTP is a networking protocol for clock synchronization between computer systems.</p>
 <p>The HP Helion OpenStack cloud nodes must be configured as NTP clients and point to the same NTP server.</p>
 <p>You can install NTP on the seed cloud host and configure it as an NTP server. Or, you can use a pre-existing NTP server that is reachable from the management network.  You will also need to configure the undercloud and overcloud systems as NTP clients pointing to the NTP server you have chosen to use during the installation process.</p>
-<p>For information on installing NTP on the seed cloud host, see <xref href="../../../commercial/GA1/1.1commercial.install-GA-NTP.dita" >Installing an NTP Server</xref>.</p>
-</required-cleanup>
+<p>For information on installing NTP on the seed cloud host, see <xref href="../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.dita" >Installing an NTP Server</xref>.</p>
 </section>
 <section>
-<required-cleanup>
-<title>Configure proxy information</title>
+<title id="proxy">
+<!-- id="proxy" -->Configure proxy information</title>
 <p>Before you begin your installation on the seed cloud host, if necessary configure the proxy information for your environment using the following steps:</p>
 <ol>
 <li>
@@ -176,148 +231,103 @@ provider_network is your ESX management network
 <p>Log out and re-login to the seed cloud host to activate the proxy configuration.</p>
 </li>
 </ol>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Download and unpack the installation package</title>
-<p>Before you begin, you must download the required HP Helion OpenStack installation package(s):</p>
-<ol>
-<li>
-<p>Register and then log in to download the required installation package(s) from <xref href="https://helion.hpwsportal.com#/Product/%7B%22productId%22%3A%221247%22%7D/Show" scope="external" format="html" >HP Helion OpenStack product installation</xref>.</p>
-
-<ul>
-<li>
 <p>
-<b>For KVM installs</b>
-</p>
+<!-- Hiding for alpha
+### Download and unpack the installation package {#getinstall}
 
-<table>
-<tgroup cols="2">
-<colspec colname="col1"/>
-<colspec colname="col2"/>
-<tbody>
-<row>
-<entry>
-<b> Installation package </b>
-</entry>
-<entry>
-<b>File name</b>
-</entry>
-</row>
-<row>
-<entry>HP Helion OpenStack</entry>
-<entry>HP_Helion_OpenStack_1.1.tgz</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-</li>
-<li>
-<p>
-<b>For ESX installs</b>
-</p>
+Before you begin, you must download the required HP Helion OpenStack installation package(s):
 
-<table>
-<tgroup cols="2">
-<colspec colname="col1"/>
-<colspec colname="col2"/>
-<tbody>
-<row>
-<entry>
-<b> Installation package </b>
-</entry>
-<entry>
-<b>File name</b>
-</entry>
-</row>
-<row>
-<entry>HP Helion OpenStack</entry>
-<entry>HP_Helion_OpenStack_1.1.tgz</entry>
-</row>
-<row>
-<entry>HP Helion OpenStack vCenter Proxy Appliance</entry>
-<entry>overcloud_vcenter_compute_proxy_1.1.ova</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-</li>
-</ul>
-</li>
-<li>
-<p>Log in to your seed cloud host as root:</p>
 
-<codeblock>
-<codeph>sudo su -
-</codeph>
-</codeblock>
-</li>
-<li>
-<p>Copy the installation package to the seed cloud host.</p>
-</li>
-<li>
-<p>Extract the HP Helion OpenStack installation package to the <codeph>root</codeph> directory:</p>
+1. Register and then log in to download the required installation package(s) from [HP Helion OpenStack product installation](https://helion.hpwsportal.com#/Product/%7B%22productId%22%3A%221247%22%7D/Show).
 
-<codeblock>
-<codeph>tar zxvf /root/HP_Helion_OpenStack_1.1.tgz
-</codeph>
-</codeblock>
+    * **For KVM installs**
 
-<p>This creates and populates a <codeph>tripleo/</codeph> directory within the `root' directory.</p>
-</li>
-</ol>
-</required-cleanup>
+        <table style="text-align:left; vertical-align:top; width:650px;">
+    
+        <tr style="background-color: lightgrey; color: black;">
+        <td><b> Installation package </b></td><td><b>File name</b></td></tr>
+
+        <tr>
+        <td>HP Helion OpenStack</td><td>HP_Helion_OpenStack_1.1.tgz</td></tr>
+        </table>
+
+    * **For ESX installs**
+
+        <table style="text-align: left; vertical-align: top; width:650px;">
+    <tr style="background-color: lightgrey; color: black;">
+    <td><b> Installation package </b></td><td><b>File name</b></td>
+    <tr>
+    <td>HP Helion OpenStack</td><td>HP_Helion_OpenStack_1.1.tgz</td></tr>
+    <tr>
+    <td>HP Helion OpenStack vCenter Proxy Appliance</td>
+    <td>overcloud_vcenter_compute_proxy_1.1.ova</td></tr>
+    <td>HP Helion OpenStack VCN Agent Appliance</td>
+    <td>ovsvapp_1.1.tgz</td></tr>
+    </table>
+
+2. Log in to your seed cloud host as root:
+
+        sudo su -
+
+3. Copy the installation package to the seed cloud host.
+
+4.  Extract the HP Helion OpenStack installation package to the `root` directory:
+
+        tar zxvf /root/HP_Helion_OpenStack_1.1.tgz
+
+    This creates and populates a `tripleo/` directory within the `root' directory.
+
+-->
+<!--
+### Editing the JSON Environment Variables File for Installation #### {#envars}
+
+To make the HP Helion OpenStack installation process easier, you can enter all of the environment variables required by the installer into a JSON file that will be executed automatically. A JSON file is included in the installation package that you can modify with your environment variables.
+
+For information, see [Editing the JSON Environment Variables File for Installation](/helion/openstack/1.1/install/envars/).
+-->
+<!--
+### Prepare baremetal.csv file ### {#csv}
+
+Before installing, ensure you have created the `baremetal.csv` file that is required for installation.
+
+The `baremetal.csv` file informs the installer of the size of each server that each node will be installed into. In this file you can also specify the role (or node type) for each server so you use the right hardware for different tasks such as storage or compute.  
+
+
+For more information, see [Creating the baremetal.csv file](/helion/openstack/1.1/install/csv/).
+--></p>
 </section>
 <section>
-<required-cleanup>
-<title>Editing the JSON Environment Variables File for Installation</title>
-<p>To make the HP Helion OpenStack installation process easier, you can enter all of the environment variables required by the installer into a JSON file that will be executed automatically. A JSON file is included in the installation package that you can modify with your environment variables.</p>
-<p>For information, see <xref href="../../../commercial/GA1/1.1commercial.install-GA-JSON.dita" >Editing the JSON Environment Variables File for Installation</xref>.</p>
-</required-cleanup>
+<title>
+<!-- id="name-resolution" -->
+<!-- id="name-resolution" -->Set a default DNS name server</title>
+<p>To set a default DNS name server for your HP Helion OpenStack Commercial cloud, refer to <xref href="/helion/openstack/carrier/name-resolution/" >Enabling Name Resolution from Tenant VMs in the Overcloud</xref> before installation.</p>
+<!--
+### Integrating LDAP (Lightweight Directory Access Protocol) {#ldap}
+    
+**OPTIONAL** The HP Helion OpenStack Identity service can use Lightweight Directory Access Protocol (LDAP) to integrate your organization's existing directory service and user account management processes. LDAP intergration must be performed during the HP Helion OpenStack installation process.
+
+For information on integrating LDAP, see [HP Helion OpenStack&#174;: Integrating LDAP](/helion/openstack/1.1/services/identity/integrate-ldap/).
+-->
 </section>
 <section>
-<required-cleanup>
-<title>Prepare baremetal.csv file</title>
-<p>Before installing, ensure you have created the <codeph>baremetal.csv</codeph> file that is required for installation.</p>
-<p>The <codeph>baremetal.csv</codeph> file informs the installer of the size of each server that each node will be installed into. In this file you can also specify the role (or node type) for each server so you use the right hardware for different tasks such as storage or compute.</p>
-<p>For more information, see <xref href="../../../commercial/GA1/1.1commercial.install-GA-CSV.dita" >Creating the baremetal.csv file</xref>.</p>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Set a default DNS name server</title>
-<p>To set a default DNS name server for your HP Helion OpenStack Commercial cloud, refer to <xref href="../../../commercial/GA1/1.1commercial.name-resolution.dita" >Enabling Name Resolution from Tenant VMs in the Overcloud</xref> before installation.</p>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Integrating LDAP (Lightweight Directory Access Protocol)</title>
-<p>
-<b>OPTIONAL</b> The HP Helion OpenStack Identity service can use Lightweight Directory Access Protocol (LDAP) to integrate your organization's existing directory service and user account management processes. LDAP intergration must be performed during the HP Helion OpenStack installation process.</p>
-<p>For information on integrating LDAP, see <xref href="../../../commercial/GA1/1.1commerical.services-identity-integrate-ldap.dita" >HP Helion OpenStack®: Integrating LDAP</xref>.</p>
-</required-cleanup>
-</section>
-<section>
-<required-cleanup>
-<title>Disabling SR-IOV</title>
+<title id="disabling-sr-iov">
+<!-- id="disabling-sr-iov" -->Disabling SR-IOV</title>
 <p>In the HP Helion OpenStack 1.1 release, there is a performance issue with hardware that is configured to support Single Root I/O Virtualization (SR-IOV) on undercloud nodes.</p>
 <p>The problem appears as overcloud performance delays for certain operations, like attempting to SSH into a compute node. The problem is related to DNS performance. The DNS service for the overcloud is the dnsmasq process. Occasionally the openvswitch on the undercloud drops packets which are destined for the dnsmasq tap device. The reason the openvswitch occasionally has problems is due to it seeing the tap device MAC address as a source MAC address on eth0. This source MAC address can flap between the tap device and eth0. Properly, the source address should only be the tap device. Because SR-IOV is enabled, a broadcast from the tap device MAC address as source is being sent back by the NIC through eth0. To fix this problem, HP recommends that you disable SR-IOV in the NIC BIOS (not just in the kernel) on undercloud nodes.</p>
-</required-cleanup>
 </section>
 <section>
-<title>Next step</title>
-<p>Depending upon your environment, click the appropriate link for the next step in the installation.</p>
-<ul>
-<li>
-<xref href="/helion/openstack/1.1/install/kvm" >Installing and configuring on a KVM hypervisor</xref>
-</li>
-<li>
-<xref href="../../../commercial/GA1/1.1commercial.install-GA-esx.dita" >Installing and configuring on an ESX hypervisor</xref>
-</li>
-</ul>
+<title>
+<!-- id="nextstep" -->
+<!-- id="nextstep" -->Next step</title>
 <p>
-  <xref href="#topic8933/top"> Return to Top ↑ </xref>
+  <xref href="../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-network.dita" >Prepare the Network for Installation</xref>
+</p>
+<!--
+* [Installing and configuring on a KVM hypervisor](/helion/openstack/1.1/install/kvm)
+* [Installing and configuring on an ESX hypervisor](/helion/openstack/1.1/install/esx/)
+-->
+<p>
+  <xref href="#topic6713/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

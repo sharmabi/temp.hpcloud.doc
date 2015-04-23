@@ -35,8 +35,9 @@ and even between applications deployed to the same space.</p>
 <li>Conserve space on filesystems allocated within the VM instance by referencing the persistent filesystem instead.</li>
 </ul>
 <section>
-<required-cleanup>
-<title>Creating A Persistent File System</title>
+<title>
+<!-- id="creating-a-persistent-file-system" -->
+<!-- id="creating-a-persistent-file-system" -->Creating A Persistent File System</title>
 <p>A filesystem service can be configured in your <i>manifest.yml</i> file:</p>
 <codeblock>
   <codeph>services:
@@ -60,11 +61,11 @@ command:</p>
     +----------------+------------+
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Using A Persistent File System</title>
+<title>
+<!-- id="using-a-persistent-file-system" -->
+<!-- id="using-a-persistent-file-system" -->Using A Persistent File System</title>
 <p>
 <b>Note</b>: File system service is available during pre-staging and shouldn't need
 to be reconfigured when the application starts.</p>
@@ -147,11 +148,10 @@ in the <xref href="../../../../../devplatform/1.2/helion/user/deploy/1.2manifest
 </xref> file to
 configure a filesystem service and create a symlink to it for use by the
 app. (see example below)</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Example of Using A Persistent File System</title>
+<title id="example-of-using-a-persistent-file-system">
+<!-- id="example-of-using-a-persistent-file-system" -->Example of Using A Persistent File System</title>
 <p>
 <b>Note</b>: When linking the file system service to the application, using <i>symlinks</i>
 is strongly recommended.</p>
@@ -187,7 +187,6 @@ hooks:
 </codeph>
 </codeblock>
 <p>This is a misleading warning, as the files <b>will</b> actually be moved with the correct permissions and ownership.</p>
-</required-cleanup>
 </section>
 </body>
 </topic>

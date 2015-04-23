@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2960">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2823">
 <title>HP Helion OpenStack® 1.1: Metering Service (Ceilometer): Available Meter Types</title>
 <prolog>
 <metadata>
@@ -37,16 +37,17 @@ Samples are populated by <i>counter</i> objects.</p>
 <li>the <b>project</b> <b>ID</b> and <b>user</b> that the resource is assigned to.</li>
 </ul>
 <p>
-<xref href="../../../commercial/GA1/ceilometer/1.1commercial.services-reporting-alarms.dita" >Alarms</xref> can be configured to trigger notifications or other actions when a specific metering threshold value has been reached or exceeded.</p>
-<p>
 <b>Note</b>: The metering service shares the same High-availability proxy, messaging, and database clusters with the other Information services. To avoid unnecessarily high loads, <xref href="/helion/openstack/1.1/services/reporting/bestpractices#meterlist" >non-essential meters can be disabled</xref>.</p>
 <section>
-<title>Helion OpenStack Default Meters</title>
+<title>
+<!-- id="helion-openstack-default-meters" -->
+<!-- id="helion-openstack-default-meters" -->Helion OpenStack Default Meters</title>
 <p>These meters are installed and enabled by default during an HP Helion OpenStack installation.</p>
 </section>
 <section>
-<required-cleanup>
-<title>Compute (Nova)</title>
+<title>
+<!-- id="compute-nova" -->
+<!-- id="compute-nova" -->Compute (Nova)</title>
 <table>
 <tgroup cols="6">
 <colspec colname="col1"/>
@@ -87,11 +88,10 @@ Samples are populated by <i>counter</i> objects.</p>
 </tbody>
 </tgroup>
 </table>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Image (Glance)</title>
+<title id="image-glance">
+<!-- id="image-glance" -->Image (Glance)</title>
 <table>
 <tgroup cols="6">
 <colspec colname="col1"/>
@@ -156,11 +156,11 @@ Samples are populated by <i>counter</i> objects.</p>
 </tbody>
 </tgroup>
 </table>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Network (Neutron)</title>
+<title>
+<!-- id="network-neutron" -->
+<!-- id="network-neutron" -->Network (Neutron)</title>
 <table>
 <tgroup cols="6">
 <colspec colname="col1"/>
@@ -225,11 +225,10 @@ Samples are populated by <i>counter</i> objects.</p>
 </tbody>
 </tgroup>
 </table>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Volume (Cinder)</title>
+<title id="volume-cinder">
+<!-- id="volume-cinder" -->Volume (Cinder)</title>
 <table>
 <tgroup cols="6">
 <colspec colname="col1"/>
@@ -294,7 +293,6 @@ Samples are populated by <i>counter</i> objects.</p>
 </tbody>
 </tgroup>
 </table>
-</required-cleanup>
 </section>
 </body>
 </topic>

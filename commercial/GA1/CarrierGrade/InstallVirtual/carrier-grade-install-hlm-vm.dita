@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2120">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Create the HLM Virtual Machine</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion OpenStack 1.1"/>
+<othermeta name="role" content="Storage Administrator"/>
+<othermeta name="role" content="Storage Architect"/>
+<othermeta name="role" content="Michael B,"/>
+<othermeta name="product-version1" content="HP Helion OpenStack 1.1"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-vm.md-->
+ <!--permalink: /helion/openstack/carrier/install/hlm-vm/--></p>
+<!--
+<p style="font-size: small;"><a href="../../../../commercial/GA1/1.1commercial.technical-overview.ga.dita/">&#9664; Technical Overview</a> | <a href="./commercial/GA1/1.1commercial.install-GA-overview.dita">&#9650; Installation Overview</a> | <a href="/helion/openstack/1.1/install/kvm">Installing on a KVM hypervisor &#9654;</a> OR <a href="/helion/openstack/1.1/install/esx"> Installing on an ESX hypervisor&#9654;</a> </p> 
+-->
+<p>Helion Lifecycle Management (HLM) consists of the ongoing operations /maintenance as well as the initial deployment of the Helion system as shown above.</p>
+<section>
+<title id="create-the-hlm-vm">
+<!-- id="create-the-hlm-vm" -->Create the HLM VM</title>
+<ol>
+<li>
+<p>Copy the latest cg-hlm.qcow2 image to the KVM host.</p>
+</li>
+<li>
+<p>Using a tool such as virt-manager to create HLM VM with latest qcow2 image provided. Assign default, PXE and CLM networks to this VM.</p>
+</li>
+<li>
+<p>Shutdown the HLM VM</p>
+</li>
+<li>
+<p>From KVM host, execute the following command to verify that the three interfaces are defined properly:</p>
+
+<codeblock>
+<codeph>virsh edit hlm
+</codeph>
+</codeblock>
+
+<p>The file should appear similar to the following:</p>
+
+<codeblock>
+<codeph>&lt;interface type='network'&gt;
+    &lt;mac address='52:54:00:5f:61:73'/&gt;
+    &lt;source network='default'/&gt;
+    &lt;model type='virtio'/&gt;
+    &lt;address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x0'/&gt;
+&lt;/interface&gt;
+&lt;interface type='network'&gt;
+    &lt;mac address='52:54:00:fd:72:98'/&gt;
+    &lt;source network='br-ctl'/&gt;
+    &lt;model type='virtio'/&gt;
+    &lt;address type='pci' domain='0x0000' bus='0x00' slot='0x07' function='0x0'/&gt;
+&lt;/interface&gt;
+&lt;interface type='network'&gt;
+    &lt;mac address='52:54:00:99:dd:35'/&gt;
+    &lt;source network='br-ctl' portgroup='CLM'/&gt;
+    &lt;model type='virtio'/&gt;
+    &lt;address type='pci' domain='0x0000' bus='0x00' slot='0x08' function='0x0'/&gt;
+&lt;/interface&gt;
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Start the HLM VM using the following command:</p>
+
+<codeblock>
+<codeph>virsh start hlm
+</codeph>
+</codeblock>
+
+<p>At this point, HLM VM should be up and running with required 3 interfaces.</p>
+</li>
+<li>
+<p>Use the following command to display the port details for the CLM VLAN:</p>
+
+<codeblock>
+<codeph>ovs-vsctl show
+</codeph>
+</codeblock>
+
+<p>The output should appear similar to the following:</p>
+
+<codeblock>
+<codeph>Bridge br-ctl
+Port "em1"
+    Interface "em1"
+Port br-ctl
+    Interface br-ctl
+        type: internal
+Port "vnet1"
+    Interface "vnet1"
+Port "vnet2"
+    tag: 1574
+    Interface "vnet2"
+
+ovs_version: "2.0.2"
+</codeph>
+</codeblock>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="nextstep" -->
+<!-- id="nextstep" -->Next step</title>
+<p>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Install HP Helion OpenStack</xref>
+</p>
+<p>
+  <xref href="#topic2120/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

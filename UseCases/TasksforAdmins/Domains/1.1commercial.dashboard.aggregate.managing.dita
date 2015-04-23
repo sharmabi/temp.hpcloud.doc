@@ -30,8 +30,8 @@
 </li>
 </ul>
 <section>
-<required-cleanup>
-<title>Create a host aggregate</title>
+<title id="createagg">
+<!-- id="createagg" -->Create a host aggregate</title>
 <ol>
 <li>
 <p>
@@ -61,11 +61,10 @@
 <p>A message is displayed on successful creation.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Modify a Host Aggregate</title>
+<title id="editagg">
+<!-- id="editagg" -->Modify a Host Aggregate</title>
 <ol>
 <li>
 <p>
@@ -100,11 +99,11 @@
 <p>d. Click <b>Save</b> when done.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Delete a host aggregate</title>
+<title>
+<!-- id="deleteagg" -->
+<!-- id="deleteagg" -->Delete a host aggregate</title>
 <ol>
 <li>
 <p>
@@ -126,7 +125,6 @@
   <xref href="#topic2432/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

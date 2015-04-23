@@ -63,13 +63,13 @@ documentation.</p>
 Content-Length header which is currently required for Perl apps under
 Application Lifecycle Service.</p>
 <section>
-<required-cleanup>
-<title>Examples</title>
+<title>
+<!-- id="examples" -->
+<!-- id="examples" -->Examples</title>
 <ul>
 <li>
 <xref href="https://github.com/Stackato-Apps/rubric" scope="external" format="html" >Rubric</xref>: The winning entry from our Application Lifecycle Service contest.</li>
 </ul>
-</required-cleanup>
 </section>
 </body>
 </topic>

@@ -21,7 +21,9 @@ applications as well as monitoring quota usage, and viewing logs.</p>
 <p>The interface differs for Admin and non-Admin users. The features described below are available and visible to
 to end users. For information on the Management Console view for Admins, see the ALS Admin Guide.</p>
 <section>
-<title>Welcome</title>
+<title>
+<!-- id="welcome" -->
+<!-- id="welcome" -->Welcome</title>
 <p>The top-level page of the Management Console displays quick links to the
 most commonly used resources:</p>
 <ul>
@@ -51,7 +53,9 @@ accessible from the drop down list at the top left.</li>
 </ul>
 </section>
 <section>
-<title>Organization View</title>
+<title>
+<!-- id="organization-view" -->
+<!-- id="organization-view" -->Organization View</title>
 <p>The Organizations page shows a list of all
 <xref href="/als/v1/user/deploy/orgs-spaces#orgs-spaces" >
 <i>Organizations</i>
@@ -104,7 +108,8 @@ Auditors, or Billing Managers to view or adjust billing/payment info and
 spending limits.</p>
 </section>
 <section>
-<title>Spaces View</title>
+<title id="space-view">
+<!-- id="space-view" -->Spaces View</title>
 <ul>
 <li>
 <b>Apps</b>: A filterable list of applications in the Space. Clicking an
@@ -145,7 +150,9 @@ settings, reports, and logs.</li>
 </ul>
 </section>
 <section>
-<title>Application View</title>
+<title>
+<!-- id="application-view" -->
+<!-- id="application-view" -->Application View</title>
 <ul>
 <li>
 <b>About</b>: General information about the app including which buildpack
@@ -195,7 +202,9 @@ the organizations's quota.</li>
 </ul>
 </section>
 <section>
-<title>Service Instance View</title>
+<title>
+<!-- id="service-instance-view" -->
+<!-- id="service-instance-view" -->Service Instance View</title>
 <p>Clicking a service instance's name anywhere in the interface brings up a
 view of that service instance showing:</p>
 <ul>
@@ -213,7 +222,9 @@ the <xref href="/als/v1/user/reference/client-ref#command-service" >
 command.</p>
 </section>
 <section>
-<title>Sample Apps</title>
+<title>
+<!-- id="marketplace" -->
+<!-- id="marketplace" -->Sample Apps</title>
 <p>The Sample Apps are collection of ready-to-run applications which can be deployed to Application Lifecycle Service by fetching the source code from the repository.</p>
 <p>Click the <b>Deploy App</b> button to start it on Application Lifecycle Service. You will be
 prompted to choose a Space and Domain for the app if there are multiple

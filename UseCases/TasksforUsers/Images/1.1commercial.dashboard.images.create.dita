@@ -21,8 +21,9 @@
 <p>
 <b>Note:</b> After you upload an image, it is considered <i>golden</i> and you cannot change it.</p>
 <section>
-<required-cleanup>
-<title>Create an image</title>
+<title>
+<!-- id="create-an-image" -->
+<!-- id="create-an-image" -->Create an image</title>
 <ol>
 <li>
 <p>
@@ -62,7 +63,6 @@
   <xref href="#topic2334/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

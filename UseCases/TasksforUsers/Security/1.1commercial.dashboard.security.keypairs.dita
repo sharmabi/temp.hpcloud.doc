@@ -30,8 +30,8 @@
 </li>
 </ul>
 <section>
-<required-cleanup>
-<title>Create Keypairs</title>
+<title id="createKeypairs">
+<!-- id="createKeypairs" -->Create Keypairs</title>
 <p>To create a keypair, do the following:</p>
 <ol>
 <li>
@@ -63,11 +63,10 @@
 <p>Click Save to place the private key on your local system.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Delete Keypairs</title>
+<title id="deleteKeypair">
+<!-- id="deleteKeypair" -->Delete Keypairs</title>
 <p>To delete a keypair, do the following:</p>
 <ol>
 <li>
@@ -89,11 +88,10 @@
 <p>A message displays if the key pair is deleted.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Import Keypairs {#Import Keypairs}</title>
+<title id="import-keypairs-import-keypairs">
+<!-- id="import-keypairs-import-keypairs" -->Import Keypairs {#Import Keypairs}</title>
 <p>To import a keypair, do the following:</p>
 <ol>
 <li>
@@ -125,7 +123,6 @@
   <xref href="#topic2328/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

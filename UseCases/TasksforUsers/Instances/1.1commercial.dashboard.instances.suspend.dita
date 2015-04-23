@@ -20,8 +20,8 @@
 <p>
 <b>Note:</b> Suspending is different from <xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.pause.dita" >pausing an instance</xref>. Pausing keeps the instance running, (in a "frozen" state) and stores the content of the instance in memory (RAM).</p>
 <section>
-<required-cleanup>
-<title>Suspend an instance</title>
+<title id="suspend-an-instance">
+<!-- id="suspend-an-instance" -->Suspend an instance</title>
 <p>To suspend an instance:</p>
 <ol>
 <li>
@@ -37,11 +37,10 @@
 <p>The status of the instance reports <i>Suspended</i>.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Resume an instance</title>
+<title id="resume-an-instance">
+<!-- id="resume-an-instance" -->Resume an instance</title>
 <p>To resume an instance:</p>
 <ol>
 <li>
@@ -61,7 +60,6 @@
   <xref href="#topic1490/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

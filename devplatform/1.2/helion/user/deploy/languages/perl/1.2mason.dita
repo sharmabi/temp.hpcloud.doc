@@ -87,7 +87,9 @@ builder {
 <i>Configuration With manifest.yml</i>
 </xref> section.</p>
 <section>
-<title>Examples</title>
+<title>
+<!-- id="examples" -->
+<!-- id="examples" -->Examples</title>
 <ul>
 <li>
 <xref href="https://github.com/Stackato-Apps/mason-helloworld" scope="external" format="html" >Mason Hello

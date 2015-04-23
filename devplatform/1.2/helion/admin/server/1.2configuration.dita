@@ -129,18 +129,22 @@ option is useful in this scenario).</p>
 </li>
 </ul>
 <section>
-<title>Changing the Password</title>
+<title>
+<!-- id="changing-the-password" -->
+<!-- id="changing-the-password" -->Changing the Password</title>
 <p>The default password for the Helion system user is <b>helion</b>.  In clusters created by Helion Orchestration tools (the Horizon Management Console and Installer CLI VM), access after cluster setup is only available by SSH key pair.</p>
 <p>This password is changed to match the one set for the first administrative user created in the Management Console. Once you've set up the primary Application Lifecycle Service admin account, use that account's password when logging in to the VM at the command line.</p>
 <p>In an Application Lifecycle Service cluster, this change only happens on the node serving the Management Console pages (which could be one of <xref href="/helion/devplatform/1.2/als/admin/cluster#cluster-multi-controllers" >multiple Controller nodes</xref>). In this case, it's best to log in to each node in the cluster to change the password
 manually with the <i>passwd</i> command.</p>
 </section>
 <section>
-<title>Network Setup</title>
+<title id="network-setup">
+<!-- id="network-setup" -->Network Setup</title>
 </section>
 <section>
-<required-cleanup>
-<title>Changing the Hostname</title>
+<title>
+<!-- id="changing-the-hostname" -->
+<!-- id="changing-the-hostname" -->Changing the Hostname</title>
 <p>You may want or need to change the hostname of the Application Lifecycle Service system, either to match a DNS record you've created or just to make the system URLs more convenient. This can be done using the <xref href="/helion/devplatform/1.2/als/admin/reference/kato-ref#kato-command-ref" >kato node rename</xref> command:</p>
 <codeblock>
   <codeph>kato node rename mynewname.example.com
@@ -159,11 +163,10 @@ executing <i>kato node rename</i>.</p>
 <p>In a <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-cluster" >cluster</xref>, you
 may also need to manually <xref href="#topic31295/server-config-etc-hosts">modify the <i>/etc/hosts file</i>
 </xref>.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Changing IP Addresses</title>
+<title id="changing-ip-addresses">
+<!-- id="changing-ip-addresses" -->Changing IP Addresses</title>
 <p>The Application Lifecycle Service <i>micro cloud</i> server is initially set up for <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-dhcp" >DHCP</xref> and <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-multicast-dns" >multicast DNS</xref>. This is
 often sufficient for local testing, but in this configuration has only a
 single node and can only be privately routed.</p>
@@ -231,11 +234,10 @@ subnet, and be sure that <codeph>ping</codeph> works correctly on
 the new addresses. You should also use this opportunity to ping the
 router and DNS server for this subnet. Check with your network
 administrator for their addresses.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Setting a Static IP</title>
+<title id="setting-a-static-ip">
+<!-- id="setting-a-static-ip" -->Setting a Static IP</title>
 <p>The easiest way to configure an Application Lifecycle Service VM with a static IP address is to use the <xref href="/helion/devplatform/1.2/als/admin/reference/kato-ref#kato-command-ref-op" >kato op static_ip</xref> command.</p>
 <p>This command will prompt for the following inputs:</p>
 <ul>
@@ -318,11 +320,11 @@ permissible. Once you have this secondary address set up, see the
 <i>/etc/hosts</i>
 </xref> section for final configuration
 of the server.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Modifying /etc/hosts</title>
+<title>
+<!-- id="modifying-etc-hosts" -->
+<!-- id="modifying-etc-hosts" -->Modifying /etc/hosts</title>
 <p>The <codeph>/etc/hosts</codeph> file is used to resolve certain
 essential or local hostnames without calling upon the DNS. Unless you
 need to <xref href="#topic31295/server-config-hostname">change the local hostname</xref>, you will
@@ -377,11 +379,10 @@ example:</p>
   <codeph>sudo vi /etc/hosts
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>DNS</title>
+<title id="server-config-dns">
+<!-- id="server-config-dns" -->DNS</title>
 <p>The Application Lifecycle Service micro cloud uses <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-multicast-dns" >multicast DNS</xref> to broadcast its generated hostname (e.g. <codeph>helion-xxxx.local</codeph>). This mechanism is intended for VMs running on a local machine or subnet.</p>
 <p>For production use, the server will need:</p>
 <ul>
@@ -429,11 +430,10 @@ necessary. To turn it off on the Application Lifecycle Service server, use the c
   <codeph>kato role remove mdns
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Dynamic DNS</title>
+<title id="dynamic-dns">
+<!-- id="dynamic-dns" -->Dynamic DNS</title>
 <p>If you don't have access to a DNS server, you can use a dynamic DNS
 provider, such as <xref href="http://www.changeip.com/freedomains.asp" scope="external" format="html" >ChangeIP</xref>
 and
@@ -447,20 +447,19 @@ accept email from the provider (for example
 assignment is made on the subdomain to handle <codeph>api</codeph>
 and related application subdomains. Then wait to receive the
 authorization email, and verify the zone transfer before proceeding.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Alternate DNS Techniques {#alternate-dns-techniques)</title>
+<title id="alternate-dns-techniques-alternate-dns-techniques">
+<!-- id="alternate-dns-techniques-alternate-dns-techniques" -->Alternate DNS Techniques {#alternate-dns-techniques)</title>
 <p>For situations where mDNS will not work (e.g. running in a cloud hosting
 environment or connecting from a Windows system without mDNS support)
 but which do not merit the effort of manually configuring a DNS record
 (e.g. a test server) alternative methods are available.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>xip.io</title>
+<title>
+<!-- id="xip-io" -->
+<!-- id="xip-io" -->xip.io</title>
 <p>The quickest way to get wildcard DNS resolution is to use the
 <xref href="http://xip.io/" scope="external" format="html" >xip.io</xref> service.  This is the approach taken on clusters created with the Horizon Management Console panel or Application Lifecycle Service Installer CLI, and is done as part of the setup process.</p>
 <p>
@@ -476,11 +475,11 @@ example:</p>
 Application Lifecycle Service settings. The xip.io DNS servers will resolve the domain
 '10.9.8.7.xip.io' and all sub-domains to '10.9.8.7'. This works for
 private subnets as well as public IP addresses.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>dnsmasq</title>
+<title>
+<!-- id="dnsmasq" -->
+<!-- id="dnsmasq" -->dnsmasq</title>
 <p>Locally, you can run
 <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-dnsmasq" >dnsmasq</xref> as a simple
 DNS proxy which resolves wildcards for
@@ -496,11 +495,11 @@ present in any of its configuration files:</p>
   <codeph>/etc/init.d/dnsmasq restart
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Adding DNS Nameservers</title>
+<title>
+<!-- id="adding-dns-nameservers" -->
+<!-- id="adding-dns-nameservers" -->Adding DNS Nameservers</title>
 <p>You may need to add site-specific DNS nameservers manually if the
 Application Lifecycle Service VM or applications running in Application Lifecycle Service containers need to
 resolve internal hosts using a particular nameserver.</p>
@@ -515,11 +514,10 @@ For example:</p>
 <p>For Application Lifecycle Service VMs with a static IP, add the nameservers when prompted
 when running the <codeph>kato op static_ip</codeph> command (see
 <xref href="#topic31295/server-config-static-ip">Setting a Static IP</xref> above).</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>TCP/UDP Port Configuration</title>
+<title id="tcp-udp-port-configuration">
+<!-- id="tcp-udp-port-configuration" -->TCP/UDP Port Configuration</title>
 <p>The Application Lifecycle Service <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-micro-cloud" >micro cloud</xref> runs with
 the following ports exposed:</p>
 <table>
@@ -645,11 +643,10 @@ nodes (via SSHFS).</li>
 <li>The optional Harbor port service has a configurable port range
 (default 41000 - 61000) which can be exposed externally if required.</li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>HTTP Proxy</title>
+<title id="http-proxy">
+<!-- id="http-proxy" -->HTTP Proxy</title>
 <p>
   <b>Note</b>
 </p>
@@ -689,11 +686,10 @@ socksProxyType=socks4a | OR | socks5;
 </codeblock>
 <p>For log info, any errors reported by Polipo are available on the
 Application Lifecycle Service server in <codeph>/var/log/polipo/polipo.log</codeph>.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Staging Cache &amp; App HTTP Proxy</title>
+<title id="staging-cache-app-http-proxy">
+<!-- id="staging-cache-app-http-proxy" -->Staging Cache &amp; App HTTP Proxy</title>
 <p>Application Lifecycle Service caches all application dependencies that are downloaded by module managers that support the <xref href="/helion/devplatform/1.2/als/user/reference/environment#term-http-proxy" >HTTP_PROXY</xref> environment variable (e.g. pip, PyPM, PPM, NPM, etc). This is limited to 100MB of in-memory cache.</p>
 <p>If you have an upstream HTTP proxy that deployed applications and the
 staging system need to traverse to access the internet, use the
@@ -721,10 +717,10 @@ within all subsequently created application containers.</p>
   <codeph>kato op upstream_proxy set 192.168.0.99:3128 --no-proxy internal.example.net 
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<title>VM Filesystem Setup {#vm-filesystem-setup)</title>
+<title id="vm-filesystem-setup-vm-filesystem-setup">
+<!-- id="vm-filesystem-setup-vm-filesystem-setup" -->VM Filesystem Setup {#vm-filesystem-setup)</title>
 <p>The Application Lifecycle Service VM is distributed with a simple default partitioning scheme
 (i.e. everything but "/boot" mounted on "./publiccloud/index.dita/").</p>
 <p>Warning</p>
@@ -743,7 +739,9 @@ data can be found in the <xref href="/helion/devplatform/1.2/als/admin/best-prac
 section.</p>
 </section>
 <section>
-<title>Application Lifecycle Service Data Services vs. High Availability Databases</title>
+<title>
+<!-- id="helion-data-services-vs-high-availability-databases" -->
+<!-- id="helion-data-services-vs-high-availability-databases" -->Application Lifecycle Service Data Services vs. High Availability Databases</title>
 <p>Application Lifecycle Service data services do not offer any built-in redundancy. For
 business-critical data storage, a high-availability database or cluster
 is recommended.</p>
@@ -757,8 +755,9 @@ examples in the <xref href="/helion/devplatform/1.2/als/admin/reference/add-serv
 Services</xref> section.</p>
 </section>
 <section>
-<required-cleanup>
-<title>HTTPS &amp; SSL</title>
+<title>
+<!-- id="https-ssl" -->
+<!-- id="https-ssl" -->HTTPS &amp; SSL</title>
 <p>HTTPS mode provides access to the provisioned apps using wild card SSL
 certificates through the router or
 <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-nginx" >Nginx</xref> web server.</p>
@@ -772,11 +771,11 @@ certificates through the router or
 <p>Since these certificates are self-signed, rather than issued by a certificate authority (CA), web browsers will warn that the certificate cannot be verified and prompt the user to add a manual exception.</p>
 <p>To avoid this, the generated certificate for the base URL of the PaaS can be replaced with a signed certificate issued by a CA.</p>
 <p>For additional Org-owned and Shared domains, SSL certificates can be added using the SNI method described further below.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Replacing the Default SSL Certificate</title>
+<title>
+<!-- id="using-your-own-ssl-certificate" -->
+<!-- id="using-your-own-ssl-certificate" -->Replacing the Default SSL Certificate</title>
 <p>On all router and controller nodes, upload your <i>.key</i> file to the <i>/etc/ssl/private/</i> directory and your <i>.crt</i> file to <i>/etc/ssl/certs/</i>.</p>
 <p>Change the following settings with <i>kato config</i> to point to the new files:</p>
 <codeblock>
@@ -789,11 +788,10 @@ certificates through the router or
   <codeph>kato config set stackato_rest ssl/strict_ssl true 
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Adding More SSL Certs (SNI)</title>
+<title id="adding-custom-ssl-certs-sni">
+<!-- id="adding-custom-ssl-certs-sni" -->Adding More SSL Certs (SNI)</title>
 <p>The Application Lifecycle Service router supports
 <xref href="http://en.wikipedia.org/wiki/Server_Name_Indication" scope="external" format="html" >SNI</xref>, and custom
 SSL certificates for domains resolving to the system can be added using
@@ -812,11 +810,11 @@ above, subsequent routers using the <codeph>--update</codeph> flag.</p>
 <p>SNI support with multiple Application Lifecycle Service routers works only with TCP load
 balancers (e.g. HAProxy, iptables, F5) not HTTP load balancers (e.g.
 Nginx, Application Lifecycle Service load balancer).</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>CA Certificate Chaining</title>
+<title>
+<!-- id="ca-certificate-chaining" -->
+<!-- id="ca-certificate-chaining" -->CA Certificate Chaining</title>
 <p>When using a signed certificate for Application Lifecycle Service, the certificates in the
 chain must be concatenated in a specific order:</p>
 <ul>
@@ -850,11 +848,11 @@ Certificate chain
    i:/C=US/O=Entrust.net/OU=www.entrust.net/CPS incorp. by ref. (limits liab.)/OU=(c) 1999 Entrust.net Limited/CN=Entrust.net Secure Server Certification Authority
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Generating a self-signed SSL certificate</title>
+<title>
+<!-- id="generating-a-self-signed-ssl-certificate" -->
+<!-- id="generating-a-self-signed-ssl-certificate" -->Generating a self-signed SSL certificate</title>
 <p>You can re-generate Application Lifecycle Service's self-signed SSL certificate by running
 the following command on the VM:</p>
 <codeblock>
@@ -889,10 +887,10 @@ certificate</i>
 messages. The certificate will need to be added to the browser exception
 rules, which you will be prompted to do so when visiting one of your
 apps via HTTPS for the first time.</p>
-</required-cleanup>
 </section>
 <section>
-<title>Customizing the Cipher Suites</title>
+<title id="cipher">
+<!-- id="cipher" -->Customizing the Cipher Suites</title>
 <p>The router's TLS cipher suite can be modified using <i>kato config</i>. For example:</p>
 <codeblock>
   <codeph>kato config set router2g ssl/cipher_suite 'ALL:!ADH:!EXP:!LOW:!RC2:!3DES:!SEED:!SSLv3:RC4+RSA:+HIGH:+MED'
@@ -901,7 +899,9 @@ apps via HTTPS for the first time.</p>
 <p>The setting above is the default for the Helion router minus SSLv3. See OpenSSL's <xref href="https://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT" scope="external" format="html" >Cipher List Format</xref> and <xref href="https://www.openssl.org/docs/apps/ciphers.html#CIPHER_STRINGS" scope="external" format="html" >Cipher Strings</xref> documentation for other valid values.</p>
 </section>
 <section>
-<title>Quota Definitions</title>
+<title>
+<!-- id="quota-definitions" -->
+<!-- id="quota-definitions" -->Quota Definitions</title>
 <p>Quota definitions define limits for:</p>
 <ul>
 <li>physical memory (RAM) in MB</li>
@@ -943,14 +943,15 @@ Management Console <xref href="/helion/devplatform/1.2/als/admin/console/customi
 </p>
 </section>
 <section>
-<required-cleanup>
-<title>sudo</title>
+<title>
+<!-- id="sudo" -->
+<!-- id="sudo" -->sudo</title>
 <p>Quota Definitions can give all users in an Organization the use of the <b>sudo</b> command within application containers. This option is disabled by default as a security precaution, and should only be enabled for Organizations where all users are trusted.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Allowed Repositories</title>
+<title>
+<!-- id="allowed-repositories" -->
+<!-- id="allowed-repositories" -->Allowed Repositories</title>
 <p>Users (with our without <i>sudo</i> permissions) can install Ubuntu packages in application containers by requesting them in the requirements section of an application's <i>manifest.yml</i> file. The system allows package installation only from those repositories specified in the <b>Allowed Repos</b> list in the Management Console.</p>
 <p>This list can also be viewed and modified at the command line using <xref href="/helion/devplatform/1.2/als/admin/reference/kato-ref#kato-command-ref-config" >kato config</xref>. For example, to view the 
  current list:</p>
@@ -976,10 +977,11 @@ Management Console <xref href="/helion/devplatform/1.2/als/admin/console/customi
   <codeph>RUN wget -O- https://download.newrelic.com/548C16BF.gpg | apt-key add -
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<title>Container NFS Mounts</title>
+<title>
+<!-- id="container_NFS" -->
+<!-- id="container_NFS" -->Container NFS Mounts</title>
 <p>
 <b>Warning</b>: Reconfiguring ALS to allow user applications to mount NFS partitions has serious security implications. See the <xref href="/helion/devplatform/1.2/als/admin/server/docker#docker-privileged-containers" >Privileged Containers</xref> section for details.</p>
 <p>By default, application containers are unable to mount external filesystems (other than the built-in <xref href="../../../../../devplatform/1.2/helion/user/services/1.2filesystem.dita" >Filesystem Service</xref> via network protocols such as NFS.</p>

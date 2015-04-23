@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2591">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Installing an HLM Node on a KVM Server</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Installing an HLM Node on a KVM Server: Distributed Cloud Networking Overview</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm.md-->
+ <!--permalink: /helion/openstack/carrier/install/hlm/--></p>
+<!-- From https://wiki.hpcloud.net/display/HCG/HLM+Node+install+on+a+KVM+Server+for+VM+Node+provisioning -->
+<ol>
+<li>
+<p>Download the latest HLM Node image from</p>
+</li>
+<li>
+<p>Copy the HLM Node image on the seed cloud host.</p>
+</li>
+<li>
+<p>Log in to the seed cloud host.</p>
+</li>
+<li>
+<p>Load the HLM Node image on the seed cloud host:</p>
+
+<p>a. Run the Virtual Machine Manager.</p>
+
+<p>b. Click <codeph>Create a new virtual machine</codeph>
+</p>
+
+<p>c. Enter the following information:</p>
+
+<codeblock>
+<codeph>Name: &lt;Type the name for the HLM Node&gt;
+Option: `Import existing disk image`
+</codeph>
+</codeblock>
+
+<p>d. Enter the following information:</p>
+
+<codeblock>
+<codeph>Browse and select the HLM Node image
+OS Type: Linux
+Version: Debian Wheezy
+</codeph>
+</codeblock>
+
+<p>e. Enter the following information:</p>
+
+<codeblock>
+<codeph>Memory (RAM): 4096 MB (Recommended)
+CPUs: 2 (Recommended)
+</codeph>
+</codeblock>
+
+<p>f. Enter the following information:</p>
+
+<codeblock>
+<codeph>Advanced options: 
+Select the network for the HLM Node (the HLM Node will act as the DHCP Server, so remove any DHCP Server or DHCP definition on a virtual network)
+Select `Customize configuration before install`.
+    Disk 1
+        a. Storage format: qcow2 (depends on the image format of the HLM Node)
+        b. Begin Installation
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Launch the HLM Node console and log in using the following defaults:</p>
+
+<codeblock>
+<codeph>login: root
+Password: cghelion
+</codeph>
+</codeblock>
+
+<p>Update the configuration files to work on the selected network.</p>
+
+<codeblock>
+<codeph>HLM Node IP Address: 192.168.122.203
+HLM Node Netmask: 255.255.255.0
+HLM Node Network: 192.168.122.0
+HLM Node Broadcast: 192.168.122.255
+HLM Node Gateway: 192.168.122.1
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Update the <codeph>/etc/network/interfaces</codeph> file with the HLM Node interfaces specified in the configuration file.</p>
+
+<codeblock>
+<codeph>auth eth0
+iface eth0 inet static
+address 192.168.122.203
+netmask 255.255.255.0
+broadcast 192.168.122.255
+gateway 192.168.122.1
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Update <codeph>/etc/resov.conf</codeph> file with the HLM Node Gateway interface</p>
+
+<codeblock>
+<codeph>nameserver 192.168.122.1
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Run <codeph>service networking restart</codeph> command or reboot the HLM Node.</p>
+</li>
+<li>
+<p>Update <codeph>/etc/cobbler/settings</codeph> file with the HLM Node IP Address.</p>
+
+<codeblock>
+<codeph>next_server: 192.168.122.203
+server: 192.168.122.203
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Update <codeph>/etc/cobbler/dhcp.template</codeph> file:</p>
+
+<codeblock>
+<codeph>subnet 192.168.122.0 netmask 255.255.255.0 {
+option routers             192.168.122.203;
+option domain-name-servers 192.168.122.203;
+option subnet-mask         255.255.255.0;
+range dynamic-bootp        192.168.122.100 192.168.122.200;
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Use the following commands to run the Cobbler build and deployment system:</p>
+
+<codeblock>
+<codeph>a. service cobblerd start
+b. cobbler sync
+</codeph>
+</codeblock>
+</li>
+</ol>
+<p>
+  <xref href="#topic2591/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</body>
+</topic>

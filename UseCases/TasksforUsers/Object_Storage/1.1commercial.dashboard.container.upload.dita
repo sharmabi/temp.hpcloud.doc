@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1523">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1511">
 <title>HP Helion OpenStack® 1.1: Uploading and Downloading Objects</title>
 <prolog>
 <metadata>
@@ -17,8 +17,9 @@
 -->
 <p>An object is the basic storage entity that represents a file you store in the OpenStack Object Storage system. When you upload data to OpenStack Object Storage, the data is stored as-is (no compression or encryption) and consists of a location (container), the object's name, and any metadata consisting of key/value pairs</p>
 <section>
-<required-cleanup>
-<title>Uploading an object into a container</title>
+<title>
+<!-- id="uploading-an-object-into-a-container" -->
+<!-- id="uploading-an-object-into-a-container" -->Uploading an object into a container</title>
 <ol>
 <li>
 <p>
@@ -37,7 +38,13 @@
 <p>Click <b>Upload Object</b>.</p>
 </li>
 <li>
-<p>The <b>Upload Object To Container: &lt;name&gt;</b> dialog box is displayed. &lt;name&gt; is the name of the container to which you are uploading the object.</p>
+<p>The <b>Upload Object To Container: <required-cleanup remap="name">
+<ph/>
+</required-cleanup>
+</b> dialog box is displayed. <required-cleanup remap="name">
+<ph> is the name of the container to which you are uploading the object.</ph>
+</required-cleanup>
+</p>
 </li>
 <li>
 <p>Enter a name for the object.</p>
@@ -49,11 +56,10 @@
 <p>Click <b>Upload Object</b> to confirm.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Downloading objects from a container</title>
+<title id="downloading-objects-from-a-container">
+<!-- id="downloading-objects-from-a-container" -->Downloading objects from a container</title>
 <ol>
 <li>
 <p>
@@ -73,10 +79,9 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1523/top"> Return to Top ↑ </xref>
+  <xref href="#topic1511/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

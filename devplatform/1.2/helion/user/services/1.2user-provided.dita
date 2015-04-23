@@ -32,7 +32,8 @@ connection information to the application via the VCAP_SERVICES environment vari
 <i>JSON object</i>
 </xref> which can then be bound any applications in the space.</p>
 <section>
-<title>Creating</title>
+<title id="creating">
+<!-- id="creating" -->Creating</title>
 <p>User-provided service instances will typically be used to connect
 applications hosted on Application Lifecycle Service to existing external database hosts or clusters. For example, to connect an app to an externally-hosted PostgreSQL database:</p>
 <codeblock>
@@ -50,7 +51,8 @@ Creating new service ... OK
 the JSON object exposed to the application later.</p>
 </section>
 <section>
-<title>Binding</title>
+<title id="binding">
+<!-- id="binding" -->Binding</title>
 <p>Once the service instance has been created it can be bound to
 applications, just like any other service:</p>
 <codeblock>
@@ -64,7 +66,8 @@ http://django-cms.helion.example.com/ deployed
 </codeblock>
 </section>
 <section>
-<title>Using</title>
+<title id="using">
+<!-- id="using" -->Using</title>
 <p>The <codeph>helion service</codeph> command will show the
 credentials:</p>
 <codeblock>
@@ -112,7 +115,8 @@ object:</p>
 <p>Buildpacks that auto-configure applications for system-provided services can also do so for user-provided services. For example, the <xref href="https://github.com/cloudfoundry/java-buildpack" scope="external" format="html" >java buildpack</xref> will configure applications to connect to a database if the service has a name or tag with <i>postgres</i>, <i>mariadb</i>, or <i>mysql</i> in it. Check the buildpack's documentation or code to see exactly what it supports.</p>
 </section>
 <section>
-<title>Other Environment Variables</title>
+<title id="user-provided-URL-env">
+<!-- id="user-provided-URL-env" -->Other Environment Variables</title>
 <p>User-provided service instances do not set <b>DATABASE_URL</b> or 
 database-specific URL environment variables.</p>
 <p>If your application uses variables in URL format, you can add them manually to the application with the <xref href="/helion/devplatform/1.2/als/user/reference/client-ref/management#command-set-env" >

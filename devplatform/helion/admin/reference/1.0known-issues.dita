@@ -25,7 +25,9 @@
   <xref href="../../../../devplatform/helion/admin/reference/1.1known-issues.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <section>
-<title>Buildpack config_vars Deprecated</title>
+<title>
+<!-- id="buildpack-config-vars-deprecated" -->
+<!-- id="buildpack-config-vars-deprecated" -->Buildpack config_vars Deprecated</title>
 <ul>
 <li>
 <xref href="#topic3652/legacy-buildpack-and-environment-variables">Legacy Buildpack and Environment
@@ -56,7 +58,8 @@ set environment variables. This mechanism is fully supported in Application Life
 / Cloud Foundry v2, and is used by all of the built-in buildpacks.</p>
 </section>
 <section>
-<title>Legacy Buildpack and Environment Variables</title>
+<title id="legacy-buildpack-and-environment-variables">
+<!-- id="legacy-buildpack-and-environment-variables" -->Legacy Buildpack and Environment Variables</title>
 <p>When using the <xref href="/als/v1/user/deploy/buildpack#buildpacks" >
 <i>Legacy
 Buildpack</i>
@@ -70,7 +73,8 @@ restarted.</p>
 changing the values in <i>manifest.yml</i>.</p>
 </section>
 <section>
-<title>Service Gateway Log Errors in Maintenance Mode</title>
+<title id="service-gateway-log-errors-in-maintenance-mode">
+<!-- id="service-gateway-log-errors-in-maintenance-mode" -->Service Gateway Log Errors in Maintenance Mode</title>
 <p>With Application Lifecycle Service set in <xref href="/als/v1/admin/console/customize#console-settings" >
 <i>Maintenance
 Mode</i>
@@ -84,7 +88,8 @@ processes will report the following error once per minute:</p>
 reconnect once the Controller is taken out of Maintenance Mode.</p>
 </section>
 <section>
-<title>Nodes with FATAL or perpetually STARTING processes</title>
+<title id="nodes-with-fatal-or-perpetually-starting-processes">
+<!-- id="nodes-with-fatal-or-perpetually-starting-processes" -->Nodes with FATAL or perpetually STARTING processes</title>
 <p>If the Core node of an Application Lifecycle Service cluster is offline for more than 90
 seconds, <codeph>kato status</codeph> will show processes on other
 nodes (systail, apptail, router and others) in a FATAL or (hung)
@@ -95,7 +100,9 @@ processes) or <codeph>kato restart</codeph> (for STARTING
 processes) on all affected nodes.</p>
 </section>
 <section>
-<title>Avoiding App Reliance on IP Addresses</title>
+<title>
+<!-- id="avoiding-app-reliance-on-ip-addresses" -->
+<!-- id="avoiding-app-reliance-on-ip-addresses" -->Avoiding App Reliance on IP Addresses</title>
 <p>Cluster configurations make use of private IP addresses for identifying
 the various cluster nodes. Best practice is to avoid the literal use of
 these addresses wherever possible, as these addresses are subject to
@@ -132,7 +139,8 @@ the app's config as needed, then add this script to the pre-running
 hooks.</p>
 </section>
 <section>
-<title>Community Forums</title>
+<title id="community-forums">
+<!-- id="community-forums" -->Community Forums</title>
 <p>Please keep up to date with the latest Known Issues, FAQs and
 announcements in our <xref href="https://community.dev.hp.com/t5/Forum/bd-p/cloud_board" scope="external" format="html" >online Application Lifecycle Service
 forums</xref>.</p>

@@ -17,8 +17,9 @@
 -->
 <p>You can modify images, as needed, to change the name and description of the image, or protect and un-protect the image.</p>
 <section>
-<required-cleanup>
-<title>Modify an image</title>
+<title>
+<!-- id="modify-an-image" -->
+<!-- id="modify-an-image" -->Modify an image</title>
 <ol>
 <li>
 <p>
@@ -47,7 +48,6 @@
   <xref href="#topic990/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

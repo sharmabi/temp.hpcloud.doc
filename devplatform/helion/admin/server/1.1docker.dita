@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic7831">
-<title>HP Helion 1.1 Development Platform: Docker and Fence {#docker-fence "Permalink to this headline"}</title>
-<titlealts>
-<searchtitle>HP Helion 1.1 Development Platform: Docker and Fence</searchtitle>
-</titlealts>
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic7786">
+<title>HP Helion 1.1 Development Platform: Docker and Fence</title>
 <prolog>
 <metadata>
 <othermeta name="layout" content="default"/>
@@ -36,20 +33,21 @@ containers on demand.</p>
 accessible if needed to customize or create new container images.</p>
 <ul>
 <li>
-<xref href="#topic7831/modifying-or-updating-the-container-image">Modifying or Updating the Container Image</xref>
+<xref href="#topic7786/modifying-or-updating-the-container-image">Modifying or Updating the Container Image</xref>
 </li>
 <li>
-<xref href="#topic7831/admin-hooks">Admin Hooks</xref>
+<xref href="#topic7786/admin-hooks">Admin Hooks</xref>
 </li>
 <li>
-<xref href="#topic7831/creating-a-docker-registry">Creating a Docker Registry</xref>
+<xref href="#topic7786/creating-a-docker-registry">Creating a Docker Registry</xref>
 </li>
 <li>
-<xref href="#topic7831/docker-privileged-containers">Privileged Containers</xref>
+<xref href="#topic7786/docker-privileged-containers">Privileged Containers</xref>
 </li>
 </ul>
 <section>
-<title>Modifying or Updating the Container Image</title>
+<title id="modifying-or-updating-the-container-image">
+<!-- id="modifying-or-updating-the-container-image" -->Modifying or Updating the Container Image</title>
 <p>Application containers are created from a base Docker image (a template used to create Linux containers). Admins can create new images to add specific software required by applications or update operating system packages.</p>
 <p>See also the <xref href="/helion/devplatform/1.1/als/admin/best-practices#upgrade-docker" >Upgrade the Docker Image</xref> section in the <xref href="../../../../devplatform/helion/admin/best-practices/1.1index.dita" >Best Practices</xref> reference, which shows how to modify the Docker base image <b>without</b> changing <i>kato config</i>.</p>
 <p>To create a new base image for Application Lifecycle Service to use for application containers, perform the following steps <b>on all nodes running the DEA role</b>:</p>
@@ -119,7 +117,8 @@ exampleco/newimg
 </ol>
 </section>
 <section>
-<title>Admin Hooks</title>
+<title id="admin-hooks">
+<!-- id="admin-hooks" -->Admin Hooks</title>
 <p>If an administrator wants to run arbitrary commands in all application
 containers, global admin hooks can be set to run immediately after
 corresponding user-specified deployment hooks (pre-staging,
@@ -153,7 +152,7 @@ sudo /etc/init.d/newrelic-sysmond start
 needed to expose the specified variables in <codeph>helion ssh</codeph> sessions, the application container's crontab, and PHP
 applications using the Legacy buildpack. This requirement may change in
 subsequent releases.</p>
-<p>The Dockerfile for creating the image (see <xref href="#topic7831/docker-modify-container">Modifying or Updating the
+<p>The Dockerfile for creating the image (see <xref href="#topic7786/docker-modify-container">Modifying or Updating the
 Container Image</xref> ) would use the ADD
 directive to put a local <i>hooks</i> directory in the Docker image's
 <i>/etc/helion/</i> directory:</p>
@@ -181,7 +180,8 @@ ADD hooks /etc/helion/hooks
 </codeblock>
 </section>
 <section>
-<title>Creating a Docker Registry</title>
+<title id="creating-a-docker-registry">
+<!-- id="creating-a-docker-registry" -->Creating a Docker Registry</title>
 <p>The steps above will work with smaller clusters or micro clouds where
 the creation of Docker images on each DEA can be done manually. On
 larger clusters, you should set up a <xref href="http://blog.docker.io/2013/07/how-to-use-your-own-registry/" scope="external" format="html" >Docker
@@ -234,7 +234,7 @@ above. For example:</p>
 your DEA nodes.</p>
 </li>
 <li>
-<p>Go through steps 1 - 3 <xref href="#topic7831/docker-modify-container">
+<p>Go through steps 1 - 3 <xref href="#topic7786/docker-modify-container">
 <i>above</i>
 </xref> to create
 a Docker image file. When building the image, substitute the
@@ -285,7 +285,8 @@ shared with all nodes.</p>
 <p>The <xref href="/helion/devplatform/1.1/als/admin/best-practices#upgrade-docker" >Upgrade the Docker Image</xref> section in the <xref href="/helion/devplatform/1.1/als/admin/best-practices" >Best Practices</xref> documentation explains how to modify the Docker base image without changing <i>kato config</i>.</p>
 </section>
 <section>
-<title>Privileged Containers</title>
+<title id="docker-privileged-containers">
+<!-- id="docker-privileged-containers" -->Privileged Containers</title>
 <p>ALS runs "unprivileged" Docker containers by default. The containers do not have access to any devices on the (virtual) host.</p>
 <p>This is a barrier to certain operations such as mounting disk partitions 
 via NFS, so an option exists to change Docker container creation to "privileged":</p>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2500">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2340">
 <title>HP Helion 1.1 Development Platform: Application Lifecycle Service Admin Guide</title>
 <prolog>
 <metadata>
@@ -31,12 +31,15 @@ multi-language, secure and private Platform-as-a-Service (PaaS). This
 guide covers how to set it up and how to configure it for your end
 users.</p>
 <section>
-<title>Wizard-Based Cluster Creation</title>
+<title>
+<!-- id="wizard-based-cluster-creation" -->
+<!-- id="wizard-based-cluster-creation" -->Wizard-Based Cluster Creation</title>
 <p>You can easily create and access Application Lifecycle Service clusters from the <xref href="../../../devplatform/1.1devplatform.deploy-ALS.dita" >Project Dashboard</xref>
 </p>
 </section>
 <section>
-<title>Helion Development Platform Management Console</title>
+<title id="management-console">
+<!-- id="management-console" -->Helion Development Platform Management Console</title>
 <ul>
 <li>
 <xref href="/helion/devplatform/1.1/als/user/console#management-console" >Management Console</xref>
@@ -47,7 +50,9 @@ users.</p>
 </ul>
 </section>
 <section>
-<title>Advanced/Manual Server Configuration</title>
+<title>
+<!-- id="server-configuration" -->
+<!-- id="server-configuration" -->Advanced/Manual Server Configuration</title>
 <p>This section covers advanced configuration settings that allow you to modify default cluster component behavior.</p>
 <ul>
 <li>
@@ -158,7 +163,8 @@ upgrade</xref>
 </ul>
 </section>
 <section>
-<title>Advanced/Manual Cluster Configuration</title>
+<title id="cluster-configuration">
+<!-- id="cluster-configuration" -->Advanced/Manual Cluster Configuration</title>
 <p>This section provides information on how to set up a standalone cluster and modify default cluster level settings.</p>
 <ul>
 <li>
@@ -192,35 +198,6 @@ Storage</xref>
 <li>
 <xref href="/helion/devplatform/1.1/als/admin/cluster#load-balancer-and-multiple-routers" >Load Balancer and Multiple
 Routers</xref>
-</li>
-</ul>
-</li>
-<li>
-<xref href="../../../devplatform/helion/admin/cluster/1.1autoscaling.dita" >DEA Auto Scaling</xref>
-
-<ul>
-<li>
-<xref href="/helion/devplatform/1.1/als/admin/cluster/autoscaling#dea-template" >DEA Template</xref>
-</li>
-<li>
-<xref href="/helion/devplatform/1.1/als/admin/cluster/autoscaling#dea-scaling-configuration" >DEA Scaling
-configuration</xref>
-</li>
-<li>
-<xref href="/helion/devplatform/1.1/als/admin/cluster/autoscaling#enabling-auto-scaling" >Enabling
-Auto-Scaling</xref>
-</li>
-<li>
-<xref href="/helion/devplatform/1.1/als/admin/cluster/autoscaling#configuration-and-tuning-advanced" >Configuration and Tuning</xref>
-</li>
-<li>
-<xref href="/helion/devplatform/1.1/als/admin/cluster/autoscaling#writing-custom-scaling-plugins-advanced" >Writing custom scaling plugins</xref>
-</li>
-<li>
-<xref href="/helion/devplatform/1.1/als/admin/cluster/autoscaling#troubleshooting" >Troubleshooting</xref>
-</li>
-<li>
-<xref href="/helion/devplatform/1.1/als/admin/cluster/autoscaling#testing" >Testing</xref>
 </li>
 </ul>
 </li>
@@ -275,7 +252,8 @@ Principles</xref>
 </ul>
 </section>
 <section>
-<title>Best Practices</title>
+<title id="best-practices">
+<!-- id="best-practices" -->Best Practices</title>
 <ul>
 <li>
 <xref href="../../../devplatform/helion/admin/best-practices/1.1index.dita" >Best Practices</xref>
@@ -303,7 +281,8 @@ Storage</xref>
 </ul>
 </section>
 <section>
-<title>Reference</title>
+<title id="reference">
+<!-- id="reference" -->Reference</title>
 <ul>
 <li>
 <xref href="../../../devplatform/helion/admin/reference/1.1kato-ref.dita" >Kato Command Reference</xref>

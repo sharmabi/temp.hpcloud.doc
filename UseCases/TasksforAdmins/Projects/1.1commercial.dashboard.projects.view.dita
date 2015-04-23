@@ -17,8 +17,9 @@
 -->
 <p>As an admin, you can view a list of all projects in a domain and view information on each project.</p>
 <section>
-<required-cleanup>
-<title>View projects</title>
+<title>
+<!-- id="view-projects" -->
+<!-- id="view-projects" -->View projects</title>
 <ol>
 <li>
 <p>
@@ -52,7 +53,6 @@
   <xref href="#topic1141/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

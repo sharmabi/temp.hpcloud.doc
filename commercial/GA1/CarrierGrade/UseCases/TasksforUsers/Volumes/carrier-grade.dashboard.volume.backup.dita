@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic834">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Backing Up a Volume</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.backup.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/volume/backup/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>You can create a backup of a volume.</p>
+<p>To create a backup:</p>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>In the <b>Volumes</b> screen, for the volume you want to backup, click the arrow icon in the <b>Actions</b> menu and select <b>Create Backup</b>.</p>
+</li>
+<li>
+<p>In the <b>Create Volume Backup</b> dialog box, enter a name and description for the backup.</p>
+</li>
+<li>
+<p>Click <b>Upload</b>.</p>
+</li>
+</ol>
+<p>The backup is created and is listed on the Volume Backups tab.</p>
+<p>
+  <xref href="#topic834/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</body>
+</topic>

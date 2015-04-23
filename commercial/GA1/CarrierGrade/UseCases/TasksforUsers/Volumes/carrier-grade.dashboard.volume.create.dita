@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1975">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Creating, Editing, and Deleting Volumes</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.create.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/volume/create/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>Volumes are block devices that can be attached to instances.</p>
+<section>
+<title>
+<!-- id="create-a-volume" -->
+<!-- id="create-a-volume" -->Create a volume</title>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>Click <b>Create Volume</b>.</p>
+</li>
+<li>
+<p>In the <b>Create Volume</b> dialog box, enter the relevant information for the volume:</p>
+
+<ul>
+<li>
+<b>Volume Name:</b> Enter a name for the volume  </li>
+<li>
+<b>Description:</b> Provide a brief description (optional).  </li>
+<li>
+<b>Volume Source:</b> Select one of the following options: 
+
+<ul>
+<li>No source, empty volume - creates an empty volume and does not contain a file system or a partition table  </li>
+<li>Image - a new field for Use image as a source displays. You can select the image from the list.  </li>
+</ul>
+</li>
+<li>
+<b>Size:</b> Enter the size of the volume in gigabytes   </li>
+<li>
+<b>Availability Zone:</b> Select the availability zone. By default, this value is set to 'any availability zone'.  </li>
+</ul>
+</li>
+<li>
+<p>Click <b>Create Volume</b> to confirm.</p>
+</li>
+</ol>
+</section>
+<section>
+<title id="edit-a-volume">
+<!-- id="edit-a-volume" -->Edit a volume</title>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>Under the <b>Actions</b> column, click <b>Edit Volume</b>, next to the volume you want to edit.    .</p>
+</li>
+<li>
+<p>In the <b>Edit Volume</b> dialog box, modify the name and description.</p>
+</li>
+<li>
+<p>Click <b>Edit Volume</b> to confirm.</p>
+
+<p>
+<b>Note:</b> You can <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.extend.dita" >extend a volume</xref> by using the <b>Extend Volume</b> option available in the <b>More</b> drop-down list and entering the new value for volume size.</p>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="delete-a-volume" -->
+<!-- id="delete-a-volume" -->Delete a volume</title>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>Select the volume(s) that you want to delete.</p>
+</li>
+<li>
+<p>Click <b>Delete Volume</b> to confirm.</p>
+</li>
+</ol>
+<p>
+  <xref href="#topic1975/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

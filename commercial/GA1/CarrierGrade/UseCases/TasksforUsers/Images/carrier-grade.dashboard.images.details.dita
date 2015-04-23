@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic747">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Viewing Image Details</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.images.details.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/images/details/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>To view image details:
+1. <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<ol>
+<li>
+<p>Click the <b>Images</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
+</li>
+<li>
+<p>Click the name of the image.</p>
+</li>
+</ol>
+<p>**Note:** When your cursor is on the image name, the name is underlined.</p>
+<ol>
+<li>
+<p>The Image Details screen shows detailed information about the image, including:</p>
+
+<ul>
+<li>name and ID</li>
+<li>status</li>
+<li>creation and modification date(s)</li>
+<li>size</li>
+<li>formats</li>
+<li>size</li>
+</ul>
+</li>
+</ol>
+<p>
+  <xref href="#topic747/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</body>
+</topic>

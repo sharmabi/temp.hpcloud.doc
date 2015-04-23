@@ -44,7 +44,8 @@ runtime. Management of these application containers is handled by the
 <p>Typically, admins will not have to work directly with Docker, but it is
 available if needed to customize or create new container images.</p>
 <section>
-<title>Modifying or Updating the Container Image</title>
+<title id="modifying-or-updating-the-container-image">
+<!-- id="modifying-or-updating-the-container-image" -->Modifying or Updating the Container Image</title>
 <p>Application containers are created from a base Docker image (a template
 used to create Linux containers). Admins can create new images to add
 specific software required by applications or update operating system
@@ -120,7 +121,8 @@ exampleco/newimg
 </codeblock>
 </section>
 <section>
-<title>Admin Hooks</title>
+<title id="admin-hooks">
+<!-- id="admin-hooks" -->Admin Hooks</title>
 <p>If an administrator wants to run arbitrary commands in all application
 containers, global admin hooks can be set to run immediately after
 corresponding user-specified deployment hooks (pre-staging,
@@ -184,7 +186,8 @@ ADD hooks /etc/helion/hooks
 </codeblock>
 </section>
 <section>
-<title>Creating a Docker Registry</title>
+<title id="creating-a-docker-registry">
+<!-- id="creating-a-docker-registry" -->Creating a Docker Registry</title>
 <p>The steps above will work with smaller clusters or micro clouds where
 the creation of Docker images on each DEA can be done manually. On
 larger clusters, you should set up a <xref href="http://blog.docker.io/2013/07/how-to-use-your-own-registry/" scope="external" format="html" >Docker

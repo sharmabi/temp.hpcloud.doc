@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1188">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Creating a Snapshot from a Volume</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Creating an Instance Snapshot</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.snapshot.create.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/volume/snapshot/create/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>A snapshot is a new image based on a running instance. That snapshot can be used as the base for new instances.</p>
+<section>
+<title id="creating-a-snapshot">
+<!-- id="creating-a-snapshot" -->Creating a snapshot</title>
+<p>To create a snapshot:</p>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>In the <b>Volumes</b> screen, for the volume you want to create a snapshot, click the arrow icon in the <b>Actions</b> menu and select <b>Create Snapshot</b>.</p>
+</li>
+<li>
+<p>On the <b>Create Snapshot</b> tab, enter a name for the snapshot.</p>
+</li>
+<li>
+<p>Click <b>Create Snapshot</b> to launch the instance.</p>
+
+<p>A snapshot image is created on the <b>Volume Snapshot</b> tab.</p>
+</li>
+</ol>
+<p>When you create a snapshot, by default the snapshot image can be used only with the current project.</p>
+<p>You can <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.images.public.dita/" >make the snapshot public</xref> for use in all projects in the domain and you can <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.snapshot.protect.dita" >protect the image</xref> from being deleted.</p>
+<p>
+  <xref href="#topic1188/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

@@ -26,7 +26,8 @@
 <p>Whether you're deploying an application to the HP Helion Development Platform, a Cloud Foundry-based Platform as a Service (PaaS), or writing applications that take advantage of HP Helion OpenStack® to manage infrastructure or software services, tools to enable successful development are available in Java.</p>
 <p>Deployable <xref href="/helion/devplatform/1.2/appdev#java" >sample applications</xref> are available in this language.</p>
 <section>
-<title>Using JDBC</title>
+<title id="using-jdbc">
+<!-- id="using-jdbc" -->Using JDBC</title>
 <p>It is possible to access the database services using the standard JDBC
 API:</p>
 <codeblock>
@@ -66,14 +67,15 @@ if (helion_services != null &amp;&amp; helion_services.length() &gt; 0) {
 </codeblock>
 </section>
 <section>
-<required-cleanup>
-<title>Example</title>
+<title id="example">
+<!-- id="example" -->Example</title>
 <p>The <xref href="../../../../../../devplatform/1.2/workbook/database/1.2database.java.dita" >Java database sample</xref> sample
 demonstrates a simple Java application using a MySQL service.</p>
-</required-cleanup>
 </section>
 <section>
-<title>CATALINA_OPTS</title>
+<title>
+<!-- id="catalina-opts" -->
+<!-- id="catalina-opts" -->CATALINA_OPTS</title>
 <p>The CATALINA_OPTS environment variable can be set in the
 <codeph>env:</codeph> block of manifest.yml (or set via the
 Management Console) to override Application Lifecycle Service defaults.</p>

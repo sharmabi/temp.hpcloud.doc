@@ -34,7 +34,8 @@ instance of a CGI script is started for each request.</p>
 </codeph>
 </codeblock>
 <section>
-<title>Example</title>
+<title id="example">
+<!-- id="example" -->Example</title>
 <ul>
 <li>
 <xref href="https://github.com/Stackato-Apps/perlcgi-env" scope="external" format="html" >perlcgi-env</xref>: A simple Perl CGI script that displays environment variables.</li>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2020">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Provisioning the Network</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion OpenStack 1.1"/>
+<othermeta name="role" content="Storage Administrator"/>
+<othermeta name="role" content="Storage Architect"/>
+<othermeta name="role" content="Michael B,"/>
+<othermeta name="product-version1" content="HP Helion OpenStack 1.1"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/carrier-grade-install-bm-network-install.md-->
+ <!--permalink: /helion/openstack/carrier/install/bm/network-install/--></p>
+<!--
+<p style="font-size: small;"><a href="../../../commercial/GA1/1.1commercial.technical-overview.ga.dita/">&#9664; Technical Overview</a> | <a href="./commercial/GA1/1.1commercial.install-GA-overview.dita">&#9650; Installation Overview</a> | <a href="/helion/openstack/1.1/install/kvm">Installing on a KVM hypervisor &#9654;</a> OR <a href="/helion/openstack/1.1/install/esx"> Installing on an ESX hypervisor&#9654;</a> </p> 
+-->
+<p>The HP Helion OpenStack Carrier Grade installation files include a script that automatically creates the networks and blank VMs required for the installation, called <codeph>python createvm.py vm.json</codeph>.</p>
+<p>This script takes an input JSON file <codeph>vm.json</codeph> and creates three blank (no operating system installed) virtual machines: <codeph>ccn1</codeph>, <codeph>ccn2</codeph> and <codeph>cpn1</codeph>. The script also created the PXE and CLM networks and assigns the networks to the VMs. The networks will be PXE booted by Cobbler.</p>
+<p>To provision the required networks:</p>
+<ol>
+<li>
+<p>On your kvm host, download the <codeph>cg-hos.tar.gz.gpg</codeph> and HLM node image <codeph>cg-hlm.qcow2</codeph>to the <codeph>root</codeph> directory</p>
+</li>
+<li>
+<p>Provision <codeph>cg-hlm.qcow2</codeph> on your KVM host (min ram: 4096, disk: 20 GB) and create/assign new DHCP NAT network for backdoor (ssh) access to HLM node called <codeph>bkd</codeph>. Assign <codeph>bkd</codeph> as <codeph>eth0</codeph> interface.</p>
+</li>
+<li>
+<p>Assign the PXE network as <codeph>eth1</codeph> and the CLM network as <codeph>eth2</codeph> interface.</p>
+
+<p>(Note: We strongly recommend using HLM VM from virt-manager console as following section involves running scripts that restart the network at multiple points)</p>
+
+<p>[login creds for HLM VM: root/cghelion]</p>
+</li>
+<li>
+<p>Edit the <codeph>/etc/network/interfaces</codeph> file to add static IP addresses for the PXE and CLM networks:</p>
+
+<p>
+<b>Example:</b>
+</p>
+
+<codeblock>
+<codeph>iface eth0 inet dhcp
+iface eth1 inet static
+    address 192.168.122.203
+    network 192.168.122.0
+    netmask 255.255.255.0
+    broadcast 192.168.122.255
+    gateway 192.168.122.1
+iface eth2 inet static
+    address 192.168.101.203
+    network 192.168.101.0
+    netmask 255.255.255.0
+    broadcast 192.168.101.255
+    gateway 192.168.101.1
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Restart the networking service using the following command:</p>
+
+<codeblock>
+<codeph>sudo /etc/init.d/networking restart
+</codeph>
+</codeblock>
+</li>
+</ol>
+<section>
+<title>
+<!-- id="next-step" -->
+<!-- id="next-step" -->Next Step</title>
+<p>
+  <xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-environment.dita" >Configuring the installation environment</xref>
+</p>
+<p>
+  <xref href="#topic2020/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

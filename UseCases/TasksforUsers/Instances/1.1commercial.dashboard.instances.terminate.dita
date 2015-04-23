@@ -17,8 +17,9 @@
 -->
 <p>You can terminate an instance, as needed.</p>
 <section>
-<required-cleanup>
-<title>Terminate an instance</title>
+<title>
+<!-- id="terminate-an-instance" -->
+<!-- id="terminate-an-instance" -->Terminate an instance</title>
 <ol>
 <li>
 <p>
@@ -40,7 +41,6 @@
   <xref href="#topic734/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

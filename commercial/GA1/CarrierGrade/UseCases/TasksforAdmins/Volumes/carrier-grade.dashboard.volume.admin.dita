@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1254">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Creating and Deleting a Volume Types</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Volumes/carrier-grade.dashboard.volume.admin.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/volume/admin/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>A volume type defines the characteristics of a volume. It usually maps to a set of capabilities of the storage back-end driver that is used for this volume.</p>
+<section>
+<title>
+<!-- id="create-a-volume-type" -->
+<!-- id="create-a-volume-type" -->Create a volume type</title>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>System Panel</b> tab on the dashboard <b>Admin</b> panel.</p>
+</li>
+<li>
+<p>In the <b>System Panel</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>In the Volume Types section of the page, click <b>Create Volume Type</b>.</p>
+</li>
+<li>
+<p>In the <b>Create Volume Type</b> dialog box, enter a name for the volume type.</p>
+</li>
+<li>
+<p>Click <b>Create Volume Type</b> to confirm.</p>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="delete-a-volume-type" -->
+<!-- id="delete-a-volume-type" -->Delete a volume type</title>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>System Panel</b> tab on the dashboard <b>Admin</b> panel.</p>
+</li>
+<li>
+<p>In the <b>System Panel</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>In the Volume Types section of the page, select the volume type or types that you want to delete.</p>
+</li>
+<li>
+<p>Click <b>Delete Volume Types</b>.</p>
+</li>
+<li>
+<p>In the <b>Confirm Delete Volume Types</b> dialog box, click <b>Delete Volume Types</b>.</p>
+</li>
+</ol>
+<p>
+  <xref href="#topic1254/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

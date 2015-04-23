@@ -17,8 +17,9 @@
 -->
 <p>As an admin, you can <xref href="#topic1541/useradd">add</xref> and <xref href="#topic1541/userdel">remove</xref> user access to each project.</p>
 <section>
-<required-cleanup>
-<title>Add a user to a project</title>
+<title>
+<!-- id="useradd" -->
+<!-- id="useradd" -->Add a user to a project</title>
 <ol>
 <li>
 <p>
@@ -41,11 +42,10 @@
 <p>Click <b>Save</b>.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Remove a user from a project</title>
+<title id="userdel">
+<!-- id="userdel" -->Remove a user from a project</title>
 <ol>
 <li>
 <p>
@@ -72,7 +72,6 @@
   <xref href="#topic1541/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

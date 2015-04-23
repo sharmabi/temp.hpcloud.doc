@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3928">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Create the VSD Node</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion OpenStack 1.1"/>
+<othermeta name="role" content="Storage Administrator"/>
+<othermeta name="role" content="Storage Architect"/>
+<othermeta name="role" content="Michael B,"/>
+<othermeta name="product-version1" content="HP Helion OpenStack 1.1"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsd-node.md-->
+ <!--permalink: /helion/openstack/carrier/install/vsd-node/--></p>
+<p>
+<xref href="../../../../commercial/GA1/1.1commercial.technical-overview.ga.dita/" >◀ Technical Overview</xref> | <xref href="./commercial/GA1/1.1commercial.install-GA-overview.dita" >▲ Installation Overview</xref> | <xref href="/helion/openstack/1.1/install/kvm" >Installing on a KVM hypervisor ▶</xref> OR <xref href="/helion/openstack/1.1/install/esx" > Installing on an ESX hypervisor▶</xref> </p>
+<p>
+<xref href="http://www8.hp.com/us/en/products/networking-switches/product-detail.html?oid=7268885" scope="external" format="html" >HP Virtualized Services Directory (HP VSD)</xref> (HP VSD) is a component of HP Distributed Cloud Networking.</p>
+<p>There are three main components in the HP DCN solution: HP VSD, HP Virtualized Services Controller (HP VSC) and HP Virtual Routing and Switching (HP VRS).</p>
+<p>The HP VSD is the policy and analytics engine for the HP DCN solution. All HP VSD components should be installed on</p>
+<p>
+<b>Note:</b> You can download the complete <xref href="http://h20565.www2.hp.com/portal/site/hpsc/public/psi/home/?sp4ts.oid=7268885&amp;ac.admitted=1429029354732.876444892.492883150#manuals" scope="external" format="html" >HP Distributed Cloud Networking manuals</xref>, in needed.</p>
+<p>Use the following steps to install the HP VSD node in the HP Helion OpenStack Carrier Grade cloud:</p>
+<ol>
+<li>
+<p>On the KVM host, change to the directory where you copied the installer files and locate the <codeph>Nuage-VSD-3.0.0_HP_r3.0-16-QCOW.tar.gz</codeph> file.</p>
+</li>
+<li>
+<p>Run the following command to extract the installer files:</p>
+
+<codeblock>
+<codeph>tar -zxvf Nuage-VSD-3.0.0_HP_r3.0-16-QCOW.tar.gz
+</codeph>
+</codeblock>
+
+<p>You should see <codeph>VSD-3.0.0_HP_r3.0_16.qcow2</codeph> file once you extract.</p>
+</li>
+<li>
+<p>Copy the <codeph>VSD-3.0.0_HP_r3.0_16.qcow2</codeph> file to the <codeph>var/lib/libvirt/images</codeph> directory.</p>
+</li>
+<li>
+<p>Use the following commands to provision a VM for VSD:</p>
+
+<codeblock>
+<codeph>virsh define vsd.xml
+virsh autostart vsd
+virsh start vsd
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Login to Console of VSD VM created.</p>
+</li>
+<li>
+<p>For the eth0 device, configure static IP by editing the <codeph>/etc/sysconfig/network-scripts/ifcfg-eth0</codeph> file</p>
+
+<codeblock>
+<codeph>BOOTPROTO="static"
+IPADDR=10.10.10.10
+NETMASK=255.255.255.0
+GATEWAY=10.10.10.1
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Restart Networking using the following command:</p>
+
+<codeblock>
+<codeph>service network restart
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Update <codeph>/etc/resolv.conf</codeph> file to add IP address of the DNS server.</p>
+
+<p>
+<b>Example:</b>
+    nameserver     191.72.1.1</p>
+</li>
+<li>
+<p>Add the VSD host name to the <codeph>/etc/hosts</codeph> file:</p>
+
+<codeblock>
+<codeph>127.0.0.1 locahost localhost.localdomain localhost4.localdomain4
+::1 locahost localhost.localdomain localhost6.localdomain6
+10.10.10.10 vsd.helion.cg
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Reboot the VM.</p>
+</li>
+<li>
+<p>Add the NTP server to the <codeph>/etc/ntp.conf</codeph> file and comment out any other servers listed.</p>
+</li>
+<li>
+<p>Stop, synchronize and restart the NTP service using the following commands:</p>
+
+<codeblock>
+<codeph>service ntpd stop
+ntpd -q
+service ntpd start
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Use the <codeph>ntpq -p</codeph> command to make sure the NTP servers are listed.</p>
+</li>
+<li>
+<p>Use the <codeph>ntpstat</codeph> command to Make sure that NTP is synchronized.</p>
+
+<codeblock>
+<codeph>ntpstat
+synchronised to NTP server (10.5.26.10) at stratum 2
+time correct to within 52 ms
+polling server every 1024 s
+</codeph>
+</codeblock>
+
+<p>
+<b>Important:</b> Run the Install Script only when the ntp server is syncronized.</p>
+</li>
+<li>
+<p>Use the following command to install the VSD node:</p>
+
+<codeblock>
+<codeph>/opt/vsd/install.sh -x xmpp.&lt;yourdomain&gt; -t s -y
+</codeph>
+</codeblock>
+
+<p>The command output indicates the approximate time the installation might take.</p>
+</li>
+</ol>
+<p>When the installation is complete, a conformation message appears.</p>
+<section>
+<title id="verifing-the-installation">
+<!-- id="verifing-the-installation" -->Verifing the installation</title>
+<p>Verify that your HP VSD(s) are up and running by using the following command:</p>
+<codeblock>
+  <codeph>service vsd status
+</codeph>
+</codeblock>
+</section>
+<section>
+<title id="configure-vsd">
+<!-- id="configure-vsd" -->Configure VSD</title>
+<p>You can use xrdp to connect to the gurst VM from the KVM host and launch the VSD dashboard to create required users and apply the required license.</p>
+<ol>
+<li>
+<p>Launch a web browser, such as Google Chrome.</p>
+</li>
+<li>
+<p>Navigate to the IP address of the VSD:</p>
+
+<codeblock>
+<codeph>https://&lt;VSD_IP_Address&gt;:8443/
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Log in with the default credentials:</p>
+
+<codeblock>
+<codeph>User Name: Csproot 
+Password: csproot 
+Organization: csp 
+VSD Server : auto 
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Create a user for Plugin Login:</p>
+
+<codeblock>
+<codeph>Created user: OSadmin password: OSadmin 
+Granted Groups "CMS Group" 
+License: ( temp license info ) review DCN Bits and license setup Pending 
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Apply the License</p>
+
+<p>a. From VSD Dashboard, click the <b>Open VSP Configuration</b> tab on the top right corner of the dashboard.</p>
+
+<p>b. Click the <b>Licenses</b> tab and click <b>+</b>.</p>
+
+<p>c. Copy and paste the license you received from HP Networks customer support representative into the field.</p>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="nextstep" -->
+<!-- id="nextstep" -->Next step</title>
+<p>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Create the VSC Node</xref>
+</p>
+<!--
+* [Installing and configuring on a KVM hypervisor](/helion/openstack/1.1/install/kvm)
+* [Installing and configuring on an ESX hypervisor](/helion/openstack/1.1/install/esx/)
+-->
+<p>
+  <xref href="#topic3928/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

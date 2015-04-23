@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3995">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Preparing the Network for Installation</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-network.md-->
+ <!--permalink: /helion/openstack/carrier/install/network/--></p>
+<p>Before installing HP Helion OpenStack Carrier Grade, you are responsible for preparing the network for all installations.</p>
+<section>
+<title id="add-bridgevlans-on-the-seed-cloud-host">
+<!-- id="add-bridgevlans-on-the-seed-cloud-host" -->Add Bridge/VLANs on the seed cloud host</title>
+<ol>
+<li>
+<p>Check the vswitch status using <codeph>ovs-vsctl show</codeph> command. If you already have <codeph>br-data</codeph> and <codeph>br-ctl</codeph> in the seed cloud host, delete them with the below commands:</p>
+
+<codeblock>
+<codeph>ovs-vsctl del-br br-data
+ovs-vsctl del-br br-ctl
+ovs-vsctl del-br br-kvm
+
+virsh net-destroy br-ctl
+virsh net-destroy br-data
+virsh net-destroy br-kvm
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Create 2 bridges: one exclusive for data to carry TUL traffic and other for non-data traffic like PXE, CTL, CLM, CAN, DCM and so forth:</p>
+
+<codeblock>
+<codeph>ovs-vsctl add-br br-ctl
+ovs-vsctl add-br br-data
+ovs-vsctl add-br br-kvm
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Run these commands to define the network, start VLANs.</p>
+
+<codeblock>
+<codeph>virsh net-define cghelion-br-ctl-network.xml
+virsh net-start br-ctl
+virsh net-autostart br-ctl
+
+virsh net-define cghelion-br-data-network.xml
+virsh net-start br-data
+virsh net-autostart br-data
+
+virsh net-define cghelion-br-kvm-network.xml
+virsh net-start br-kvm
+virsh net-autostart br-kvm
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Check the vswitch status using <codeph>ovs-vsctl show</codeph> command.</p>
+</li>
+<li>
+<p>To delete any bridge use the following commands.</p>
+
+<p>virsh net-undefine <required-cleanup remap="bridge-name">
+<ph>
+virsh net-destroy <required-cleanup remap="bridge-name">
+<ph>
+ovs-vsctl del-br <required-cleanup remap="bridge-name">
+<ph/>
+</required-cleanup>
+</ph>
+</required-cleanup>
+</ph>
+</required-cleanup>
+</p>
+
+<p>
+<b>Example:</b>
+</p>
+
+<p>virsh net-undefine <required-cleanup remap="br-ctl">
+<ph>
+virsh net-destroy br-ctl
+ovs-vsctl del-br br-ctl</ph>
+</required-cleanup>
+</p>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="configure-pair-bonding-for-the-kvm-host" -->
+<!-- id="configure-pair-bonding-for-the-kvm-host" -->Configure Pair Bonding for the KVM Host</title>
+<p>If you have multiple NICs, you can aggregate the multiple interfaces into a single logical <i>bonded</i> interface</p>
+<p>For example, if you run <codeph>ifconfig</codeph> on your KVM host and you see <codeph>em1/em2</codeph> or <codeph>eth1/ethx</codeph> interfaces, you create a bonded interface on the KVM host. If you do not want bond the interfaces, make sure <codeph>emx</codeph> or <codeph>ethx</codeph> is in the interfaces files.</p>
+<p>To create a bond on the KVM host :</p>
+<ol>
+<li>
+<p>From Console (ILO) use the <codeph>ifdown</codeph> command to de-configure the current active ports assigned <codeph>eth0</codeph>, <codeph>em1</codeph>, or <codeph>p3p1</codeph>, as needed</p>
+
+<p>ifdown eth0
+ifdown em1
+ifdown p3p1</p>
+</li>
+<li>
+<p>Modifiy the <codeph>/etc/network/interfaces</codeph> file to the following (DHCP EXAMPLE):</p>
+
+<codeblock>
+<codeph># The loopback network interface
+auto lo
+iface lo inet loopback
+
+#BR-CTL BRIDGE - UNTAGGED PXE NETWORK CIDR
+auto br-ctl
+allow-ovs br-ctl
+iface br-ctl inet static
+address 10.200.73.11
+netmask 255.255.255.0
+gateway 10.200.73.1
+ovs_type OVSBridge
+ovs_ports em1
+
+#Bring up interface online
+allow-br-ctl em1
+iface em1 inet manual
+ovs_bridge br-ctl
+ovs_type OVSPort
+</codeph>
+</codeblock>
+
+<p>Sample /etc/network/interfaces file from KVM host 
+<image href="../../../../media/CGH-interfaces-file"/>
+</p>
+</li>
+<li>
+<p>Reboot the system using the following command:</p>
+
+<codeblock>
+<codeph>sudo /etc/init.d/networking restart
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Execute the <codeph>ifconfig -a</codeph> command to output OVS bridge details. If the bridge is not present, execute the following commands to restart the bridge:</p>
+
+<codeblock>
+<codeph>ifdown br-ctl
+ifup br-ctl
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Enable the <codeph>br-ctl</codeph> network that is used for associating with HLM VM</p>
+
+<p>a. Create br-ctl.xml file like below. Ensure respective VLAN ID for CLM is used.</p>
+
+<codeblock>
+<codeph>&lt;network&gt;
+    &lt;name&gt;br-ctl&lt;/name&gt;
+    &lt;forward mode='bridge'/&gt;
+    &lt;bridge name='br-ctl'/&gt;
+    &lt;virtualport type='openvswitch'/&gt;
+    &lt;portgroup name='CLM'&gt;
+        &lt;vlan&gt;
+            &lt;tag id='1574'/&gt;
+        &lt;/vlan&gt;
+    &lt;/portgroup&gt;
+&lt;/network&gt;
+</codeph>
+</codeblock>
+
+<p>b. Execute the following commands:</p>
+
+<codeblock>
+<codeph>virsh net-define br-ctl.xml
+virsh net-start br-ctl
+virsh net-autostart br-ctl
+virsh net-list should display default and br-ctl 
+</codeph>
+</codeblock>
+
+<p>c.  Display information on the bridge:</p>
+
+<codeblock>
+<codeph>ovs-vsctl show 
+</codeph>
+</codeblock>
+
+<p>The output should appear similar to the following example:</p>
+
+<codeblock>
+<codeph>Bridge br-ctl
+    Port "em1"
+        Interface "em1"
+    Port br-ctl
+        Interface br-ctl
+            type: internal
+ovs_version: "2.0.2"
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Make sure that you can connect to an external <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.dita" >NTP server</xref> and check that you can connect to an external network after exporting the proxy.</p>
+</li>
+</ol>
+</section>
+<section>
+<title id="next-step">
+<!-- id="next-step" -->Next Step</title>
+<p>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtrouter.dita" >Configure a Virtual Router During Installation</xref>
+</p>
+<p>
+  <xref href="#topic3995/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

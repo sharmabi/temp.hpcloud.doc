@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1721">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Create the HLM Node</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion OpenStack 1.1"/>
+<othermeta name="role" content="Storage Administrator"/>
+<othermeta name="role" content="Storage Architect"/>
+<othermeta name="role" content="Michael B,"/>
+<othermeta name="product-version1" content="HP Helion OpenStack 1.1"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-node.md-->
+ <!--permalink: /helion/openstack/carrier/install/hlm-node/--></p>
+<!--
+<p style="font-size: small;"><a href="../../../../commercial/GA1/1.1commercial.technical-overview.ga.dita/">&#9664; Technical Overview</a> | <a href="./commercial/GA1/1.1commercial.install-GA-overview.dita">&#9650; Installation Overview</a> | <a href="/helion/openstack/1.1/install/kvm">Installing on a KVM hypervisor &#9654;</a> OR <a href="/helion/openstack/1.1/install/esx"> Installing on an ESX hypervisor&#9654;</a> </p> 
+-->
+<p>Helion Lifecycle Management (HLM) consists of the ongoing operations /maintenance as well as the initial deployment of the Helion system as shown above.</p>
+<section>
+<title id="create-the-hlm-vm">
+<!-- id="create-the-hlm-vm" -->Create the HLM VM</title>
+<ol>
+<li>
+<p>Copy the <codeph>cg-hlm.qcow2</codeph> to <codeph>/var/lib/libvirt/images</codeph> folder on your KVM host.</p>
+</li>
+<li>
+<p>Use the following commands to create a virtual machine (the HLM node) from the HLM XML definition file then start the domain:</p>
+
+<codeblock>
+<codeph>virsh define hlm.xml
+virsh autostart HLM
+virsh start HLM
+</codeph>
+</codeblock>
+
+<p>After the HLM VM is up and running, the VM will have three interfaces:</p>
+
+<codeblock>
+<codeph>NIC1: NAT[Vibro] - a virtual NIC
+NIC2: br-ctl[PXE]
+NIC3: br-ctl[CLM port group].
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Update your interfaces as below and restart network services using the following command:</p>
+
+<codeblock>
+<codeph>/etc/init.d/networking restart
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Use the following commands to verify that the interfaces and route entries are configured as expected.</p>
+
+<codeblock>
+<codeph>/etc/network/interfaces
+Ifconfig
+Route entries
+</codeph>
+</codeblock>
+
+<p>If you do not see the interfaces and IP as expected, reboot the VM and check again.  Check the route entries and ping other interfaces after reboot</p>
+</li>
+<li>
+<p>Verify that you can ping other VMs</p>
+
+<ul>
+<li>VSD node</li>
+<li>VSC node</li>
+<li>NTP/DNS VM</li>
+<li>NTP server </li>
+<li>KVM host</li>
+</ul>
+</li>
+<li>
+<p>Verify that you can connect using SSH from the KVM host to the HLM node using the IP address for NIC1 (NAT[Vibro]). 
+    ssh root@<required-cleanup remap="ip_address">
+<ph/>
+</required-cleanup>
+</p>
+</li>
+<li>
+<p>Verify the bridge ID and VLAN tag ids for the HLM node are configured as expected.</p>
+
+<codeblock>
+<codeph>virsh dumpxml hlm
+</codeph>
+</codeblock>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="nextstep" -->
+<!-- id="nextstep" -->Next step</title>
+<p>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Install HP Helion OpenStack</xref>
+</p>
+<p>
+  <xref href="#topic1721/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

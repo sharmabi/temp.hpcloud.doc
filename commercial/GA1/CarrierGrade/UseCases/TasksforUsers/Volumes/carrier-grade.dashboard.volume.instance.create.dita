@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1232">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Creating a Instance Using a Volume</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Creating an Instance from a Volume</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.instance.create.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/volume/instance/create/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>Compute instances are virtual machines that run inside the cloud. You can create an instance directly from the  <b>Volumes</b> screen.</p>
+<p>To create a instance:</p>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>In the <b>Volumes</b> screen, for the volume you want for the instance, click the arrow icon in the <b>Actions</b> menu and select <b>Launch as Instance</b>.</p>
+
+<p>The Launch Instance dialog box opens, with five tabs: <b>Details</b>, <b>Access and Security</b>, <b>Networking</b>, <b>Post Creation</b>, and <b>Advanced Options</b>. By default, <b>Details</b> is the active tab.</p>
+
+<p>Note that the <b>Instance Boot Source</b> and <b>Volume</b> fields are specified, based on the selected volume.</p>
+
+<p>Use the <b>Flavor Details</b> list to make sure the disk size is sufficient.</p>
+
+<p>For details on the dialog box, see <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.dita" >Create a New Compute Instance</xref>.</p>
+</li>
+<li>
+<p>Click <b>Launch</b>.</p>
+</li>
+</ol>
+<p>
+  <xref href="#topic1232/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</body>
+</topic>

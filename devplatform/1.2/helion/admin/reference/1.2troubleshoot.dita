@@ -44,7 +44,8 @@
 </li>
 </ul>
 <section>
-<title>Server Log Files</title>
+<title id="server-log-files">
+<!-- id="server-log-files" -->Server Log Files</title>
 <p>If you need to troubleshoot or monitor Application Lifecycle Service logs with a third party,
 they can be found in the \~/helion/logs/* directory on the Application Lifecycle Service
 server.</p>
@@ -57,7 +58,9 @@ needed. To disable Application Lifecycle Service log rotation, delete the file o
 another folder.</p>
 </section>
 <section>
-<title>health_manager.log</title>
+<title>
+<!-- id="health-manager-log" -->
+<!-- id="health-manager-log" -->health_manager.log</title>
 <p>The <codeph>health_manager</codeph> process is responsible for
 monitoring containers and making sure they are relaunched if there's a
 problem. The <i>health_manager.log</i> file contains information on all
@@ -79,7 +82,9 @@ a lack of memory, allocating more memory to an app is a good first step
 to see if this fixes the problem.</p>
 </section>
 <section>
-<title>Inspecting User Apps as an Admin</title>
+<title>
+<!-- id="inspecting-user-apps-as-an-admin" -->
+<!-- id="inspecting-user-apps-as-an-admin" -->Inspecting User Apps as an Admin</title>
 <p>Application Lifecycle Service Admin accounts have root-like privileges. They can inspect all
 user applications and service instances running on the system.</p>
 <p>The helion group \&lt;command-users-groups-limits&gt; command can be used
@@ -94,7 +99,8 @@ group or user. For example:</p>
 the logged-in admin user.</p>
 </section>
 <section>
-<title>System Diagnosis</title>
+<title id="system-diagnosis">
+<!-- id="system-diagnosis" -->System Diagnosis</title>
 <p>There may be cases where resolving an issue requires a complete view of
 the system metrics. This functionality is provided by the
 <codeph>helion admin report</codeph> command. It generates a
@@ -110,7 +116,8 @@ HP at: <xref href="mailto:als-support@hp.com" >als-support@hp.com</xref>
 </p>
 </section>
 <section>
-<title>Specific Error Cases</title>
+<title id="specific-cases">
+<!-- id="specific-cases" -->Specific Error Cases</title>
 <p>
   <b>When pushing an app, the Application Lifecycle Service Client reports OK but app isn't running</b>
 </p>

@@ -31,7 +31,9 @@ source code to the system.</p>
 <p>Application Lifecycle Service handles the automatic configuration of the language runtime,
 web server, application dependencies, databases, and other services.</p>
 <section>
-<title>Quick Start</title>
+<title>
+<!-- id="quick-start" -->
+<!-- id="quick-start" -->Quick Start</title>
 <ul>
 <li>
 <xref href="../../../../devplatform/1.2/helion/user/quick-start/1.2index.dita" >Quick Start</xref>
@@ -54,7 +56,8 @@ web server, application dependencies, databases, and other services.</p>
 </ul>
 </section>
 <section>
-<title>Application Lifecycle Service Client</title>
+<title id="helion-client">
+<!-- id="helion-client" -->Application Lifecycle Service Client</title>
 <ul>
 <li>
 <xref href="../../../../devplatform/1.2/helion/user/reference/1.2client-ref.dita" >Application Lifecycle Service Client Command Reference</xref>
@@ -84,7 +87,8 @@ Endpoint</xref>
 </ul>
 </section>
 <section>
-<title>Deploying Applications</title>
+<title id="deploying-applications">
+<!-- id="deploying-applications" -->Deploying Applications</title>
 <ul>
 <li>
 <xref href="../../../../devplatform/1.2/helion/user/deploy/1.2index.dita" >General Deployment</xref>
@@ -131,7 +135,9 @@ Endpoint</xref>
 </ul>
 </section>
 <section>
-<title>Services</title>
+<title>
+<!-- id="services" -->
+<!-- id="services" -->Services</title>
 <ul>
 <li>
 <xref href="../../../../devplatform/1.2/helion/user/services/1.2data-services.dita" >Data Services</xref>
@@ -151,7 +157,9 @@ Endpoint</xref>
 </ul>
 </section>
 <section>
-<title>Logging &amp; Monitoring</title>
+<title>
+<!-- id="logging-monitoring" -->
+<!-- id="logging-monitoring" -->Logging &amp; Monitoring</title>
 <ul>
 <li>
 <xref href="../../../../devplatform/1.2/helion/user/deploy/1.2app-logs.dita" >Application Logs</xref>
@@ -162,7 +170,8 @@ Endpoint</xref>
 </ul>
 </section>
 <section>
-<title>Management Console</title>
+<title id="management-console">
+<!-- id="management-console" -->Management Console</title>
 <ul>
 <li>
 <xref href="../../../../devplatform/1.2/helion/admin/console/1.2customize.dita" >Customize the Management Console</xref>
@@ -191,7 +200,9 @@ Endpoint</xref>
 </ul>
 </section>
 <section>
-<title>Reference</title>
+<title>
+<!-- id="reference" -->
+<!-- id="reference" -->Reference</title>
 <ul>
 <li>
 <xref href="../../../../devplatform/1.2/helion/user/reference/1.2environment.dita" >Environment Variables</xref>

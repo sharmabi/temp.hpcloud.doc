@@ -23,8 +23,9 @@
 </codeph>
 </codeblock>
 <section>
-<required-cleanup>
-<title>Add a subnet</title>
+<title>
+<!-- id="add-a-subnet" -->
+<!-- id="add-a-subnet" -->Add a subnet</title>
 <ol>
 <li>
 <p>
@@ -72,11 +73,11 @@
 <p>Click <b>Create</b>.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Delete a subnet</title>
+<title>
+<!-- id="deleteport" -->
+<!-- id="deleteport" -->Delete a subnet</title>
 <p>Before you delete a subnet, you must first <xref href="../../../UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.ports.dita" >delete all ports</xref> associated with the subnet.</p>
 <ol>
 <li>
@@ -105,7 +106,6 @@
   <xref href="#topic3158/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

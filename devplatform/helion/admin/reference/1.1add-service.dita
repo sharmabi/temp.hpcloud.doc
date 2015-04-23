@@ -41,7 +41,9 @@
 <p>The <xref href="/helion/devplatform/1.1/als/user/reference/client-ref#command-services" >helion services</xref> command will show a list of all System Services available on the current target. This command will also display a list of Provisioned Services allocated to the currently authenticated user.</p>
 <p>Administrators can configure external data services to work in the same way that core System Services do, providing users and applications with access to existing software and infrastructure.</p>
 <section>
-<title>Service Brokers</title>
+<title>
+<!-- id="service-brokers" -->
+<!-- id="service-brokers" -->Service Brokers</title>
 <p>Service brokers are RESTful web services which connect Helion to services that the hosted apps can consume.</p>
 <p>The built-in system services have their own service brokers which handle the provisioning of service instances, but you can add your own service brokers to provide custom services (databases, message queues, etc.) to end users.</p>
 <p>The Cloud Foundry v2 Service Broker API provides a simplified mechanism for connecting data services to the system. A service broker is responsible for:</p>
@@ -54,13 +56,15 @@
 </ul>
 </section>
 <section>
-<title>CF Services Connector (Node.js)</title>
+<title id="cf-services-connector-nodejs">
+<!-- id="cf-services-connector-nodejs" -->CF Services Connector (Node.js)</title>
 <p>ActiveState has created an open-source service broker library written in Node.js called <i>cf-services-connector</i> to help you create custom service brokers.</p>
 <p>You can install the library with <i>npm install cf-services-connector</i> or include it in the <i>package.json</i> file of your service broker implementation.</p>
 </section>
 <section>
-<required-cleanup>
-<title>Example Echo Service</title>
+<title>
+<!-- id="example-echo-service" -->
+<!-- id="example-echo-service" -->Example Echo Service</title>
 <p>The <i>cf-services-connector-nodejs</i> repository provides an example service broker called <xref href="https://github.com/ActiveState/cf-services-connector-nodejs/tree/master/example/echo-service" scope="external" format="html" >
 <b>echo-service</b>
 </xref>.</p>
@@ -105,7 +109,6 @@ Creating new service broker [echo-broker] ... OK
   <codeph>helion update-service-plan --public echoservice
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 </body>
 </topic>

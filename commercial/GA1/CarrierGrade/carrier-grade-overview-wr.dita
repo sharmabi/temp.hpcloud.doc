@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic586">
+<title>HP Helion OpenStack® Carrier Grade Wind River Integration Overview</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade Overview</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion OpenStack"/>
+<othermeta name="product-version" content="HP Helion OpenStack 1.1"/>
+<othermeta name="role" content="All"/>
+<othermeta name="product-version1" content="HP Helion OpenStack"/>
+<othermeta name="product-version2" content="HP Helion OpenStack 1.1"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/carrier-grade-overview-wr.md-->
+ <!--permalink: /helion/openstack/carrier/wr/overview/--></p>
+<p>HP Helion OpenStack Carrier Grade uses Wind River® Titanium Server</p>
+<p>The Titanium server is a Network Functions Virtualization (NFV) software platform, providing ultra-reliability and exceptional performance efficiencies for telecommunications networks.</p>
+<p>
+  <xref href="#topic586/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</body>
+</topic>

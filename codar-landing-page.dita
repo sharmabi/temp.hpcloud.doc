@@ -17,7 +17,9 @@
  <!--permalink: /codar/--></p>
 <p>Automate the deployment of your applications by using a graphical topology designer, trigger deployments automatically with Jenkins, and embrace existing content from Chef, Docker, Amazon Web Services, and more.</p>
 <section>
-<title>Core Features</title>
+<title>
+<!-- id="core-features" -->
+<!-- id="core-features" -->Core Features</title>
 <ul>
 <li>
 <p>Unique Application Modeling: 
@@ -34,7 +36,8 @@ Integrate with HP, open source, and third-party tools such as Jenkins, Helion Pu
 </ul>
 </section>
 <section>
-<title>HP Codar Technical Information and Manuals (A-Z)</title>
+<title id="hp-codar-technical-information-and-manuals-a-z">
+<!-- id="hp-codar-technical-information-and-manuals-a-z" -->HP Codar Technical Information and Manuals (A-Z)</title>
 <p>
   <xref href="https://softwaresupport.hp.com/group/softwaresupport/search-result/-/facetsearch/document/KM01288450" scope="external" format="html" >Codar 1.00 Documentation Library (All)</xref>
 </p>

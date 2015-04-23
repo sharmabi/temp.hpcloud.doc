@@ -21,8 +21,9 @@
 <p>
 <b>Note:</b> The administrative user can perform all of the user tasks in addition to the admin tasks, such as <xref href="../../../UseCases/TasksforAdmins/Projects/1.1commercial.managing.projects.dita" >setting a quota for volumes</xref>.</p>
 <section>
-<required-cleanup>
-<title>Managing object storage as a user</title>
+<title>
+<!-- id="managing-object-storage-as-a-user" -->
+<!-- id="managing-object-storage-as-a-user" -->Managing object storage as a user</title>
 <p>As a user, you can work with any object storage container associated with the active project.</p>
 <ul>
 <li>
@@ -35,11 +36,10 @@
 <xref href="../../../UseCases/TasksforUsers/Object_Storage/1.1commercial.dashboard.container.edit.dita" >Edit and delete an object in a container</xref>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Managing object storage as an admin</title>
+<title id="managing-object-storage-as-an-admin">
+<!-- id="managing-object-storage-as-an-admin" -->Managing object storage as an admin</title>
 <p>As an admin user, you can work on all of the objects in your domain, regardless of which project the object is associated with.</p>
 <p>Access the admin object commands using the <b>Object Store</b> panel on the <b>Project</b> dashboard.</p>
 <p>There are no additional tasks available to the admin user.</p>
@@ -47,7 +47,6 @@
   <xref href="#topic1499/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

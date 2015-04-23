@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3150">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Create a New Compute Instance</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Creating Instances</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/instances/create/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>Compute instances are virtual machines that run inside the cloud.</p>
+<section>
+<title id="create-an-instance">
+<!-- id="create-an-instance" -->Create an instance</title>
+<p>To create an instance:</p>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Instances</b> screen, for the instance you want to modify, click <b>Launch Instance</b>.</p>
+
+<p>The Launch Instance dialog box opens, with five tabs: <b>Details</b>, <b>Access and Security</b>, <b>Networking</b>, <b>Post Creation</b>, and <b>Advanced Options</b>. By default, <b>Details</b> is the active tab.</p>
+
+<p>
+<image href="../../../../../../media/CGH-Helion-Instance-Launch-Details.png"/>
+</p>
+</li>
+<li>
+<p>On the <b>Details</b> tab, perform the following tasks:</p>
+
+<ul>
+<li>From the <b>Availability Zone</b> list, select the AZ this instance will be associated with.</li>
+<li>In the <b>Instance Name</b> field, enter the name for the instance.</li>
+<li>From the <b>Flavor</b> list select the flavor.</li>
+<li>In the <b>Instance Count</b> field, enter the number of instances required.</li>
+<li>
+<p>From the <b>Instance Boot Source</b> list, select the source to create the image from:</p>
+
+<ul>
+<li>Image -- create an image from an existing image</li>
+<li>Snapshot -- create an image from an existing snapshot</li>
+<li>Volume -- create an image from an existing volume</li>
+<li>Image (create new volume) -- create an image from an existing image and create a new volume</li>
+<li>Volume snapshot (create new volume) -- create an image from an existing snapshot and create a new volume</li>
+</ul>
+</li>
+<li>
+<p>Select the volume, snapshot, or image from the list that appears.</p>
+
+<p>Additonal fields appear for the boot source option that create a new volume. For more information, refer to <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.managing.volumes.dita" >Managing Block Storage Volumes</xref>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>On the <b>Access &amp; Security</b> tab, perform the following tasks:.</p>
+
+<ul>
+<li>From the <b>Keypair</b> list, select the <b>keypair</b> to use with the instance. If there is no key pair, click the <b>+</b> button to <xref href="/helion/commercial/carrier/dashboard/managing/security/keypairs#importKeypairs" >import a key pair</xref>.</li>
+<li>Select the security group to use with the instance.</li>
+</ul>
+<p>
+<image href="../../../../../../media/CGH-Helion-Instance-Launch-Access.png"/>
+</p>
+</li>
+<li>
+<p>On the <b>Networking</b> tab, from the <b>Available Networks</b> list, select the required network. The network is displayed in the Selected Networks box.</p>
+
+<p>A default network is always available. You can also <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >create custom networks</xref> which will appear in this list.</p>
+
+<p>
+<image href="../../../../../../media/CGH-Helion-Instance-Launch-Networking.png"/>
+</p>
+</li>
+<li>
+<p>On the Post-Creation tab, optionally, enter a script to pass user data to the instance at launch time. In the Customization Script Source list, select:</p>
+
+<ul>
+<li>
+<b>Direct Input</b> to create a script to customize your instance after it launches.</li>
+<li>File to specify an existing script.</li>
+</ul>
+<p>
+<image href="../../../../../../media/CGH-Helion-Instance-Launch-Post.png"/>
+</p>
+
+<p>For more details, refer to the OpenStack documentation, such as <xref href="http://docs.openstack.org/user-guide/content/user-data.html" scope="external" format="html" >Configure instances at boot</xref>.</p>
+</li>
+<li>
+<p>On the <b>Advanced Options</b> tab, optionally, select Configuration Drive to configure OpenStack to write metadata to a special configuration drive that attaches to the instance when it boots.</p>
+
+<p>The instance can mount this drive and read files from it to get information that is normally available through the metadata service. For more information, see the OpenStack document <xref href="http://docs.openstack.org/user-guide/content/config-drive.html" scope="external" format="html" >Store metadata on a configuration drive</xref>.</p>
+
+<p>
+<image href="../../../../../../media/CGH-Helion-Instance-Launch-Advanced.png"/>
+</p>
+</li>
+<li>
+<p>Click <b>Launch</b> to launch the instance.</p>
+
+<p>The new instance is listed in the <b>Instances</b> screen.</p>
+</li>
+</ol>
+<p>
+  <xref href="#topic3150/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

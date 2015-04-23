@@ -26,7 +26,8 @@ documentation</xref>. Also, take a look
 at the Application Lifecycle Service sample apps listed below to see some working code
 examples.</p>
 <section>
-<title>Home Directory</title>
+<title id="home-directory">
+<!-- id="home-directory" -->Home Directory</title>
 <p>Catalyst makes different assumptions on its Home directory depending on
 whether or not it is installed in @INC. It makes this distinction based
 on the presence of a <i>Makefile.PL</i> or <i>BUILD.PL</i> file in the app
@@ -42,7 +43,8 @@ variables. For example, you could set CATALYST_HOME in <i>manifest.yml</i>:</p>
 </codeblock>
 </section>
 <section>
-<title>Examples</title>
+<title id="examples">
+<!-- id="examples" -->Examples</title>
 <ul>
 <li>
 <xref href="https://github.com/Stackato-Apps/catalyst-tut2" scope="external" format="html" >Catalyst Tutorial

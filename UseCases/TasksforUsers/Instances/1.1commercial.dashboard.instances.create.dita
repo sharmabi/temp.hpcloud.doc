@@ -22,8 +22,8 @@
 <li>Image that you have copied to a persistent volume.</li>
 </ul>
 <section>
-<required-cleanup>
-<title>Create an instance</title>
+<title id="create-an-instance">
+<!-- id="create-an-instance" -->Create an instance</title>
 <p>To create an instance:</p>
 <ol>
 <li>
@@ -93,7 +93,6 @@
   <xref href="#topic2713/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

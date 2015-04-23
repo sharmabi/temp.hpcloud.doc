@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic707">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Installation Overview</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Installation Overivew</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/carrier-grade-install-baremetal.md-->
+ <!--permalink: /helion/openstack/carrier/install/bm/overview/--></p>
+<p>Use the following steps to install HP Helion OpenStack Carrier Grade in a baremetal environment.</p>
+<ol>
+<li>
+<p>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-network-prepare.dita" >Prepare the Network for Installation</xref>
+</p>
+</li>
+<li>
+<p>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-vm.dita" >Create the HLM Virtual Machine</xref>
+</p>
+</li>
+<li>
+<p>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-network-install.dita" >Provision the Network</xref>
+</p>
+</li>
+<li>
+<p>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-environment.dita" >Configure the installation environment</xref>
+</p>
+</li>
+<li>
+<p>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-cloud.dita" >Deploying the HLM Cloud</xref>
+</p>
+</li>
+</ol>
+<section>
+<title id="first-step">
+<!-- id="first-step" -->First Step</title>
+<p>Before you start, make sure your environment meets the hardware and software requirements. See the <xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-support-matrix.dita" >Support Matrix</xref>.</p>
+<p>
+  <xref href="#topic707/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

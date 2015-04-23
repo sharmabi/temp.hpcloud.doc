@@ -51,7 +51,9 @@ administrator or service provider, but in many cases they can be set up
 so that Application Lifecycle Service can allocate databases in the same way it does for the
 built-in databases.</p>
 <section>
-<title>General Principles</title>
+<title>
+<!-- id="general-principles" -->
+<!-- id="general-principles" -->General Principles</title>
 <p>Any application running on Application Lifecycle Service can connect to an external database
 directly as long as the instance can route to the IP address and port of
 the database server. Database connections can be hard coded in the
@@ -67,7 +69,9 @@ config</i>
 </xref>).</p>
 </section>
 <section>
-<title>MySQL</title>
+<title>
+<!-- id="mysql" -->
+<!-- id="mysql" -->MySQL</title>
 <p>The MySQL server must be set up to allow connections over the network
 (rather than just on 'localhost'). Make sure the 'bind-address' is set
 to the host's IP address (or '0.0.0.0').</p>
@@ -101,7 +105,9 @@ $ kato config set mysql_node mysql/user root
 </codeblock>
 </section>
 <section>
-<title>PostgreSQL</title>
+<title>
+<!-- id="postgresql" -->
+<!-- id="postgresql" -->PostgreSQL</title>
 <p>Make sure the PostgreSQL database server (version 9.1 or later) will
 accept connections over the network. Edit <i>postgresql.conf</i> make sure
 the 'listen_addresses' is uncommented and set to the networked
@@ -134,7 +140,8 @@ $ kato config set postgresql_node postgresql/user postgres
 </codeblock>
 </section>
 <section>
-<title>Troubleshooting</title>
+<title id="troubleshooting">
+<!-- id="troubleshooting" -->Troubleshooting</title>
 <p>The <codeph>psql</codeph> and <codeph>mysql</codeph> clients
 are available at the command line on the Application Lifecycle Service VM. Log in to the Core
 node (i.e. the one running the Cloud Controller) and test the database

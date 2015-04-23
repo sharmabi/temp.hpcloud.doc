@@ -17,8 +17,9 @@
 -->
 <p>You can extend the size of a volume, as needed.</p>
 <section>
-<required-cleanup>
-<title>Extend a volume</title>
+<title>
+<!-- id="extend-a-volume" -->
+<!-- id="extend-a-volume" -->Extend a volume</title>
 <ol>
 <li>
 <p>
@@ -41,7 +42,6 @@
   <xref href="#topic720/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

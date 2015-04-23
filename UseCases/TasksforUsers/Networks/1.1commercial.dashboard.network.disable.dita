@@ -17,8 +17,9 @@
 -->
 <p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses. You can <xref href="#topic1120/enablenet">enable</xref> or <xref href="#topic1120/disablenet">disable</xref> networks, as needed.</p>
 <section>
-<required-cleanup>
-<title>Enable a network</title>
+<title>
+<!-- id="enablenet" -->
+<!-- id="enablenet" -->Enable a network</title>
 <ol>
 <li>
 <p>
@@ -39,11 +40,10 @@
 <p>Click <b>Save Changes</b>.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Disable a network</title>
+<title id="disablenet">
+<!-- id="disablenet" -->Disable a network</title>
 <ol>
 <li>
 <p>
@@ -68,7 +68,6 @@
   <xref href="#topic1120/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

@@ -19,8 +19,9 @@
 <p>Optionally, you can assign the account to additional projects. Before you can delete a user account, you must remove the user account from its primary project.</p>
 <p>As an admin, you can specify a <i>primary</i> project for each user.</p>
 <section>
-<required-cleanup>
-<title>Specify a primary project</title>
+<title>
+<!-- id="specify-a-primary-project" -->
+<!-- id="specify-a-primary-project" -->Specify a primary project</title>
 <ol>
 <li>
 <p>
@@ -43,7 +44,6 @@
   <xref href="#topic1061/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

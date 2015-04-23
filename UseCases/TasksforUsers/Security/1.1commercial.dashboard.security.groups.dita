@@ -17,8 +17,9 @@
 -->
 <p>You can <xref href="#topic4536/creategroups">create your own security groups</xref> or you can <xref href="#topic4536/editgroups">edit the rules in an existing group</xref> to suit your needs.</p>
 <section>
-<required-cleanup>
-<title>About Security Groups and Rules</title>
+<title>
+<!-- id="about-security-groups-and-rules" -->
+<!-- id="about-security-groups-and-rules" -->About Security Groups and Rules</title>
 <p>Access to your instances is controlled by security groups which are a collection of inbound (ingress) and outbound (egress) rules about which sources, protocols and ports a server can send/receive traffic from. No traffic can be received by a server unless a security group rule explicitly allows it.</p>
 <p>A default security group is created automatically that contains six rules:</p>
 <ul>
@@ -30,11 +31,11 @@
 <li>Ingress IPv6 Any default: this is adding the "default" group to itself</li>
 </ul>
 <p>You can create your own security groups or you can change the default group to suit your needs.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Using CIDR to Control Traffic</title>
+<title>
+<!-- id="cidr" -->
+<!-- id="cidr" -->Using CIDR to Control Traffic</title>
 <p>Understanding how the CIDR field works is important to understanding how to control the access to your instances. If you use a CIDR of 0.0.0.0/0 then that is allowing traffic over the port you specified for all IP addresses. Here is how you can restrict access to a specific IP address:</p>
 <ul>
 <li>0.0.0.0/0 - This would allow traffic across all IP addresses</li>
@@ -44,11 +45,11 @@
 <li>15.185.1.1/24 - This would restrict traffic to IP addresses starting with 15.185.1.x</li>
 <li>15.185.1.1/32 - This would restrict traffic to a single host with IP address 15.185.1.1</li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Create a security group</title>
+<title>
+<!-- id="creategroups" -->
+<!-- id="creategroups" -->Create a security group</title>
 <p>To create a security group, do the following:</p>
 <ol>
 <li>
@@ -80,11 +81,11 @@
 <ol>
 <li>You can use the following procedure to add ingress and egress rules to the security group as needed.</li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Create security group rules</title>
+<title>
+<!-- id="editgroups" -->
+<!-- id="editgroups" -->Create security group rules</title>
 <p>To create security group rules, do the following:</p>
 <ol>
 <li>
@@ -137,7 +138,6 @@ Selecting a security group as the source will allow any other instance in that s
   <xref href="#topic4536/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

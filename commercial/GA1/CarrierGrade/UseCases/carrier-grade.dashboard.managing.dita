@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1035">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Manage Your Cloud</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.managing.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a> </p>
+-->
+<p>The HP Helion OpenStack dashboards are browser-based interfaces that enable you to manage your entire cloud environment.</p>
+<p>The dashboards are based on OpenStack Horizon and provide enhanced features.</p>
+<p>Refer to these documentation resources:</p>
+<ul>
+<li>
+<xref href="../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.how-works.dita" >How to use the HP Helion OpenStack Dashboards</xref> - Describes the Project and Administration dashboard user interface dialogs and options. </li>
+<li>
+<xref href="../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/1.1commercial.dashboard.users.dita" >Using HP Helion OpenStack for Users</xref> - Describes the Operational Dashboard user interface dialogs and options.</li>
+</ul>
+<p>
+<b>Note:</b> Administrators can perform all of the user tasks in addition to the <xref href="../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.admin.dita" >admin tasks</xref>.</p>
+<ul>
+<li>
+<xref href="helion/commercial/carrier/dashboard/admin/" >Using HP Helion OpenStack for Administrators</xref> - Describes the Operational Dashboard user interface dialogs and options.</li>
+</ul>
+<!--
+* [HP Helion OpenStack: Building Images](/helion/commercial/carrier/manage/image-builder/) &#8212; Shows you how to use Disk Image Builder to create images for the HP Helion OpenStack.
+
+* [HP Helion OpenStack: Backup and Restore](/helion/commercial/carrier/manage/backup-process/) &#8212; Explains how to backup and restore the components of the HP Helion OpenStack Management Host. -->
+<p>
+  <xref href="#topic1035/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</body>
+</topic>

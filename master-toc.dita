@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic49831">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic60269">
 <title>Master TOC</title>
 <prolog>
 <metadata>
@@ -16,13 +16,19 @@
 The file is not copied to the master branch and not pushed to production.</p>
 <ul>
 <li>
-  <xref href="publiccloud/index.dita" >Welcome to HP Helion Documentation"</xref>
+<xref href="publiccloud/index.dita" >Welcome to HP Helion Documentation <!-- <iframe src=https://player.vimeo.com/video/38064508?title=0&amp;byline=0&amp;portrait=0 width=580 height=420 frameborder=0> </iframe> --></xref>
 </li>
 <li>
 <xref href="commercial/GA1/1.1commercial.install-3par.dita" >HP Helion OpenStack® 1.1: HP StoreServ (3PAR) Support</xref>
 </li>
 <li>
 <xref href="commercial/GA1/1.0commercial.install-3par.dita" >HP Helion OpenStack® 1.0: HP StoreServ (3PAR) Support</xref>
+</li>
+<li>
+<xref href="/401error.dita">Page Unauthorized</xref>
+</li>
+<li>
+<xref href="/404error.dita">Page Not Found</xref>
 </li>
 <li>
 <xref href="devplatform/helion/admin/console/1.0index.dita" >HP Helion 1.0 Development Platform: Management Console (Admin View) </xref>
@@ -32,6 +38,432 @@ The file is not copied to the master branch and not pushed to production.</p>
 </li>
 <li>
 <xref href="devplatform/1.2/helion/admin/console/1.2index.dita" >HP Helion 1.2 Development Platform: Management Console (Admin View) </xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-scale-out-swift.dita" >HP Helion OpenStack® Carrier Grade (Alpha): About Scale-out Object Storage (Swift)</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-add-disk-scale-out-object-ring.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Add a Disk to a Scale-out Object Ring</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-add-disk-starter-object-ring.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Add a Disk to Starter Object Ring</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.subnet.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Adding and Removing Subnets</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Projects/carrier-grade.dashboard.projects.users.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Adding and removing users to a project</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-add-disk-account-container.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Adding Disks to Account or Container Rings</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.ports.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Adding or Removing Ports</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-add-disk-storage-node.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Add New Scale-out Object Node</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-add-proxy-node.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Add New Scale-out Proxy Node</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-admin-dcn.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Administering HP Distributed Cloud Networking (DCN)</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-admin-guide.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Administrators Guide</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-admin-helion.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Administrators Guide</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-admin-wr.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Administrators Guide</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.managing.instances.ipaddress.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Allocating and Associating Floating IP Addresses</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.attach.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Attaching and Detaching Volume Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.backup.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Backing Up a Volume</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-backup-restore-GA.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Back Up and Restore</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-volume-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Block Storage Volume Operations (Cinder) Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-logging-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Centralized Logging Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.password.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Changing a User Password</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Security/carrier-grade.dashboard.users.password.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Changing a User Password</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-compute-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Compute Service Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Configuring NTP</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-bm-environment.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Configuring the installation environment</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.dashboard.router.connect.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Connecting a Network to a Router</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtrouter.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Create a Virtual Router During Installation</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-datacenter.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Create the DNS/NTP Data Center Network Management VM</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Create the Guest VM</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-node.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Create the HLM Node</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-vm.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Create the HLM Virtual Machine</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-vm.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Create the HLM Virtual Machine</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Create the HP VSC Node</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsd-node.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Create the VSD Node</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Volumes/carrier-grade.dashboard.volume.admin.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating and Deleting a Volume Types</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Object_Storage/carrier-grade.dashboard.container.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating and Deleting Containers</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Projects/carrier-grade.dashboard.projects.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating and Deleting Projects</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating and Deleting Users</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.create.image.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating an Image from a Volume</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.instance.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating an Instance from a Volume</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.snapshot.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating an Instance Snapshot</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.snapshot.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating an Instance Snapshot</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.dashboard.router.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating a Router</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.shared.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating a Shared Network</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.shared.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating a Shared Network</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating, Editing, and Deleting Volumes</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.admin.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating Externally Available Networks</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.console.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.view.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Creating or Deleting Networks</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.dashboard.router.delete.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Deleting a Router</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.images.delete.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Deleting Images</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Deploying Additional Scale-out Object Storage (Swift) Nodes</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-cloud.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Deploying the HLM Cloud</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.enable.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Disabling and Enabling Users</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-overview-dcn.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Distributed Cloud Networking Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-dvr-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Distributed Virtual Routing (DVR) Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-neutron-post-installation-configure-DNaaS.dita" >HP Helion OpenStack® Carrier Grade (Alpha): DNSaaS Configuration (Optional)</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-dns-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): DNS as a Service (DNSaaS) Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-index.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Documentation Home</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Object_Storage/carrier-grade.dashboard.container.edit.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Editing and Deleting Objects</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.disable.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Enabling and Disabling Networks</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-eon-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): EON Service Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.extend.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Extending the Size of a Volume</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-expand-swift-cluster.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Extend Object Storage (Swift) Cluster</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-overview-hlm-network.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Helion Lifecycle Management (HLM) Network Topology</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-overview-hlm.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Helion Lifecycle Management (HLM) Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-high-availability.dita" >HP Helion OpenStack® Carrier Grade (Alpha): High Availability(HA)</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-horizon-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Horizon Service Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.how-works.dita" >HP Helion OpenStack® Carrier Grade (Alpha): How to use the Helion Dashboards</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-identity-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Identity Service (Keystone) Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-imaging-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Image Operations (Glance) Service Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtual-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Installation Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtual-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Installation Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-prereqs.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Installation Prerequisites</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-helion.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Install HP Helion OpenStack</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-identity-integrate-ldap.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Integrate the Identity Service (Keystone) with LDAP/AD</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-ironic-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Ironic Service Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Logging into the Helion Dashboards</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.images.public.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Making an Image Public</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.managing.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Manage Your Cloud</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Domains/carrier-grade.dashboard.flavors.access.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing access to a flavor</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.managing.volumes.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Block Storage Volumes</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Domains/carrier-grade.dashboard.domains.flavors.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Compute Flavors</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Domains/carrier-grade.dashboard.aggregate.managing.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Host Aggregates</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.managing.images.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Images</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.managing.instances.users.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Security/carrier-grade.dashboard.security.keypairs.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Key Pairs</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.managing.network.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Networks</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Object_Storage/carrier-grade.managing.objects.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Object Storage</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Projects/carrier-grade.dashboard.projects.quotas.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing project quotas</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Projects/carrier-grade.managing.projects.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Projects</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.managing.routers.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Routers</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Security/carrier-grade.dashboard.security.groups.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Security Groups</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Security/carrier-grade.managing.security.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Security</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Domains/carrier-grade.managing.domains.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing the Domain</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.managing.users.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Managing Users</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.images.modify.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Modifying Images</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-disk-drive(s).dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor Disk Drive(s)</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-swift-disk.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor Disk Usage</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-swift-file-ownership.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor File Ownership</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-health-check.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor Health of Services using Icinga</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-health-swift-services.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor Health of Services using Icinga</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-diagnosis-disk-health-hpssacli.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitoring Disk Drives in Object Storage Using hpssacli Utility</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-swift-drive-audit.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitoring the Drive Audit</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-swift-mount-points.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitoring the Mount Points using Icinga</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-replica-swift-status.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor Node Replication Status using Icinga</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-swift-cluster.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor Object Storage (Swift) Cluster</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-swift-network-access-ping.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor the Network Access (Ping)</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-swift-proxy-health-checks.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor the Object Storage (Swift) Proxy Health</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-monitor-swift-network-interface.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Monitor the Speed of Network Interface Card</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-networking-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Networking Service (Neutron) Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-object-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Object Storage (Swift) Service Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.pause.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Pausing and Un-pausing Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.stop.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Pausing and Un-pausing Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-bm-network-prepare.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Preparing the Network for Installation</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-network.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Preparing the Network for Installation</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.snapshot.protect.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Protecting Images</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-provision-swift-node.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Provisioning Object Storage (Swift) Node(s)</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-bm-network-install.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Provisioning the Network</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.reboot.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Rebooting Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.rebuild.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Rebuilding Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-shrink-remove-exisitng-disk.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Remove an existing Disk from Object Nodes</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-shrink-remove-proxy-node.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Remove a Proxy Node</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-shrink-remove-scale-out-object-storage-node.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Remove Scale-out Object Storage Node</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-remove-replace-failed-overcloud-nodes.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Removing and Replacing a Failed Overcloud Controller</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-object-pyringos.dita" >HP Helion OpenStack® Carrier Grade (Alpha): ringos</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade.services-overview.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Services Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-shrink-swift-cluster.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Shrink Object Storage (Swift) Cluster</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade.site-index.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Site Index</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.projects.primary.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Specifying a Primary Project for a User</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.suspend.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Suspending and Resuming Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.terminate.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Terminating Instances</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-networking-maskedIP.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Tracking masked IP addresses when using network address translation (NAT)</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-troubleshooting.swift.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Troubleshooting Scale-Out Swift</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Object_Storage/carrier-grade.dashboard.container.upload.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Uploading and Downloading Objects</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.admin.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Using as an Admin User</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-admin-hlm.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Using Helion Lifecycle Management</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/1.1commercial.dashboard.users.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Using the Dashboard as a Non-Admin User</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Projects/carrier-grade.dashboard.projects.view.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Viewing all projects in the domain</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Images/carrier-grade.dashboard.images.details.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Viewing Image Details</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.viewing.dita" >HP Helion OpenStack® Carrier Grade (Alpha): Viewing Your Network</xref>
 </li>
 <li>
 <xref href="/als/v1/client/download" >HP Helion 1.0 Development Platform: HP Application Lifecycle Service (ALS) Client</xref>
@@ -56,9 +488,6 @@ The file is not copied to the master branch and not pushed to production.</p>
 </li>
 <li>
 <xref href="devplatform/helion/admin/cluster/1.0index.dita" >HP Helion 1.0 Development Platform: Cluster Setup </xref>
-</li>
-<li>
-<xref href="devplatform/helion/admin/cluster/1.0autoscaling.dita" >HP Helion 1.0 Development Platform: DEA Auto Scaling </xref>
 </li>
 <li>
 <xref href="devplatform/helion/admin/cluster/1.0cloud-init.dita" >HP Helion 1.0 Development Platform: Using the cloud-init Package </xref>
@@ -206,9 +635,6 @@ The file is not copied to the master branch and not pushed to production.</p>
 </li>
 <li>
 <xref href="devplatform/1.0devplatform.marketplace.install.dita" >HP Helion 1.0 Development Platform: The Marketplace (Beta)</xref>
-</li>
-<li>
-<xref href="commercial/GA1/ceilometer/1.1commercial.services-reporting-alarms.dita" >HP Helion OpenStack® 1.1: Metering Service (Ceilometer): Alarms</xref>
 </li>
 <li>
 <xref href="commercial/GA1/ceilometer/1.1commerical.services-reporting-APIExtensions.dita" >HP Helion OpenStack® 1.1: Metering Service (Ceilometer): API Extensions</xref>
@@ -826,9 +1252,6 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="devplatform/helion/admin/cluster/1.1index.dita" >HP Helion 1.1 Development Platform: Cluster Setup</xref>
 </li>
 <li>
-<xref href="devplatform/helion/admin/cluster/1.1autoscaling.dita" >HP Helion 1.1 Development Platform: DEA Auto Scaling </xref>
-</li>
-<li>
 <xref href="devplatform/helion/admin/cluster/1.1cloud-init.dita" >HP Helion 1.1 Development Platform: Using the cloud-init Package </xref>
 </li>
 <li>
@@ -958,7 +1381,7 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="devplatform/helion/user/deploy/languages/1.1ruby.dita" >HP Helion 1.1 Development Platform: Developing In Ruby</xref>
 </li>
 <li>
-<xref href="devplatform/helion/user/deploy/1.1newrelic.dita" >HP Helion 1.1 Development Platform: New Relic Monitoring </xref>
+<xref href="devplatform/helion/user/deploy/1.1newrelic.dita" >HP Helion 1.1 Development Platform: New Relic Monitoring</xref>
 </li>
 <li>
 <xref href="devplatform/helion/user/deploy/1.1orgs-spaces.dita" >HP Helion 1.1 Development Platform: Organizations and Spaces</xref>
@@ -1057,13 +1480,13 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="devplatform/helion/user/reference/1.1troubleshoot.dita" >HP Helion 1.1 Development Platform: Troubleshooting</xref>
 </li>
 <li>
-<xref href="devplatform/helion/user/services/1.1filesystem.dita" >HP Helion 1.1 Development Platform: Persistent File System </xref>
+<xref href="devplatform/helion/user/services/1.1filesystem.dita" >HP Helion 1.1 Development Platform: Persistent File System</xref>
 </li>
 <li>
 <xref href="devplatform/helion/user/services/1.1memcached.dita" >HP Helion 1.1 Development Platform: Memcached Service </xref>
 </li>
 <li>
-<xref href="devplatform/helion/user/services/1.1user-provided.dita" >HP Helionu 1.1: Development Platform: User-Provided Services </xref>
+<xref href="devplatform/helion/user/services/1.1user-provided.dita" >HP Helion 1.1: Development Platform: User-Provided Services </xref>
 </li>
 <li>
 <xref href="devplatform/1.1devplatform.appdev.dita" >HP Helion 1.1 Development Platform: Resources for Application Developers</xref>
@@ -1087,9 +1510,6 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="devplatform/1.1devplatform_commercial_install.dita" >HP Helion 1.1 Development Platform: Commercial Installation and Configuration</xref>
 </li>
 <li>
-<xref href="devplatform/1.1devplatform_community_install.dita" >HP Helion 1.1 Development Platform: Community Installation and Configuration</xref>
-</li>
-<li>
 <xref href="devplatform/1.1devplatform.troubleshooting.dita" >HP Helion 1.1 Development Platform: Installation Troubleshooting</xref>
 </li>
 <li>
@@ -1100,6 +1520,9 @@ The file is not copied to the master branch and not pushed to production.</p>
 </li>
 <li>
 <xref href="devplatform/1.1devplatform.related-topics.dita" >HP Helion 1.1 Development Platform: Related Documentation</xref>
+</li>
+<li>
+<xref href="devplatform/1.1devplatform.sitemap.dita" >HP Helion 1.1 Development Platform: Sitemap</xref>
 </li>
 <li>
 <xref href="devplatform/1.1devplatform.sysadmin.dita" >HP Helion 1.1 Development Platform: Resources for IT Ops </xref>
@@ -1151,9 +1574,6 @@ The file is not copied to the master branch and not pushed to production.</p>
 </li>
 <li>
 <xref href="devplatform/1.2/helion/admin/cluster/1.2index.dita" >HP Helion 1.2 Development Platform: Cluster Setup</xref>
-</li>
-<li>
-<xref href="devplatform/1.2/helion/admin/cluster/1.2autoscaling.dita" >HP Helion 1.2 Development Platform: DEA Auto Scaling </xref>
 </li>
 <li>
 <xref href="devplatform/1.2/helion/admin/cluster/1.2cloud-init.dita" >HP Helion 1.2 Development Platform: Using the cloud-init Package </xref>
@@ -1417,9 +1837,6 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="devplatform/1.2/1.2devplatform_commercial_install.dita" >HP Helion 1.2 Development Platform: Commercial Installation and Configuration</xref>
 </li>
 <li>
-<xref href="devplatform/1.2/1.2devplatform_community_install.dita" >HP Helion 1.2 Development Platform: Community Installation and Configuration</xref>
-</li>
-<li>
 <xref href="devplatform/1.2/1.2devplatform.troubleshooting.dita" >HP Helion 1.2 Development Platform: Installation Troubleshooting</xref>
 </li>
 <li>
@@ -1433,6 +1850,9 @@ The file is not copied to the master branch and not pushed to production.</p>
 </li>
 <li>
 <xref href="devplatform/1.2/1.2devplatform.sysadmin.dita" >HP Helion 1.2 Development Platform: Resources for IT Ops </xref>
+</li>
+<li>
+<xref href="devplatform/1.2/1.2devplatform.whatsnew.dita" >HP Helion 1.2 Development Platform: What's New</xref>
 </li>
 <li>
 <xref href="devplatform/1.2/workbook/database/1.2database.java.dita" >HP Helion 1.2 Development Platform: Java MySQL Database Sample</xref>
@@ -1555,7 +1975,7 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="commercial/GA1/ceph/1.1commercial.ceph-glossary.dita" >HP Helion OpenStack® 1.1: Glossary</xref>
 </li>
 <li>
-<xref href="commercial/GA1/ceph/1.1commercial.ceph-helion-openstack-ceph-storage-administration.dita" >HP Helion OpenStack® 1.1: Ceph Storage Administration Services</xref>
+<xref href="commercial/GA1/ceph/1.1commercial.ceph-helion-openstack-ceph-storage-administration.dita" >HP Helion OpenStack® HP Helion Ceph Administration Services</xref>
 </li>
 <li>
 <xref href="commercial/GA1/ceph/1.1commercial-ceph-helion-openstack-nova-ceph-Storage.dita" >HP Helion OpenStack® 1.1: Ceph Nova Storage</xref>
@@ -1576,7 +1996,7 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="commercial/GA1/ceph/1.1commenrcial.ceph-monitoring.dita" >HP Helion OpenStack® 1.1: Ceph Monitoring</xref>
 </li>
 <li>
-<xref href="commercial/GA1/ceph/1.1commenrcial.ceph-pre-requisite.dita" >HP Helion OpenStack® 1.1: Ceph Firefly 80.7 Storage Solution: Prerequisites</xref>
+<xref href="commercial/GA1/ceph/1.1commenrcial.ceph-pre-requisite.dita" >HP Helion OpenStack® 1.1: Ceph Firefly 0.80.7 Storage Solution: Prerequisites</xref>
 </li>
 <li>
 <xref href="commercial/GA1/ceph/1.1commercial.ceph-rados-gateway-client.dita" >HP Helion OpenStack® 1.1 Ceph RADOS Gateway - Client</xref>
@@ -1756,9 +2176,6 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="commercial/GA1/ceph/1.1commercial.ceph-overview.dita" >HP Helion OpenStack® 1.1: Ceph Firefly 0.80.7 Storage Solution</xref>
 </li>
 <li>
-<xref href="commercial/GA1/1.1commerical.services-ceph-overview.dita" >HP Helion OpenStack® 1.1: Ceph Integration Overview</xref>
-</li>
-<li>
 <xref href="commercial/GA1/1.1commerical.services-compute-overview.dita" >HP Helion OpenStack® 1.1: Compute Service Overview</xref>
 </li>
 <li>
@@ -1796,9 +2213,6 @@ The file is not copied to the master branch and not pushed to production.</p>
 </li>
 <li>
 <xref href="/helion/openstack/1.1/services/mapNeutron" >HP Helion OpenStack® 1.1: Services Map</xref>
-</li>
-<li>
-<xref href="commercial/GA1/1.1commerical.services-ceph-archref.dita" >HP Helion OpenStack® 1.1: Ceph Storage Architecture Reference</xref>
 </li>
 <li>
 <xref href="commercial/GA1/ceph/1.1commerical.services-ceph-archref.dita" >HP Helion OpenStack® 1.1: Ceph Storage Architecture Reference</xref>
@@ -1894,6 +2308,9 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="commercial/GA1/1.1commercial.troubleshooting.logging.dita" >HP Helion OpenStack® 1.1: Troubleshooting Logging</xref>
 </li>
 <li>
+<xref href="commercial/GA1/1.1commercial.troubleshooting.mysql.dita" >HP Helion OpenStack® 1.1: Troubleshooting MqSQL</xref>
+</li>
+<li>
 <xref href="commercial/GA1/1.1commercial.troubleshooting.ntp.dita" >HP Helion OpenStack® 1.1: Troubleshooting NTP</xref>
 </li>
 <li>
@@ -1984,34 +2401,52 @@ The file is not copied to the master branch and not pushed to production.</p>
 <xref href="commercial/GA1/1.0commercial.backup-restore-GA.dita" >HP Helion OpenStack® 1.0: Back Up and Restore</xref>
 </li>
 <li>
-<xref href="commercial/GA1/CarrierGrade/carrier-grade-index.dita" >HP Helion OpenStack® Carrier Grade: Documentation Home</xref>
+<xref href="commercial/GA1/CarrierGrade/index.dita" >Welcome to HP Helion Documentation <!-- <iframe src=https://player.vimeo.com/video/38064508?title=0&amp;byline=0&amp;portrait=0 width=580 height=420 frameborder=0> </iframe> --></xref>
 </li>
 <li>
-<xref href="commercial/GA1/CarrierGrade/carrier-grade-dcn-overview.dita" >HP Helion OpenStack® Carrier Grade: Distributed Cloud Networking Overview</xref>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-overview-helion.dita" >HP Helion OpenStack® Overview</xref>
 </li>
 <li>
-<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-hlm.dita" >HP Helion OpenStack® Installing an HLM Node on a KVM Server: Distributed Cloud Networking Overview</xref>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-baremetal.dita" >HP Helion OpenStack® Installation Overivew</xref>
 </li>
 <li>
-<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-network.dita" >HP Helion OpenStack® Carrier Grade: Configuring Networking with DCN</xref>
-</li>
-<li>
-<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-overview.dita" >HP Helion OpenStack® Carrier Grade: Installation Overview</xref>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm.dita" >HP Helion OpenStack® Installing an HLM Node on a KVM Server: Distributed Cloud Networking Overview</xref>
 </li>
 <li>
 <xref href="commercial/GA1/CarrierGrade/carrier-grade-install-post.dita" >HP Helion OpenStack® 1.1: Post-Installation for ESX Hypervisor</xref>
 </li>
 <li>
-<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-prereqs.dita" >HP Helion OpenStack® 1.1: Installation Prerequisites</xref>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-post.dita" >HP Helion OpenStack® 1.1: Post-Installation for ESX Hypervisor</xref>
 </li>
 <li>
-<xref href="commercial/GA1/CarrierGrade/carrier-grade-install-prereqs-network.dita" >HP Helion OpenStack® 1.1: Preparing the Network</xref>
+<xref href="commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-prereqs-network.dita" >HP Helion OpenStack® 1.1: Preparing the Network</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-overview.dita" >HP Helion OpenStack® Carrier Grade: Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-swift-deployment-part-power.dita" >Ring Power and Number of Partitions</xref>
 </li>
 <li>
 <xref href="commercial/GA1/CarrierGrade/carrier-grade-support-matrix.dita" >HP Helion OpenStack® 1.1: Support Matrix</xref>
 </li>
 <li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-support-matrix-dcn.dita" >HP Helion OpenStack® 1.1: Support Matrix</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-support-matrix-helion.dita" >HP Helion OpenStack® 1.1: Support Matrix</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-support-matrix-wr.dita" >HP Helion OpenStack® 1.1: Support Matrix</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-support-matrix-wr.dita" >HP Helion OpenStack® 1.1: Support Matrix</xref>
+</li>
+<li>
 <xref href="commercial/GA1/CarrierGrade/carrier-grade-technical-overview.dita" >HP Helion OpenStack® 1.1: Technical Overview</xref>
+</li>
+<li>
+<xref href="commercial/GA1/CarrierGrade/carrier-grade-overview-wr.dita" >HP Helion OpenStack® Carrier Grade Overview</xref>
 </li>
 <li>
 <xref href="commercial/GA1/1.0commercial.dashboard.how-works.dita" >HP Helion OpenStack® 1.0: How to use the Helion Dashboards</xref>
@@ -2273,6 +2708,9 @@ The file is not copied to the master branch and not pushed to production.</p>
 </li>
 <li>
 <xref href="commercial/GA1/1.1commerical.services-identity-using.dita" >HP Helion OpenStack® 1.1: Using the Identity Service (Keystone)</xref>
+</li>
+<li>
+<xref href="commercial/GA1/1.1commerical.services-identity-domains.dita" >HP Helion OpenStack® 1.1: Identity Service (Keystone) Overview</xref>
 </li>
 <li>
 <xref href="commercial/GA1/1.1commerical.services-identity-overview.dita" >HP Helion OpenStack® 1.1: Identity Service (Keystone) Overview</xref>

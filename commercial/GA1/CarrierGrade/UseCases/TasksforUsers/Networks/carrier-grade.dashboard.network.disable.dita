@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1156">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Enabling and Disabling Networks</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.disable.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/network/enable/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses. You can <xref href="#topic1156/enablenet">enable</xref> or <xref href="#topic1156/disablenet">disable</xref> networks, as needed.</p>
+<section>
+<title>
+<!-- id="enablenet" -->
+<!-- id="enablenet" -->Enable a network</title>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
+
+<p>The network(s) for the selected project appear.</p>
+</li>
+<li>
+<p>For the network to enable or disable, click <b>Edit Network</b>.</p>
+</li>
+<li>
+<p>In the <b>Edit Network</b> screen, select <b>Admin State</b> to enable the port</p>
+</li>
+<li>
+<p>Click <b>Save Changes</b>.</p>
+</li>
+</ol>
+</section>
+<section>
+<title id="disablenet">
+<!-- id="disablenet" -->Disable a network</title>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
+
+<p>The network(s) for the selected project appear.</p>
+</li>
+<li>
+<p>For the network to disable, click <b>Edit Network</b>.</p>
+</li>
+<li>
+<p>In the <b>Edit Network</b> screen, clear <b>Admin State</b> to disable the port.</p>
+</li>
+<li>
+<p>Click <b>Save Changes</b>.</p>
+</li>
+</ol>
+<p>
+  <xref href="#topic1156/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

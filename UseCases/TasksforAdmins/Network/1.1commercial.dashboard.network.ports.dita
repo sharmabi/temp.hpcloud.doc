@@ -34,8 +34,8 @@
 </li>
 </ul>
 <section>
-<required-cleanup>
-<title>Create a port</title>
+<title id="createport">
+<!-- id="createport" -->Create a port</title>
 <ol>
 <li>
 <p>
@@ -72,11 +72,11 @@
 <p>A message appears indicating if the port was successfully created. When the port is created, an available fixed IP address out of one the designated subnets is associated with the port.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Edit a port</title>
+<title>
+<!-- id="editport" -->
+<!-- id="editport" -->Edit a port</title>
 <ol>
 <li>
 <p>
@@ -108,11 +108,11 @@
 <p>A message appears indicating if the port was successfully modified.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Delete a port</title>
+<title>
+<!-- id="deleteport" -->
+<!-- id="deleteport" -->Delete a port</title>
 <ol>
 <li>
 <p>
@@ -139,7 +139,6 @@
   <xref href="#topic3013/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

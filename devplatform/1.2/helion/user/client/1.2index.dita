@@ -50,14 +50,15 @@ available at the command line via the <i>helion help</i> command.</p>
 </li>
 </ul>
 <section>
-<title>Application Lifecycle Service Client Installation</title>
+<title id="helion-client-setup">
+<!-- id="helion-client-setup" -->Application Lifecycle Service Client Installation</title>
 <p>
 <b>Note</b>: Using the Windows Helion client with
 <xref href="http://www.cygwin.com/" scope="external" format="html" >Cygwin</xref> is not supported.</p>
 </section>
 <section>
-<required-cleanup>
-<title>Download</title>
+<title id="download">
+<!-- id="download" -->Download</title>
 <p>You may <xref href="/helion/devplatform/1.2/als/client/download" >download the ALS client</xref> appropriate for your operating system.</p>
 <p>Or you may download the client from within the Horizon console:</p>
 <ol>
@@ -65,11 +66,10 @@ available at the command line via the <i>helion help</i> command.</p>
 <li>Click <b>Download the Client</b>.</li>
 <li>Select the version appropriate for your operating system and download the file.</li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Installation</title>
+<title id="installation">
+<!-- id="installation" -->Installation</title>
 <ol>
 <li>Unzip the archive into a convenient directory.</li>
 <li>
@@ -104,17 +104,17 @@ available at the command line via the <i>helion help</i> command.</p>
 <p>Confirm that the client is installed correctly by launching it and running <i>helion help</i>.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Configuration</title>
+<title>
+<!-- id="configuration" -->
+<!-- id="configuration" -->Configuration</title>
 <p>After installation, perform the following configuration steps before attempting to use the client.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Target the API endpoint</title>
+<title>
+<!-- id="targeting-the-api-endpoint" -->
+<!-- id="targeting-the-api-endpoint" -->Target the API endpoint</title>
 <p>Before you can use the client, you must <xref href="/helion/devplatform/1.2/als/user/reference/client-ref/gettingstarted#command-target" >set the target URL</xref>, which is also known as the API Endpoint. This tells the client the location where it will push applications to. For example:</p>
 <codeblock>
   <codeph>helion target api.helion.example.com
@@ -125,11 +125,10 @@ available at the command line via the <i>helion help</i> command.</p>
   <codeph>helion target api.helion-xxxx.local
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Configure HTTP Proxies</title>
+<title id="http-proxies">
+<!-- id="http-proxies" -->Configure HTTP Proxies</title>
 <p>
 <b>Note</b>: This configuration step should not be necessary on the Windows operating system, as the client queries the Internet Settings values.</p>
 <p>If there is an HTTP/HTTPS proxy on your network between your client and
@@ -141,14 +140,15 @@ the Application Lifecycle Service API endpoint, set the following environment va
 <li>http_proxy_pass</li>
 </ul>
 <p>With these values set properly, the client will route appropriately.</p>
-</required-cleanup>
 </section>
 <section>
-<title>Uninstallation</title>
+<title id="removing-the-client">
+<!-- id="removing-the-client" -->Uninstallation</title>
 <p>To remove or uninstall the client, simply delete the executable and remove any aliases or <codeph>\$PATH</codeph> modifications you have made for it.</p>
 </section>
 <section>
-<title>Getting Help</title>
+<title id="getting-help">
+<!-- id="getting-help" -->Getting Help</title>
 <p>To get a list of available commands or help on a particular command, enter:</p>
 <codeblock>
   <codeph>helion help [COMMAND]

@@ -17,8 +17,9 @@
 -->
 <p>Volumes are block devices that can be attached to instances.</p>
 <section>
-<required-cleanup>
-<title>Create a volume</title>
+<title>
+<!-- id="create-a-volume" -->
+<!-- id="create-a-volume" -->Create a volume</title>
 <ol>
 <li>
 <p>
@@ -70,11 +71,11 @@
 <p>Click <b>Create Volume</b> to confirm.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Edit a volume</title>
+<title>
+<!-- id="edit-a-volume" -->
+<!-- id="edit-a-volume" -->Edit a volume</title>
 <ol>
 <li>
 <p>
@@ -99,11 +100,10 @@
 <b>Note:</b> You can <xref href="../../../UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.extend.dita" >extend a volume</xref> by using the <b>Extend Volume</b> option available in the <b>More</b> drop-down list and entering the new value for volume size.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Delete a volume</title>
+<title id="delete-a-volume">
+<!-- id="delete-a-volume" -->Delete a volume</title>
 <ol>
 <li>
 <p>
@@ -126,7 +126,6 @@
   <xref href="#topic1960/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

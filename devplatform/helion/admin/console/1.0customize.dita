@@ -31,8 +31,9 @@ the system, and change the look and content of the <xref href="/als/v1/user/cons
 Console</i>
 </xref> interface.</p>
 <section>
-<required-cleanup>
-<title>Table Of Contents</title>
+<title>
+<!-- id="table-of-contents" -->
+<!-- id="table-of-contents" -->Table Of Contents</title>
 <ul>
 <li>
 <xref href="./publiccloud/index.dita#" >Customization</xref>
@@ -74,18 +75,19 @@ Console</i>
 </ul>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<title>Console Settings</title>
+<title>
+<!-- id="console-settings" -->
+<!-- id="console-settings" -->Console Settings</title>
 <p>The Management Console is modified mainly through the <b>Settings &gt;
 Console</b> pages. Settings are saved as variables which can subsequently
 be used in HTML pages via the <xref href="http://embeddedjs.com/" scope="external" format="html" >Embedded JavaScript
 (EJS)</xref> templating engine.</p>
 </section>
 <section>
-<required-cleanup>
-<title>Product</title>
+<title id="product">
+<!-- id="product" -->Product</title>
 <ul>
 <li>
 <b>Product Name</b>: Overrides all occurrences of 'Application Lifecycle Service'</li>
@@ -105,11 +107,10 @@ Defaults to the current documentation published to
 docs.hpcloud.com. Ticking 'Use local docs' will cause this URL to
 be ignored and the docs from the VM will be served instead.</li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Look and Feel</title>
+<title id="look-and-feel">
+<!-- id="look-and-feel" -->Look and Feel</title>
 <ul>
 <li>
 <b>Favicon Logo URL</b>: The favicon to use. Recommended to be 32x32px
@@ -124,47 +125,47 @@ above but height is about 40px before distortion occurs.</li>
 <li>
 <b>Background Color</b>: Sets the background color of the console.</li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Welcome Page</title>
+<title>
+<!-- id="welcome-page" -->
+<!-- id="welcome-page" -->Welcome Page</title>
 <p>The HTML/EJS to show on the Welcome page. The <xref href="#topic4462/customize-settings-vars">
 <i>settings-variables</i>
 </xref> and <codeph>username</codeph>
 variable (current user) are available via EJS, but plain HTML will work
 for simple use cases.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Support Page</title>
+<title>
+<!-- id="support-page" -->
+<!-- id="support-page" -->Support Page</title>
 <p>The HTML/EJS to show on the Support page. The <xref href="#topic4462/customize-settings-vars">
 <i>settings-variables</i>
 </xref> and <codeph>support_email</codeph> variable (see Settings &gt; Controller) are available.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Eula Content</title>
+<title>
+<!-- id="eula-content" -->
+<!-- id="eula-content" -->Eula Content</title>
 <p>The HTML/EJS to show in the EULA overlay. The <xref href="#topic4462/customize-settings-vars">
 <i>settings-variables</i>
 </xref> are available.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Custom Stylesheet</title>
+<title>
+<!-- id="custom-stylesheet" -->
+<!-- id="custom-stylesheet" -->Custom Stylesheet</title>
 <p>CSS defined here will be applied to the page after the default CSS has
 been loaded, and override/replace any style. Use this to change the
 layout and color of any element in the Management Console. Use web
 development tools like Firebug or Chrome DevTools to inspect elements
 and find the relevant styles.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Settings Variables</title>
+<title>
+<!-- id="settings-variables" -->
+<!-- id="settings-variables" -->Settings Variables</title>
 <p>The following variables (with their default values) are available in the
 EJS templates on the settings object (e.g.
 <codeph>settings.product_name</codeph>):</p>
@@ -185,11 +186,10 @@ EJS templates on the settings object (e.g.
 '<xref href="../.." >http://docs.helion.com/3.0/</xref>',</li>
 <li>use_local_docs: "false"</li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Restoring values</title>
+<title id="restoring-values">
+<!-- id="restoring-values" -->Restoring values</title>
 <p>Each setting has an individual <b>Load Default</b> button (refresh icon to
 the left of the value field) which will replace the customized value
 with the default for that setting. Click 'Save' to apply the changes.</p>
@@ -204,10 +204,11 @@ format:</p>
 </codeblock>
 <p>Replace <codeph>setting_name</codeph> with one of the variables
 above and that value will be reset to the default.</p>
-</required-cleanup>
 </section>
 <section>
-<title>Renaming the Client</title>
+<title>
+<!-- id="renaming-the-client" -->
+<!-- id="renaming-the-client" -->Renaming the Client</title>
 <p>The <codeph>helion</codeph> client is distributed as a single
 file executable for Windows, OS X and Linux (x86 and x86_64). Zip files
 containing executables for each platform can be found in the

@@ -18,8 +18,8 @@
 <p>A domain is a high-level container for the projects, users, and groups that define administrative boundaries for management of those entities. A domain can represent an individual, company, or operator-owned space.</p>
 <p>The admin user can use the dashboard to configure the domain by creating building blocks such as flavors and quotas, and managing availability zones and host aggregates.</p>
 <section>
-<required-cleanup>
-<title>Managing flavors for a domain</title>
+<title id="managing-flavors-for-a-domain">
+<!-- id="managing-flavors-for-a-domain" -->Managing flavors for a domain</title>
 <p>A flavor defines the compute, memory, and storage capacity of a virtual server that users can launch. As an administrative user, you can create, edit, and delete flavors.</p>
 <p>Use the System panel on the Admin dashboard to:</p>
 <ul>
@@ -30,11 +30,11 @@
 <xref href="../../../UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.flavors.access.dita" >Modify access to a flavor</xref>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Managing images for a domain</title>
+<title>
+<!-- id="managing-images-for-a-domain" -->
+<!-- id="managing-images-for-a-domain" -->Managing images for a domain</title>
 <p>A virtual machine image is a single file which contains a virtual disk that has a bootable operating system installed on it.</p>
 <p>As an admin, you can determine if an image is available only in the current project or to all projects in the domain (public).</p>
 <ul>
@@ -42,11 +42,11 @@
 <xref href="../../../UseCases/TasksforAdmins/Domains/1.1commercial.dashboard.snapshot.public.dita" >Make an instance snapshot public</xref>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Managing Availability Zone and Host Aggregates for a domain</title>
+<title>
+<!-- id="managing-availability-zone-and-host-aggregates-for-a-domain" -->
+<!-- id="managing-availability-zone-and-host-aggregates-for-a-domain" -->Managing Availability Zone and Host Aggregates for a domain</title>
 <p>Host aggregates are a mechanism to further partition an availability zone. Host aggregates provide a mechanism to allow administrators to assign key-value pairs to groups of machines.</p>
 <p>Use the <b>System</b> panel in the <b>Admin</b> dashboard to modify the availability zones and aggregates for your domain.</p>
 <ul>
@@ -63,7 +63,6 @@ Use the Admin dashboard to enable and disable services in a domain.
   <xref href="#topic1707/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1208">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Create a Virtual Data center for DNS/NTP Network Management</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Create the DNS/NTP Data Center Network Management VM</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-datacenter.md-->
+ <!--permalink: /helion/openstack/carrier/install/datacenter/--></p>
+<p>You can configure a virtual data center for DNS and NTP for your cloud using an installer file in the installation kit.</p>
+<p>To configure a virtual datacenter:</p>
+<ol>
+<li>
+<p>Copy the <codeph>dns-ntp-server.qcow2</codeph> to /var/lib/libvirt/images folder on your kvm host.</p>
+</li>
+<li>
+<p>Execute the following commands:</p>
+
+<codeblock>
+<codeph>virsh define dns-ntp-server.xml
+virsh autostart dns-ntp-server
+virsh start dns-ntp-server
+</codeph>
+</codeblock>
+
+<p>The VM should be up in few minutes.</p>
+</li>
+<li>
+<p>Use a tool, such as Virtual Machine Manager, to make sure that the network is configured with <codeph>br-ctl</codeph> for <codeph>NIC1</codeph>
+</p>
+</li>
+<li>
+<p>Launch the HLM Node console and log in using the following defaults:</p>
+
+<codeblock>
+<codeph>login: root
+Password: cghelion
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Execute the <codeph>ntpd ?q</codeph> command to synchronize the time with the NTP server.</p>
+</li>
+<li>
+<p>Execute the <codeph>ntpq ?p</codeph> command to make sure the NTP servers are listed.</p>
+</li>
+</ol>
+<section>
+<title id="next-step">
+<!-- id="next-step" -->Next Step</title>
+<p>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.dita" >Create the Guest VM</xref>
+</p>
+<p>
+  <xref href="#topic1208/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

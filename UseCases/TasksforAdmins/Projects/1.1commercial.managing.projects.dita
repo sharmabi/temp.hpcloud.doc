@@ -17,8 +17,9 @@
 -->
 <p>You can manage access to projects by assigning users and setting primary projects. You can also control resources by managing operational quotas.</p>
 <section>
-<required-cleanup>
-<title>Creating projects</title>
+<title>
+<!-- id="creating-projects" -->
+<!-- id="creating-projects" -->Creating projects</title>
 <p>As an admin, you can use create projects and allow specific users to access each project:</p>
 <ul>
 <li>
@@ -31,11 +32,10 @@
 <xref href="../../../UseCases/TasksforAdmins/Projects/1.1commercial.dashboard.projects.users.dita" >Add and remove users to a project</xref>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Managing quotas</title>
+<title id="managing-quotas">
+<!-- id="managing-quotas" -->Managing quotas</title>
 <p>Quotas are operational limits that you can configure to prevent system capacities from being exhausted without notification.</p>
 <p>Use the <b>Identity</b> panel on the <b>Admin</b> dashboard to set maximum limits for metadata, instances, CPUs, memory, and other settings for each project.</p>
 <ul>
@@ -44,7 +44,6 @@
 </li>
 </ul>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

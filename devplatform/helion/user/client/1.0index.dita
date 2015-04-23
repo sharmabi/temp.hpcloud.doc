@@ -30,7 +30,8 @@ start and stop applications, create data services and link them to
 applications, and a number of other application management operations.</p>
 <p>The <xref href="/als/v1/user/reference/client-ref#command-ref-client" >Command Reference</xref> has full descriptions of all client commands and options. These details are also available at the command line via the <i>helion help</i> command.</p>
 <section>
-<title>Application Lifecycle Service Client Setup</title>
+<title id="helion-client-setup">
+<!-- id="helion-client-setup" -->Application Lifecycle Service Client Setup</title>
 <p>
 <b>Note</b>: Using the Windows Helion client with
 <xref href="http://www.cygwin.com/" scope="external" format="html" >Cygwin</xref> is not supported.</p>
@@ -63,7 +64,9 @@ applications, and a number of other application management operations.</p>
 </ol>
 </section>
 <section>
-<title>Getting Help</title>
+<title>
+<!-- id="getting-help" -->
+<!-- id="getting-help" -->Getting Help</title>
 <p>To get a list of available commands or help on a particular command:</p>
 <codeblock>
   <codeph>helion help [COMMAND]
@@ -73,7 +76,9 @@ applications, and a number of other application management operations.</p>
 list of commands.</p>
 </section>
 <section>
-<title>Targeting the API Endpoint</title>
+<title>
+<!-- id="targeting-the-api-endpoint" -->
+<!-- id="targeting-the-api-endpoint" -->Targeting the API Endpoint</title>
 <p>Before you can use the client, you must set the target URL, which is also known
 as the API Endpoint. This tells the client the location where it will push applications to. For example:</p>
 <codeblock>
@@ -87,7 +92,9 @@ as the API Endpoint. This tells the client the location where it will push appli
 </codeblock>
 </section>
 <section>
-<title>HTTP Proxies</title>
+<title>
+<!-- id="http-proxies" -->
+<!-- id="http-proxies" -->HTTP Proxies</title>
 <p>
 <b>Note</b>: On the Windows operating system only, this configuration step should not be necessary, as the client queries the Internet Settings
 values.</p>
@@ -103,7 +110,9 @@ appropriately.</p>
 </ul>
 </section>
 <section>
-<title>Removing the Client</title>
+<title>
+<!-- id="removing-the-client" -->
+<!-- id="removing-the-client" -->Removing the Client</title>
 <p>To remove or uninstall the client, simply delete the executable and remove any
 aliases or <codeph>\$PATH</codeph> modifications you have made for it.</p>
 <!-- ===================== horizontal rule ===================== -->

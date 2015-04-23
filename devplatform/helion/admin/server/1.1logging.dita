@@ -112,7 +112,8 @@ Events in the Management Console)</li>
 <i>Keys</i>
 </xref> below).</p>
 <section>
-<title>Logyard</title>
+<title id="logyard">
+<!-- id="logyard" -->Logyard</title>
 <p>Log streams are handled by three processes which run on all Application Lifecycle Service
 nodes:</p>
 <ul>
@@ -133,7 +134,9 @@ sends user application logs to <b>logyard</b>, injecting relevant
 application-specific events from the <b>logyard_sieve</b> stream.</p>
 </section>
 <section>
-<title>Drains</title>
+<title>
+<!-- id="drains" -->
+<!-- id="drains" -->Drains</title>
 <p>A "drain" is a receiver for a log stream. Logyard has four kinds:</p>
 <ul>
 <li>TCP (e.g. &lt;tcp://10.0.11.101:12345&gt;)</li>
@@ -143,8 +146,9 @@ application-specific events from the <b>logyard_sieve</b> stream.</p>
 </ul>
 </section>
 <section>
-<required-cleanup>
-<title>System Drains</title>
+<title>
+<!-- id="system-drains" -->
+<!-- id="system-drains" -->System Drains</title>
 <p>Drains for system log and cloud event streams can be added by admins
 with the <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-log-drain-add" >kato log
 drain</xref>
@@ -177,11 +181,10 @@ instead, add the 'overwrite=1' option:</p>
   <codeph>kato log drain add debug file:///s/logs/debug-1.log overwrite=1
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Log Format</title>
+<title id="log-format">
+<!-- id="log-format" -->Log Format</title>
 <p>Log drains can emit entries in a variety of formats:</p>
 <ul>
 <li>verbatim (default): Log entries as they appear in the source log
@@ -266,11 +269,11 @@ systail: ! '@: '
 and no format options ("-f") are specified. For example
 <codeph>kato drain add -p systail.dea ...</codeph> would format the
 drain using the <i>systail</i> drain format.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Saving Custom Log Formats</title>
+<title>
+<!-- id="saving-custom-log-formats" -->
+<!-- id="saving-custom-log-formats" -->Saving Custom Log Formats</title>
 <p>Custom formats for drains can be saved as a named type in the Logyard
 configuration. To do this, add the formatting string to a new key in
 logyard/drainformats. For example, to save the log format used in the
@@ -300,31 +303,30 @@ formats to modify the output of any drains using these prefixes (e.g.
 <xref href="/helion/devplatform/1.1/als/user/reference/client-ref#command-drain-add" >helion drain</xref>, Cloud
 Events in the Management Console, and <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-log-tail" >kato log tail</xref>
 respectively).</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Custom Drains</title>
+<title>
+<!-- id="custom-drains" -->
+<!-- id="custom-drains" -->Custom Drains</title>
 <p>You can add custom drains to Logyard to look for certain events or parse
 certain log messages (e.g. tracking application push requests or user
 logins). Examples of custom drains and more advanced usage of Logyard
 can be found in the <xref href="https://github.com/HP/logyard-devguide#readme" scope="external" format="html" >Logyard Developer
 Guide</xref>
 </p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Application Drains</title>
+<title id="application-drains">
+<!-- id="application-drains" -->Application Drains</title>
 <p>Drains for application log streams can be added by end users with the
 <xref href="/helion/devplatform/1.1/als/user/reference/client-ref#command-drain-add" >
 <i>helion drain add</i>
 </xref> command. See the <xref href="/helion/devplatform/1.1/als/user/deploy/app-logs#application-logs" >Application Logs</xref> section of the documentation for an example.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Drain Status</title>
+<title>
+<!-- id="drain-status" -->
+<!-- id="drain-status" -->Drain Status</title>
 <p>You can check the status of all drains on Application Lifecycle Service with the
 <codeph>kato log drain status</codeph> subcommand. For example:</p>
 <codeblock>
@@ -340,11 +342,11 @@ builtin.katohistory     192.168.68.5    RUNNING[3]
 <i>drain
 timeout</i>
 </xref>, its status will change to FATAL.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Keys</title>
+<title>
+<!-- id="keys" -->
+<!-- id="keys" -->Keys</title>
 <p>Each message in a log stream is prefixed with a key, identifying what
 type of message it is or to which log stream it belongs. The following
 keys are available for use in defining drains using the
@@ -355,20 +357,19 @@ add</i>
 <p>Systail keys are <xref href="#topic11992/logging-systail-manage">
 <i>configurable</i>
 </xref>.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>apptail</title>
+<title id="apptail">
+<!-- id="apptail" -->apptail</title>
 <codeblock>
   <codeph>apptail.\&lt;app.id\&gt;
 </codeph>
 </codeblock>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>event</title>
+<title>
+<!-- id="event" -->
+<!-- id="event" -->event</title>
 <ul>
 <li>event.\&lt;eventname&gt;
 
@@ -384,11 +385,11 @@ add</i>
 </ul>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>systail</title>
+<title>
+<!-- id="systail" -->
+<!-- id="systail" -->systail</title>
 <ul>
 <li>systail.\&lt;processname&gt;</li>
 <li>systail.\&lt;processname&gt;.\&lt;nodeip&gt;
@@ -446,11 +447,11 @@ add</i>
 </ul>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Managing the systail stream</title>
+<title>
+<!-- id="managing-the-systail-stream" -->
+<!-- id="managing-the-systail-stream" -->Managing the systail stream</title>
 <p>The list above shows the default systail keys. These can keys can be
 modified with the <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-config" >
 <i>kato
@@ -498,10 +499,11 @@ removing log files:</p>
 <i>systail</i>
 </xref> list above) as this would affect the
 output of <codeph>kato tail</codeph>.</p>
-</required-cleanup>
 </section>
 <section>
-<title>Configuration</title>
+<title>
+<!-- id="configuration" -->
+<!-- id="configuration" -->Configuration</title>
 <p>Application Lifecycle Service has a number of configurable limits on application log drains
 to help prevent performance problems the logging subsystems. These
 settings can all be viewed and set with <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-config" >
@@ -511,8 +513,9 @@ config</i>
 described below:</p>
 </section>
 <section>
-<required-cleanup>
-<title>Drain Timeouts</title>
+<title>
+<!-- id="drain-timeouts" -->
+<!-- id="drain-timeouts" -->Drain Timeouts</title>
 <ul>
 <li>
 <p>
@@ -565,11 +568,10 @@ drains, or for all matching drains after
 all nodes.</p>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>User Drain Limit</title>
+<title id="user-drain-limit">
+<!-- id="user-drain-limit" -->User Drain Limit</title>
 <ul>
 <li>
 <p>
@@ -593,11 +595,10 @@ limit to 5 drains:</p>
 </codeblock>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Apptail Limits</title>
+<title id="apptail-limits">
+<!-- id="apptail-limits" -->Apptail Limits</title>
 <ul>
 <li>
 <p>
@@ -637,10 +638,10 @@ missing data.</p>
 </codeblock>
 </li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<title>Debugging Logyard</title>
+<title id="debugging-logyard">
+<!-- id="debugging-logyard" -->Debugging Logyard</title>
 <p>Use <codeph>kato log stream debug</codeph> to monitor
 Logyard-related log activity. The command tails the logyard, apptail,
 systail, and logyard_sieve streams.</p>

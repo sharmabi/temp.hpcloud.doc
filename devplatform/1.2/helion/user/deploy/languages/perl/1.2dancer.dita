@@ -38,14 +38,13 @@ dance;
 </codeph>
 </codeblock>
 <section>
-<required-cleanup>
-<title>Examples</title>
+<title id="examples">
+<!-- id="examples" -->Examples</title>
 <ul>
 <li>
 <xref href="https://github.com/Stackato-Apps/dancer-helloworld" scope="external" format="html" >Dancer Hello World</xref>: Hello
 World sample.</li>
 </ul>
-</required-cleanup>
 </section>
 </body>
 </topic>

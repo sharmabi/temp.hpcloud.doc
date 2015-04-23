@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic4107">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Create the Guest VM</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.md-->
+ <!--permalink: /helion/openstack/carrier/install/guest-vm/--></p>
+<p>In order to configure and work with the Virtualized Services Directory (VSD), you must create a guest VM in the HP Helion OpenStack Carrier Grade cloud.</p>
+<p>VSD is a module of the HP Distributed Cloud Networking Virtualized Services Platform (VSP) that serves as a policy, business logic and analytics engine for the abstract definition of network services.</p>
+<p>On the KVM Host:</p>
+<ol>
+<li>
+<p>Copy the <codeph>Ubuntu-Test.qcow2</codeph> to the <codeph>/var/lib/libvirt/</codeph> images directory.</p>
+</li>
+<li>
+<p>Execute the following commands:</p>
+
+<codeblock>
+<codeph>virsh define Ubuntu-Test.xml
+virsh autostart Ubuntu-Test
+virsh start Ubuntu-Test
+</codeph>
+</codeblock>
+
+<p>The VM should be up in few minutes.</p>
+</li>
+<li>
+<p>Use a tool, such as Virtual Machine Manager, to make sure that the network is configured with <codeph>br-kvm</codeph> for <codeph>NIC1</codeph> and <codeph>br-ctl</codeph> for <codeph>NIC2</codeph>.</p>
+</li>
+<li>
+<p>Modify the <codeph>/etc/network/interfaces</codeph> file to add the CLM interface.</p>
+
+<p>You should see two interfaces: one for <codeph>br-kvm</codeph> which will be on <codeph>eth0</codeph> and one for <codeph>br-ctl[CLM]</codeph> on <codeph>eth1</codeph>. The <codeph>eth0</codeph> interface receives DHCP IP and <codeph>eth1</codeph> is static, similar to the following:</p>
+
+<codeblock>
+<codeph>auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth0 inet static
+address 10.10.20.50
+netmask 255.255.255.0
+up route add -net 10.20.20.50 netmask 255.255.255.0 gw 10.20.20.1
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Update <codeph>/etc/resolv.conf</codeph> file to add IP address of the DNS server.</p>
+
+<p>
+<b>Example:</b>
+    nameserver     191.72.1.1</p>
+</li>
+</ol>
+<section>
+<title id="install-the-packages-on-the-guest-vm-to-get-the-browser-and-gnome-tools">
+<!-- id="install-the-packages-on-the-guest-vm-to-get-the-browser-and-gnome-tools" -->Install the packages on the guest VM to get the browser and Gnome tools</title>
+<p>You can install the below list of packages on your guest VM to get xrdp session and other packages:</p>
+<ul>
+<li>Firefox browser</li>
+<li>GNOME editor</li>
+<li>xrdp remote desktop utility</li>
+<li>xfce4 desktop utility</li>
+<li>xorg X Window System</li>
+<li>GNOME desktop and tools</li>
+</ul>
+<ol>
+<li>
+<p>On the guest VM, set the HTTP proxy:</p>
+
+<codeblock>
+<codeph>export http_proxy=&lt;ip_address&gt;
+export https_proxy=&lt;ip_address&gt;
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Use the following command to install the packages:</p>
+
+<codeblock>
+<codeph>sudo su -l -c "apt-get install -y ntp firefox gedit xrdp xfce4 xorg gnome-core gnome-system-tools gnome-app-install"
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Reboot the VM</p>
+</li>
+</ol>
+</section>
+<section>
+<title id="configure-xrdp-for-the-remote-desktop-connection-to-access-the-server-remotely-as-follows">
+<!-- id="configure-xrdp-for-the-remote-desktop-connection-to-access-the-server-remotely-as-follows" -->Configure XRDP for the remote desktop connection to access the server remotely as follows.</title>
+<ol>
+<li>
+<p>Increase the maximum number of simultaneous session on terminal server to 50 by editing the <codeph>sesman.ini</codeph> file.</p>
+
+<codeblock>
+<codeph>vi /etc/xrdp/sesman.ini
+
+MaxSessions=1 to 50
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Configure xfce4 to launch when starting Xorg, put xfce4-session in the ~/.xinitrc file:</p>
+
+<p>echo "xfce4-session" &gt; ~/.xinitrc</p>
+</li>
+<li>
+<p>Restart xrdp:</p>
+
+<p>sudo /etc/init.d/xrdp restart</p>
+</li>
+<li>
+<p>Switch to the root user:</p>
+
+<p>sudo -i</p>
+</li>
+</ol>
+</section>
+<section>
+<title id="configure-the-xrdp-display">
+<!-- id="configure-the-xrdp-display" -->Configure the xrdp display</title>
+<p>When you connect to xrdp from some remote desktop applications, the xrdp display might appear gray. Use the following steps before starting the HP Helion OpenStack Carrier Grade installation to prevent the problem.</p>
+<ol>
+<li>
+<p>Update the startwm.sh file to point to the <codeph>xsession</codeph> file. The xsession program is a session manager.</p>
+
+<p>a. Open the <codeph>startwm.sh</codeph> file:</p>
+
+<codeblock>
+<codeph>vi /etc/xrdp/startwm.sh
+</codeph>
+</codeblock>
+
+<p>b. Modify the file as follows:</p>
+
+<codeblock>
+<codeph>!/bin/sh
+
+if [ -r /etc/default/locale ]; then
+. /etc/default/locale
+export LANG LANGUAGE
+fi
+
+. /etc/X11/Xsession
+. /usr/bin/startxfce4
+</codeph>
+</codeblock>
+
+<p>c. Save and close the file.</p>
+</li>
+<li>
+<p>Restart the xrdp service:</p>
+
+<p>sudo /etc/init.d/xrdp restart</p>
+</li>
+</ol>
+</section>
+<section>
+<title id="install-google-chrome-browser">
+<!-- id="install-google-chrome-browser" -->Install Google Chrome Browser</title>
+<p>Use the following commands to install Google Chrome browser on the guest VM.</p>
+<ol>
+<li>
+<p>Add the Google repository to your sources by adding the following line to the <codeph>sources.list</codeph> file:</p>
+
+<codeblock>
+<codeph>vi /etc/apt/sources.list
+
+deb http://dl.google.com/linux/deb/ stable non-free main
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Download a repository key then use apt to install it.</p>
+
+<codeblock>
+<codeph>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Update your sources:
+    sudo apt-get update</p>
+</li>
+<li>
+<p>Install the package:</p>
+
+<codeblock>
+<codeph>sudo apt-get install google-chrome-stable
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Verify that the guest VM is installed completely:</p>
+
+<p>a. From the KVM host, use XRDP to guest VM</p>
+
+<p>b. Launch the Google Chrome browser</p>
+
+<p>c. Login to the VSD dashboard using the following URL when your VSD node is available:</p>
+
+<codeblock>
+<codeph>https://&lt;VSD_IP_Address&gt;:8443/  
+</codeph>
+</codeblock>
+</li>
+</ol>
+</section>
+<section>
+<title id="next-step">
+<!-- id="next-step" -->Next Step</title>
+<p>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsd-node.dita" >Create the VSD Node</xref>
+</p>
+<p>
+  <xref href="#topic4107/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

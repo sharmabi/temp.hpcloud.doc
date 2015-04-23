@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2562">
-<title>HP Helion OpenStack® Carrier Grade: Documentation Home</title>
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1114">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Documentation Home</title>
 <prolog>
 <metadata>
 <othermeta name="layout" content="default"/>
@@ -11,63 +11,40 @@
 <p>
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/carrier-grade-index.md-->
- <!--permalink: /helion/openstack/carrier/--></p>
-<!-- From Helion-CSP-Edition.pptx  https://wiki.hpcloud.net/download/attachments/32052622/Helion-CSP-Edition.pptx?version=1&modificationDate=1426628637000&api=v2 -->
-<p>Helion CSP is HP's Cloud Management SW for NFV Cloud in a Telco network environment</p>
-<p>Helion CSP is based on HP Helion Openstack EE but with significantly enhanced and optimized functionality, availability, scale and  performance to meet the needs of NFV Cloud deployments</p>
-<p>Helion CSP leverages (includes) WindRiver Linux, KVM and virtual switch SW for reliable and accelerated data plane</p>
-<p>HP will contribute enhancements and optimizations made to Helion CSP for NFV to upstream Openstack</p>
-<p>Helion CSP is sold, and supported as a separate SW entity from HP Helion Openstack EE</p>
+ <!--permalink: /helion/openstack/carrier/home/--></p>
+<!-- From HP/WR OpenStack Summit press release  http://www.windriver.com/news/press/pr.html?ID=13261-->
+<p>HP Helion OpenStack Carrier Grade is a carrier-grade distribution of OpenStack, the leading open source cloud computing platform.</p>
+<p>HP Helion OpenStack Carrier Grade enables carrier grade network functions virtualization (NFV) capabilities to provide communications service providers (CSPs) with an open source based cloud platform that meets their demanding reliability requirements and accelerate their transition to NFV deployments.</p>
 <section>
-<title>Focus areas for Helion CSP</title>
-<!-- From Helion-CSP-Edition.pptx  https://wiki.hpcloud.net/download/attachments/32052622/Helion-CSP-Edition.pptx?version=1&modificationDate=1426628637000&api=v2 -->
-<ul>
-<li>Central control plane but resources are distributed across geography interconnected by WAN</li>
-<li>VNF resource requirement definition, policy based resource scheduling &amp; placement</li>
-<li>VNF Orchestration - Policy based Auto-scaling</li>
-<li>Integrated Physical and Virtual resource monitoring and self-healing</li>
-<li>Highly Resilient and hitless upgrades</li>
-<li>High performance data plane </li>
-<li>Integration with Opensource SDN controllers and service chaining</li>
-</ul>
-</section>
-<section>
-<title>Role of SDN in NFV</title>
-<!-- From Helion-CSP-Edition.pptx  https://wiki.hpcloud.net/download/attachments/32052622/Helion-CSP-Edition.pptx?version=1&modificationDate=1426628637000&api=v2 -->
-<p>CGH-NVF-Env.png</p>
-<p>vCPE scenario example
-VNF A = vRouter (vPE)
-VNF B = vFirewall
-VNF C = vWanOpt</p>
-<p>vEPC scenario example
-VNF A = vPGW/vSGW (vEPC)
-VNF B = URL Enrichment Engine
-VNF C = Video Optimizer</p>
-<p>CGH-VNF-zoom.png</p>
-<ul>
-<li>A Single composite VNF can consist of multiple sub-component VNFs with their own specialized functionality (e.g. control plane, service plane, data plane)</li>
-<li>
-<p>Each sub-component VNF can have multiple VMs utilized in a load-balanced fashion for scaling capacity</p>
-
-<p>Example -
-    VNFc A = VMs - A1, A2, A3, A4
-    VNFc B = VMs - B1, B2, B3, B4
-    VNFc C = VMs - C1, C2, C3, C4</p>
-</li>
-<li>
-<p>Some VNFs will want to pin user sessions to the same VM while some other VNFs will not care</p>
-</li>
-<li>Each VM may have multiple vNICs and on multiple networks (intra-VNF, storage, external, management etc.)</li>
-<li>Some vNICs of a VNF could be using SR-IOV while others are connected to the vSwitch </li>
-</ul>
-<p>CGH-NVF-Global.png</p>
-<p>HP Helion OpenStack offers many services based on the different OpenStack projects to provide the functionality you need. Visit the <xref href="../../../commercial/GA1/1.1commerical.services-overview.dita" >HP Helion OpenStack Services Overview page</xref> for a complete list of services.</p>
-</section>
-<section>
-<title>Get Started with HP Helion OpenStack</title>
+<title id="getstart">
+<!-- id="getstart" -->Get Started with HP Helion OpenStack</title>
 <p>Use the following links and tools to begin working with HP Helion OpenStack:</p>
+<ul>
+<li>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-overview.dita" >HP Helion OpenStack Carrier Grade Overview</xref>
+</li>
+<li>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-overview-hlm.dita" >HP Lifecycle Management Overview</xref>
+</li>
+<li>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-overview-helion.dita" >HP Helion OpenStack Overview</xref>
+</li>
+<li>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-overview-dcn.dita" >HP Distributed Cloud Networking (DCN) Overview</xref>
+</li>
+<li>
+<xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-baremetal.dita" >Installing HP Helion Carrier Grade</xref>
+</li>
+<li>
+<xref href="../../../commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-admin-guide.dita" >Administrators Guide</xref>
+</li>
+<li>
+<xref href="../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.managing.dita" >User Guide</xref>
+</li>
+</ul>
+<!-- Hide for alpha * [HP Helion OpenStack Carrier Grade WindRiver Integration Overview](/helion/openstack/carrier/wr/overview/) -->
 <p>
-  <xref href="#topic2562/top"> Return to Top ↑ </xref>
+  <xref href="#topic1114/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

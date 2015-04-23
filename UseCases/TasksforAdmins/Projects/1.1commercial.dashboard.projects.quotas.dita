@@ -19,8 +19,9 @@
 <p>To prevent system capacities from being exhausted without notification, you can set up quotas.</p>
 <p>For example, the number of gigabytes allowed per project can be controlled to make sure that a single project does not consume all of the disk space.</p>
 <section>
-<required-cleanup>
-<title>Modify a quotas</title>
+<title>
+<!-- id="quotamod" -->
+<!-- id="quotamod" -->Modify a quotas</title>
 <ol>
 <li>
 <p>
@@ -60,7 +61,6 @@
   <xref href="#topic1776/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

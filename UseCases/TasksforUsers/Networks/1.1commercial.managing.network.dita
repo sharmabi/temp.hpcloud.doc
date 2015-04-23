@@ -21,7 +21,9 @@
 <p>
 <b>Note:</b> The admin can perform all of the user tasks in addition to the admin tasks.</p>
 <section>
-<title>Managing your network as a user</title>
+<title>
+<!-- id="managing-your-network-as-a-user" -->
+<!-- id="managing-your-network-as-a-user" -->Managing your network as a user</title>
 <p>As a user, you can work with the network(s) in the active project.</p>
 <p>Access the networking commands using the <b>Networks</b> panel on the <b>Project</b> dashboard.</p>
 <p>The <b>Network</b> panel contains commands to view a visual representation of your network and to enable you to work with your network.</p>
@@ -38,7 +40,8 @@
 </ul>
 </section>
 <section>
-<title>Managing your network as an admin</title>
+<title id="managing-your-network-as-an-admin">
+<!-- id="managing-your-network-as-an-admin" -->Managing your network as an admin</title>
 <p>As an admin user, you can work on all of the network(s) in your domain, regardless of which project the network is associated with.</p>
 <p>In addition to all of the user tasks, you can also make a network a shared network and make a network accessible externally.</p>
 <p>Access the networking commands using the <b>System</b> panel on the <b>Admin</b> dashboard.</p>

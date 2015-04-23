@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2264">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Preparing the Network for Installation</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/carrier-grade-install-bm-network-prepare.md-->
+ <!--permalink: /helion/openstack/carrier/install/bm/network/prepare/--></p>
+<p>Before installing HP Helion OpenStack Carrier Grade, you are responsible for preparing the network for all installations.</p>
+<ol>
+<li>
+<p>Modifiy the <codeph>/etc/network/interfaces</codeph> file to the following (DHCP EXAMPLE):</p>
+
+<codeblock>
+<codeph># The loopback network interface
+auto lo
+iface lo inet loopback
+
+#BR-CTL BRIDGE - UNTAGGED PXE NETWORK CIDR
+auto br-ctl
+allow-ovs br-ctl
+iface br-ctl inet static
+address 10.200.73.11
+netmask 255.255.255.0
+gateway 10.200.73.1
+ovs_type OVSBridge
+ovs_ports em1
+
+#Bring up interface online
+allow-br-ctl em1
+iface em1 inet manual
+ovs_bridge br-ctl
+ovs_type OVSPort
+</codeph>
+</codeblock>
+
+<p>Sample /etc/network/interfaces file from KVM host 
+<image href="../../../media/CGH-interfaces-file"/>
+</p>
+</li>
+<li>
+<p>Reboot the system using the following command:</p>
+
+<codeblock>
+<codeph>sudo /etc/init.d/networking restart
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Execute the <codeph>ifconfig -a</codeph> command to output OVS bridge details. If the bridge is not present, execute the following commands to restart the bridge:</p>
+
+<codeblock>
+<codeph>ifdown br-ctl
+ifup br-ctl
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Enable the <codeph>br-ctl</codeph> network that is used for associating with HLM VM</p>
+
+<p>a. Create br-ctl.xml file like below. Ensure respective VLAN ID for CLM is used.</p>
+
+<codeblock>
+<codeph>&lt;network&gt;
+    &lt;name&gt;br-ctl&lt;/name&gt;
+    &lt;forward mode='bridge'/&gt;
+    &lt;bridge name='br-ctl'/&gt;
+    &lt;virtualport type='openvswitch'/&gt;
+    &lt;portgroup name='CLM'&gt;
+        &lt;vlan&gt;
+            &lt;tag id='1574'/&gt;
+        &lt;/vlan&gt;
+    &lt;/portgroup&gt;
+&lt;/network&gt;
+</codeph>
+</codeblock>
+
+<p>b. Execute the following commands:</p>
+
+<codeblock>
+<codeph>virsh net-define br-ctl.xml
+virsh net-start br-ctl
+virsh net-autostart br-ctl
+virsh net-list should display default and br-ctl 
+</codeph>
+</codeblock>
+
+<p>c.  Display information on the bridge:</p>
+
+<codeblock>
+<codeph>ovs-vsctl show 
+</codeph>
+</codeblock>
+
+<p>The output should appear similar to the following example:</p>
+
+<codeblock>
+<codeph>Bridge br-ctl
+    Port "em1"
+        Interface "em1"
+    Port br-ctl
+        Interface br-ctl
+            type: internal
+ovs_version: "2.0.2"
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Make sure that you can connect to an external <xref href="../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.dita" >NTP server</xref> and check that you can connect to an external network after exporting the proxy.</p>
+</li>
+</ol>
+<section>
+<title id="next-step">
+<!-- id="next-step" -->Next Step</title>
+<p>
+  <xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-vm.dita" >Create the HLM Virtual Machine</xref>
+</p>
+<p>
+  <xref href="#topic2264/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

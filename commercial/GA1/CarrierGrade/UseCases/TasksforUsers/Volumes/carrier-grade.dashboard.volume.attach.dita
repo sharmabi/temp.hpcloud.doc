@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1868">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Attaching and Detaching Volume Instances</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.attach.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/volume/attach/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>After you've created one or more volumes, you can attach them to instances, one instance at a time.</p>
+<p>You can view the status of a volume in the Volumes tab of the dashboard. The volume is either <b>Available</b> or <b>In-Use</b>. You can attach any volume that is available to an instance.</p>
+<section>
+<title id="attach-a-volume-to-an-instance">
+<!-- id="attach-a-volume-to-an-instance" -->Attach a volume to an instance</title>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>In the <b>Volumes</b> screen, for the volume you want to attach, click the arrow icon in the <b>Actions</b> menu and select <b>Edit Attchments</b>.</p>
+</li>
+<li>
+<p>In the <b>Manage Volume Attachments</b> dialog box, select an instance.</p>
+</li>
+<li>
+<p>Enter the name of the device from which the volume is accessible by the instance. (<b>Note:</b> The actual device name might differ from the volume name because of hypervisor settings.)</p>
+</li>
+<li>
+<p>Click <b>Attach Volume</b>.</p>
+</li>
+</ol>
+<p>The dashboard shows the volume is In-Use and lists the instance to which the volume is now attached. You can now log in to the instance and mount, format, and use the disk.</p>
+<p>
+<b>Note:</b> Not all of the <b>Action</b> menu items are available for an attached volume.</p>
+</section>
+<section>
+<title id="detach-a-volume-from-a-vm-instance">
+<!-- id="detach-a-volume-from-a-vm-instance" -->Detach a volume from a VM instance</title>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+</li>
+<li>
+<p>In the <b>Volumes</b> screen, for the volume you want to detach, click the arrow icon in the <b>Actions</b> menu and select <b>Edit Attchments</b>.</p>
+</li>
+<li>
+<p>Click <b>Detach Volume</b> to confirm your changes.</p>
+</li>
+</ol>
+<p>The dashboard shows the volume is available.</p>
+<p>
+  <xref href="#topic1868/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

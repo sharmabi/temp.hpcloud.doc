@@ -18,8 +18,8 @@
 <p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses.</p>
 <p>A non-admin user or admin user can <xref href="#topic3268/createnet">create</xref> and <xref href="#topic3268/deletenet">delete</xref> networks as needed.</p>
 <section>
-<required-cleanup>
-<title>Create a network</title>
+<title id="createnet">
+<!-- id="createnet" -->Create a network</title>
 <ol>
 <li>
 <p>
@@ -88,11 +88,11 @@
 <p>Click <b>Create</b>.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Delete a network</title>
+<title>
+<!-- id="deletenet" -->
+<!-- id="deletenet" -->Delete a network</title>
 <ol>
 <li>
 <p>
@@ -120,7 +120,6 @@
   <xref href="#topic3268/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

@@ -17,8 +17,9 @@
 -->
 <p>You can delete images, as needed. A deleted image is no longer available. Any instances launched from the deleted instance are not affected.</p>
 <section>
-<required-cleanup>
-<title>Delete an image</title>
+<title>
+<!-- id="delete-an-image" -->
+<!-- id="delete-an-image" -->Delete an image</title>
 <p>To delete a private image:</p>
 <ol>
 <li>
@@ -45,7 +46,6 @@
   <xref href="#topic1001/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

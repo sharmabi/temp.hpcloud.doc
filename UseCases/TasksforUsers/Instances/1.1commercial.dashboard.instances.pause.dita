@@ -20,8 +20,8 @@
 <p>
 <b>Note:</b> Pausing is different from <xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.suspend.dita" >suspending an instance</xref>. Suspending stops the instance, stores the contents on the disk. the memory and vCPUs become available to create other instances.</p>
 <section>
-<required-cleanup>
-<title>Pause an instance</title>
+<title id="pause-an-instance">
+<!-- id="pause-an-instance" -->Pause an instance</title>
 <p>To pause an instance:</p>
 <ol>
 <li>
@@ -39,11 +39,10 @@
 <ol>
 <li>Note that many of the commands on the <b>More</b> menu are not available for a paused instance.</li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Un-pause an instance</title>
+<title id="un-pause-an-instance">
+<!-- id="un-pause-an-instance" -->Un-pause an instance</title>
 <p>To unpause an instance:</p>
 <ol>
 <li>
@@ -63,7 +62,6 @@
   <xref href="#topic1539/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

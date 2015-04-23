@@ -18,8 +18,8 @@
 <p>A network connects to the router through an interface.</p>
 <p>You must remove all router interfaces before deleting the router, by removing all internal interfaces.</p>
 <section>
-<required-cleanup>
-<title>Delete a router</title>
+<title id="delete-a-router">
+<!-- id="delete-a-router" -->Delete a router</title>
 <ol>
 <li>
 <p>
@@ -62,7 +62,6 @@ c. Return to the **Routers** screen.&lt;/li&gt;
   <xref href="#topic1170/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

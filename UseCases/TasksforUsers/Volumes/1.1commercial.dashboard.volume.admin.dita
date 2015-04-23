@@ -17,8 +17,9 @@
 -->
 <p>A volume type defines the characteristics of a volume. It usually maps to a set of capabilities of the storage back-end driver that is used for this volume. For example: "Backup","SSD",  etc.</p>
 <section>
-<required-cleanup>
-<title>Create a volume type</title>
+<title>
+<!-- id="create-a-volume-type" -->
+<!-- id="create-a-volume-type" -->Create a volume type</title>
 <ol>
 <li>
 <p>
@@ -40,11 +41,11 @@
 <p>Click <b>Create Volume Type</b> to confirm.</p>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Delete a volume type</title>
+<title>
+<!-- id="delete-a-volume-type" -->
+<!-- id="delete-a-volume-type" -->Delete a volume type</title>
 <ol>
 <li>
 <p>
@@ -70,7 +71,6 @@
   <xref href="#topic1253/top"> Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
-</required-cleanup>
 </section>
 </body>
 </topic>

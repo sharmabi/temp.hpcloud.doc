@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic828">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Launch a Console Window</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Creating Instances</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.console.md-->
+ <!--permalink: /helion/commercial/carrier/dashboard/managing/instances/console/--></p>
+<!--
+<p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
+-->
+<p>You can use the Helion dashboard to launch a console session to an instance.</p>
+<p>To launch a console:</p>
+<ol>
+<li>
+<p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+</li>
+<li>
+<p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
+</li>
+<li>
+<p>In the <b>Instances</b> screen, for the instance you want to modify, click the arrow icon in the <b>Actions</b> menu and select <b>Console</b>.</p>
+
+<p>You might need to click through messages granting permission to access the console.</p>
+
+<p>
+<image href="../../../../../../media/CGH-Helion-Instance-Launch-Console.png"/>
+</p>
+</li>
+<li>
+<p>Log in with the appropriate user name and password.</p>
+</li>
+</ol>
+<p>
+  <xref href="#topic828/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</body>
+</topic>

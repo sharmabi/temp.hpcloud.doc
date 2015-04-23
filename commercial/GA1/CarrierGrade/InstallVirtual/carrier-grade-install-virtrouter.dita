@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1120">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Create a Virtual Router During Installation</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtrouter.md-->
+ <!--permalink: /helion/openstack/carrier/install/virt-router/--></p>
+<p>You can configure a virtual router for your cloud using an installer file in the installation kit.</p>
+<p>To configure a virtual router:</p>
+<ol>
+<li>
+<p>Copy the <codeph>router.qcow2</codeph> to <codeph>/var/lib/libvirt/images</codeph> folder on the KVM host.</p>
+
+<ul>
+<li>virsh define router.xml</li>
+<li>virsh autostart router</li>
+<li>virsh start router</li>
+</ul>
+<p>The VM should be up in few min. Login to virt-manager to get to the VM or use <codeph>virsh console &lt;vm&gt;</codeph> from kvm host.</p>
+</li>
+<li>
+<p>Use a tool, such as Virtual Machine Manager, to make sure that the network is configured with <codeph>br-kvm</codeph> for <codeph>NIC1</codeph> and <codeph>br-ctl</codeph> for <codeph>NIC2</codeph>.</p>
+</li>
+<li>
+<p>Make sure that you can connect to an external <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.dita" >NTP server</xref> and check that you can connect to an external network after exporting the proxy.</p>
+</li>
+</ol>
+<section>
+<title>
+<!-- id="next-step" -->
+<!-- id="next-step" -->Next Step:</title>
+<p>
+<xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-datacenter.dita" >Create a Virtual Data center for DNS/NTP Network Management</xref>.</p>
+<p>
+  <xref href="#topic1120/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

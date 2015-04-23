@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic4285">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic4283">
 <title>HP Helion OpenStack® 1.1: Metering Service (Ceilometer) Components</title>
 <prolog>
 <metadata>
@@ -23,7 +23,9 @@
   <image href="../../../media/ceil_overallarchi.png"/>
 </p>
 <section>
-<title>Components in TripleO Overcloud Controller0</title>
+<title>
+<!-- id="components-in-tripleo-overcloud-controller0" -->
+<!-- id="components-in-tripleo-overcloud-controller0" -->Components in TripleO Overcloud Controller0</title>
 <p>This controller node is the first of the High Available (HA) cluster. In this node there is an instance of the Ceilometer API running under the HA Proxy Virtual IP address. The Alarm services run on Overcloud Controller0.</p>
 <p>
 <b>Note</b>: When a configuration change is made to an API running under the HA Proxy, that change needs to be replicated in <b>all</b> controllers.</p>
@@ -59,23 +61,29 @@
 </ol>
 </section>
 <section>
-<title>Ceilometer Components in TripleO Overcloud Controller1</title>
+<title>
+<!-- id="ceilometer-components-in-tripleo-overcloud-controller1" -->
+<!-- id="ceilometer-components-in-tripleo-overcloud-controller1" -->Ceilometer Components in TripleO Overcloud Controller1</title>
 <p>Just like Controller0, Controller1 has an instance of the Ceilometer API running under the HA Proxy.</p>
 </section>
 <section>
-<title>Ceilometer Components in TripleO Overcloud Controller2</title>
+<title>
+<!-- id="ceilometer-components-in-tripleo-overcloud-controller2" -->
+<!-- id="ceilometer-components-in-tripleo-overcloud-controller2" -->Ceilometer Components in TripleO Overcloud Controller2</title>
 <p>This node is where all other Ceilometer components are running.</p>
 </section>
 <section>
-<title>Ceilometer Sample Polling</title>
+<title>
+<!-- id="ceilometer-sample-polling" -->
+<!-- id="ceilometer-sample-polling" -->Ceilometer Sample Polling</title>
 <p>The Sample Polling is part of the Central Agent. Once sent to the RabbitMQ service, they are consumed by the Collector and stored in the database. The Collector is also responsible for consuming and storing notifications. Here there is a high level picture of the overall polling/collecting cycle.</p>
 <p>
   <image href="../../../media/ceil_collectorandagents.png"/>
 </p>
 </section>
 <section>
-<required-cleanup>
-<title>Ceilometer Central Agent</title>
+<title id="centralagent">
+<!-- id="centralagent" -->Ceilometer Central Agent</title>
 <p>The Central Agent is responsible for coordinating the polling activity. It parses the <i>pipeline.yml</i> configuration file and identifies all the sources that need to be polled from. The sources are then evaluated using a discovery mechanism and all the sources are translated to resources where a dedicated pollster can retrieve and publish data. At each identified interval the discovery mechanism is triggered, the resource list is composed, and the data is polled and sent to the queue.</p>
 <p>Metering processes should normally be operating at all times. Upstart will continually attempt to restart stopped processes even if the process was deliberately stopped manually. In order to avoid this conflict, stop or start processes using the following commands.</p>
 <ol>
@@ -104,11 +112,11 @@ ceilometer-agent-central start/running, process 27989
 </codeblock>
 </li>
 </ol>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Ceilometer Collector</title>
+<title>
+<!-- id="collector" -->
+<!-- id="collector" -->Ceilometer Collector</title>
 <p>The collector is responsible for getting the samples/events from the RabbitMQ service and storing it in the main database.</p>
 <p>Metering processes should normally be operating at all times. Upstart will continually attempt to restart stopped processes even if the process was deliberately stopped manually. In order to avoid this conflict, stop or start processes using the following commands.</p>
 <ol>
@@ -116,7 +124,7 @@ ceilometer-agent-central start/running, process 27989
 <p>Determine whether the process is running:</p>
 
 <codeblock>
-<codeph>$ sudo service ceilometer-collector status 
+<codeph>sudo service ceilometer-collector status 
 ceilometer-collector start/running, process 27455
 </codeph>
 </codeblock>
@@ -137,7 +145,6 @@ ceilometer-collector start/running, process 27455
 </codeblock>
 </li>
 </ol>
-</required-cleanup>
 </section>
 </body>
 </topic>

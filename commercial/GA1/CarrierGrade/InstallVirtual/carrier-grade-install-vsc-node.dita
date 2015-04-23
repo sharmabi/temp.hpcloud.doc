@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic5520">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Create the HP VSC Node</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.md-->
+ <!--permalink: /helion/openstack/carrier/install/vsc-node/--></p>
+<p>The <xref href="http://www8.hp.com/us/en/products/networking-switches/product-detail.html?oid=7268885" scope="external" format="html" >HP Virtualized Services Controller</xref> (HP VSC) is a component of HP Distributed Cloud Networking. HP VSC functions as the robust network control plane for DCs, maintaining a full view of pertenant network and service topologies.</p>
+<p>HP VSC must run on a dedicated hardware server as the only 
+virtual machine process, called the HP VSC Node.</p>
+<p>Use the following steps to install the HP VSC node in the HP Helion OpenStack Carrier Grade cloud.</p>
+<p>
+<b>Note:</b> You can download the complete <xref href="http://h20565.www2.hp.com/portal/site/hpsc/public/psi/home/?sp4ts.oid=7268885&amp;ac.admitted=1429029354732.876444892.492883150#manuals" scope="external" format="html" >HP Distributed Cloud Networking manuals</xref>, in needed.</p>
+<section>
+<title>
+<!-- id="create-the-vsc-node-vm" -->
+<!-- id="create-the-vsc-node-vm" -->Create the VSC node VM</title>
+<p>To create the VM that hosts the VSC node:</p>
+<ol>
+<li>
+<p>Copy the <codeph>vsc_singledisk.qcow2</codeph> to the <codeph>/var/lib/libvirt/images</codeph> folder on your kvm host.</p>
+</li>
+<li>
+<p>Use the following commands to create a virtual machine (the HP VSC node) from the VSC XML definition file then start the domain:</p>
+
+<codeblock>
+<codeph>virsh define vsc.xml
+virsh autostart vsc
+virsh start vsc
+</codeph>
+</codeblock>
+</li>
+</ol>
+</section>
+<section>
+<title id="configure-the-vsc-node">
+<!-- id="configure-the-vsc-node" -->Configure the VSC node</title>
+<p>Once your VM is up and running, use the following steps to configure the VSC node:</p>
+<ol>
+<li>
+<p>Connect to the HP VSC console using libvirt:</p>
+
+<codeblock>
+<codeph>virsh console vsc
+</codeph>
+</codeblock>
+
+<p>HP VSC should boot to a login prompt on the console</p>
+</li>
+<li>
+<p>Log in to the console using the default credentials:</p>
+
+<codeblock>
+<codeph>login: admin
+password: admin
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Use the following steps to edit the Boot Options File (BOF) configuration.</p>
+
+<p>The HP VSC uses a Boot Options File (BOF) named bof.cfg that is read on system boot and is used for some basic, low-level system configuration needed to successfully boot the HP VSC.</p>
+
+<p>a. Navigate to the Boot Options File context:</p>
+
+<codeblock>
+<codeph>bof&lt;Enter&gt;
+</codeph>
+</codeblock>
+
+<p>The prompt will indicate a change to the bof context</p>
+
+<p>b. Enter the Management IP address:</p>
+
+<codeblock>
+<codeph>address &lt;ip-prefix/ip-prefix-length&gt;
+</codeph>
+</codeblock>
+
+<p>
+<b>Example:</b> 10.10.10.20/24</p>
+
+<p>c. Enter the primary DNS IP address,</p>
+
+<codeblock>
+<codeph>primary-dns &lt;IP_address&gt;
+</codeph>
+</codeblock>
+
+<p>
+<b>Example:</b> primary-dns 10.10.10.25</p>
+
+<p>d. Enter the name of the DNS domain,</p>
+
+<codeblock>
+<codeph>dns-domain &lt;dns-name&gt;
+</codeph>
+</codeblock>
+
+<p>
+<b>Example:</b> helion.cg</p>
+
+<p>e. Enter the static routes for the management IP network</p>
+
+<codeblock>
+<codeph>static-route &lt;ip-prefix/ip-prefix-length&gt; next-hop &lt;IP_address&gt;
+</codeph>
+</codeblock>
+
+<p>
+<b>Example:</b>
+</p>
+
+<codeblock>
+<codeph>10.20.20.0/24 next-hop 10.10.10.1
+10.100.100.0/24 next-hop 10.10.10.1
+</codeph>
+</codeblock>
+
+<p>f. Save the configuration to cf1. The bof.cfg file be saved to the cf1: <i>user</i> emulated disk.</p>
+
+<codeblock>
+<codeph>save cf1
+</codeph>
+</codeblock>
+
+<p>g. Exit the configuration.</p>
+
+<codeblock>
+<codeph>exit
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Configure NTP using the console:</p>
+
+<p>a. Enter the following commands to enter the NTP server configuration:</p>
+
+<codeblock>
+<codeph>configure
+name "VSC"
+time
+ntp
+</codeph>
+</codeblock>
+
+<p>b. Enter the IP addresses for NTP servers:</p>
+
+<codeblock>
+<codeph>server &lt;IP_address&gt;
+no shutdown
+
+Example: 
+server 10.10.10.25
+server 10.1.64.20
+no shutdown
+</codeph>
+</codeblock>
+
+<p>f. Exit the NTP server configuration:</p>
+
+<codeblock>
+<codeph>exit
+</codeph>
+</codeblock>
+
+<p>g. Shutdown the SNTP service:</p>
+
+<codeblock>
+<codeph>sntp
+shutdown
+exit
+</codeph>
+</codeblock>
+
+<p>j. Specify the time zone:</p>
+
+<codeblock>
+<codeph>zone &lt;zone_abbreviation&gt;
+</codeph>
+</codeblock>
+
+<p>
+<b>Example</b>
+</p>
+
+<codeblock>
+<codeph>zone UTC
+</codeph>
+</codeblock>
+
+<p>k. Complete the NTP configuration:</p>
+
+<codeblock>
+<codeph>exit
+exit
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Configure Extensible Messaging and Presence Protocol (XMPP). HP VSC communicates with the HP VSD policy engine using Extensible Messaging and Presence Protocol (XMPP).</p>
+
+<p>a. Enter the following commands to enter the xmpp server configuration:</p>
+
+<codeblock>
+<codeph>configure
+vswitch-controller
+</codeph>
+</codeblock>
+
+<p>b. Specify the xmpp server (xmpp.example.com) and username (NSC-vPE-1) and password:</p>
+
+<codeblock>
+<codeph>xmpp-server "NSC-vPE1:password@xmpp.example.com"
+</codeph>
+</codeblock>
+
+<p>
+<b>Example:</b>
+</p>
+
+<codeblock>
+<codeph>xmpp-server "vsc:password@vsd.helion.cg"
+</codeph>
+</codeblock>
+
+<p>c. Complete the XMPP configuration:</p>
+
+<codeblock>
+<codeph>exit
+exit
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Save the configurations:</p>
+
+<codeblock>
+<codeph>admin save
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Check that the XMPP server is properly configured:</p>
+
+<codeblock>
+<codeph>admin display-config
+
+--------------------------------------------------
+echo "Virtual Switch Controller Configuration"
+--------------------------------------------------
+vswitch-controller
+    xmpp-server "vsc:password@vsd.helion.cg"
+    open-flow
+    exit
+    xmpp
+exit
+exit
+--------------------------------------------------
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Save the configuration to cf1. The bof.cfg file be saved to the cf1: <i>user</i> emulated disk.</p>
+
+<codeblock>
+<codeph>save cf1
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Verify that IP addresses and routes have been added to the configuration file:</p>
+
+<codeblock>
+<codeph>config
+show system information
+</codeph>
+</codeblock>
+
+<p>Check the command output for the appropriate IP addresses, such as Management and DNS addresses and static routes.</p>
+</li>
+<li>
+<p>Verify that you can ping the CLM network on the HLM node:</p>
+
+<codeblock>
+<codeph>ping router "management" &lt;IP_address&gt;
+</codeph>
+</codeblock>
+
+<p>
+<b>Example:</b>
+</p>
+
+<codeblock>
+<codeph>ping router "management" 10.20.20.2
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Log in to the HP Networks Virtualized Services Directory Architect (VSD Architect) UI in a  browser from Guest VM as the CSP administrator.</p>
+
+<p>The default CSP administrator login:</p>
+
+<codeblock>
+<codeph>User Name: csproot
+Password: csproot
+Organization: csp 
+</codeph>
+</codeblock>
+
+<p>After login, the Organization Dashboard is displayed.</p>
+
+<p>The VSD and VSC VMs should have a green bar.</p>
+</li>
+</ol>
+</section>
+<section>
+<title>
+<!-- id="useful-commands-for-vsc" -->
+<!-- id="useful-commands-for-vsc" -->Useful commands for VSC</title>
+<p>You might find the following commands helpful when working with VSC.</p>
+<ul>
+<li>
+<p>Set specific values for parameters below</p>
+
+<codeblock>
+<codeph>configure system time ntp server 10.1.64.20
+configure system name "VSC"
+configure system sntp server-address
+configure system time zone UTC
+configure vswitch-controller xmpp-server "vsc:password@test.nuage.cdl.local"
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Verify these setting</p>
+
+<codeblock>
+<codeph>show system ntp
+show system information - to displays System Name
+show system sntp - to display sntp server ip address
+show system time
+show switch-controller xmpp-server - to display the name of XMPP server, FQDN and username, number of XMPP servers
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Check the settings:</p>
+
+<codeblock>
+<codeph>admin display-config
+show system ntp detail
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Command to reboot vsc</p>
+
+<codeblock>
+<codeph>admin reboot
+</codeph>
+</codeblock>
+</li>
+</ul>
+</section>
+<section>
+<title id="next-step">
+<!-- id="next-step" -->Next Step</title>
+<p>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-node.dita" >Create the HLM Node</xref>
+</p>
+<p>
+  <xref href="#topic5520/top"> Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

@@ -69,11 +69,13 @@ the upgrade process works.</p>
 </li>
 </ul>
 <section>
-<title>Before an upgrade</title>
+<title>
+<!-- id="before-an-upgrade" -->
+<!-- id="before-an-upgrade" -->Before an upgrade</title>
 </section>
 <section>
-<required-cleanup>
-<title>Maintenance Mode</title>
+<title id="maintenance-mode">
+<!-- id="maintenance-mode" -->Maintenance Mode</title>
 <p>Before beginning an upgrade, put Application Lifecycle Service in maintenance mode in the
 <xref href="/als/v1/admin/console/customize#console-settings-maintenance-mode" >
 <i>Cloud Controller
@@ -85,11 +87,10 @@ the following <codeph>kato</codeph> command:</p>
 </codeph>
 </codeblock>
 <p>This shuts down API requests but continues to serve web requests. The Management Console becomes "read only" with the exception of this toggle so that it can be brought back online. Remember to disable maintenance mode once the upgrade has been completed.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Proxy settings</title>
+<title id="proxy-settings">
+<!-- id="proxy-settings" -->Proxy settings</title>
 <p>The systems being upgraded will need to be able to access the following
 public URIs:</p>
 <ul>
@@ -102,35 +103,36 @@ public URIs:</p>
 </ul>
 <p>This may require setting the HTTPS_PROXY environment variable on each
 node if a proxy is in use on your network.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>RSA keys</title>
+<title>
+<!-- id="rsa-keys" -->
+<!-- id="rsa-keys" -->RSA keys</title>
 <p>For cluster upgrades, you should <xref href="https://help.ubuntu.com/community/SSH/OpenSSH/Configuring#disable-password-authentication" scope="external" format="html" >set up SSH keys for password-less
 authentication</xref>
 between the Core node and all other cluster nodes. Without this, you
 will be prompted for the 'helion' system user password multiple times
 for each node.</p>
-</required-cleanup>
 </section>
 <section>
-<title>Executing the upgrade</title>
+<title>
+<!-- id="executing-the-upgrade" -->
+<!-- id="executing-the-upgrade" -->Executing the upgrade</title>
 </section>
 <section>
-<required-cleanup>
-<title>Upgrading an individual node</title>
+<title id="upgrading-an-individual-node">
+<!-- id="upgrading-an-individual-node" -->Upgrading an individual node</title>
 <p>To upgrade an individual node, log into the node and run:</p>
 <codeblock>
   <codeph>$ kato node upgrade
 </codeph>
 </codeblock>
 <p>This will start the <b>Node Upgrade Process</b> as described below.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Upgrading a cluster</title>
+<title>
+<!-- id="upgrading-a-cluster" -->
+<!-- id="upgrading-a-cluster" -->Upgrading a cluster</title>
 <p>To upgrade a cluster, log into the Core node in the cluster and run:</p>
 <codeblock>
   <codeph>$ kato node upgrade --cluster
@@ -139,11 +141,10 @@ for each node.</p>
 <p>This will automatically arrange the nodes in the cluster into a
 preferred upgrade order (see below) before upgrading the nodes one at a
 time.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Node upgrade ordering</title>
+<title id="node-upgrade-ordering">
+<!-- id="node-upgrade-ordering" -->Node upgrade ordering</title>
 <p>When performing a cluster upgrade, the nodes in the cluster are
 automatically arranged into an upgrade order based on the roles they
 have enabled. This order is then followed when upgrading nodes.</p>
@@ -163,11 +164,10 @@ be upgraded last.</p>
 <i>--role-order</i>
 </xref>
 option.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Node Upgrade Process</title>
+<title id="node-upgrade-process">
+<!-- id="node-upgrade-process" -->Node Upgrade Process</title>
 <p>Each node goes through the following process during an upgrade.</p>
 <ol>
 <li>Self-update</li>
@@ -217,7 +217,6 @@ warning above).</p>
 <p>When <codeph>kato node upgrade</codeph> completes successfully, the
 node is restarted running the latest version of Application Lifecycle Service.</p>
 <p>Remember to take the node out of maintenance mode after the upgrade.</p>
-</required-cleanup>
 </section>
 </body>
 </topic>

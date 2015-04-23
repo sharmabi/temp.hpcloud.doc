@@ -68,21 +68,23 @@ Agents (DEAs, or worker nodes), or specific database services.</p>
   <image href="/content/documentation/devplatform/helion/images/helion-architecture-diagram.png"/>
 </p>
 <section>
-<title>Roles</title>
+<title id="roles">
+<!-- id="roles" -->Roles</title>
 </section>
 <section>
-<required-cleanup>
-<title>Base</title>
+<title>
+<!-- id="base" -->
+<!-- id="base" -->Base</title>
 <p>The Base role comprises of several processes that are necessary for any
 node to function as part of an Application Lifecycle Service cluster, and is mostly
 responsible for communicating with the primary node and forwarding log
 information.</p>
 <p>This role cannot be disabled on any node.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Primary</title>
+<title>
+<!-- id="primary" -->
+<!-- id="primary" -->Primary</title>
 <p>The Primary role is a mandatory part of a Core node (or micro cloud) and
 runs a number of critical system processes, including the Health
 Manager.</p>
@@ -92,11 +94,11 @@ the Cloud Controller and must be run on the same VM.</p>
 <p>In a cluster setup, all nodes performing other roles are attached to the
 MBUS IP of the Core node. Every cluster must include exactly one Primary
 role.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Cloud Controller</title>
+<title>
+<!-- id="cloud-controller" -->
+<!-- id="cloud-controller" -->Cloud Controller</title>
 <p>The Controller manages most of the operations of an Application Lifecycle Service system. It
 hosts the Management Console, provides the API endpoint for client
 access, manages the cloud_controller_ng process, provisions services,
@@ -113,11 +115,10 @@ VM's in the cluster connect to.</p>
 Controllers</i>
 </xref> can be
 configured if necessary for larger implementations.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Router</title>
+<title id="router">
+<!-- id="router" -->Router</title>
 <p>The router directs incoming network traffic to the appropriate
 application.</p>
 <p>For smaller configurations, the router can be run on the same Application Lifecycle Service
@@ -128,11 +129,11 @@ routers can be added to handle the load. This will require a <xref href="/als/v1
 balancer</i>
 </xref> to be available
 in the cluster.</p>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Droplet Execution Agents</title>
+<title>
+<!-- id="droplet-execution-agents" -->
+<!-- id="droplet-execution-agents" -->Droplet Execution Agents</title>
 <p>The Droplet Execution Agent (DEA) role in Application Lifecycle Service is responsible for
 staging applications and running application instances within Linux
 containers. In an Application Lifecycle Service cluster, there will typically be a number of
@@ -146,36 +147,37 @@ application instances.</p>
 <li>apptail: Streams application logs via Logyard to various log drains.</li>
 </ul>
 <p>The Docker image used for the containers can be customized by admins.</p>
-</required-cleanup>
 </section>
 <section>
-<title>Service Roles</title>
+<title>
+<!-- id="service-roles" -->
+<!-- id="service-roles" -->Service Roles</title>
 <p>Application Lifecycle Service nodes can also be assigned roles for data services. The data
 services can be run separately on their own nodes, or grouped together.</p>
 </section>
 <section>
-<required-cleanup>
-<title>Databases:</title>
+<title id="databases">
+<!-- id="databases" -->Databases:</title>
 <ul>
 <li>mysql</li>
 <li>postgresql</li>
 <li>redis</li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<required-cleanup>
-<title>Other data services:</title>
+<title id="other-data-services">
+<!-- id="other-data-services" -->Other data services:</title>
 <ul>
 <li>filesystem ( Persistent filesystem service )</li>
 <li>rabbit ( RabbitMQ message queue service )</li>
 <li>memcached</li>
 <li>Harbor ( Ports service )</li>
 </ul>
-</required-cleanup>
 </section>
 <section>
-<title>Role Groups</title>
+<title>
+<!-- id="role-groups" -->
+<!-- id="role-groups" -->Role Groups</title>
 <p>Role groups represent a set of roles. For example the <b>data-services</b>
 group provides all databases plus RabbitMQ and the filesystem service:</p>
 <codeblock>
