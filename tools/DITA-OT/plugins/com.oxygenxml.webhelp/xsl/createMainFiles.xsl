@@ -236,10 +236,7 @@ available in the base directory of this Oxygen Webhelp plugin.
               <xsl:comment/>
             </link>
 			
-            <link rel="stylesheet" type="text/css"
-              href="../../../../DITA-OT/css/blah1.css">
-              <xsl:comment/>
-            </link>		
+            
 			
             <link rel="stylesheet" type="text/css" 
                     href="oxygen-webhelp/resources/skins/{$skinName}/toc_custom.css">
