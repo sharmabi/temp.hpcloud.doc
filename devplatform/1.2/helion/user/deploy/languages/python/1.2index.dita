@@ -26,6 +26,8 @@ advantage of HP Helion OpenStack® to manage infrastructure or software services
 to enable successful development are available in Python.</p>
 <section>
 <title>
+<!-- id="application-lifecycle-services" -->
+<!-- id="application-lifecycle-services" -->
 <!-- id="application-lifecycle-services" -->Application Lifecycle Services</title>
 <p>Application Lifecycle Services (ALS), a CloudFoundry-based Platform as a
 Service, provides a means to execute Python applications on a managed platform.
@@ -86,6 +88,8 @@ user interface or a command line client.  To learn more see:</p>
 </section>
 <section>
 <title>
+<!-- id="controlling-hp-helion-with-your-application" -->
+<!-- id="controlling-hp-helion-with-your-application" -->
 <!-- id="controlling-hp-helion-with-your-application" -->Controlling HP Helion with your Application</title>
 <p>If your Python application is going to control HP Helion resources, it can
 communicate directly with the <xref href="http://docs.hpcloud.com/api" scope="external" format="html"  outputclass="reference external">Helion REST APIs</xref>
@@ -174,6 +178,8 @@ Procfile <codeph>web:</codeph> command. For example:</p>
 </section>
 <section>
 <title>
+<!-- id="python-with-the-legacy-buildpack" -->
+<!-- id="python-with-the-legacy-buildpack" -->
 <!-- id="python-with-the-legacy-buildpack" -->Python with the Legacy Buildpack</title>
 <p>If your Python application has configuration for running on Application Lifecycle Service
 2.10 or earlier, you can deploy it using the <xref href="/helion/devplatform/1.2/als/user/deploy/buildpack#buildpacks-legacy" >
@@ -200,7 +206,9 @@ uWSGI</i>
 </xref>.</p>
 </section>
 <section>
-<title id="django">Django</title>
+<title id="django">
+<!-- id="django" -->
+<!-- id="django" -->Django</title>
 <ul>
 <li>
 <xref href="../../../../../../../devplatform/1.2/helion/user/deploy/languages/python/1.2django.dita" >Deploying Django applications</xref>
@@ -224,7 +232,8 @@ location</xref>
 </ul>
 </section>
 <section>
-<title>
+<title id="application-url">
+<!-- id="application-url" -->
 <!-- id="application-url" -->Application URL</title>
 <p>Some applications require the user to specify the APP_URL. Below is an
 example on how to obtain the correct urls:</p>
@@ -236,14 +245,17 @@ APP_URL = 'http://' + vcap_app['uris'][0]
 </codeblock>
 </section>
 <section>
-<title>
+<title id="database-services">
+<!-- id="database-services" -->
 <!-- id="database-services" -->Database Services</title>
 <p>Some minor edits are required to make your application work with a
 database. Python database configurations are located inside
 <codeph>settings.py</codeph>.</p>
 </section>
 <section>
-<title id="database-url">DATABASE_URL</title>
+<title id="database-url">
+<!-- id="database-url" -->
+<!-- id="database-url" -->DATABASE_URL</title>
 <p>Authentication details for your configured database services can be
 found in the <codeph>os.environ</codeph> variable, under
 <codeph>DATABASE_URL</codeph>. Here is an example of getting the
@@ -278,6 +290,8 @@ else:
 </section>
 <section>
 <title>
+<!-- id="vcap-services" -->
+<!-- id="vcap-services" -->
 <!-- id="vcap-services" -->VCAP_SERVICES</title>
 <codeblock>
   <codeph>import json
@@ -298,7 +312,9 @@ DATABASES = {
 </codeblock>
 </section>
 <section>
-<title id="worker-applications">Worker Applications</title>
+<title id="worker-applications">
+<!-- id="worker-applications" -->
+<!-- id="worker-applications" -->Worker Applications</title>
 <p>Non-HTTP apps that run as an Application Lifecycle Service application under the control of
 the Health Manager.</p>
 <p>To deploy worker applications, you need to use the
@@ -312,7 +328,8 @@ web</i>
 Null ("\~").</p>
 </section>
 <section>
-<title>
+<title id="example">
+<!-- id="example" -->
 <!-- id="example" -->Example</title>
 <codeblock>
   <codeph>name: python-app
@@ -326,7 +343,8 @@ processes:
 </codeblock>
 </section>
 <section>
-<title>
+<title id="serving-static-files-with-uwsgi">
+<!-- id="serving-static-files-with-uwsgi" -->
 <!-- id="serving-static-files-with-uwsgi" -->Serving Static Files with uWSGI</title>
 <p>It is possible to serve static files with uWSGI using
 <codeph>processes: web:</codeph> in the
@@ -355,7 +373,9 @@ doesn't exist, then uWSGI will forward the request to the app.</p>
 frameworks.</p>
 </section>
 <section>
-<title id="using-a-custom-web-server">Using a custom web server</title>
+<title id="using-a-custom-web-server">
+<!-- id="using-a-custom-web-server" -->
+<!-- id="using-a-custom-web-server" -->Using a custom web server</title>
 <p>To use a different web server instead of uWSGI, specify its startup
 command in <codeph>manifest.yml</codeph>. Here's a sample
 manifest.yml used to deploy a Django 1.4 application named "dj14" using
@@ -380,7 +400,9 @@ used to serve non-WSGI applications (such as Tornado). See the
 for an example.</p>
 </section>
 <section>
-<title id="installing-python-packages">Installing Python Packages</title>
+<title id="installing-python-packages">
+<!-- id="installing-python-packages" -->
+<!-- id="installing-python-packages" -->Installing Python Packages</title>
 <p>
   <b>Note</b>
 </p>
@@ -404,7 +426,8 @@ and/or <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-pip"
 </xref>.</p>
 </section>
 <section>
-<title>
+<title id="pypm">
+<!-- id="pypm" -->
 <!-- id="pypm" -->PyPM</title>
 <p>Definition <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-pypm" >
 <i>PyPM</i>
@@ -431,7 +454,9 @@ setting the <codeph>PYPM_REQUIREMENTS_FILE</codeph> environment
 variable.</p>
 </section>
 <section>
-<title id="pip">pip</title>
+<title id="pip">
+<!-- id="pip" -->
+<!-- id="pip" -->pip</title>
 <p>Definition <xref href="/helion/devplatform/1.2/als/user/reference/glossary#term-pip" >
 <i>pip</i>
 </xref>
@@ -464,7 +489,9 @@ can be overridden by setting the <codeph>PIP_REQUIREMENTS_FILE</codeph> environm
 log file from being accessed by <codeph>helion logs</codeph>.</p>
 </section>
 <section>
-<title id="pypy-support">PyPy Support</title>
+<title id="pypy-support">
+<!-- id="pypy-support" -->
+<!-- id="pypy-support" -->PyPy Support</title>
 <p>Here is an example of pushing an app using PyPy.</p>
 <p>First, clone the <xref href="https://github.com/Stackato-Apps/werkzeug-debugger" scope="external" format="html" >https://github.com/Stackato-Apps/werkzeug-debugger</xref>
 repository.</p>
@@ -482,7 +509,8 @@ repository.</p>
 </codeblock>
 </section>
 <section>
-<title>
+<title id="other-python-frameworks">
+<!-- id="other-python-frameworks" -->
 <!-- id="other-python-frameworks" -->Other Python Frameworks</title>
 <p>Examples of deploying other frameworks are included in the <xref href="https://github.com/Stackato-Apps" scope="external" format="html" >GitHub
 samples repo</xref>:</p>

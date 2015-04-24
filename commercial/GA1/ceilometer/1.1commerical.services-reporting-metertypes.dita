@@ -40,11 +40,15 @@ Samples are populated by <i>counter</i> objects.</p>
 <b>Note</b>: The metering service shares the same High-availability proxy, messaging, and database clusters with the other Information services. To avoid unnecessarily high loads, <xref href="/helion/openstack/1.1/services/reporting/bestpractices#meterlist" >non-essential meters can be disabled</xref>.</p>
 <section>
 <title>
+<!-- id="helion-openstack-default-meters" -->
+<!-- id="helion-openstack-default-meters" -->
 <!-- id="helion-openstack-default-meters" -->Helion OpenStack Default Meters</title>
 <p>These meters are installed and enabled by default during an HP Helion OpenStack installation.</p>
 </section>
 <section>
-<title id="compute-nova">Compute (Nova)</title>
+<title id="compute-nova">
+<!-- id="compute-nova" -->
+<!-- id="compute-nova" -->Compute (Nova)</title>
 <table>
 <tgroup cols="6">
 <colspec colname="col1"/>
@@ -87,7 +91,9 @@ Samples are populated by <i>counter</i> objects.</p>
 </table>
 </section>
 <section>
-<title id="image-glance">Image (Glance)</title>
+<title id="image-glance">
+<!-- id="image-glance" -->
+<!-- id="image-glance" -->Image (Glance)</title>
 <table>
 <tgroup cols="6">
 <colspec colname="col1"/>
@@ -154,7 +160,9 @@ Samples are populated by <i>counter</i> objects.</p>
 </table>
 </section>
 <section>
-<title id="network-neutron">Network (Neutron)</title>
+<title id="network-neutron">
+<!-- id="network-neutron" -->
+<!-- id="network-neutron" -->Network (Neutron)</title>
 <table>
 <tgroup cols="6">
 <colspec colname="col1"/>
@@ -221,7 +229,9 @@ Samples are populated by <i>counter</i> objects.</p>
 </table>
 </section>
 <section>
-<title id="volume-cinder">Volume (Cinder)</title>
+<title id="volume-cinder">
+<!-- id="volume-cinder" -->
+<!-- id="volume-cinder" -->Volume (Cinder)</title>
 <table>
 <tgroup cols="6">
 <colspec colname="col1"/>

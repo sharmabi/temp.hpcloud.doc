@@ -68,11 +68,14 @@
 </li>
 </ul>
 <section>
-<title id="console-settings">Console Settings</title>
+<title id="console-settings">
+<!-- id="console-settings" -->
+<!-- id="console-settings" -->Console Settings</title>
 <p>The Management Console is modified mainly through the <b>Settings &gt; Console</b> pages. Settings are saved as variables which can subsequently be used in HTML pages via the <xref href="http://embeddedjs.com/" scope="external" format="html" >Embedded JavaScript (EJS)</xref> templating engine.</p>
 </section>
 <section>
-<title>
+<title id="product">
+<!-- id="product" -->
 <!-- id="product" -->Product</title>
 <ul>
 <li>
@@ -91,7 +94,9 @@ localization is complete.</li>
 </ul>
 </section>
 <section>
-<title id="look-and-feel">Look and Feel</title>
+<title id="look-and-feel">
+<!-- id="look-and-feel" -->
+<!-- id="look-and-feel" -->Look and Feel</title>
 <ul>
 <li>
 <b>Favicon Logo URL</b>: The favicon to use. Recommended to be 32x32px
@@ -108,7 +113,9 @@ above but height is about 40px before distortion occurs.</li>
 </ul>
 </section>
 <section>
-<title id="welcome-page">Welcome Page</title>
+<title id="welcome-page">
+<!-- id="welcome-page" -->
+<!-- id="welcome-page" -->Welcome Page</title>
 <p>The HTML/EJS to show on the Welcome page. The <xref href="#topic5093/customize-settings-vars">
 <i>settings-variables</i>
 </xref> and <codeph>username</codeph>
@@ -116,20 +123,25 @@ variable (current user) are available via EJS, but plain HTML will work
 for simple use cases.</p>
 </section>
 <section>
-<title>
+<title id="support-page">
+<!-- id="support-page" -->
 <!-- id="support-page" -->Support Page</title>
 <p>The HTML/EJS to show on the Support page. The <xref href="#topic5093/customize-settings-vars">
 <i>settings-variables</i>
 </xref> and <codeph>support_email</codeph> variable (see Settings &gt; Controller) are available.</p>
 </section>
 <section>
-<title id="eula-content">Eula Content</title>
+<title id="eula-content">
+<!-- id="eula-content" -->
+<!-- id="eula-content" -->Eula Content</title>
 <p>The HTML/EJS to show in the EULA overlay. The <xref href="#topic5093/customize-settings-vars">
 <i>settings-variables</i>
 </xref> are available.</p>
 </section>
 <section>
 <title>
+<!-- id="custom_error" -->
+<!-- id="custom_error" -->
 <!-- id="custom_error" -->Custom Error Pages</title>
 <p>To expose customized error pages, create the following HTML files in <i>/home/stackato/stackato/static/vendor/errors/</i> on <b>each</b> Router node:</p>
 <ul>
@@ -144,6 +156,8 @@ The default error page files (located at <i>/home/stackato/stackato/code/console
 </section>
 <section>
 <title>
+<!-- id="custom-stylesheet" -->
+<!-- id="custom-stylesheet" -->
 <!-- id="custom-stylesheet" -->Custom Stylesheet</title>
 <p>CSS defined here will be applied to the page after the default CSS has
 been loaded, and override/replace any style. Use this to change the
@@ -152,7 +166,9 @@ development tools like Firebug or Chrome DevTools to inspect elements
 and find the relevant styles.</p>
 </section>
 <section>
-<title id="settings-variables">Settings Variables</title>
+<title id="settings-variables">
+<!-- id="settings-variables" -->
+<!-- id="settings-variables" -->Settings Variables</title>
 <p>The following variables (with their default values) are available in the
 EJS templates on the settings object (e.g.
 <i>settings.product_name</i>):</p>
@@ -175,7 +191,9 @@ EJS templates on the settings object (e.g.
 </ul>
 </section>
 <section>
-<title id="restoring-values">Restoring values</title>
+<title id="restoring-values">
+<!-- id="restoring-values" -->
+<!-- id="restoring-values" -->Restoring values</title>
 <p>Each setting has an individual <b>Load Default</b> button (refresh icon to
 the left of the value field) which will replace the customized value
 with the default for that setting. Click 'Save' to apply the changes.</p>
@@ -192,6 +210,8 @@ format:</p>
 </section>
 <section>
 <title>
+<!-- id="renaming-the-client" -->
+<!-- id="renaming-the-client" -->
 <!-- id="renaming-the-client" -->Renaming the Client</title>
 <p>The Helion client is distributed as a single
 file executable for Windows, OS X and Linux (x86 and x86_64). Zip files

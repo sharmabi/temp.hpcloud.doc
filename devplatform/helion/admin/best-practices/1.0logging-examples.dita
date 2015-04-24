@@ -42,7 +42,9 @@ software or services:</p>
 <p>
 <b>Note</b>: Do not forward both application and system logs to the same destination.</p>
 <section>
-<title id="papertrail">Papertrail</title>
+<title id="papertrail">
+<!-- id="papertrail" -->
+<!-- id="papertrail" -->Papertrail</title>
 <ol>
 <li>
 <xref href="https://papertrailapp.com/plans" scope="external" format="html" >Create an account for Papertrail</xref>
@@ -84,7 +86,8 @@ forwarding is formatted this way (see example in <xref href="/als/v1/admin/serve
 Formats</xref>).</p>
 </section>
 <section>
-<title>
+<title id="loggly">
+<!-- id="loggly" -->
 <!-- id="loggly" -->Loggly</title>
 <ol>
 <li>
@@ -138,7 +141,8 @@ kato log drain add drain-name tcp://logs.loggly.com:port#
 </codeblock>
 </section>
 <section>
-<title>
+<title id="splunk">
+<!-- id="splunk" -->
 <!-- id="splunk" -->Splunk</title>
 <ol>
 <li>
@@ -182,7 +186,8 @@ kato log drain add drain-name tcp://splunk-server-address:port#
 </codeblock>
 </section>
 <section>
-<title>
+<title id="hello-world-custom-drain">
+<!-- id="hello-world-custom-drain" -->
 <!-- id="hello-world-custom-drain" -->Hello World Custom Drain</title>
 <p>The command below starts a drain target server on a node and pipes it to a local file:</p>
 <codeblock>

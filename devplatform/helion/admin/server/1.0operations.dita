@@ -60,6 +60,8 @@
 </ul>
 <section>
 <title>
+<!-- id="server-status" -->
+<!-- id="server-status" -->
 <!-- id="server-status" -->Server Status</title>
 <p>To check the status of Application Lifecycle Service:</p>
 <codeblock>
@@ -78,6 +80,8 @@ they are running, stopped, or starting.</p>
 </section>
 <section>
 <title>
+<!-- id="starting-and-stopping-roles" -->
+<!-- id="starting-and-stopping-roles" -->
 <!-- id="starting-and-stopping-roles" -->Starting and Stopping Roles</title>
 <p>To control the Application Lifecycle Service roles, use the <i>kato</i> start,
 stop and restart commands:</p>
@@ -94,7 +98,9 @@ desired command:</p>
 </codeblock>
 </section>
 <section>
-<title id="system-shutdown">System Shutdown</title>
+<title id="system-shutdown">
+<!-- id="system-shutdown" -->
+<!-- id="system-shutdown" -->System Shutdown</title>
 <p>To safely shut down the VM, run the <i>shutdown</i> command as root:</p>
 <codeblock>
   <codeph>sudo shutdown -h now
@@ -102,7 +108,8 @@ desired command:</p>
 </codeblock>
 </section>
 <section>
-<title>
+<title id="setting-the-time-zone">
+<!-- id="setting-the-time-zone" -->
 <!-- id="setting-the-time-zone" -->Setting the Time Zone</title>
 <p>At first boot, the time zone of the Application Lifecycle Service VM is set to UTC. To set this to your local time zone, use the <codeph>kato op set_timezone</codeph> command. When run without arguments, the command will prompt
 for time zone selection, but the time zone can be set non-interactively
@@ -115,7 +122,9 @@ with the <codeph>--timezone</codeph> option. For example:</p>
 appropriate time zone string for your location.</p>
 </section>
 <section>
-<title id="resetting-the-vm">Resetting the VM</title>
+<title id="resetting-the-vm">
+<!-- id="resetting-the-vm" -->
+<!-- id="resetting-the-vm" -->Resetting the VM</title>
 <p>If you would like to return an Application Lifecycle Service VM to its original
 "out-of-the-box" configuration, use the <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref-node-attach" >
 <i>kato node reset</i>
@@ -150,23 +159,31 @@ kato node setup micro
 </ul>
 </section>
 <section>
-<title id="monitoring-the-application-lifecycle-service-server">Monitoring The Application Lifecycle Service Server</title>
+<title id="monitoring-the-application-lifecycle-service-server">
+<!-- id="monitoring-the-application-lifecycle-service-server" -->
+<!-- id="monitoring-the-application-lifecycle-service-server" -->Monitoring The Application Lifecycle Service Server</title>
 </section>
 <section>
-<title id="management-console">Management Console</title>
+<title id="management-console">
+<!-- id="management-console" -->
+<!-- id="management-console" -->Management Console</title>
 <p>The <xref href="/als/v1/user/console#management-console" >
 <i>Management Console</i>
 </xref> has a Settings page that allows an administrator to monitor the server component and services, and restart or stop services as necessary.</p>
 </section>
 <section>
 <title>
+<!-- id="new-relic" -->
+<!-- id="new-relic" -->
 <!-- id="new-relic" -->New Relic</title>
 <p>Please see <xref href="/als/v1/admin/best-practices#bestpractices-nrsysmond" >
 <i>New Relic Server Monitoring</i>
 </xref>. New Relic can also be used to <xref href="/als/v1/user/deploy/newrelic#newrelic" >monitor apps</xref>.</p>
 </section>
 <section>
-<title id="creating-an-admin-user">Creating an Admin User</title>
+<title id="creating-an-admin-user">
+<!-- id="creating-an-admin-user" -->
+<!-- id="creating-an-admin-user" -->Creating an Admin User</title>
 <p>The easiest way to add admin users to Application Lifecycle Service is via the Management
 Console under <xref href="/als/v1/admin/console/customize#console-users" >Users</xref>. The Management Console will prompt to create the initial admin user the first time you use it.</p>
 <p>If you do not have access to the Management Console, create a user by logging in to the micro cloud or Core node controller via SSH or through the VM <xref href="/als/v1/user/reference/glossary#term-tty-console" >tty console</xref> as the <i>helion</i> user and run <i>helion register</i>:</p>
@@ -183,12 +200,16 @@ helion register superuser@example.net
 <p>Subsequent new users can be added remotely with the Helion client by an admin user.</p>
 </section>
 <section>
-<title id="system-monitoring-with-nagios">System Monitoring with Nagios</title>
+<title id="system-monitoring-with-nagios">
+<!-- id="system-monitoring-with-nagios" -->
+<!-- id="system-monitoring-with-nagios" -->System Monitoring with Nagios</title>
 <p>If Nagios is installed on your server nodes, you can use it to monitor
 and report resource utilization. See the <xref href="/als/v1/admin/best-practices#bestpractices-nagios" >Best Practices</xref> documentation for details.</p>
 </section>
 <section>
-<title id="server-backup-import-and-export">Server Backup, Import, and Export</title>
+<title id="server-backup-import-and-export">
+<!-- id="server-backup-import-and-export" -->
+<!-- id="server-backup-import-and-export" -->Server Backup, Import, and Export</title>
 <p>The import and export functionality can be used to do regular backups,
 or to move the Application Lifecycle Service configuration from one server to another. It is also a means of upgrading the Application Lifecycle Service VM without having to install everything from the ground up.</p>
 <p>Please see the <xref href="/als/v1/admin/best-practices#bestpractices-controller-migration" >Best Practices</xref> documentation for details on how to <xref href="/als/v1/admin/best-practices#bestpractices-migration-export" >export</xref> and <xref href="/als/v1/admin/best-practices#bestpractices-migration-import" >import</xref> your data.</p>

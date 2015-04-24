@@ -20,7 +20,9 @@
 -->
 <p>Users can stop and restart instances as needed.</p>
 <section>
-<title id="stop-an-instance">Stop an instance</title>
+<title id="stop-an-instance">
+<!-- id="stop-an-instance" -->
+<!-- id="stop-an-instance" -->Stop an instance</title>
 <p>To stop an instance:</p>
 <ol>
 <li>
@@ -40,7 +42,8 @@
 <b>Note:</b> Many of the commands on the <b>More</b> menu are not available for a stopped instance.</p>
 </section>
 <section>
-<title>
+<title id="restart-an-instance">
+<!-- id="restart-an-instance" -->
 <!-- id="restart-an-instance" -->Restart an instance</title>
 <p>To restart an instance:</p>
 <ol>

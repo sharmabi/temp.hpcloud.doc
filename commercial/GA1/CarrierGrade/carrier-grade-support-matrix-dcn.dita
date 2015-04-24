@@ -34,38 +34,51 @@
 Release Notes</xref>.</p>
 <section>
 <title>
+<!-- id="require" -->
+<!-- id="require" -->
 <!-- id="require" -->HP DCN Infrastructure Requirements and Recommendations</title>
 <!-- Taken from HP Distributed Cloud Networking 3.0.R2
 Installation Guide -->
 <p>In order to make use of the HP DCN, the data center environment must meet some key requirements as described in the following sections.</p>
 </section>
 <section>
-<title id="data-center-ip-network">Data Center IP Network</title>
+<title id="data-center-ip-network">
+<!-- id="data-center-ip-network" -->
+<!-- id="data-center-ip-network" -->Data Center IP Network</title>
 <p>HP VSP can be used in any data center with an IP network. HP VSC actively participates in the IP routing infrastructure. HP VSCs can run OSPF or IS-IS for the IGP in addition to BGP, but integration with the IGP is not mandatory.</p>
 <p>BGP is used to form a federation of HP VSCs and synchronize the HP VSP network information. In addition, BGP is also used to exchange routing information with the data center provider edge router.</p>
 </section>
 <section>
-<title id="ntp-infrastructure">NTP Infrastructure</title>
+<title id="ntp-infrastructure">
+<!-- id="ntp-infrastructure" -->
+<!-- id="ntp-infrastructure" -->NTP Infrastructure</title>
 <p>Because HP VSP is a distributed system, it is important that the different elements have a reliable reference clock to ensure the messages exchanged between the elements have meaningful timestamps. HP VSP relies on each of the elements having clocks synchronized with
 NTP.</p>
 <p>The HP VSD and HP VRS applications rely on the NTP facilities provided by the host operating system. The HP VSC, which is based on HP DCN OS, has an NTP client.</p>
 <p>HP recommends having at least three NTP reference clocks configured for each system.</p>
 </section>
 <section>
-<title id="domain-name-system">Domain Name System</title>
+<title id="domain-name-system">
+<!-- id="domain-name-system" -->
+<!-- id="domain-name-system" -->Domain Name System</title>
 <p>In scaled HP VSP deployments, the HP VSD functional elements can be distributed across machines into clusters of machines where the failover and load sharing mechanisms for the clusters rely on being referenced as a single DNS entity.</p>
 </section>
 <section>
-<title>
+<title id="certificate-authority">
+<!-- id="certificate-authority" -->
 <!-- id="certificate-authority" -->Certificate Authority</title>
 <p>The northbound ReST API on HP VSD is accessed within an SSL session. The HP VSD is able to use a self-signed certificate, but having a certificate from a certificate authority will enable client applications to avoid processing security warnings about unrecognized certificate authorities.</p>
 </section>
 <section>
-<title id="hardware">Hardware and Software Rerquirements</title>
+<title id="hardware">
+<!-- id="hardware" -->
+<!-- id="hardware" -->Hardware and Software Rerquirements</title>
 <!-- From DCN 3.0.R2 Release Notes http://h20565.www2.hp.com/hpsc/doc/public/display?sp4ts.oid=7268885&docId=emr_na-c04495116&docLocale=en_US -->
 </section>
 <section>
 <title>
+<!-- id="hp-vsd-hardware-and-software-requirements" -->
+<!-- id="hp-vsd-hardware-and-software-requirements" -->
 <!-- id="hp-vsd-hardware-and-software-requirements" -->HP VSD Hardware and Software Requirements</title>
 <p>The HP VSD software can run in one or more servers depending on performance and availability requirements. The following table describes the requirements for a single system server configuration. Contact HP for 
 guidance on larger scale deployments.</p>
@@ -118,7 +131,9 @@ NTP</entry>
 </table>
 </section>
 <section>
-<title id="hp-vsc-hardware-and-software-requirements">HP VSC Hardware and Software Requirements</title>
+<title id="hp-vsc-hardware-and-software-requirements">
+<!-- id="hp-vsc-hardware-and-software-requirements" -->
+<!-- id="hp-vsc-hardware-and-software-requirements" -->HP VSC Hardware and Software Requirements</title>
 <table>
 <tgroup cols="2">
 <colspec colname="col1"/>

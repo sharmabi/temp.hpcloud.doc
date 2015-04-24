@@ -58,17 +58,23 @@
 </ul>
 <section>
 <title>
+<!-- id="end-user-login" -->
+<!-- id="end-user-login" -->
 <!-- id="end-user-login" -->End User Login</title>
 </section>
 <section>
 <title>
+<!-- id="web" -->
+<!-- id="web" -->
 <!-- id="web" -->Web</title>
 <p>Users log in to the web Management Console as they would with any other
 web application. The Management Console checks with the AOK endpoint
 (e.g. https://aok.helion.example.com) in the background.</p>
 </section>
 <section>
-<title id="client">Client</title>
+<title id="client">
+<!-- id="client" -->
+<!-- id="client" -->Client</title>
 <p>If the strategy has been changed to something other than builtin (see
 below), then users connecting with the
 <xref href="/als/v1/user/client#client" >
@@ -90,7 +96,8 @@ strategy</i>.</li>
 clients.</p>
 </section>
 <section>
-<title>
+<title id="strategies">
+<!-- id="strategies" -->
 <!-- id="strategies" -->Strategies</title>
 <p>The term <i>strategy</i> refers to the method used to authenticate users.
 There are currently two supported strategies:</p>
@@ -122,7 +129,8 @@ use. This value must correspond exactly to one of the supported strategy
 names.</p>
 </section>
 <section>
-<title>
+<title id="configuration">
+<!-- id="configuration" -->
 <!-- id="configuration" -->Configuration</title>
 <p>To configure AOK, set the following keys in the AOK config using <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref-config" >
 <i>kato
@@ -236,7 +244,8 @@ specify the full config path to that option. For example:</p>
 </codeblock>
 </section>
 <section>
-<title>
+<title id="user-management">
+<!-- id="user-management" -->
 <!-- id="user-management" -->User Management</title>
 <p>When using AOK with any strategy other than 'builtin', users in Application Lifecycle Service
 will be created automatically for any user who successfully
@@ -259,7 +268,9 @@ external authentication system.</li>
 </ul>
 </section>
 <section>
-<title id="first-admin-user-setup">First Admin User Setup</title>
+<title id="first-admin-user-setup">
+<!-- id="first-admin-user-setup" -->
+<!-- id="first-admin-user-setup" -->First Admin User Setup</title>
 <p>When setting up an Application Lifecycle Service system using AOK, complete the "Set Up First
 Admin User" form shown by the web Management Console before configuring
 LDAP authentication. This creates an administrative user, and changes
@@ -298,7 +309,9 @@ first time.</p>
 </ul>
 </section>
 <section>
-<title id="regular-ldap-user-setup">Regular LDAP User Setup</title>
+<title id="regular-ldap-user-setup">
+<!-- id="regular-ldap-user-setup" -->
+<!-- id="regular-ldap-user-setup" -->Regular LDAP User Setup</title>
 <p>New users logging in to the Management Console for the first time using
 LDAP authentication will not be a member of any organization (and won't
 be able to do anything). An admin will have to add each user to an

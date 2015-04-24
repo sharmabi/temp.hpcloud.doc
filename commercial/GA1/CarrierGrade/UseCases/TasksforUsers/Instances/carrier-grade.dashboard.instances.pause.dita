@@ -20,7 +20,9 @@
 <p>
 <b>Note:</b> Pausing is different from <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.suspend.dita" >suspending an instance</xref>. Suspending stops the instance, stores the contents on the disk. the memory and vCPUs become available to create other instances.</p>
 <section>
-<title id="pause-an-instance">Pause an instance</title>
+<title id="pause-an-instance">
+<!-- id="pause-an-instance" -->
+<!-- id="pause-an-instance" -->Pause an instance</title>
 <p>To pause an instance:</p>
 <ol>
 <li>
@@ -40,7 +42,8 @@
 <b>Note:</b> Many of the commands on the <b>More</b> menu are not available for a paused instance.</p>
 </section>
 <section>
-<title>
+<title id="un-pause-an-instance">
+<!-- id="un-pause-an-instance" -->
 <!-- id="un-pause-an-instance" -->Un-pause an instance</title>
 <p>To unpause an instance:</p>
 <ol>

@@ -62,7 +62,9 @@
 </li>
 </ul>
 <section>
-<title id="welcome">Welcome Page</title>
+<title id="welcome">
+<!-- id="welcome" -->
+<!-- id="welcome" -->Welcome Page</title>
 <p>The top-level page of the Management Console displays quick links to the most commonly used resources:</p>
 <ul>
 <li>
@@ -81,7 +83,9 @@
 </ul>
 </section>
 <section>
-<title id="app-list">Applications List</title>
+<title id="app-list">
+<!-- id="app-list" -->
+<!-- id="app-list" -->Applications List</title>
 <p>The Applications list is accessible from the top menu. It shows all applications deployed under the current user's Organizations.</p>
 <p>The list shows:</p>
 <ul>
@@ -104,7 +108,9 @@
 <p>Clicking on the application name opens its Application View.</p>
 </section>
 <section>
-<title id="application-view">Application View</title>
+<title id="application-view">
+<!-- id="application-view" -->
+<!-- id="application-view" -->Application View</title>
 <p>The top navigation of the Application view gives the name and status of the application followed by its organization / space.</p>
 <p>This view also includes the following <b>Tabs</b>:</p>
 <ul>
@@ -139,12 +145,16 @@
 </ul>
 </section>
 <section>
-<title id="organization-list">Organizations List</title>
+<title id="organization-list">
+<!-- id="organization-list" -->
+<!-- id="organization-list" -->Organizations List</title>
 <p>The Organizations list is accessible from the top menu. It shows all <xref href="/helion/devplatform/1.2/als/user/deploy/orgs-spaces#orgs-spaces" >Organizations</xref> which the current user is a member of. The list is searchable by name.</p>
 <p>Clicking on any Organization name opens the Organization view.</p>
 </section>
 <section>
-<title id="organization-view">Organization View</title>
+<title id="organization-view">
+<!-- id="organization-view" -->
+<!-- id="organization-view" -->Organization View</title>
 <p>The Organizations page shows a list of all <xref href="/helion/devplatform/1.2/als/user/deploy/orgs-spaces#orgs-spaces" >Organizations</xref> that the current user is a member of. Depending on how ALS has been set up, it is possible be a member of only a single Organization.</p>
 <p>Clicking on the Organization's name opens a view of that organization, including the following tabs:</p>
 <ul>
@@ -179,7 +189,9 @@
 <b>Note</b>: There is currently no interface in the Management Console for Managers, Auditors, or Billing Managers to view or adjust billing/payment info and spending limits.</p>
 </section>
 <section>
-<title id="space-view">Space View</title>
+<title id="space-view">
+<!-- id="space-view" -->
+<!-- id="space-view" -->Space View</title>
 <ul>
 <li>
 <b>Apps</b>: A filterable list of applications in the Space. Clicking an app name opens an <xref href="#topic8908/user-console-app">administrative view of that application</xref>.</li>
@@ -216,7 +228,9 @@
 </ul>
 </section>
 <section>
-<title id="service-instance-view">Service Instance View</title>
+<title id="service-instance-view">
+<!-- id="service-instance-view" -->
+<!-- id="service-instance-view" -->Service Instance View</title>
 <p>Clicking a service instance's name anywhere in the interface brings up a view of that service instance showing the summary.</p>
 <p>The summary of a service displays:</p>
 <ul>
@@ -240,7 +254,8 @@ If a the service is a User Provided Service, new credentials can be added and ex
 <p>A list of applications that have bindings to this service instance. Clicking an app name opens an <xref href="/helion/devplatform/1.2/als/admin/console#applications" >administrative view of that application</xref>.</p>
 </section>
 <section>
-<title>
+<title id="sample-apps">
+<!-- id="sample-apps" -->
 <!-- id="sample-apps" -->Sample Applications</title>
 <p>The Sample Apps are collection of ready-to-run applications which can be deployed to Application Lifecycle Service by fetching the source code from the repository.</p>
 <p>Click the <b>Deploy App</b> button to start it on Application Lifecycle Service. You will be
@@ -248,7 +263,8 @@ prompted to choose a Space and Domain for the app if there are multiple
 options available.</p>
 </section>
 <section>
-<title>
+<title id="support">
+<!-- id="support" -->
 <!-- id="support" -->Support</title>
 <p>A list of resources for getting support on using the Management Console.</p>
 </section>

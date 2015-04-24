@@ -18,6 +18,8 @@
 <p>A volume type defines the characteristics of a volume. It usually maps to a set of capabilities of the storage back-end driver that is used for this volume.</p>
 <section>
 <title>
+<!-- id="create-a-volume-type" -->
+<!-- id="create-a-volume-type" -->
 <!-- id="create-a-volume-type" -->Create a volume type</title>
 <ol>
 <li>
@@ -42,7 +44,9 @@
 </ol>
 </section>
 <section>
-<title id="delete-a-volume-type">Delete a volume type</title>
+<title id="delete-a-volume-type">
+<!-- id="delete-a-volume-type" -->
+<!-- id="delete-a-volume-type" -->Delete a volume type</title>
 <ol>
 <li>
 <p>

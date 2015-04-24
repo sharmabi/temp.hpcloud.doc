@@ -194,7 +194,9 @@ gateway 10.200.74.1
 </li>
 </ol>
 <section>
-<title id="nextstep">Next step</title>
+<title id="nextstep">
+<!-- id="nextstep" -->
+<!-- id="nextstep" -->Next step</title>
 <p>
   <xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-cloud.dita" >Deploying the HLM Cloud</xref>
 </p>

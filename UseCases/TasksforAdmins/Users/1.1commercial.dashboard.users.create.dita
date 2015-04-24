@@ -18,6 +18,8 @@
 <p>As an admin, you can <xref href="#topic1584/createuser">create</xref> and <xref href="#topic1584/deleteuser">delete</xref> users.</p>
 <section>
 <title>
+<!-- id="createuser" -->
+<!-- id="createuser" -->
 <!-- id="createuser" -->Create a user</title>
 <p>To create a user:</p>
 <p>
@@ -54,6 +56,8 @@
 </section>
 <section>
 <title>
+<!-- id="deleteuser" -->
+<!-- id="deleteuser" -->
 <!-- id="deleteuser" -->Delete a user</title>
 <p>To delete a user:</p>
 <ol>

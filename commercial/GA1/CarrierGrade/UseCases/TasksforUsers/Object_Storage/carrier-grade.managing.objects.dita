@@ -22,6 +22,8 @@
 <b>Note:</b> The administrative user can perform all of the user tasks in addition to the admin tasks, such as <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Projects/carrier-grade.managing.projects.dita" >setting a quota for volumes</xref>.</p>
 <section>
 <title>
+<!-- id="managing-object-storage-as-a-user" -->
+<!-- id="managing-object-storage-as-a-user" -->
 <!-- id="managing-object-storage-as-a-user" -->Managing object storage as a user</title>
 <p>As a user, you can work with any object storage container associated with the active project.</p>
 <ul>
@@ -38,6 +40,8 @@
 </section>
 <section>
 <title>
+<!-- id="managing-object-storage-as-an-admin" -->
+<!-- id="managing-object-storage-as-an-admin" -->
 <!-- id="managing-object-storage-as-an-admin" -->Managing object storage as an admin</title>
 <p>As an admin user, you can work on all of the objects in your domain, regardless of which project the object is associated with.</p>
 <p>Access the admin object commands using the <b>Object Store</b> panel on the <b>Project</b> dashboard.</p>

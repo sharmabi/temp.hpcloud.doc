@@ -18,6 +18,8 @@
 <p>After you've created one or more volumes, you can attach them to instances, one instance at a time.</p>
 <section>
 <title>
+<!-- id="attach-a-volume-to-an-instance" -->
+<!-- id="attach-a-volume-to-an-instance" -->
 <!-- id="attach-a-volume-to-an-instance" -->Attach a volume to an instance</title>
 <ol>
 <li>
@@ -46,7 +48,9 @@
 <p>The dashboard shows the instance to which the volume is now attached and the device name. You can view the status of a volume in the Volumes tab of the dashboard. The volume is either Available or In-use. Now you can log in to the instance and mount, format, and use the disk.</p>
 </section>
 <section>
-<title id="detach-a-volume-from-a-vm-instance">Detach a volume from a VM instance</title>
+<title id="detach-a-volume-from-a-vm-instance">
+<!-- id="detach-a-volume-from-a-vm-instance" -->
+<!-- id="detach-a-volume-from-a-vm-instance" -->Detach a volume from a VM instance</title>
 <ol>
 <li>
 <p>

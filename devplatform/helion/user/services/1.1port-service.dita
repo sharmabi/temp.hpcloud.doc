@@ -52,7 +52,9 @@ web:</xref> is set to
 </li>
 </ul>
 <section>
-<title id="requesting-a-port">Requesting a Port</title>
+<title id="requesting-a-port">
+<!-- id="requesting-a-port" -->
+<!-- id="requesting-a-port" -->Requesting a Port</title>
 <p>Additional ports are provisioned like any other data service. To request a port with the Helion command-line client:</p>
 <codeblock>
   <codeph>helion create-service harbor debug-port
@@ -132,7 +134,8 @@ service</b>
 </xref> command.</p>
 </section>
 <section>
-<title>
+<title id="port-service-env-vars">
+<!-- id="port-service-env-vars" -->
 <!-- id="port-service-env-vars" -->Harbor Environment Variables</title>
 <p>If there is only one Harbor service, the <b>HELION_HARBOR</b> environment variable can be used to get the internal port
 number.</p>
@@ -177,7 +180,9 @@ UDP_SERVICE_PORT=${!UDP_SERVICE_NAME}
 separate bash script. Brace expansion and grouping cannot be used directly in YAML files.</p>
 </section>
 <section>
-<title id="setting-the-port-protocols">Setting the Port Protocols</title>
+<title id="setting-the-port-protocols">
+<!-- id="setting-the-port-protocols" -->
+<!-- id="setting-the-port-protocols" -->Setting the Port Protocols</title>
 <p>Harbor supports both the TCP and UDP protocols. When you provision a service with Harbor it will create a TCP enabled port by default. If you want to have a UDP port provisioned instead, you simply prefix your
 service name with udp, for example:</p>
 <codeblock>
@@ -194,6 +199,8 @@ For example:</p>
 </section>
 <section>
 <title>
+<!-- id="multiple-application-instances" -->
+<!-- id="multiple-application-instances" -->
 <!-- id="multiple-application-instances" -->Multiple Application Instances</title>
 <p>Harbor recognizes when you have multiple instances of your app running and will update the available app backends accordingly.</p>
 <ul>
@@ -208,6 +215,8 @@ added later are queued.</li>
 </section>
 <section>
 <title>
+<!-- id="https-via-harbor" -->
+<!-- id="https-via-harbor" -->
 <!-- id="https-via-harbor" -->HTTPS via Harbor</title>
 <p>SSL termination of HTTPS to applications hosted on Application Lifecycle Service normally
 happens at the Router.</p>
@@ -228,6 +237,8 @@ specification must always be added.</p>
 </section>
 <section>
 <title>
+<!-- id="https-container-proxy" -->
+<!-- id="https-container-proxy" -->
 <!-- id="https-container-proxy" -->HTTPS Container Proxy</title>
 <p>If you are using a framework such as Python or Perl which sets up uWSGI
 (or any other framework that provides its own intermediate web server)
@@ -256,7 +267,9 @@ directory. For example:</p>
 own intermediate web server instead.</p>
 </section>
 <section>
-<title id="multiple-ssl-certificates">Multiple SSL Certificates</title>
+<title id="multiple-ssl-certificates">
+<!-- id="multiple-ssl-certificates" -->
+<!-- id="multiple-ssl-certificates" -->Multiple SSL Certificates</title>
 <p>If your application uses multiple SSL certificates, use the following
 naming scheme:</p>
 <ul>

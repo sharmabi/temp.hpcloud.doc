@@ -26,6 +26,8 @@
 </p>
 <section>
 <title>
+<!-- id="buildpack-config-vars-deprecated" -->
+<!-- id="buildpack-config-vars-deprecated" -->
 <!-- id="buildpack-config-vars-deprecated" -->Buildpack config_vars Deprecated</title>
 <ul>
 <li>
@@ -58,6 +60,8 @@ set environment variables. This mechanism is fully supported in Application Life
 </section>
 <section>
 <title>
+<!-- id="legacy-buildpack-and-environment-variables" -->
+<!-- id="legacy-buildpack-and-environment-variables" -->
 <!-- id="legacy-buildpack-and-environment-variables" -->Legacy Buildpack and Environment Variables</title>
 <p>When using the <xref href="/als/v1/user/deploy/buildpack#buildpacks" >
 <i>Legacy
@@ -72,7 +76,9 @@ restarted.</p>
 changing the values in <i>manifest.yml</i>.</p>
 </section>
 <section>
-<title id="service-gateway-log-errors-in-maintenance-mode">Service Gateway Log Errors in Maintenance Mode</title>
+<title id="service-gateway-log-errors-in-maintenance-mode">
+<!-- id="service-gateway-log-errors-in-maintenance-mode" -->
+<!-- id="service-gateway-log-errors-in-maintenance-mode" -->Service Gateway Log Errors in Maintenance Mode</title>
 <p>With Application Lifecycle Service set in <xref href="/als/v1/admin/console/customize#console-settings" >
 <i>Maintenance
 Mode</i>
@@ -86,7 +92,8 @@ processes will report the following error once per minute:</p>
 reconnect once the Controller is taken out of Maintenance Mode.</p>
 </section>
 <section>
-<title>
+<title id="nodes-with-fatal-or-perpetually-starting-processes">
+<!-- id="nodes-with-fatal-or-perpetually-starting-processes" -->
 <!-- id="nodes-with-fatal-or-perpetually-starting-processes" -->Nodes with FATAL or perpetually STARTING processes</title>
 <p>If the Core node of an Application Lifecycle Service cluster is offline for more than 90
 seconds, <codeph>kato status</codeph> will show processes on other
@@ -98,7 +105,8 @@ processes) or <codeph>kato restart</codeph> (for STARTING
 processes) on all affected nodes.</p>
 </section>
 <section>
-<title>
+<title id="avoiding-app-reliance-on-ip-addresses">
+<!-- id="avoiding-app-reliance-on-ip-addresses" -->
 <!-- id="avoiding-app-reliance-on-ip-addresses" -->Avoiding App Reliance on IP Addresses</title>
 <p>Cluster configurations make use of private IP addresses for identifying
 the various cluster nodes. Best practice is to avoid the literal use of
@@ -136,7 +144,8 @@ the app's config as needed, then add this script to the pre-running
 hooks.</p>
 </section>
 <section>
-<title>
+<title id="community-forums">
+<!-- id="community-forums" -->
 <!-- id="community-forums" -->Community Forums</title>
 <p>Please keep up to date with the latest Known Issues, FAQs and
 announcements in our <xref href="https://community.dev.hp.com/t5/Forum/bd-p/cloud_board" scope="external" format="html" >online Application Lifecycle Service

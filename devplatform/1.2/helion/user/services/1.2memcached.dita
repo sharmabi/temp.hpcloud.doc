@@ -28,7 +28,9 @@
 applications and frameworks. It is available in Application Lifecycle Service as a service
 which can be shared by application instances.</p>
 <section>
-<title id="using-the-service">Using the Service</title>
+<title id="using-the-service">
+<!-- id="using-the-service" -->
+<!-- id="using-the-service" -->Using the Service</title>
 <p>As with other <xref href="/helion/devplatform/1.2/als/user/services/data-services#data-services" >data services</xref>, the
 location and port of the memcached service is exposed to the application
 via environment variables: MEMCACHE_URL or VCAP_SERVICES.</p>
@@ -59,7 +61,9 @@ authentication via SASL.</p>
 <b>Warning:</b> Running Memcached <b>without</b> SASL enabled is insecure and should only be done if all system users are trusted. Any Application Lifecycle Service user can connect to the provisioned service instance if the IP address and port is discovered.</p>
 </section>
 <section>
-<title id="django-example-using-memcached">Django Example using Memcached</title>
+<title id="django-example-using-memcached">
+<!-- id="django-example-using-memcached" -->
+<!-- id="django-example-using-memcached" -->Django Example using Memcached</title>
 <p>The <xref href="https://github.com/Stackato-Apps/django-gtd" scope="external" format="html" >Django GTD</xref> sample
 application uses the simpler VCAP_SERVICES method for connecting to the
 Memcached service without authentication.</p>

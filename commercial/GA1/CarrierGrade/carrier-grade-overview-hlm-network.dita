@@ -26,6 +26,8 @@ Network Interface</p>
 Example Network Configuration</p>
 <section>
 <title>
+<!-- id="KenobiNetworking-CustomerSupplied" -->
+<!-- id="KenobiNetworking-CustomerSupplied" -->
 <!-- id="KenobiNetworking-CustomerSupplied" -->Customer Supplied</title>
 <table outputclass="confluenceTable">
 <tgroup cols="3">
@@ -80,6 +82,8 @@ Example Network Configuration</p>
 </section>
 <section>
 <title>
+<!-- id="KenobiNetworking-CloudManaged" -->
+<!-- id="KenobiNetworking-CloudManaged" -->
 <!-- id="KenobiNetworking-CloudManaged" -->Cloud Managed</title>
 <table outputclass="confluenceTable">
 <tgroup cols="3">

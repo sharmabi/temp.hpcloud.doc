@@ -44,11 +44,15 @@
 </ul>
 <section>
 <title>
+<!-- id="Helion-services" -->
+<!-- id="Helion-services" -->
 <!-- id="Helion-services" -->HP Helion OpenStack Services- Functional Overview</title>
 <p>The following table outlines the functionality of HP Helion OpenStack services based on the type of users - Users and Administrators. For a complete description of these services, see the <xref href="../../../commercial/GA1/1.1commerical.services-overview.dita" >Services Overview</xref> page.</p>
 </section>
 <section>
-<title id="deploy-arch">Deployment architecture</title>
+<title id="deploy-arch">
+<!-- id="deploy-arch" -->
+<!-- id="deploy-arch" -->Deployment architecture</title>
 <p>You can deploy HP Helion OpenStack in two different environments depending on the hypervisor: KVM or ESX.</p>
 <p>The following diagram depicts a simplified deployment scenario using KVM.</p>
 <!-- This image is for alpha release only. Replace for beta -->
@@ -59,7 +63,9 @@
 Click to view larger image; click <b>Back</b> to return.</p>
 </section>
 <section>
-<title id="networkarch">Network architecture</title>
+<title id="networkarch">
+<!-- id="networkarch" -->
+<!-- id="networkarch" -->Network architecture</title>
 <p>The following information describes the network configuration for the <xref href="#topic2220/physical">physical networks</xref> and <xref href="#topic2220/virtual">virtual networks</xref>, which must be configured by the network administrator.</p>
 <table>
 <tgroup cols="2">
@@ -114,6 +120,8 @@ Click to view larger image; click <b>Back</b> to return.</p>
 </section>
 <section>
 <title>
+<!-- id="hardware-req" -->
+<!-- id="hardware-req" -->
 <!-- id="hardware-req" -->Hardware requirement</title>
 <p>For more information of Hardware configurations see the <xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-support-matrix.dita" >Support Matrix</xref>.</p>
 <p>

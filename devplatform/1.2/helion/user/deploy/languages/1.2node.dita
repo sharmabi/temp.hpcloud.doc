@@ -28,7 +28,9 @@
 to install Node packages automatically.</p>
 <p>Deployable <xref href="/helion/devplatform/1.2/appdev#node" >sample applications</xref> are available in this language.</p>
 <section>
-<title id="node-npm">NPM</title>
+<title id="node-npm">
+<!-- id="node-npm" -->
+<!-- id="node-npm" -->NPM</title>
 <p>Your application should list dependencies in a standard, top-level
 <xref href="https://docs.npmjs.com/getting-started/creating-node-modules" scope="external" format="html" >
 <i>package.json</i> file</xref>. Application Lifecycle Service
@@ -42,7 +44,8 @@ file.</p>
 <p>For NPM packages which include callable scripts or binaries, executable components are automatically added to the container's \$PATH, so a "global install" (<codeph>npm install -g</codeph>) is not required.</p>
 </section>
 <section>
-<title>
+<title id="host-and-port-environment-variables">
+<!-- id="host-and-port-environment-variables" -->
 <!-- id="host-and-port-environment-variables" -->Host and Port Environment Variables</title>
 <p>Deploying Node applications to Application Lifecycle Service requires changing some
 application settings to use instance-specific values. These values are
@@ -67,7 +70,9 @@ var host = process.env.VCAP_APP_HOST || "127.0.0.1";
 </codeblock>
 </section>
 <section>
-<title id="using-data-services">Using Data Services</title>
+<title id="using-data-services">
+<!-- id="using-data-services" -->
+<!-- id="using-data-services" -->Using Data Services</title>
 <p>Data services need to be configured with values from VCAP_SERVICES, DATABASE_URL, or a database-specific environment
 variable (see also <xref href="/helion/devplatform/1.2/als/user/services/data-services#database-accessing" >Using Configured Database
 Services</xref>).</p>

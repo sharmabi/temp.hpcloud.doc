@@ -14,7 +14,10 @@
  <!--permalink: /automation/--></p>
 <p>HP Cloud Service Automation (CSA) provides open, heterogeneous, extensible enterprise-grade cloud service lifecycle management to design and orchestrate full stack services. CSA embraces existing automation assets with an enhanced orchestration engine, which provides IT with an informed, transparent delivery of secure compliant services for the hybrid cloud.</p>
 <section>
-<title id="core-features">Core Features</title>
+<title id="core-features">
+<!-- id="core-features" -->
+<!-- id="core-features" -->
+<!-- id="core-features" -->Core Features</title>
 <p>Consists of platform-level core capabilities such as subscriber portal, service designer, and role-based access and includes:</p>
 <ul>
 <li>
@@ -41,7 +44,10 @@
 </ul>
 </section>
 <section>
-<title id="hp-csa-technical-information-and-manuals-a-z">HP CSA Technical Information and Manuals (A-Z)</title>
+<title id="hp-csa-technical-information-and-manuals-a-z">
+<!-- id="hp-csa-technical-information-and-manuals-a-z" -->
+<!-- id="hp-csa-technical-information-and-manuals-a-z" -->
+<!-- id="hp-csa-technical-information-and-manuals-a-z" -->HP CSA Technical Information and Manuals (A-Z)</title>
 <ul>
 <li>
 <p>

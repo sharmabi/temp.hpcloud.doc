@@ -46,7 +46,9 @@ filesystem.</p>
 </ul>
 <p>Users have access to the main Sample Applications interface (see the <xref href="../../../../devplatform/helion/user/1.1index.dita" >Application Lifecycle Service User Guide</xref>, but do not have access to add new applications or add/modify the definition file.</p>
 <section>
-<title id="creating-an-app-store">Creating Sample Applications</title>
+<title id="creating-an-app-store">
+<!-- id="creating-an-app-store" -->
+<!-- id="creating-an-app-store" -->Creating Sample Applications</title>
 <p>The Sample Applications interface exposes multiple "stores" which specify the
 available applications. These stores are sourced from definition files
 specified in the main <xref href="/helion/devplatform/1.1/als/admin/console#settings" >Settings</xref> page of
@@ -54,7 +56,8 @@ the Management Console or set using <xref href="/helion/devplatform/1.1/als/admi
 config</xref>.</p>
 </section>
 <section>
-<title>
+<title id="app-store-definition">
+<!-- id="app-store-definition" -->
 <!-- id="app-store-definition" -->Sample Applications Definition File</title>
 <p>
 <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-YAML" >YAML</xref> files describe the settings for each set of apps, including the container and a link to the source  repository for
@@ -109,7 +112,9 @@ apps:
 and <b>apps</b>.</p>
 </section>
 <section>
-<title id="store">store</title>
+<title id="store">
+<!-- id="store" -->
+<!-- id="store" -->store</title>
 <p>Contains entries that define the container for each set of Sample Applications.</p>
 <p>
 <b>title</b>:Text used as a display name for the Sample Applications in the Management Console.</p>
@@ -120,6 +125,8 @@ and <b>apps</b>.</p>
 </section>
 <section>
 <title>
+<!-- id="apps" -->
+<!-- id="apps" -->
 <!-- id="apps" -->apps</title>
 <p>This is an array of items (see YAML format above), one for each app in the container. Each app is defined by the following fields:</p>
 <p>
@@ -208,12 +215,16 @@ URL, <b>default</b>, or other variable value.</dd>
 application's <i>manifest.yml</i> file.</p>
 </section>
 <section>
-<title id="hosting-the-store-definition-files">Hosting the Definition Files</title>
+<title id="hosting-the-store-definition-files">
+<!-- id="hosting-the-store-definition-files" -->
+<!-- id="hosting-the-store-definition-files" -->Hosting the Definition Files</title>
 <p>The YAML files defining the stores can be served via HTTP or HTTPS by
 any web server at a URL accessible from the Cloud Controller.</p>
 </section>
 <section>
-<title id="adding-the-app-store-to-helion">Adding the Sample Applications to Application Lifecycle Service</title>
+<title id="adding-the-app-store-to-helion">
+<!-- id="adding-the-app-store-to-helion" -->
+<!-- id="adding-the-app-store-to-helion" -->Adding the Sample Applications to Application Lifecycle Service</title>
 <ol>
 <li>Log into the <xref href="/helion/devplatform/1.1/als/user/console#management-console" >Management
 Console</xref>,</li>

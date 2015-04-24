@@ -46,7 +46,9 @@
 </li>
 </ul>
 <section>
-<title id="install">Installing HP Helion OpenStack</title>
+<title id="install">
+<!-- id="install" -->
+<!-- id="install" -->Installing HP Helion OpenStack</title>
 <p>Review the following topics before you start the installation:</p>
 <ul>
 <li>
@@ -60,7 +62,8 @@
 </ul>
 </section>
 <section>
-<title>
+<title id="related">
+<!-- id="related" -->
 <!-- id="related" -->Related documentation</title>
 <p>This topic provides you links to OpenStack documentation that you might find helpful when working with HP Helion OpenStack.:</p>
 <ul>

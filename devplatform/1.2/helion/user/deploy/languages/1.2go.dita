@@ -26,17 +26,21 @@
 <p>Go applications (<xref href="http://golang.org/" scope="external" format="html" >golang</xref>) are supported through a
 BuildPack framework and can be pushed using the Application Lifecycle Service.</p>
 <section>
-<title id="local-install">Local Installation</title>
+<title id="local-install">
+<!-- id="local-install" -->
+<!-- id="local-install" -->Local Installation</title>
 <p>To build Go code, install it locally using one of the <xref href="http://code.google.com/p/go/downloads/list" scope="external" format="html" >Go packages</xref>.</p>
 </section>
 <section>
-<title>
+<title id="deployment">
+<!-- id="deployment" -->
 <!-- id="deployment" -->Deployment</title>
 <p>Here is a basic deployment setup based on the <xref href="https://github.com/Stackato-Apps/go-hello-buildpack" scope="external" format="html" >"Hello World" Go sample
 application</xref>.</p>
 </section>
 <section>
-<title>
+<title id="files">
+<!-- id="files" -->
 <!-- id="files" -->Files</title>
 <p>You will need the following files to deploy a Go app on Application Lifecycle Service:</p>
 <codeblock>
@@ -48,7 +52,8 @@ manifest.yml
 </codeblock>
 </section>
 <section>
-<title>
+<title id="app-go">
+<!-- id="app-go" -->
 <!-- id="app-go" -->app.go</title>
 <p>The Go buildpack recognizes Go apps by the existence of a .go source
 file anywhere in the repository:</p>
@@ -77,7 +82,9 @@ func hello(w http.ResponseWriter, req *http.Request) {
 </codeblock>
 </section>
 <section>
-<title id="procfile">Procfile</title>
+<title id="procfile">
+<!-- id="procfile" -->
+<!-- id="procfile" -->Procfile</title>
 <p>To run your web process, you need to declare what command to use. In
 this case, we simply need to execute our Go program. Use Procfile to
 declare how your web process type is run:</p>
@@ -88,6 +95,8 @@ declare how your web process type is run:</p>
 </section>
 <section>
 <title>
+<!-- id="godir" -->
+<!-- id="godir" -->
 <!-- id="godir" -->.godir</title>
 <p>The <codeph>go</codeph> tool uses the directory name of your
 project to name executables and determine package import paths. Create
@@ -100,6 +109,8 @@ a file called .godir, in your project root, containing the path from
 </section>
 <section>
 <title>
+<!-- id="manifest-yml" -->
+<!-- id="manifest-yml" -->
 <!-- id="manifest-yml" -->manifest.yml</title>
 <p>This file is optional, as the framework will automatically be detected
 by Application Lifecycle Service. However, it can still be used to set the app name,
@@ -114,6 +125,8 @@ configure settings, create services, etc. See the <xref href="../../../../../../
 </section>
 <section>
 <title>
+<!-- id="examples" -->
+<!-- id="examples" -->
 <!-- id="examples" -->Examples</title>
 <ul>
 <li>

@@ -18,6 +18,8 @@
 <p>An object is the basic storage entity that represents a file you store in the OpenStack Object Storage system. When you upload data to OpenStack Object Storage, the data is stored as-is (no compression or encryption) and consists of a location (container), the object's name, and any metadata consisting of key/value pairs</p>
 <section>
 <title>
+<!-- id="uploading-an-object-into-a-container" -->
+<!-- id="uploading-an-object-into-a-container" -->
 <!-- id="uploading-an-object-into-a-container" -->Uploading an object into a container</title>
 <ol>
 <li>
@@ -58,6 +60,8 @@
 </section>
 <section>
 <title>
+<!-- id="downloading-objects-from-a-container" -->
+<!-- id="downloading-objects-from-a-container" -->
 <!-- id="downloading-objects-from-a-container" -->Downloading objects from a container</title>
 <ol>
 <li>

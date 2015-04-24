@@ -22,6 +22,8 @@
 <p>The network is not installed or managed by the cloud. You must install and manage the network and make sure there is a route to the Management network as described in this section.</p>
 <section>
 <title>
+<!-- id="network" -->
+<!-- id="network" -->
 <!-- id="network" -->Preparing all networks</title>
 <p>To ensure a successful installation, you must satisfy these network configuration requirements:</p>
 <ul>
@@ -48,6 +50,8 @@
 </section>
 <section>
 <title>
+<!-- id="network_KVM" -->
+<!-- id="network_KVM" -->
 <!-- id="network_KVM" -->Preparing the network for a KVM installation</title>
 <p>If you are installing HP Helion OpenStack with KVM hypervisor support, you must configure your network as shown in the following diagram.</p>
 <p>
@@ -64,6 +68,8 @@
 </section>
 <section>
 <title>
+<!-- id="network_ESX" -->
+<!-- id="network_ESX" -->
 <!-- id="network_ESX" -->Preparing the network for an ESX installation</title>
 <p>If you are installing HP Helion OpenStack for ESX hypervisor support, you must configure your network as shown in the following diagram.</p>
 <p>
@@ -76,7 +82,9 @@
 </ul>
 </section>
 <section>
-<title id="install_network_ESX">Installing networks for ESX</title>
+<title id="install_network_ESX">
+<!-- id="install_network_ESX" -->
+<!-- id="install_network_ESX" -->Installing networks for ESX</title>
 <p>For ESX deployments, you must install and configure two specific networks:</p>
 <ol>
 <li>
@@ -103,7 +111,9 @@
 -->
 </section>
 <section>
-<title id="other_network_ESX">Other customer responsibilities and requirements for ESX</title>
+<title id="other_network_ESX">
+<!-- id="other_network_ESX" -->
+<!-- id="other_network_ESX" -->Other customer responsibilities and requirements for ESX</title>
 <p>You are responsible for the following before beginning the HP Helion OpenStack installation:</p>
 <ul>
 <li>

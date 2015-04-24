@@ -24,6 +24,8 @@
 </codeblock>
 <section>
 <title>
+<!-- id="add-a-subnet" -->
+<!-- id="add-a-subnet" -->
 <!-- id="add-a-subnet" -->Add a subnet</title>
 <ol>
 <li>
@@ -74,7 +76,9 @@
 </ol>
 </section>
 <section>
-<title id="deleteport">Delete a subnet</title>
+<title id="deleteport">
+<!-- id="deleteport" -->
+<!-- id="deleteport" -->Delete a subnet</title>
 <p>Before you delete a subnet, you must first <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.ports.dita" >delete all ports</xref> associated with the subnet.</p>
 <ol>
 <li>

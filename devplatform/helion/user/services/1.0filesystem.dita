@@ -36,7 +36,9 @@ is not deleted) or if the server is restarted.</li>
 <li>Conserve space on filesystems allocated within the VM instance by referencing the persistent filesystem instead.</li>
 </ol>
 <section>
-<title id="creating-a-persistent-file-system">Creating A Persistent File System</title>
+<title id="creating-a-persistent-file-system">
+<!-- id="creating-a-persistent-file-system" -->
+<!-- id="creating-a-persistent-file-system" -->Creating A Persistent File System</title>
 <p>A filesystem service can be configured in your <i>manifest.yml</i> file:</p>
 <codeblock>
   <codeph>services:
@@ -62,7 +64,8 @@ command:</p>
 </codeblock>
 </section>
 <section>
-<title>
+<title id="using-a-persistent-file-system">
+<!-- id="using-a-persistent-file-system" -->
 <!-- id="using-a-persistent-file-system" -->Using A Persistent File System</title>
 <p>
   <b>Note</b>
@@ -150,7 +153,8 @@ configure a filesystem service and create a symlink to it for use by the
 app. (see example below)</p>
 </section>
 <section>
-<title>
+<title id="example-of-using-a-persistent-file-system">
+<!-- id="example-of-using-a-persistent-file-system" -->
 <!-- id="example-of-using-a-persistent-file-system" -->Example of Using A Persistent File System</title>
 <p>
   <b>Note</b>

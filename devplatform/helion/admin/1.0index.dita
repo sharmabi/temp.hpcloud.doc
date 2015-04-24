@@ -32,12 +32,16 @@ guide covers how to set it up and how to configure it for your end
 users.</p>
 <section>
 <title>
+<!-- id="wizard-based-cluster-creation" -->
+<!-- id="wizard-based-cluster-creation" -->
 <!-- id="wizard-based-cluster-creation" -->Wizard-Based Cluster Creation</title>
 <p>You can easily create and access Application Lifecycle Service clusters from the <xref href="../../../devplatform/1.0devplatform.deploy-ALS.dita" >Project Dashboard</xref>
 </p>
 </section>
 <section>
 <title>
+<!-- id="management-console" -->
+<!-- id="management-console" -->
 <!-- id="management-console" -->Helion Development Platform Management Console</title>
 <ul>
 <li>
@@ -50,6 +54,8 @@ users.</p>
 </section>
 <section>
 <title>
+<!-- id="server-configuration" -->
+<!-- id="server-configuration" -->
 <!-- id="server-configuration" -->Advanced/Manual Server Configuration</title>
 <p>This section covers advanced configuration settings that allow you to modify default cluster component behavior.</p>
 <ul>
@@ -162,6 +168,8 @@ upgrade</xref>
 </section>
 <section>
 <title>
+<!-- id="cluster-configuration" -->
+<!-- id="cluster-configuration" -->
 <!-- id="cluster-configuration" -->Advanced/Manual Cluster Configuration</title>
 <p>This section provides information on how to set up a standalone cluster and modify default cluster level settings.</p>
 <ul>
@@ -250,7 +258,9 @@ Principles</xref>
 </ul>
 </section>
 <section>
-<title id="best-practices">Best Practices</title>
+<title id="best-practices">
+<!-- id="best-practices" -->
+<!-- id="best-practices" -->Best Practices</title>
 <ul>
 <li>
 <xref href="../../../devplatform/helion/admin/best-practices/1.0index.dita" >Best Practices</xref>
@@ -278,7 +288,8 @@ Storage</xref>
 </ul>
 </section>
 <section>
-<title>
+<title id="reference">
+<!-- id="reference" -->
 <!-- id="reference" -->Reference</title>
 <ul>
 <li>

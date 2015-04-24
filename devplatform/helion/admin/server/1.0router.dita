@@ -46,6 +46,8 @@ between multiple instances (containers) as required.</p>
 "wss://" secure web sockets) and <xref href="http://www.chromium.org/spdy" scope="external" format="html" >SPDY</xref>.</p>
 <section>
 <title>
+<!-- id="settings" -->
+<!-- id="settings" -->
 <!-- id="settings" -->Settings</title>
 <p>The Router is configured using <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref-config" >
 <i>kato config</i>
@@ -108,7 +110,9 @@ configuration. Disabled if empty (default). Valid values are:</p>
 snippets to help prevent frame based clickjacking.</p>
 </section>
 <section>
-<title id="websockets">WebSockets</title>
+<title id="websockets">
+<!-- id="websockets" -->
+<!-- id="websockets" -->WebSockets</title>
 <p>Applications using web sockets must use the VCAP_APP_PORT or PORT
 <xref href="/als/v1/user/reference/environment#environment-variables" >
 <i>environment variables</i>
@@ -116,7 +120,8 @@ snippets to help prevent frame based clickjacking.</p>
 to set the default listener port of the WebSocket server.</p>
 </section>
 <section>
-<title>
+<title id="router-spdy">
+<!-- id="router-spdy" -->
 <!-- id="router-spdy" -->SPDY</title>
 <p>
 <xref href="http://dev.chromium.org/spdy/" scope="external" format="html" >SPDY</xref> is a protocol developed by Google

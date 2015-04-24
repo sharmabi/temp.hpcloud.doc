@@ -42,6 +42,8 @@
 <p>Administrators can configure external data services to work in the same way that core System Services do, providing users and applications with access to existing software and infrastructure.</p>
 <section>
 <title>
+<!-- id="service-brokers" -->
+<!-- id="service-brokers" -->
 <!-- id="service-brokers" -->Service Brokers</title>
 <p>Service brokers are RESTful web services which connect Helion to services that the hosted apps can consume.</p>
 <p>The built-in system services have their own service brokers which handle the provisioning of service instances, but you can add your own service brokers to provide custom services (databases, message queues, etc.) to end users.</p>
@@ -56,12 +58,16 @@
 </section>
 <section>
 <title>
+<!-- id="cf-services-connector-nodejs" -->
+<!-- id="cf-services-connector-nodejs" -->
 <!-- id="cf-services-connector-nodejs" -->CF Services Connector (Node.js)</title>
 <p>ActiveState has created an open-source service broker library written in Node.js called <i>cf-services-connector</i> to help you create custom service brokers.</p>
 <p>You can install the library with <i>npm install cf-services-connector</i> or include it in the <i>package.json</i> file of your service broker implementation.</p>
 </section>
 <section>
 <title>
+<!-- id="example-echo-service" -->
+<!-- id="example-echo-service" -->
 <!-- id="example-echo-service" -->Example Echo Service</title>
 <p>The <i>cf-services-connector-nodejs</i> repository provides an example service broker called <xref href="https://github.com/ActiveState/cf-services-connector-nodejs/tree/master/example/echo-service" scope="external" format="html" >
 <b>echo-service</b>

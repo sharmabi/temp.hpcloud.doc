@@ -100,7 +100,9 @@
 </li>
 </ul>
 <section>
-<title id="passwordless">Passwordless SSH Authentication</title>
+<title id="passwordless">
+<!-- id="passwordless" -->
+<!-- id="passwordless" -->Passwordless SSH Authentication</title>
 <p>Routine cluster configuration and maintenance operations such as cluster
 upgrades are simpler if the cluster nodes are configured with
 <xref href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys#Key-Based_SSH_Logins" scope="external" format="html" >key-based passwordless SSH login</xref>.</p>
@@ -116,7 +118,8 @@ afterwards.</p>
 <xref href="https://help.ubuntu.com/community/SSH/OpenSSH/Configuring#Disable_Password_Authentication" scope="external" format="html" >disable password authentication</xref> if desired.</p>
 </section>
 <section>
-<title>
+<title id="applying-updates">
+<!-- id="applying-updates" -->
 <!-- id="applying-updates" -->Applying Updates</title>
 <p>Major version upgrades of Application Lifecycle Service can be done using <xref href="/helion/devplatform/1.1/als/admin/server/upgrade#upgrade" >
 <i>kato node
@@ -164,12 +167,15 @@ prevent this, use the <codeph>--no-restart</codeph> option.</p>
 use the <b>--local</b> option.</p>
 </section>
 <section>
-<title>
+<title id="bestpractices-ubuntu-security">
+<!-- id="bestpractices-ubuntu-security" -->
 <!-- id="bestpractices-ubuntu-security" -->Security Patches</title>
 <p>Both the ALS VM and the Docker base image used for application containers run Ubuntu. To maintain an up-to-date system with all known security patches in place, the VM and Docker base images should be updated with the following process whenever an important security update becomes available in the Ubuntu repositories.</p>
 </section>
 <section>
-<title id="upgrade-vm">Upgrade the VM</title>
+<title id="upgrade-vm">
+<!-- id="upgrade-vm" -->
+<!-- id="upgrade-vm" -->Upgrade the VM</title>
 <p>To upgrade the VM, run the following command on all cluster nodes, one node at a time:</p>
 <codeblock>
   <codeph>sudo unattended-upgrades -d
@@ -188,6 +194,8 @@ ensure that all new kernels, modules, and libraries are loaded.</p>
 </section>
 <section>
 <title>
+<!-- id="upgrade-docker" -->
+<!-- id="upgrade-docker" -->
 <!-- id="upgrade-docker" -->Upgrade the Docker image</title>
 <p>The base Docker image used for application containers should also be upgraded once the VM is up-to-date. Perform the following steps on each DEA node in the cluster, one node at a time:</p>
 <ol>
@@ -238,6 +246,8 @@ RUN apt-get clean &amp;&amp; apt-get autoremove
 </section>
 <section>
 <title>
+<!-- id="bestpractices-migration" -->
+<!-- id="bestpractices-migration" -->
 <!-- id="bestpractices-migration" -->Backup &amp; Migration</title>
 <p>This section describes backing up Application Lifecycle Service data and importing it into a
 new Application Lifecycle Service system. The export/import cycle is required for:</p>
@@ -248,6 +258,8 @@ new Application Lifecycle Service system. The export/import cycle is required fo
 </section>
 <section>
 <title>
+<!-- id="limitations" -->
+<!-- id="limitations" -->
 <!-- id="limitations" -->Limitations</title>
 <p>Before deciding on a backup, upgrade or migration strategy, it's
 important to understand what data the Application Lifecycle Service system can save, and what
@@ -256,17 +268,22 @@ important when migrating to a new cluster.</p>
 </section>
 <section>
 <title>
+<!-- id="custom-services" -->
+<!-- id="custom-services" -->
 <!-- id="custom-services" -->Custom Services</title>
 <p>Application Lifecycle Service can export and import data from built-in data services running on Application Lifecycle Service nodes, but it has no mechanism to handle data in <xref href="/helion/devplatform/1.1/als/admin/cluster/external-db#external-db" >external databases</xref> unless
 <i>kato export|import</i> has also been modified to recognize the custom service.</p>
 <p>Backing up or moving such databases should be handled separately from databases implemented as an Application Lifecycle Service data service. User applications should be reconfigured and/or redeployed after the update to ensure they connect properly to the new database host.</p>
 </section>
 <section>
-<title id="hard-coded-database-connection-info">Hard-coded Database Connection Info</title>
+<title id="hard-coded-database-connection-info">
+<!-- id="hard-coded-database-connection-info" -->
+<!-- id="hard-coded-database-connection-info" -->Hard-coded Database Connection Info</title>
 <p>Applications which write database connection details during staging rather than taking them from environment variables at run time must be re-staged (redeployed or updated) to pick up the new service location and credentials. Restarting the application will not automatically force restaging.</p>
 </section>
 <section>
-<title>
+<title id="deas">
+<!-- id="deas" -->
 <!-- id="deas" -->DEAs</title>
 <p>Droplet Execution Agent (DEA) nodes are not migrated directly from old
 nodes to new nodes. Instead, the application droplets (zip files
@@ -274,7 +291,8 @@ containing staged applications) are re-deployed to new DEA nodes from
 the Controller.</p>
 </section>
 <section>
-<title>
+<title id="exporting-the-server-data">
+<!-- id="exporting-the-server-data" -->
 <!-- id="exporting-the-server-data" -->Exporting the server data</title>
 <p>Data export is done with the <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-data-export" >
 <i>kato data
@@ -316,7 +334,8 @@ system in <xref href="/helion/devplatform/1.1/als/admin/console#cloud-controller
 (e.g. during a scheduled maintenance window) before exporting.</p>
 </section>
 <section>
-<title>
+<title id="scheduled-backups">
+<!-- id="scheduled-backups" -->
 <!-- id="scheduled-backups" -->Scheduled backups</title>
 <p>Regular backup of controller data, apps, droplets, and service data is
 recommended for any production system. Implementation of a regular
@@ -332,7 +351,8 @@ mounted external filesystem.</p>
 some shell operations performed in the export require <codeph>sudo</codeph> when run interactively. For clusters, password authentication will have to be <xref href="https://help.ubuntu.com/community/SSH/OpenSSH/Configuring#disable-password-authentication" scope="external" format="html" >disabled</xref> between the Core node and all other nodes. The command should be run on the node hosting the <i>filesystem</i> role, as some shell commands need to be run locally for that service.</p>
 </section>
 <section>
-<title>
+<title id="importing-the-server-data">
+<!-- id="importing-the-server-data" -->
 <!-- id="importing-the-server-data" -->Importing the server data</title>
 <p>To import Application Lifecycle Service data, transfer the exported .tgz file to the target VM or note the hostname of the old VM / Core node.</p>
 <p>
@@ -363,7 +383,9 @@ some shell operations performed in the export require <codeph>sudo</codeph> when
 </codeblock>
 </section>
 <section>
-<title id="upgrade">Upgrading</title>
+<title id="upgrade">
+<!-- id="upgrade" -->
+<!-- id="upgrade" -->Upgrading</title>
 <p>The <i>kato node upgrade</i> command was added in this version to allow upgrading Application Lifecycle Service clusters in place. See
 <xref href="/helion/devplatform/1.1/als/admin/server/upgrade#upgrade" >Upgrading Application Lifecycle Service</xref> for full
 instructions.</p>
@@ -380,7 +402,9 @@ instructions.</p>
 <p>Other than these notes, the migration will follow the same Export and Import steps outlined below.</p>
 </section>
 <section>
-<title id="incompatible">Incompatible Apps</title>
+<title id="incompatible">
+<!-- id="incompatible" -->
+<!-- id="incompatible" -->Incompatible Apps</title>
 <p>Applications that use the following techniques will not import successfully from version 2.10 to newer systems and will need to be modified or manually redeployed.</p>
 <ul>
 <li>Hard-coded references to port 3000 for HTTP within the application container. Use the <b>$PORT</b> environment variable instead to get the value dynamically.</li>
@@ -389,7 +413,9 @@ instructions.</p>
 </ul>
 </section>
 <section>
-<title id="exporting-the-server-data">Exporting the server data</title>
+<title id="exporting-the-server-data">
+<!-- id="exporting-the-server-data" -->
+<!-- id="exporting-the-server-data" -->Exporting the server data</title>
 <p>Data export is done with the <i>kato data export</i> command. The command can export:</p>
 <ul>
 <li>Internal data (users, groups, quotas, settings, etc.)</li>
@@ -416,7 +442,9 @@ instructions.</p>
 <b>Note</b>: Exporting data can take several minutes. For clusters with constant usage or large numbers of users, apps, and databases, put the exporting system in Maintenance Mode, ideally during a scheduled maintenance window, before beginning the export.</p>
 </section>
 <section>
-<title id="bestpractices-snapshots">Snapshots</title>
+<title id="bestpractices-snapshots">
+<!-- id="bestpractices-snapshots" -->
+<!-- id="bestpractices-snapshots" -->Snapshots</title>
 <p>Snapshots can be an effective way to save the state of a running virtual machine for backup, but caution is required when taking snapshots of a multi-node cluster.</p>
 <p>The system state of cluster nodes is highly interdependent. A snapshot rollback of multiple nodes which is not perfectly in sync may not return the cluster to a fully functional state. For example, a service node restored from a snapshot may be missing database instances which the Cloud Controller has created. Applications bound to existing services may be missing records.</p>
 <p>If snapshots are a part of your backup or disaster recovery strategy, the following techniques can minimize potential problems:</p>
@@ -428,12 +456,15 @@ instructions.</p>
 </ul>
 </section>
 <section>
-<title>
+<title id="server-monitoring-with-new-relic">
+<!-- id="server-monitoring-with-new-relic" -->
 <!-- id="server-monitoring-with-new-relic" -->Server Monitoring with New Relic</title>
 <p>To use New Relic for server monitoring, you'll need a <xref href="http://newrelic.com/" scope="external" format="html" >New Relic account</xref> and a License Key. Install the <codeph>newrelic-sysmond</codeph> package and start the monitoring daemon on each Application Lifecycle Service VM as per the <xref href="http://docs.newrelic.com/docs/server/server-monitor-installation-ubuntu-and-debian" scope="external" format="html" >New Relic Server Monitor installation (Ubuntu)</xref> instructions.</p>
 </section>
 <section>
-<title id="system-monitoring-with-nagios">System Monitoring with Nagios</title>
+<title id="system-monitoring-with-nagios">
+<!-- id="system-monitoring-with-nagios" -->
+<!-- id="system-monitoring-with-nagios" -->System Monitoring with Nagios</title>
 <p>Though Application Lifecycle Service has an internal mechanism for supervising processes on a server or cluster (<xref href="http://supervisord.org/" scope="external" format="html" >Supervisor</xref>), it is
 advisable to add some external monitoring for production systems. <xref href="http://www.nagios.org/" scope="external" format="html" >Nagios</xref> is a free, open source system monitoring tool that can provide this external monitoring.</p>
 <p>Detailed instructions on installing and configuring Nagios can be found
@@ -442,12 +473,16 @@ Documentation</xref>
 </p>
 </section>
 <section>
-<title id="bestpractices-persistent-storage">Persistent Storage</title>
+<title id="bestpractices-persistent-storage">
+<!-- id="bestpractices-persistent-storage" -->
+<!-- id="bestpractices-persistent-storage" -->Persistent Storage</title>
 <p>Cloud hosting providers have different default partition sizes and configurations. The default root volumes on some cloud hosted VM instances are often fairly small and are usually ephemeral. Data service and filesystem nodes should always be backed by some kind of persistent storage that has enough free filesystem space to accommodate the projected use of the services.</p>
 <p>Do not relocate the filesystem service to an NFS mount. Use the block storage mechanism native to your hypervisor or SSHFS.</p>
 </section>
 <section>
-<title id="relocating-services-droplets-and-containers-relocating-services-droplets-and-containers">Relocating Services, Droplets, and Containers {#relocating-services-droplets-and-containers</title>
+<title id="relocating-services-droplets-and-containers-relocating-services-droplets-and-containers">
+<!-- id="relocating-services-droplets-and-containers-relocating-services-droplets-and-containers" -->
+<!-- id="relocating-services-droplets-and-containers-relocating-services-droplets-and-containers" -->Relocating Services, Droplets, and Containers {#relocating-services-droplets-and-containers</title>
 <p>To move database services, application droplets, and application containers to larger partitions:</p>
 <ul>
 <li>mount the filesystem and/or block storage service on the instance (with <xref href="#topic16234/enabling-filesystem-quotas">quotas enabled</xref>)</li>
@@ -476,7 +511,9 @@ kato relocate containers /mnt/containers
 <p>For performance reasons, containers should not be relocated to EBS volumes.</p>
 </section>
 <section>
-<title id="enabling-filesystem-quotas">Enabling Filesystem Quotas</title>
+<title id="enabling-filesystem-quotas">
+<!-- id="enabling-filesystem-quotas" -->
+<!-- id="enabling-filesystem-quotas" -->Enabling Filesystem Quotas</title>
 <p>The Application Lifecycle Service filesystem quotas cannot be enforced by the system unless
 they are mounted on partitions which support Linux quotas. This may need
 to be specified explicitly when running the <codeph>mount</codeph>

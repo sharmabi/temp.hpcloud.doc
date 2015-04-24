@@ -16,7 +16,9 @@
 <p>HP Helion OpenStack Carrier Grade is a carrier-grade distribution of OpenStack, the leading open source cloud computing platform.</p>
 <p>HP Helion OpenStack Carrier Grade enables carrier grade network functions virtualization (NFV) capabilities to provide communications service providers (CSPs) with an open source based cloud platform that meets their demanding reliability requirements and accelerate their transition to NFV deployments.</p>
 <section>
-<title id="getstart">Get Started with HP Helion OpenStack</title>
+<title id="getstart">
+<!-- id="getstart" -->
+<!-- id="getstart" -->Get Started with HP Helion OpenStack</title>
 <p>Use the following links and tools to begin working with HP Helion OpenStack:</p>
 <ul>
 <li>

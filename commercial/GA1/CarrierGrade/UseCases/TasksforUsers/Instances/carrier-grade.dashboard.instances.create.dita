@@ -20,7 +20,9 @@
 -->
 <p>Compute instances are virtual machines that run inside the cloud.</p>
 <section>
-<title id="create-an-instance">Create an instance</title>
+<title id="create-an-instance">
+<!-- id="create-an-instance" -->
+<!-- id="create-an-instance" -->Create an instance</title>
 <p>To create an instance:</p>
 <ol>
 <li>

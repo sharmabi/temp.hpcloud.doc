@@ -42,16 +42,22 @@ To access the dashboard, <xref href="../../../../commercial/GA1/CarrierGrade/Use
 <p>At the bottom of this page, you can see some of the services you can manage right from the dashboard.</p>
 <section>
 <title>
-<!-- id="project-dashboard" -->Project dashboard<!--Removed anchor point DashProject--><!-- id="DashProject" --></title>
+<!-- id="project-dashboard" -->
+<!-- id="project-dashboard" -->
+<!-- id="project-dashboard" -->Project dashboard<!--Removed anchor point DashProject--><!-- id="DashProject" --><!-- id="DashProject" --><!-- id="DashProject" --></title>
 <p>Use the <b>Project</b> dashboard to implement and build out your cloud. This dashboard contains tools to create virtual server instances, create and configure your network, configure access tools (such as key pairs and security groups) and cloud resource templates (stacks).</p>
 </section>
 <section>
-<title id="admin-dashboard">Admin dashboard<!--Removed anchor point DashAdmin--><!-- id="DashAdmin" --></title>
+<title id="admin-dashboard">
+<!-- id="admin-dashboard" -->
+<!-- id="admin-dashboard" -->Admin dashboard<!--Removed anchor point DashAdmin--><!-- id="DashAdmin" --><!-- id="DashAdmin" --><!-- id="DashAdmin" --></title>
 <p>Use the <b>Admin</b> dashboard to view, allocate, and manage all resources within the cloud.</p>
 <p>The Admin dashboard allows you to manage instances, define flavors, create and configure images, manage networks, view system resources, manage projects, and manage users.</p>
 </section>
 <section>
-<title id="settings-dashboard">Settings dashboard<!--Removed anchor point DashSettings--><!-- id="DashSettings" --></title>
+<title id="settings-dashboard">
+<!-- id="settings-dashboard" -->
+<!-- id="settings-dashboard" -->Settings dashboard<!--Removed anchor point DashSettings--><!-- id="DashSettings" --><!-- id="DashSettings" --><!-- id="DashSettings" --></title>
 <p>Use the <b>Settings</b> dashboard to change your display language and settings, your time zone, and your password.</p>
 <p>Click <b>Settings</b> in the user menu to display the Settings dashboard.</p>
 <p>For a look at the dashboard options, see <xref href="../../../../commercial/GA1/1.1commerical.services-horizon-overview.dita" >Horizon Overview</xref>

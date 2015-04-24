@@ -102,6 +102,8 @@ file system</xref> service and
 </ul>
 <section>
 <title>
+<!-- id="configuring-helion-data-services" -->
+<!-- id="configuring-helion-data-services" -->
 <!-- id="configuring-helion-data-services" -->Configuring Application Lifecycle Service Data Services</title>
 <p>The data services your application requires need to be specified when your app is pushed to the Application Lifecycle Service server. This can be done in a
 number of ways:</p>
@@ -112,7 +114,9 @@ number of ways:</p>
 </ol>
 </section>
 <section>
-<title id="using-manifest-yml">Defining Services in the <i>manifest.yml</i> File</title>
+<title id="using-manifest-yml">
+<!-- id="using-manifest-yml" -->
+<!-- id="using-manifest-yml" -->Defining Services in the <i>manifest.yml</i> File</title>
 <p>The manifest.yml file can define a lot of application-specific details
 that tell the Application Lifecycle Service Client what to do without having to enter them
 when you run <codeph>helion push</codeph>. For complete details
@@ -154,7 +158,8 @@ services:
 Configured Database Services</xref>.</p>
 </section>
 <section>
-<title>
+<title id="creating-services-during-push">
+<!-- id="creating-services-during-push" -->
 <!-- id="creating-services-during-push" -->Creating Services During Push</title>
 <p>In order to ensure that the correct services are configured each time the app is pushed, list the services in the <i>manifest.yml</i> file.</p>
 <p>However, if you do not specify any services in the <i>manifest.yml</i> file, you will be prompted to create them during the push process.</p>
@@ -179,7 +184,9 @@ Binding Service: OK
 </codeblock>
 </section>
 <section>
-<title id="creating-and-binding-services">Creating and Binding Services After Push</title>
+<title id="creating-and-binding-services">
+<!-- id="creating-and-binding-services" -->
+<!-- id="creating-and-binding-services" -->Creating and Binding Services After Push</title>
 <p>It is possible to create services and bind them to an app after they are pushed to the Application Lifecycle Service server.</p>
 <p>There are two ways to do this:</p>
 <ol>
@@ -252,7 +259,9 @@ $ helion apps
 the <xref href="/als/v1/user/reference/client-ref#command-services" >Helion services</xref> command reference.</p>
 </section>
 <section>
-<title id="using-database-services">Using Database Service Environment Variables</title>
+<title id="using-database-services">
+<!-- id="using-database-services" -->
+<!-- id="using-database-services" -->Using Database Service Environment Variables</title>
 <p>When you bind a database service to an application running as an Application Lifecycle Service,
 <xref href="/als/v1/user/reference/environment#environment-variables" >environment
 variables</xref>
@@ -263,7 +272,9 @@ code to connect to the service, rather than having to discover and then hard-cod
 <xref href="/als/v1/user/deploy#language-specific-deploy" >Language-Specific Deployment</xref> section.</p>
 </section>
 <section>
-<title id="database-url">DATABASE_URL<!--Removed anchor point database-url--><!-- id="database-url" --></title>
+<title id="database-url">
+<!-- id="database-url" -->
+<!-- id="database-url" -->DATABASE_URL<!--Removed anchor point database-url--><!-- id="database-url" --><!-- id="database-url" --><!-- id="database-url" --></title>
 <p>
 <b>If only one relational database service</b> is bound to an application,
 use the DATABASE_URL environment variable. It contains the connection
@@ -288,7 +299,9 @@ this:</p>
 service name set during deployment/service creation (e.g. "myapp-db").</p>
 </section>
 <section>
-<title id="database-specific-urls">Database-Specific URLs</title>
+<title id="database-specific-urls">
+<!-- id="database-specific-urls" -->
+<!-- id="database-specific-urls" -->Database-Specific URLs</title>
 <p>
 <b>If a non-relational data service type</b> is bound to the application,
 use the corresponding named environment variable:</p>
@@ -313,7 +326,9 @@ environment variables will be available. Use
 VCAP_SERVICES instead.</p>
 </section>
 <section>
-<title id="vcap-services">VCAP_SERVICES</title>
+<title id="vcap-services">
+<!-- id="vcap-services" -->
+<!-- id="vcap-services" -->VCAP_SERVICES</title>
 <p>Contains a JSON string listing the credentials for all bound services,
 grouped by service type. VCAP_SERVICES variables use non-versioned service names, and the version number remains in the <b>label</b> key.</p>
 <p>For example:</p>
@@ -346,7 +361,9 @@ grouped by service type. VCAP_SERVICES variables use non-versioned service names
 <p>This variable contains some additional meta-information and can be used for compatibility with Cloud Foundry.</p>
 </section>
 <section>
-<title id="using-external-databases">Connecting External Databases</title>
+<title id="using-external-databases">
+<!-- id="using-external-databases" -->
+<!-- id="using-external-databases" -->Connecting External Databases</title>
 <p>Applications running in Application Lifecycle Service can use external databases as long as the host and credentials are provided. There are two ways to pass this data:</p>
 <ol>
 <li>hard-coding: writing them during staging rather than taking them from environment variable at run time</li>
@@ -355,13 +372,17 @@ grouped by service type. VCAP_SERVICES variables use non-versioned service names
 <p>Note that hard-coded applications <b>must</b> be conmpletely re-staged (e.g. redeployed or updated) to pick up the new service location and credentials. Restarting the application will not automatically force restaging.</p>
 </section>
 <section>
-<title id="accessing-database-services">Directly Accessing Database Services</title>
+<title id="accessing-database-services">
+<!-- id="accessing-database-services" -->
+<!-- id="accessing-database-services" -->Directly Accessing Database Services</title>
 <p>You may need to connect to a database service directly for purposes of
 initial database setup, modifying fields, running queries, or doing
 backups. These operations can be done using the <codeph>dbshell</codeph> (preferred) or <codeph>tunnel</codeph> commands.</p>
 </section>
 <section>
 <title>
+<!-- id="using-dbshell" -->
+<!-- id="using-dbshell" -->
 <!-- id="using-dbshell" -->Via <i>dbshell</i>
 </title>
 <p>The <i>helion dbshell</i> command creates an SSH tunnel to database services. To open an interactive shell to a service:</p>
@@ -384,7 +405,9 @@ hook in <i>manifest.yml</i> such as:</p>
 </codeblock>
 </section>
 <section>
-<title id="using-tunnel">Using Tunnel</title>
+<title id="using-tunnel">
+<!-- id="using-tunnel" -->
+<!-- id="using-tunnel" -->Using Tunnel</title>
 <p>The <i>helion tunnel</i> command is an alternative
 method for accessing database services. The command creates a small Ruby
 application which proxies database requests over HTTP. This is the
@@ -463,7 +486,9 @@ directly with:</p>
 </codeblock>
 </section>
 <section>
-<title id="pre-populating-a-database-while-pushing-an-app">Pre-populating a database while pushing an app</title>
+<title id="pre-populating-a-database-while-pushing-an-app">
+<!-- id="pre-populating-a-database-while-pushing-an-app" -->
+<!-- id="pre-populating-a-database-while-pushing-an-app" -->Pre-populating a database while pushing an app</title>
 <p>When a database needs to be populated with data the first time it is
 run, it can be done by the use of a hook during the staging process.
 This can be accomplished in two steps.</p>
@@ -522,10 +547,14 @@ hooks:
 staging process is complete but before the app starts to run.</p>
 </section>
 <section>
-<title id="backing-up-a-mysql-database">Backing up a MySQL database</title>
+<title id="backing-up-a-mysql-database">
+<!-- id="backing-up-a-mysql-database" -->
+<!-- id="backing-up-a-mysql-database" -->Backing up a MySQL database</title>
 </section>
 <section>
-<title id="using-helion-run">Using helion run</title>
+<title id="using-helion-run">
+<!-- id="using-helion-run" -->
+<!-- id="using-helion-run" -->Using helion run</title>
 <p>To export a MySQL database, use the <i>helion run</i>
 command to remotely execute the dbexport tool:</p>
 <codeblock>
@@ -538,6 +567,8 @@ containing the manifest.yml file, the application name may be omitted.</p>
 </section>
 <section>
 <title>
+<!-- id="using-helion-tunnel" -->
+<!-- id="using-helion-tunnel" -->
 <!-- id="using-helion-tunnel" -->Using helion tunnel</title>
 <p>This method of database backup is provided for compatibility with Cloud Foundry. It tends to be slower than using <codeph>helion run ...</codeph>.</p>
 <p>To back up a MySQL database, use the <xref href="#topic19439/database-tunnel">tunnel</xref>
@@ -574,10 +605,14 @@ ways of accessing a MySQL database. See <xref href="#topic19439/bestpractices-im
 file created by mysqldump into an existing MySQL database service.</p>
 </section>
 <section>
-<title id="importing-a-mysql-database">Importing a MySQL database</title>
+<title id="importing-a-mysql-database">
+<!-- id="importing-a-mysql-database" -->
+<!-- id="importing-a-mysql-database" -->Importing a MySQL database</title>
 </section>
 <section>
-<title id="using-dbshell">Using dbshell</title>
+<title id="using-dbshell">
+<!-- id="using-dbshell" -->
+<!-- id="using-dbshell" -->Using dbshell</title>
 <p>To import a MySQL database, use the <codeph>helion dbshell</codeph> command:</p>
 <codeblock>
   <codeph>$ helion dbshell [application name] [service name] &lt; dumpfile.sql
@@ -590,7 +625,9 @@ from a directory containing the <i>manifest.yml</i> file, the application and
 service names may be omitted.</p>
 </section>
 <section>
-<title id="using-helion-tunnel">Using helion tunnel</title>
+<title id="using-helion-tunnel">
+<!-- id="using-helion-tunnel" -->
+<!-- id="using-helion-tunnel" -->Using helion tunnel</title>
 <p>This method of database import is provided for compatibility with Cloud Foundry. It tends to be slower than using <codeph>helion run ...</codeph>.</p>
 <p>To import data from a <i>mysqldump</i> file into an existing
 MySQL database service, use the <codeph>tunnel</codeph> command:</p>
@@ -630,7 +667,8 @@ a <codeph>mysqldump</codeph> backup that can then be imported into
 another database service.</p>
 </section>
 <section>
-<title>
+<title id="changing-database-versions">
+<!-- id="changing-database-versions" -->
 <!-- id="changing-database-versions" -->Changing Database Versions</title>
 <p>The VCAP_SERVICES environment variable in Application Lifecycle Service does not include
 version numbers in the service name string. This can cause problems when
@@ -639,7 +677,9 @@ versioned database names in VCAP_SERVICES.</p>
 <p>There are two application level fixes for this issue:</p>
 </section>
 <section>
-<title id="method-1">Method 1</title>
+<title id="method-1">
+<!-- id="method-1" -->
+<!-- id="method-1" -->Method 1</title>
 <p>Update references to VCAP_SERVICES in the application code to exclude
 version numbers. For example:</p>
 <codeblock>
@@ -650,7 +690,9 @@ Redis:         'redis-2.x' -&gt; 'redis'
 </codeblock>
 </section>
 <section>
-<title id="method-2">Method 2</title>
+<title id="method-2">
+<!-- id="method-2" -->
+<!-- id="method-2" -->Method 2</title>
 <p>Update the application code to use the DATABASE_URL environment
 variable. See <xref href="#topic19439/database-accessing">
 <i>Using Database Services</i>
@@ -675,7 +717,9 @@ general information and the following language-specific documentation:</p>
 </ul>
 </section>
 <section>
-<title id="sqlite">SQLite</title>
+<title id="sqlite">
+<!-- id="sqlite" -->
+<!-- id="sqlite" -->SQLite</title>
 <p>Applications can use an <xref href="http://www.sqlite.org/" scope="external" format="html" >SQLite database</xref> as an alternative to Application Lifecycle Service database services. However, since the filesystem of an application container is ephemeral -- destroyed when an application is stopped, restarted, or updated -- <b>always</b> store the SQLite file on a <xref href="/als/v1/user/services/filesystem#persistent-file-system" >Persistent File System</xref> mount point to avoid losing data.</p>
 </section>
 </body>

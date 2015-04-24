@@ -32,7 +32,9 @@ connection information to the application via the VCAP_SERVICES environment vari
 <i>JSON object</i>
 </xref> which can then be bound any applications in the space.</p>
 <section>
-<title id="creating">Creating</title>
+<title id="creating">
+<!-- id="creating" -->
+<!-- id="creating" -->Creating</title>
 <p>User-provided service instances will typically be used to connect
 applications hosted on Application Lifecycle Service to existing external database hosts or clusters. For example, to connect an app to an externally-hosted PostgreSQL database:</p>
 <codeblock>
@@ -50,7 +52,8 @@ Creating new service ... OK
 the JSON object exposed to the application later.</p>
 </section>
 <section>
-<title>
+<title id="binding">
+<!-- id="binding" -->
 <!-- id="binding" -->Binding</title>
 <p>Once the service instance has been created it can be bound to
 applications, just like any other service:</p>
@@ -65,7 +68,9 @@ http://django-cms.helion.example.com/ deployed
 </codeblock>
 </section>
 <section>
-<title id="using">Using</title>
+<title id="using">
+<!-- id="using" -->
+<!-- id="using" -->Using</title>
 <p>The <codeph>helion service</codeph> command will show the
 credentials:</p>
 <codeblock>
@@ -114,6 +119,8 @@ object:</p>
 </section>
 <section>
 <title>
+<!-- id="user-provided-URL-env" -->
+<!-- id="user-provided-URL-env" -->
 <!-- id="user-provided-URL-env" -->Other Environment Variables</title>
 <p>User-provided service instances do not set <b>DATABASE_URL</b> or 
 database-specific URL environment variables.</p>

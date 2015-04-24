@@ -30,7 +30,9 @@
 </li>
 </ul>
 <section>
-<title id="createagg">Create a host aggregate</title>
+<title id="createagg">
+<!-- id="createagg" -->
+<!-- id="createagg" -->Create a host aggregate</title>
 <ol>
 <li>
 <p>
@@ -62,7 +64,8 @@
 </ol>
 </section>
 <section>
-<title>
+<title id="editagg">
+<!-- id="editagg" -->
 <!-- id="editagg" -->Modify a Host Aggregate</title>
 <ol>
 <li>
@@ -100,7 +103,8 @@
 </ol>
 </section>
 <section>
-<title>
+<title id="deleteagg">
+<!-- id="deleteagg" -->
 <!-- id="deleteagg" -->Delete a host aggregate</title>
 <ol>
 <li>

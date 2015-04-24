@@ -24,7 +24,9 @@ you will need:</p>
 <li>a web browser</li>
 </ul>
 <section>
-<title id="management-console">Management Console</title>
+<title id="management-console">
+<!-- id="management-console" -->
+<!-- id="management-console" -->Management Console</title>
 <p>The web interface for Application Lifecycle Service is called the <xref href="/als/v1/admin/console/customize#management-console" >
 <i>Management
 Console</i>
@@ -44,7 +46,8 @@ applications from source code on your local machine you will need to install and
 the Helion <xref href="/als/v1/user/client#helion-client-setup" >Application Lifestyle Service client</xref>.</p>
 </section>
 <section>
-<title>
+<title id="application-lifecycle-service-client">
+<!-- id="application-lifecycle-service-client" -->
 <!-- id="application-lifecycle-service-client" -->Application Lifecycle Service Client</title>
 <p>The Helion client is used for pushing
 applications to Application Lifecycle Service and interacting with the system from the
@@ -71,7 +74,9 @@ Reference</i>
 list of commands and options.</p>
 </section>
 <section>
-<title id="target-and-login">Target and Login</title>
+<title id="target-and-login">
+<!-- id="target-and-login" -->
+<!-- id="target-and-login" -->Target and Login</title>
 <p>To connect the helion client to the PaaS, use
 the <codeph>target</codeph> command to specify the API Endpoint
 URL. This is normally the hostname prepended with "api." for example:</p>
@@ -96,6 +101,8 @@ Successfully logged into [https://api.example.hphelion.com]
 </section>
 <section>
 <title>
+<!-- id="setting-organization-and-space" -->
+<!-- id="setting-organization-and-space" -->
 <!-- id="setting-organization-and-space" -->Setting Organization and Space</title>
 <p>If you are logging in for the first time, your user account will not
 automatically choose an <xref href="/als/v1/user/deploy/orgs-spaces#orgs-spaces" >
@@ -136,7 +143,9 @@ create-space</i>
 command.</p>
 </section>
 <section>
-<title id="deploying-apps">Deploying Apps</title>
+<title id="deploying-apps">
+<!-- id="deploying-apps" -->
+<!-- id="deploying-apps" -->Deploying Apps</title>
 <p>The steps for deploying applications will vary slightly depending on the
 language or framework used, but the basic command is:</p>
 <codeblock>
@@ -149,7 +158,9 @@ configuration, prompting for additional configuration information as
 necessary.</p>
 </section>
 <section>
-<title id="sample-applications">Sample Applications</title>
+<title id="sample-applications">
+<!-- id="sample-applications" -->
+<!-- id="sample-applications" -->Sample Applications</title>
 <p>Numerous sample applications are available from
 <xref href="https://github.com/Stackato-Apps" scope="external" format="html" >Application Lifecycle Service-Apps</xref> on Github, each with a
 README.md file showing how to deploy it on Application Lifecycle Service.</p>
@@ -164,7 +175,9 @@ file, so you can skip the interactive prompts by using the
 </codeblock>
 </section>
 <section>
-<title id="test-the-application">Test the Application</title>
+<title id="test-the-application">
+<!-- id="test-the-application" -->
+<!-- id="test-the-application" -->Test the Application</title>
 <p>The output of <codeph>helion push</codeph> will show the URL of
 the running application. Paste this URL into a web browser to try the
 application or run:</p>

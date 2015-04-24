@@ -32,6 +32,8 @@ source code to the system.</p>
 web server, application dependencies, databases, and other services.</p>
 <section>
 <title>
+<!-- id="quick-start" -->
+<!-- id="quick-start" -->
 <!-- id="quick-start" -->Quick Start</title>
 <ul>
 <li>
@@ -56,6 +58,8 @@ web server, application dependencies, databases, and other services.</p>
 </section>
 <section>
 <title>
+<!-- id="helion-client" -->
+<!-- id="helion-client" -->
 <!-- id="helion-client" -->Application Lifecycle Service Client</title>
 <ul>
 <li>
@@ -86,7 +90,9 @@ Endpoint</xref>
 </ul>
 </section>
 <section>
-<title id="deploying-applications">Deploying Applications</title>
+<title id="deploying-applications">
+<!-- id="deploying-applications" -->
+<!-- id="deploying-applications" -->Deploying Applications</title>
 <ul>
 <li>
 <xref href="../../../../devplatform/1.2/helion/user/deploy/1.2index.dita" >General Deployment</xref>
@@ -133,7 +139,9 @@ Endpoint</xref>
 </ul>
 </section>
 <section>
-<title id="services">Services</title>
+<title id="services">
+<!-- id="services" -->
+<!-- id="services" -->Services</title>
 <ul>
 <li>
 <xref href="../../../../devplatform/1.2/helion/user/services/1.2data-services.dita" >Data Services</xref>
@@ -154,6 +162,8 @@ Endpoint</xref>
 </section>
 <section>
 <title>
+<!-- id="logging-monitoring" -->
+<!-- id="logging-monitoring" -->
 <!-- id="logging-monitoring" -->Logging &amp; Monitoring</title>
 <ul>
 <li>
@@ -166,6 +176,8 @@ Endpoint</xref>
 </section>
 <section>
 <title>
+<!-- id="management-console" -->
+<!-- id="management-console" -->
 <!-- id="management-console" -->Management Console</title>
 <ul>
 <li>
@@ -196,6 +208,8 @@ Endpoint</xref>
 </section>
 <section>
 <title>
+<!-- id="reference" -->
+<!-- id="reference" -->
 <!-- id="reference" -->Reference</title>
 <ul>
 <li>

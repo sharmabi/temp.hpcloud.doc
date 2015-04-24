@@ -22,7 +22,9 @@
 <li>Image that you have copied to a persistent volume.</li>
 </ul>
 <section>
-<title id="create-an-instance">Create an instance</title>
+<title id="create-an-instance">
+<!-- id="create-an-instance" -->
+<!-- id="create-an-instance" -->Create an instance</title>
 <p>To create an instance:</p>
 <ol>
 <li>
