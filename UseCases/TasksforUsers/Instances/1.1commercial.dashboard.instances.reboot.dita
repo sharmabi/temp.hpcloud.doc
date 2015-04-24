@@ -18,8 +18,7 @@
 <p>You can soft or hard reboot a running instance.</p>
 <p>With a soft reboot, the operating system is signaled to restart, which allows for a graceful shutdown of all processes. A hard reboot is the equivalent of power cycling the server.</p>
 <section>
-<title id="reboot-an-instance">
-<!-- id="reboot-an-instance" -->Reboot an instance</title>
+<title id="reboot-an-instance">Reboot an instance</title>
 <p>To rebooot an instance:</p>
 <ol>
 <li>

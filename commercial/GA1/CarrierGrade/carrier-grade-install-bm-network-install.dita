@@ -72,7 +72,6 @@ iface eth2 inet static
 </ol>
 <section>
 <title>
-<!-- id="next-step" -->
 <!-- id="next-step" -->Next Step</title>
 <p>
   <xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-environment.dita" >Configuring the installation environment</xref>

@@ -46,8 +46,7 @@ accessible if needed to customize or create new container images.</p>
 </li>
 </ul>
 <section>
-<title id="modifying-or-updating-the-container-image">
-<!-- id="modifying-or-updating-the-container-image" -->Modifying or Updating the Container Image</title>
+<title id="modifying-or-updating-the-container-image">Modifying or Updating the Container Image</title>
 <p>Application containers are created from a base Docker image (a template used to create Linux containers). Admins can create new images to add specific software required by applications or update operating system packages.</p>
 <p>See also the <xref href="/helion/devplatform/1.1/als/admin/best-practices#upgrade-docker" >Upgrade the Docker Image</xref> section in the <xref href="../../../../devplatform/helion/admin/best-practices/1.1index.dita" >Best Practices</xref> reference, which shows how to modify the Docker base image <b>without</b> changing <i>kato config</i>.</p>
 <p>To create a new base image for Application Lifecycle Service to use for application containers, perform the following steps <b>on all nodes running the DEA role</b>:</p>
@@ -117,7 +116,7 @@ exampleco/newimg
 </ol>
 </section>
 <section>
-<title id="admin-hooks">
+<title>
 <!-- id="admin-hooks" -->Admin Hooks</title>
 <p>If an administrator wants to run arbitrary commands in all application
 containers, global admin hooks can be set to run immediately after
@@ -180,8 +179,7 @@ ADD hooks /etc/helion/hooks
 </codeblock>
 </section>
 <section>
-<title id="creating-a-docker-registry">
-<!-- id="creating-a-docker-registry" -->Creating a Docker Registry</title>
+<title id="creating-a-docker-registry">Creating a Docker Registry</title>
 <p>The steps above will work with smaller clusters or micro clouds where
 the creation of Docker images on each DEA can be done manually. On
 larger clusters, you should set up a <xref href="http://blog.docker.io/2013/07/how-to-use-your-own-registry/" scope="external" format="html" >Docker
@@ -285,7 +283,7 @@ shared with all nodes.</p>
 <p>The <xref href="/helion/devplatform/1.1/als/admin/best-practices#upgrade-docker" >Upgrade the Docker Image</xref> section in the <xref href="/helion/devplatform/1.1/als/admin/best-practices" >Best Practices</xref> documentation explains how to modify the Docker base image without changing <i>kato config</i>.</p>
 </section>
 <section>
-<title id="docker-privileged-containers">
+<title>
 <!-- id="docker-privileged-containers" -->Privileged Containers</title>
 <p>ALS runs "unprivileged" Docker containers by default. The containers do not have access to any devices on the (virtual) host.</p>
 <p>This is a barrier to certain operations such as mounting disk partitions 

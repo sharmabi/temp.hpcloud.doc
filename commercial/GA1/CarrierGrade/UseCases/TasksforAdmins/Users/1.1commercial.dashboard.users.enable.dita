@@ -18,8 +18,7 @@
 <p>Users can be disabled in the domain. After you disable a user, the user account remains in the domain, but cannot be used to log in.</p>
 <p>As an admin, you can <xref href="#topic1102/disableuser">disable</xref> and <xref href="#topic1102/enableuser">enable</xref> users, as needed.</p>
 <section>
-<title id="disableuser">
-<!-- id="disableuser" -->Disable a user</title>
+<title id="disableuser">Disable a user</title>
 <p>To disable a user:</p>
 <ol>
 <li>
@@ -37,7 +36,7 @@
 </ol>
 </section>
 <section>
-<title id="enableuser">
+<title>
 <!-- id="enableuser" -->Enable a user</title>
 <p>To enable a user:</p>
 <ol>

@@ -56,8 +56,7 @@ the instance first boot.</li>
 <li>Roles takes a list of <xref href="/helion/devplatform/1.2/als/admin/cluster#roles" >roles</xref> to configure the node with.</li>
 </ul>
 <section>
-<title id="securing-the-new-node">
-<!-- id="securing-the-new-node" -->Securing the new node</title>
+<title id="securing-the-new-node">Securing the new node</title>
 <p>To lock down and secure this new node, you could use standard cloud-config directives for adding any SSH keys, randomizing passwords, and/or disabling password based authentication entirely. An example that creates a data services node, enables passwordless sudo for the admin group, and disables password based authentication:</p>
 <codeblock>
   <codeph>#cloud-config
@@ -87,7 +86,7 @@ bootcmd:
 </codeblock>
 </section>
 <section>
-<title id="custom-system-configuration">
+<title>
 <!-- id="custom-system-configuration" -->Custom System Configuration</title>
 <p>In addition to the Application Lifecycle Service node configuration tasks described above, cloud-init can be used for a variety of system setup tasks:</p>
 <ul>

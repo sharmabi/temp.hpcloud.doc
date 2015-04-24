@@ -112,8 +112,7 @@ Events in the Management Console)</li>
 <i>Keys</i>
 </xref> below).</p>
 <section>
-<title id="logyard">
-<!-- id="logyard" -->Logyard</title>
+<title id="logyard">Logyard</title>
 <p>Log streams are handled by three processes which run on all Application Lifecycle Service
 nodes:</p>
 <ul>
@@ -134,9 +133,7 @@ sends user application logs to <b>logyard</b>, injecting relevant
 application-specific events from the <b>logyard_sieve</b> stream.</p>
 </section>
 <section>
-<title>
-<!-- id="drains" -->
-<!-- id="drains" -->Drains</title>
+<title id="drains">Drains</title>
 <p>A "drain" is a receiver for a log stream. Logyard has four kinds:</p>
 <ul>
 <li>TCP (e.g. &lt;tcp://10.0.11.101:12345&gt;)</li>
@@ -147,7 +144,6 @@ application-specific events from the <b>logyard_sieve</b> stream.</p>
 </section>
 <section>
 <title>
-<!-- id="system-drains" -->
 <!-- id="system-drains" -->System Drains</title>
 <p>Drains for system log and cloud event streams can be added by admins
 with the <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-log-drain-add" >kato log
@@ -183,7 +179,7 @@ instead, add the 'overwrite=1' option:</p>
 </codeblock>
 </section>
 <section>
-<title id="log-format">
+<title>
 <!-- id="log-format" -->Log Format</title>
 <p>Log drains can emit entries in a variety of formats:</p>
 <ul>
@@ -272,7 +268,6 @@ drain using the <i>systail</i> drain format.</p>
 </section>
 <section>
 <title>
-<!-- id="saving-custom-log-formats" -->
 <!-- id="saving-custom-log-formats" -->Saving Custom Log Formats</title>
 <p>Custom formats for drains can be saved as a named type in the Logyard
 configuration. To do this, add the formatting string to a new key in
@@ -305,9 +300,7 @@ Events in the Management Console, and <xref href="/helion/devplatform/1.1/als/ad
 respectively).</p>
 </section>
 <section>
-<title>
-<!-- id="custom-drains" -->
-<!-- id="custom-drains" -->Custom Drains</title>
+<title id="custom-drains">Custom Drains</title>
 <p>You can add custom drains to Logyard to look for certain events or parse
 certain log messages (e.g. tracking application push requests or user
 logins). Examples of custom drains and more advanced usage of Logyard
@@ -316,17 +309,14 @@ Guide</xref>
 </p>
 </section>
 <section>
-<title id="application-drains">
-<!-- id="application-drains" -->Application Drains</title>
+<title id="application-drains">Application Drains</title>
 <p>Drains for application log streams can be added by end users with the
 <xref href="/helion/devplatform/1.1/als/user/reference/client-ref#command-drain-add" >
 <i>helion drain add</i>
 </xref> command. See the <xref href="/helion/devplatform/1.1/als/user/deploy/app-logs#application-logs" >Application Logs</xref> section of the documentation for an example.</p>
 </section>
 <section>
-<title>
-<!-- id="drain-status" -->
-<!-- id="drain-status" -->Drain Status</title>
+<title id="drain-status">Drain Status</title>
 <p>You can check the status of all drains on Application Lifecycle Service with the
 <codeph>kato log drain status</codeph> subcommand. For example:</p>
 <codeblock>
@@ -345,7 +335,6 @@ timeout</i>
 </section>
 <section>
 <title>
-<!-- id="keys" -->
 <!-- id="keys" -->Keys</title>
 <p>Each message in a log stream is prefixed with a key, identifying what
 type of message it is or to which log stream it belongs. The following
@@ -359,7 +348,7 @@ add</i>
 </xref>.</p>
 </section>
 <section>
-<title id="apptail">
+<title>
 <!-- id="apptail" -->apptail</title>
 <codeblock>
   <codeph>apptail.\&lt;app.id\&gt;
@@ -368,7 +357,6 @@ add</i>
 </section>
 <section>
 <title>
-<!-- id="event" -->
 <!-- id="event" -->event</title>
 <ul>
 <li>event.\&lt;eventname&gt;
@@ -387,9 +375,7 @@ add</i>
 </ul>
 </section>
 <section>
-<title>
-<!-- id="systail" -->
-<!-- id="systail" -->systail</title>
+<title id="systail">systail</title>
 <ul>
 <li>systail.\&lt;processname&gt;</li>
 <li>systail.\&lt;processname&gt;.\&lt;nodeip&gt;
@@ -450,7 +436,6 @@ add</i>
 </section>
 <section>
 <title>
-<!-- id="managing-the-systail-stream" -->
 <!-- id="managing-the-systail-stream" -->Managing the systail stream</title>
 <p>The list above shows the default systail keys. These can keys can be
 modified with the <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-config" >
@@ -501,9 +486,7 @@ removing log files:</p>
 output of <codeph>kato tail</codeph>.</p>
 </section>
 <section>
-<title>
-<!-- id="configuration" -->
-<!-- id="configuration" -->Configuration</title>
+<title id="configuration">Configuration</title>
 <p>Application Lifecycle Service has a number of configurable limits on application log drains
 to help prevent performance problems the logging subsystems. These
 settings can all be viewed and set with <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-config" >
@@ -514,7 +497,6 @@ described below:</p>
 </section>
 <section>
 <title>
-<!-- id="drain-timeouts" -->
 <!-- id="drain-timeouts" -->Drain Timeouts</title>
 <ul>
 <li>
@@ -570,7 +552,7 @@ all nodes.</p>
 </ul>
 </section>
 <section>
-<title id="user-drain-limit">
+<title>
 <!-- id="user-drain-limit" -->User Drain Limit</title>
 <ul>
 <li>
@@ -597,8 +579,7 @@ limit to 5 drains:</p>
 </ul>
 </section>
 <section>
-<title id="apptail-limits">
-<!-- id="apptail-limits" -->Apptail Limits</title>
+<title id="apptail-limits">Apptail Limits</title>
 <ul>
 <li>
 <p>
@@ -640,7 +621,7 @@ missing data.</p>
 </ul>
 </section>
 <section>
-<title id="debugging-logyard">
+<title>
 <!-- id="debugging-logyard" -->Debugging Logyard</title>
 <p>Use <codeph>kato log stream debug</codeph> to monitor
 Logyard-related log activity. The command tails the logyard, apptail,

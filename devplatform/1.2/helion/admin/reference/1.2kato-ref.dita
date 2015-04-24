@@ -26,12 +26,11 @@
 </p>
 <p>Kato is the Application Lifecycle Service command line administration utility.</p>
 <section>
-<title id="usage">
-<!-- id="usage" -->Syntax</title>
+<title id="usage">Syntax</title>
 <codeblock>kato <b>command</b> [--help] [arguments] [command-options]</codeblock>
 </section>
 <section>
-<title id="kato-command-ref-list">
+<title>
 <!-- id="kato-command-ref-list" -->Command List</title>
 <p>
 <b>Config</b>: Manipulates configuration values of Helion components.</p>
@@ -288,11 +287,10 @@
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-details" -->
 <!-- id="kato-command-ref-details" -->Command Usage Details</title>
 </section>
 <section>
-<title id="kato-command-ref-config">
+<title>
 <!-- id="kato-command-ref-config" -->Config</title>
 <p>Manipulate configuration values of service components.</p>
 <p>
@@ -377,8 +375,7 @@
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-data-export">
-<!-- id="kato-command-ref-data-export" -->Data Export</title>
+<title id="kato-command-ref-data-export">Data Export</title>
 <p>Export system data to or from clusters/nodes. <!--A BR tag was used here in the original source.-->
 If no options are specified, includes <b>all</b> data except <i>resources</i> and <i>aok-config</i>.</p>
 <p>
@@ -659,9 +656,7 @@ data export --manual [options] &lt;filename&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-data-import" -->
-<!-- id="kato-command-ref-data-import" -->Data Import</title>
+<title id="kato-command-ref-data-import">Data Import</title>
 <p>Import system data to or from clusters/nodes. <!--A BR tag was used here in the original source.-->
 If no options are specified, includes <b>all</b> data except <i>resources</i> and <i>aok-config</i>.</p>
 <p>
@@ -948,8 +943,7 @@ data import --manual [options] &lt;source&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-data-repair-routes">
-<!-- id="kato-command-ref-data-repair-routes" -->Data Repair</title>
+<title id="kato-command-ref-data-repair-routes">Data Repair</title>
 <p>Detects and fixes issues in the cloud controller database routes:
   - Fix leading dots
   - Fix duplicate prefix</p>
@@ -1003,7 +997,7 @@ data import --manual [options] &lt;source&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-debug-configwatch">
+<title>
 <!-- id="kato-command-ref-debug-configwatch" -->Debug Configwatch</title>
 <p>Watch changes to cluster configuration.</p>
 <p>
@@ -1044,7 +1038,6 @@ data import --manual [options] &lt;source&gt;
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-debug-redis" -->
 <!-- id="kato-command-ref-debug-redis" -->Debug Redis</title>
 <p>Connects to the Redis server used for cluster config via redis-cli</p>
 <p>
@@ -1061,9 +1054,7 @@ data import --manual [options] &lt;source&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-history" -->
-<!-- id="kato-command-ref-history" -->History</title>
+<title id="kato-command-ref-history">History</title>
 <p>Displays the kato commands that have been run.</p>
 <p>
   <b>Syntax</b>
@@ -1106,8 +1097,7 @@ data import --manual [options] &lt;source&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-info">
-<!-- id="kato-command-ref-info" -->Info</title>
+<title id="kato-command-ref-info">Info</title>
 <p>Display information about this node or cluster, including assigned and available roles.</p>
 <p>
   <b>Syntax</b>
@@ -1154,9 +1144,7 @@ data import --manual [options] &lt;source&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-inspect" -->
-<!-- id="kato-command-ref-inspect" -->Inspect</title>
+<title id="kato-command-ref-inspect">Inspect</title>
 <p>Detect common problems with your installation.</p>
 <p>
   <b>Syntax</b>
@@ -1223,8 +1211,7 @@ inspect [options] list
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-license">
-<!-- id="kato-command-ref-license" -->License</title>
+<title id="kato-command-ref-license">License</title>
 <p>Set the service license in use for this microcloud or cluster.</p>
 <p>
   <b>Syntax</b>
@@ -1266,7 +1253,7 @@ license disable
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-log-drain-add">
+<title>
 <!-- id="kato-command-ref-log-drain-add" -->Log Drain Add</title>
 <p>Add a new log drain.</p>
 <p>
@@ -1337,8 +1324,7 @@ kato log drain add -f systail-syslog system_splunk_2 \
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-log-drain-delete">
-<!-- id="kato-command-ref-log-drain-delete" -->Log Drain Delete</title>
+<title id="kato-command-ref-log-drain-delete">Log Drain Delete</title>
 <p>Delete a specified drain.</p>
 <p>
   <b>Syntax</b>
@@ -1373,9 +1359,7 @@ kato log drain add -f systail-syslog system_splunk_2 \
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-log-drain-list" -->
-<!-- id="kato-command-ref-log-drain-list" -->Log Drain List</title>
+<title id="kato-command-ref-log-drain-list">Log Drain List</title>
 <p>List all log drains.</p>
 <p>
   <b>Syntax</b>
@@ -1418,8 +1402,7 @@ kato log drain add -f systail-syslog system_splunk_2 \
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-log-drain-status">
-<!-- id="kato-command-ref-log-drain-status" -->Log Drain Status</title>
+<title id="kato-command-ref-log-drain-status">Log Drain Status</title>
 <p>Show the status of all or specified log drains. If no options are passed, all drains are shown all.</p>
 <codeblock>
   <codeph>log drain status [options] [&lt;drain1&gt;...]
@@ -1463,7 +1446,7 @@ kato log drain add -f systail-syslog system_splunk_2 \
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-log-stream">
+<title>
 <!-- id="kato-command-ref-log-stream" -->Log Stream</title>
 <p>Define a log stream.</p>
 <codeblock>
@@ -1542,7 +1525,6 @@ kato log drain add -f systail-syslog system_splunk_2 \
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-log-tail" -->
 <!-- id="kato-command-ref-log-tail" -->Log Tail</title>
 <p>
 <b>Syntax</b>
@@ -1604,7 +1586,7 @@ Create a stream that displays changes to the specified component in real time.</
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-node-attach">
+<title>
 <!-- id="kato-command-ref-node-attach" -->Node Attach</title>
 <p>Attach a node to a specified ALS core node.</p>
 <p>
@@ -1657,7 +1639,6 @@ Create a stream that displays changes to the specified component in real time.</
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-node-availabilityzone" -->
 <!-- id="kato-command-ref-node-availabilityzone" -->Node Availability Zone</title>
 <p>Gets/sets the availability zone on a node.</p>
 <codeblock>
@@ -1694,9 +1675,7 @@ Create a stream that displays changes to the specified component in real time.</
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-detach" -->
-<!-- id="kato-command-ref-node-detach" -->Node Detach</title>
+<title id="kato-command-ref-node-detach">Node Detach</title>
 <p>Detaches this node from an ALS core node.</p>
 <p>
   <b>Syntax</b>
@@ -1737,7 +1716,6 @@ Create a stream that displays changes to the specified component in real time.</
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-node-list" -->
 <!-- id="kato-command-ref-node-list" -->Node List</title>
 <p>List all nodes known to this cluster.</p>
 <p>
@@ -1781,7 +1759,7 @@ Create a stream that displays changes to the specified component in real time.</
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-node-migrate">
+<title>
 <!-- id="kato-command-ref-node-migrate" -->Node Migrate</title>
 <p>Migrate the node configuration from old node to a new node.</p>
 <p>
@@ -1822,7 +1800,6 @@ Create a stream that displays changes to the specified component in real time.</
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-node-placementzones-add" -->
 <!-- id="kato-command-ref-node-placementzones-add" -->Node Placement Zones</title>
 <p>Adds a DEA zone to the current node.</p>
 <p>
@@ -1862,7 +1839,7 @@ Create a stream that displays changes to the specified component in real time.</
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-node-placementzones-list">
+<title>
 <!-- id="kato-command-ref-node-placementzones-list" -->Node Placement Zones List</title>
 <p>Lists the DEA zones on the specified node.</p>
 <p>
@@ -1899,8 +1876,7 @@ Create a stream that displays changes to the specified component in real time.</
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-node-placementzones-remove">
-<!-- id="kato-command-ref-node-placementzones-remove" -->Node Placement Zones Remove</title>
+<title id="kato-command-ref-node-placementzones-remove">Node Placement Zones Remove</title>
 <p>Removes a DEA zone from the specified node.</p>
 <p>
   <b>Syntax</b>
@@ -1939,9 +1915,7 @@ Create a stream that displays changes to the specified component in real time.</
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-remove" -->
-<!-- id="kato-command-ref-node-remove" -->Node Remove</title>
+<title id="kato-command-ref-node-remove">Node Remove</title>
 <p>Remove the node(s) from the cluster</p>
 <p>
   <b>Syntax</b>
@@ -1980,8 +1954,7 @@ Create a stream that displays changes to the specified component in real time.</
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-node-rename">
-<!-- id="kato-command-ref-node-rename" -->Node Rename</title>
+<title id="kato-command-ref-node-rename">Node Rename</title>
 <p>Rename a node.</p>
 <p>
   <b>Syntax</b>
@@ -2032,9 +2005,7 @@ Create a stream that displays changes to the specified component in real time.</
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-reset" -->
-<!-- id="kato-command-ref-node-reset" -->Node Reset</title>
+<title id="kato-command-ref-node-reset">Node Reset</title>
 <p>Reset the ALS VM to its default configuration.</p>
 <p>
   <b>Syntax</b>
@@ -2083,8 +2054,7 @@ node reset --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-node-retire">
-<!-- id="kato-command-ref-node-retire" -->Node Retire</title>
+<title id="kato-command-ref-node-retire">Node Retire</title>
 <p>Gracefully retires a DEA node from the cluster. New instances of the apps are started on other available DEAs before the retiring DEA is shut down.</p>
 <p>
   <b>Syntax</b>
@@ -2123,9 +2093,7 @@ node reset --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-setup-core" -->
-<!-- id="kato-command-ref-node-setup-core" -->Node Setup Core</title>
+<title id="kato-command-ref-node-setup-core">Node Setup Core</title>
 <p>Configure the core node of your ALS cluster.</p>
 <p>
   <b>Syntax</b>
@@ -2166,8 +2134,7 @@ node setup core --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-node-setup-firstuser">
-<!-- id="kato-command-ref-node-setup-firstuser" -->Node Setup Firstuser</title>
+<title id="kato-command-ref-node-setup-firstuser">Node Setup Firstuser</title>
 <p>First user setup.</p>
 <p>
   <b>Syntax</b>
@@ -2228,9 +2195,7 @@ node setup core --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-setup-load_balancer" -->
-<!-- id="kato-command-ref-node-setup-load_balancer" -->Node Setup Load Balancer</title>
+<title id="kato-command-ref-node-setup-load_balancer">Node Setup Load Balancer</title>
 <p>Configure this node as a HTTP/S load balancer.</p>
 <p>
   <b>Syntax</b>
@@ -2267,8 +2232,7 @@ node setup load_balancer --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-node-setup-micro">
-<!-- id="kato-command-ref-node-setup-micro" -->Node Setup Micro</title>
+<title id="kato-command-ref-node-setup-micro">Node Setup Micro</title>
 <p>Configure this instance as a micro cloud.</p>
 <p>
   <b>Syntax</b>
@@ -2317,9 +2281,7 @@ node setup micro --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-update" -->
-<!-- id="kato-command-ref-node-update" -->Node Update</title>
+<title id="kato-command-ref-node-update">Node Update</title>
 <p>Update IP references in config.</p>
 <p>
   <b>Syntax</b>
@@ -2354,8 +2316,7 @@ node setup micro --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-node-upgrade">
-<!-- id="kato-command-ref-node-upgrade" -->Node Upgrade</title>
+<title id="kato-command-ref-node-upgrade">Node Upgrade</title>
 <p>Upgrade the installation to the latest available version, preserving deployed applications, config, services, and other state.</p>
 <p>Will operate on current node by default; upgrade can be done for the entire cluster at once (with --cluster) or for a specific node (with --node).</p>
 <p>
@@ -2454,9 +2415,7 @@ node upgrade --run-command &lt;command&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-version" -->
-<!-- id="kato-command-ref-node-version" -->Node Version</title>
+<title id="kato-command-ref-node-version">Node Version</title>
 <p>Retrieves the version number from the specified node.</p>
 <p>
   <b>Syntax</b>
@@ -2491,8 +2450,7 @@ node upgrade --run-command &lt;command&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-op-custom_ssl_cert">
-<!-- id="kato-command-ref-op-custom_ssl_cert" -->OP Custom SSL Cert</title>
+<title id="kato-command-ref-op-custom_ssl_cert">OP Custom SSL Cert</title>
 <p>Configuration of custom SSL certificates to be used in conjunction with router2g and deployed applications.</p>
 <p>
   <b>Syntax</b>
@@ -2539,9 +2497,7 @@ op custom_ssl_cert list
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-op-defer" -->
-<!-- id="kato-command-ref-op-defer" -->OP Defer</title>
+<title id="kato-command-ref-op-defer">OP Defer</title>
 <p>Defer a kato command to be run by <i>op run_deferred</i> when the system is rebooted and supervisor has started. Commands are saved to the <i>/home/helion/.kato-deferred</i> YAML file.</p>
 <p>
   <b>Syntax</b>
@@ -2588,8 +2544,7 @@ op custom_ssl_cert list
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-op-dhcp">
-<!-- id="kato-command-ref-op-dhcp" -->OP DHCP</title>
+<title id="kato-command-ref-op-dhcp">OP DHCP</title>
 <p>Configure this node's networking to use DHCP.</p>
 <p>
   <b>Syntax</b>
@@ -2623,7 +2578,7 @@ op custom_ssl_cert list
 </table>
 </section>
 <section>
-<title id="kato-command-ref-op-generate_service_tokens">
+<title>
 <!-- id="kato-command-ref-op-generate_service_tokens" -->OP Generate Service Tokens</title>
 <p>Generates auth tokens for services.</p>
 <p>
@@ -2660,7 +2615,6 @@ op custom_ssl_cert list
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-op-import_from_yaml_file" -->
 <!-- id="kato-command-ref-op-import_from_yaml_file" -->OP Import from YAML File</title>
 <p>Import the YAML configuration for a single process, deleting and replacing all prior configuration for that process.</p>
 <p>
@@ -2704,7 +2658,7 @@ op custom_ssl_cert list
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-op-import_from_yaml_files">
+<title>
 <!-- id="kato-command-ref-op-import_from_yaml_files" -->OP Import from YAML Files</title>
 <p>Import configuration from YAML files for all processes, deleting and replacing prior configuration.</p>
 <p>
@@ -2749,7 +2703,6 @@ op custom_ssl_cert list
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-op-max_client_upload" -->
 <!-- id="kato-command-ref-op-max_client_upload" -->OP Max Client Upload</title>
 <p>Set the maximum upload size in MB from ALS clients.</p>
 <p>
@@ -2785,7 +2738,7 @@ op custom_ssl_cert list
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-op-regenerate">
+<title>
 <!-- id="kato-command-ref-op-regenerate" -->OP Regenerate</title>
 <p>Regenerate the configuration for various processes and components.</p>
 <p>
@@ -2852,7 +2805,6 @@ op regenerate token-signing-secret [--no-prompt]
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-op-remap_hosts" -->
 <!-- id="kato-command-ref-op-remap_hosts" -->OP Remap Hosts</title>
 <p>Change the fully qualified basename (i.e. the default shared domain) in the URLs of hosted applications. Used when renaming the system or migrating user applications to a new system.</p>
 <p>
@@ -2888,7 +2840,7 @@ op regenerate token-signing-secret [--no-prompt]
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-op-run_deferred">
+<title>
 <!-- id="kato-command-ref-op-run_deferred" -->OP Run Deferred</title>
 <p>Runs deferred commands saved with 'kato defer'.</p>
 <p>
@@ -2929,7 +2881,6 @@ op regenerate token-signing-secret [--no-prompt]
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-op-set_timezone" -->
 <!-- id="kato-command-ref-op-set_timezone" -->OP Set Timezone</title>
 <p>Change the default system timezone for the host machine.</p>
 <p>
@@ -2965,7 +2916,7 @@ op regenerate token-signing-secret [--no-prompt]
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-op-static_ip">
+<title>
 <!-- id="kato-command-ref-op-static_ip" -->OP Static IP</title>
 <p>Configures this node to use a static IP. Interactively prompts for inputs if they are not specified as options.</p>
 <p>
@@ -3052,7 +3003,6 @@ op regenerate token-signing-secret [--no-prompt]
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-op-update_hostsfile" -->
 <!-- id="kato-command-ref-op-update_hostsfile" -->OP Update Hostsfile</title>
 <p>Updates the /etc/hosts file with the endpoint URI mapped to the cloud controller's internal IP.</p>
 <p>
@@ -3088,7 +3038,7 @@ op regenerate token-signing-secret [--no-prompt]
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-op-upstream_proxy">
+<title>
 <!-- id="kato-command-ref-op-upstream_proxy" -->OP Upstream Proxy</title>
 <p>Configure ALS to use an external or upstream proxy server for staging and deployed apps.</p>
 <p>
@@ -3139,7 +3089,6 @@ op upstream_proxy delete
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-patch" -->
 <!-- id="kato-command-ref-patch" -->Patch</title>
 <p>Update an ALS cluster with post-release fixes.</p>
 <p>
@@ -3239,7 +3188,7 @@ patch revert [--node &lt;nodeip&gt;] [options] &lt;patchname&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-process-list">
+<title>
 <!-- id="kato-command-ref-process-list" -->Process List</title>
 <p>Lists configured processes and their current running status.</p>
 <p>
@@ -3292,7 +3241,6 @@ patch revert [--node &lt;nodeip&gt;] [options] &lt;patchname&gt;
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-process-ready" -->
 <!-- id="kato-command-ref-process-ready" -->Process Ready</title>
 <p>Check the status of a process.</p>
 <p>
@@ -3336,7 +3284,7 @@ patch revert [--node &lt;nodeip&gt;] [options] &lt;patchname&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-process-restart">
+<title>
 <!-- id="kato-command-ref-process-restart" -->Process Restart</title>
 <p>Restart a process.</p>
 <p>
@@ -3381,7 +3329,6 @@ patch revert [--node &lt;nodeip&gt;] [options] &lt;patchname&gt;
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-process-start" -->
 <!-- id="kato-command-ref-process-start" -->Process Start</title>
 <p>Start a process.</p>
 <p>
@@ -3421,7 +3368,7 @@ patch revert [--node &lt;nodeip&gt;] [options] &lt;patchname&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-process-stop">
+<title>
 <!-- id="kato-command-ref-process-stop" -->Process Stop</title>
 <p>Stop a process.</p>
 <p>
@@ -3462,7 +3409,6 @@ patch revert [--node &lt;nodeip&gt;] [options] &lt;patchname&gt;
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-relocate" -->
 <!-- id="kato-command-ref-relocate" -->Relocate</title>
 <p>Move containers, application droplets, or services to a new mount point or filesystem location.</p>
 <p>
@@ -3506,7 +3452,7 @@ relocate [options] services &lt;new_location&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-report">
+<title>
 <!-- id="kato-command-ref-report" -->Report</title>
 <p>Generate a report that can be sent to technical support.</p>
 <p>
@@ -3561,7 +3507,6 @@ report --help
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-restart" -->
 <!-- id="kato-command-ref-restart" -->Restart</title>
 <p>Restart a node or individual roles.</p>
 <p>
@@ -3607,7 +3552,7 @@ restart --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-role-add">
+<title>
 <!-- id="kato-command-ref-role-add" -->Role Add</title>
 <p>Enable roles on a node.</p>
 <p>
@@ -3676,7 +3621,6 @@ role add [-v] [--node &lt;node-IP&gt;*] --only &lt;role&gt;...
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-role-info" -->
 <!-- id="kato-command-ref-role-info" -->Role Info</title>
 <p>Display info on roles.</p>
 <p>
@@ -3714,7 +3658,7 @@ role info [&lt;role&gt;...]
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-role-remove">
+<title>
 <!-- id="kato-command-ref-role-remove" -->Role Remove</title>
 <p>Disable roles on a node.</p>
 <p>
@@ -3773,7 +3717,6 @@ role remove [-v] [--node &lt;node-IP&gt;] --all-but &lt;role&gt;...
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-shell" -->
 <!-- id="kato-command-ref-shell" -->Shell</title>
 <p>Interactive shell for kato.</p>
 <p>
@@ -3809,7 +3752,7 @@ role remove [-v] [--node &lt;node-IP&gt;] --all-but &lt;role&gt;...
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-start">
+<title>
 <!-- id="kato-command-ref-start" -->Start</title>
 <p>Start nodes or individual roles.</p>
 <p>
@@ -3858,7 +3801,6 @@ role remove [-v] [--node &lt;node-IP&gt;] --all-but &lt;role&gt;...
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-status" -->
 <!-- id="kato-command-ref-status" -->Status</title>
 <p>List configured roles and their current status across the cluster.</p>
 <p>
@@ -3906,7 +3848,7 @@ role remove [-v] [--node &lt;node-IP&gt;] --all-but &lt;role&gt;...
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-stop">
+<title>
 <!-- id="kato-command-ref-stop" -->Stop</title>
 <p>Stop service or individual roles.</p>
 <p>
@@ -3951,7 +3893,6 @@ role remove [-v] [--node &lt;node-IP&gt;] --all-but &lt;role&gt;...
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-version" -->
 <!-- id="kato-command-ref-version" -->Version</title>
 <p>Display the version of ALS currently in use.</p>
 <p>

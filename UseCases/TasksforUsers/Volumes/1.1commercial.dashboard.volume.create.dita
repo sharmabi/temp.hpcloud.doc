@@ -18,7 +18,6 @@
 <p>Volumes are block devices that can be attached to instances.</p>
 <section>
 <title>
-<!-- id="create-a-volume" -->
 <!-- id="create-a-volume" -->Create a volume</title>
 <ol>
 <li>
@@ -73,9 +72,7 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="edit-a-volume" -->
-<!-- id="edit-a-volume" -->Edit a volume</title>
+<title id="edit-a-volume">Edit a volume</title>
 <ol>
 <li>
 <p>
@@ -102,8 +99,7 @@
 </ol>
 </section>
 <section>
-<title id="delete-a-volume">
-<!-- id="delete-a-volume" -->Delete a volume</title>
+<title id="delete-a-volume">Delete a volume</title>
 <ol>
 <li>
 <p>

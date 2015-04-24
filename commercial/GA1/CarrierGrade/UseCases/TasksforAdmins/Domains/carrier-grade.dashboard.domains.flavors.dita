@@ -30,7 +30,6 @@
 </ul>
 <section>
 <title>
-<!-- id="createflavor" -->
 <!-- id="createflavor" -->Create a flavor</title>
 <p>To create a flavor:</p>
 <ol>
@@ -73,9 +72,7 @@ A message is displayed on successful creation.</p>
 </ol>
 </section>
 <section>
-<title>
-<!-- id="editflavor" -->
-<!-- id="editflavor" -->Edit a flavor</title>
+<title id="editflavor">Edit a flavor</title>
 <p>To edit a flavor:</p>
 <ol>
 <li>
@@ -104,7 +101,6 @@ A message is displayed on successful creation.</p>
 </section>
 <section>
 <title>
-<!-- id="deleteflavor" -->
 <!-- id="deleteflavor" -->Delete a flavor</title>
 <p>Instances that use the flavor are not affected when a flavor is deleted.</p>
 <p>To delete a flavor:</p>

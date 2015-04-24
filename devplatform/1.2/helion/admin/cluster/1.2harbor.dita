@@ -46,7 +46,6 @@ applications require other protocols, consider setting up Harbor.</p>
 is in the <xref href="/helion/devplatform/1.2/als/user/services/port-service#port-service" >Port Service (Harbor) documentation</xref>.</p>
 <section>
 <title>
-<!-- id="architecture" -->
 <!-- id="architecture" -->Architecture</title>
 <p>A Harbor node is designed to sit on the edge of the cluster network
 (i.e. with a publicly routable network interface) in a similar fashion
@@ -62,7 +61,7 @@ drop that instance from its list of backends available for the
 externally facing port.</p>
 </section>
 <section>
-<title id="requirements-setup">
+<title>
 <!-- id="requirements-setup" -->Requirements &amp; Setup</title>
 <p>An Application Lifecycle Service VM can be configured as a Harbor node in the same way as other <xref href="/helion/devplatform/1.2/als/admin/cluster#data-services-nodes" >data service roles</xref>.
 For example:</p>
@@ -101,7 +100,6 @@ details to the users service credentials.</p>
 </section>
 <section>
 <title>
-<!-- id="troubleshooting" -->
 <!-- id="troubleshooting" -->Troubleshooting</title>
 <p>If you have problems with the Harbor service, first check the status via
 'kato status'.</p>

@@ -30,8 +30,7 @@
 </li>
 </ul>
 <section>
-<title id="createKeypairs">
-<!-- id="createKeypairs" -->Create Keypairs</title>
+<title id="createKeypairs">Create Keypairs</title>
 <p>To create a keypair, do the following:</p>
 <ol>
 <li>
@@ -65,7 +64,7 @@
 </ol>
 </section>
 <section>
-<title id="deleteKeypair">
+<title>
 <!-- id="deleteKeypair" -->Delete Keypairs</title>
 <p>To delete a keypair, do the following:</p>
 <ol>
@@ -90,8 +89,7 @@
 </ol>
 </section>
 <section>
-<title id="ImportKeypairs">
-<!-- id="ImportKeypairs" -->Import Keypairs</title>
+<title id="ImportKeypairs">Import Keypairs</title>
 <p>To import a keypair, do the following:</p>
 <ol>
 <li>

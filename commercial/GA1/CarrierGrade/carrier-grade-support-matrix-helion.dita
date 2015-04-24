@@ -58,14 +58,11 @@
 </ul>
 <section>
 <title>
-<!-- id="os" -->
 <!-- id="os" -->OpenStack version information</title>
 <p>All of the <xref href="/helion/openstack/1.1/services/overview#OpenStack" >HP Helion OpenStack services</xref> have been updated to <xref href="http://www.openstack.org/software/juno/" scope="external" format="html" >OpenStack Juno</xref>.</p>
 </section>
 <section>
-<title>
-<!-- id="deploy-arch" -->
-<!-- id="deploy-arch" -->Deployment Architecture</title>
+<title id="deploy-arch">Deployment Architecture</title>
 <p>The following diagrams depict simplified deployment scenarios:</p>
 <ul>
 <li>
@@ -76,19 +73,15 @@
 </section>
 <section>
 <title>
-<!-- id="supportedhw" -->
 <!-- id="supportedhw" -->Supported Hardware</title>
 <p>The following hardware has been tested and verified to work with HP Helion OpenStack:</p>
 </section>
 <section>
-<title>
-<!-- id="hlm-system" -->
-<!-- id="hlm-system" -->HLM System</title>
+<title id="hlm-system">HLM System</title>
 <p>For the HLM system, the following servers are supported for the current release.</p>
 </section>
 <section>
 <title>
-<!-- id="hp-helion-openstack-region" -->
 <!-- id="hp-helion-openstack-region" -->HP Helion OpenStack Region</title>
 <p>For the HP Helion OpenStack Region, the following servers are supported for the current release.</p>
 <p>
@@ -175,17 +168,14 @@ For more information, see [Managing Moonshot Servers](/helion/openstack/1.1/inst
 </ul>
 </section>
 <section>
-<title>
-<!-- id="wr-region" -->
-<!-- id="wr-region" -->WR Region</title>
+<title id="wr-region">WR Region</title>
 <p>For the WR Region, the following servers are supported for the current release.</p>
 <ul>
 <li>WindRiver Titanium</li>
 </ul>
 </section>
 <section>
-<title id="supportedconfigurations">
-<!-- id="supportedconfigurations" -->Supported Configurations</title>
+<title id="supportedconfigurations">Supported Configurations</title>
 <p>HP supports the following configurations for HP Helion OpenStack deployment:</p>
 <ul>
 <li>
@@ -215,7 +205,7 @@ For more information, see [Managing Moonshot Servers](/helion/openstack/1.1/inst
 </ul>
 </section>
 <section>
-<title id="baremetal">
+<title>
 <!-- id="baremetal" -->Hardware Requirements</title>
 <p>You must have the following hardware configuration:</p>
 <ul>
@@ -492,12 +482,11 @@ or
 -->
 </section>
 <section>
-<title id="software-requirements">
-<!-- id="software-requirements" -->Software Requirements</title>
+<title id="software-requirements">Software Requirements</title>
 <p>Note the following software requirements:</p>
 </section>
 <section>
-<title id="seed-requirements">
+<title>
 <!-- id="seed-requirements" -->Software requirements for the seed cloud host</title>
 <p>The Seed Cloud Host is a computer running Ubuntu 14.04 or Debian 8. The following packages are also required:</p>
 <ul>
@@ -520,14 +509,11 @@ or
 </section>
 <section>
 <title>
-<!-- id="seed-ucoc" -->
 <!-- id="seed-ucoc" -->Software requirements for the undercloud and overcloud</title>
 <p>There are no software requirements for the undercloud and overcloud servers because all required software is contained within the images deployed on the system.</p>
 </section>
 <section>
-<title>
-<!-- id="guestOS" -->
-<!-- id="guestOS" -->Guest OS Support Matrix</title>
+<title id="guestOS">Guest OS Support Matrix</title>
 <p>HP Helion OpenStack Guest OS support is based on the hypervisor vendor.</p>
 <p>For ESX, refer to the <xref href="http://www.vmware.com/resources/compatibility/search.php?action=search&amp;deviceCategory=software&amp;advancedORbasic=advanced&amp;maxDisplayRows=50&amp;key=&amp;productId=4&amp;gos_vmw_product_release%5B%5D=90&amp;datePosted=-1&amp;partnerId%5B%5D=-1&amp;os_bits=-1&amp;os_use%5B%5D=-1&amp;os_family%5B%5D=-1&amp;os_type%5B%5D=-1&amp;rorre=0" scope="external" format="html" >VMware Compatibility Guide</xref>.</p>
 <p>For KVM refer to the following table:</p>
@@ -626,8 +612,7 @@ or
 </table>
 </section>
 <section>
-<title id="next">
-<!-- id="next" -->Next Step</title>
+<title id="next">Next Step</title>
 <p>Review the <xref href="../../../commercial/GA1/1.1commercial.technical-overview.ga.dita" >Technical Overview</xref>.</p>
 <p>
   <xref href="#topic8387/top"> Return to Top ↑ </xref>

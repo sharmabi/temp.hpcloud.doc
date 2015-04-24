@@ -50,14 +50,13 @@ available at the command line via the <i>helion help</i> command.</p>
 </li>
 </ul>
 <section>
-<title id="helion-client-setup">
-<!-- id="helion-client-setup" -->Application Lifecycle Service Client Installation</title>
+<title id="helion-client-setup">Application Lifecycle Service Client Installation</title>
 <p>
 <b>Note</b>: Using the Windows Helion client with
 <xref href="http://www.cygwin.com/" scope="external" format="html" >Cygwin</xref> is not supported.</p>
 </section>
 <section>
-<title id="download">
+<title>
 <!-- id="download" -->Download</title>
 <p>You may <xref href="/helion/devplatform/1.2/als/client/download" >download the ALS client</xref> appropriate for your operating system.</p>
 <p>Or you may download the client from within the Horizon console:</p>
@@ -68,8 +67,7 @@ available at the command line via the <i>helion help</i> command.</p>
 </ol>
 </section>
 <section>
-<title id="installation">
-<!-- id="installation" -->Installation</title>
+<title id="installation">Installation</title>
 <ol>
 <li>Unzip the archive into a convenient directory.</li>
 <li>
@@ -106,14 +104,11 @@ available at the command line via the <i>helion help</i> command.</p>
 </ol>
 </section>
 <section>
-<title>
-<!-- id="configuration" -->
-<!-- id="configuration" -->Configuration</title>
+<title id="configuration">Configuration</title>
 <p>After installation, perform the following configuration steps before attempting to use the client.</p>
 </section>
 <section>
 <title>
-<!-- id="targeting-the-api-endpoint" -->
 <!-- id="targeting-the-api-endpoint" -->Target the API endpoint</title>
 <p>Before you can use the client, you must <xref href="/helion/devplatform/1.2/als/user/reference/client-ref/gettingstarted#command-target" >set the target URL</xref>, which is also known as the API Endpoint. This tells the client the location where it will push applications to. For example:</p>
 <codeblock>
@@ -127,7 +122,7 @@ available at the command line via the <i>helion help</i> command.</p>
 </codeblock>
 </section>
 <section>
-<title id="http-proxies">
+<title>
 <!-- id="http-proxies" -->Configure HTTP Proxies</title>
 <p>
 <b>Note</b>: This configuration step should not be necessary on the Windows operating system, as the client queries the Internet Settings values.</p>
@@ -142,12 +137,11 @@ the Application Lifecycle Service API endpoint, set the following environment va
 <p>With these values set properly, the client will route appropriately.</p>
 </section>
 <section>
-<title id="removing-the-client">
-<!-- id="removing-the-client" -->Uninstallation</title>
+<title id="removing-the-client">Uninstallation</title>
 <p>To remove or uninstall the client, simply delete the executable and remove any aliases or <codeph>\$PATH</codeph> modifications you have made for it.</p>
 </section>
 <section>
-<title id="getting-help">
+<title>
 <!-- id="getting-help" -->Getting Help</title>
 <p>To get a list of available commands or help on a particular command, enter:</p>
 <codeblock>

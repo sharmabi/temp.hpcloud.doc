@@ -18,7 +18,6 @@
 <p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses. You can <xref href="#topic1156/enablenet">enable</xref> or <xref href="#topic1156/disablenet">disable</xref> networks, as needed.</p>
 <section>
 <title>
-<!-- id="enablenet" -->
 <!-- id="enablenet" -->Enable a network</title>
 <ol>
 <li>
@@ -42,7 +41,7 @@
 </ol>
 </section>
 <section>
-<title id="disablenet">
+<title>
 <!-- id="disablenet" -->Disable a network</title>
 <ol>
 <li>

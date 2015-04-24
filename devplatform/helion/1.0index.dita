@@ -32,7 +32,6 @@ center using the hypervisor of your choice or on your favorite cloud
 hosting provider, it provides the backbone for your private or public PaaS.</p>
 <section>
 <title>
-<!-- id="admin-guide" -->
 <!-- id="admin-guide" -->ALS Admin Guide</title>
 <p>Documentation intended for system operators in charge of setting up, configuring, and maintaining the platform.</p>
 <ul>
@@ -63,9 +62,7 @@ hosting provider, it provides the backbone for your private or public PaaS.</p>
 </ul>
 </section>
 <section>
-<title>
-<!-- id="user-guide" -->
-<!-- id="user-guide" -->ALS User Guide</title>
+<title id="user-guide">ALS User Guide</title>
 <p>Documentation intended for developers and other end users who will be using a platform set up and maintained by others.</p>
 <ul>
 <li>
@@ -98,8 +95,7 @@ hosting provider, it provides the backbone for your private or public PaaS.</p>
 </ul>
 </section>
 <section>
-<title id="reference">
-<!-- id="reference" -->Reference</title>
+<title id="reference">Reference</title>
 <ul>
 <li>
 <xref href="/als/v1/admin/reference/kato-ref" >

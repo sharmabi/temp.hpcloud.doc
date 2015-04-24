@@ -18,8 +18,7 @@
 <p>After you've created one or more volumes, you can attach them to instances, one instance at a time.</p>
 <p>You can view the status of a volume in the Volumes tab of the dashboard. The volume is either <b>Available</b> or <b>In-Use</b>. You can attach any volume that is available to an instance.</p>
 <section>
-<title id="attach-a-volume-to-an-instance">
-<!-- id="attach-a-volume-to-an-instance" -->Attach a volume to an instance</title>
+<title id="attach-a-volume-to-an-instance">Attach a volume to an instance</title>
 <ol>
 <li>
 <p>
@@ -49,7 +48,7 @@
 <b>Note:</b> Not all of the <b>Action</b> menu items are available for an attached volume.</p>
 </section>
 <section>
-<title id="detach-a-volume-from-a-vm-instance">
+<title>
 <!-- id="detach-a-volume-from-a-vm-instance" -->Detach a volume from a VM instance</title>
 <ol>
 <li>

@@ -18,7 +18,6 @@
 <p>To install of HP Helion OpenStack:</p>
 <section>
 <title>
-<!-- id="create-blank-vms-for-the-installation" -->
 <!-- id="create-blank-vms-for-the-installation" -->Create blank VMs for the installation</title>
 <ol>
 <li>
@@ -67,9 +66,7 @@ virsh start ccn3
 </ol>
 </section>
 <section>
-<title>
-<!-- id="configuring-the-installation-environment" -->
-<!-- id="configuring-the-installation-environment" -->Configuring the installation environment</title>
+<title id="configuring-the-installation-environment">Configuring the installation environment</title>
 <p>The process for deploying HP Helion OpenStack includes populating HLM node with required files, enabling Cobbler for PXE booting.</p>
 <p>
 <xref href="http://www.cobblerd.org/" scope="external" format="html" >Cobbler</xref> is a Linux installation server.</p>
@@ -192,8 +189,7 @@ virsh start ccn3
 </p>
 </section>
 <section>
-<title id="prepare-the-environment-for-installation">
-<!-- id="prepare-the-environment-for-installation" -->Prepare the environment for installation</title>
+<title id="prepare-the-environment-for-installation">Prepare the environment for installation</title>
 <p>At this point, the networking settings and PXE clients are ready to proceed deploy the HLM VM on those 3 nodes using CLM network.</p>
 <ol>
 <li>
@@ -278,9 +274,7 @@ hnewcloud &lt;cloudname&gt; demo
 <p>For baremetal environment or virtual env with fancy networking - you will have to edit the logical network and environment config json files to represent your desired configuration.</p>
 </section>
 <section>
-<title>
-<!-- id="deploy-the-hlm-vm" -->
-<!-- id="deploy-the-hlm-vm" -->Deploy the HLM VM</title>
+<title id="deploy-the-hlm-vm">Deploy the HLM VM</title>
 <p>After you have modified each the JSON Cloud Model files, you can run the Helion Configuration Processor against the files.</p>
 <ol>
 <li>
@@ -337,7 +331,6 @@ hnewcloud &lt;cloudname&gt; demo
 </section>
 <section>
 <title>
-<!-- id="next-step" -->
 <!-- id="next-step" -->Next Step</title>
 <p>
   <xref href="#topic6621/top"> Return to Top ↑ </xref>

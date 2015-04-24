@@ -28,7 +28,6 @@
 </p>
 <section>
 <title>
-<!-- id="applying-updates" -->
 <!-- id="applying-updates" -->Applying Updates</title>
 <ul>
 <li>
@@ -130,7 +129,7 @@ prevent this, use the <codeph>--no-restart</codeph> option.</p>
 use the <codeph>--only-this-node</codeph> option.</p>
 </section>
 <section>
-<title id="backup-migration">
+<title>
 <!-- id="backup-migration" -->Backup &amp; Migration</title>
 <p>This section describes backing up Application Lifecycle Service data and importing it into a
 new Application Lifecycle Service system. The export/import cycle is required for:</p>
@@ -141,7 +140,6 @@ new Application Lifecycle Service system. The export/import cycle is required fo
 </section>
 <section>
 <title>
-<!-- id="limitations" -->
 <!-- id="limitations" -->Limitations</title>
 <p>Before deciding on a backup, upgrade or migration strategy, it's
 important to understand what data the Application Lifecycle Service system can save, and what
@@ -149,7 +147,7 @@ may have to be reset, redeployed, or reconfigured. This is especially
 important when migrating to a new cluster.</p>
 </section>
 <section>
-<title id="custom-services">
+<title>
 <!-- id="custom-services" -->Custom Services</title>
 <p>Application Lifecycle Service can export and import data from built-in data services running
 on Application Lifecycle Service nodes, but it has no mechanism to handle data in <xref href="/als/v1/admin/cluster/external-db#external-db" >
@@ -164,8 +162,7 @@ properly to the new database host if the database is not implemented as
 an Application Lifecycle Service data service.</p>
 </section>
 <section>
-<title id="hard-coded-database-connection-info">
-<!-- id="hard-coded-database-connection-info" -->Hard-coded Database Connection Info</title>
+<title id="hard-coded-database-connection-info">Hard-coded Database Connection Info</title>
 <p>Applications which write database connection details during staging
 rather than taking them from environment variables at run time, must be
 re-staged (e.g. redeployed or updated) to pick up the new service
@@ -173,7 +170,7 @@ location and credentials. Restarting the application will not
 automatically force restaging.</p>
 </section>
 <section>
-<title id="deas">
+<title>
 <!-- id="deas" -->DEAs</title>
 <p>Droplet Execution Agent (DEA) nodes are not migrated directly from old
 nodes to new nodes. Instead, the application droplets (zip files
@@ -182,7 +179,6 @@ the Controller.</p>
 </section>
 <section>
 <title>
-<!-- id="exporting-the-server-data" -->
 <!-- id="exporting-the-server-data" -->Exporting the server data</title>
 <p>Data export is done with the <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref-data-export" >
 <i>kato data
@@ -226,7 +222,7 @@ system in <xref href="/als/v1/admin/console/customize#console-settings" >
 (e.g. during a scheduled maintenance window) before exporting.</p>
 </section>
 <section>
-<title id="scheduled-backups">
+<title>
 <!-- id="scheduled-backups" -->Scheduled backups</title>
 <p>Regular backup of controller data, apps, droplets, and service data is
 recommended for any production system. Implementation of a regular
@@ -251,8 +247,7 @@ The command should be run on the node hosting the 'filesystem' role, as
 some shell commands need to be run locally for that service.</p>
 </section>
 <section>
-<title id="importing-the-server-data">
-<!-- id="importing-the-server-data" -->Importing the server data</title>
+<title id="importing-the-server-data">Importing the server data</title>
 <p>To import Application Lifecycle Service data, transfer the exported .tgz file to the target
 VM or note the hostname of the old VM / Core node.</p>
 <p>
@@ -286,7 +281,7 @@ hostname of the old Core node:</p>
 </codeblock>
 </section>
 <section>
-<title id="upgrade">
+<title>
 <!-- id="upgrade" -->Upgrading (v1.0 and later)</title>
 <p>The <codeph>kato node upgrade</codeph> command was added in
 Application Lifecycle Service 1.0 to allow upgrading Application Lifecycle Service systems in place. See
@@ -297,7 +292,6 @@ instructions.</p>
 </section>
 <section>
 <title>
-<!-- id="server-monitoring-with-new-relic" -->
 <!-- id="server-monitoring-with-new-relic" -->Server Monitoring with New Relic</title>
 <p>To use New Relic for server monitoring, you'll need a <xref href="http://newrelic.com/" scope="external" format="html" >New Relic
 account</xref> and a License Key. Install the
@@ -308,9 +302,7 @@ installation
 instructions.</p>
 </section>
 <section>
-<title>
-<!-- id="system-monitoring-with-nagios" -->
-<!-- id="system-monitoring-with-nagios" -->System Monitoring with Nagios</title>
+<title id="system-monitoring-with-nagios">System Monitoring with Nagios</title>
 <p>Though Application Lifecycle Service has an internal mechanism for supervising processes on a
 server or cluster (<xref href="http://supervisord.org/" scope="external" format="html" >Supervisor</xref>), it is
 advisable to add some external monitoring for production systems.
@@ -323,7 +315,6 @@ Documentation</xref>
 </section>
 <section>
 <title>
-<!-- id="storage" -->
 <!-- id="storage" -->Persistent Storage</title>
 <p>Cloud hosting providers have different default partition sizes and
 configurations. The default root volumes on some cloud hosted VM
@@ -333,7 +324,7 @@ storage, with enough free filesystem space to accommodate the projected
 use of the services.</p>
 </section>
 <section>
-<title id="relocating-services-droplets-and-containers">
+<title>
 <!-- id="relocating-services-droplets-and-containers" -->Relocating Services, Droplets, and Containers</title>
 <p>To move database services, application droplets, and application
 containers to larger partitions:</p>
@@ -368,8 +359,7 @@ $ kato relocate containers /mnt/containers
 block volumes.</p>
 </section>
 <section>
-<title id="enabling-filesystem-quotas">
-<!-- id="enabling-filesystem-quotas" -->Enabling Filesystem Quotas</title>
+<title id="enabling-filesystem-quotas">Enabling Filesystem Quotas</title>
 <p>The Application Lifecycle Service filesystem quotas cannot be enforced by the system unless
 they are mounted on partitions which support Linux quotas. This may need
 to be specified explicitly when running the <codeph>mount</codeph>

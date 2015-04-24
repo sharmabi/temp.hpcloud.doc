@@ -30,8 +30,7 @@
 Server in a virtual machine under control of a hypervisor running on a
 virtualization host.</p>
 <section>
-<title id="accessing-server-via-the-command-line">
-<!-- id="accessing-server-via-the-command-line" -->Accessing Server via the Command Line</title>
+<title id="accessing-server-via-the-command-line">Accessing Server via the Command Line</title>
 <p>The Application Lifecycle Service server initially has one user account. The default login information is:</p>
 <ul>
 <li>Username: stackato</li>
@@ -76,9 +75,7 @@ management procedures such as start, stop, role specialization, and
 status checks. For a complete list of options, see the <xref href="../../../../devplatform/helion/admin/reference/1.1kato-ref.dita" >Kato Command Reference</xref>.</p>
 </section>
 <section>
-<title>
-<!-- id="common-operations" -->
-<!-- id="common-operations" -->Common Operations</title>
+<title id="common-operations">Common Operations</title>
 <p>Instructions for common operations on the Application Lifecycle Service VM can be found here:</p>
 <ul>
 <li>
@@ -143,8 +140,7 @@ Server</xref>
 </ul>
 </section>
 <section>
-<title id="detailed-configuration">
-<!-- id="detailed-configuration" -->Detailed Configuration</title>
+<title id="detailed-configuration">Detailed Configuration</title>
 <p>To continue configuring the Application Lifecycle Service server, see:</p>
 <ul>
 <li>

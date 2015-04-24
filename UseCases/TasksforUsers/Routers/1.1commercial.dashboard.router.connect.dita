@@ -18,8 +18,7 @@
 <p>A network connects to the router through an interface. You must create an interface between the network and router to remotely connect to the network and any instances on that network through the router.</p>
 <p>When you create a new router, the router is not associated to any subnet. You can optionally connect the router to an internal network.</p>
 <section>
-<title id="connect-a-network-to-the-router">
-<!-- id="connect-a-network-to-the-router" -->Connect a network to the router</title>
+<title id="connect-a-network-to-the-router">Connect a network to the router</title>
 <ol>
 <li>
 <p>

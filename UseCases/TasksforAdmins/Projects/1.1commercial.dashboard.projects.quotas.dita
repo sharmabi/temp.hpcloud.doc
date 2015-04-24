@@ -20,7 +20,6 @@
 <p>For example, the number of gigabytes allowed per project can be controlled to make sure that a single project does not consume all of the disk space.</p>
 <section>
 <title>
-<!-- id="quotamod" -->
 <!-- id="quotamod" -->Modify a quotas</title>
 <ol>
 <li>

@@ -18,8 +18,7 @@
 <p>Floating IP addresses allow external access to the instances in your network.</p>
 <p>You can use the dashboards to create a floating IP address pool that contains IP addresses you can associate to the instances on a network.</p>
 <section>
-<title id="managing-your-floating-ip-addresses-as-a-user">
-<!-- id="managing-your-floating-ip-addresses-as-a-user" -->Managing your floating IP addresses as a user</title>
+<title id="managing-your-floating-ip-addresses-as-a-user">Managing your floating IP addresses as a user</title>
 <p>As a user, you can:</p>
 <ul>
 <li>
@@ -31,7 +30,7 @@
 </ul>
 </section>
 <section>
-<title id="managing-your-floating-ip-addresses-as-an-admin">
+<title>
 <!-- id="managing-your-floating-ip-addresses-as-an-admin" -->Managing your floating IP addresses as an admin</title>
 <p>As an admin user, you can work on all of the images in your domain, regardless of which project the group is associated with.</p>
 <p>Access the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel to work with floating IP addresses.</p>

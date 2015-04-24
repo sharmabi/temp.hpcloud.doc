@@ -20,7 +20,6 @@ virtual machine process, called the HP VSC Node.</p>
 <b>Note:</b> You can download the complete <xref href="http://h20565.www2.hp.com/portal/site/hpsc/public/psi/home/?sp4ts.oid=7268885&amp;ac.admitted=1429029354732.876444892.492883150#manuals" scope="external" format="html" >HP Distributed Cloud Networking manuals</xref>, in needed.</p>
 <section>
 <title>
-<!-- id="create-the-vsc-node-vm" -->
 <!-- id="create-the-vsc-node-vm" -->Create the VSC node VM</title>
 <p>To create the VM that hosts the VSC node:</p>
 <ol>
@@ -40,7 +39,7 @@ virsh start vsc
 </ol>
 </section>
 <section>
-<title id="configure-the-vsc-node">
+<title>
 <!-- id="configure-the-vsc-node" -->Configure the VSC node</title>
 <p>Once your VM is up and running, use the following steps to configure the VSC node:</p>
 <ol>
@@ -323,7 +322,6 @@ Organization: csp
 </section>
 <section>
 <title>
-<!-- id="useful-commands-for-vsc" -->
 <!-- id="useful-commands-for-vsc" -->Useful commands for VSC</title>
 <p>You might find the following commands helpful when working with VSC.</p>
 <ul>
@@ -371,7 +369,7 @@ show system ntp detail
 </ul>
 </section>
 <section>
-<title id="next-step">
+<title>
 <!-- id="next-step" -->Next Step</title>
 <p>
   <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-node.dita" >Create the HLM Node</xref>

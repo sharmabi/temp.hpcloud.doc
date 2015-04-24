@@ -44,12 +44,11 @@
 </li>
 </ul>
 <section>
-<title id="ceilandnova">
-<!-- id="ceilandnova" -->Nova</title>
+<title id="ceilandnova">Nova</title>
 <p>The Nova service is configured by default to send certain notifications regarding usage and VM status information collected by Ceilometer. To increase, decrease, or stop these notifications  from the Nova service, modify <xref href="#topic11337/novaconfigfile">Nova's Ceilometer configuration file</xref>.</p>
 </section>
 <section>
-<title id="novadata">
+<title>
 <!-- id="novadata" -->Data Collected by Ceilometer</title>
 <p>Once the <i>openstack.common.rpc</i> notifications are enabled in the configuration file, Nova will send the following data to Ceilometer:</p>
 <table pgwide="1">
@@ -126,7 +125,6 @@
 </section>
 <section>
 <title>
-<!-- id="novaconfigfile" -->
 <!-- id="novaconfigfile" -->Enable Nova Notifications</title>
 <p>This example is an excerpt of the configuration file including only the changes necessary to enable notifications. When notification publishing has been enabled, the <i>nova.conf</i> file will appear as follows.</p>
 <codeblock>
@@ -140,7 +138,7 @@ instance_usage_audit_period=hour
 <p>The <i>instance_usage_audit_period</i> interval can be set to check the instance's status every hour, once a day, once a week or once a month. Every time the audit period elapses, Nova sends a notification to Ceilometer to record whether or not the instance is live and running. Metering this statistic is critical if billing depends on usage.</p>
 </section>
 <section>
-<title id="restart-the-nova-service">
+<title>
 <!-- id="restart-the-nova-service" -->Restart the Nova Service</title>
 <p>Note that the Nova service must be restarted to pick up the changes to the configuration file. Log in to the controller node and execute the following to restart the Compute services:</p>
 <codeblock>
@@ -159,7 +157,6 @@ After the Nova service is re-started, the notification daemons using the namespa
 </section>
 <section>
 <title>
-<!-- id="webserverapi" -->
 <!-- id="webserverapi" -->Configuring the Web Server for API Performance</title>
 <p>Reporting API provide the main access point for data stored in Ceilometer. An excessive increase of concurrent access at the front-end tends to put strain on the database. Use this procedure to optimize both the front-end and back-end (database) and improve performance.</p>
 <ol>
@@ -259,7 +256,7 @@ ceilome+ 31433 31427 10 16:29 ? 00:02:43 /usr/sbin/apache2 -k start
 </ol>
 </section>
 <section>
-<title id="meterlist">
+<title>
 <!-- id="meterlist" -->Modifying the List of Meters</title>
 <p>Reducing the amount of unnecessary data sent to the storage reduces the load on the SQL-based cluster, which increases performance.
 Ceilometer data collection is configured by modifying the <i>pipeline.yml</i> file. This configuration file is located in the <i>/etc/ceilometer</i> folder on all of the controller nodes.</p>
@@ -300,7 +297,6 @@ sinks:
 </section>
 <section>
 <title>
-<!-- id="pollinterval" -->
 <!-- id="pollinterval" -->Modifying the Polling Intervals</title>
 <p>This option does not apply to meters that are notification-only because those meters are not polled.</p>
 <p>The <b>interval attribute</b> is the time between polls. 
@@ -332,7 +328,7 @@ sinks:
 </codeblock>
 </section>
 <section>
-<title id="swift">
+<title>
 <!-- id="swift" -->Swift Considerations</title>
 <p>Ceilometer, by default, does not collect any data from Swift. Swift data can only be collected using polling, not notifications, and the service could easily generate enough traffic to overwhelm any back-end solution not specifically built to handle Big Data.</p>
 <p>Polling can be a big performance hit due to the sheer amount of data that the system may have to ingest. It also greatly increases query response time when the database has overly-large amounts of data to scan. Such scans usually consume excessive amounts of CPU and memory resources. In the worst cases, long waits for query replies can result in timeouts.</p>

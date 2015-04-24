@@ -18,8 +18,7 @@
 <p>The rebuild operation removes all data on the server and replaces it with the specified image.</p>
 <p>A rebuild operation always removes data injected into the file system through server personality. You can reinsert data into the file system during the rebuild.</p>
 <section>
-<title id="rebuilding-an-instance">
-<!-- id="rebuilding-an-instance" -->Rebuilding an instance</title>
+<title id="rebuilding-an-instance">Rebuilding an instance</title>
 <p>To rebuild an instance:</p>
 <ol>
 <li>

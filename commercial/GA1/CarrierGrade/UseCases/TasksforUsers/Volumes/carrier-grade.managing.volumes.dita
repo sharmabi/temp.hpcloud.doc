@@ -32,8 +32,7 @@
 </p>
 <p>For details on a volume, click the volume name.</p>
 <section>
-<title id="managing-volumes-as-a-user">
-<!-- id="managing-volumes-as-a-user" -->Managing volumes as a user</title>
+<title id="managing-volumes-as-a-user">Managing volumes as a user</title>
 <p>As a user, you can work with any volume associated with the active project.</p>
 <ul>
 <li>
@@ -51,7 +50,7 @@
 </ul>
 </section>
 <section>
-<title id="managing-volumes-as-an-admin">
+<title>
 <!-- id="managing-volumes-as-an-admin" -->Managing volumes as an admin</title>
 <p>
 <b>Note:</b> The administrative user can perform all of the user tasks in addition to the admin tasks.</p>

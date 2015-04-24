@@ -34,8 +34,7 @@
 </li>
 </ul>
 <section>
-<title id="createport">
-<!-- id="createport" -->Create a port</title>
+<title id="createport">Create a port</title>
 <ol>
 <li>
 <p>
@@ -74,9 +73,7 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="editport" -->
-<!-- id="editport" -->Edit a port</title>
+<title id="editport">Edit a port</title>
 <ol>
 <li>
 <p>
@@ -111,7 +108,6 @@
 </section>
 <section>
 <title>
-<!-- id="deleteport" -->
 <!-- id="deleteport" -->Delete a port</title>
 <ol>
 <li>

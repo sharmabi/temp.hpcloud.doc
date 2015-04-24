@@ -70,11 +70,10 @@ the upgrade process works.</p>
 </ul>
 <section>
 <title>
-<!-- id="before-an-upgrade" -->
 <!-- id="before-an-upgrade" -->Before an upgrade</title>
 </section>
 <section>
-<title id="maintenance-mode">
+<title>
 <!-- id="maintenance-mode" -->Maintenance Mode</title>
 <p>Before beginning an upgrade, put Application Lifecycle Service in maintenance mode in the
 <xref href="/als/v1/admin/console/customize#console-settings-maintenance-mode" >
@@ -89,8 +88,7 @@ the following <codeph>kato</codeph> command:</p>
 <p>This shuts down API requests but continues to serve web requests. The Management Console becomes "read only" with the exception of this toggle so that it can be brought back online. Remember to disable maintenance mode once the upgrade has been completed.</p>
 </section>
 <section>
-<title id="proxy-settings">
-<!-- id="proxy-settings" -->Proxy settings</title>
+<title id="proxy-settings">Proxy settings</title>
 <p>The systems being upgraded will need to be able to access the following
 public URIs:</p>
 <ul>
@@ -105,9 +103,7 @@ public URIs:</p>
 node if a proxy is in use on your network.</p>
 </section>
 <section>
-<title>
-<!-- id="rsa-keys" -->
-<!-- id="rsa-keys" -->RSA keys</title>
+<title id="rsa-keys">RSA keys</title>
 <p>For cluster upgrades, you should <xref href="https://help.ubuntu.com/community/SSH/OpenSSH/Configuring#disable-password-authentication" scope="external" format="html" >set up SSH keys for password-less
 authentication</xref>
 between the Core node and all other cluster nodes. Without this, you
@@ -116,11 +112,10 @@ for each node.</p>
 </section>
 <section>
 <title>
-<!-- id="executing-the-upgrade" -->
 <!-- id="executing-the-upgrade" -->Executing the upgrade</title>
 </section>
 <section>
-<title id="upgrading-an-individual-node">
+<title>
 <!-- id="upgrading-an-individual-node" -->Upgrading an individual node</title>
 <p>To upgrade an individual node, log into the node and run:</p>
 <codeblock>
@@ -131,7 +126,6 @@ for each node.</p>
 </section>
 <section>
 <title>
-<!-- id="upgrading-a-cluster" -->
 <!-- id="upgrading-a-cluster" -->Upgrading a cluster</title>
 <p>To upgrade a cluster, log into the Core node in the cluster and run:</p>
 <codeblock>
@@ -143,7 +137,7 @@ preferred upgrade order (see below) before upgrading the nodes one at a
 time.</p>
 </section>
 <section>
-<title id="node-upgrade-ordering">
+<title>
 <!-- id="node-upgrade-ordering" -->Node upgrade ordering</title>
 <p>When performing a cluster upgrade, the nodes in the cluster are
 automatically arranged into an upgrade order based on the roles they
@@ -166,8 +160,7 @@ be upgraded last.</p>
 option.</p>
 </section>
 <section>
-<title id="node-upgrade-process">
-<!-- id="node-upgrade-process" -->Node Upgrade Process</title>
+<title id="node-upgrade-process">Node Upgrade Process</title>
 <p>Each node goes through the following process during an upgrade.</p>
 <ol>
 <li>Self-update</li>

@@ -18,7 +18,6 @@
 <p>A container is a storage compartment for your data and provides a way for you to organize your data. You can think of a container as a folder in Windows® or a directory in UNIX®. The primary difference between a container and these other file system concepts is that containers cannot be nested. You can, however, create an unlimited number of containers within your account. Data must be stored in a container so you must have at least one container defined in your account prior to uploading data.</p>
 <section>
 <title>
-<!-- id="create-a-container" -->
 <!-- id="create-a-container" -->Create a container</title>
 <ol>
 <li>
@@ -40,7 +39,7 @@
 </ol>
 </section>
 <section>
-<title id="delete-a-container">
+<title>
 <!-- id="delete-a-container" -->Delete a container</title>
 <ol>
 <li>

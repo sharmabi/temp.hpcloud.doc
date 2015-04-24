@@ -26,7 +26,6 @@ advantage of HP Helion OpenStack® to manage infrastructure or software services
 to enable successful development are available in Ruby.</p>
 <section>
 <title>
-<!-- id="application-lifecycle-services" -->
 <!-- id="application-lifecycle-services" -->Application Lifecycle Services</title>
 <p>Application Lifecycle Services (ALS), a cloud foundry based Platform as a Service,
 provides a means to execute ruby applications on a managed platform. Deploying applications to the platform is as simple as adding configuration to a YAML configuration file and using a console application to push the application to ALS.
@@ -60,7 +59,7 @@ To learn more see:</p>
 </ul>
 </section>
 <section>
-<title id="hp-helion-sdk">
+<title>
 <!-- id="hp-helion-sdk" -->HP Helion SDK</title>
 <p>Ruby applications can communicate directly with the <xref href="../../../../../../publiccloud/api.dita" >Helion APIs</xref> through a REST client or use the SDK. The SDK is designed to have a simple well documented API to simplify working with the services.
 To understand how it works, here is an example of writing and reading from object storage:</p>
@@ -99,8 +98,7 @@ file.content_type # =&gt; text/plain
 <b>Note</b>: See <xref href="/helion/devplatform/1.2/als/user/deploy/buildpack#buildpacks" >Buildpacks</xref> for an alternative way to deploy Ruby on Rails applications.</p>
 </section>
 <section>
-<title id="using-ruby-2-0">
-<!-- id="using-ruby-2-0" -->Using Ruby 2.0</title>
+<title id="using-ruby-2-0">Using Ruby 2.0</title>
 <p>The <i>manifest.yml</i> file must specify the Ruby runtime version and Rails as the
 framework type:</p>
 <codeblock>
@@ -111,9 +109,7 @@ framework type:</p>
 <p>Default Ruby version is Ruby 1.9</p>
 </section>
 <section>
-<title>
-<!-- id="known-issues" -->
-<!-- id="known-issues" -->Known Issues</title>
+<title id="known-issues">Known Issues</title>
 <ul>
 <li>
 <p>Rmagick gem currently not supported.</p>
@@ -150,7 +146,6 @@ gem 'rails'
 </section>
 <section>
 <title>
-<!-- id="ruby-on-rails-3-1" -->
 <!-- id="ruby-on-rails-3-1" -->Ruby on Rails 3.1+</title>
 <p>To get the asset pipeline working on Application Lifecycle Service, precompile your assets in
 your development environment, which compiles them into public/assets:</p>
@@ -160,7 +155,7 @@ your development environment, which compiles them into public/assets:</p>
 </codeblock>
 </section>
 <section>
-<title id="gems-and-libraries">
+<title>
 <!-- id="gems-and-libraries" -->Gems and Libraries</title>
 <p>A <i>Gemfile</i> must be included in your app that lists all required gems.
 Run:</p>
@@ -177,7 +172,6 @@ to point at them.</p>
 </section>
 <section>
 <title>
-<!-- id="unsupported-gemfile-features" -->
 <!-- id="unsupported-gemfile-features" -->Unsupported <i>Gemfile</i> features</title>
 <ol>
 <li>git urls or branch dependencies</li>
@@ -186,15 +180,12 @@ to point at them.</p>
 </ol>
 </section>
 <section>
-<title>
-<!-- id="database-services" -->
-<!-- id="database-services" -->Database Services</title>
+<title id="database-services">Database Services</title>
 <p>Cloud Foundry supports database auto-reconfiguration for Rails
 applications.</p>
 </section>
 <section>
-<title id="worker-applications">
-<!-- id="worker-applications" -->Worker Applications</title>
+<title id="worker-applications">Worker Applications</title>
 <p>Non-HTTP apps that run as an Application Lifecycle Service application under the control of
 the Health Manager.</p>
 <p>To deploy worker applications, you need to use the
@@ -207,9 +198,7 @@ the Health Manager.</p>
 key to Null ("\~").</p>
 </section>
 <section>
-<title>
-<!-- id="example" -->
-<!-- id="example" -->Example</title>
+<title id="example">Example</title>
 <codeblock>
   <codeph>name: ruby-app
 framework:
@@ -222,19 +211,15 @@ processes:
 </codeblock>
 </section>
 <section>
-<title id="general-guidelines">
-<!-- id="general-guidelines" -->General Guidelines</title>
+<title id="general-guidelines">General Guidelines</title>
 </section>
 <section>
-<title>
-<!-- id="app-web-servers" -->
-<!-- id="app-web-servers" -->App/Web Servers</title>
+<title id="app-web-servers">App/Web Servers</title>
 <p>For the best performance, <xref href="https://devcenter.heroku.com/articles/ruby#webserver" scope="external" format="html" >using the Thin Ruby webserver</xref> is recommended.
 Include <codeph>gem 'thin'</codeph> in your <i>Gemfile</i>.</p>
 </section>
 <section>
-<title id="bundler">
-<!-- id="bundler" -->Bundler</title>
+<title id="bundler">Bundler</title>
 <p>You need bundler and rails installed locally. This can be done
 via:</p>
 <codeblock>
@@ -243,9 +228,7 @@ via:</p>
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="running-rake-commands" -->
-<!-- id="running-rake-commands" -->Running rake commands</title>
+<title id="running-rake-commands">Running rake commands</title>
 <p>Generally, <codeph>bundle exec</codeph> must be used when running any commands that are installed through Gemfile/bundler.</p>
 <p>To run <codeph>rake stats</codeph>, for instance, use the <codeph>helion run</codeph> command:</p>
 <codeblock>
@@ -256,7 +239,6 @@ via:</p>
 </section>
 <section>
 <title>
-<!-- id="references" -->
 <!-- id="references" -->References</title>
 <ul>
 <li>

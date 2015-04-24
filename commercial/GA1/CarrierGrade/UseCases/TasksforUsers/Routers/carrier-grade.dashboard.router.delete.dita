@@ -18,8 +18,7 @@
 <p>A network connects to the router through an interface.</p>
 <p>You must remove all router interfaces before deleting the router, by removing all internal interfaces.</p>
 <section>
-<title id="delete-a-router">
-<!-- id="delete-a-router" -->Delete a router</title>
+<title id="delete-a-router">Delete a router</title>
 <ol>
 <li>
 <p>

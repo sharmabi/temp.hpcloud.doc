@@ -18,7 +18,6 @@
 <p>You can manage access to projects by assigning users and setting primary projects. You can also control resources by managing operational quotas.</p>
 <section>
 <title>
-<!-- id="creating-projects" -->
 <!-- id="creating-projects" -->Creating projects</title>
 <p>As an admin, you can use create projects and allow specific users to access each project:</p>
 <ul>
@@ -34,7 +33,7 @@
 </ul>
 </section>
 <section>
-<title id="managing-quotas">
+<title>
 <!-- id="managing-quotas" -->Managing quotas</title>
 <p>Quotas are operational limits that you can configure to prevent system capacities from being exhausted without notification.</p>
 <p>Use the <b>Identity</b> panel on the <b>Admin</b> dashboard to set maximum limits for metadata, instances, CPUs, memory, and other settings for each project.</p>

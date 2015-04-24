@@ -22,8 +22,7 @@
 <p style="font-size: small;"> <a href="../../../commercial/GA1/1.13rd-party-license-agreements.dita/">&#9664; PREV</a> | <a href="./commercial/GA1/1.1commercial.index.dita">&#9650; UP</a> | NEXT &#9654; </p>
 -->
 <section>
-<title id="OpenStack">
-<!-- id="OpenStack" -->OpenStack Services</title>
+<title id="OpenStack">OpenStack Services</title>
 <p>The following services are foundation technologies used by the HP Helion OpenStack.</p>
 <p>
 <xref href="../../../commercial/GA1/1.1commerical.services-compute-overview.dita" >Compute Operations</xref>
@@ -63,7 +62,7 @@
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="hp">
+<title>
 <!-- id="hp" -->HP Services</title>
 <p>The following services have been developed by HP for use with the HP Helion OpenStack.</p>
 <p>
@@ -80,8 +79,7 @@
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="dash">
-<!-- id="dash" -->Dashboard services</title>
+<title id="dash">Dashboard services</title>
 <p>HP Helion OpenStack uses the following services or software to present user interfaces to aspects of HP Helion OpenStack.</p>
 <p>
 <xref href="../../../commercial/GA1/1.1commerical.services-horizon-overview.dita" >Horizon</xref>
@@ -96,9 +94,7 @@
 <!--A BR tag was used here in the original source.-->Learn about the Kibana service to view logging data across the HP Helion OpenStack cloud.</p>
 </section>
 <section>
-<title>
-<!-- id="install" -->
-<!-- id="install" -->Installation services</title>
+<title id="install">Installation services</title>
 <p>The following services are used only during the HP Helion OpenStack installation:</p>
 <p>
 <xref href="../../../commercial/GA1/1.1commerical.services-tripleo-overview.dita" >TripleO</xref>
@@ -111,7 +107,6 @@ Leanr about TripleO to facilitate the installation of an OpenStack cloud.</p>
 </section>
 <section>
 <title>
-<!-- id="Other" -->
 <!-- id="Other" -->Other services and features</title>
 <p>The following services and features can be used with HP Helion OpenStack.</p>
 <p>

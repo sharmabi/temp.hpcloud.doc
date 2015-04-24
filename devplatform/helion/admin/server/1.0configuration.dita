@@ -120,7 +120,6 @@
 </ul>
 <section>
 <title>
-<!-- id="general" -->
 <!-- id="general" -->General</title>
 <p>
   <b>Note</b>
@@ -134,7 +133,7 @@ option is useful in this scenario).</p>
 <b>Warning</b>: All  <i>kato</i>  commands should be run as the 'helion' system user, <b>not as root</b>. kato will prompt for the 'helion' user password if sudo permissions are required for a specific operation.</p>
 </section>
 <section>
-<title id="changing-the-password">
+<title>
 <!-- id="changing-the-password" -->Changing the Password</title>
 <p>The default password for the Helion system user is <b>helion</b>.  In clusters created by Helion Orchestration tools (the Horizon Management Console and Installer CLI VM), access after cluster setup is only available by SSH key pair.</p>
 <p>This password is changed to match the one set for the first administrative user created in the Management Console. Once you've set up the primary Application Lifecycle Service admin account, use that account's password when logging in to the VM at the command line.</p>
@@ -143,11 +142,10 @@ manually with the <i>passwd</i> command.</p>
 </section>
 <section>
 <title>
-<!-- id="network-setup" -->
 <!-- id="network-setup" -->Network Setup</title>
 </section>
 <section>
-<title id="changing-the-hostname">
+<title>
 <!-- id="changing-the-hostname" -->Changing the Hostname</title>
 <p>You may want or need to change the hostname of the Application Lifecycle Service system,
 either to match a DNS record you've created or just to make the system URLs more convenient. This can be done using the <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref" >kato node rename</xref> command:</p>
@@ -172,7 +170,6 @@ may also need to manually <xref href="#topic29240/server-config-etc-hosts">modif
 </section>
 <section>
 <title>
-<!-- id="changing-ip-addresses" -->
 <!-- id="changing-ip-addresses" -->Changing IP Addresses</title>
 <p>The Application Lifecycle Service <i>micro cloud</i> server is initially set up for
 <xref href="/als/v1/user/reference/glossary#term-dhcp" >
@@ -269,9 +266,7 @@ router and DNS server for this subnet. Check with your network
 administrator for their addresses.</p>
 </section>
 <section>
-<title>
-<!-- id="setting-a-static-ip" -->
-<!-- id="setting-a-static-ip" -->Setting a Static IP</title>
+<title id="setting-a-static-ip">Setting a Static IP</title>
 <p>The easiest way to configure an Application Lifecycle Service VM with a static IP address is
 to use the <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref-op" >
 <i>kato op
@@ -360,7 +355,6 @@ of the server.</p>
 </section>
 <section>
 <title>
-<!-- id="modifying-etc-hosts" -->
 <!-- id="modifying-etc-hosts" -->Modifying /etc/hosts</title>
 <p>The <codeph>/etc/hosts</codeph> file is used to resolve certain
 essential or local hostnames without calling upon the DNS. Unless you
@@ -432,7 +426,7 @@ example:</p>
 </codeblock>
 </section>
 <section>
-<title id="dns">
+<title>
 <!-- id="dns" -->DNS</title>
 <p>The Application Lifecycle Service micro cloud uses <xref href="/als/v1/user/reference/glossary#term-multicast-dns" >
 <i>multicast
@@ -491,7 +485,6 @@ necessary. To turn it off on the Application Lifecycle Service server, use the c
 </section>
 <section>
 <title>
-<!-- id="dynamic-dns" -->
 <!-- id="dynamic-dns" -->Dynamic DNS</title>
 <p>If you don't have access to a DNS server, you can use a dynamic DNS
 provider, such as <xref href="http://www.changeip.com/freedomains.asp" scope="external" format="html" >ChangeIP</xref>
@@ -508,17 +501,14 @@ and related application subdomains. Then wait to receive the
 authorization email, and verify the zone transfer before proceeding.</p>
 </section>
 <section>
-<title>
-<!-- id="alternate-dns-techniques-alternate-dns-techniques" -->
-<!-- id="alternate-dns-techniques-alternate-dns-techniques" -->Alternate DNS Techniques {#alternate-dns-techniques)</title>
+<title id="alternate-dns-techniques-alternate-dns-techniques">Alternate DNS Techniques {#alternate-dns-techniques)</title>
 <p>For situations where mDNS will not work (e.g. running in a cloud hosting
 environment or connecting from a Windows system without mDNS support)
 but which do not merit the effort of manually configuring a DNS record
 (e.g. a test server) alternative methods are available.</p>
 </section>
 <section>
-<title id="xip-io">
-<!-- id="xip-io" -->xip.io</title>
+<title id="xip-io">xip.io</title>
 <p>The quickest way to get wildcard DNS resolution is to use the
 <xref href="http://xip.io/" scope="external" format="html" >xip.io</xref> service.  This is the approach taken on clusters created with the Horizon Management Console panel or Application Lifecycle Service Installer CLI, and is done as part of the setup process.</p>
 <p>
@@ -540,7 +530,7 @@ Application Lifecycle Service settings. The xip.io DNS servers will resolve the 
 private subnets as well as public IP addresses.</p>
 </section>
 <section>
-<title id="dnsmasq">
+<title>
 <!-- id="dnsmasq" -->dnsmasq</title>
 <p>Locally, you can run
 <xref href="/als/v1/user/reference/glossary#term-dnsmasq" >
@@ -561,8 +551,7 @@ present in any of its configuration files:</p>
 </codeblock>
 </section>
 <section>
-<title id="adding-dns-nameservers">
-<!-- id="adding-dns-nameservers" -->Adding DNS Nameservers</title>
+<title id="adding-dns-nameservers">Adding DNS Nameservers</title>
 <p>You may need to add site-specific DNS nameservers manually if the
 Application Lifecycle Service VM or applications running in Application Lifecycle Service containers need to
 resolve internal hosts using a particular nameserver.</p>
@@ -581,9 +570,7 @@ when running the <codeph>kato op static_ip</codeph> command (see
 </xref> above).</p>
 </section>
 <section>
-<title>
-<!-- id="tcp-udp-port-configuration" -->
-<!-- id="tcp-udp-port-configuration" -->TCP/UDP Port Configuration</title>
+<title id="tcp-udp-port-configuration">TCP/UDP Port Configuration</title>
 <p>The Application Lifecycle Service <xref href="/als/v1/user/reference/glossary#term-micro-cloud" >
 <i>micro cloud</i>
 </xref> runs with
@@ -718,7 +705,6 @@ nodes (via SSHFS).</li>
 </section>
 <section>
 <title>
-<!-- id="http-proxy" -->
 <!-- id="http-proxy" -->HTTP Proxy</title>
 <p>
   <b>Note</b>
@@ -765,9 +751,7 @@ socksProxyType=socks4a | OR | socks5;
 Application Lifecycle Service server in <codeph>/var/log/polipo/polipo.log</codeph>.</p>
 </section>
 <section>
-<title>
-<!-- id="staging-cache-app-http-proxy" -->
-<!-- id="staging-cache-app-http-proxy" -->Staging Cache &amp; App HTTP Proxy</title>
+<title id="staging-cache-app-http-proxy">Staging Cache &amp; App HTTP Proxy</title>
 <p>Application Lifecycle Service caches all application dependencies that are downloaded by
 module managers that support the
 <xref href="/als/v1/user/reference/environment#term-http-proxy" >HTTP_PROXY</xref>
@@ -796,8 +780,7 @@ config using <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref-confi
 within all subsequently created application containers.</p>
 </section>
 <section>
-<title id="vm-filesystem-setup-vm-filesystem-setup">
-<!-- id="vm-filesystem-setup-vm-filesystem-setup" -->VM Filesystem Setup {#vm-filesystem-setup)</title>
+<title id="vm-filesystem-setup-vm-filesystem-setup">VM Filesystem Setup {#vm-filesystem-setup)</title>
 <p>The Application Lifecycle Service VM is distributed with a simple default partitioning scheme
 (i.e. everything but "/boot" mounted on "./publiccloud/index.dita/").</p>
 <p>Warning</p>
@@ -819,7 +802,7 @@ Storage</i>
 section.</p>
 </section>
 <section>
-<title id="helion-data-services-vs-high-availability-databases">
+<title>
 <!-- id="helion-data-services-vs-high-availability-databases" -->Application Lifecycle Service Data Services vs. High Availability Databases</title>
 <p>Application Lifecycle Service data services do not offer any built-in redundancy. For
 business-critical data storage, a high-availability database or cluster
@@ -838,8 +821,7 @@ Services</i>
 </xref> section.</p>
 </section>
 <section>
-<title id="https-ssl">
-<!-- id="https-ssl" -->HTTPS &amp; SSL</title>
+<title id="https-ssl">HTTPS &amp; SSL</title>
 <p>HTTPS mode provides access to the provisioned apps using wild card SSL
 certificates through the router or
 <xref href="/als/v1/user/reference/glossary#term-nginx" >
@@ -860,9 +842,7 @@ generate the signed certificates)</li>
 or use your own (signed or self-signed) certificate.</p>
 </section>
 <section>
-<title>
-<!-- id="using-your-own-ssl-certificate" -->
-<!-- id="using-your-own-ssl-certificate" -->Using your own SSL certificate</title>
+<title id="using-your-own-ssl-certificate">Using your own SSL certificate</title>
 <p>On all router nodes, upload your <i>.key</i> file to the <i>/etc/ssl/private/</i>
 directory and your <i>.crt</i> file to <i>/etc/ssl/certs/</i>. Change the
 following settings in <i>/s/code/helion-router/config/local.json</i> to
@@ -875,7 +855,6 @@ point to the new files:</p>
 </section>
 <section>
 <title>
-<!-- id="adding-custom-ssl-certs-sni" -->
 <!-- id="adding-custom-ssl-certs-sni" -->Adding Custom SSL Certs (SNI)</title>
 <p>The Application Lifecycle Service router supports
 <xref href="http://en.wikipedia.org/wiki/Server_Name_Indication" scope="external" format="html" >SNI</xref>, and custom
@@ -899,7 +878,7 @@ balancers (e.g. HAProxy, iptables, F5) not HTTP load balancers (e.g.
 Nginx, Application Lifecycle Service load balancer).</p>
 </section>
 <section>
-<title id="ca-certificate-chaining">
+<title>
 <!-- id="ca-certificate-chaining" -->CA Certificate Chaining</title>
 <p>When using a signed certificate for Application Lifecycle Service, the certificates in the
 chain must be concatenated in a specific order:</p>
@@ -936,8 +915,7 @@ Certificate chain
 </codeblock>
 </section>
 <section>
-<title id="generating-a-self-signed-ssl-certificate">
-<!-- id="generating-a-self-signed-ssl-certificate" -->Generating a self-signed SSL certificate</title>
+<title id="generating-a-self-signed-ssl-certificate">Generating a self-signed SSL certificate</title>
 <p>You can re-generate Application Lifecycle Service's self-signed SSL certificate by running
 the following command on the VM:</p>
 <codeblock>
@@ -974,9 +952,7 @@ rules, which you will be prompted to do so when visiting one of your
 apps via HTTPS for the first time.</p>
 </section>
 <section>
-<title>
-<!-- id="cipher" -->
-<!-- id="cipher" -->Customizing the Cipher Suites</title>
+<title id="cipher">Customizing the Cipher Suites</title>
 <p>The router's TLS cipher suite can be modified using <i>kato config</i>. For example:</p>
 <codeblock>
   <codeph>kato config set router2g ssl/cipher_suite 'ALL:!ADH:!EXP:!LOW:!RC2:!3DES:!SEED:RC4+RSA:+HIGH:+MED'
@@ -985,8 +961,7 @@ apps via HTTPS for the first time.</p>
 <p>The setting above is the default for the Helion router. See <xref href="https://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT" scope="external" format="html" >OpenSSL's Cipher List Format and Cipher Strings</xref> documentation for other valid values.</p>
 </section>
 <section>
-<title id="quota-definitions">
-<!-- id="quota-definitions" -->Quota Definitions</title>
+<title id="quota-definitions">Quota Definitions</title>
 <p>Quota definitions define limits for:</p>
 <ul>
 <li>physical memory (RAM) in MB</li>
@@ -1028,13 +1003,12 @@ Management Console <xref href="/als/v1/admin/console/customize#console-settings-
 </p>
 </section>
 <section>
-<title id="sudo">
+<title>
 <!-- id="sudo" -->sudo</title>
 <p>Quota Definitions can give all users in an Organization the use of the <b>sudo</b> command within application containers. This option is disabled by default as a security precaution, and should only be enabled for Organizations where all users are trusted.</p>
 </section>
 <section>
-<title id="allowed-repositories">
-<!-- id="allowed-repositories" -->Allowed Repositories</title>
+<title id="allowed-repositories">Allowed Repositories</title>
 <p>Users (with our without <i>sudo</i> permissions) can install Ubuntu packages in application containers by requesting them in the requirements section of an application's <i>manifest.yml</i> file. The system allows package installation only from those repositories specified in the <b>Allowed Repos</b> list in the Management Console.</p>
 <p>This list can also be viewed and modified at the command line using <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref-config" >kato config</xref>. For example, to view the 
  current list:</p>

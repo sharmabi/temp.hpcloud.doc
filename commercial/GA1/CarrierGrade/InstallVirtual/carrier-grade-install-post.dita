@@ -22,23 +22,19 @@
 <p>After you have completed and verified the HP Helion OpenStack installation, perform the following tasks as appropriate.</p>
 <section>
 <title>
-<!-- id="deploy-vcenter-esx-compute-proxy-required" -->
 <!-- id="deploy-vcenter-esx-compute-proxy-required" -->Deploy vCenter ESX Compute Proxy <b>(REQUIRED)</b>
 </title>
 <p>The HP Helion OpenStack vCenter ESX compute proxy is a driver that enables the Compute service to communicate with a VMware vCenter server that manages one or more ESX hosts. The HP Helion OpenStack Compute service (Nova) requires this driver to interface with VMWare ESX hypervisor APIs.</p>
 <p>See <xref href="../../../../commercial/GA1/1.1commercial.install-GA-ESX-Proxy.dita" >Deploy vCenter ESX compute proxy</xref>.</p>
 </section>
 <section>
-<title>
-<!-- id="install-dns-as-a-service-dnsaas-optional" -->
-<!-- id="install-dns-as-a-service-dnsaas-optional" -->Install DNS as a service (DNSaaS) <b>(Optional)</b>
+<title id="install-dns-as-a-service-dnsaas-optional">Install DNS as a service (DNSaaS) <b>(Optional)</b>
 </title>
 <p>If you have not installed DNSaaS, see <xref href="../../../../commercial/GA1/1.1commercial.install-GA-DNSaaS.dita" >DNSaaS Installation and Configuration</xref>.</p>
 <p>DNSaaS is our managed DNS service, based on the OpenStack Designate project, is engineered to help you create, publish, and manage your DNS zones and records securely and efficiently to either a public or private DNS server network.</p>
 </section>
 <section>
 <title>
-<!-- id="create-and-deploy-microsoft-svvp-server-microsoft-as-a-compute-nova-vm-optional" -->
 <!-- id="create-and-deploy-microsoft-svvp-server-microsoft-as-a-compute-nova-vm-optional" -->Create and deploy Microsoft SVVP server Microsoft as a Compute (Nova) VM. <b>(Optional)</b>
 </title>
 <p>You can create and deploy a Microsoft Windows Server that is Microsoft SVVP (Server Virtualization Validation Program) compliant on HP Helion OpenStack as a Nova compute VM.</p>

@@ -24,8 +24,7 @@
 <p>
 <b>Note:</b> The admin can perform all of the user tasks in addition to the admin tasks.</p>
 <section>
-<title id="managing-images-as-a-user">
-<!-- id="managing-images-as-a-user" -->Managing images as a user</title>
+<title id="managing-images-as-a-user">Managing images as a user</title>
 <p>As a user, you can work with any <i>private</i> images associated with the active project.</p>
 <p>Access the image commands using the Compute panel on the Project dashboard.</p>
 <p>Click <b>Images</b> to perform the following tasks:</p>
@@ -48,9 +47,7 @@
 </ul>
 </section>
 <section>
-<title>
-<!-- id="managing-images-as-an-admin" -->
-<!-- id="managing-images-as-an-admin" -->Managing images as an admin</title>
+<title id="managing-images-as-an-admin">Managing images as an admin</title>
 <p>As an admin user, you can work on all of the images in your domain, regardless of which project the image is associated with.</p>
 <p>Access the admin image commands using the System Panel  on the Admin dashboard.</p>
 <p>As an admin, you can determine if the snapshot is available only in the current project or to all projects in the domain.</p>

@@ -18,7 +18,6 @@
 <p>As an admin, you can <xref href="#topic1936/projectcreate">create</xref> and <xref href="#topic1936/projectsdel">delete</xref> projects.</p>
 <section>
 <title>
-<!-- id="projectcreate" -->
 <!-- id="projectcreate" -->Create a project</title>
 <ol>
 <li>
@@ -64,7 +63,7 @@ c. Leave <b>Enabled</b> selected to create an active project or clear the option
 </ol>
 </section>
 <section>
-<title id="projectdel">
+<title>
 <!-- id="projectdel" -->Delete a project</title>
 <p>As an admin, you can delete projects. Compute instances associated with a project will not be deleted.</p>
 <ol>

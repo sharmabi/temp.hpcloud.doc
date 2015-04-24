@@ -66,8 +66,7 @@ app-&gt;start;
 See complete details for this file in the <xref href="../../../../../../devplatform/helion/user/deploy/1.1manifestyml.dita" >Configuration With
 manifest.yml</xref> section.</p>
 <section>
-<title id="examples">
-<!-- id="examples" -->Examples</title>
+<title id="examples">Examples</title>
 <ul>
 <li>
 <xref href="https://github.com/Stackato-Apps/mojo-helloworld" scope="external" format="html" >Mojo Hello

@@ -22,8 +22,7 @@
 -->
 <p>Helion Lifecycle Management (HLM) consists of the ongoing operations /maintenance as well as the initial deployment of the Helion system as shown above.</p>
 <section>
-<title id="create-the-hlm-vm">
-<!-- id="create-the-hlm-vm" -->Create the HLM VM</title>
+<title id="create-the-hlm-vm">Create the HLM VM</title>
 <ol>
 <li>
 <p>Copy the latest cg-hlm.qcow2 image to the KVM host.</p>
@@ -106,9 +105,7 @@ ovs_version: "2.0.2"
 </ol>
 </section>
 <section>
-<title>
-<!-- id="nextstep" -->
-<!-- id="nextstep" -->Next step</title>
+<title id="nextstep">Next step</title>
 <p>
   <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Install HP Helion OpenStack</xref>
 </p>

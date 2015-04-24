@@ -18,8 +18,7 @@
 <p>Compute flavors are machine configurations that describe the amount of memory, number of CPUs, and storage capacity of instances.</p>
 <p>As an admin, you can <xref href="#topic1718/add">allow specific projects to have access to a flavor</xref> or <xref href="#topic1718/remove">prevent a project from accessing a flavor</xref>.</p>
 <section>
-<title id="add">
-<!-- id="add" -->Allowing a project to access a flavor</title>
+<title id="add">Allowing a project to access a flavor</title>
 <ol>
 <li>
 <p>
@@ -46,9 +45,7 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="remove" -->
-<!-- id="remove" -->Preventing a project from accessing a flavor</title>
+<title id="remove">Preventing a project from accessing a flavor</title>
 <ol>
 <li>
 <p>

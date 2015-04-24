@@ -18,7 +18,6 @@
 <p>As an admin, you can <xref href="#topic1577/useradd">add</xref> and <xref href="#topic1577/userdel">remove</xref> user access to each project.</p>
 <section>
 <title>
-<!-- id="useradd" -->
 <!-- id="useradd" -->Add a user to a project</title>
 <ol>
 <li>
@@ -44,7 +43,7 @@
 </ol>
 </section>
 <section>
-<title id="userdel">
+<title>
 <!-- id="userdel" -->Remove a user from a project</title>
 <ol>
 <li>

@@ -138,8 +138,7 @@ polling server every 1024 s
 </ol>
 <p>When the installation is complete, a conformation message appears.</p>
 <section>
-<title id="verifing-the-installation">
-<!-- id="verifing-the-installation" -->Verifing the installation</title>
+<title id="verifing-the-installation">Verifing the installation</title>
 <p>Verify that your HP VSD(s) are up and running by using the following command:</p>
 <codeblock>
   <codeph>service vsd status
@@ -147,7 +146,7 @@ polling server every 1024 s
 </codeblock>
 </section>
 <section>
-<title id="configure-vsd">
+<title>
 <!-- id="configure-vsd" -->Configure VSD</title>
 <p>You can use xrdp to connect to the gurst VM from the KVM host and launch the VSD dashboard to create required users and apply the required license.</p>
 <ol>
@@ -196,7 +195,6 @@ License: ( temp license info ) review DCN Bits and license setup Pending
 </section>
 <section>
 <title>
-<!-- id="nextstep" -->
 <!-- id="nextstep" -->Next step</title>
 <p>
   <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Create the VSC Node</xref>

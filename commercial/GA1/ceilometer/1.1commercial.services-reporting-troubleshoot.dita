@@ -26,7 +26,6 @@
 </ul>
 <section>
 <title>
-<!-- id="logging" -->
 <!-- id="logging" -->Logging</title>
 <p>Logs for the various running components in the Overcloud Controllers can be found at <i>/var/log/ceilometer.log</i>
 </p>
@@ -34,7 +33,7 @@
 </p>
 </section>
 <section>
-<title id="modifying">
+<title>
 <!-- id="modifying" -->Modifying</title>
 <p>Change the level of debugging in Ceilometer by editing the <i>ceilometer.conf</i> file located at <i>/etc/ceilometer/ceilometer.conf</i>. To log the maximum amount of information, change the <b>level</b> entry to <b>DEBUG</b>.</p>
 <p>
@@ -59,7 +58,6 @@
 </section>
 <section>
 <title>
-<!-- id="qerrors" -->
 <!-- id="qerrors" -->Messaging/Queuing Errors</title>
 <p>Ceilometer relies on a message bus for passing data between the various components. In high-availability scenarios, RabbitMQ servers are used for this purpose. If these servers are not available, the Ceilometer log will record errors during "Connecting to AMQP" attempts.</p>
 <p>These errors may indicate that the RabbitMQ messaging nodes are not running as expected and/or the RPC publishing pipeline is stale. When these errors occur, re-start the instances.</p>

@@ -20,7 +20,6 @@ HP Helion OpenStack Carrier Grade is based on <xref href="../../../commercial/GA
 <p>HP Helion OpenStack Carrier Grade is sold, and supported as a separate software entity from HP Helion Openstack.</p>
 <section>
 <title>
-<!-- id="focus-areas-for-hp-helion-openstack-carrier-grade" -->
 <!-- id="focus-areas-for-hp-helion-openstack-carrier-grade" -->Focus areas for HP Helion OpenStack Carrier Grade</title>
 <!-- From Helion-CSP-Edition.pptx  https://wiki.hpcloud.net/download/attachments/32052622/Helion-CSP-Edition.pptx?version=1&modificationDate=1426628637000&api=v2 -->
 <ul>
@@ -34,7 +33,7 @@ HP Helion OpenStack Carrier Grade is based on <xref href="../../../commercial/GA
 </ul>
 </section>
 <section>
-<title id="role-of-sdn-in-nfv">
+<title>
 <!-- id="role-of-sdn-in-nfv" -->Role of SDN in NFV</title>
 <!-- From Helion-CSP-Edition.pptx  https://wiki.hpcloud.net/download/attachments/32052622/Helion-CSP-Edition.pptx?version=1&modificationDate=1426628637000&api=v2 -->
 <p>

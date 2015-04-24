@@ -20,8 +20,7 @@
 -->
 <p>A snapshot is a new image based on a running instance. That snapshot can be used as the base for new instances.</p>
 <section>
-<title id="creating-a-snapshot">
-<!-- id="creating-a-snapshot" -->Creating a snapshot</title>
+<title id="creating-a-snapshot">Creating a snapshot</title>
 <p>To create a snapshot:</p>
 <ol>
 <li>

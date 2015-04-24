@@ -23,7 +23,6 @@
  <!--permalink: /als/v1/user/services/memcached/--></p>
 <section>
 <title id="see-the-helion-11-development-platform-version-of-this-page">
-<!-- id="see-the-helion-11-development-platform-version-of-this-page" -->
   See the Helion 1.1 Development Platform version of this page
 </title>
 <p>Memcached is an in-memory key-value store used for caching by many web
@@ -31,7 +30,7 @@ applications and frameworks. It is available in Application Lifecycle Service as
 which can be shared by application instances.</p>
 </section>
 <section>
-<title id="using-the-service">
+<title>
 <!-- id="using-the-service" -->Using the Service</title>
 <p>As with other <xref href="/als/v1/user/services/data-services#data-services" >
 <i>data services</i>
@@ -66,7 +65,6 @@ authentication via SASL.</p>
 </section>
 <section>
 <title>
-<!-- id="django-example-using-memcached" -->
 <!-- id="django-example-using-memcached" -->Django Example using Memcached</title>
 <p>The <xref href="https://github.com/Stackato-Apps/django-gtd" scope="external" format="html" >Django GTD</xref> sample
 application uses the simpler VCAP_SERVICES method for connecting to the

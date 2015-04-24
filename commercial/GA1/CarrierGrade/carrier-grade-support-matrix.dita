@@ -26,19 +26,15 @@
 <p>To ensure the performance and stability of the HP Helion OpenStack environment, it is very important to meet the requirements and conform to the recommendations.</p>
 <section>
 <title>
-<!-- id="support-matrix-for-hp-lifecycle-management" -->
 <!-- id="support-matrix-for-hp-lifecycle-management" -->Support Matrix for HP Lifecycle Management</title>
 <p>To ensure the performance and stability of the HP Lifecycle Management environment, it is very important to meet the requirements and conform to the recommendations listed in <xref href="/helion/openstack/carrier/support-matrix/hlm/" >Support Matrix for HP Lifecycle Management</xref>.</p>
 </section>
 <section>
-<title>
-<!-- id="support-matrix-for-hp-helion-openstack" -->
-<!-- id="support-matrix-for-hp-helion-openstack" -->Support Matrix for HP Helion OpenStack</title>
+<title id="support-matrix-for-hp-helion-openstack">Support Matrix for HP Helion OpenStack</title>
 <p>To ensure the performance and stability of the HP Helion OpenStack environment, it is very important to meet the requirements and conform to the recommendations listed in <xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-support-matrix-helion.dita" >Support Matrix for HP Helion OpenStack</xref>.</p>
 </section>
 <section>
 <title>
-<!-- id="support-matrix-for-hp-distributed-cloud-networking-dcn" -->
 <!-- id="support-matrix-for-hp-distributed-cloud-networking-dcn" -->Support Matrix for HP Distributed Cloud Networking (DCN)</title>
 <p>For key requirements needed HP Distributed Cloud Networking (DCN), see <xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-support-matrix-dcn.dita" >Support Matrix for HP Distributed Cloud Networking</xref>.</p>
 <!-- Hide for alpha
@@ -48,7 +44,7 @@ To ensure the performance and stability of the Wind River region of the HP Helio
 -->
 </section>
 <section>
-<title id="next-step">
+<title>
 <!-- id="next-step" -->Next Step</title>
 <p>
   <xref href="../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-network-prepare.dita" >Preparing the Network for Installation</xref>

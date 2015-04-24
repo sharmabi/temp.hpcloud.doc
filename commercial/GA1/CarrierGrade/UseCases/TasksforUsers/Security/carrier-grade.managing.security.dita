@@ -22,7 +22,6 @@
 <b>Note:</b> The admin can perform all of the user tasks in addition to the admin tasks.</p>
 <section>
 <title>
-<!-- id="managing-security-as-a-user" -->
 <!-- id="managing-security-as-a-user" -->Managing security as a user</title>
 <p>As a user, you can work with the security groups and rules in the active project.</p>
 <p>Access the security commands using the Compute panel on the Project dashboard.</p>
@@ -40,7 +39,7 @@
 </ul>
 </section>
 <section>
-<title id="managing-security-as-an-admin">
+<title>
 <!-- id="managing-security-as-an-admin" -->Managing security as an admin</title>
 <p>As an admin user, you can work on all of the security groups in your domain, regardless of which project the group is associated with.</p>
 <!-- Remove this? Covered under Manage Roles. Not yet in beta
@@ -57,8 +56,7 @@ Use the Identity panel in the Admin dashboard to [allow users to access groups](
 -->
 </section>
 <section>
-<title id="changing-a-user-password">
-<!-- id="changing-a-user-password" -->Changing a user password</title>
+<title id="changing-a-user-password">Changing a user password</title>
 <p>As an admin, you can use the Identity panel in the Admin dashboard to change a user's password.</p>
 <p>See: <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Security/carrier-grade.dashboard.users.password.dita" >Changing a User Password</xref>.</p>
 <p>

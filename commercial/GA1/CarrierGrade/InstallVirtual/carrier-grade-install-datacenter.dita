@@ -54,8 +54,7 @@ Password: cghelion
 </li>
 </ol>
 <section>
-<title id="next-step">
-<!-- id="next-step" -->Next Step</title>
+<title id="next-step">Next Step</title>
 <p>
   <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.dita" >Create the Guest VM</xref>
 </p>

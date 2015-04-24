@@ -30,7 +30,6 @@ to enable successful development are available in PHP.</p>
 <p>Deployable <xref href="/helion/devplatform/1.2/appdev#php" >sample applications</xref> are available in this language.</p>
 <section>
 <title>
-<!-- id="application-lifecycle-services" -->
 <!-- id="application-lifecycle-services" -->Application Lifecycle Services</title>
 <p>Application Lifecycle Service (ALS) provides a means to execute PHP applications on a managed platform, controlling application lifecycle through a PaaS tier. Deploying
 applications to this platform is as easy as adding details to a YAML configuration file and using
@@ -66,7 +65,7 @@ the command to <b>run</b>. For example:</p>
 a console application. To learn more see the <xref href="../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >manifest.yml</xref> reference.</p>
 </section>
 <section>
-<title id="deployment">
+<title>
 <!-- id="deployment" -->Deployment</title>
 <p>You will need at least two files to deploy a PHP app on Application Lifecycle Service:
 <i>index.php</i>, and <i>manifest.yml</i>.</p>
@@ -79,8 +78,7 @@ a console application. To learn more see the <xref href="../../../../../../devpl
 <p>For more information, see the <xref href="../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >manifest.yml</xref> reference.</p>
 </section>
 <section>
-<title id="application-url">
-<!-- id="application-url" -->Application URL</title>
+<title id="application-url">Application URL</title>
 <p>Some applications require the user to specify the APP_URL. Below is an
 example on how to obtain the correct urls:</p>
 <codeblock>
@@ -91,9 +89,7 @@ $admin = $appinfo_json['uris'][0];
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="worker-applications" -->
-<!-- id="worker-applications" -->Worker Applications</title>
+<title id="worker-applications">Worker Applications</title>
 <p>Non-HTTP apps that run as an Application Lifecycle Service application under the control of
 the Health Manager.</p>
 <p>To deploy worker applications, you need to use the
@@ -106,8 +102,7 @@ the Health Manager.</p>
 key to Null ("\~").</p>
 </section>
 <section>
-<title id="example">
-<!-- id="example" -->Example</title>
+<title id="example">Example</title>
 <codeblock>
   <codeph>name: php-app
 framework: php
@@ -118,13 +113,10 @@ processes:
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="database-services" -->
-<!-- id="database-services" -->Database Services</title>
+<title id="database-services">Database Services</title>
 </section>
 <section>
 <title id="database-url">
-<!-- id="database-url" -->
   DATABASE_URL
 </title>
 <p>Authentication details for your configured database services can be
@@ -147,9 +139,7 @@ found in the <b>$_SERVER</b> variable, under
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="vcap-services" -->
-<!-- id="vcap-services" -->
+<title id="vcap-services">
   VCAP_SERVICES
 </title>
 <codeblock>
@@ -170,12 +160,11 @@ found in the <b>$_SERVER</b> variable, under
 </codeblock>
 </section>
 <section>
-<title id="php-ini">
-<!-- id="php-ini" -->PHP.ini</title>
+<title id="php-ini">PHP.ini</title>
 <p>Additional PHP ini files will be loaded from the <codeph>$HELION_APP_ROOT/apache/php/</codeph> directory.</p>
 </section>
 <section>
-<title id="document-root-access">
+<title>
 <!-- id="document-root-access" -->Document Root Access</title>
 <p>If your document root (the location of the main <i>index.php</i> file) is the
 main application directory, the information stored in 
@@ -204,8 +193,7 @@ will generate an "HTTP 404 Not Found" error instead.</p>
 source tree which you do not want exposed to end users.</p>
 </section>
 <section>
-<title id="server-name-server-port">
-<!-- id="server-name-server-port" -->SERVER_NAME &amp; SERVER_PORT</title>
+<title id="server-name-server-port">SERVER_NAME &amp; SERVER_PORT</title>
 <p>Application Lifecycle Service serves web applications port 80 and/or 443 at the router, but
 within the application container Apache will be running on a different
 port. PHP will report this internal IP address and port in the
@@ -218,9 +206,7 @@ one or more
 directives to correct the server name or port in URLs.</p>
 </section>
 <section>
-<title>
-<!-- id="persistent-sessions-php" -->
-<!-- id="persistent-sessions-php" -->Persistent Sessions (PHP)</title>
+<title id="persistent-sessions-php">Persistent Sessions (PHP)</title>
 <p>One of the issues with managing a PHP application running multiple
 instances is dealing with user sessions.</p>
 <p>If your application uses a <xref href="/helion/devplatform/1.2/als/user/services/filesystem#persistent-file-system" >

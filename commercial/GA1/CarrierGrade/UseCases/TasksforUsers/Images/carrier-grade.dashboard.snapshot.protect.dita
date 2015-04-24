@@ -18,8 +18,7 @@
 <p>A virtual machine image is a single file that contains a virtual disk with a bootable operating system installed on it. You can use images to create virtual machine instances within the cloud.</p>
 <p>If you want to prevent an image from being deleted, you can make that image <i>protected</i>.</p>
 <section>
-<title id="protect-an-image">
-<!-- id="protect-an-image" -->Protect an image</title>
+<title id="protect-an-image">Protect an image</title>
 <ol>
 <li>
 <p>

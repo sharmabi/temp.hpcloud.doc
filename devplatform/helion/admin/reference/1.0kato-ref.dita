@@ -26,15 +26,12 @@
 </p>
 <p>Kato is the Application Lifecycle Service command line administration utility.</p>
 <section>
-<title id="usage">
-<!-- id="usage" -->Syntax</title>
+<title id="usage">Syntax</title>
 <p>
 <b>kato</b> <i>command</i> [--help] [arguments] [command-options]</p>
 </section>
 <section>
-<title>
-<!-- id="commands" -->
-<!-- id="commands" -->List of Commands</title>
+<title id="commands">List of Commands</title>
 <ul>
 <li>
 <xref href="#topic25021/kato-command-ref-config">config</xref> Manipulate configuration values
@@ -163,11 +160,10 @@ current status across the cluster.</li>
 </section>
 <section>
 <title>
-<!-- id="command-usage-details" -->
 <!-- id="command-usage-details" -->Command Usage Details</title>
 </section>
 <section>
-<title id="kato-command-ref-config">
+<title>
 <!-- id="kato-command-ref-config" -->Config</title>
 <p>Manipulate configuration values  of Application Lifecycle Service components.</p>
 <p>
@@ -206,14 +202,11 @@ current status across the cluster.</li>
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-data" -->
 <!-- id="kato-command-ref-data" -->Data</title>
 <p>Import or export Application Lifecycle Service system data to or from clusters/nodes.</p>
 </section>
 <section>
-<title>
-<!-- id="data-export" -->
-<!-- id="data-export" -->Data Export</title>
+<title id="data-export">Data Export</title>
 <p>Exports Application Lifecycle Service system data to or from clusters/nodes. With no options specified, includes all data except 'resources' and 'aok-config'.</p>
 <p>
 <i>\&lt;filename&gt;</i> The filename the export will be written to</p>
@@ -362,7 +355,6 @@ metadata</p>
 </section>
 <section>
 <title>
-<!-- id="data-import" -->
 <!-- id="data-import" -->Data Import</title>
 <p>Imports Application Lifecycle Service system data to or from clusters/nodes. With no options
 specified, includes all data except 'resources' and 'aok-config'.</p>
@@ -523,9 +515,7 @@ metadata</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="data-users" -->
-<!-- id="data-users" -->Data Users</title>
+<title id="data-users">Data Users</title>
 <p>Import or export a list of Application Lifecycle Service users (CSV format).</p>
 <p>
 <b>data</b> <b>users</b> <b>import</b> [<b>options</b>] <i>\&lt;filename&gt;</i>
@@ -544,7 +534,6 @@ metadata</p>
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-debug-configwatch" -->
 <!-- id="kato-command-ref-debug-configwatch" -->Debug</title>
 <p>Commands for debugging for Application Lifecycle Service internals.</p>
 <p>
@@ -561,9 +550,7 @@ metadata</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-history" -->
-<!-- id="kato-command-ref-history" -->History</title>
+<title id="kato-command-ref-history">History</title>
 <p>Show the kato commands that have been run.</p>
 <p>
 <b>history</b> [<b>--help</b>] [<b>-n</b> <i>\&lt;node-IP&gt;</i>] [<b>--json</b>]</p>
@@ -578,7 +565,6 @@ cluster node</p>
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-info" -->
 <!-- id="kato-command-ref-info" -->Info</title>
 <p>Show information about this node or cluster including assigned and available roles.</p>
 <p>
@@ -594,7 +580,7 @@ cluster node</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-inspect">
+<title>
 <!-- id="kato-command-ref-inspect" -->Inspect</title>
 <p>Detect common problems with your Application Lifecycle Service installation.</p>
 <p>
@@ -629,8 +615,7 @@ cluster node</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-log-stream">
-<!-- id="kato-command-ref-log-stream" -->Log</title>
+<title id="kato-command-ref-log-stream">Log</title>
 <p>Logging utilities for Application Lifecycle Service.</p>
 <p>
 <b>log</b> <b>drain</b> <b>add</b> [<b>options</b>] <i>\&lt;name&gt;</i> <i>\&lt;uri&gt;</i>
@@ -638,7 +623,7 @@ cluster node</p>
 <p>Add a new log drain.</p>
 </section>
 <section>
-<title id="examples">
+<title>
 <!-- id="examples" -->Examples:</title>
 <ul>
 <li>
@@ -719,8 +704,7 @@ systail, event, apptail (comma-separated, no spaces)</p>
 </p>
 </section>
 <section>
-<title id="examples">
-<!-- id="examples" -->Examples:</title>
+<title id="examples">Examples:</title>
 <ul>
 <li>
 <p>stream cloud events</p>
@@ -787,9 +771,7 @@ node</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-attach" -->
-<!-- id="kato-command-ref-node-attach" -->Node</title>
+<title id="kato-command-ref-node-attach">Node</title>
 <p>Node management commands.</p>
 <p>
 <b>node</b> <b>attach</b> [<b>options</b>] <i>\&lt;core-ip&gt;</i>
@@ -984,8 +966,7 @@ tests as warnings instead of upgrade failures.</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-op">
-<!-- id="kato-command-ref-op" -->Op</title>
+<title id="kato-command-ref-op">Op</title>
 <p>Various operational commands.</p>
 <p>
 <b>op</b> <b>--help</b>
@@ -1051,7 +1032,7 @@ tests as warnings instead of upgrade failures.</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="other">
+<title>
 <!-- id="other" -->Other commands</title>
 <p>
 <b>custom_ssl_cert</b> Allows admin configuration of custom SSL
@@ -1092,8 +1073,7 @@ URI mapped to the CC's internal IP</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-patch">
-<!-- id="kato-command-ref-patch" -->Patch</title>
+<title id="kato-command-ref-patch">Patch</title>
 <p>Update an Application Lifecycle Service cluster with post-release fixes.</p>
 <p>
 <b>patch</b> <b>status</b> [<b>--all</b>]</p>
@@ -1123,7 +1103,7 @@ cluster will be patched)</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-process-list">
+<title>
 <!-- id="kato-command-ref-process-list" -->Process</title>
 <p>Start, stop, or restart individual processes. Generally not required.</p>
 <p>
@@ -1178,8 +1158,7 @@ node</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-relocate">
-<!-- id="kato-command-ref-relocate" -->Relocate</title>
+<title id="kato-command-ref-relocate">Relocate</title>
 <p>Move containers, application droplets, or services to a new mount point or filesystem location.</p>
 <p>
 <b>relocate</b> [<b>-h</b>] <b>containers</b> <i>\&lt;new_location&gt;</i>
@@ -1195,7 +1174,7 @@ node</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-report">
+<title>
 <!-- id="kato-command-ref-report" -->Report</title>
 <p>Generate a report that can be sent to Application Lifecycle Service support.</p>
 <p>
@@ -1216,8 +1195,7 @@ node</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-restart">
-<!-- id="kato-command-ref-restart" -->Restart</title>
+<title id="kato-command-ref-restart">Restart</title>
 <p>Restart the Application Lifecycle Service or individual roles.</p>
 <p>
 <b>restart</b> [<b>options</b>] [<i>\&lt;role&gt;...</i>]</p>
@@ -1233,7 +1211,7 @@ node</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-role-add">
+<title>
 <!-- id="kato-command-ref-role-add" -->Role</title>
 <p>Management of node roles.</p>
 <p>
@@ -1308,8 +1286,7 @@ node</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-shell">
-<!-- id="kato-command-ref-shell" -->Shell</title>
+<title id="kato-command-ref-shell">Shell</title>
 <p>Interactive shell for kato.</p>
 <p>
 <b>shell</b> [<b>--help</b>]</p>
@@ -1318,9 +1295,7 @@ node</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-start" -->
-<!-- id="kato-command-ref-start" -->Start</title>
+<title id="kato-command-ref-start">Start</title>
 <p>Start Application Lifecycle Service or individual roles.</p>
 <p>
 <b>start</b> [<b>options</b>] [<i>\&lt;role&gt;...</i>]</p>
@@ -1337,7 +1312,6 @@ node</p>
 </section>
 <section>
 <title>
-<!-- id="kato-command-ref-status" -->
 <!-- id="kato-command-ref-status" -->Status</title>
 <p>List configured roles and their current status across the cluster.</p>
 <p>
@@ -1355,7 +1329,7 @@ cluster</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-stop">
+<title>
 <!-- id="kato-command-ref-stop" -->Stop</title>
 <p>Stop Application Lifecycle Service or individual roles.</p>
 <p>
@@ -1370,8 +1344,7 @@ cluster</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title id="kato-command-ref-version">
-<!-- id="kato-command-ref-version" -->Version</title>
+<title id="kato-command-ref-version">Version</title>
 <p>Display the version of Application Lifecycle Service being run.</p>
 <p>
 <b>version</b> [<b>--help</b>]</p>
