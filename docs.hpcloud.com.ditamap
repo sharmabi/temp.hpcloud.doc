@@ -21,7 +21,12 @@
   <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples1.dita" locktitle="yes" navtitle="1Log Drain Examples -- HP Helion 1.0 Development Platform "/>
    <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples2.dita" locktitle="yes" navtitle="2Log Drain Examples -- HP Helion 1.0 Development Platform "/>
     <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples3.dita" locktitle="yes" navtitle="3Log Drain Examples -- HP Helion 1.0 Development Platform "/>
-	 <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples4.dita" locktitle="yes" navtitle="4Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+ <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples4.dita" locktitle="yes" navtitle="4Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+ <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples4a.dita" locktitle="yes" navtitle="4aLog Drain Examples -- HP Helion 1.0 Development Platform "/>
+ <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples4b.dita" locktitle="yes" navtitle="4bLog Drain Examples -- HP Helion 1.0 Development Platform "/>
+ <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples4c.dita" locktitle="yes" navtitle="4cLog Drain Examples -- HP Helion 1.0 Development Platform "/>
+ <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples4d.dita" locktitle="yes" navtitle="4dLog Drain Examples -- HP Helion 1.0 Development Platform "/>
+ 
 	  <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples5.dita" locktitle="yes" navtitle="5Log Drain Examples -- HP Helion 1.0 Development Platform "/>
 	   <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples6.dita" locktitle="yes" navtitle="6Log Drain Examples -- HP Helion 1.0 Development Platform "/>
 	    <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples7.dita" locktitle="yes" navtitle="7Log Drain Examples -- HP Helion 1.0 Development Platform "/>
