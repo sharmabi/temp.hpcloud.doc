@@ -142,32 +142,6 @@ kato log drain add drain-name tcp://logs.loggly.com:port#
 <title>
 <!-- id="splunk" -->
 <!-- id="splunk" -->Splunk</title>
-<ol>
-<li>
-<xref href="http://www.splunk.com/download" scope="external" format="html" >Set up Splunk Server</xref>.</li>
-<li>In the welcome screen, click <i>Add data</i>
-<image href="/content/documentation/devplatform/helion/images/splunk1.png"/>
-</li>
-<li>
-<p>Under <i>Choose a Data Source</i>, click <b>From a TCP port</b> (or UDP)<!--A BR tag was used here in the original source.--><image href="/content/documentation/devplatform/helion/images/splunk2.png" placement="break"/>
-</p>
-</li>
-<li>
-<p>In the <b>Add New Source</b> screen:</p>
-
-<ul>
-<li>Select a TCP/UDP port greater than <b>9999</b>
-</li>
-<li>Give it a suitable <b>Source name</b>.</li>
-<li>Set sourcetype to <b>Manual</b>
-</li>
-<li>Leave Source Type <b>empty</b>
-<image href="/content/documentation/devplatform/helion/images/splunk3.png"/>
-</li>
-</ul>
-</li>
-<li>
-<p>Enable system logging by executing <b>one</b> of the following kato commands:</p>
  
 </section>
 </body>
