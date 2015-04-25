@@ -63,10 +63,9 @@ set environment variables. This mechanism is fully supported in Application Life
 <!-- id="legacy-buildpack-and-environment-variables" -->
 <!-- id="legacy-buildpack-and-environment-variables" -->
 <!-- id="legacy-buildpack-and-environment-variables" -->Legacy Buildpack and Environment Variables</title>
-<p>When using the <xref href="/als/v1/user/deploy/buildpack#buildpacks" >
+<p>When using the  
 <i>Legacy
-Buildpack</i>
-</xref>, environment
+Buildpack</i>, environment
 variable values defined in <i>manifest.yml</i> (<codeph>env:</codeph>
 block) cannot be updated without re-pushing the application with new
 settings. Changes to variables made in the Management Console will be
@@ -79,10 +78,10 @@ changing the values in <i>manifest.yml</i>.</p>
 <title id="service-gateway-log-errors-in-maintenance-mode">
 <!-- id="service-gateway-log-errors-in-maintenance-mode" -->
 <!-- id="service-gateway-log-errors-in-maintenance-mode" -->Service Gateway Log Errors in Maintenance Mode</title>
-<p>With Application Lifecycle Service set in <xref href="/als/v1/admin/console/customize#console-settings" >
+<p>With Application Lifecycle Service set in  
 <i>Maintenance
 Mode</i>
-</xref>, all "_gateway"
+ , all "_gateway"
 processes will report the following error once per minute:</p>
 <codeblock>
   <codeph>Failed registering with cloud controller, status=503
@@ -114,10 +113,10 @@ these addresses wherever possible, as these addresses are subject to
 change with cluster configuration.</p>
 <p>If the VM instance can locally resolve a hostname rather than an IP
 address, it's generally best practice to use the hostname.</p>
-<p>If not, Application Lifecycle Service provides various <xref href="/als/v1/user/reference/environment#environment-variables" >
+<p>If not, Application Lifecycle Service provides various  
 <i>environment
 variables</i>
-</xref>
+ 
 so that applications do not need to hardcode them at install time. Some
 examples are <codeph>VCAP_SERVICES</codeph> and <codeph>DATABASE_URL</codeph>. We strongly encourage their use.</p>
 <p>A known issue is that some applications have install procedures that
@@ -148,8 +147,8 @@ hooks.</p>
 <!-- id="community-forums" -->
 <!-- id="community-forums" -->Community Forums</title>
 <p>Please keep up to date with the latest Known Issues, FAQs and
-announcements in our <xref href="https://community.dev.hp.com/t5/Forum/bd-p/cloud_board" scope="external" format="html" >online Application Lifecycle Service
-forums</xref>.</p>
+announcements in our online Application Lifecycle Service
+forums .</p>
 </section>
 </body>
 </topic>
