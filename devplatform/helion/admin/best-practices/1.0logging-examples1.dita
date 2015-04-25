@@ -50,24 +50,24 @@ software or services:</p>
 </li>
 <li>
 <p>In the Dashboard screen, click <i>Add Systems</i>.
-<image href="content/documentation/devplatform/helion/imagesppt1.png"/>
+ 
 </p>
 </li>
 <li>
 <p>In the Setup Systems screen under <i>Other log methods</i>, click
 <i>Alternatives</i>.
-<image href="/content/documentation/devplatform/helion/images/ppt2.png"/>
+ 
 </p>
 </li>
 <li>
 <p>Choose option C: <i>My system's hostname changes</i> and give it a
 suitable name.
-<image href="/content/documentation/devplatform/helion/images/ppt3.png"/>
+ 
 </p>
 </li>
 <li>
 <p>Note down the <b>port number</b>. You need this later on.
-<image href="/content/documentation/devplatform/helion/images/ppt4.png"/>
+ 
 </p>
 </li>
 <li>
@@ -92,7 +92,7 @@ Formats</xref>).</p>
 <xref href="https://app.loggly.com/pricing" scope="external" format="html" >Create an account for Loggly</xref>
 </li>
 <li>Under <i>Incoming Data</i> tab, click <i>Add Input</i>.
-<image href="/content/documentation/devplatform/helion/images/loggly1.png"/>
+ 
 </li>
 <li>In the Add Input screen:
 
@@ -102,7 +102,7 @@ Formats</xref>).</p>
 <li>Choose <i>Combination Log Type</i>
 </li>
 <li>[Optional] For JSON Logging, Choose UDP or TCP <b>with Stripe</b> and enable <b>JSON Logging</b>. (for system logs)
-<image href="/content/documentation/devplatform/helion/images/loggly2.png"/>
+ 
 </li>
 </ul>
 </li>
@@ -110,16 +110,16 @@ Formats</xref>).</p>
 
 <ul>
 <li>Click <i>Add device</i>
-<image href="/content/documentation/devplatform/helion/images/images/loggly3.png"/>
+ 
 </li>
 <li>Add IP Address 0.0.0.0/0 when prompted
-<image href="/content/documentation/devplatform/helion/images/loggly4.png"/>
+ 
 </li>
 </ul>
 </li>
 <li>Turn off discovery since we allowed all devices. Also, note down the
 <b>port number</b>.
- <image href="/content/documentation/devplatform/helion/images/loggly5.png"/>
+ 
 </li>
 <li>
 <p>Enable system logging by executing <b>one</b> of the following kato commands:</p>
@@ -146,10 +146,10 @@ kato log drain add drain-name tcp://logs.loggly.com:port#
 <li>
 <xref href="http://www.splunk.com/download" scope="external" format="html" >Set up Splunk Server</xref>.</li>
 <li>In the welcome screen, click <i>Add data</i>
-<image href="/content/documentation/devplatform/helion/images/splunk1.png"/>
+ 
 </li>
 <li>
-<p>Under <i>Choose a Data Source</i>, click <b>From a TCP port</b> (or UDP)<!--A BR tag was used here in the original source.--><image href="/content/documentation/devplatform/helion/images/splunk2.png" placement="break"/>
+<p>Under <i>Choose a Data Source</i>, click <b>From a TCP port</b> (or UDP)<!--A BR tag was used here in the original source.--> 
 </p>
 </li>
 <li>
@@ -162,7 +162,7 @@ kato log drain add drain-name tcp://logs.loggly.com:port#
 <li>Set sourcetype to <b>Manual</b>
 </li>
 <li>Leave Source Type <b>empty</b>
-<image href="/content/documentation/devplatform/helion/images/splunk3.png"/>
+ 
 </li>
 </ul>
 </li>
