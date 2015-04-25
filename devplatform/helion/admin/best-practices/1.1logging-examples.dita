@@ -47,7 +47,6 @@ software or services.</p>
 <section>
 <title>
 <!-- id="logging-examples-papertrail" -->
-<!-- id="logging-examples-papertrail" -->
 <!-- id="logging-examples-papertrail" -->Papertrail</title>
 <ol>
 <li>
@@ -119,9 +118,7 @@ Loggly supports JSON format with minor configuration changes shown above. Enable
 -->
 </section>
 <section>
-<title>
-<!-- id="logging-examples-splunk" -->
-<!-- id="logging-examples-splunk" -->
+<title id="logging-examples-splunk">
 <!-- id="logging-examples-splunk" -->Splunk</title>
 <ol>
 <li>Set up <xref href="http://www.splunk.com/download" scope="external" format="html" >Splunk Server</xref>.</li>
@@ -165,7 +162,6 @@ kato log drain add drain-name tcp://splunk-server-address:port#
 </section>
 <section>
 <title id="logging-examples-logstash">
-<!-- id="logging-examples-logstash" -->
 <!-- id="logging-examples-logstash" -->Logstash</title>
 <ol>
 <li>
@@ -195,7 +191,6 @@ kato log drain add drain-name tcp://splunk-server-address:port#
 </section>
 <section>
 <title id="hello-world-custom-drain">
-<!-- id="hello-world-custom-drain" -->
 <!-- id="hello-world-custom-drain" -->Hello World Custom Drain</title>
 <p>The command below starts a drain target server on a node and pipes it to a local file:</p>
 <codeblock>

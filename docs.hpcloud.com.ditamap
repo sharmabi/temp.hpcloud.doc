@@ -17,7 +17,16 @@
  <!--permalink: /als/v1/--> <topicref href="devplatform/helion/1.0index.dita" locktitle="yes" navtitle="Application Lifecycle Service Documentation -- HP Helion 1.0 Development Platform "/>
  <!--permalink: /als/v1/admin/--> <topicref href="devplatform/helion/admin/1.0index.dita" locktitle="yes" navtitle="Application Lifecycle Service Admin Guide -- HP Helion 1.0 Development Platform "/>
  <!--permalink: /als/v1/admin/best-practices/--> <topicref href="devplatform/helion/admin/best-practices/1.0index.dita" locktitle="yes" navtitle="Best Practices -- HP Helion 1.0 Development Platform "/>
- <!--permalink: /als/v1/admin/best-practices/logging-examples/--> <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples.dita" locktitle="yes" navtitle="Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+ <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples.dita" locktitle="yes" navtitle="Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+  <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples1.dita" locktitle="yes" navtitle="1Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+   <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples2.dita" locktitle="yes" navtitle="2Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+    <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples3.dita" locktitle="yes" navtitle="3Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+	 <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples4.dita" locktitle="yes" navtitle="4Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+	  <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples5.dita" locktitle="yes" navtitle="5Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+	   <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples6.dita" locktitle="yes" navtitle="6Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+	    <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples7.dita" locktitle="yes" navtitle="7Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+		 <topicref href="devplatform/helion/admin/best-practices/1.0logging-examples8.dita" locktitle="yes" navtitle="8Log Drain Examples -- HP Helion 1.0 Development Platform "/>
+		 
  <!--permalink: /als/v1/admin/console/--> <topicref href="devplatform/helion/admin/console/1.0index.dita" locktitle="yes" navtitle="Management Console (Admin View) -- HP Helion 1.0 Development Platform "/>
  <!--permalink: /als/v1/admin/console/app-store/--> <topicref href="devplatform/helion/admin/console/1.0app-store.dita" locktitle="yes" navtitle="Sample Applications -- HP Helion 1.0 Development Platform "/>
  <!--permalink: /als/v1/admin/console/customize/--> <topicref href="devplatform/helion/admin/console/1.0customize.dita" locktitle="yes" navtitle="Customization -- HP Helion 1.0 Development Platform "/>
