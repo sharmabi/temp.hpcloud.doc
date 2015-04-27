@@ -18,7 +18,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>System Information</b> link.</p>
@@ -35,7 +35,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </body>

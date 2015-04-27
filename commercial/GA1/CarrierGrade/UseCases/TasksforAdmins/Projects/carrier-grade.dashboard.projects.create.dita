@@ -15,7 +15,7 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
 -->
-<p>As an admin, you can <xref href="./publiccloud/index.dita#projectcreate" >create</xref> and <xref href="./publiccloud/index.dita#projectsdel" >delete</xref> projects.</p>
+<p>As an admin, you can <xref href="../../../../../../publiccloud/index.dita#projectcreate" >create</xref> and <xref href="./publiccloud/index.dita#projectsdel" >delete</xref> projects.</p>
 <section>
 <title>
 <!-- id="projectcreate" -->
@@ -23,7 +23,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Identity</b> dashboard, then the <b>Projects</b> link.</p>
@@ -62,7 +62,7 @@ c. Leave <b>Enabled</b> selected to create an active project or clear the option
 <li>RAM (MB). RAM megabytes allowed for each instance.</li>
 </ul>
 <p>
-<b>Note:</b> Default values are set on the <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.default.quotas.dita" >Default screen</xref>.</p>
+<b>Note:</b> Default values are set on the <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.default.quotas.dita" >Default screen</xref>.</p>
 </li>
 <li>
 <p>Click <b>Create Project</b>.</p>
@@ -76,7 +76,7 @@ c. Leave <b>Enabled</b> selected to create an active project or clear the option
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Identity</b> dashboard, then the <b>Projects</b> link.</p>
@@ -88,7 +88,7 @@ c. Leave <b>Enabled</b> selected to create an active project or clear the option
 <p>In the confirmation screen, click <b>Delete Project</b>.</p>
 </li>
 </ol>
-<p>The project is no longer available.  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+<p>The project is no longer available.  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

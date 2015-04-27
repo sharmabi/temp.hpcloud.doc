@@ -20,7 +20,7 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-add-mgmt-group.md-->
  <!--permalink: /helion/openstack/carrier/install/vsa/add-mgmt/--></p>
-<p> <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-vsa-cluster.dita" >◀ Creating a StoreVirtual Cluster and Adding it to a New Management Group </xref>| <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-storage-storevirtual.dita" >Working with HP StoreVirtual VSA ▶</xref>
+<p> <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-vsa-cluster.dita" >◀ Creating a StoreVirtual Cluster and Adding it to a New Management Group </xref>| <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-storage-storevirtual.dita" >Working with HP StoreVirtual VSA ▶</xref>
 </p>
 <p>To add a StoreVirtual system to any existing Management Group, do the following:</p>
 <ol>
@@ -61,13 +61,13 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <section>
 <title id="next-step">
 <!-- id="next-step" -->Next Step</title>
 <p>
-  <xref href="./commercial/GA1/1.1commercial.undercloud-storage-storevirtual.dita" >Working with HP StoreVirtual VSA</xref>
+  <xref href="../../../../../commercial/GA1/1.1commercial.undercloud-storage-storevirtual.dita" >Working with HP StoreVirtual VSA</xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

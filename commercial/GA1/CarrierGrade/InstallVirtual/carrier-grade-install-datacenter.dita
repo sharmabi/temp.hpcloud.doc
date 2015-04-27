@@ -57,10 +57,10 @@ Password: cghelion
 <title id="next-step">
 <!-- id="next-step" -->Next Step</title>
 <p>
-  <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.dita" >Create the Guest VM</xref>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.dita" >Create the Guest VM</xref>
 </p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

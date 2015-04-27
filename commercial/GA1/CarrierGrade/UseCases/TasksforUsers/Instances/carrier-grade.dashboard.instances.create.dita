@@ -26,7 +26,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Instances</b> link.</p>
@@ -62,7 +62,7 @@
 <li>
 <p>Select the volume, snapshot, or image from the list that appears.</p>
 
-<p>Additonal fields appear for the boot source option that create a new volume. For more information, refer to <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.managing.volumes.dita" >Managing Block Storage Volumes</xref>.</p>
+<p>Additonal fields appear for the boot source option that create a new volume. For more information, refer to <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.managing.volumes.dita" >Managing Block Storage Volumes</xref>.</p>
 </li>
 </ul>
 </li>
@@ -70,7 +70,7 @@
 <p>On the <b>Access &amp; Security</b> tab, perform the following tasks:.</p>
 
 <ul>
-<li>From the <b>Keypair</b> list, select the <b>keypair</b> to use with the instance. If there is no key pair, click the <b>+</b> button to <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Security/carrier-grade.dashboard.security.keypairs.dita#importKeypairs" >import a key pair</xref>.</li>
+<li>From the <b>Keypair</b> list, select the <b>keypair</b> to use with the instance. If there is no key pair, click the <b>+</b> button to <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Security/carrier-grade.dashboard.security.keypairs.dita#importKeypairs" >import a key pair</xref>.</li>
 <li>Select the security group to use with the instance.</li>
 </ul>
 <p>
@@ -80,7 +80,7 @@
 <li>
 <p>On the <b>Networking</b> tab, from the <b>Available Networks</b> list, select the required network. The network is displayed in the Selected Networks box.</p>
 
-<p>A default network is always available. You can also <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >create custom networks</xref> which will appear in this list.</p>
+<p>A default network is always available. You can also <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >create custom networks</xref> which will appear in this list.</p>
 
 <p>
 <image href="../../../../../../media/CGH-Helion-Instance-Launch-Networking.png"/>
@@ -98,12 +98,12 @@
 <image href="../../../../../../media/CGH-Helion-Instance-Launch-Post.png"/>
 </p>
 
-<p>For more details, refer to the OpenStack documentation, such as <xref href="http://docs.openstack.org/user-guide/content/user-data.html" scope="external" format="html" >Configure instances at boot</xref>.</p>
+<p>For more details, refer to the OpenStack documentation, such as <xref href="http://docs.openstack.org/user-guide/content/user-data.html" scope="external" format="html"   >Configure instances at boot</xref>.</p>
 </li>
 <li>
 <p>On the <b>Advanced Options</b> tab, optionally, select Configuration Drive to configure OpenStack to write metadata to a special configuration drive that attaches to the instance when it boots.</p>
 
-<p>The instance can mount this drive and read files from it to get information that is normally available through the metadata service. For more information, see the OpenStack document <xref href="http://docs.openstack.org/user-guide/content/config-drive.html" scope="external" format="html" >Store metadata on a configuration drive</xref>.</p>
+<p>The instance can mount this drive and read files from it to get information that is normally available through the metadata service. For more information, see the OpenStack document <xref href="http://docs.openstack.org/user-guide/content/config-drive.html" scope="external" format="html"   >Store metadata on a configuration drive</xref>.</p>
 
 <p>
 <image href="../../../../../../media/CGH-Helion-Instance-Launch-Advanced.png"/>
@@ -116,7 +116,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

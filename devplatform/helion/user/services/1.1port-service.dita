@@ -22,33 +22,33 @@
  <!--./devplatform/helion/user/services/1.1port-service.md-->
  <!--permalink: /helion/devplatform/1.1/als/user/services/port-service/--></p>
 <p>
-  <xref href="./devplatform/helion/user/services/1.0port-service.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="../../../../devplatform/helion/user/services/1.0port-service.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
-<p>HTTP and HTTPS ports and routing are provided automatically for all web applications deployed to Application Lifecycle Service (unless <xref href="./devplatform/helion/user/deploy/1.1manifestyml.dita#web" >processes:
+<p>HTTP and HTTPS ports and routing are provided automatically for all web applications deployed to Application Lifecycle Service (unless <xref href="../../../../devplatform/helion/user/deploy/1.1manifestyml.dita#web" >processes:
 web:</xref> is set to
 "\~").</p>
 <p>If your application requires additional TCP or UDP ports, use the Harbor service to allocate them.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#requesting-a-port" >Requesting a Port</xref>
+<xref href="../../../../publiccloud/index.dita#requesting-a-port" >Requesting a Port</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#port-service-env-vars" >Harbor Environment Variables</xref>
+<xref href="../../../../publiccloud/index.dita#port-service-env-vars" >Harbor Environment Variables</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#setting-the-port-protocols" >Setting the Port Protocols</xref>
+<xref href="../../../../publiccloud/index.dita#setting-the-port-protocols" >Setting the Port Protocols</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#multiple-application-instances" >Multiple Application Instances</xref>
+<xref href="../../../../publiccloud/index.dita#multiple-application-instances" >Multiple Application Instances</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#https-via-harbor" >HTTPS via Harbor</xref>
+<xref href="../../../../publiccloud/index.dita#https-via-harbor" >HTTPS via Harbor</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#https-container-proxy" >HTTPS Container Proxy</xref>
+<xref href="../../../../publiccloud/index.dita#https-container-proxy" >HTTPS Container Proxy</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#multiple-ssl-certificates" >Multiple SSL Certificates</xref>
+<xref href="../../../../publiccloud/index.dita#multiple-ssl-certificates" >Multiple SSL Certificates</xref>
 </li>
 </ul>
 <section>
@@ -59,7 +59,7 @@ web:</xref> is set to
   <codeph>helion create-service harbor debug-port
 </codeph>
 </codeblock>
-<p>To request a port from Harbor in the <b>manifest.yml</b> file, add it in the <xref href="./devplatform/helion/user/deploy/1.1manifestyml.dita#services" >
+<p>To request a port from Harbor in the <b>manifest.yml</b> file, add it in the <xref href="../../../../devplatform/helion/user/deploy/1.1manifestyml.dita#services" >
 <b>services</b>
 </xref> block.
 For example:</p>
@@ -109,7 +109,7 @@ port number.</li>
 <b>node_id</b>: The Harbor node ID (Application Lifecycle Service internal).</li>
 <li>
 <b>int_port</b>: The port on the application container which forwards
-to Harbor (see also <xref href="./publiccloud/index.dita#port-service-env-vars" >Harbor Environment Variables</xref>). Application(s) bound to the
+to Harbor (see also <xref href="../../../../publiccloud/index.dita#port-service-env-vars" >Harbor Environment Variables</xref>). Application(s) bound to the
 service should connect to this port.</li>
 </ul>
 <p>Access to the port from outside of the Application Lifecycle Service system/cluster may or
@@ -127,7 +127,7 @@ port.</li>
   <b>Note</b>
 </p>
 <p>To remotely check the settings and credentials of any Application Lifecycle Service service,
-use the <xref href="./devplatform/helion/user/reference/1.1client-ref.dita#command-services" >
+use the <xref href="../../../../devplatform/helion/user/reference/1.1client-ref.dita#command-services" >
 <b>helion
 service</b>
 </xref> command.</p>
@@ -172,7 +172,7 @@ UDP_SERVICE_PORT=${!UDP_SERVICE_NAME}
   <b>Note</b>
 </p>
 <p>To use declarations like these in
-<xref href="./devplatform/helion/user/deploy/1.1manifestyml.dita#hooks" >
+<xref href="../../../../devplatform/helion/user/deploy/1.1manifestyml.dita#hooks" >
 <i>hooks</i>
 </xref>, put them in a
 separate bash script. Brace expansion and grouping cannot be used directly in YAML files.</p>

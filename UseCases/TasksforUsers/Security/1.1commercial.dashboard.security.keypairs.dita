@@ -20,13 +20,13 @@
 <p>The following tasks can be performed by a user:</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#createKeypairs" >Create Keypairs</xref>
+<xref href="../../../publiccloud/index.dita#createKeypairs" >Create Keypairs</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#deleteKeypairs" >Delete Keypairs</xref>
+<xref href="../../../publiccloud/index.dita#deleteKeypairs" >Delete Keypairs</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#importKeypairs" >Import Keypairs</xref>
+<xref href="../../../publiccloud/index.dita#importKeypairs" >Import Keypairs</xref>
 </li>
 </ul>
 <section>
@@ -36,7 +36,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Access &amp; Security</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -71,7 +71,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Access &amp; Security</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -96,7 +96,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Access &amp; Security</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -120,7 +120,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

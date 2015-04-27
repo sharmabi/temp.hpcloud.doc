@@ -203,7 +203,7 @@ ovs_version: "2.0.2"
 </codeblock>
 </li>
 <li>
-<p>Make sure that you can connect to an external <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.dita" >NTP server</xref> and check that you can connect to an external network after exporting the proxy.</p>
+<p>Make sure that you can connect to an external <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.dita" >NTP server</xref> and check that you can connect to an external network after exporting the proxy.</p>
 </li>
 </ol>
 </section>
@@ -211,10 +211,10 @@ ovs_version: "2.0.2"
 <title id="next-step">
 <!-- id="next-step" -->Next Step</title>
 <p>
-  <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtrouter.dita" >Configure a Virtual Router During Installation</xref>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtrouter.dita" >Configure a Virtual Router During Installation</xref>
 </p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

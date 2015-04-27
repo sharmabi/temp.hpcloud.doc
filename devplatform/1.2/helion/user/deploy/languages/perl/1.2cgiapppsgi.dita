@@ -54,7 +54,7 @@ builder {
 </codeblock>
 <p>In the above example, AppCore.pm is located in the local lib folder and
 handles processing of the data and the response as per the
-<xref href="http://search.cpan.org/~markstos/CGI-Application-4.50/lib/CGI/Application.pm" scope="external" format="html" >CGI::Application</xref>
+<xref href="http://search.cpan.org/~markstos/CGI-Application-4.50/lib/CGI/Application.pm" scope="external" format="html"   >CGI::Application</xref>
 documentation.</p>
 <p>
   <b>Note</b>
@@ -68,7 +68,7 @@ Application Lifecycle Service.</p>
 <!-- id="examples" -->Examples</title>
 <ul>
 <li>
-<xref href="https://github.com/Stackato-Apps/rubric" scope="external" format="html" >Rubric</xref>: The winning entry from our Application Lifecycle Service contest.</li>
+<xref href="https://github.com/Stackato-Apps/rubric" scope="external" format="html"   >Rubric</xref>: The winning entry from our Application Lifecycle Service contest.</li>
 </ul>
 </section>
 </body>

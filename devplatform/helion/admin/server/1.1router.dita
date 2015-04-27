@@ -24,29 +24,29 @@
  <!--./devplatform/helion/admin/server/1.1router.md-->
  <!--permalink: /helion/devplatform/1.1/als/admin/server/router/--></p>
 <p>
-<xref href="./devplatform/helion/admin/server/1.0router.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+<xref href="../../../../devplatform/helion/admin/server/1.0router.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 The Application Lifecycle Service Router role manages HTTP and HTTPS traffic between web clients and application instances. In conjunction with the Cloud
 Controller, it maps application URLs to the corresponding application
 instances running in Linux containers on DEA nodes, distributing load
 between multiple instances (containers) as required.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#settings" >Settings</xref>
+<xref href="../../../../publiccloud/index.dita#settings" >Settings</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#websockets" >WebSockets</xref>
+<xref href="../../../../publiccloud/index.dita#websockets" >WebSockets</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#router-spdy" >SPDY</xref>
+<xref href="../../../../publiccloud/index.dita#router-spdy" >SPDY</xref>
 </li>
 </ul>
 <p>Application Lifecycle Service's default router ('router2g') supports
-<xref href="http://www.websocket.org/aboutwebsocket" scope="external" format="html" >WebSocket</xref> (including
-"wss://" secure web sockets) and <xref href="http://www.chromium.org/spdy" scope="external" format="html" >SPDY</xref>.</p>
+<xref href="http://www.websocket.org/aboutwebsocket" scope="external" format="html"   >WebSocket</xref> (including
+"wss://" secure web sockets) and <xref href="http://www.chromium.org/spdy" scope="external" format="html"   >SPDY</xref>.</p>
 <section>
 <title id="settings">
 <!-- id="settings" -->Settings</title>
-<p>The Router is configured using <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-config" >
+<p>The Router is configured using <xref href="../../../../devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-config" >
 <i>kato config</i>
 </xref>. The following settings are configurable:</p>
 <p>
@@ -86,7 +86,7 @@ their sticky session assignment by removing the
 HELION_SESSION_AFFINITY cookie.</p>
 <p>
 <b>x_frame_options</b>: Prevent clickjacking on requests with
-<xref href="https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options" scope="external" format="html" >X-Frame response
+<xref href="https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options" scope="external" format="html"   >X-Frame response
 header</xref>
 configuration. Disabled if empty (default). Valid values are:</p>
 <ul>
@@ -103,14 +103,14 @@ configuration. Disabled if empty (default). Valid values are:</p>
   <b>Note</b>
 </p>
 <p>Alternatively, end user applications can employ
-<xref href="http://en.wikipedia.org/wiki/Framekiller" scope="external" format="html" >framekiller</xref> JavaScript
+<xref href="http://en.wikipedia.org/wiki/Framekiller" scope="external" format="html"   >framekiller</xref> JavaScript
 snippets to help prevent frame based clickjacking.</p>
 </section>
 <section>
 <title id="websockets">
 <!-- id="websockets" -->WebSockets</title>
 <p>Applications using web sockets must use the VCAP_APP_PORT or PORT
-<xref href="./devplatform/helion/user/reference/1.1environment.dita#environment-variables" >
+<xref href="../../../../devplatform/helion/user/reference/1.1environment.dita#environment-variables" >
 <i>environment variables</i>
 </xref>
 to set the default listener port of the WebSocket server.</p>
@@ -119,7 +119,7 @@ to set the default listener port of the WebSocket server.</p>
 <title id="router-spdy">
 <!-- id="router-spdy" -->SPDY</title>
 <p>
-<xref href="http://dev.chromium.org/spdy/" scope="external" format="html" >SPDY</xref> is a protocol developed by Google
+<xref href="http://dev.chromium.org/spdy/" scope="external" format="html"   >SPDY</xref> is a protocol developed by Google
 for reducing web page load time. The router supports SPDY versions 2 and
 3. Applications can use SPDY over any HTTPS connection, so long as the
 connection consumers (the application server and browser) support it.</p>

@@ -25,36 +25,36 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-oc-config-storevirtual.md-->
  <!--permalink: /helion/openstack/carrier/undercloud/oc/config/storevirtual/--></p>
-<p> <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-storage-storevirtual.dita" >◀ Working with HP StoreVirtual VSA </xref> </p>
+<p> <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-storage-storevirtual.dita" >◀ Working with HP StoreVirtual VSA </xref> </p>
 <p>Once you register the StoreVirtual clusters as per your requirements, you can use the overcloud option in the Horizon undercloud dashboard for the following tasks:</p>
 <ul>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#add-backend" >Add backend</xref> (required)</p>
+<xref href="../../../../../publiccloud/index.dita#add-backend" >Add backend</xref> (required)</p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#expand-backend" >Expand backend</xref> (optional)</p>
+<xref href="../../../../../publiccloud/index.dita#expand-backend" >Expand backend</xref> (optional)</p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#shrink-backend" >Shrink backend</xref> (optional)</p>
+<xref href="../../../../../publiccloud/index.dita#shrink-backend" >Shrink backend</xref> (optional)</p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#delete-backend" >Delete backend</xref> (optional)</p>
+<xref href="../../../../../publiccloud/index.dita#delete-backend" >Delete backend</xref> (optional)</p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#generate-config" >Generate configuration</xref> (required)</p>
+<xref href="../../../../../publiccloud/index.dita#generate-config" >Generate configuration</xref> (required)</p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#update-overcloud" >Update Overcloud</xref> (required)</p>
+<xref href="../../../../../publiccloud/index.dita#update-overcloud" >Update Overcloud</xref> (required)</p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#next-steps" >Next Steps</xref>
+<xref href="../../../../../publiccloud/index.dita#next-steps" >Next Steps</xref>
 </p>
 </li>
 </ul>
@@ -140,7 +140,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 </section>
 <section>
@@ -197,7 +197,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 </section>
 <section>
@@ -252,7 +252,7 @@
 4. Edit and update the `/root/overcloud-config.json` and add the JSON snippet obtained from [generating the configuration file](#generate-config).Ensure the JSON file format is unbroken. A sample of the file is given below:
 2. Edit and update the `tripleo/configs/kvm-custom-ips.json` and add the JSON snippet obtained from [generating the configuration file](#generate-config).Ensure the JSON file format is unbroken. A sample of the file is given below:--></li>
 <li>
-<p>Append the appropriate environment variables file with the JSON snippet(obtained from <xref href="./publiccloud/index.dita#generate-config" >Generate Config</xref>). Ensure the JSON file format is unbroken. A sample of the file is given below:</p>
+<p>Append the appropriate environment variables file with the JSON snippet(obtained from <xref href="../../../../../publiccloud/index.dita#generate-config" >Generate Config</xref>). Ensure the JSON file format is unbroken. A sample of the file is given below:</p>
 
 <codeblock>
 <codeph>{
@@ -316,7 +316,7 @@
 <!-- id="next-steps" -->Next Steps</title>
 <p>To use the newly added Cinder backend, create volume type and associate it with this backend using <xref href="/helion/openstack/carrier/map/volumetype/" >Horizon Overcloud Dashboard</xref> or Cinder CLI.</p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

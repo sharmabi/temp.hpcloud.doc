@@ -22,13 +22,13 @@
  <!--./devplatform/1.2/helion/user/services/1.2user-provided.md-->
  <!--permalink: /helion/devplatform/1.2/als/user/services/user-provided/--></p>
 <p>
-  <xref href="./devplatform/helion/user/services/1.0user-provided.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="../../../../../devplatform/helion/user/services/1.0user-provided.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
 <p>User-provided service instances allow you connect applications running
 on Application Lifecycle Service to specified external data services, without hard coding the
 credentials into the application. The service instance provides the
-connection information to the application via the VCAP_SERVICES environment variables, just like the <xref href="./devplatform/1.2/helion/user/services/1.2data-services.dita#data-services" >built-in data services</xref>.</p>
-<p>Think of user-provided services as a credentials database for your Application Lifecycle Service application space. You provide the connection information and ALS stores it in a <xref href="./publiccloud/index.dita#using" >
+connection information to the application via the VCAP_SERVICES environment variables, just like the <xref href="../../../../../devplatform/1.2/helion/user/services/1.2data-services.dita#data-services" >built-in data services</xref>.</p>
+<p>Think of user-provided services as a credentials database for your Application Lifecycle Service application space. You provide the connection information and ALS stores it in a <xref href="../../../../../publiccloud/index.dita#using" >
 <i>JSON object</i>
 </xref> which can then be bound any applications in the space.</p>
 <section>
@@ -91,7 +91,7 @@ prod-db-int
 +--------------+------------------------------+
 </codeph>
 </codeblock>
-<p>The <xref href="./devplatform/1.2/helion/user/services/1.2data-services.dita#database-services-vcap-services" >
+<p>The <xref href="../../../../../devplatform/1.2/helion/user/services/1.2data-services.dita#database-services-vcap-services" >
 <i>VCAP_SERVICES</i>
 </xref>
 variables will expose the connection information within the application
@@ -111,15 +111,15 @@ object:</p>
 }
 </codeph>
 </codeblock>
-<p>To have your application use this information, parse the variable in your application code to extract the credentials at runtime. See the <xref href="./devplatform/1.2/helion/user/deploy/1.2index.dita#language-specific-deployment" >Language Specific Deployment</xref> documentation for examples.</p>
-<p>Buildpacks that auto-configure applications for system-provided services can also do so for user-provided services. For example, the <xref href="https://github.com/cloudfoundry/java-buildpack" scope="external" format="html" >java buildpack</xref> will configure applications to connect to a database if the service has a name or tag with <i>postgres</i>, <i>mariadb</i>, or <i>mysql</i> in it. Check the buildpack's documentation or code to see exactly what it supports.</p>
+<p>To have your application use this information, parse the variable in your application code to extract the credentials at runtime. See the <xref href="../../../../../devplatform/1.2/helion/user/deploy/1.2index.dita#language-specific-deployment" >Language Specific Deployment</xref> documentation for examples.</p>
+<p>Buildpacks that auto-configure applications for system-provided services can also do so for user-provided services. For example, the <xref href="https://github.com/cloudfoundry/java-buildpack" scope="external" format="html"   >java buildpack</xref> will configure applications to connect to a database if the service has a name or tag with <i>postgres</i>, <i>mariadb</i>, or <i>mysql</i> in it. Check the buildpack's documentation or code to see exactly what it supports.</p>
 </section>
 <section>
 <title id="user-provided-URL-env">
 <!-- id="user-provided-URL-env" -->Other Environment Variables</title>
 <p>User-provided service instances do not set <b>DATABASE_URL</b> or 
 database-specific URL environment variables.</p>
-<p>If your application uses variables in URL format, you can add them manually to the application with the <xref href="./devplatform/1.2/helion/user/reference/1.2client-ref-management.dita#command-set-env" >
+<p>If your application uses variables in URL format, you can add them manually to the application with the <xref href="../../../../../devplatform/1.2/helion/user/reference/1.2client-ref-management.dita#command-set-env" >
 <i>set-env</i>
 </xref> command. For example:</p>
 <codeblock>

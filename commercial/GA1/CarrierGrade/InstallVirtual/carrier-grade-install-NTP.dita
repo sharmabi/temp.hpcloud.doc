@@ -17,9 +17,9 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.md-->
  <!--permalink: /helion/openstack/carrier/install/ntp/--></p>
-<p> <xref href="./commercial/GA1/1.1commercial.install-GA-prereqs.dita#ntp" >◀ Prerequisites | </xref>
-<xref href="./commercial/GA1/1.1commercial.install-GA-overview.dita" > ▲ Installation Overview</xref> </p>
-<p>This page provides detailed information on <xref href="./publiccloud/index.dita#client" >configuring HP Helion OpenStack nodes</xref> for Network Time Protocol (NTP) and <xref href="./publiccloud/index.dita#server" >instlling an NTP server on the seed cloud host</xref>.</p>
+<p> <xref href="../../../../commercial/GA1/1.1commercial.install-GA-prereqs.dita#ntp" >◀ Prerequisites | </xref>
+<xref href="../../../../commercial/GA1/1.1commercial.install-GA-overview.dita" > ▲ Installation Overview</xref> </p>
+<p>This page provides detailed information on <xref href="../../../../publiccloud/index.dita#client" >configuring HP Helion OpenStack nodes</xref> for Network Time Protocol (NTP) and <xref href="./publiccloud/index.dita#server" >instlling an NTP server on the seed cloud host</xref>.</p>
 <p>NTP is a networking protocol for clock synchronization between computer systems. The undercloud and overcloud systems are configured as NTP clients during the installation process.</p>
 <p>HP Helion OpenStack requires that all nodes point to the same NTP server. You can use an external NTP server or configure the seed cloud host as a server.</p>
 <p>
@@ -60,7 +60,7 @@ server 127.127.1.0
 </codeblock>
 
 <p>
-<b>Note:</b> The NTP stratum must be numerically lower than 10 (meaning stratum 9, stratum 8, etc.) in order to use as a source. If one is not available, you may be able to <xref href="./publiccloud/index.dita#fudge" >fudge one</xref>.</p>
+<b>Note:</b> The NTP stratum must be numerically lower than 10 (meaning stratum 9, stratum 8, etc.) in order to use as a source. If one is not available, you may be able to <xref href="../../../../publiccloud/index.dita#fudge" >fudge one</xref>.</p>
 </li>
 <li>
 <p>Configure system time zone using the <codeph>tzselect</codeph> command.</p>
@@ -188,7 +188,7 @@ fudge 127.127.1.0 stratum 10
 </ol>
 <p>Using <codeph>fudge</codeph> to configure the local clock as stratum 10 makes NTP use the local clock when no timeservers are available. The system will only use the local clock if your system cannot access the NTP server.</p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑</xref>
+  <xref href="../../../../publiccloud/index.dita#top" > Return to Top ↑</xref>
 </p>
 </section>
 </body>

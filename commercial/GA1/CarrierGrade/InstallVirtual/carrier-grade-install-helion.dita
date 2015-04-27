@@ -72,7 +72,7 @@ virsh start ccn3
 <!-- id="configuring-the-installation-environment" -->Configuring the installation environment</title>
 <p>The process for deploying HP Helion OpenStack includes populating HLM node with required files, enabling Cobbler for PXE booting.</p>
 <p>
-<xref href="http://www.cobblerd.org/" scope="external" format="html" >Cobbler</xref> is a Linux installation server.</p>
+<xref href="http://www.cobblerd.org/" scope="external" format="html"   >Cobbler</xref> is a Linux installation server.</p>
 <p>To configure the installation environment:</p>
 <ol>
 <li>
@@ -338,7 +338,7 @@ hnewcloud &lt;cloudname&gt; demo
 <title id="next-step">
 <!-- id="next-step" -->Next Step</title>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -25,43 +25,43 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-storage-storevirtual.md-->
  <!--permalink: /helion/openstack/carrier/undercloud/storage/storevirtual/--></p>
-<p> <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-add-mgmt-group.dita" >◀ Adding HP StoreVirtual VSA System to an Existing Management Group</xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-oc-config-storevirtual.dita" >Working With StoreVirtual Backends ▶</xref> </p>
+<p> <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-add-mgmt-group.dita" >◀ Adding HP StoreVirtual VSA System to an Existing Management Group</xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-oc-config-storevirtual.dita" >Working With StoreVirtual Backends ▶</xref> </p>
 <p>The StoreVirtual option allows you to configure HP StoreVirtual VSA cluster as storage.You can configure your StoreVirtual by either using the Horizon undercloud dashboard(<i>Recommended</i>) or <xref href="/helion/openstack/carrier/sirius/cli/workflow/" >Sirius client</xref>.</p>
 <p>This page describes the different tasks that you can perform using the StoreVirtual option in the Horizon undercloud dashboard.</p>
 <ul>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#before-you-begin" >Before you begin</xref>
+<xref href="../../../../../publiccloud/index.dita#before-you-begin" >Before you begin</xref>
 </p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#register-cluster" >Register a StoreVirtual cluster</xref>
+<xref href="../../../../../publiccloud/index.dita#register-cluster" >Register a StoreVirtual cluster</xref>
 </p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#edit-cluster" >Edit a StoreVirtual cluster</xref>
+<xref href="../../../../../publiccloud/index.dita#edit-cluster" >Edit a StoreVirtual cluster</xref>
 </p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#unregister-cluster" >Unregister a StoreVirtual cluster</xref>
+<xref href="../../../../../publiccloud/index.dita#unregister-cluster" >Unregister a StoreVirtual cluster</xref>
 </p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#unregister-multiple-clusters" >Unregister multiple StoreVirtual clusters</xref>
+<xref href="../../../../../publiccloud/index.dita#unregister-multiple-clusters" >Unregister multiple StoreVirtual clusters</xref>
 </p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#view-configuration" >View Configuration</xref>
+<xref href="../../../../../publiccloud/index.dita#view-configuration" >View Configuration</xref>
 </p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#next-steps" >Next Steps</xref>
+<xref href="../../../../../publiccloud/index.dita#next-steps" >Next Steps</xref>
 </p>
 </li>
 </ul>
@@ -144,7 +144,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 </section>
 <section>
@@ -207,7 +207,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 </section>
 <section>
@@ -265,10 +265,10 @@
 <title id="next-steps">
 <!-- id="next-steps" -->Next Steps</title>
 <p>
-  <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-oc-config-storevirtual.dita" >Working with StoreVirtual Backends</xref>
+  <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.undercloud-oc-config-storevirtual.dita" >Working with StoreVirtual Backends</xref>
 </p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

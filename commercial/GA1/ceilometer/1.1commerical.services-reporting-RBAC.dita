@@ -20,29 +20,29 @@
 <p>Keystone has a set of users that are associated with each project. Each user has one or more roles. After a user has Authenticated with Keystone using a valid set of credentials, typically User Name and Password or Token, Keystone will augment that request with the Roles that are associated with that user. These roles are added to the Request Header under the X-Roles attribute and are presented as a comma-separated list.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#display_users" >Displaying All Users</xref>
+<xref href="../../../publiccloud/index.dita#display_users" >Displaying All Users</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#display_roles" >Displaying All Roles</xref>
+<xref href="../../../publiccloud/index.dita#display_roles" >Displaying All Roles</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#assign_role" >Assigning a Role to a User</xref>
+<xref href="../../../publiccloud/index.dita#assign_role" >Assigning a Role to a User</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#create_role" >Creating a New Role</xref>
+<xref href="../../../publiccloud/index.dita#create_role" >Creating a New Role</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#access_policies" >Ceilometer Access Policies</xref>
+<xref href="../../../publiccloud/index.dita#access_policies" >Ceilometer Access Policies</xref>
 
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#newfile" >New RBAC Policy File</xref>
+<xref href="../../../publiccloud/index.dita#newfile" >New RBAC Policy File</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#apply_policy" >Applying Policies to Roles</xref>
+<xref href="../../../publiccloud/index.dita#apply_policy" >Applying Policies to Roles</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#write_policy" >Writing a Policy</xref>
+<xref href="../../../publiccloud/index.dita#write_policy" >Writing a Policy</xref>
 </li>
 </ul>
 </li>
@@ -320,7 +320,7 @@
 }
 </codeph>
 </codeblock>
-<p>After a policy change has been made all the API services will need to be <xref href="./commercial/GA1/ceilometer/1.1commerical.services-reporting-components.dita#centralagent" >restarted</xref>.</p>
+<p>After a policy change has been made all the API services will need to be <xref href="../../../commercial/GA1/ceilometer/1.1commerical.services-reporting-components.dita#centralagent" >restarted</xref>.</p>
 </section>
 <section>
 <title id="apply-a-policy-to-a-non-default-role-only">
@@ -346,7 +346,7 @@
 <title id="write_policy">
 <!-- id="write_policy" -->Writing a Policy</title>
 <p>The Policy Engine capabilities are as expressible using a set of rules and guidelines.
-For a complete reference, please see the <xref href="https://github.com/openstack/oslo-incubator/blob/master/openstack/common/policy.py" scope="external" format="html" >OSLO policy documentation</xref>.</p>
+For a complete reference, please see the <xref href="https://github.com/openstack/oslo-incubator/blob/master/openstack/common/policy.py" scope="external" format="html"   >OSLO policy documentation</xref>.</p>
 <p>Policies can be expressed in one of two forms: A list of lists, or a string written in the new policy language.</p>
 <p>In the list-of-lists representation, each check inside the innermost list is combined with an <b>and</b> conjunction - for that check to pass, <b>all</b> the specified checks must pass. These innermost lists are then combined as with an <b>or</b> conjunction.</p>
 <p>As an example, take the following rule, expressed in the list-of-lists representation:</p>

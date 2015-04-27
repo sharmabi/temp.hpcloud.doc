@@ -33,7 +33,7 @@ which can be shared by application instances.</p>
 <section>
 <title id="using-the-service">
 <!-- id="using-the-service" -->Using the Service</title>
-<p>As with other <xref href="./devplatform/helion/user/services/1.0data-services.dita#data-services" >
+<p>As with other <xref href="../../../../devplatform/helion/user/services/1.0data-services.dita#data-services" >
 <i>data services</i>
 </xref>, the
 location and port of the memcached service is exposed to the application
@@ -54,7 +54,7 @@ administrator can run the following commands on the Cloud Controller:</p>
 $ kato restart memcached_node
 </codeph>
 </codeblock>
-<p>With SASL enabled, applications must parse the<xref href="./devplatform/helion/user/services/1.0data-services.dita#database-services-vcap-services" >
+<p>With SASL enabled, applications must parse the<xref href="../../../../devplatform/helion/user/services/1.0data-services.dita#database-services-vcap-services" >
 <i>VCAP_SERVICES</i>
 </xref>
 environment variables to extract the <codeph>name</codeph>, <codeph>user</codeph>, and <codeph>password</codeph>
@@ -68,7 +68,7 @@ authentication via SASL.</p>
 <title>
 <!-- id="django-example-using-memcached" -->
 <!-- id="django-example-using-memcached" -->Django Example using Memcached</title>
-<p>The <xref href="https://github.com/Stackato-Apps/django-gtd" scope="external" format="html" >Django GTD</xref> sample
+<p>The <xref href="https://github.com/Stackato-Apps/django-gtd" scope="external" format="html"   >Django GTD</xref> sample
 application uses the simpler VCAP_SERVICES method for connecting to the
 Memcached service without authentication.</p>
 <p>The relevant configuration in this example:</p>

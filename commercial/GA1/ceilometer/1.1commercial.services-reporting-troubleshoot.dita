@@ -18,10 +18,10 @@
  <!--permalink: /helion/openstack/1.1/services/reporting/troubleshooting/--></p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#logging" >Logging</xref>
+<xref href="../../../publiccloud/index.dita#logging" >Logging</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#qerrors" >Messaging/Queuing Errors</xref>
+<xref href="../../../publiccloud/index.dita#qerrors" >Messaging/Queuing Errors</xref>
 </li>
 </ul>
 <section>

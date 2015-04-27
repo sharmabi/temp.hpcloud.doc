@@ -18,7 +18,7 @@
  <!--./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-GA-vsa.md-->
  <!--permalink: /helion/openstack/carrier/install/vsa/--></p>
 <p>
-<xref href="./commercial/GA1/1.1commercial.-vsa-overview.dita" >◀ Installing HP StoreVirtual VSA Overview </xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >Deploying HP StoreVirtual VSA Storage Sytems ▶</xref>
+<xref href="../../../../../commercial/GA1/1.1commercial.-vsa-overview.dita" >◀ Installing HP StoreVirtual VSA Overview </xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >Deploying HP StoreVirtual VSA Storage Sytems ▶</xref>
 </p>
 <!-- From Installing HPStoreVirtual.docx at https://wiki.hpcloud.net/pages/viewpage.action?pageId=49097241 -->
 <p>This page provides detailed instructions on deployment of HP StoreVirtual VSA Storage Nodes, and their configuration as Cinder backend.</p>
@@ -172,10 +172,10 @@ sudo invoke-rc.d networking restart
 <title id="next-steps">
 <!-- id="next-steps" -->Next Step</title>
 <p>
-  <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >Deploying HP StoreVirtual VSA Storage Sytems</xref>
+  <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >Deploying HP StoreVirtual VSA Storage Sytems</xref>
 </p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

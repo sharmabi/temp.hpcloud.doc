@@ -15,7 +15,7 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/1.1/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/1.1/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/1.1/ga1/">NEXT &#9654;</a></p> 
 -->
-<p>As an admin, you can <xref href="./publiccloud/index.dita#projectcreate" >create</xref> and <xref href="./publiccloud/index.dita#projectsdel" >delete</xref> projects.</p>
+<p>As an admin, you can <xref href="../../../publiccloud/index.dita#projectcreate" >create</xref> and <xref href="./publiccloud/index.dita#projectsdel" >delete</xref> projects.</p>
 <section>
 <title>
 <!-- id="projectcreate" -->
@@ -23,7 +23,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Projects</b> link on the <b>Admin</b> dashboard <b>Identity</b> panel.</p>
@@ -70,7 +70,7 @@ c. Leave <b>Enabled</b> selected to create an active project or clear the option
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Projects</b> link on the <b>Admin</b> dashboard <b>Identity</b> panel.</p>
@@ -82,7 +82,7 @@ c. Leave <b>Enabled</b> selected to create an active project or clear the option
 <p>In the confirmation screen, click <b>Delete Project</b>.</p>
 </li>
 </ol>
-<p>The project is no longer available.  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+<p>The project is no longer available.  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

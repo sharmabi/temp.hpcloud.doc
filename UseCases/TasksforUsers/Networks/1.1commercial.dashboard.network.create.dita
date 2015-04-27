@@ -16,14 +16,14 @@
 <p style="font-size: small;"> <a href="/helion/commercial/1.1/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/1.1/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/1.1/ga1/">NEXT &#9654;</a></p> 
 -->
 <p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses.</p>
-<p>A non-admin user or admin user can <xref href="./publiccloud/index.dita#createnet" >create</xref> and <xref href="./publiccloud/index.dita#deletenet" >delete</xref> networks as needed.</p>
+<p>A non-admin user or admin user can <xref href="../../../publiccloud/index.dita#createnet" >create</xref> and <xref href="./publiccloud/index.dita#deletenet" >delete</xref> networks as needed.</p>
 <section>
 <title id="createnet">
 <!-- id="createnet" -->Create a network</title>
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
@@ -95,7 +95,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
@@ -112,11 +112,11 @@
 <p>The network is deleted and any instances attached to the networks are disconnected.</p>
 <ol>
 <li>
-<xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+<xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

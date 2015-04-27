@@ -20,16 +20,16 @@
 <p>As an administrator you can manage the host aggregates in your domain:</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#createagg" >Create a host aggregate</xref>
+<xref href="../../../../../../publiccloud/index.dita#createagg" >Create a host aggregate</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#editagg" >Modify a host aggregate</xref>
+<xref href="../../../../../../publiccloud/index.dita#editagg" >Modify a host aggregate</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#editmeta" >Managing Metadata</xref>
+<xref href="../../../../../../publiccloud/index.dita#editmeta" >Managing Metadata</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#deleteagg" >Delete a host aggregate</xref>
+<xref href="../../../../../../publiccloud/index.dita#deleteagg" >Delete a host aggregate</xref>
 </li>
 </ul>
 <section>
@@ -39,7 +39,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Host Aggregates</b> link.</p>
@@ -73,7 +73,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Host Aggregates</b> link.</p>
@@ -109,7 +109,7 @@
 <title id="editmeta">
 <!-- id="editmeta" -->Managing Metadata</title>
 <p>Compute uses a metadata service for virtual machine instances to retrieve instance-specific data.</p>
-<p>You can add and remove metadata for host aggregates, see <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.metadata.dita" >Managing Metadata</xref>.</p>
+<p>You can add and remove metadata for host aggregates, see <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.metadata.dita" >Managing Metadata</xref>.</p>
 </section>
 <section>
 <title id="deleteagg">
@@ -117,7 +117,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Host Aggregates</b> link.</p>
@@ -134,7 +134,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -25,16 +25,16 @@
 <p>As a user, you can work with any volume associated with the active project.</p>
 <ul>
 <li>
-<xref href="./UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.create.dita" >Create, edit and delete a volume</xref>
+<xref href="../../../UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.create.dita" >Create, edit and delete a volume</xref>
 </li>
 <li>
-<xref href="./UseCases/TasksforUsers/Instances/1.1commercial.dashboard.snapshot.create.dita" >Create and delete a snapshot from a volume</xref>
+<xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.snapshot.create.dita" >Create and delete a snapshot from a volume</xref>
 </li>
 <li>
-<xref href="./UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.extend.dita" >Extend the size of a volume</xref>
+<xref href="../../../UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.extend.dita" >Extend the size of a volume</xref>
 </li>
 <li>
-<xref href="./UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.attach.dita" >Attach a volume to a VM instance and detach a volume from VM instance</xref>
+<xref href="../../../UseCases/TasksforUsers/Volumes/1.1commercial.dashboard.volume.attach.dita" >Attach a volume to a VM instance and detach a volume from VM instance</xref>
 </li>
 </ul>
 </section>
@@ -46,11 +46,11 @@
 <b>Note:</b> The administrative user can perform all of the user tasks in addition to the admin tasks.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#create_volume_type" >Creating and deleting a volume type</xref>
+<xref href="../../../publiccloud/index.dita#create_volume_type" >Creating and deleting a volume type</xref>
 </li>
 </ul>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

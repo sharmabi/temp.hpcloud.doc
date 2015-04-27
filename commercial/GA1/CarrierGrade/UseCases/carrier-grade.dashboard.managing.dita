@@ -25,14 +25,14 @@
 </li>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/1.1commercial.dashboard.users.dita" >Using HP Helion OpenStack for Users</xref> - Describes the Operational Dashboard user interface dialogs and options.</p>
+<xref href="../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/1.1commercial.dashboard.users.dita" >Using HP Helion OpenStack for Users</xref> - Describes the Operational Dashboard user interface dialogs and options.</p>
 
 <p>
-<b>Note:</b> Administrators can perform all of the user tasks in addition to the <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.admin.dita" >admin tasks</xref>.</p>
+<b>Note:</b> Administrators can perform all of the user tasks in addition to the <xref href="../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.admin.dita" >admin tasks</xref>.</p>
 </li>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.how-works.dita" >How to use the HP Helion OpenStack Dashboards</xref> - Describes the Project and Administration dashboard user interface dialogs and options.</p>
+<xref href="../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.how-works.dita" >How to use the HP Helion OpenStack Dashboards</xref> - Describes the Project and Administration dashboard user interface dialogs and options.</p>
 </li>
 </ul>
 <!--
@@ -40,7 +40,7 @@
 
 * [HP Helion OpenStack: Backup and Restore](/helion/commercial/carrier/manage/backup-process/) &#8212; Explains how to backup and restore the components of the HP Helion OpenStack Management Host. -->
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </body>

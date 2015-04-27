@@ -22,7 +22,7 @@
  <!--./devplatform/helion/admin/reference/1.0kato-ref.md-->
  <!--permalink: /als/v1/admin/reference/kato-ref/--></p>
 <p>
-  <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="../../../../devplatform/helion/admin/reference/1.1kato-ref.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <p>Kato is the Application Lifecycle Service command line administration utility.</p>
 <section>
@@ -36,10 +36,10 @@
 <!-- id="commands" -->List of Commands</title>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-config" >config</xref> Manipulate configuration values
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-config" >config</xref> Manipulate configuration values
 of Application Lifecycle Service components.</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-data" >data</xref> Import or export Application Lifecycle Service
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-data" >data</xref> Import or export Application Lifecycle Service
 system data to or from clusters/nodes.
 
 <ul>
@@ -49,7 +49,7 @@ system data to or from clusters/nodes.
 </ul>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-debug-configwatch" >debug</xref> Commands for
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-debug-configwatch" >debug</xref> Commands for
 debugging for Application Lifecycle Service internals.
 
 <ul>
@@ -58,14 +58,14 @@ debugging for Application Lifecycle Service internals.
 </ul>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-history" >history</xref> Show the kato commands that
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-history" >history</xref> Show the kato commands that
 have been run</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-info" >info</xref> Show information about this node or cluster.</li>
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-info" >info</xref> Show information about this node or cluster.</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-inspect" >inspect</xref> Detect common problems with your Application Lifecycle Service installation.</li>
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-inspect" >inspect</xref> Detect common problems with your Application Lifecycle Service installation.</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-log-stream" >log</xref> Logging utilities for Application Lifecycle Service
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-log-stream" >log</xref> Logging utilities for Application Lifecycle Service
 
 <ul>
 <li>log drain</li>
@@ -74,7 +74,7 @@ have been run</li>
 </ul>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-attach" >node</xref> Node management
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-node-attach" >node</xref> Node management
 
 <ul>
 <li>node attach</li>
@@ -91,9 +91,9 @@ have been run</li>
 </ul>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op" >op</xref> Various operational commands</li>
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-op" >op</xref> Various operational commands</li>
 <li>
-<xref href="./publiccloud/index.dita#other" >other commands</xref>
+<xref href="../../../../publiccloud/index.dita#other" >other commands</xref>
 
 <ul>
 <li>custom_ssl_cert</li>
@@ -115,10 +115,10 @@ have been run</li>
 </ul>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-patch" >patch</xref> Update an Application Lifecycle Service cluster with
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-patch" >patch</xref> Update an Application Lifecycle Service cluster with
 post-release fixes.</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-process-list" >process</xref> Start, stop, or restart
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-process-list" >process</xref> Start, stop, or restart
 individual processes. Generally not required.
 
 <ul>
@@ -130,15 +130,15 @@ individual processes. Generally not required.
 </ul>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-relocate" >relocate</xref> Move containers, application droplets, or services to a new mount point</li>
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-relocate" >relocate</xref> Move containers, application droplets, or services to a new mount point</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-report" >report</xref> Generate a report that can be
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-report" >report</xref> Generate a report that can be
 sent to Application Lifecycle Service support.</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-restart" >restart</xref> Restart Application Lifecycle Service or
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-restart" >restart</xref> Restart Application Lifecycle Service or
 individual roles.</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-role-add" >role</xref> Management of node roles
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-role-add" >role</xref> Management of node roles
 
 <ul>
 <li>role add</li>
@@ -147,17 +147,17 @@ individual roles.</li>
 </ul>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-shell" >shell</xref> Interactive shell for kato</li>
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-shell" >shell</xref> Interactive shell for kato</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-start" >start</xref> Start Application Lifecycle Service or individual
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-start" >start</xref> Start Application Lifecycle Service or individual
 roles.</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-status" >status</xref> List configured roles and their
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-status" >status</xref> List configured roles and their
 current status across the cluster.</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-stop" >stop</xref> Stop Application Lifecycle Service or individual roles.</li>
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-stop" >stop</xref> Stop Application Lifecycle Service or individual roles.</li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-version" >version</xref> Display the version of Application Lifecycle Service being run.</li>
+<xref href="../../../../publiccloud/index.dita#kato-command-ref-version" >version</xref> Display the version of Application Lifecycle Service being run.</li>
 </ul>
 </section>
 <section>

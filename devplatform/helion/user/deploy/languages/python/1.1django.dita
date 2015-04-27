@@ -50,7 +50,7 @@ mysql-python
 <title>
 <!-- id="configuring-database" -->
 <!-- id="configuring-database" -->Configuring the Database</title>
-<p>See <xref href="./devplatform/helion/user/services/1.1data-services.dita#database-accessing" >Using Configured Database Services</xref> for more information on connecting with database services.</p>
+<p>See <xref href="../../../../../../devplatform/helion/user/services/1.1data-services.dita#database-accessing" >Using Configured Database Services</xref> for more information on connecting with database services.</p>
 <ol>
 <li>
 <p>You must modify the <codeph>DATABASES</codeph> variable of your project's <i>settings.py</i> as shown below to detect the database service provisioned by Helion:</p>
@@ -107,7 +107,7 @@ tables:</p>
 </codeph>
 </codeblock>
 <p>If you use a data migration library such as
-<xref href="http://south.aeracode.org/" scope="external" format="html" >South</xref>, also run:</p>
+<xref href="http://south.aeracode.org/" scope="external" format="html"   >South</xref>, also run:</p>
 <codeblock>
   <codeph>helion run &lt;appname&gt; python manage.py migrate
 </codeph>
@@ -122,9 +122,9 @@ tables:</p>
 <i>Serving static files with uWSGI</i>
 </xref> for details. or:</li>
 <li>Use <codeph>django.contrib.staticfiles</codeph>, which is
-included by default in Django 1.3. Read the <xref href="https://docs.djangoproject.com/en/1.3/howto/static-files#using-django-contrib-staticfiles" scope="external" format="html" >Django
+included by default in Django 1.3. Read the <xref href="https://docs.djangoproject.com/en/1.3/howto/static-files#using-django-contrib-staticfiles" scope="external" format="html"   >Django
 documentation</xref>
-to understand the steps involved, or take a look at <xref href="https://github.com/ActiveState/stackato-samples/commit/59ec0791" scope="external" format="html" >this
+to understand the steps involved, or take a look at <xref href="https://github.com/ActiveState/stackato-samples/commit/59ec0791" scope="external" format="html"   >this
 commit</xref>
 in the django-gtd sample app. or:</li>
 <li>Set <codeph>DEBUG=True</codeph> in settings.py. This is not

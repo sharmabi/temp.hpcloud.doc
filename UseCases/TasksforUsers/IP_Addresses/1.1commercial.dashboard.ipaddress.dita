@@ -18,13 +18,13 @@
 <p>Floating IP addresses allow external access to the instances in your network.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#associate" >Associate a floating IP address</xref>
+<xref href="../../../publiccloud/index.dita#associate" >Associate a floating IP address</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#allocate" >Allocate floating IP addresses</xref>
+<xref href="../../../publiccloud/index.dita#allocate" >Allocate floating IP addresses</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#disassociate" >Disassociate a floating IP address</xref>
+<xref href="../../../publiccloud/index.dita#disassociate" >Disassociate a floating IP address</xref>
 </li>
 </ul>
 <p>
@@ -36,7 +36,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -52,7 +52,7 @@
 </li>
 </ol>
 <p>
-<b>Note:</b> If the list is empty, you will need to <xref href="./publiccloud/index.dita#allocate" >allocate an IP address</xref> before you can associate an address to a network. Click <b>Cancel</b> and see</p>
+<b>Note:</b> If the list is empty, you will need to <xref href="../../../publiccloud/index.dita#allocate" >allocate an IP address</xref> before you can associate an address to a network. Click <b>Cancel</b> and see</p>
 <ol>
 <li>
 <p>In the <b>Port to be Associated</b> list, select the instance and port that you want to associate with the floating IP address.</p>
@@ -70,7 +70,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -89,7 +89,7 @@
 </li>
 </ol>
 <p>A floating IP address is added to the <b>IP Address</b> list in the <b>Manage Floating IP Associations</b> screen.</p>
-<p>The floating address can be <xref href="./publiccloud/index.dita#associate" >associated</xref> to an instance.</p>
+<p>The floating address can be <xref href="../../../publiccloud/index.dita#associate" >associated</xref> to an instance.</p>
 </section>
 <section>
 <title id="disassociate">
@@ -98,7 +98,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -112,7 +112,7 @@
 </ol>
 <p>The floating IP address is removed and the instance is no longer accessible from the external network.</p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

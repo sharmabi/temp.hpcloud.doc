@@ -22,19 +22,19 @@
  <!--./devplatform/helion/user/client/1.0index.md-->
  <!--permalink: /als/v1/user/client/--></p>
 <p>
-  <xref href="./devplatform/helion/user/client/1.1index.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="../../../../devplatform/helion/user/client/1.1index.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <p>The Helion client is the command-line interface
 to Application Lifecycle Service. You can use it to push application code up to the server,
 start and stop applications, create data services and link them to
 applications, and a number of other application management operations.</p>
-<p>The <xref href="./devplatform/helion/user/reference/1.0client-ref.dita#command-ref-client" >Command Reference</xref> has full descriptions of all client commands and options. These details are also available at the command line via the <i>helion help</i> command.</p>
+<p>The <xref href="../../../../devplatform/helion/user/reference/1.0client-ref.dita#command-ref-client" >Command Reference</xref> has full descriptions of all client commands and options. These details are also available at the command line via the <i>helion help</i> command.</p>
 <section>
 <title id="helion-client-setup">
 <!-- id="helion-client-setup" -->Application Lifecycle Service Client Setup</title>
 <p>
 <b>Note</b>: Using the Windows Helion client with
-<xref href="http://www.cygwin.com/" scope="external" format="html" >Cygwin</xref> is not supported.</p>
+<xref href="http://www.cygwin.com/" scope="external" format="html"   >Cygwin</xref> is not supported.</p>
 <p>Download the client for your platform (Windows, OS X, Linux x86,
     Linux x64) by following these instructions.</p>
 <ol>
@@ -71,7 +71,7 @@ applications, and a number of other application management operations.</p>
   <codeph>helion help [COMMAND]
 </codeph>
 </codeblock>
-<p>See also the <xref href="./devplatform/helion/user/reference/1.0client-ref.dita#command-ref-client" >Command Reference</xref> for a full
+<p>See also the <xref href="../../../../devplatform/helion/user/reference/1.0client-ref.dita#command-ref-client" >Command Reference</xref> for a full
 list of commands.</p>
 </section>
 <section>

@@ -17,7 +17,7 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-prereqs-network.md-->
  <!--permalink: /helion/openstack/carrier/install/prereqs/network/--></p>
-<p> <xref href="./commercial/GA1/1.1commercial.install-GA-prereqs.dita" >▲ Installation Prerequisites</xref>  </p>
+<p> <xref href="../../../../commercial/GA1/1.1commercial.install-GA-prereqs.dita" >▲ Installation Prerequisites</xref>  </p>
 <p>Before installing HP Helion OpenStack, you are responsible for preparing the network for all installations. You must also prepare the network based on the type of hypervisor you are installing, KVM or ESX.</p>
 <p>The network is not installed or managed by the cloud. You must install and manage the network and make sure there is a route to the Management network as described in this section.</p>
 <section>
@@ -30,7 +30,7 @@
 <p>The machine hosting the seed VM, and all baremetal systems have to be connected to a management network.</p>
 </li>
 <li>
-<p>Nodes on this management network must be able to reach the iLO subsystem (<xref href="http://www8.hp.com/us/en/products/servers/ilo/index.html" scope="external" format="html" >HP Integreated Lights-Out</xref>) of each baremetal systems to enable host reboots as part of the install process.</p>
+<p>Nodes on this management network must be able to reach the iLO subsystem (<xref href="http://www8.hp.com/us/en/products/servers/ilo/index.html" scope="external" format="html"   >HP Integreated Lights-Out</xref>) of each baremetal systems to enable host reboots as part of the install process.</p>
 </li>
 <li>
 <p>The Helion OpenStack architecture required that the IPMI network is a separate network and a route exists from management network to the IPMI network for iLO access as explained above.</p>
@@ -45,7 +45,7 @@
 <p>The network interface intended as the bridge interface should be configured and working before running the installer. The installer creates a network bridge on the system running the installer, attaching the bridge interface to the network bridge. The installer uses the IP address of the bridge interface for the network bridge.</p>
 </li>
 </ul>
-<p>In addition to preparing all HP Helion OpenStack cloud networks, you need perform additional  tasks based on which hypervisor you are using: <xref href="./publiccloud/index.dita#network_KVM" >KVM</xref> or <xref href="./publiccloud/index.dita#network_ESX" >ESX</xref>.</p>
+<p>In addition to preparing all HP Helion OpenStack cloud networks, you need perform additional  tasks based on which hypervisor you are using: <xref href="../../../../publiccloud/index.dita#network_KVM" >KVM</xref> or <xref href="./publiccloud/index.dita#network_ESX" >ESX</xref>.</p>
 </section>
 <section>
 <title id="network_KVM">

@@ -29,13 +29,13 @@
 <p>The <b>Network</b> panel contains commands to view a visual representation of your network and to enable you to work with your network.</p>
 <ul>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.viewing.dita" >View your network</xref>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.viewing.dita" >View your network</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >Create or delete a tenant network</xref>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >Create or delete a tenant network</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.disable.dita" >Enable or disable a tenant network</xref>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.disable.dita" >Enable or disable a tenant network</xref>
 </li>
 </ul>
 </section>
@@ -47,24 +47,24 @@
 <p>Access the networking commands using the <b>System</b> panel on the <b>Admin</b> dashboard.</p>
 <ul>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.admin.create.dita" >Creating provider networks</xref>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.admin.create.dita" >Creating provider networks</xref>
 </li>
 <li>
 <ul>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.disable.dita" >Enable or disable a provider network</xref>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.disable.dita" >Enable or disable a provider network</xref>
 </li>
 </ul>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.admin.delete.dita" >Delete a provider network</xref>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.admin.delete.dita" >Delete a provider network</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.ports.dita" >Create, Modify, or Delete a port on a Network</xref>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.ports.dita" >Create, Modify, or Delete a port on a Network</xref>
 </li>
 </ul>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

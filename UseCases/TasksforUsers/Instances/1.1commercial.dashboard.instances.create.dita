@@ -28,7 +28,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -60,7 +60,7 @@
 <li>
 <p>Select the volume, snapshot, or image from the list that appears.</p>
 
-<p>Additonal fields appear for the boot source option that create a new volume. For more information, refer to <xref href="./UseCases/TasksforUsers/Volumes/1.1commercial.managing.volumes.dita" >Managing Block Storage Volumes</xref>.</p>
+<p>Additonal fields appear for the boot source option that create a new volume. For more information, refer to <xref href="../../../UseCases/TasksforUsers/Volumes/1.1commercial.managing.volumes.dita" >Managing Block Storage Volumes</xref>.</p>
 </li>
 </ul>
 </li>
@@ -78,7 +78,7 @@
 <li>
 <p>On the Post-Creation tab, optionally, enter a script to pass user data to the instance at launch time.</p>
 
-<p>For more details, refer to the OpenStack documentation, such as <xref href="http://docs.openstack.org/user-guide/content/user-data.html" scope="external" format="html" >Configure instances at boot</xref>.</p>
+<p>For more details, refer to the OpenStack documentation, such as <xref href="http://docs.openstack.org/user-guide/content/user-data.html" scope="external" format="html"   >Configure instances at boot</xref>.</p>
 </li>
 <li>
 <p>On the <b>Advanced Options</b> tab, select either <b>Automatic</b> or <b>Manual</b> in the <b>Disc Partition</b> list</p>
@@ -90,7 +90,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

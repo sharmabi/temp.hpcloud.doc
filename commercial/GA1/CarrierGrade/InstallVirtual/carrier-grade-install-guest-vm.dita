@@ -219,10 +219,10 @@ deb http://dl.google.com/linux/deb/ stable non-free main
 <title id="next-step">
 <!-- id="next-step" -->Next Step</title>
 <p>
-  <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsd-node.dita" >Create the VSD Node</xref>
+  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsd-node.dita" >Create the VSD Node</xref>
 </p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

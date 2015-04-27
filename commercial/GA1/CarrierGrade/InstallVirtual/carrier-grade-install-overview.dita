@@ -17,42 +17,42 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-overview.md-->
  <!--permalink: /helion/openstack/carrier/install/overview/--></p>
-<p> <xref href="./commercial/GA1/CarrierGrade/index.dita" >▲ HP Helion OpenStack Documentation Home</xref> | <xref href="./commercial/GA1/CarrierGrade/carrier-grade-support-matrix.dita" >Support Matrix ▶</xref> </p>
+<p> <xref href="../../../../commercial/GA1/CarrierGrade/index.dita" >▲ HP Helion OpenStack Documentation Home</xref> | <xref href="./commercial/GA1/CarrierGrade/carrier-grade-support-matrix.dita" >Support Matrix ▶</xref> </p>
 <p>This document describes the installation process for HP Helion OpenStack Carrier Grade.</p>
 <ul>
 <li>Review the Support Matrix and Technical Overview</li>
-<li>Review the <xref href="./commercial/GA1/CarrierGrade/carrier-grade-install-prereqs.dita" >Prerequisites</xref>.</li>
+<li>Review the <xref href="../../../../commercial/GA1/CarrierGrade/carrier-grade-install-prereqs.dita" >Prerequisites</xref>.</li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-network.dita" >Prepare the Network for Installation</xref>
+<xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-network.dita" >Prepare the Network for Installation</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtrouter.dita" >Configure a Virtual Router During Installation</xref>
+<xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtrouter.dita" >Configure a Virtual Router During Installation</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-datacenter.dita" >Create a Virtual Data center for DNS/NTP Network Management</xref>
+<xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-datacenter.dita" >Create a Virtual Data center for DNS/NTP Network Management</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.dita" >Create the DNS/NTP Data Center Network Management VM</xref>
+<xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.dita" >Create the DNS/NTP Data Center Network Management VM</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.dita" >Create the Guest VM</xref>
+<xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-guest-vm.dita" >Create the Guest VM</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/carrier-grade-install-prereqs.dita" >Create the VSD Node</xref>
+<xref href="../../../../commercial/GA1/CarrierGrade/carrier-grade-install-prereqs.dita" >Create the VSD Node</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-node.dita" >Create the HLM Node</xref>
+<xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-node.dita" >Create the HLM Node</xref>
 </li>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Install HP Helion OpenStack</xref>
+<xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Install HP Helion OpenStack</xref>
 </li>
 </ul>
 <section>
 <title id="first-step">
 <!-- id="first-step" -->First Step</title>
-<p>Before you start, make sure your environment meets the hardware and software requirements. See the <xref href="./commercial/GA1/CarrierGrade/carrier-grade-support-matrix.dita" >Support Matrix</xref>.</p>
+<p>Before you start, make sure your environment meets the hardware and software requirements. See the <xref href="../../../../commercial/GA1/CarrierGrade/carrier-grade-support-matrix.dita" >Support Matrix</xref>.</p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

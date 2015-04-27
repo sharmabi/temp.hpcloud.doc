@@ -27,48 +27,48 @@
  <!--permalink: /helion/openstack/carrier/services/troubleshooting/vsa/--></p>
 <!--
 
-<p style="font-size: small;"> <a href="./commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-object-overview.dita">&#9664; PREV</a> | <a href="./commercial/GA1/CarrierGrade/carrier-grade.services-overview.dita">&#9650; UP</a> | <a href="/helion/openstack/carrier/services/reporting/overview/"> NEXT &#9654</a> </p> -->
+<p style="font-size: small;"> <a href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/carrier-grade-services-object-overview.dita">&#9664; PREV</a> | <a href="./commercial/GA1/CarrierGrade/carrier-grade.services-overview.dita">&#9650; UP</a> | <a href="/helion/openstack/carrier/services/reporting/overview/"> NEXT &#9654</a> </p> -->
 <p>HP Helion OpenStack® is an OpenStack technology coupled with a version of Linux® provided by HP. This topic describes all the known issues that you might encounter. To help you resolve these issues, we have provided possible solutions.</p>
 <p>Troubleshooting issues related to HP StoreVirtual VSA environments.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#fails-retrieve-netmask" >Failure to retrieve netmask from vsa-bridge</xref>
+<xref href="../../../../../publiccloud/index.dita#fails-retrieve-netmask" >Failure to retrieve netmask from vsa-bridge</xref>
 </li>
 <li>
 <xref href="install-script-detect" >Installation script detects more than 7 available drive</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#failure-script" >Failure of script due to less than two drives</xref>
+<xref href="../../../../../publiccloud/index.dita#failure-script" >Failure of script due to less than two drives</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#cannot-enable-ao" >Cannot enable AO as only one disk is available</xref>
+<xref href="../../../../../publiccloud/index.dita#cannot-enable-ao" >Cannot enable AO as only one disk is available</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#unable-update-json" >Unable to update the default input json file </xref>
+<xref href="../../../../../publiccloud/index.dita#unable-update-json" >Unable to update the default input json file </xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#fail-virtual-bridge" >Virtual bridge creation failed for interface <required-cleanup remap="nic">
+<xref href="../../../../../publiccloud/index.dita#fail-virtual-bridge" >Virtual bridge creation failed for interface <required-cleanup remap="nic">
 <ph/>
 </required-cleanup>
 </xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#storage-pool-fail" >Creation of storage pool failed</xref>
+<xref href="../../../../../publiccloud/index.dita#storage-pool-fail" >Creation of storage pool failed</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#post-vsa-fail" >Failed during post VSA deployment</xref>
+<xref href="../../../../../publiccloud/index.dita#post-vsa-fail" >Failed during post VSA deployment</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#vsa-network" >vsa_network cannot be destroyed</xref>
+<xref href="../../../../../publiccloud/index.dita#vsa-network" >vsa_network cannot be destroyed</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#vsa-pool-cannot-destroy" >vsa_storage_pool pool cannot be destroyed</xref>
+<xref href="../../../../../publiccloud/index.dita#vsa-pool-cannot-destroy" >vsa_storage_pool pool cannot be destroyed</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#virshfail" >Overcloud updates fail because VSA VMs not responding to virsh stop</xref>
+<xref href="../../../../../publiccloud/index.dita#virshfail" >Overcloud updates fail because VSA VMs not responding to virsh stop</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#publicinterfaceset" >Public interface not set and is ignored during overcloud update</xref>
+<xref href="../../../../../publiccloud/index.dita#publicinterfaceset" >Public interface not set and is ignored during overcloud update</xref>
 </li>
 </ul>
 <section>
@@ -470,7 +470,7 @@ When there are less than two drives in the machine, the script will fail to exec
 <p/>
 <!-- ===================== horizontal rule ===================== -->
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑</xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑</xref>
 </p>
 </section>
 </body>

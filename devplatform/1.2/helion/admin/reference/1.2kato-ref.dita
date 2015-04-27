@@ -22,7 +22,7 @@
  <!--./devplatform/1.2/helion/admin/reference/1.2kato-ref.md-->
  <!--permalink: /helion/devplatform/1.2/als/admin/reference/kato-ref/--></p>
 <p>
-  <xref href="./devplatform/helion/admin/reference/1.0kato-ref.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="../../../../../devplatform/helion/admin/reference/1.0kato-ref.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
 <p>Kato is the Application Lifecycle Service command line administration utility.</p>
 <section>
@@ -37,253 +37,253 @@
 <b>Config</b>: Manipulates configuration values of Helion components.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-config" >config</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-config" >config</xref>
 </li>
 </ul>
 <p>
 <b>Data</b>: Import, export, or repair Helion system data</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-data-export" >data export</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-data-export" >data export</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-data-import" >data import</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-data-import" >data import</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-data-repair-routes" >data repair</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-data-repair-routes" >data repair</xref>
 </li>
 </ul>
 <p>
 <b>Debug</b>: Commands for debugging Helion internals.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-debug-configwatch" >debug configwatch</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-debug-configwatch" >debug configwatch</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-debug-redis" >debug redis</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-debug-redis" >debug redis</xref>
 </li>
 </ul>
 <p>
 <b>History</b>: Display the kato commands that have been run</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-history" >history</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-history" >history</xref>
 </li>
 </ul>
 <p>
 <b>Info</b>: Display information about this node or cluster, including assigned and available roles.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-info" >info</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-info" >info</xref>
 </li>
 </ul>
 <p>
 <b>Inspect</b>: Detect common problems with your installation.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-inspect" >inspect</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-inspect" >inspect</xref>
 </li>
 </ul>
 <p>
 <b>License</b>: Set the license in use for this microcloud or cluster.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-license" >license</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-license" >license</xref> </li>
 </ul>
 <p>
 <b>Logging</b>: Logging utilities.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-log-stream" >log</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-log-stream" >log</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-log-drain-add" >log drain</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-log-drain-add" >log drain</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-log-stream" >log stream</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-log-stream" >log stream</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-log-tail" >log tail</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-log-tail" >log tail</xref>
 </li>
 </ul>
 <p>
 <b>Node</b>: Node management</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-attach" >node attach</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-attach" >node attach</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-availabilityzone" >node availabilityzone</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-availabilityzone" >node availabilityzone</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-detach" >node detach</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-detach" >node detach</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-list" >node list</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-list" >node list</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-migrate" >node migrate</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-migrate" >node migrate</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-placementzones-add" >node placementzones</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-placementzones-add" >node placementzones</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-remove" >node remove</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-remove" >node remove</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-rename" >node rename</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-rename" >node rename</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-reset" >node reset</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-reset" >node reset</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-retire" >node retire</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-retire" >node retire</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-setup-core" >node setup</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-setup-core" >node setup</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-update" >node update</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-update" >node update</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-upgrade" >node upgrade</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-upgrade" >node upgrade</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-node-version" >node version</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-node-version" >node version</xref>
 </li>
 </ul>
 <p>
 <b>OP</b>: Various operational commands</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-custom_ssl_cert" >op custom_ssl_cert</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-custom_ssl_cert" >op custom_ssl_cert</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-defer" >op defer</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-defer" >op defer</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-dhcp" >op dhcp</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-dhcp" >op dhcp</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-generate_service_tokens" >op generate_service_tokens</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-generate_service_tokens" >op generate_service_tokens</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-import_from_yaml_file" >op import_from_yaml_file</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-import_from_yaml_file" >op import_from_yaml_file</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-import_from_yaml_files" >op import_from_yaml_files</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-import_from_yaml_files" >op import_from_yaml_files</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-max_client_upload" >op max_client_upload</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-max_client_upload" >op max_client_upload</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-regenerate" >op regenerate</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-regenerate" >op regenerate</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-remap_hosts" >op remap_hosts</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-remap_hosts" >op remap_hosts</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-run_deferred" >op run_deferred</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-run_deferred" >op run_deferred</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-set_timezone" >op set_timezone</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-set_timezone" >op set_timezone</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-static_ip" >op static_ip</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-static_ip" >op static_ip</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-update_hostsfile" >op update_hostsfile</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-update_hostsfile" >op update_hostsfile</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-op-upstream_proxy" >op upstream_proxy</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-op-upstream_proxy" >op upstream_proxy</xref>
 </li>
 </ul>
 <p>
 <b>Patch</b>: Update a cluster with post-release fixes.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-patch" >patch</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-patch" >patch</xref> </li>
 </ul>
 <p>
 <b>Process</b>: Start, stop, or restart individual processes. Generally not required.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-process-list" >process list</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-process-list" >process list</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-process-ready" >process ready</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-process-ready" >process ready</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-process-restart" >process restart</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-process-restart" >process restart</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-process-start" >process start</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-process-start" >process start</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-process-stop" >process stop</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-process-stop" >process stop</xref>
 </li>
 </ul>
 <p>
 <b>Relocate</b>: Move containers, application droplets, or services to a new mount point</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-relocate" >relocate</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-relocate" >relocate</xref> </li>
 </ul>
 <p>
 <b>Report</b>: Generate a report that can be sent to technical support.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-report" >report</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-report" >report</xref> </li>
 </ul>
 <p>
 <b>Restart</b>: Restart the service or individual roles.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-restart" >restart</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-restart" >restart</xref>
 </li>
 </ul>
 <p>
 <b>Role</b>: Management of node roles</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-role-add" >role add</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-role-add" >role add</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-role-info" >role info</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-role-info" >role info</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-role-remove" >role remove</xref>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-role-remove" >role remove</xref>
 </li>
 </ul>
 <p>
 <b>Shell</b>: Interactive shell for kato</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-shell" >shell</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-shell" >shell</xref> </li>
 </ul>
 <p>
 <b>Start</b>: Start the ALS or start individual roles.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-start" >start</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-start" >start</xref> </li>
 </ul>
 <p>
 <b>Status</b>: List configured roles and their current status across the cluster.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-status" >status</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-status" >status</xref> </li>
 </ul>
 <p>
 <b>Stop</b>: Stop the service or individual roles.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-stop" >stop</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-stop" >stop</xref> </li>
 </ul>
 <p>
 <b>Version</b>: Display the version of ALS currently in use.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#kato-command-ref-version" >version</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#kato-command-ref-version" >version</xref> </li>
 </ul>
 </section>
 <section>
@@ -1372,8 +1372,7 @@ kato log drain add -f systail-syslog system_splunk_2 \
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-log-drain-list" -->
+<title id="kato-command-ref-log-drain-list">
 <!-- id="kato-command-ref-log-drain-list" -->Log Drain List</title>
 <p>List all log drains.</p>
 <p>
@@ -1540,8 +1539,7 @@ kato log drain add -f systail-syslog system_splunk_2 \
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-log-tail" -->
+<title id="kato-command-ref-log-tail">
 <!-- id="kato-command-ref-log-tail" -->Log Tail</title>
 <p>
 <b>Syntax</b>
@@ -2118,8 +2116,7 @@ node reset --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-setup-core" -->
+<title id="kato-command-ref-node-setup-core">
 <!-- id="kato-command-ref-node-setup-core" -->Node Setup Core</title>
 <p>Configure the core node of your ALS cluster.</p>
 <p>
@@ -2311,8 +2308,7 @@ node setup micro --help
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-node-update" -->
+<title id="kato-command-ref-node-update">
 <!-- id="kato-command-ref-node-update" -->Node Update</title>
 <p>Update IP references in config.</p>
 <p>
@@ -2532,8 +2528,7 @@ op custom_ssl_cert list
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-op-defer" -->
+<title id="kato-command-ref-op-defer">
 <!-- id="kato-command-ref-op-defer" -->OP Defer</title>
 <p>Defer a kato command to be run by <i>op run_deferred</i> when the system is rebooted and supervisor has started. Commands are saved to the <i>/home/helion/.kato-deferred</i> YAML file.</p>
 <p>
@@ -2652,8 +2647,7 @@ op custom_ssl_cert list
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-op-import_from_yaml_file" -->
+<title id="kato-command-ref-op-import_from_yaml_file">
 <!-- id="kato-command-ref-op-import_from_yaml_file" -->OP Import from YAML File</title>
 <p>Import the YAML configuration for a single process, deleting and replacing all prior configuration for that process.</p>
 <p>
@@ -2843,8 +2837,7 @@ op regenerate token-signing-secret [--no-prompt]
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-op-remap_hosts" -->
+<title id="kato-command-ref-op-remap_hosts">
 <!-- id="kato-command-ref-op-remap_hosts" -->OP Remap Hosts</title>
 <p>Change the fully qualified basename (i.e. the default shared domain) in the URLs of hosted applications. Used when renaming the system or migrating user applications to a new system.</p>
 <p>
@@ -3042,8 +3035,7 @@ op regenerate token-signing-secret [--no-prompt]
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-op-update_hostsfile" -->
+<title id="kato-command-ref-op-update_hostsfile">
 <!-- id="kato-command-ref-op-update_hostsfile" -->OP Update Hostsfile</title>
 <p>Updates the /etc/hosts file with the endpoint URI mapped to the cloud controller's internal IP.</p>
 <p>
@@ -3450,8 +3442,7 @@ patch revert [--node &lt;nodeip&gt;] [options] &lt;patchname&gt;
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-relocate" -->
+<title id="kato-command-ref-relocate">
 <!-- id="kato-command-ref-relocate" -->Relocate</title>
 <p>Move containers, application droplets, or services to a new mount point or filesystem location.</p>
 <p>
@@ -3663,8 +3654,7 @@ role add [-v] [--node &lt;node-IP&gt;*] --only &lt;role&gt;...
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-role-info" -->
+<title id="kato-command-ref-role-info">
 <!-- id="kato-command-ref-role-info" -->Role Info</title>
 <p>Display info on roles.</p>
 <p>
@@ -3844,8 +3834,7 @@ role remove [-v] [--node &lt;node-IP&gt;] --all-but &lt;role&gt;...
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
-<title>
-<!-- id="kato-command-ref-status" -->
+<title id="kato-command-ref-status">
 <!-- id="kato-command-ref-status" -->Status</title>
 <p>List configured roles and their current status across the cluster.</p>
 <p>

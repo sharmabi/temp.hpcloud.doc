@@ -23,7 +23,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Projects</b> link on the <b>Admin</b> dashboard <b>Identity</b> panel.</p>
@@ -35,7 +35,7 @@
 
 <p>The project name and details; users associated with the project, and project quotas are displayed.</p>
 
-<p>For information on modifying these settings, see <xref href="./UseCases/TasksforAdmins/Projects/1.1commercial.managing.projects.dita" >Managing Projects</xref>.</p>
+<p>For information on modifying these settings, see <xref href="../../../UseCases/TasksforAdmins/Projects/1.1commercial.managing.projects.dita" >Managing Projects</xref>.</p>
 </li>
 <li>
 <p>Click <b>Cancel</b> to exit the screen.</p>
@@ -50,7 +50,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

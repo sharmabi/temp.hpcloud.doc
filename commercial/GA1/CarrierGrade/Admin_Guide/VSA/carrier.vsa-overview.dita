@@ -28,35 +28,35 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.vsa-overview.md-->
  <!--permalink: /helion/openstack/carrier/install/vsa/overview/--></p>
-<p> <xref href="/helion/openstack/carrier/install/post-kvm/" >▲ Post-Installation for KVM Hypervisor</xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-GA-vsa.old.dita" >Deploy and Configure HP StoreVirtual VSA ▶</xref>
+<p> <xref href="/helion/openstack/carrier/install/post-kvm/" >▲ Post-Installation for KVM Hypervisor</xref> | <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-GA-vsa.old.dita" >Deploy and Configure HP StoreVirtual VSA ▶</xref>
 </p>
 <p>HP Helion OpenStack bundles and facilitates deployment of HP StoreVirtual VSA which can be configured as backend for OpenStack Cinder Block Storage.</p>
 <p>This page provides detailed information on using HP StoreVirtual VSA for realizing cloud storage.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#StoreVirtual-overview" >HP StoreVirtual VSA overview</xref> </li>
+<xref href="../../../../../publiccloud/index.dita#StoreVirtual-overview" >HP StoreVirtual VSA overview</xref> </li>
 <li>
-<xref href="./publiccloud/index.dita#cinder-architecture" >Cinder Architecture</xref>
+<xref href="../../../../../publiccloud/index.dita#cinder-architecture" >Cinder Architecture</xref>
 
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#cinder-api" >Cinder API</xref>
+<xref href="../../../../../publiccloud/index.dita#cinder-api" >Cinder API</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#scheduler" >Scheduler</xref>
+<xref href="../../../../../publiccloud/index.dita#scheduler" >Scheduler</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#cinder-volume" >Cinder volume and Lefthand driver</xref>  </li>
+<xref href="../../../../../publiccloud/index.dita#cinder-volume" >Cinder volume and Lefthand driver</xref>  </li>
 <li>
-<xref href="./publiccloud/index.dita#differentiated-storage-offerings" >Differentiated storage offerings</xref>
+<xref href="../../../../../publiccloud/index.dita#differentiated-storage-offerings" >Differentiated storage offerings</xref>
 </li>
 </ul>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#scale-out-vsa" >Scale Out Cinder Block storage with StoreVirtual VSA</xref>
+<xref href="../../../../../publiccloud/index.dita#scale-out-vsa" >Scale Out Cinder Block storage with StoreVirtual VSA</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#next-steps" >Next Steps</xref>
+<xref href="../../../../../publiccloud/index.dita#next-steps" >Next Steps</xref>
 </li>
 </ul>
 <section>
@@ -170,7 +170,7 @@ A single management group can contain up to 32 StoreVirtual nodes - grouped into
 <p>The Cinder volume service hosts the LeftHand Driver to communicate with the backend representing the StoreVirtual cluster, using the LeftHand REST API.</p>
 <p>
 <b>Note:</b> The HPLeftHandISCSIDriver is based on the Block Storage service (Cinder) plug-in architecture. Volume operations are run by communicating with the HP LeftHand/StoreVirtual system over HTTPS, or SSH connections. 
-For more details on the Lefthand driver, refer to <xref href="http://docs.openstack.org/trunk/config-reference/content/HP-LeftHand-StoreVirtual-driver.html" scope="external" format="html" >HP LeftHand/StoreVirtual driver</xref>.</p>
+For more details on the Lefthand driver, refer to <xref href="http://docs.openstack.org/trunk/config-reference/content/HP-LeftHand-StoreVirtual-driver.html" scope="external" format="html"   >HP LeftHand/StoreVirtual driver</xref>.</p>
 <p>When you configure multiple StoreVirtual backends, one cinder-volume is launched for each back-end storage or back-end storage pool. Each backend instance maps to an instance of a StoreVirtual cluster. Each cluster listens at an assigned VIP that is configured in the Cinder backend entry in <i>cinder.conf</i>.</p>
 </section>
 <section>
@@ -205,11 +205,11 @@ For more details on the Lefthand driver, refer to <xref href="http://docs.openst
 <!-- id="next-steps" -->Next Step</title>
 <ul>
 <li>
-<xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-GA-vsa.old.dita" >Deploy and Configure HP StoreVirtual VSA</xref>
+<xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-GA-vsa.old.dita" >Deploy and Configure HP StoreVirtual VSA</xref>
 </li>
 </ul>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -23,7 +23,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Volumes</b> link.</p>
@@ -37,14 +37,14 @@
 
 <p>Use the <b>Flavor Details</b> list to make sure the disk size is sufficient.</p>
 
-<p>For details on the dialog box, see <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.dita" >Create a New Compute Instance</xref>.</p>
+<p>For details on the dialog box, see <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.dita" >Create a New Compute Instance</xref>.</p>
 </li>
 <li>
 <p>Click <b>Launch</b>.</p>
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </body>

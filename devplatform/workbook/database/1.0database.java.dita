@@ -22,18 +22,18 @@
  <!--./devplatform/workbook/database/1.0database.java.md-->
  <!--permalink: /helion/devplatform/workbook/database/java/--></p>
 <p>
-  <xref href="./devplatform/workbook/database/1.1database.java.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="../../../devplatform/workbook/database/1.1database.java.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <p>This very simple Servlet-based Java webapp displays the text "Executed query "SELECT "Hello World!"".", and then the result of that query: "Hello World". This is a demonstration of the minimum requirements to build an application that can connect to a MySQL database provided by ALS and run queries against it. Use this sample to ensure that you have set up your environment for connecting to and working with MySQL on the Helion Development Platform.</p>
 <section>
 <title id="prerequisites">
 <!-- id="prerequisites" -->Prerequisites</title>
-<p>If you are missing any of these items, you must <xref href="./devplatform/1.0devplatform.appdev.dita" >install them</xref>.</p>
+<p>If you are missing any of these items, you must <xref href="../../../devplatform/1.0devplatform.appdev.dita" >install them</xref>.</p>
 <ul>
-<li>Access to an Application Lifecycle Service (ALS) <xref href="./devplatform/helion/admin/cluster/1.0index.dita" >Cluster</xref>
+<li>Access to an Application Lifecycle Service (ALS) <xref href="../../../devplatform/helion/admin/cluster/1.0index.dita" >Cluster</xref>
 </li>
-<li>The  <xref href="./devplatform/helion/user/client/1.0index.dita" >Helion command-line interface (CLI)</xref> must be installed.</li>
-<li>Access to the web-based <xref href="./devplatform/helion/user/console/1.0index.dita" >Helion Management Console</xref>.</li>
+<li>The  <xref href="../../../devplatform/helion/user/client/1.0index.dita" >Helion command-line interface (CLI)</xref> must be installed.</li>
+<li>Access to the web-based <xref href="../../../devplatform/helion/user/console/1.0index.dita" >Helion Management Console</xref>.</li>
 </ul>
 </section>
 <section>
@@ -48,7 +48,7 @@
 <li>Click <b>Save</b>.</li>
 </ol>
 <p>
-<b>NOTE</b>: If a more durable or scalable MySQL database service is needed, ensure your ALS cluster is configured to use a database instance or master/slave pair provided by the Database Service. For more information, refer to <xref href="./devplatform/1.0devplatform.database-instance.dita" >Using the Database Service</xref> and <xref href="./devplatform/1.0devplatform.database-ALS.dita" >Connecting the Database Service with ALS</xref>.</p>
+<b>NOTE</b>: If a more durable or scalable MySQL database service is needed, ensure your ALS cluster is configured to use a database instance or master/slave pair provided by the Database Service. For more information, refer to <xref href="../../../devplatform/1.0devplatform.database-instance.dita" >Using the Database Service</xref> and <xref href="./devplatform/1.0devplatform.database-ALS.dita" >Connecting the Database Service with ALS</xref>.</p>
 </section>
 <section>
 <title>
@@ -65,7 +65,7 @@
 </codeblock>
 </li>
 <li>
-<p>PC: Navigate to the <xref href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" scope="external" format="html" >JDK installation page</xref> and run the appropriate JDK installer for your platform.</p>
+<p>PC: Navigate to the <xref href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" scope="external" format="html"   >JDK installation page</xref> and run the appropriate JDK installer for your platform.</p>
 </li>
 </ul>
 </section>
@@ -73,7 +73,7 @@
 <title id="maven">
 <!-- id="maven" -->Maven</title>
 <p>
-<xref href="http://maven.apache.org/" scope="external" format="html" >Maven</xref> must be installed.</p>
+<xref href="http://maven.apache.org/" scope="external" format="html"   >Maven</xref> must be installed.</p>
 <ul>
 <li>
 <p>Mac/UNIX: Maven can be installed with the following command:</p>
@@ -84,7 +84,7 @@
 </codeblock>
 </li>
 <li>
-<p>PC: Navigate to the <xref href="http://maven.apache.org/download.cgi" scope="external" format="html" >Maven installation page</xref> and follow the <xref href="http://maven.apache.org/guides/getting-started/windows-prerequisites.html" scope="external" format="html" >installation directions</xref>.</p>
+<p>PC: Navigate to the <xref href="http://maven.apache.org/download.cgi" scope="external" format="html"   >Maven installation page</xref> and follow the <xref href="http://maven.apache.org/guides/getting-started/windows-prerequisites.html" scope="external" format="html"   >installation directions</xref>.</p>
 </li>
 </ul>
 </section>
@@ -92,7 +92,7 @@
 <title id="download-the-application-files">
 <!-- id="download-the-application-files" -->Download the Application Files</title>
 <p>
-<xref href="https://github.com/HelionDevPlatform/helion-mysql-java" scope="external" format="html" >Click here to access the code repository</xref>.</p>
+<xref href="https://github.com/HelionDevPlatform/helion-mysql-java" scope="external" format="html"   >Click here to access the code repository</xref>.</p>
 </section>
 <section>
 <title>
@@ -109,10 +109,10 @@
 <title id="deploy-the-application">
 <!-- id="deploy-the-application" -->Deploy the Application</title>
 <p>
-<b>Note</b>: Application Lifecycle Service clusters that require an upstream HTTP proxy to access the internet will need to be <xref href="./devplatform/helion/admin/server/1.0configuration.dita#staging-cache-app-http-proxy" >made aware of the proxy</xref>. The sample applications require access to the Internet in order to download dependent packages.</p>
-<p>Use the Helion client to deploy your app to Helion Development Platform.  If you are using Eclipse, you can optionally use the <xref href="./devplatform/1.0devplatform.eclipse.dita" >plugin</xref> to deploy.</p>
+<b>Note</b>: Application Lifecycle Service clusters that require an upstream HTTP proxy to access the internet will need to be <xref href="../../../devplatform/helion/admin/server/1.0configuration.dita#staging-cache-app-http-proxy" >made aware of the proxy</xref>. The sample applications require access to the Internet in order to download dependent packages.</p>
+<p>Use the Helion client to deploy your app to Helion Development Platform.  If you are using Eclipse, you can optionally use the <xref href="../../../devplatform/1.0devplatform.eclipse.dita" >plugin</xref> to deploy.</p>
 <ol>
-<li>Open the <xref href="./devplatform/helion/user/reference/1.0client-ref.dita" >Helion command-line interface (CLI)</xref>
+<li>Open the <xref href="../../../devplatform/helion/user/reference/1.0client-ref.dita" >Helion command-line interface (CLI)</xref>
 </li>
 <li>
 <p>Ensure that you are targeting your desired environment.  <!--A BR tag was used here in the original source.--> If you are not, execute</p>
@@ -223,10 +223,10 @@ applications:
 <ol>
 <li>You need to provide configuration information so that ALS can bind to a MySQL service. Configuration information is contained in the <i>manifest.yml</i> file.</li>
 <li>You need to retrieve connection information for MySQL from the application's environment variables and then parse the information into a JDBC-compliant connection string.</li>
-<li>You interact with and deploy your app using the Helion CLI or the Eclipse <xref href="./devplatform/1.0devplatform.eclipse.dita" >plugin</xref>.</li>
+<li>You interact with and deploy your app using the Helion CLI or the Eclipse <xref href="../../../devplatform/1.0devplatform.eclipse.dita" >plugin</xref>.</li>
 </ol>
 <p>
-<xref href="/helion/devplatform/appdev" >Exit Samples</xref> | <xref href="./devplatform/workbook/helloworld/1.0helloworld.java.dita" >Previous Sample</xref> | <xref href="./devplatform/workbook/messaging/1.0messaging.java.dita" >Next Sample</xref>
+<xref href="/helion/devplatform/appdev" >Exit Samples</xref> | <xref href="../../../devplatform/workbook/helloworld/1.0helloworld.java.dita" >Previous Sample</xref> | <xref href="./devplatform/workbook/messaging/1.0messaging.java.dita" >Next Sample</xref>
 </p>
 </section>
 </body>

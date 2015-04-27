@@ -27,7 +27,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Images</b> link.</p>
@@ -56,11 +56,11 @@
 <p>Click <b>Create Image</b> to launch the image.</p>
 </li>
 <li>
-<p>Optionally, you can click <b>Launch</b> to <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.dita" >create a running instance</xref> based on this image.</p>
+<p>Optionally, you can click <b>Launch</b> to <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.dita" >create a running instance</xref> based on this image.</p>
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

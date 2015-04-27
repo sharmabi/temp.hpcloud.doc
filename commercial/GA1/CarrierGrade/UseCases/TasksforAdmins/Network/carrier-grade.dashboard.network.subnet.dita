@@ -15,7 +15,7 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
 -->
-<p>When a <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >network is created</xref>, a subnet (short for <i>subnetwork</i>) can be assigned upon creation. However, you might need to add a subnet to a network at a later time.</p>
+<p>When a <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >network is created</xref>, a subnet (short for <i>subnetwork</i>) can be assigned upon creation. However, you might need to add a subnet to a network at a later time.</p>
 <p>A subnet is a logically visible subdivision of a network. A subnet enables you to group instances logically, while maintaining a single network address to connect to the Internet.</p>
 <p>An admin user can create and delete subnets as needed.</p>
 <codeblock>
@@ -29,7 +29,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -78,11 +78,11 @@
 <title>
 <!-- id="deleteport" -->
 <!-- id="deleteport" -->Delete a subnet</title>
-<p>Before you delete a subnet, you must first <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.ports.dita" >delete all ports</xref> associated with the subnet.</p>
+<p>Before you delete a subnet, you must first <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.ports.dita" >delete all ports</xref> associated with the subnet.</p>
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -103,7 +103,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -24,7 +24,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -42,9 +42,9 @@
 </li>
 </ol>
 <p>When you create a snapshot, by default the snapshot image can be used only with the current project and it can be deleted.</p>
-<p>You can <xref href="./UseCases/TasksforAdmins/Images/1.1commercial.dashboard.snapshot.public.dita" >make the snapshot public</xref> for use in all projects in the domain and you can <xref href="./UseCases/TasksforUsers/Images/1.1commercial.dashboard.snapshot.protect.dita" >protect the image</xref> from being deleted.</p>
+<p>You can <xref href="../../../UseCases/TasksforAdmins/Images/1.1commercial.dashboard.snapshot.public.dita" >make the snapshot public</xref> for use in all projects in the domain and you can <xref href="./UseCases/TasksforUsers/Images/1.1commercial.dashboard.snapshot.protect.dita" >protect the image</xref> from being deleted.</p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -25,38 +25,38 @@
  <!--./devplatform/1.2/helion/admin/server/1.2aok.md-->
  <!--permalink: /helion/devplatform/1.2/als/admin/server/aok/--></p>
 <p>
-  <xref href="./devplatform/helion/admin/server/1.0aok.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="../../../../../devplatform/helion/admin/server/1.0aok.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
-<p>AOK is Application Lifecycle Service's authentication management service (replacing Cloud Foundry's UAA Server). It issues tokens via OAuth2 for client applications such as the <b>helion</b> client and the Horizon Console. AOK can connect to other back-end SSO services such as LDAP by using different <xref href="./publiccloud/index.dita#aok-strategies" >
+<p>AOK is Application Lifecycle Service's authentication management service (replacing Cloud Foundry's UAA Server). It issues tokens via OAuth2 for client applications such as the <b>helion</b> client and the Horizon Console. AOK can connect to other back-end SSO services such as LDAP by using different <xref href="../../../../../publiccloud/index.dita#aok-strategies" >
 <i>Strategies</i>
 </xref>.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#web" >End User Login: Web</xref>
+<xref href="../../../../../publiccloud/index.dita#web" >End User Login: Web</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#client" >End User Login: Client</xref>
+<xref href="../../../../../publiccloud/index.dita#client" >End User Login: Client</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#strategies" >Strategies</xref>
+<xref href="../../../../../publiccloud/index.dita#strategies" >Strategies</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#configuration" >Configuration</xref>
+<xref href="../../../../../publiccloud/index.dita#configuration" >Configuration</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#ldap" >LDAP Groups</xref>
+<xref href="../../../../../publiccloud/index.dita#ldap" >LDAP Groups</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#activedir" >Active Directory Example Settings</xref>
+<xref href="../../../../../publiccloud/index.dita#activedir" >Active Directory Example Settings</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#user-management" >User Management</xref>
+<xref href="../../../../../publiccloud/index.dita#user-management" >User Management</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#first-admin-user-setup" >First Admin User Setup</xref>
+<xref href="../../../../../publiccloud/index.dita#first-admin-user-setup" >First Admin User Setup</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#regular-ldap-user-setup" >Regular LDAP User Setup</xref>
+<xref href="../../../../../publiccloud/index.dita#regular-ldap-user-setup" >Regular LDAP User Setup</xref>
 </li>
 </ul>
 <section>
@@ -68,9 +68,9 @@
 <title id="client">
 <!-- id="client" -->End User Login: Client</title>
 <p>If the strategy has been changed to something other than <b>builtin</b> (see
-<xref href="./publiccloud/index.dita#strategies" >Strategies</xref>) then users connecting with the <xref href="/helion/devplatform/1.2/als/user/client" >ALS command-line client</xref> should be aware that:</p>
+<xref href="../../../../../publiccloud/index.dita#strategies" >Strategies</xref>) then users connecting with the <xref href="/helion/devplatform/1.2/als/user/client" >ALS command-line client</xref> should be aware that:</p>
 <ul>
-<li>The user must enter identifiers in the format expected by the <xref href="./publiccloud/index.dita#aok-strategies" >strategy</xref> used by AOK (e.g. username or email
+<li>The user must enter identifiers in the format expected by the <xref href="../../../../../publiccloud/index.dita#aok-strategies" >strategy</xref> used by AOK (e.g. username or email
 address).</li>
 <li>When using an existing authentication token to log in as a second
 user (e.g. an admin connecting as another user), use the second
@@ -95,7 +95,7 @@ users and passwords to authenticate.</p>
 <li>
 <p>
 <b>ldap</b>: The ldap strategy authenticates using the LDAP server
-specified in <xref href="./publiccloud/index.dita#aok-configuration" >
+specified in <xref href="../../../../../publiccloud/index.dita#aok-configuration" >
 <i>kato config</i>
 </xref>. Any user that can
 successfully authenticate with the LDAP server will be allowed to
@@ -114,7 +114,7 @@ names.</p>
 <title>
 <!-- id="configuration" -->
 <!-- id="configuration" -->Configuration</title>
-<p>To configure AOK, set the following keys in the AOK config using the <xref href="./devplatform/1.2/helion/admin/reference/1.2kato-ref.dita#kato-command-ref-config" >kato
+<p>To configure AOK, set the following keys in the AOK config using the <xref href="../../../../../devplatform/1.2/helion/admin/reference/1.2kato-ref.dita#kato-command-ref-config" >kato
 config set</xref> commands:</p>
 <ul>
 <li>
@@ -300,7 +300,7 @@ ldap:
 </codeblock>
 </li>
 </ul>
-<p>See also <xref href="http://msdn.microsoft.com/en-us/library/aa746468%28v=vs.85%29.aspx" scope="external" format="html" >Searching Active Directory</xref> (Microsoft Developer Network) and <xref href="https://www.google.com/support/enterprise/static/gapps/docs/admin/en/gads/admin/ldap.5.4.html" scope="external" format="html" >Common LDAP Queries</xref> (Google Apps Directory Sync Administration Guide) for more information on creating <i>group_query</i>.</p>
+<p>See also <xref href="http://msdn.microsoft.com/en-us/library/aa746468%28v=vs.85%29.aspx" scope="external" format="html"   >Searching Active Directory</xref> (Microsoft Developer Network) and <xref href="https://www.google.com/support/enterprise/static/gapps/docs/admin/en/gads/admin/ldap.5.4.html" scope="external" format="html"   >Common LDAP Queries</xref> (Google Apps Directory Sync Administration Guide) for more information on creating <i>group_query</i>.</p>
 </section>
 <section>
 <title id="user-management">
@@ -342,7 +342,7 @@ is configured.</p>
 </li>
 <li>
 <p>
-<xref href="./publiccloud/index.dita#aok-configuration" >Configure AOK</xref> to use LDAP</p>
+<xref href="../../../../../publiccloud/index.dita#aok-configuration" >Configure AOK</xref> to use LDAP</p>
 </li>
 <li>
 <p>Set the <codeph>admin_user</codeph> key with the desired LDAP

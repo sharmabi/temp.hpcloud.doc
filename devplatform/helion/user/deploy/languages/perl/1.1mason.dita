@@ -37,7 +37,7 @@ application.</p>
 </li>
 </ol>
 <p>Template files are also needed, which you can read about in the Mason
-documentation, or in our <xref href="https://github.com/Stackato-Apps/mason-helloworld" scope="external" format="html" >Hello World sample
+documentation, or in our <xref href="https://github.com/Stackato-Apps/mason-helloworld" scope="external" format="html"   >Hello World sample
 app</xref>.</p>
 <p>In the <i>requirements.txt</i> file, list any module requirements, with at
 least:</p>
@@ -83,7 +83,7 @@ builder {
 };
 </codeph>
 </codeblock>
-<p>The <i>manifest.yml</i> file contains deployment instructions for Application Lifecycle Service. See complete details for this file in the <xref href="./devplatform/helion/user/deploy/1.1manifestyml.dita" >
+<p>The <i>manifest.yml</i> file contains deployment instructions for Application Lifecycle Service. See complete details for this file in the <xref href="../../../../../../devplatform/helion/user/deploy/1.1manifestyml.dita" >
 <i>Configuration With manifest.yml</i>
 </xref> section.</p>
 <section>
@@ -92,7 +92,7 @@ builder {
 <!-- id="examples" -->Examples</title>
 <ul>
 <li>
-<xref href="https://github.com/Stackato-Apps/mason-helloworld" scope="external" format="html" >Mason Hello
+<xref href="https://github.com/Stackato-Apps/mason-helloworld" scope="external" format="html"   >Mason Hello
 World</xref>: Hello
 World sample.</li>
 </ul>

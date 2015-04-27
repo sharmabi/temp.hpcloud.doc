@@ -23,10 +23,10 @@
 <p>As a user, you can:</p>
 <ul>
 <li>
-<xref href="./UseCases/TasksforUsers/IP_Addresses/1.1commercial.dashboard.ipaddress.dita" >Associate a floating IP address with an instance</xref>
+<xref href="../../../UseCases/TasksforUsers/IP_Addresses/1.1commercial.dashboard.ipaddress.dita" >Associate a floating IP address with an instance</xref>
 </li>
 <li>
-<xref href="./UseCases/TasksforUsers/IP_Addresses/1.1commercial.dashboard.ipaddress.dita" >Allocate (create) new floating IP addresses</xref>
+<xref href="../../../UseCases/TasksforUsers/IP_Addresses/1.1commercial.dashboard.ipaddress.dita" >Allocate (create) new floating IP addresses</xref>
 </li>
 </ul>
 </section>
@@ -37,7 +37,7 @@
 <p>Access the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel to work with floating IP addresses.</p>
 <p>There are no additional tasks available to the admin user.</p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

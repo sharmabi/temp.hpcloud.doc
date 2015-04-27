@@ -16,7 +16,7 @@
 <p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
 -->
 <p>Users can be disabled in the domain. After you disable a user, the user account remains in the domain, but cannot be used to log in.</p>
-<p>As an admin, you can <xref href="./publiccloud/index.dita#disableuser" >disable</xref> and <xref href="./publiccloud/index.dita#enableuser" >enable</xref> users, as needed.</p>
+<p>As an admin, you can <xref href="../../../../../../publiccloud/index.dita#disableuser" >disable</xref> and <xref href="./publiccloud/index.dita#enableuser" >enable</xref> users, as needed.</p>
 <section>
 <title id="disableuser">
 <!-- id="disableuser" -->Disable a user</title>
@@ -24,7 +24,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Identity</b> dashboard, then the <b>Users</b> link.</p>
@@ -43,7 +43,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Identity</b> dashboard, then the <b>Users</b> link.</p>
@@ -55,7 +55,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

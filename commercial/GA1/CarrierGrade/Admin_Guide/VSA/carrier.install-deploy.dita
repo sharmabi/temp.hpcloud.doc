@@ -17,7 +17,7 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.md-->
  <!--permalink: /helion/openstack/carrier/install/vsa/deploy/--></p>
-<p> <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-GA-vsa.old.dita" >◀ Installing HP StoreVirtual VSA </xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-vsa-cluster.dita" >Creating a StoreVirtual Cluster and adding it to a new Management Group ▶</xref>
+<p> <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-GA-vsa.old.dita" >◀ Installing HP StoreVirtual VSA </xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-vsa-cluster.dita" >Creating a StoreVirtual Cluster and adding it to a new Management Group ▶</xref>
 </p>
 <p>Ensure the following prerequisites are fulfilled before HP StoreVirtual Storage systems are deployed:</p>
 <ul>
@@ -57,7 +57,7 @@
 <b>Note</b>: Use of StoreVirtual VSA is included with your Helion OpenStack license.  When installing StoreVirtual VSA under the Helion OpenStack license, the CMC may display a message that some features are not licensed. This message displays in error and can be ignored if you have licensed the physical server with a Helion OpenStack license.</p>
 <!--<img src="/media/storevirtual-cluster-network-diagram1.png"/>-->
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </body>

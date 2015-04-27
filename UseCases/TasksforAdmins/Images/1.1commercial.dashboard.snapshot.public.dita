@@ -15,7 +15,7 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/1.1/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/1.1/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/1.1/ga1/">NEXT &#9654;</a> </p>
 -->
-<p>When you <xref href="./UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.create.dita" >create an image</xref> or an <xref href="./UseCases/TasksforUsers/Images/1.1commercial.dashboard.snapshot.protect.dita" >image snapshot</xref>, as an admin, you can determine if the snapshot is available only in the current project or to all projects in the domain.</p>
+<p>When you <xref href="../../../UseCases/TasksforUsers/Images/1.1commercial.dashboard.images.create.dita" >create an image</xref> or an <xref href="./UseCases/TasksforUsers/Images/1.1commercial.dashboard.snapshot.protect.dita" >image snapshot</xref>, as an admin, you can determine if the snapshot is available only in the current project or to all projects in the domain.</p>
 <section>
 <title>
 <!-- id="make-an-image-public" -->
@@ -23,7 +23,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Images</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -36,7 +36,7 @@
 </ol>
 <p>The image is public and available to all projects in the domain.</p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

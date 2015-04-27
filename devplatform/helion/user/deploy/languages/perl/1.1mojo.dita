@@ -63,18 +63,18 @@ app-&gt;start;
 </codeph>
 </codeblock>
 <p>The <i>manifest.yml</i> file contains deployment instructions for Application Lifecycle Service.
-See complete details for this file in the <xref href="./devplatform/helion/user/deploy/1.1manifestyml.dita" >Configuration With
+See complete details for this file in the <xref href="../../../../../../devplatform/helion/user/deploy/1.1manifestyml.dita" >Configuration With
 manifest.yml</xref> section.</p>
 <section>
 <title id="examples">
 <!-- id="examples" -->Examples</title>
 <ul>
 <li>
-<xref href="https://github.com/Stackato-Apps/mojo-helloworld" scope="external" format="html" >Mojo Hello
+<xref href="https://github.com/Stackato-Apps/mojo-helloworld" scope="external" format="html"   >Mojo Hello
 World</xref>: the
 simplest possible Mojolicious demo.</li>
 <li>
-<xref href="https://github.com/Stackato-Apps/photobooth" scope="external" format="html" >Mojo Photobooth</xref>:
+<xref href="https://github.com/Stackato-Apps/photobooth" scope="external" format="html"   >Mojo Photobooth</xref>:
 Mojolicious webapp to emulate public photobooths.</li>
 </ul>
 </section>

@@ -20,7 +20,7 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-vsa-cluster.md-->
  <!--permalink: /helion/openstack/carrier/install/vsa/cluster/--></p>
-<p> <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >◀ Deploying HP StoreVirtual VSA Storage Sytems </xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-add-mgmt-group.dita" >Adding HP StoreVirtual VSA System to an Existing Management Group ▶</xref>
+<p> <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >◀ Deploying HP StoreVirtual VSA Storage Sytems </xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-add-mgmt-group.dita" >Adding HP StoreVirtual VSA System to an Existing Management Group ▶</xref>
 </p>
 <p>After</p>
 <p>
@@ -133,7 +133,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <section>
 <title id="adding-a-node">
@@ -184,7 +184,7 @@
   <xref href="&quot;/helion/openstack/carrier/install/vsa/add-mgmt/" >Adding HP StoreVirtual VSA System to an Existing Management Group</xref>
 </p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -21,12 +21,12 @@
  <!--./devplatform/1.2/helion/user/deploy/languages/1.2clojure.md-->
  <!--permalink: /helion/devplatform/1.2/als/user/deploy/languages/clojure/--></p>
 <p>
-  <xref href="./devplatform/helion/user/deploy/languages/1.0clojure.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="../../../../../../devplatform/helion/user/deploy/languages/1.0clojure.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
 <p>Application Lifecycle Service supports deploying Clojure applications using
-<xref href="https://github.com/technomancy/leiningen" scope="external" format="html" >leiningen</xref>.</p>
+<xref href="https://github.com/technomancy/leiningen" scope="external" format="html"   >leiningen</xref>.</p>
 <p>To create a new Clojure web application, install leiningen and
-<xref href="http://webnoir.org/" scope="external" format="html" >Noir</xref> (a Clojure web framework):</p>
+<xref href="http://webnoir.org/" scope="external" format="html"   >Noir</xref> (a Clojure web framework):</p>
 <codeblock>
   <codeph>lein plugin install lein-noir 1.1.0
 </codeph>
@@ -52,7 +52,7 @@ page.</p>
 <section>
 <title id="clojure-database-services-example">
 <!-- id="clojure-database-services-example" -->Clojure Database Services Example</title>
-<p>Taken from the <xref href="https://github.com/Stackato-Apps/4clojure/blob/stackato/src/foreclojure/config.clj#L6" scope="external" format="html" >4clojure sample
+<p>Taken from the <xref href="https://github.com/Stackato-Apps/4clojure/blob/stackato/src/foreclojure/config.clj#L6" scope="external" format="html"   >4clojure sample
 app</xref>:</p>
 <codeblock>
   <codeph>(defn assoc-cloud-env

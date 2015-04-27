@@ -17,7 +17,7 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-verify.old.md-->
  <!--permalink: /helion/openstack/carrier/install/vsa/verify/--></p>
-<p> <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >◀ Deploying HP StoreVirtual VSA </xref>| <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-vsa-cluster.dita" >Creating a StoreVirtual Cluster and adding it to a new Management Group ▶</xref>
+<p> <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >◀ Deploying HP StoreVirtual VSA </xref>| <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-vsa-cluster.dita" >Creating a StoreVirtual Cluster and adding it to a new Management Group ▶</xref>
 </p>
 <p>To verify that the StoreVirtual storage system is deployed successfully, perform the following checks:</p>
 <ol>
@@ -77,7 +77,7 @@ from the above steps.</p>
 <!-- id="next-step" -->
 <!-- id="next-step" -->Next Step</title>
 <p>
-  <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-vsa-cluster.dita" >Creating a StoreVirtual Cluster and Adding it to a New Management Group</xref>
+  <xref href="../../../../../commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-vsa-cluster.dita" >Creating a StoreVirtual Cluster and Adding it to a New Management Group</xref>
 </p>
 </section>
 </body>

@@ -23,12 +23,12 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Network Topology</b> link.</p>
 
-<p>Determine if the router is connected to a network using the <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.viewing.dita" >Network Topology screen</xref>:</p>
+<p>Determine if the router is connected to a network using the <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.viewing.dita" >Network Topology screen</xref>:</p>
 
 <p>
 <!--A BR tag was used here in the original source.-->
@@ -59,7 +59,7 @@ c. Return to the **Routers** screen.&lt;/li&gt;
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

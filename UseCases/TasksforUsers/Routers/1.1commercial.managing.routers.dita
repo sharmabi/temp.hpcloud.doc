@@ -29,13 +29,13 @@
 <p>The Network panel contains commands to view a visual representation of your network and to enable you to work with your router.</p>
 <ul>
 <li>
-<xref href="./UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.create.dita" >Create a Router</xref>
+<xref href="../../../UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.create.dita" >Create a Router</xref>
 </li>
 <li>
-<xref href="./UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.delete.dita" >Delete a Router</xref>
+<xref href="../../../UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.delete.dita" >Delete a Router</xref>
 </li>
 <li>
-<xref href="./UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.connect.dita" >Connect a network to a router</xref>
+<xref href="../../../UseCases/TasksforUsers/Routers/1.1commercial.dashboard.router.connect.dita" >Connect a network to a router</xref>
 </li>
 <li>Add / Remove an external network to/from a Router</li>
 </ul>
@@ -48,7 +48,7 @@
 <p>An admin can create a shared network, which can be seen in every project in the domain. You can also create an external network.</p>
 <ul>
 <li>
-<xref href="./UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.shared.dita" >Create a shared network</xref>
+<xref href="../../../UseCases/TasksforAdmins/Network/1.1commercial.dashboard.network.shared.dita" >Create a shared network</xref>
 </li>
 <li>
 <xref href="/helion/commercial/1.1/dashboard/managing/network/external/" >Create an external network</xref>
@@ -56,7 +56,7 @@
 </ul>
 <p>Access the router commands using the System panel on the Admin dashboard.</p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

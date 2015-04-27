@@ -21,13 +21,13 @@
  <!--./devplatform/1.2/helion/user/deploy/languages/1.2php.md-->
  <!--permalink: /helion/devplatform/1.2/als/user/deploy/languages/php/--></p>
 <p>
-  <xref href="./devplatform/helion/user/deploy/languages/1.0php.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="../../../../../../devplatform/helion/user/deploy/languages/1.0php.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
 <p>Whether you're deploying an application to the HP Helion Development Platform, a
 Cloud Foundry based Platform as a Service (PaaS), or writing applications that take
 advantage of HP Helion OpenStack® to manage infrastructure or software services, tools
 to enable successful development are available in PHP.</p>
-<p>Deployable <xref href="./devplatform/1.2/1.2devplatform.appdev.dita#php" >sample applications</xref> are available in this language.</p>
+<p>Deployable <xref href="../../../../../../devplatform/1.2/1.2devplatform.appdev.dita#php" >sample applications</xref> are available in this language.</p>
 <section>
 <title>
 <!-- id="application-lifecycle-services" -->
@@ -63,7 +63,7 @@ the command to <b>run</b>. For example:</p>
 <ph outputclass="p-Indicator">:</ph> <!--Original: <span @class=l-Scalar-Plain>--><ph outputclass="l-Scalar-Plain">~</ph>
 </codeblock>
 <p>Management of the deployed application and its services happens through a web application or
-a console application. To learn more see the <xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >manifest.yml</xref> reference.</p>
+a console application. To learn more see the <xref href="../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >manifest.yml</xref> reference.</p>
 </section>
 <section>
 <title id="deployment">
@@ -76,7 +76,7 @@ a console application. To learn more see the <xref href="./devplatform/1.2/helio
         type: php
 </codeph>
 </codeblock>
-<p>For more information, see the <xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >manifest.yml</xref> reference.</p>
+<p>For more information, see the <xref href="../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >manifest.yml</xref> reference.</p>
 </section>
 <section>
 <title id="application-url">
@@ -97,10 +97,10 @@ $admin = $appinfo_json['uris'][0];
 <p>Non-HTTP apps that run as an Application Lifecycle Service application under the control of
 the Health Manager.</p>
 <p>To deploy worker applications, you need to use the
-<xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita#command" >
+<xref href="../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita#command" >
 <i>command</i>
 </xref> key and set the
-<xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita#web" >
+<xref href="../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita#web" >
 <i>processes: web</i>
 </xref>
 key to Null ("\~").</p>
@@ -146,8 +146,7 @@ found in the <b>$_SERVER</b> variable, under
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="vcap-services" -->
+<title id="vcap-services">
 <!-- id="vcap-services" -->
   VCAP_SERVICES
 </title>
@@ -210,10 +209,10 @@ within the application container Apache will be running on a different
 port. PHP will report this internal IP address and port in the
 SERVER_ADDR and SERVER_PORT Apache environment variables respectively.</p>
 <p>If your application makes use of these variables, you may need to adjust
-them by using an <xref href="http://httpd.apache.org/docs/current/howto/htaccess" scope="external" format="html" >.htaccess
+them by using an <xref href="http://httpd.apache.org/docs/current/howto/htaccess" scope="external" format="html"   >.htaccess
 file</xref> to set
 one or more
-<xref href="http://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewriterule" scope="external" format="html" >RewriteRule</xref>
+<xref href="http://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewriterule" scope="external" format="html"   >RewriteRule</xref>
 directives to correct the server name or port in URLs.</p>
 </section>
 <section>
@@ -221,7 +220,7 @@ directives to correct the server name or port in URLs.</p>
 <!-- id="persistent-sessions-php" -->Persistent Sessions (PHP)</title>
 <p>One of the issues with managing a PHP application running multiple
 instances is dealing with user sessions.</p>
-<p>If your application uses a <xref href="./devplatform/1.2/helion/user/services/1.2filesystem.dita#persistent-file-system" >
+<p>If your application uses a <xref href="../../../../../../devplatform/1.2/helion/user/services/1.2filesystem.dita#persistent-file-system" >
 <i>shared filesystem
 service</i>
 </xref>, you
@@ -238,7 +237,7 @@ hooks:
   - echo "session.save_path = $HELION_FILESYSTEM/sessions" &gt; "$HELION_APP_ROOT"/apache/php/sessions.ini
 </codeph>
 </codeblock>
-<p>For better performance, use a <xref href="./devplatform/1.2/helion/user/services/1.2memcached.dita#memcached" >
+<p>For better performance, use a <xref href="../../../../../../devplatform/1.2/helion/user/services/1.2memcached.dita#memcached" >
 <i>Memcached</i>
 </xref> service for
 session storage instead:</p>

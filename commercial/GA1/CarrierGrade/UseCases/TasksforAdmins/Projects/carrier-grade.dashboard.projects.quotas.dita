@@ -18,14 +18,14 @@
 <p>Quotas are operational limits enforced on each project.</p>
 <p>To prevent system capacities from being exhausted without notification, you can set up quotas.</p>
 <p>For example, the number of gigabytes allowed per project can be controlled to make sure that a single project does not consume all of the disk space.</p>
-<p>Default values are set on the <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.default.quotas.dita" >Default screen</xref>.</p>
+<p>Default values are set on the <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.default.quotas.dita" >Default screen</xref>.</p>
 <section>
 <title id="quotamod">
 <!-- id="quotamod" -->Modify a quotas</title>
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Identity</b> panel, then the <b>Projects</b> link.</p>
@@ -58,7 +58,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

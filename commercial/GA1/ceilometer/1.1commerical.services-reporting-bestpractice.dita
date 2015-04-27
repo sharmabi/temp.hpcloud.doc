@@ -19,34 +19,34 @@
 <p>Configuration changes that improve reporting API and database responsiveness by keeping data storage to a reasonable level.</p>
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#ceilandnova" >Nova</xref>
+<xref href="../../../publiccloud/index.dita#ceilandnova" >Nova</xref>
 
 <ul>
 <li>
-<xref href="./publiccloud/index.dita#novadata" >Data Collected by Ceilometer (default list)</xref>
+<xref href="../../../publiccloud/index.dita#novadata" >Data Collected by Ceilometer (default list)</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#novaconfigfile" >Enabling Nova Notifications</xref>
+<xref href="../../../publiccloud/index.dita#novaconfigfile" >Enabling Nova Notifications</xref>
 </li>
 </ul>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#webserverapi" >Configuring the Web Server for API Performance</xref>
+<xref href="../../../publiccloud/index.dita#webserverapi" >Configuring the Web Server for API Performance</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#meterlist" >Modifying the List of Active Meters</xref>
+<xref href="../../../publiccloud/index.dita#meterlist" >Modifying the List of Active Meters</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#pollinterval" >Modifying Polling Intervals</xref>
+<xref href="../../../publiccloud/index.dita#pollinterval" >Modifying Polling Intervals</xref>
 </li>
 <li>
-<xref href="./publiccloud/index.dita#swift" >Swift</xref>
+<xref href="../../../publiccloud/index.dita#swift" >Swift</xref>
 </li>
 </ul>
 <section>
 <title id="ceilandnova">
 <!-- id="ceilandnova" -->Nova</title>
-<p>The Nova service is configured by default to send certain notifications regarding usage and VM status information collected by Ceilometer. To increase, decrease, or stop these notifications  from the Nova service, modify <xref href="./publiccloud/index.dita#novaconfigfile" >Nova's Ceilometer configuration file</xref>.</p>
+<p>The Nova service is configured by default to send certain notifications regarding usage and VM status information collected by Ceilometer. To increase, decrease, or stop these notifications  from the Nova service, modify <xref href="../../../publiccloud/index.dita#novaconfigfile" >Nova's Ceilometer configuration file</xref>.</p>
 </section>
 <section>
 <title id="novadata">
@@ -152,7 +152,7 @@ service nova-conductor restart
 service nova-novncproxy restart
 </codeph>
 </codeblock>
-<p>For a more in-depth look at how information is sent over <i>openstack.common.rpc</i>, refer to the <xref href="http://docs.openstack.org/developer/ceilometer/measurements.html" scope="external" format="html" >OpenStack Ceilometer documentation</xref>.</p>
+<p>For a more in-depth look at how information is sent over <i>openstack.common.rpc</i>, refer to the <xref href="http://docs.openstack.org/developer/ceilometer/measurements.html" scope="external" format="html"   >OpenStack Ceilometer documentation</xref>.</p>
 <p>
 <b>Validation</b>
 After the Nova service is re-started, the notification daemons using the namespace <i>ceilometer.notification</i> should receive some traffic. Each plugin can listen to any topic(s), but by default it will listen to <i>notifications.info</i>.</p>
@@ -265,7 +265,7 @@ Ceilometer data collection is configured by modifying the <i>pipeline.yml</i> fi
 <p>
 <b>Note</b>: The <i>pipeline.yml</i> configuration file needs to be changed on <b>all</b> the controller nodes to actually affect the white-listing and or polling strategy.</p>
 <p>The configuration file is comprised of two major elements: <b>sources</b> and <b>sinks</b>. <b>Sources</b> are data harvested from notifications posted by services or collected through polling. <b>Sinks</b> represent how that data is modified before it is published to the internal queue for collection and storage.</p>
-<p>In the Sources section there is a list of default meters. These meters are the data that is going to be collected. The list of meters can be easily reduced or increased by editing the <i>pipeline.yml</i> configuration file and then restarting the <xref href="./commercial/GA1/ceilometer/1.1commerical.services-reporting-components.dita#centralagent" >Ceilometer Central Agent</xref> and the <xref href="./commercial/GA1/ceilometer/1.1commerical.services-reporting-components.dita#collector" >Ceilometer Collector</xref>. If more meters are desired, please refer to the <xref href="http://docs.openstack.org/developer/ceilometer/measurements.html#measurements" scope="external" format="html" >OpenStack Ceilometer documentation</xref>.</p>
+<p>In the Sources section there is a list of default meters. These meters are the data that is going to be collected. The list of meters can be easily reduced or increased by editing the <i>pipeline.yml</i> configuration file and then restarting the <xref href="../../../commercial/GA1/ceilometer/1.1commerical.services-reporting-components.dita#centralagent" >Ceilometer Central Agent</xref> and the <xref href="./commercial/GA1/ceilometer/1.1commerical.services-reporting-components.dita#collector" >Ceilometer Collector</xref>. If more meters are desired, please refer to the <xref href="http://docs.openstack.org/developer/ceilometer/measurements.html#measurements" scope="external" format="html"   >OpenStack Ceilometer documentation</xref>.</p>
 <codeblock>
   <codeph>---
 sources:
@@ -298,8 +298,7 @@ sinks:
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="pollinterval" -->
+<title id="pollinterval">
 <!-- id="pollinterval" -->Modifying the Polling Intervals</title>
 <p>This option does not apply to meters that are notification-only because those meters are not polled.</p>
 <p>The <b>interval attribute</b> is the time between polls. 

@@ -21,9 +21,9 @@
  <!--./commercial/GA1/CarrierGrade/Admin_Guide/DCN/carrier-grade-install-bm-dcn-cloud.md-->
  <!--permalink: /helion/openstack/carrier/install/bm/dcn-cloud/--></p>
 <!--
-<p style="font-size: small;"><a href="./commercial/GA1/CarrierGrade/carrier-grade-install-bm-environment.dita">&#9664; Configuring the installation Environment</a> | <a href="./commercial/GA1/CarrierGrade/carrier-grade-install-bm-overview.dita">&#9650; Installation Overview</a>  </p> 
+<p style="font-size: small;"><a href="../../../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-environment.dita">&#9664; Configuring the installation Environment</a> | <a href="./commercial/GA1/CarrierGrade/carrier-grade-install-bm-overview.dita">&#9650; Installation Overview</a>  </p> 
 -->
-<p>After the <xref href="./commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-cloud.dita" >HLM and Helion clouds are installed and running</xref>, you can install the HP Distributed Cloud Networking (DCN).</p>
+<p>After the <xref href="../../../../../commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-cloud.dita" >HLM and Helion clouds are installed and running</xref>, you can install the HP Distributed Cloud Networking (DCN).</p>
 <p>The DCN install uses the same scripts and JSON files to create a DCN cloud.</p>
 <p>The DCN install requires two systems (nodes): one for the HP Virtualized Services Controller (VSC) and the HP Virtualized Services Directory (VSD) and one for the HP Virtual Routing and Switching Gateway (VRS-G)</p>
 <section>
@@ -129,7 +129,7 @@ hnewcloud &lt;cloudname&gt; &lt;template_name&gt;
 <p>When this command completes, the HP Helion OpenStack Carrier Grade (Alpha) installation is complete.</p>
 <p>Basic cloud operations can be performed by logging into the Horizon interface using <codeph>CAN</codeph> IP address specified in <codeph>/etc/hosts</codeph> file on any cloud node.</p>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

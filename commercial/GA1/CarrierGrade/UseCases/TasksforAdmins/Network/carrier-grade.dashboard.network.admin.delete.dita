@@ -18,7 +18,7 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
 -->
-<p>An admin user can <xref href="./publiccloud/index.dita#createnet" >create</xref> and <xref href="./publiccloud/index.dita#deletenet" >delete</xref> provider networks in any project, as needed.</p>
+<p>An admin user can <xref href="../../../../../../publiccloud/index.dita#createnet" >create</xref> and <xref href="./publiccloud/index.dita#deletenet" >delete</xref> provider networks in any project, as needed.</p>
 <p>Instances must be disassociated from any network you want to delete.</p>
 <section>
 <title>
@@ -27,7 +27,7 @@
 <ol>
 <li>
 <p>
-<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Networks</b> link.</p>
@@ -41,7 +41,7 @@
 </li>
 </ol>
 <p>
-  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+  <xref href="../../../../../../publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
