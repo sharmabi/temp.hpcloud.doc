@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1232">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1216">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Creating a Instance Using a Volume</title>
 <titlealts>
 <searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Creating an Instance from a Volume</searchtitle>
@@ -23,13 +23,10 @@
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
-</li>
-<li>
-<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Volumes</b> link.</p>
 </li>
 <li>
 <p>In the <b>Volumes</b> screen, for the volume you want for the instance, click the arrow icon in the <b>Actions</b> menu and select <b>Launch as Instance</b>.</p>
@@ -40,14 +37,14 @@
 
 <p>Use the <b>Flavor Details</b> list to make sure the disk size is sufficient.</p>
 
-<p>For details on the dialog box, see <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.dita" >Create a New Compute Instance</xref>.</p>
+<p>For details on the dialog box, see <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Instances/carrier-grade.dashboard.instances.create.dita" >Create a New Compute Instance</xref>.</p>
 </li>
 <li>
 <p>Click <b>Launch</b>.</p>
 </li>
 </ol>
 <p>
-  <xref href="#topic1232/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </body>

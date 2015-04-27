@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2873">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2849">
 <title>HP Helion 1.2 Development Platform: Developing in Java</title>
 <prolog>
 <metadata>
@@ -21,13 +21,12 @@
  <!--./devplatform/1.2/helion/user/deploy/languages/1.2java.md-->
  <!--permalink: /helion/devplatform/1.2/als/user/deploy/languages/java/--></p>
 <p>
-  <xref href="../../../../../../devplatform/helion/user/deploy/languages/1.0java.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/user/deploy/languages/1.0java.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
 <p>Whether you're deploying an application to the HP Helion Development Platform, a Cloud Foundry-based Platform as a Service (PaaS), or writing applications that take advantage of HP Helion OpenStack® to manage infrastructure or software services, tools to enable successful development are available in Java.</p>
-<p>Deployable <xref href="/helion/devplatform/1.2/appdev#java" >sample applications</xref> are available in this language.</p>
+<p>Deployable <xref href="./devplatform/1.2/1.2devplatform.appdev.dita#java" >sample applications</xref> are available in this language.</p>
 <section>
 <title id="using-jdbc">
-<!-- id="using-jdbc" -->
 <!-- id="using-jdbc" -->Using JDBC</title>
 <p>It is possible to access the database services using the standard JDBC
 API:</p>
@@ -52,7 +51,7 @@ if (helion_services != null &amp;&amp; helion_services.length() &gt; 0) {
     password = credentials.getStringValue("password");
     port = credentials.getNumberValue("port");
 
-    String dbUrl = "jdbc:mysql://" + hostname + ":" + port + "./publiccloud/index.dita/" + dbname;
+    String dbUrl = "jdbc:mysql://" + hostname + ":" + port + "/" + dbname;
 
     Class.forName("com.mysql.jdbc.Driver");
     Connection connection = DriverManager.getConnection(dbUrl, user, password);
@@ -69,13 +68,12 @@ if (helion_services != null &amp;&amp; helion_services.length() &gt; 0) {
 </section>
 <section>
 <title id="example">
-<!-- id="example" -->
 <!-- id="example" -->Example</title>
-<p>The <xref href="../../../../../../devplatform/1.2/workbook/database/1.2database.java.dita" >Java database sample</xref> sample
+<p>The <xref href="./devplatform/1.2/workbook/database/1.2database.java.dita" >Java database sample</xref> sample
 demonstrates a simple Java application using a MySQL service.</p>
 </section>
 <section>
-<title id="catalina-opts">
+<title>
 <!-- id="catalina-opts" -->
 <!-- id="catalina-opts" -->CATALINA_OPTS</title>
 <p>The CATALINA_OPTS environment variable can be set in the

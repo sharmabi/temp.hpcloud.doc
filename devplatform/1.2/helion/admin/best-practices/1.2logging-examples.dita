@@ -24,29 +24,28 @@
  <!--./devplatform/1.2/helion/admin/best-practices/1.2logging-examples.md-->
  <!--permalink: /helion/devplatform/1.2/als/admin/best-practices/logging-examples/--></p>
 <p>
-  <xref href="../../../../../devplatform/helion/admin/best-practices/1.0logging-examples.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/admin/best-practices/1.0logging-examples.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
 <p>Detailed instructions on how to use drains with third party log analysis
 software or services.</p>
 <ul>
 <li>
-<xref href="#topic2715/logging-examples-papertrail">Papertrail</xref>
+<xref href="./publiccloud/index.dita#logging-examples-papertrail" >Papertrail</xref>
 </li>
 <li>
-<xref href="#topic2715/logging-examples-splunk">Splunk</xref>
+<xref href="./publiccloud/index.dita#logging-examples-splunk" >Splunk</xref>
 </li>
 <li>
-<xref href="#topic2715/logging-examples-logstash">Logstash</xref>
+<xref href="./publiccloud/index.dita#logging-examples-logstash" >Logstash</xref>
 </li>
 <li>
-<xref href="#topic2715/hello-world-custom-drain">Hello World Custom Drain Example</xref>
+<xref href="./publiccloud/index.dita#hello-world-custom-drain" >Hello World Custom Drain Example</xref>
 <!--   [*Loggly*](#logging-examples-loggly)--></li>
 </ul>
 <p>
 <b>Note</b>: Do not forward both application and system logs to the same destination.</p>
 <section>
 <title>
-<!-- id="logging-examples-papertrail" -->
 <!-- id="logging-examples-papertrail" -->
 <!-- id="logging-examples-papertrail" -->Papertrail</title>
 <ol>
@@ -85,7 +84,7 @@ suitable name.
 <p>
   <b>Note</b>
 </p>
-<p>Papertrail requires systail log lines to have <codeph>&lt;13&gt;l</codeph> at the beginning of each line. Make sure the drain you are forwarding is formatted this way (see example in <xref href="/helion/devplatform/1.2/als/admin/server/logging#logging-drains-save-format" >
+<p>Papertrail requires systail log lines to have <codeph>&lt;13&gt;l</codeph> at the beginning of each line. Make sure the drain you are forwarding is formatted this way (see example in <xref href="./devplatform/1.2/helion/admin/server/1.2logging.dita#logging-drains-save-format" >
 <i>Saving Custom Log Formats</i>
 </xref>).</p>
 <!-- Loggly[](#loggly "Permalink to this headline")
@@ -119,9 +118,7 @@ Loggly supports JSON format with minor configuration changes shown above. Enable
 -->
 </section>
 <section>
-<title>
-<!-- id="logging-examples-splunk" -->
-<!-- id="logging-examples-splunk" -->
+<title id="logging-examples-splunk">
 <!-- id="logging-examples-splunk" -->Splunk</title>
 <ol>
 <li>Set up <xref href="http://www.splunk.com/download" scope="external" format="html" >Splunk Server</xref>.</li>
@@ -165,7 +162,6 @@ kato log drain add drain-name tcp://splunk-server-address:port#
 </section>
 <section>
 <title id="logging-examples-logstash">
-<!-- id="logging-examples-logstash" -->
 <!-- id="logging-examples-logstash" -->Logstash</title>
 <ol>
 <li>
@@ -195,7 +191,6 @@ kato log drain add drain-name tcp://splunk-server-address:port#
 </section>
 <section>
 <title id="hello-world-custom-drain">
-<!-- id="hello-world-custom-drain" -->
 <!-- id="hello-world-custom-drain" -->Hello World Custom Drain</title>
 <p>The command below starts a drain target server on a node and pipes it to a local file:</p>
 <codeblock>

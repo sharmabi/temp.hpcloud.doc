@@ -24,7 +24,6 @@
 <section>
 <title id="see-the-helion-11-development-platform-version-of-this-page">
 <!-- id="see-the-helion-11-development-platform-version-of-this-page" -->
-<!-- id="see-the-helion-11-development-platform-version-of-this-page" -->
   See the Helion 1.1 Development Platform version of this page
 </title>
 <p>Memcached is an in-memory key-value store used for caching by many web
@@ -33,9 +32,8 @@ which can be shared by application instances.</p>
 </section>
 <section>
 <title id="using-the-service">
-<!-- id="using-the-service" -->
 <!-- id="using-the-service" -->Using the Service</title>
-<p>As with other <xref href="/als/v1/user/services/data-services#data-services" >
+<p>As with other <xref href="./devplatform/helion/user/services/1.0data-services.dita#data-services" >
 <i>data services</i>
 </xref>, the
 location and port of the memcached service is exposed to the application
@@ -56,7 +54,7 @@ administrator can run the following commands on the Cloud Controller:</p>
 $ kato restart memcached_node
 </codeph>
 </codeblock>
-<p>With SASL enabled, applications must parse the<xref href="/als/v1/user/services/data-services#database-services-vcap-services" >
+<p>With SASL enabled, applications must parse the<xref href="./devplatform/helion/user/services/1.0data-services.dita#database-services-vcap-services" >
 <i>VCAP_SERVICES</i>
 </xref>
 environment variables to extract the <codeph>name</codeph>, <codeph>user</codeph>, and <codeph>password</codeph>
@@ -67,7 +65,7 @@ authentication via SASL.</p>
 <b>Warning:</b> Running Memcached <b>without</b> SASL enabled is insecure and should only be done if all system users are trusted. Any Application Lifecycle Service user can connect to the provisioned service instance if the IP address and port is discovered.</p>
 </section>
 <section>
-<title id="django-example-using-memcached">
+<title>
 <!-- id="django-example-using-memcached" -->
 <!-- id="django-example-using-memcached" -->Django Example using Memcached</title>
 <p>The <xref href="https://github.com/Stackato-Apps/django-gtd" scope="external" format="html" >Django GTD</xref> sample

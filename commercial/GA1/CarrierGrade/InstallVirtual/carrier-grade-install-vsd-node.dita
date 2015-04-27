@@ -18,7 +18,7 @@
  <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsd-node.md-->
  <!--permalink: /helion/openstack/carrier/install/vsd-node/--></p>
 <p>
-<xref href="../../../../commercial/GA1/1.1commercial.technical-overview.ga.dita/" >◀ Technical Overview</xref> | <xref href="./commercial/GA1/1.1commercial.install-GA-overview.dita" >▲ Installation Overview</xref> | <xref href="/helion/openstack/1.1/install/kvm" >Installing on a KVM hypervisor ▶</xref> OR <xref href="/helion/openstack/1.1/install/esx" > Installing on an ESX hypervisor▶</xref> </p>
+<xref href="./commercial/GA1/1.1commercial.technical-overview.ga.dita" >◀ Technical Overview</xref> | <xref href="./commercial/GA1/1.1commercial.install-GA-overview.dita" >▲ Installation Overview</xref> | <xref href="./commercial/GA1/1.1commercial.install-GA-kvm.dita" >Installing on a KVM hypervisor ▶</xref> OR <xref href="./commercial/GA1/1.1commercial.install-GA-esx.dita" > Installing on an ESX hypervisor▶</xref> </p>
 <p>
 <xref href="http://www8.hp.com/us/en/products/networking-switches/product-detail.html?oid=7268885" scope="external" format="html" >HP Virtualized Services Directory (HP VSD)</xref> (HP VSD) is a component of HP Distributed Cloud Networking.</p>
 <p>There are three main components in the HP DCN solution: HP VSD, HP Virtualized Services Controller (HP VSC) and HP Virtual Routing and Switching (HP VRS).</p>
@@ -139,7 +139,6 @@ polling server every 1024 s
 <p>When the installation is complete, a conformation message appears.</p>
 <section>
 <title id="verifing-the-installation">
-<!-- id="verifing-the-installation" -->
 <!-- id="verifing-the-installation" -->Verifing the installation</title>
 <p>Verify that your HP VSD(s) are up and running by using the following command:</p>
 <codeblock>
@@ -149,7 +148,6 @@ polling server every 1024 s
 </section>
 <section>
 <title id="configure-vsd">
-<!-- id="configure-vsd" -->
 <!-- id="configure-vsd" -->Configure VSD</title>
 <p>You can use xrdp to connect to the gurst VM from the KVM host and launch the VSD dashboard to create required users and apply the required license.</p>
 <ol>
@@ -197,18 +195,18 @@ License: ( temp license info ) review DCN Bits and license setup Pending
 </ol>
 </section>
 <section>
-<title id="nextstep">
+<title>
 <!-- id="nextstep" -->
 <!-- id="nextstep" -->Next step</title>
 <p>
-  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Create the VSC Node</xref>
+  <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Create the VSC Node</xref>
 </p>
 <!--
 * [Installing and configuring on a KVM hypervisor](/helion/openstack/1.1/install/kvm)
 * [Installing and configuring on an ESX hypervisor](/helion/openstack/1.1/install/esx/)
 -->
 <p>
-  <xref href="#topic3928/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

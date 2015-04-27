@@ -20,23 +20,22 @@
 <p>As an administrator you can manage the host aggregates in your domain:</p>
 <ul>
 <li>
-<xref href="#topic2432/createagg">Create a host aggregate</xref>
+<xref href="./publiccloud/index.dita#createagg" >Create a host aggregate</xref>
 </li>
 <li>
-<xref href="#topic2432/editagg">Modify a host aggregate</xref>
+<xref href="./publiccloud/index.dita#editagg" >Modify a host aggregate</xref>
 </li>
 <li>
-<xref href="#topic2432/deleteagg">Delete a host aggregate</xref>
+<xref href="./publiccloud/index.dita#deleteagg" >Delete a host aggregate</xref>
 </li>
 </ul>
 <section>
 <title id="createagg">
-<!-- id="createagg" -->
 <!-- id="createagg" -->Create a host aggregate</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Host Aggregates</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -65,12 +64,11 @@
 </section>
 <section>
 <title id="editagg">
-<!-- id="editagg" -->
 <!-- id="editagg" -->Modify a Host Aggregate</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Host Aggregates</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -103,13 +101,13 @@
 </ol>
 </section>
 <section>
-<title id="deleteagg">
+<title>
 <!-- id="deleteagg" -->
 <!-- id="deleteagg" -->Delete a host aggregate</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Host Aggregates</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -124,7 +122,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic2432/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

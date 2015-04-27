@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3049">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3088">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Adding or Removing Ports</title>
 <prolog>
 <metadata>
@@ -21,29 +21,28 @@
 <p>As an admin, you can:</p>
 <ul>
 <li>
-<xref href="#topic3049/createport">create a port</xref>
+<xref href="./publiccloud/index.dita#createport" >Create a port</xref>
 </li>
 <li>
-<xref href="#topic3049/editport">change the device associated with the port</xref>
+<xref href="./publiccloud/index.dita#editport" >Change the device associated with the port</xref>
 </li>
 <li>
-<xref href="#topic3049/editport">change the admin state between Up or Down</xref>
+<xref href="./publiccloud/index.dita#editport" >Change the admin state between Up or Down</xref>
 </li>
 <li>
-<xref href="#topic3049/deleteport">delete a port</xref>
+<xref href="./publiccloud/index.dita#deleteport" >Delete a port</xref>
 </li>
 </ul>
 <section>
 <title id="createport">
-<!-- id="createport" -->
 <!-- id="createport" -->Create a port</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Networks</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
+<p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Networks</b> link.</p>
 
 <p>The network(s) for the selected project appear.</p>
 </li>
@@ -76,15 +75,14 @@
 </section>
 <section>
 <title id="editport">
-<!-- id="editport" -->
 <!-- id="editport" -->Edit a port</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Networks</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
+<p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Networks</b> link.</p>
 
 <p>The network(s) for the selected project appear.</p>
 </li>
@@ -111,17 +109,15 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="deleteport" -->
-<!-- id="deleteport" -->
+<title id="deleteport">
 <!-- id="deleteport" -->Delete a port</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Networks</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
+<p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Networks</b> link.</p>
 
 <p>The network(s) for the selected project appear.</p>
 </li>
@@ -138,7 +134,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic3049/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

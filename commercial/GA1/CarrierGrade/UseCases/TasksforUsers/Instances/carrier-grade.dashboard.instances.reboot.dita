@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1060">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1072">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Rebooting Instances</title>
 <prolog>
 <metadata>
@@ -19,16 +19,15 @@
 <p>With a soft reboot, the operating system is signaled to restart, which allows for a graceful shutdown of all processes. A hard reboot is the equivalent of power cycling the server.</p>
 <section>
 <title id="reboot-an-instance">
-<!-- id="reboot-an-instance" -->
 <!-- id="reboot-an-instance" -->Reboot an instance</title>
 <p>To rebooot an instance:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Instances</b> link.</p>
 </li>
 <li>
 <p>In the <b>Instances</b> screen, for the instance you want to modify, click the arrow icon in the <b>Actions</b> menu and select <b>Soft Reboot Instance</b> or <b>Hard Reboot Instance</b>.</p>
@@ -40,7 +39,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1060/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

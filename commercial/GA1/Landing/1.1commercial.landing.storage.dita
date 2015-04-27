@@ -19,49 +19,45 @@
  <!--./commercial/GA1/Landing/1.1commercial.landing.storage.md-->
  <!--permalink: /helion/openstack/1.1/landing/storage/--></p>
 <!--
-<p style="font-size: small;"> <a href="../../../commercial/GA1/1.13rd-party-license-agreements.dita/">&#9664; PREV</a> | <a href="./commercial/GA1/1.1commercial.index.dita">&#9650; UP</a> | NEXT &#9654; </p>
+<p style="font-size: small;"> <a href="./commercial/GA1/1.13rd-party-license-agreements.dita">&#9664; PREV</a> | <a href="./commercial/GA1/1.1commercial.index.dita">&#9650; UP</a> | NEXT &#9654; </p>
 -->
 <p>HP Helion OpenStack is provided with two baremetal installation options depending on your system configuration. It allows you to manage the KVM and ESX hypervisors and provision virtual ymachines.</p>
 <section>
 <title>
 <!-- id="kvm-Hypervisor" -->
-<!-- id="kvm-Hypervisor" -->
 <!-- id="kvm-Hypervisor" -->KVM Hypervisor</title>
 <p>You can use your KVM cloud with either HP Storevirtual or HP StoreServ (3PAR) storage:</p>
 </section>
 <section>
-<title id="hp-storevirtual-vsa-storage">
+<title>
 <!-- id="hp-storevirtual-vsa-storage" -->
 <!-- id="hp-storevirtual-vsa-storage" -->HP StoreVirtual VSA storage</title>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.-vsa-overview.dita" >Cinder Block Storage Using HP StoreVirtual VSA</xref>
+<xref href="./commercial/GA1/1.1commercial.-vsa-overview.dita" >Cinder Block Storage Using HP StoreVirtual VSA</xref>
 <!--A BR tag was used here in the original source.-->HP StoreVirtual VSA Software is a Virtual Storage Appliance for the Linux KVM environment.</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
 <title id="hp-storeserv-3par-storage">
-<!-- id="hp-storeserv-3par-storage" -->
 <!-- id="hp-storeserv-3par-storage" -->HP StoreServ (3PAR) storage</title>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.install-3par.dita" >HP StoreServ (3PAR) Support</xref>
+<xref href="./commercial/GA1/1.1commercial.install-3par.dita" >HP StoreServ (3PAR) Support</xref>
 <!--A BR tag was used here in the original source.-->HP 3PAR StoreServ is a storage array that supports Fibre Channel (FC) as well as iSCSI protocol.</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
 <title id="swift-scale-out-cluster">
-<!-- id="swift-scale-out-cluster" -->
 <!-- id="swift-scale-out-cluster" -->Swift Scale-Out cluster</title>
 <p>
-<xref href="../../../commercial/GA1/1.1commerical.services-scale-out-swift.dita" >Scale-out Swift</xref>
+<xref href="./commercial/GA1/1.1commerical.services-scale-out-swift.dita" >Scale-out Swift</xref>
 <!--A BR tag was used here in the original source.-->An optional Swift Scale-Out cluster instance of between two and twelve servers that is used for production cloud Object storage use.</p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
 <section>
 <title id="esx-hypervisor">
-<!-- id="esx-hypervisor" -->
 <!-- id="esx-hypervisor" -->ESX Hypervisor</title>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.install-GA-ESX-Proxy.dita" >Deploy vCenter ESX compute proxy</xref>
+<xref href="./commercial/GA1/1.1commercial.install-GA-ESX-Proxy.dita" >Deploy vCenter ESX compute proxy</xref>
 <!--A BR tag was used here in the original source.-->HP Helion OpenStack supports VMWare ESX hypervisor to provision and manage an overcloud ESX cluster.</p>
 </section>
 </body>

@@ -19,12 +19,11 @@
 <p>If you want to prevent an image from being deleted, you can make that image <i>protected</i>.</p>
 <section>
 <title id="protect-an-image">
-<!-- id="protect-an-image" -->
 <!-- id="protect-an-image" -->Protect an image</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Images</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -41,7 +40,7 @@
 </ol>
 <p>The image is protected and the <b>Delete Image</b> command is removed from the <b>More</b> menu.</p>
 <p>
-  <xref href="#topic942/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

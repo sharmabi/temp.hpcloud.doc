@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1156">
-<title>HP Helion OpenStack® Carrier Grade (Alpha): Enabling and Disabling Networks</title>
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1177">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Enabling and Disabling Tenant Networks</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Enabling and Disabling Networks</searchtitle>
+</titlealts>
 <prolog>
 <metadata>
 <othermeta name="layout" content="default"/>
@@ -15,19 +18,17 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
 -->
-<p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses. You can <xref href="#topic1156/enablenet">enable</xref> or <xref href="#topic1156/disablenet">disable</xref> networks, as needed.</p>
+<p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses. You can <xref href="./publiccloud/index.dita#enablenet" >enable</xref> or <xref href="./publiccloud/index.dita#disablenet" >disable</xref> networks, as needed.</p>
 <section>
-<title>
-<!-- id="enablenet" -->
-<!-- id="enablenet" -->
+<title id="enablenet">
 <!-- id="enablenet" -->Enable a network</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Networks</b> link.</p>
 
 <p>The network(s) for the selected project appear.</p>
 </li>
@@ -35,7 +36,7 @@
 <p>For the network to enable or disable, click <b>Edit Network</b>.</p>
 </li>
 <li>
-<p>In the <b>Edit Network</b> screen, select <b>Admin State</b> to enable the port</p>
+<p>From the <b>Admin State</b> list, select <b>UP</b> to enable the network.</p>
 </li>
 <li>
 <p>Click <b>Save Changes</b>.</p>
@@ -43,17 +44,15 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="disablenet" -->
-<!-- id="disablenet" -->
+<title id="disablenet">
 <!-- id="disablenet" -->Disable a network</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Networks</b> link.</p>
 
 <p>The network(s) for the selected project appear.</p>
 </li>
@@ -61,14 +60,14 @@
 <p>For the network to disable, click <b>Edit Network</b>.</p>
 </li>
 <li>
-<p>In the <b>Edit Network</b> screen, clear <b>Admin State</b> to disable the port.</p>
+<p>From the <b>Admin State</b> list, select <b>DOWN</b> to disable the network.</p>
 </li>
 <li>
 <p>Click <b>Save Changes</b>.</p>
 </li>
 </ol>
 <p>
-  <xref href="#topic1156/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

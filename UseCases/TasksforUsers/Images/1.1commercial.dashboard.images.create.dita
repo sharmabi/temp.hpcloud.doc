@@ -23,12 +23,11 @@
 <section>
 <title>
 <!-- id="create-an-image" -->
-<!-- id="create-an-image" -->
 <!-- id="create-an-image" -->Create an image</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Images</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -57,11 +56,11 @@
 <p>Click <b>Create Image</b> to launch the image.</p>
 </li>
 <li>
-<p>Optionally, you can click <b>Launch</b> to <xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.create.dita" >create a running instance</xref> based on this image.</p>
+<p>Optionally, you can click <b>Launch</b> to <xref href="./UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.create.dita" >create a running instance</xref> based on this image.</p>
 </li>
 </ol>
 <p>
-  <xref href="#topic2334/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

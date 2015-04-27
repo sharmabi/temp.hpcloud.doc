@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3271">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Installing HP StoreVirtual VSA</title>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion OpenStack Carrier Grade"/>
+<othermeta name="role" content="Storage Administrator"/>
+<othermeta name="role" content="Storage Architect"/>
+<othermeta name="role" content="Michael B, Paul F"/>
+<othermeta name="product-version1" content="HP Helion OpenStack Carrier Grade"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-GA-vsa.md-->
+ <!--permalink: /helion/openstack/carrier/install/vsa/--></p>
+<p>
+<xref href="./commercial/GA1/1.1commercial.-vsa-overview.dita" >◀ Installing HP StoreVirtual VSA Overview </xref> | <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >Deploying HP StoreVirtual VSA Storage Sytems ▶</xref>
+</p>
+<!-- From Installing HPStoreVirtual.docx at https://wiki.hpcloud.net/pages/viewpage.action?pageId=49097241 -->
+<p>This page provides detailed instructions on deployment of HP StoreVirtual VSA Storage Nodes, and their configuration as Cinder backend.</p>
+<p>Use the following steps to install HP StoreVirtual VSA in your HP Helion OpenStack Carrier Grade cloud.</p>
+<section>
+<title id="prerequisites">
+<!-- id="prerequisites" -->Prerequisites</title>
+<ul>
+<li>
+<p>KVM must be installed:</p>
+
+<p>sudo apt-get install qemu-kvm libvirt-bin bridge-utils virt-manager
+sudo apt-get install ubuntu-vm-builder
+sudo apt-get update</p>
+</li>
+<li>
+<p>Optionally install Virtual Manager</p>
+
+<p>sudo apt-get install virt-manager</p>
+</li>
+<li>
+<p>Verify that KVM was installed correctly</p>
+
+<p>virsh -c qemu:///system list
+virsh net-list --all</p>
+</li>
+</ul>
+<p>To install KVM VSA:</p>
+<ol>
+<li>
+<p>Create a Bridge Network</p>
+
+<codeblock>
+<codeph>sudo apt-get install qemu
+sudo apt-get install libcap2-bin
+sudo setcap cap_net_admin=ei /usr/bin/qemu-system-x86_64
+sudo vi /etc/security/capability.conf
+"cap_net_admin   &lt;username&gt;"
+
+sudo vi /etc/network/interfaces
+
+iface eth0 inet manual
+iface eth0 inet dhcp
+
+auto br0
+iface br0 inet dhcp
+    bridge_ports eth0
+    bridge_stp off
+    bridge_fd 0
+    bridge_maxwait 0
+
+sudo invoke-rc.d networking restart
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Download the installer binary (installer) and the KVM OS disk image <codeph>KVM-VSA-&lt;version&gt;.img.gz</codeph>.</p>
+</li>
+<li>
+<p>Create a JSON Input file by running the following commands:</p>
+
+<codeblock>
+<codeph>./installer -create-default-json" , or 
+./installer -create-default-json" -disks &lt;n&gt; -tiering
+</codeph>
+</codeblock>
+
+<p>This input file tells the installer how to configure the VM.</p>
+
+<p>
+<b>Example</b>
+</p>
+
+<p>The following is an example of the default-input.json:</p>
+
+<codeblock>
+<codeph>{
+    "HostName": "newHost", 
+    "OSImageStoragePool": "default",
+    "Personality": "VSA",
+    "SANiQ_Preferred": 0,
+    "Networks": [
+        {   
+            "DHCP": 1,
+            "IPAddress": "", 
+            "Subnet": "", 
+            "Gateway": "",
+            "NetworkInterface": "default"
+        }   
+    ],  
+    "Disks": [
+        {   
+            "Location": "default",
+            "Size": "500G"
+            "Tier": "Tier 0"
+        },  
+        {   
+            "Location": "/dev/sdc",
+            "Size": ""
+            "Tier": "Tier 1"
+        }   
+    ]   
+}
+</codeph>
+</codeblock>
+
+<p>
+<b>Notes:</b>
+</p>
+
+<ul>
+<li>
+<p>To assign static IP for the VM, DHCP needs to be 0 and IP address, Subnet mask and Default gateway fields must be filled in. Similarly, to have a dynamic IP DHCP needs to be 1 and the other fields need to be empty.</p>
+</li>
+<li>
+<p>
+<codeph>NetworkInterface</codeph> must match the fields available in <codeph>virsh net-list --all</codeph>.</p>
+</li>
+<li>
+<p>
+<codeph>SANiQ_Preferred</codeph> is the preferred NIC interface for SAN/iQ. Select 0 or 1.</p>
+</li>
+<li>
+<p>Disk Location can be a storage pool, as found in in <codeph>virsh pool-list</codeph>; Or can be a raw device.</p>
+</li>
+<li>
+<p>
+<codeph>OSImageStoragePool</codeph> is where the OS image will be located. This needs to be a valid storage pool.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Use the following command to install a VSA/FOM on the KVM hypervisor:</p>
+
+<p>./installer [--no-prompt] [--debug] <required-cleanup remap="json">
+<ph> &lt;KVM-VSA-<required-cleanup remap="version">
+<ph>.img.gz</ph>
+</required-cleanup>
+</ph>
+</required-cleanup>
+</p>
+</li>
+<li>
+<p>Use the following command to verify that the VM is running</p>
+
+<p>virsh -c qemu:///system list</p>
+</li>
+</ol>
+</section>
+<section>
+<title id="next-steps">
+<!-- id="next-steps" -->Next Step</title>
+<p>
+  <xref href="./commercial/GA1/CarrierGrade/Admin_Guide/VSA/carrier.install-deploy.dita" >Deploying HP StoreVirtual VSA Storage Sytems</xref>
+</p>
+<p>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

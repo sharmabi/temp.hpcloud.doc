@@ -22,16 +22,15 @@
  <!--./devplatform/helion/user/client/1.0index.md-->
  <!--permalink: /als/v1/user/client/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/user/client/1.1index.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/user/client/1.1index.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <p>The Helion client is the command-line interface
 to Application Lifecycle Service. You can use it to push application code up to the server,
 start and stop applications, create data services and link them to
 applications, and a number of other application management operations.</p>
-<p>The <xref href="/als/v1/user/reference/client-ref#command-ref-client" >Command Reference</xref> has full descriptions of all client commands and options. These details are also available at the command line via the <i>helion help</i> command.</p>
+<p>The <xref href="./devplatform/helion/user/reference/1.0client-ref.dita#command-ref-client" >Command Reference</xref> has full descriptions of all client commands and options. These details are also available at the command line via the <i>helion help</i> command.</p>
 <section>
 <title id="helion-client-setup">
-<!-- id="helion-client-setup" -->
 <!-- id="helion-client-setup" -->Application Lifecycle Service Client Setup</title>
 <p>
 <b>Note</b>: Using the Windows Helion client with
@@ -66,20 +65,17 @@ applications, and a number of other application management operations.</p>
 </section>
 <section>
 <title id="getting-help">
-<!-- id="getting-help" -->
 <!-- id="getting-help" -->Getting Help</title>
 <p>To get a list of available commands or help on a particular command:</p>
 <codeblock>
   <codeph>helion help [COMMAND]
 </codeph>
 </codeblock>
-<p>See also the <xref href="/als/v1/user/reference/client-ref#command-ref-client" >Command Reference</xref> for a full
+<p>See also the <xref href="./devplatform/helion/user/reference/1.0client-ref.dita#command-ref-client" >Command Reference</xref> for a full
 list of commands.</p>
 </section>
 <section>
-<title>
-<!-- id="targeting-the-api-endpoint" -->
-<!-- id="targeting-the-api-endpoint" -->
+<title id="targeting-the-api-endpoint">
 <!-- id="targeting-the-api-endpoint" -->Targeting the API Endpoint</title>
 <p>Before you can use the client, you must set the target URL, which is also known
 as the API Endpoint. This tells the client the location where it will push applications to. For example:</p>
@@ -95,7 +91,6 @@ as the API Endpoint. This tells the client the location where it will push appli
 </section>
 <section>
 <title id="http-proxies">
-<!-- id="http-proxies" -->
 <!-- id="http-proxies" -->HTTP Proxies</title>
 <p>
 <b>Note</b>: On the Windows operating system only, this configuration step should not be necessary, as the client queries the Internet Settings
@@ -113,7 +108,6 @@ appropriately.</p>
 </section>
 <section>
 <title id="removing-the-client">
-<!-- id="removing-the-client" -->
 <!-- id="removing-the-client" -->Removing the Client</title>
 <p>To remove or uninstall the client, simply delete the executable and remove any
 aliases or <codeph>\$PATH</codeph> modifications you have made for it.</p>

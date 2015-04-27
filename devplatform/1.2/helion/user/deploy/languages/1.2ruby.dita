@@ -27,7 +27,6 @@ to enable successful development are available in Ruby.</p>
 <section>
 <title>
 <!-- id="application-lifecycle-services" -->
-<!-- id="application-lifecycle-services" -->
 <!-- id="application-lifecycle-services" -->Application Lifecycle Services</title>
 <p>Application Lifecycle Services (ALS), a cloud foundry based Platform as a Service,
 provides a means to execute ruby applications on a managed platform. Deploying applications to the platform is as simple as adding configuration to a YAML configuration file and using a console application to push the application to ALS.
@@ -55,17 +54,15 @@ processes:
 To learn more see:</p>
 <ul>
 <li>
-<xref href="../../../../../../devplatform/1.2/helion/user/deploy/languages/1.2ruby.dita" >Working with applications in Ruby</xref>
+<xref href="./devplatform/1.2/helion/user/deploy/languages/1.2ruby.dita" >Working with applications in Ruby</xref>
 </li>
-<li>The <xref href="../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >manifest.yml</xref> reference.</li>
+<li>The <xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >manifest.yml</xref> reference.</li>
 </ul>
 </section>
 <section>
-<title>
-<!-- id="hp-helion-sdk" -->
-<!-- id="hp-helion-sdk" -->
+<title id="hp-helion-sdk">
 <!-- id="hp-helion-sdk" -->HP Helion SDK</title>
-<p>Ruby applications can communicate directly with the <xref href="../../../../../../publiccloud/api.dita" >Helion APIs</xref> through a REST client or use the SDK. The SDK is designed to have a simple well documented API to simplify working with the services.
+<p>Ruby applications can communicate directly with the <xref href="./publiccloud/api.dita" >Helion APIs</xref> through a REST client or use the SDK. The SDK is designed to have a simple well documented API to simplify working with the services.
 To understand how it works, here is an example of writing and reading from object storage:</p>
 <codeblock>
   <codeph>def credentials_hash
@@ -99,11 +96,10 @@ file.content_type # =&gt; text/plain
 </codeph>
 </codeblock>
 <p>
-<b>Note</b>: See <xref href="/helion/devplatform/1.2/als/user/deploy/buildpack#buildpacks" >Buildpacks</xref> for an alternative way to deploy Ruby on Rails applications.</p>
+<b>Note</b>: See <xref href="./devplatform/1.2/helion/user/deploy/1.2buildpack.dita#buildpacks" >Buildpacks</xref> for an alternative way to deploy Ruby on Rails applications.</p>
 </section>
 <section>
 <title id="using-ruby-2-0">
-<!-- id="using-ruby-2-0" -->
 <!-- id="using-ruby-2-0" -->Using Ruby 2.0</title>
 <p>The <i>manifest.yml</i> file must specify the Ruby runtime version and Rails as the
 framework type:</p>
@@ -115,7 +111,7 @@ framework type:</p>
 <p>Default Ruby version is Ruby 1.9</p>
 </section>
 <section>
-<title id="known-issues">
+<title>
 <!-- id="known-issues" -->
 <!-- id="known-issues" -->Known Issues</title>
 <ul>
@@ -155,7 +151,6 @@ gem 'rails'
 <section>
 <title>
 <!-- id="ruby-on-rails-3-1" -->
-<!-- id="ruby-on-rails-3-1" -->
 <!-- id="ruby-on-rails-3-1" -->Ruby on Rails 3.1+</title>
 <p>To get the asset pipeline working on Application Lifecycle Service, precompile your assets in
 your development environment, which compiles them into public/assets:</p>
@@ -165,9 +160,7 @@ your development environment, which compiles them into public/assets:</p>
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="gems-and-libraries" -->
-<!-- id="gems-and-libraries" -->
+<title id="gems-and-libraries">
 <!-- id="gems-and-libraries" -->Gems and Libraries</title>
 <p>A <i>Gemfile</i> must be included in your app that lists all required gems.
 Run:</p>
@@ -183,9 +176,7 @@ needed gems are packaged, and set the BUNDLE_PATH environment variable
 to point at them.</p>
 </section>
 <section>
-<title>
-<!-- id="unsupported-gemfile-features" -->
-<!-- id="unsupported-gemfile-features" -->
+<title id="unsupported-gemfile-features">
 <!-- id="unsupported-gemfile-features" -->Unsupported <i>Gemfile</i> features</title>
 <ol>
 <li>git urls or branch dependencies</li>
@@ -195,28 +186,26 @@ to point at them.</p>
 </section>
 <section>
 <title id="database-services">
-<!-- id="database-services" -->
 <!-- id="database-services" -->Database Services</title>
 <p>Cloud Foundry supports database auto-reconfiguration for Rails
 applications.</p>
 </section>
 <section>
 <title id="worker-applications">
-<!-- id="worker-applications" -->
 <!-- id="worker-applications" -->Worker Applications</title>
 <p>Non-HTTP apps that run as an Application Lifecycle Service application under the control of
 the Health Manager.</p>
 <p>To deploy worker applications, you need to use the
-<xref href="/helion/devplatform/1.2/als/user/deploy/manifestyml#command" >
+<xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita#command" >
 <i>command</i>
 </xref> key and set the
-<xref href="/helion/devplatform/1.2/als/user/deploy/manifestyml#web" >
+<xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita#web" >
 <i>processes: web</i>
 </xref>
 key to Null ("\~").</p>
 </section>
 <section>
-<title id="example">
+<title>
 <!-- id="example" -->
 <!-- id="example" -->Example</title>
 <codeblock>
@@ -232,19 +221,16 @@ processes:
 </section>
 <section>
 <title id="general-guidelines">
-<!-- id="general-guidelines" -->
 <!-- id="general-guidelines" -->General Guidelines</title>
 </section>
 <section>
 <title id="app-web-servers">
-<!-- id="app-web-servers" -->
 <!-- id="app-web-servers" -->App/Web Servers</title>
 <p>For the best performance, <xref href="https://devcenter.heroku.com/articles/ruby#webserver" scope="external" format="html" >using the Thin Ruby webserver</xref> is recommended.
 Include <codeph>gem 'thin'</codeph> in your <i>Gemfile</i>.</p>
 </section>
 <section>
 <title id="bundler">
-<!-- id="bundler" -->
 <!-- id="bundler" -->Bundler</title>
 <p>You need bundler and rails installed locally. This can be done
 via:</p>
@@ -254,7 +240,7 @@ via:</p>
 </codeblock>
 </section>
 <section>
-<title id="running-rake-commands">
+<title>
 <!-- id="running-rake-commands" -->
 <!-- id="running-rake-commands" -->Running rake commands</title>
 <p>Generally, <codeph>bundle exec</codeph> must be used when running any commands that are installed through Gemfile/bundler.</p>
@@ -263,10 +249,10 @@ via:</p>
   <codeph>helion run *appname* bundle exec rake stats
 </codeph>
 </codeblock>
-<p>See the <xref href="/helion/devplatform/1.2/als/user/reference/client-ref#command-ref-client" >ALS Command Reference</xref> for details on the use of <codeph>helion run</codeph>.</p>
+<p>See the <xref href="./devplatform/1.2/helion/user/reference/1.2client-ref.dita#command-ref-client" >ALS Command Reference</xref> for details on the use of <codeph>helion run</codeph>.</p>
 </section>
 <section>
-<title id="references">
+<title>
 <!-- id="references" -->
 <!-- id="references" -->References</title>
 <ul>

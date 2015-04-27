@@ -25,7 +25,6 @@
 <section>
 <title>
 <!-- id="components-in-tripleo-overcloud-controller0" -->
-<!-- id="components-in-tripleo-overcloud-controller0" -->
 <!-- id="components-in-tripleo-overcloud-controller0" -->Components in TripleO Overcloud Controller0</title>
 <p>This controller node is the first of the High Available (HA) cluster. In this node there is an instance of the Ceilometer API running under the HA Proxy Virtual IP address. The Alarm services run on Overcloud Controller0.</p>
 <p>
@@ -62,19 +61,19 @@
 </ol>
 </section>
 <section>
-<title id="ceilometer-components-in-tripleo-overcloud-controller1">
+<title>
 <!-- id="ceilometer-components-in-tripleo-overcloud-controller1" -->
 <!-- id="ceilometer-components-in-tripleo-overcloud-controller1" -->Ceilometer Components in TripleO Overcloud Controller1</title>
 <p>Just like Controller0, Controller1 has an instance of the Ceilometer API running under the HA Proxy.</p>
 </section>
 <section>
-<title id="ceilometer-components-in-tripleo-overcloud-controller2">
+<title>
 <!-- id="ceilometer-components-in-tripleo-overcloud-controller2" -->
 <!-- id="ceilometer-components-in-tripleo-overcloud-controller2" -->Ceilometer Components in TripleO Overcloud Controller2</title>
 <p>This node is where all other Ceilometer components are running.</p>
 </section>
 <section>
-<title id="ceilometer-sample-polling">
+<title>
 <!-- id="ceilometer-sample-polling" -->
 <!-- id="ceilometer-sample-polling" -->Ceilometer Sample Polling</title>
 <p>The Sample Polling is part of the Central Agent. Once sent to the RabbitMQ service, they are consumed by the Collector and stored in the database. The Collector is also responsible for consuming and storing notifications. Here there is a high level picture of the overall polling/collecting cycle.</p>
@@ -84,7 +83,6 @@
 </section>
 <section>
 <title id="centralagent">
-<!-- id="centralagent" -->
 <!-- id="centralagent" -->Ceilometer Central Agent</title>
 <p>The Central Agent is responsible for coordinating the polling activity. It parses the <i>pipeline.yml</i> configuration file and identifies all the sources that need to be polled from. The sources are then evaluated using a discovery mechanism and all the sources are translated to resources where a dedicated pollster can retrieve and publish data. At each identified interval the discovery mechanism is triggered, the resource list is composed, and the data is polled and sent to the queue.</p>
 <p>Metering processes should normally be operating at all times. Upstart will continually attempt to restart stopped processes even if the process was deliberately stopped manually. In order to avoid this conflict, stop or start processes using the following commands.</p>
@@ -117,7 +115,6 @@ ceilometer-agent-central start/running, process 27989
 </section>
 <section>
 <title id="collector">
-<!-- id="collector" -->
 <!-- id="collector" -->Ceilometer Collector</title>
 <p>The collector is responsible for getting the samples/events from the RabbitMQ service and storing it in the main database.</p>
 <p>Metering processes should normally be operating at all times. Upstart will continually attempt to restart stopped processes even if the process was deliberately stopped manually. In order to avoid this conflict, stop or start processes using the following commands.</p>

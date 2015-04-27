@@ -19,39 +19,39 @@
  <!--./commercial/GA1/Landing/1.1commercial.landing.network.md-->
  <!--permalink: /helion/openstack/1.1/landing/network/--></p>
 <!--
-<p style="font-size: small;"> <a href="../../../commercial/GA1/1.13rd-party-license-agreements.dita/">&#9664; PREV</a> | <a href="./commercial/GA1/1.1commercial.index.dita">&#9650; UP</a> | NEXT &#9654; </p>
+<p style="font-size: small;"> <a href="./commercial/GA1/1.13rd-party-license-agreements.dita">&#9664; PREV</a> | <a href="./commercial/GA1/1.1commercial.index.dita">&#9650; UP</a> | NEXT &#9654; </p>
 -->
 <p>Helion Network Administrators are responsible for planning for the Neutron networking service, and once installed, to configure the service to meet the needs of their cloud network users.</p>
 <p>
-<xref href="../../../commercial/GA1/neutron/1.1commercial_neutron-intro.dita" >Networking Operation Administrator Pre and Post Installation Tasks</xref>
+<xref href="./commercial/GA1/neutron/1.1commercial_neutron-intro.dita" >Networking Operation Administrator Pre and Post Installation Tasks</xref>
 <!--A BR tag was used here in the original source.-->Learn about how to configure the Networking Operations (Neutron) service .</p>
 <!-- ===================== horizontal rule ===================== -->
 <p>
-<xref href="../../../commercial/GA1/neutron/1.1commercial_neutron-pre-installation.dita" >Preinstallation Requirement</xref>
+<xref href="./commercial/GA1/neutron/1.1commercial_neutron-pre-installation.dita" >Preinstallation Requirement</xref>
 <!--A BR tag was used here in the original source.-->Learn about the tasks that must be performed before the Helion OpenStack network can be installed.</p>
 <!-- ===================== horizontal rule ===================== -->
 <p>
-<xref href="../../../commercial/GA1/neutron/1.1commercial_neutron-pre-installation-hardware-software.dita" >Hardware Configuration and Software Requirements</xref>
+<xref href="./commercial/GA1/neutron/1.1commercial_neutron-pre-installation-hardware-software.dita" >Hardware Configuration and Software Requirements</xref>
 <!--A BR tag was used here in the original source.-->Learn about the supported hardware configurations and software requirements for the Networking service.</p>
 <!-- ===================== horizontal rule ===================== -->
 <p>
-<xref href="../../../commercial/GA1/neutron/1.1commercial_neutron-pre-installation-high-availability-cloud-networking.dita" >High Availability</xref>
+<xref href="./commercial/GA1/neutron/1.1commercial_neutron-pre-installation-high-availability-cloud-networking.dita" >High Availability</xref>
 <!--A BR tag was used here in the original source.-->Learn about high availability for OpenStack cloud networking.</p>
 <!-- ===================== horizontal rule ===================== -->
 <p>
-<xref href="../../../commercial/GA1/neutron/1.1commercial_neutron-post-installation.dita" >Post Installation Tasks</xref>
+<xref href="./commercial/GA1/neutron/1.1commercial_neutron-post-installation.dita" >Post Installation Tasks</xref>
 <!--A BR tag was used here in the original source.-->Learn about the tasks that must be completed before the network is ready for users.</p>
 <!-- ===================== horizontal rule ===================== -->
 <p>
-<xref href="../../../commercial/GA1/neutron/1.1commercial_neutron-post-installation-neutron-integration.dita" >Networking Operation (Neutron) Integration</xref>
+<xref href="./commercial/GA1/neutron/1.1commercial_neutron-post-installation-neutron-integration.dita" >Networking Operation (Neutron) Integration</xref>
 <!--A BR tag was used here in the original source.-->Learn about the about the Networking Operation (Neutron) integration.</p>
 <!-- ===================== horizontal rule ===================== -->
 <p>
-<xref href="../../../commercial/GA1/neutron/1.1commercial_neutron-post-installation-configure-network.dita" >Configuring Your Network Securely</xref>
+<xref href="./commercial/GA1/neutron/1.1commercial_neutron-post-installation-configure-network.dita" >Configuring Your Network Securely</xref>
 <!--A BR tag was used here in the original source.-->Learn about how to configure your HP Helion OpenStack network securely.</p>
 <!-- ===================== horizontal rule ===================== -->
 <p>
-<xref href="../../../commercial/GA1/neutron/1.1commercial_neutron-post-installation-configure-DNaaS.dita" >DNSaaS Configuration</xref>
+<xref href="./commercial/GA1/neutron/1.1commercial_neutron-post-installation-configure-DNaaS.dita" >DNSaaS Configuration</xref>
 <!--A BR tag was used here in the original source.-->Learn about configuring Domain Name System as a service (DNSaaS).</p>
 <!-- ===================== horizontal rule ===================== -->
 </body>

@@ -19,10 +19,10 @@
  <!--./commercial/GA1/Landing/1.1commercial.landing.security.md-->
  <!--permalink: /helion/openstack/1.1/landing/security/--></p>
 <!--
-<p style="font-size: small;"> <a href="../../../commercial/GA1/1.13rd-party-license-agreements.dita/">&#9664; PREV</a> | <a href="./commercial/GA1/1.1commercial.index.dita">&#9650; UP</a> | NEXT &#9654; </p>
+<p style="font-size: small;"> <a href="./commercial/GA1/1.13rd-party-license-agreements.dita">&#9664; PREV</a> | <a href="./commercial/GA1/1.1commercial.index.dita">&#9650; UP</a> | NEXT &#9654; </p>
 -->
 <p>
-<xref href="../../../commercial/GA1/neutron/1.1commercial_neutron-post-installation-configure-network.dita" >Configuring Your Network Securely</xref>
+<xref href="./commercial/GA1/neutron/1.1commercial_neutron-post-installation-configure-network.dita" >Configuring Your Network Securely</xref>
 <!--A BR tag was used here in the original source.-->Learn about how to configure your HP Helion OpenStack network securely.</p>
 <!-- ===================== horizontal rule ===================== -->
 </body>

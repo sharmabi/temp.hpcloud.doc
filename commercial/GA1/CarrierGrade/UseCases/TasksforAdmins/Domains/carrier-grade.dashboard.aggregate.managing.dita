@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2468">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2926">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Managing Host Aggregates</title>
 <prolog>
 <metadata>
@@ -20,26 +20,29 @@
 <p>As an administrator you can manage the host aggregates in your domain:</p>
 <ul>
 <li>
-<xref href="#topic2468/createagg">Create a host aggregate</xref>
+<xref href="./publiccloud/index.dita#createagg" >Create a host aggregate</xref>
 </li>
 <li>
-<xref href="#topic2468/editagg">Modify a host aggregate</xref>
+<xref href="./publiccloud/index.dita#editagg" >Modify a host aggregate</xref>
 </li>
 <li>
-<xref href="#topic2468/deleteagg">Delete a host aggregate</xref>
+<xref href="./publiccloud/index.dita#editmeta" >Managing Metadata</xref>
+</li>
+<li>
+<xref href="./publiccloud/index.dita#deleteagg" >Delete a host aggregate</xref>
 </li>
 </ul>
 <section>
-<title id="createagg">
+<title>
 <!-- id="createagg" -->
 <!-- id="createagg" -->Create a host aggregate</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Host Aggregates</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
+<p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Host Aggregates</b> link.</p>
 </li>
 <li>
 <p>In the Host Aggregates screen, click <b>Create Host Aggregate</b>.</p>
@@ -64,16 +67,16 @@
 </ol>
 </section>
 <section>
-<title id="editagg">
+<title>
 <!-- id="editagg" -->
 <!-- id="editagg" -->Modify a Host Aggregate</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Host Aggregates</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
+<p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Host Aggregates</b> link.</p>
 </li>
 <li>
 <p>Perform one of the following tasks:</p>
@@ -92,7 +95,7 @@
 <b>To change the hosts associated with the aggregate:</b>
 </p>
 
-<p>a. For the aggregate you want to edit click **More &gt; Manage Hosts*</p>
+<p>a. For the aggregate you want to edit, click the arrow icon in the <b>Actions</b> menu and select <b>Manage Hosts</b>.</p>
 
 <p>b. Add a host to the aggregate by clicking the <b>+</b> icon next to each project in the <b>All Available Hosts</b> column.</p>
 
@@ -103,19 +106,26 @@
 </ol>
 </section>
 <section>
+<title id="editmeta">
+<!-- id="editmeta" -->Managing Metadata</title>
+<p>Compute uses a metadata service for virtual machine instances to retrieve instance-specific data.</p>
+<p>You can add and remove metadata for host aggregates, see <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.metadata.dita" >Managing Metadata</xref>.</p>
+</section>
+<section>
 <title id="deleteagg">
-<!-- id="deleteagg" -->
 <!-- id="deleteagg" -->Delete a host aggregate</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Host Aggregates</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
+<p>Click the <b>Admin</b> dashboard, then the <b>System</b> panel, then the <b>Host Aggregates</b> link.</p>
 </li>
 <li>
-<p>In the Host Aggregates screen, for the aggregate you want to delete, click <b>More &gt; Delete Host Aggregate</b>.</p>
+<p>In the Host Aggregates screen, for the aggregate you want to delete,  click the arrow icon in the <b>Actions</b> menu and select <b>Delete Host Aggregate</b>.</p>
+
+<p>To delete multiple host aggregates, click the check box next to name of each host aggregate to delete. Click <b>Delete Host Aggregates</b>.</p>
 </li>
 <li>
 <p>In the confirmation screen, click <b>Delete Host Aggregate</b>.</p>
@@ -124,7 +134,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic2468/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -24,78 +24,76 @@
  <!--./devplatform/helion/admin/server/1.1upgrade.md-->
  <!--permalink: /helion/devplatform/1.1/als/admin/server/upgrade/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/admin/server/1.0upgrade.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/admin/server/1.0upgrade.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
-<p>Application Lifecycle Service provides the ability to upgrade a node or cluster in place via <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-node-upgrade" >kato node upgrade</xref> without the need to rebuild the entire cluster. This section covers how the upgrade process works.</p>
+<p>Application Lifecycle Service provides the ability to upgrade a node or cluster in place via <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-node-upgrade" >kato node upgrade</xref> without the need to rebuild the entire cluster. This section covers how the upgrade process works.</p>
 <ul>
 <li>
-<xref href="#topic13221/before-an-upgrade">Before an upgrade</xref>
+<xref href="./publiccloud/index.dita#before-an-upgrade" >Before an upgrade</xref>
 
 <ul>
 <li>
-<xref href="#topic13221/maintenance-mode">Maintenance Mode</xref>
+<xref href="./publiccloud/index.dita#maintenance-mode" >Maintenance Mode</xref>
 </li>
 <li>
-<xref href="#topic13221/backup-snapshot">Backups or Snapshots</xref>
+<xref href="./publiccloud/index.dita#backup-snapshot" >Backups or Snapshots</xref>
 </li>
 <li>
-<xref href="#topic13221/proxy-settings">Proxy settings</xref>
+<xref href="./publiccloud/index.dita#proxy-settings" >Proxy settings</xref>
 </li>
 <li>
-<xref href="#topic13221/rsa-keys">Passwordless SSH</xref>
+<xref href="./publiccloud/index.dita#rsa-keys" >Passwordless SSH</xref>
 </li>
 <li>
-<xref href="#topic13221/pwless-sudo">Passwordless sudo</xref>
+<xref href="./publiccloud/index.dita#pwless-sudo" >Passwordless sudo</xref>
 </li>
 <li>
-<xref href="#topic13221/extraDEA">Extra DEA Nodes</xref>
+<xref href="./publiccloud/index.dita#extraDEA" >Extra DEA Nodes</xref>
 </li>
 </ul>
 </li>
 <li>
-<xref href="#topic13221/executing-the-upgrade">Executing the upgrade</xref>
+<xref href="./publiccloud/index.dita#executing-the-upgrade" >Executing the upgrade</xref>
 
 <ul>
 <li>
-<xref href="#topic13221/upgrading-an-individual-node">Upgrading an individual node</xref>
+<xref href="./publiccloud/index.dita#upgrading-an-individual-node" >Upgrading an individual node</xref>
 </li>
 <li>
-<xref href="#topic13221/upgrading-a-cluster">Upgrading a cluster</xref>
+<xref href="./publiccloud/index.dita#upgrading-a-cluster" >Upgrading a cluster</xref>
 </li>
 <li>
-<xref href="#topic13221/download-only">Download Only Option</xref>
+<xref href="./publiccloud/index.dita#download-only" >Download Only Option</xref>
 </li>
 <li>
-<xref href="#topic13221/node-upgrade-ordering">Node Upgrade Order</xref>
+<xref href="./publiccloud/index.dita#node-upgrade-ordering" >Node Upgrade Order</xref>
 </li>
 <li>
-<xref href="#topic13221/node-upgrade-process">Node Upgrade Process</xref>
+<xref href="./publiccloud/index.dita#node-upgrade-process" >Node Upgrade Process</xref>
 </li>
 <li>
-<xref href="#topic13221/zero">Zero-downtime Upgrades</xref>
+<xref href="./publiccloud/index.dita#zero" >Zero-downtime Upgrades</xref>
 </li>
 </ul>
 </li>
 <li>
-<xref href="#topic13221/upgrade-node-upgrade-offline">Offline Upgrade Process</xref>
+<xref href="./publiccloud/index.dita#upgrade-node-upgrade-offline" >Offline Upgrade Process</xref>
 </li>
 <li>
-<xref href="#topic13221/troubleshooting">Troubleshooting</xref>
+<xref href="./publiccloud/index.dita#troubleshooting" >Troubleshooting</xref>
 </li>
 </ul>
 <section>
 <title id="before-an-upgrade">
-<!-- id="before-an-upgrade" -->
 <!-- id="before-an-upgrade" -->Before an upgrade</title>
 <p>Ensure that you have the latest version of the Application Lifecycle Service installed before updating any nodes or clusters.</p>
-<p>If <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-patch" >kato patch</xref> has not been applied consistently, <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-node-attach" >kato node upgrade</xref> can still be executed. It will first upgrade the node to the latest release, which will include all of the interim patches.</p>
+<p>If <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-patch" >kato patch</xref> has not been applied consistently, <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-node-attach" >kato node upgrade</xref> can still be executed. It will first upgrade the node to the latest release, which will include all of the interim patches.</p>
 </section>
 <section>
 <title id="free-disk-space">
-<!-- id="free-disk-space" -->
 <!-- id="free-disk-space" -->Free Disk Space</title>
 <p>Each node in the cluster to be upgraded requires at least 4GB free disk space except for the cache node, which needs at least 10GB free.</p>
-<p>If sufficient disk space cannot be reserved in the existing cluster for an upgrade, consider creating a new cluster and <xref href="/helion/devplatform/1.1/als/admin/best-practices#backup-migration" >migrating the data</xref> rather than upgrading in place.</p>
+<p>If sufficient disk space cannot be reserved in the existing cluster for an upgrade, consider creating a new cluster and <xref href="./devplatform/helion/admin/best-practices/1.1index.dita#backup-migration" >migrating the data</xref> rather than upgrading in place.</p>
 <p>To add additional space on the cache node specifically for the upgrade:</p>
 <ul>
 <li>mount an external filesystem on the cache node</li>
@@ -113,16 +111,15 @@
 </section>
 <section>
 <title id="free-memory">
-<!-- id="free-memory" -->
 <!-- id="free-memory" -->Free Memory</title>
 <p>Core/cache nodes require at least 1GB of free memory for upgrades to run successfully. Other nodes require at least 512MB.</p>
 <p>Use the <b>free</b> or <b>vmstat</b> commands to determine how much memory is available on each VM and use <b>kato stop</b> to temporarily stop roles if more memory is required.</p>
 </section>
 <section>
-<title id="maintenance-mode">
+<title>
 <!-- id="maintenance-mode" -->
 <!-- id="maintenance-mode" -->Maintenance Mode</title>
-<p>Before beginning an upgrade, put Application Lifecycle Service in maintenance mode using the <xref href="/helion/devplatform/1.1/als/admin/console/customize#console-settings-maintenance-mode" >Cloud Controller Settings</xref> or the following <i>kato</i> command:</p>
+<p>Before beginning an upgrade, put Application Lifecycle Service in maintenance mode using the <xref href="./devplatform/helion/admin/console/1.1customize.dita#console-settings-maintenance-mode" >Cloud Controller Settings</xref> or the following <i>kato</i> command:</p>
 <codeblock>
   <codeph>kato config set cloud_controller_ng maintenance_mode true
 </codeph>
@@ -131,13 +128,11 @@
 </section>
 <section>
 <title id="backup-snapshot">
-<!-- id="backup-snapshot" -->
 <!-- id="backup-snapshot" -->Backups or Snapshots</title>
-<p>Back up all system and user data by performing a <xref href="/helion/devplatform/1.1/als/admin/best-practices#backup-migration" >data export</xref> (recommended) or create <xref href="/helion/devplatform/1.1/als/admin/best-practices#bestpractices-snapshots" >snapshots</xref> of all nodes in your hypervisor.</p>
+<p>Back up all system and user data by performing a <xref href="./devplatform/helion/admin/best-practices/1.1index.dita#backup-migration" >data export</xref> (recommended) or create <xref href="./devplatform/helion/admin/best-practices/1.1index.dita#bestpractices-snapshots" >snapshots</xref> of all nodes in your hypervisor.</p>
 </section>
 <section>
 <title id="proxy-settings">
-<!-- id="proxy-settings" -->
 <!-- id="proxy-settings" -->Proxy settings for Upgrades</title>
 <p>The systems being upgraded will need to be able to access the following
 public URIs:</p>
@@ -150,14 +145,14 @@ public URIs:</p>
 </li>
 </ul>
 <p>This may require setting the HTTPS_PROXY environment variable on each
-node if a proxy is in use on your network. See <xref href="/helion/devplatform/1.1/als/admin/server/configuration#http-proxy" >Upstream Proxy Settings</xref> for instructions on configuring upstream proxies. For upgrades specifically, the <b>http_proxy</b> environment variable must be set in the shell you'll be running the upgrade from. For example:</p>
+node if a proxy is in use on your network. See <xref href="./devplatform/helion/admin/server/1.1configuration.dita#http-proxy" >Upstream Proxy Settings</xref> for instructions on configuring upstream proxies. For upgrades specifically, the <b>http_proxy</b> environment variable must be set in the shell you'll be running the upgrade from. For example:</p>
 <codeblock>
   <codeph>export http_proxy=http://intproxy.example.com: 
 </codeph>
 </codeblock>
 </section>
 <section>
-<title id="rsa-keys">
+<title>
 <!-- id="rsa-keys" -->
 <!-- id="rsa-keys" -->Passwordless SSH</title>
 <p>For cluster upgrades, you should set up SSH keys <xref href="https://help.ubuntu.com/community/SSH/OpenSSH/Configuring#disable-password-authentication" scope="external" format="html" >and disable password authentication</xref>
@@ -165,7 +160,6 @@ between the Core node and all other cluster nodes. Without this configuration, y
 </section>
 <section>
 <title id="pwless-sudo">
-<!-- id="pwless-sudo" -->
 <!-- id="pwless-sudo" -->Passwordless sudo</title>
 <p>Unless passwordless sudo is enabled, kato will prompt for the sudo password during the upgrade of each node even if passwordless SSH key authentication is enabled.</p>
 <p>For a completely unattended upgrade, configure passwordless sudo in addition to configuring SSH keys as described above. For example, you could run the following commands on all nodes in the cluster:</p>
@@ -178,18 +172,15 @@ sudo chmod 0440 /etc/sudoers.d/nopasswd
 </section>
 <section>
 <title id="extraDEA">
-<!-- id="extraDEA" -->
 <!-- id="extraDEA" -->Extra DEA Nodes</title>
-<p>While the upgrade is in progress, DEAs will be <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-node-attach" >retired</xref> one at a time and the hosted applications will be moved to other DEAs. If the system is operating at or close to capacity (all DEAs are fully populated) it will be necessary to add at least one <xref href="/helion/devplatform/1.1/als/admin/cluster#dea-nodes" >DEA node</xref> to the cluster before proceeding. Customers are typically permitted to exceed their node/memory license allocation during an upgrade.</p>
+<p>While the upgrade is in progress, DEAs will be <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-node-attach" >retired</xref> one at a time and the hosted applications will be moved to other DEAs. If the system is operating at or close to capacity (all DEAs are fully populated) it will be necessary to add at least one <xref href="./devplatform/helion/admin/cluster/1.1index.dita#dea-nodes" >DEA node</xref> to the cluster before proceeding. Customers are typically permitted to exceed their node/memory license allocation during an upgrade.</p>
 </section>
 <section>
 <title id="executing-the-upgrade">
-<!-- id="executing-the-upgrade" -->
 <!-- id="executing-the-upgrade" -->Executing the upgrade</title>
 </section>
 <section>
 <title id="upgrading-an-individual-node">
-<!-- id="upgrading-an-individual-node" -->
 <!-- id="upgrading-an-individual-node" -->Upgrading an individual node</title>
 <p>To upgrade an individual node, log into the node and run:</p>
 <codeblock>
@@ -199,7 +190,7 @@ sudo chmod 0440 /etc/sudoers.d/nopasswd
 <p>This will start the <b>Node Upgrade Process</b> as described below.</p>
 </section>
 <section>
-<title id="upgrading-a-cluster">
+<title>
 <!-- id="upgrading-a-cluster" -->
 <!-- id="upgrading-a-cluster" -->Upgrading a cluster</title>
 <p>To upgrade a cluster, log into the Core node in the cluster and run:</p>
@@ -212,7 +203,6 @@ sudo chmod 0440 /etc/sudoers.d/nopasswd
 </section>
 <section>
 <title>
-<!-- id="download-only" -->
 <!-- id="download-only" -->
 <!-- id="download-only" -->Download Only Option</title>
 <p>The <i>--download-only</i> option causes <i>kato node upgrade</i> to download the files required for a subsequent upgrade to a specified cache location, but not execute the actual upgrade.</p>
@@ -235,9 +225,7 @@ sudo chmod 0440 /etc/sudoers.d/nopasswd
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="node-upgrade-ordering" -->
-<!-- id="node-upgrade-ordering" -->
+<title id="node-upgrade-ordering">
 <!-- id="node-upgrade-ordering" -->Node upgrade ordering</title>
 <p>When performing a cluster upgrade, the nodes in the cluster are automatically arranged into an upgrade order based on the roles they have enabled. This order is then followed when upgrading nodes.</p>
 <p>The default role order is:</p>
@@ -250,12 +238,11 @@ sudo chmod 0440 /etc/sudoers.d/nopasswd
 <li>other</li>
 </ol>
 <p>Nodes are matched to this ordering by the roles they have enabled. Any nodes that don't match (e.g. data service nodes) are added to the end to be upgraded last.</p>
-<p>The order can be overridden with the <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-node-upgrade" >--role-order</xref>
+<p>The order can be overridden with the <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-node-upgrade" >--role-order</xref>
 option.</p>
 </section>
 <section>
 <title id="node-upgrade-process">
-<!-- id="node-upgrade-process" -->
 <!-- id="node-upgrade-process" -->Node Upgrade Process</title>
 <p>Each node goes through the following process during an upgrade.</p>
 <ol>
@@ -274,14 +261,13 @@ option.</p>
 <p>A pre-upgrade validation check is performed on the node to check that it is in working order before any upgrade actions are performed. If this validation fails then the upgrade process is stopped. These validation steps can be displayed to the user as errors while still continuing the upgrade process by using the <i>--ignore-inspect-failures</i> option.</p>
 <p>
 <b>Warning</b>: Use this option only if you get failures running <i>kato node inspect</i> that are known to be caused by systems outside of the control of Application Lifecycle Service, or if directed by HP Application Lifecycle Service Support.</p>
-<p>Next, the upgrade packages are downloaded and a validation check is performed on the files to make sure everything required for an upgrade is available. If the node is a DEA node it is then <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-node-retire" >retired</xref> to ensure any applications running on the node are evacuated before the upgrade takes place.</p>
+<p>Next, the upgrade packages are downloaded and a validation check is performed on the files to make sure everything required for an upgrade is available. If the node is a DEA node it is then <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-node-retire" >retired</xref> to ensure any applications running on the node are evacuated before the upgrade takes place.</p>
 <p>After the components have been upgraded, the node is restarted and then post-upgrade validation takes place. If any failures occur, the upgrade process is stopped and you will be given the option to roll back the upgrade. As with the pre-upgrade validation, this can be skipped using the <i>--ignore-inspect-failures</i> option (see warning above).</p>
 <p>When <i>kato node upgrade</i> completes successfully, the node is restarted running the latest version of Application Lifecycle Service.</p>
 <p>Remember to take the node out of maintenance mode after the upgrade.</p>
 </section>
 <section>
 <title id="zero">
-<!-- id="zero" -->
 <!-- id="zero" -->Zero-downtime Upgrades</title>
 <p>On clusters with redundant components, the upgrade will result in no down time for user applications which:</p>
 <ul>
@@ -299,7 +285,6 @@ option.</p>
 </section>
 <section>
 <title id="upgrade-node-upgrade-offline">
-<!-- id="upgrade-node-upgrade-offline" -->
 <!-- id="upgrade-node-upgrade-offline" -->Offline Upgrades (update from .tgz Archive)</title>
 <p>For clusters without direct access to the internet for upgrades, a  single .tgz archive will contain all of the packages
 necessary to upgrade.</p>
@@ -337,31 +322,30 @@ stackato@demo:/tmp/als-upgrade-x.x.x-x.x.x$
 </ol>
 </section>
 <section>
-<title id="troubleshooting">
+<title>
 <!-- id="troubleshooting" -->
 <!-- id="troubleshooting" -->Troubleshooting</title>
 <p>Potential difficulties and how to resolve them.</p>
 </section>
 <section>
-<title id="network-connectivity">
+<title>
 <!-- id="network-connectivity" -->
 <!-- id="network-connectivity" -->Network Connectivity</title>
 <p>Network connectivity errors during the upgrade process can cause it to fail. In such cases, it is possible to resume the upgrade once connectivity to the upstream resources is restored.</p>
 <p>
-<b>Note</b>:  If network connectivity is a concern, use the <xref href="#topic13221/download-only">--download-only</xref> option described above to limit the possibility of a network error during an upgrade.</p>
+<b>Note</b>:  If network connectivity is a concern, use the <xref href="./publiccloud/index.dita#download-only" >--download-only</xref> option described above to limit the possibility of a network error during an upgrade.</p>
 </section>
 <section>
-<title id="app-store-proxy-settings">
+<title>
 <!-- id="app-store-proxy-settings" -->
 <!-- id="app-store-proxy-settings" -->App Store Proxy Settings</title>
-<p>Proxy settings for the App Store may be lost during an upgrade. If the App Store cannot fetch data after an upgrade, and your system is behind an HTTP(S) proxy, <xref href="/helion/devplatform/1.1/als/admin/server/configuration#http-proxy" >reset the proxy information</xref> for your network.</p>
+<p>Proxy settings for the App Store may be lost during an upgrade. If the App Store cannot fetch data after an upgrade, and your system is behind an HTTP(S) proxy, <xref href="./devplatform/helion/admin/server/1.1configuration.dita#http-proxy" >reset the proxy information</xref> for your network.</p>
 </section>
 <section>
 <title>
 <!-- id="upgrading-with-customizations" -->
-<!-- id="upgrading-with-customizations" -->
 <!-- id="upgrading-with-customizations" -->Upgrading with Customizations</title>
-<p>Many files and directories in the ALS VM are overwritten during an upgrade. The <xref href="../../../../devplatform/helion/admin/console/1.1customize.dita" >Customization instructions</xref> document best practices which are safe for upgrades, but some customers may have modified the system further.</p>
+<p>Many files and directories in the ALS VM are overwritten during an upgrade. The <xref href="./devplatform/helion/admin/console/1.1customize.dita" >Customization instructions</xref> document best practices which are safe for upgrades, but some customers may have modified the system further.</p>
 <p>Customizations made within the following directories <b>will</b> be deleted or undone during an upgrade:</p>
 <ul>
 <li>
@@ -394,15 +378,15 @@ stackato@demo:/tmp/als-upgrade-x.x.x-x.x.x$
 <p>If you have made customizations in these places or in other areas not described in the customization instructions, save the new or modified files elsewhere, run upgrade on a non-production system, then copy or merge the files into the upgraded test system.</p>
 </section>
 <section>
-<title id="custom-buildpacks">
+<title>
 <!-- id="custom-buildpacks" -->
 <!-- id="custom-buildpacks" -->Custom Buildpacks</title>
 <p>
 <b>Warning</b>: Any custom buildpacks added to the system prior to the upgrade will be lost.
-Custom buildpacks must be <xref href="/helion/devplatform/1.1/als/user/deploy/buildpack#custom-buildpacks" >restored</xref> to the system after an upgrade.</p>
+Custom buildpacks must be <xref href="./devplatform/helion/user/deploy/1.1buildpack.dita#custom-buildpacks" >restored</xref> to the system after an upgrade.</p>
 </section>
 <section>
-<title id="clearing-the-browser-cache">
+<title>
 <!-- id="clearing-the-browser-cache" -->
 <!-- id="clearing-the-browser-cache" -->Clearing the Browser Cache</title>
 <p>After an upgrade, certain Management Console JavaScript and CSS files may persist in the browser. For example, Firefox users may see the following error in the Applications view:</p>
@@ -414,17 +398,15 @@ Custom buildpacks must be <xref href="/helion/devplatform/1.1/als/user/deploy/bu
 </section>
 <section>
 <title id="restaging-apps">
-<!-- id="restaging-apps" -->
 <!-- id="restaging-apps" -->Restaging Apps Behind a Proxy</title>
 <p>When migrating applications from Helion OpenStack® 1.0 to 1.1, applications with broken 
 support for <codeph>https_proxy</codeph> may fail during staging (or pre-running 
 hooks) because <codeph>https_proxy</codeph> is now always defined during these 
-stages, even when there is no upstream proxy behind the <xref href="/helion/devplatform/1.1/als/admin/server/configuration#staging-cache-app-http-proxy" >builtin 
+stages, even when there is no upstream proxy behind the <xref href="./devplatform/helion/admin/server/1.1configuration.dita#staging-cache-app-http-proxy" >builtin 
 proxy</xref>.</p>
 </section>
 <section>
 <title id="missing-kato">
-<!-- id="missing-kato" -->
 <!-- id="missing-kato" -->Missing Kato Utility</title>
 <p>If the <b>kato upgrade</b> command exits during the installation of the kato package, it is possible that <i>kato</i> itself can "go missing". It is removed before the upgraded package is fully installed.</p>
 <p>To recover from this state:</p>

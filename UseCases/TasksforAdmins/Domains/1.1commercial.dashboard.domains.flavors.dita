@@ -19,24 +19,23 @@
 <p>An admin user can create, edit, and delete instances as needed.</p>
 <ul>
 <li>
-<xref href="#topic2910/createflavor">Create a flavor</xref>
+<xref href="./publiccloud/index.dita#createflavor" >Create a flavor</xref>
 </li>
 <li>
-<xref href="#topic2910/editflavor&quot;">Edit a flavor</xref>
+<xref href="./publiccloud/index.dita#editflavor&quot;" >Edit a flavor</xref>
 </li>
 <li>
-<xref href="#topic2910/deleteflavor">Delete a flavor</xref>
+<xref href="./publiccloud/index.dita#deleteflavor" >Delete a flavor</xref>
 </li>
 </ul>
 <section>
 <title>
 <!-- id="createflavor" -->
-<!-- id="createflavor" -->
 <!-- id="createflavor" -->Create a flavor</title>
 <p>To create a flavor:</p>
 <ol>
 <li>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</li>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</li>
 </ol>
 <p>2 Click the <b>Flavors</b> link on the <b>Admin</b> dashboard <b>System</b> panel.
     The flavors in the domain are listed.</p>
@@ -74,14 +73,14 @@ A message is displayed on successful creation.</p>
 </ol>
 </section>
 <section>
-<title id="editflavor">
+<title>
 <!-- id="editflavor" -->
 <!-- id="editflavor" -->Edit a flavor</title>
 <p>To edit a flavor:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Flavors</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -95,7 +94,7 @@ A message is displayed on successful creation.</p>
 <p>In the <b>Edit Flavor</b> screen, click the <b>Flavor Info</b> tab (should be active).</p>
 </li>
 <li>
-<p>Use the <b>Flavor Info</b> and <b>Flavor Access</b> tabs to modify the flavor as needed. See <xref href="#topic2910/createflavor">Create a flavor</xref> for a description of each field.</p>
+<p>Use the <b>Flavor Info</b> and <b>Flavor Access</b> tabs to modify the flavor as needed. See <xref href="./publiccloud/index.dita#createflavor" >Create a flavor</xref> for a description of each field.</p>
 </li>
 <li>
 <p>When done editing, click <b>Save</b>.</p>
@@ -104,7 +103,7 @@ A message is displayed on successful creation.</p>
 <p>A message is displayed on successful edit.</p>
 </section>
 <section>
-<title id="deleteflavor">
+<title>
 <!-- id="deleteflavor" -->
 <!-- id="deleteflavor" -->Delete a flavor</title>
 <p>Instances that use the flavor are not affected when a flavor is deleted.</p>
@@ -112,7 +111,7 @@ A message is displayed on successful creation.</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Flavors</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -128,7 +127,7 @@ A message is displayed on successful creation.</p>
 </ol>
 <p>A message is displayed on successful delete.</p>
 <p>
-  <xref href="#topic2910/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

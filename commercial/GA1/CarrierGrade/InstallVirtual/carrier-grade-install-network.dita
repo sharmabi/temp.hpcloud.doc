@@ -15,7 +15,6 @@
 <p>Before installing HP Helion OpenStack Carrier Grade, you are responsible for preparing the network for all installations.</p>
 <section>
 <title id="add-bridgevlans-on-the-seed-cloud-host">
-<!-- id="add-bridgevlans-on-the-seed-cloud-host" -->
 <!-- id="add-bridgevlans-on-the-seed-cloud-host" -->Add Bridge/VLANs on the seed cloud host</title>
 <ol>
 <li>
@@ -94,7 +93,6 @@ ovs-vsctl del-br br-ctl</ph>
 </section>
 <section>
 <title id="configure-pair-bonding-for-the-kvm-host">
-<!-- id="configure-pair-bonding-for-the-kvm-host" -->
 <!-- id="configure-pair-bonding-for-the-kvm-host" -->Configure Pair Bonding for the KVM Host</title>
 <p>If you have multiple NICs, you can aggregate the multiple interfaces into a single logical <i>bonded</i> interface</p>
 <p>For example, if you run <codeph>ifconfig</codeph> on your KVM host and you see <codeph>em1/em2</codeph> or <codeph>eth1/ethx</codeph> interfaces, you create a bonded interface on the KVM host. If you do not want bond the interfaces, make sure <codeph>emx</codeph> or <codeph>ethx</codeph> is in the interfaces files.</p>
@@ -205,19 +203,18 @@ ovs_version: "2.0.2"
 </codeblock>
 </li>
 <li>
-<p>Make sure that you can connect to an external <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.dita" >NTP server</xref> and check that you can connect to an external network after exporting the proxy.</p>
+<p>Make sure that you can connect to an external <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-NTP.dita" >NTP server</xref> and check that you can connect to an external network after exporting the proxy.</p>
 </li>
 </ol>
 </section>
 <section>
 <title id="next-step">
-<!-- id="next-step" -->
 <!-- id="next-step" -->Next Step</title>
 <p>
-  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtrouter.dita" >Configure a Virtual Router During Installation</xref>
+  <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-virtrouter.dita" >Configure a Virtual Router During Installation</xref>
 </p>
 <p>
-  <xref href="#topic3995/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

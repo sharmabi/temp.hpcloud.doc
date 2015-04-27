@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1683">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1725">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Creating and Deleting Containers</title>
 <prolog>
 <metadata>
@@ -19,15 +19,14 @@
 <section>
 <title>
 <!-- id="create-a-container" -->
-<!-- id="create-a-container" -->
 <!-- id="create-a-container" -->Create a container</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Object Store</b> tab on the dashboard <b>Project</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Object Store</b> link.</p>
 </li>
 <li>
 <p>In the <b>Object Store</b> panel, click <b>Containers</b>.</p>
@@ -41,17 +40,15 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="delete-a-container" -->
-<!-- id="delete-a-container" -->
+<title id="delete-a-container">
 <!-- id="delete-a-container" -->Delete a container</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Object Store</b> tab on the dashboard <b>Project</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Object Store</b> link.</p>
 </li>
 <li>
 <p>In the <b>Object Store</b> pan, click <b>Containers</b>.</p>
@@ -68,7 +65,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1683/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

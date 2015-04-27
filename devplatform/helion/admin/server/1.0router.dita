@@ -24,17 +24,17 @@
  <!--./devplatform/helion/admin/server/1.0router.md-->
  <!--permalink: /als/v1/admin/server/router/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/admin/server/1.1router.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/admin/server/1.1router.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <ul>
 <li>
-<xref href="#topic3094/settings">Settings</xref>
+<xref href="./publiccloud/index.dita#settings" >Settings</xref>
 </li>
 <li>
-<xref href="#topic3094/websockets">WebSockets</xref>
+<xref href="./publiccloud/index.dita#websockets" >WebSockets</xref>
 </li>
 <li>
-<xref href="#topic3094/router-spdy">SPDY</xref>
+<xref href="./publiccloud/index.dita#router-spdy" >SPDY</xref>
 </li>
 </ul>
 <p>The Application Lifecycle Service Router role manages HTTP and HTTPS traffic between web clients and application instances. In conjunction with the Cloud
@@ -47,9 +47,8 @@ between multiple instances (containers) as required.</p>
 <section>
 <title>
 <!-- id="settings" -->
-<!-- id="settings" -->
 <!-- id="settings" -->Settings</title>
-<p>The Router is configured using <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref-config" >
+<p>The Router is configured using <xref href="./devplatform/helion/admin/reference/1.0kato-ref.dita#kato-command-ref-config" >
 <i>kato config</i>
 </xref>. The following settings are configurable:</p>
 <p>
@@ -110,17 +109,17 @@ configuration. Disabled if empty (default). Valid values are:</p>
 snippets to help prevent frame based clickjacking.</p>
 </section>
 <section>
-<title id="websockets">
+<title>
 <!-- id="websockets" -->
 <!-- id="websockets" -->WebSockets</title>
 <p>Applications using web sockets must use the VCAP_APP_PORT or PORT
-<xref href="/als/v1/user/reference/environment#environment-variables" >
+<xref href="./devplatform/helion/user/reference/1.0environment.dita#environment-variables" >
 <i>environment variables</i>
 </xref>
 to set the default listener port of the WebSocket server.</p>
 </section>
 <section>
-<title id="router-spdy">
+<title>
 <!-- id="router-spdy" -->
 <!-- id="router-spdy" -->SPDY</title>
 <p>

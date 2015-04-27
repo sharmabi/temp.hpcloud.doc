@@ -19,12 +19,11 @@
 <section>
 <title>
 <!-- id="create-a-volume-type" -->
-<!-- id="create-a-volume-type" -->
 <!-- id="create-a-volume-type" -->Create a volume type</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>System Panel</b> tab on the dashboard <b>Admin</b> panel.</p>
@@ -44,13 +43,13 @@
 </ol>
 </section>
 <section>
-<title id="delete-a-volume-type">
+<title>
 <!-- id="delete-a-volume-type" -->
 <!-- id="delete-a-volume-type" -->Delete a volume type</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>System Panel</b> tab on the dashboard <b>Admin</b> panel.</p>
@@ -69,7 +68,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1253/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

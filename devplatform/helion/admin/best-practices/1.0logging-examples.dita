@@ -24,26 +24,25 @@
  <!--./devplatform/helion/admin/best-practices/1.0logging-examples.md-->
  <!--permalink: /als/v1/admin/best-practices/logging-examples/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/admin/best-practices/1.1logging-examples.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/admin/best-practices/1.1logging-examples.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <p>Detailed instructions on how to use drains with third party log analysis
 software or services:</p>
 <ul>
 <li>
-<xref href="#topic3196/logging-examples-papertrail">Papertrail</xref>
+<xref href="./publiccloud/index.dita#logging-examples-papertrail" >Papertrail</xref>
 </li>
 <li>
-<xref href="#topic3196/logging-examples-loggly">Loggly</xref>
+<xref href="./publiccloud/index.dita#logging-examples-loggly" >Loggly</xref>
 </li>
 <li>
-<xref href="#topic3196/logging-examples-splunk">Splunk</xref>
+<xref href="./publiccloud/index.dita#logging-examples-splunk" >Splunk</xref>
 </li>
 </ul>
 <p>
 <b>Note</b>: Do not forward both application and system logs to the same destination.</p>
 <section>
 <title id="papertrail">
-<!-- id="papertrail" -->
 <!-- id="papertrail" -->Papertrail</title>
 <ol>
 <li>
@@ -82,12 +81,11 @@ suitable name.
 </ol>
 <p>
 <b>Note</b>: Papertrail requires systail log lines to have <codeph>&lt;13&gt;l</codeph> at the beginning of each line. Make sure the drain you are
-forwarding is formatted this way (see example in <xref href="/als/v1/admin/server/logging#logging-drains-save-format" >Saving Custom Log
+forwarding is formatted this way (see example in <xref href="./devplatform/helion/admin/server/1.0logging.dita#logging-drains-save-format" >Saving Custom Log
 Formats</xref>).</p>
 </section>
 <section>
 <title id="loggly">
-<!-- id="loggly" -->
 <!-- id="loggly" -->Loggly</title>
 <ol>
 <li>
@@ -141,7 +139,7 @@ kato log drain add drain-name tcp://logs.loggly.com:port#
 </codeblock>
 </section>
 <section>
-<title id="splunk">
+<title>
 <!-- id="splunk" -->
 <!-- id="splunk" -->Splunk</title>
 <ol>
@@ -187,7 +185,6 @@ kato log drain add drain-name tcp://splunk-server-address:port#
 </section>
 <section>
 <title id="hello-world-custom-drain">
-<!-- id="hello-world-custom-drain" -->
 <!-- id="hello-world-custom-drain" -->Hello World Custom Drain</title>
 <p>The command below starts a drain target server on a node and pipes it to a local file:</p>
 <codeblock>

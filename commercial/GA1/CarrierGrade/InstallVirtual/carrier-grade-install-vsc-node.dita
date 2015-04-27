@@ -21,7 +21,6 @@ virtual machine process, called the HP VSC Node.</p>
 <section>
 <title>
 <!-- id="create-the-vsc-node-vm" -->
-<!-- id="create-the-vsc-node-vm" -->
 <!-- id="create-the-vsc-node-vm" -->Create the VSC node VM</title>
 <p>To create the VM that hosts the VSC node:</p>
 <ol>
@@ -41,9 +40,7 @@ virsh start vsc
 </ol>
 </section>
 <section>
-<title>
-<!-- id="configure-the-vsc-node" -->
-<!-- id="configure-the-vsc-node" -->
+<title id="configure-the-vsc-node">
 <!-- id="configure-the-vsc-node" -->Configure the VSC node</title>
 <p>Once your VM is up and running, use the following steps to configure the VSC node:</p>
 <ol>
@@ -325,9 +322,7 @@ Organization: csp
 </ol>
 </section>
 <section>
-<title>
-<!-- id="useful-commands-for-vsc" -->
-<!-- id="useful-commands-for-vsc" -->
+<title id="useful-commands-for-vsc">
 <!-- id="useful-commands-for-vsc" -->Useful commands for VSC</title>
 <p>You might find the following commands helpful when working with VSC.</p>
 <ul>
@@ -375,15 +370,13 @@ show system ntp detail
 </ul>
 </section>
 <section>
-<title>
-<!-- id="next-step" -->
-<!-- id="next-step" -->
+<title id="next-step">
 <!-- id="next-step" -->Next Step</title>
 <p>
-  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-node.dita" >Create the HLM Node</xref>
+  <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-node.dita" >Create the HLM Node</xref>
 </p>
 <p>
-  <xref href="#topic5520/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -13,7 +13,7 @@
  <!--./devplatform/helion/user/console/1.0index.md-->
  <!--permalink: /als/v1/user/console/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/user/console/1.1index.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/user/console/1.1index.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <p>The Management Console is a web interface for Application Lifecycle Service (ALS). Using the same API as the ALS command line client, it provides access
 to a subset of features for deploying, scaling, and configuring
@@ -23,29 +23,28 @@ to end users. For information on the Management Console view for Admins, see the
 <section>
 <title>
 <!-- id="welcome" -->
-<!-- id="welcome" -->
 <!-- id="welcome" -->Welcome</title>
 <p>The top-level page of the Management Console displays quick links to the
 most commonly used resources:</p>
 <ul>
 <li>
-<b>Read the Documentation</b>: By default, this links to the ALS documentation at <xref href="../../../../devplatform/helion/1.0index.dita" >docs.hpcloud.com</xref>
+<b>Read the Documentation</b>: By default, this links to the ALS documentation at <xref href="./devplatform/helion/1.0index.dita" >docs.hpcloud.com</xref>
 </li>
 <li>
-<b>Contact Support</b>: Link to the <xref href="#topic6037/user-console-support">
+<b>Contact Support</b>: Link to the <xref href="./publiccloud/index.dita#user-console-support" >
 <i>Support</i>
 </xref>
 page.</li>
 <li>
-<b>Download the Client</b>: Link to the locally hosted <xref href="/als/v1/user/client#client" >
+<b>Download the Client</b>: Link to the locally hosted <xref href="./devplatform/helion/user/client/1.0index.dita#client" >
 <i>CLI
 client</i>
 </xref> download.</li>
 <li>
-<b>Deploy from Sample Applications</b>: Link to the <xref href="#topic6037/user-console-app-store">Sample Applications</xref>.</li>
+<b>Deploy from Sample Applications</b>: Link to the <xref href="./publiccloud/index.dita#user-console-app-store" >Sample Applications</xref>.</li>
 <li>
 <b>Organizations Membership</b>: Link to the end user view of the
-<xref href="#topic6037/user-console-welcome">
+<xref href="./publiccloud/index.dita#user-console-welcome" >
 <i>Organizations</i>
 </xref> page.</li>
 <li>
@@ -54,11 +53,11 @@ accessible from the drop down list at the top left.</li>
 </ul>
 </section>
 <section>
-<title id="organization-view">
+<title>
 <!-- id="organization-view" -->
 <!-- id="organization-view" -->Organization View</title>
 <p>The Organizations page shows a list of all
-<xref href="/als/v1/user/deploy/orgs-spaces#orgs-spaces" >
+<xref href="./devplatform/helion/user/deploy/1.0orgs-spaces.dita#orgs-spaces" >
 <i>Organizations</i>
 </xref> that the
 current user is a member of. Depending on how the ALS PaaS has been
@@ -76,7 +75,7 @@ and how much of it is currently used by applications.</li>
 </ul>
 </li>
 <li>
-<b>Domains</b>: Domains belonging to the Organization that can be used by applications deployed to <xref href="/als/v1/user/deploy/orgs-spaces#orgs-spaces" >
+<b>Domains</b>: Domains belonging to the Organization that can be used by applications deployed to <xref href="./devplatform/helion/user/deploy/1.0orgs-spaces.dita#orgs-spaces" >
 <i>Spaces</i>
 </xref> in the Organization. Typically, these will be a subdomain of the Application Lifecycle Service system itself. For example, an Organization called <codeph>acme</codeph> on a PaaS with the address <codeph>api.example.org</codeph> might have the domain <codeph>\*.acme.example.org</codeph>.</li>
 </ul>
@@ -86,13 +85,13 @@ and how much of it is currently used by applications.</li>
 <li>
 <b>Spaces</b>: A list of Spaces that belong to the Organization, showing
 the current number of applications and services deployed to that
-space. Clicking on a Space in the list opens a <xref href="#topic6037/user-console-space">
+space. Clicking on a Space in the list opens a <xref href="./publiccloud/index.dita#user-console-space" >
 <i>view of that
 Space</i>
 </xref>.</li>
 <li>Users: A list of Users who are members of the Organization, showing
 the Email address and Organization
-<xref href="/als/v1/user/deploy/orgs-spaces#orgs-spaces-roles" >
+<xref href="./devplatform/helion/user/deploy/1.0orgs-spaces.dita#orgs-spaces-roles" >
 <i>Roles</i>
 </xref> of each.
 
@@ -110,18 +109,17 @@ spending limits.</p>
 </section>
 <section>
 <title id="space-view">
-<!-- id="space-view" -->
 <!-- id="space-view" -->Spaces View</title>
 <ul>
 <li>
 <b>Apps</b>: A filterable list of applications in the Space. Clicking an
-app name opens an <xref href="#topic6037/user-console-app">
+app name opens an <xref href="./publiccloud/index.dita#user-console-app" >
 <i>administrative view of that
 application</i>
 </xref>.</li>
 <li>
 <b>Services</b>: A list of services bound to applications in the Space.
-Clicking a service name opens an <xref href="#topic6037/user-console-service">
+Clicking a service name opens an <xref href="./publiccloud/index.dita#user-console-service" >
 <i>administrative view of that
 service</i>
 </xref>.</li>
@@ -153,7 +151,6 @@ settings, reports, and logs.</li>
 </section>
 <section>
 <title id="application-view">
-<!-- id="application-view" -->
 <!-- id="application-view" -->Application View</title>
 <ul>
 <li>
@@ -161,12 +158,12 @@ settings, reports, and logs.</li>
 it uses, when it was created, and when it was last modified.</li>
 <li>
 <b>Routes</b>: Essentially, the URLs mapped to the application. These
-<xref href="/als/v1/user/deploy/orgs-spaces#orgs-spaces-routes" >
+<xref href="./devplatform/helion/user/deploy/1.0orgs-spaces.dita#orgs-spaces-routes" >
 <i>Routes</i>
 </xref> are made
 up of the name of the application name (a virtual hostname) followed
 by a dot and a
-<xref href="/als/v1/user/deploy/orgs-spaces#orgs-spaces-domains" >
+<xref href="./devplatform/helion/user/deploy/1.0orgs-spaces.dita#orgs-spaces-domains" >
 <i>Domain</i>
 </xref> (assigned
 to the Org and Space).</li>
@@ -205,7 +202,6 @@ the organizations's quota.</li>
 </section>
 <section>
 <title id="service-instance-view">
-<!-- id="service-instance-view" -->
 <!-- id="service-instance-view" -->Service Instance View</title>
 <p>Clicking a service instance's name anywhere in the interface brings up a
 view of that service instance showing:</p>
@@ -218,14 +214,13 @@ view of that service instance showing:</p>
 <li>its current state</li>
 </ul>
 <p>For more information on a service instance, such as its credentials, use
-the <xref href="/als/v1/user/reference/client-ref#command-service" >
+the <xref href="./devplatform/helion/user/reference/1.0client-ref.dita#command-service" >
 <codeph>helion service</codeph>
 </xref>
 command.</p>
 </section>
 <section>
 <title id="marketplace">
-<!-- id="marketplace" -->
 <!-- id="marketplace" -->Sample Apps</title>
 <p>The Sample Apps are collection of ready-to-run applications which can be deployed to Application Lifecycle Service by fetching the source code from the repository.</p>
 <p>Click the <b>Deploy App</b> button to start it on Application Lifecycle Service. You will be

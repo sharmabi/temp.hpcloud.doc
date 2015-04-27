@@ -19,13 +19,12 @@
 <p>A rebuild operation always removes data injected into the file system through server personality. You can reinsert data into the file system during the rebuild.</p>
 <section>
 <title id="rebuilding-an-instance">
-<!-- id="rebuilding-an-instance" -->
 <!-- id="rebuilding-an-instance" -->Rebuilding an instance</title>
 <p>To rebuild an instance:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -48,7 +47,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1237/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -63,11 +63,10 @@ app-&gt;start;
 </codeph>
 </codeblock>
 <p>The <i>manifest.yml</i> file contains deployment instructions for Application Lifecycle Service.
-See complete details for this file in the <xref href="../../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >Configuration With
+See complete details for this file in the <xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >Configuration With
 manifest.yml</xref> section.</p>
 <section>
 <title id="examples">
-<!-- id="examples" -->
 <!-- id="examples" -->Examples</title>
 <ul>
 <li>

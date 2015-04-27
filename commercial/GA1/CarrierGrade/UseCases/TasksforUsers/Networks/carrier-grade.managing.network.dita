@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1700">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1726">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Managing Networks</title>
 <prolog>
 <metadata>
@@ -23,44 +23,48 @@
 <section>
 <title>
 <!-- id="managing-your-network-as-a-user" -->
-<!-- id="managing-your-network-as-a-user" -->
 <!-- id="managing-your-network-as-a-user" -->Managing your network as a user</title>
 <p>As a user, you can work with the network(s) in the active project.</p>
 <p>Access the networking commands using the <b>Networks</b> panel on the <b>Project</b> dashboard.</p>
 <p>The <b>Network</b> panel contains commands to view a visual representation of your network and to enable you to work with your network.</p>
 <ul>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.viewing.dita" >View your network</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.viewing.dita" >View your network</xref>
 </li>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >Create or delete a network</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >Create or delete a tenant network</xref>
 </li>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.disable.dita" >Enable or disable a network</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.disable.dita" >Enable or disable a tenant network</xref>
 </li>
 </ul>
 </section>
 <section>
-<title>
-<!-- id="managing-your-network-as-an-admin" -->
-<!-- id="managing-your-network-as-an-admin" -->
+<title id="managing-your-network-as-an-admin">
 <!-- id="managing-your-network-as-an-admin" -->Managing your network as an admin</title>
 <p>As an admin user, you can work on all of the network(s) in your domain, regardless of which project the network is associated with.</p>
 <p>In addition to all of the user tasks, you can also make a network a shared network and make a network accessible externally.</p>
 <p>Access the networking commands using the <b>System</b> panel on the <b>Admin</b> dashboard.</p>
 <ul>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.admin.create.dita" >Creating externally available networks</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.admin.create.dita" >Creating provider networks</xref>
 </li>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.subnet.dita" >Add or remove a subnet to/from a Network</xref>
+<ul>
+<li>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.disable.dita" >Enable or disable a provider network</xref>
+</li>
+</ul>
 </li>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.ports.dita" >Create, Modify, or Delete a port on a Network</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.admin.delete.dita" >Delete a provider network</xref>
+</li>
+<li>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.ports.dita" >Create, Modify, or Delete a port on a Network</xref>
 </li>
 </ul>
 <p>
-  <xref href="#topic1700/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

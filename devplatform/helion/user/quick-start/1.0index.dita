@@ -13,7 +13,7 @@
  <!--./devplatform/helion/user/quick-start/1.0index.md-->
  <!--permalink: /als/v1/user/quick-start/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/user/quick-start/1.1index.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/user/quick-start/1.1index.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <p>This guide covers the basics of using an Application Lifecycle Service (ALS) PaaS.</p>
 <p>To follow along,
@@ -25,9 +25,8 @@ you will need:</p>
 </ul>
 <section>
 <title id="management-console">
-<!-- id="management-console" -->
 <!-- id="management-console" -->Management Console</title>
-<p>The web interface for Application Lifecycle Service is called the <xref href="/als/v1/admin/console/customize#management-console" >
+<p>The web interface for Application Lifecycle Service is called the <xref href="./devplatform/helion/admin/console/1.0customize.dita#management-console" >
 <i>Management
 Console</i>
 </xref>. You can use it to:</p>
@@ -43,11 +42,10 @@ been set up for you on the system.</p>
 <p>The interface should be mostly self-explanatory. It exposes most of the
 functionality you have access to as an end user, but to deploy your own
 applications from source code on your local machine you will need to install and use
-the Helion <xref href="/als/v1/user/client#helion-client-setup" >Application Lifestyle Service client</xref>.</p>
+the Helion <xref href="./devplatform/helion/user/client/1.0index.dita#helion-client-setup" >Application Lifestyle Service client</xref>.</p>
 </section>
 <section>
 <title id="application-lifecycle-service-client">
-<!-- id="application-lifecycle-service-client" -->
 <!-- id="application-lifecycle-service-client" -->Application Lifecycle Service Client</title>
 <p>The Helion client is used for pushing
 applications to Application Lifecycle Service and interacting with the system from the
@@ -67,7 +65,7 @@ Linux x64)</li>
 <li>Confirm that the client is installed correctly by running
 <codeph>helion help</codeph>.</li>
 </ol>
-<p>The <xref href="/als/v1/user/reference/client-ref#command-ref-client" >
+<p>The <xref href="./devplatform/helion/user/reference/1.0client-ref.dita#command-ref-client" >
 <i>Application Lifecycle Service Client Command
 Reference</i>
 </xref> has a full
@@ -75,7 +73,6 @@ list of commands and options.</p>
 </section>
 <section>
 <title id="target-and-login">
-<!-- id="target-and-login" -->
 <!-- id="target-and-login" -->Target and Login</title>
 <p>To connect the helion client to the PaaS, use
 the <codeph>target</codeph> command to specify the API Endpoint
@@ -100,12 +97,10 @@ Successfully logged into [https://api.example.hphelion.com]
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="setting-organization-and-space" -->
-<!-- id="setting-organization-and-space" -->
+<title id="setting-organization-and-space">
 <!-- id="setting-organization-and-space" -->Setting Organization and Space</title>
 <p>If you are logging in for the first time, your user account will not
-automatically choose an <xref href="/als/v1/user/deploy/orgs-spaces#orgs-spaces" >
+automatically choose an <xref href="./devplatform/helion/user/deploy/1.0orgs-spaces.dita#orgs-spaces" >
 <i>Organization and
 Space</i>
 </xref> for deployment. You will need to set these manually.</p>
@@ -133,10 +128,10 @@ Space:        dev
 <b>Note</b>:If your account is not a member of a Space, you will need an
 Organization Manager to add you as a Developer. If you are an
 Organization Manager or Admin, you can create new Spaces in the
-<xref href="/als/v1/admin/console/customize#user-console-space" >
+<xref href="./devplatform/helion/admin/console/1.0customize.dita#user-console-space" >
 <i>Management Console</i>
 </xref> or with
-the <xref href="/als/v1/user/reference/client-ref#command-create-space" >
+the <xref href="./devplatform/helion/user/reference/1.0client-ref.dita#command-create-space" >
 <i>helion
 create-space</i>
 </xref>
@@ -144,7 +139,6 @@ command.</p>
 </section>
 <section>
 <title id="deploying-apps">
-<!-- id="deploying-apps" -->
 <!-- id="deploying-apps" -->Deploying Apps</title>
 <p>The steps for deploying applications will vary slightly depending on the
 language or framework used, but the basic command is:</p>
@@ -159,12 +153,11 @@ necessary.</p>
 </section>
 <section>
 <title id="sample-applications">
-<!-- id="sample-applications" -->
 <!-- id="sample-applications" -->Sample Applications</title>
 <p>Numerous sample applications are available from
 <xref href="https://github.com/Stackato-Apps" scope="external" format="html" >Application Lifecycle Service-Apps</xref> on Github, each with a
 README.md file showing how to deploy it on Application Lifecycle Service.</p>
-<p>Many of these have a <xref href="../../../../devplatform/helion/user/deploy/1.0manifestyml.dita" >
+<p>Many of these have a <xref href="./devplatform/helion/user/deploy/1.0manifestyml.dita" >
 <i>manifest.yml</i>
 </xref> configuration
 file, so you can skip the interactive prompts by using the
@@ -176,7 +169,6 @@ file, so you can skip the interactive prompts by using the
 </section>
 <section>
 <title id="test-the-application">
-<!-- id="test-the-application" -->
 <!-- id="test-the-application" -->Test the Application</title>
 <p>The output of <codeph>helion push</codeph> will show the URL of
 the running application. Paste this URL into a web browser to try the
@@ -186,7 +178,7 @@ application or run:</p>
 </codeph>
 </codeblock>
 <p>Documentation on configuring applications in specific languages and
-frameworks is available in the <xref href="/als/v1/user/deploy#deploying-apps" >
+frameworks is available in the <xref href="./devplatform/helion/user/deploy/1.0index.dita#deploying-apps" >
 <i>Deploying Apps</i>
 </xref> section.</p>
 </section>

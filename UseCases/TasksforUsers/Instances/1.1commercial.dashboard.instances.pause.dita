@@ -18,16 +18,15 @@
 <p>When a user <i>pauses</i> an instance, the instance  remains running, but, in a frozen state. The contents of the instance are stored in memory (RAM). Memory and vCPUs are not released.</p>
 <p>Users can suspend an instance, for example, in order to make a back up of an instance to prevent the instance  from being used during the process.</p>
 <p>
-<b>Note:</b> Pausing is different from <xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.suspend.dita" >suspending an instance</xref>. Suspending stops the instance, stores the contents on the disk. the memory and vCPUs become available to create other instances.</p>
+<b>Note:</b> Pausing is different from <xref href="./UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.suspend.dita" >suspending an instance</xref>. Suspending stops the instance, stores the contents on the disk. the memory and vCPUs become available to create other instances.</p>
 <section>
 <title id="pause-an-instance">
-<!-- id="pause-an-instance" -->
 <!-- id="pause-an-instance" -->Pause an instance</title>
 <p>To pause an instance:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -43,13 +42,12 @@
 </section>
 <section>
 <title id="un-pause-an-instance">
-<!-- id="un-pause-an-instance" -->
 <!-- id="un-pause-an-instance" -->Un-pause an instance</title>
 <p>To unpause an instance:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -61,7 +59,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1539/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

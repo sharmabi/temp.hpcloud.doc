@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1017">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1029">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Protecting Images</title>
 <prolog>
 <metadata>
@@ -19,15 +19,14 @@
 <p>If you want to prevent an image from being deleted, you can make that image <i>protected</i>.</p>
 <section>
 <title id="protect-an-image">
-<!-- id="protect-an-image" -->
 <!-- id="protect-an-image" -->Protect an image</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Images</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Images</b> link.</p>
 </li>
 <li>
 <p>In the <b>Images</b> screen, for the image you want to protect, click the arrow icon in the <b>Actions</b> menu and select <b>Edit</b>.</p>
@@ -39,9 +38,9 @@
 <p>Click <b>Update Image</b>.</p>
 </li>
 </ol>
-<p>The image is protected and the <b>Delete Image</b> command is removed from the <b>More</b> menu.</p>
+<p>The image is protected and the <b>Delete Image</b> command is removed from the <b>Edit</b> menu.</p>
 <p>
-  <xref href="#topic1017/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

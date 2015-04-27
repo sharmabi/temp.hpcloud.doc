@@ -15,16 +15,15 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/1.1/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/1.1/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/1.1/ga1/">NEXT &#9654;</a></p> 
 -->
-<p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses. You can <xref href="#topic1120/enablenet">enable</xref> or <xref href="#topic1120/disablenet">disable</xref> networks, as needed.</p>
+<p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses. You can <xref href="./publiccloud/index.dita#enablenet" >enable</xref> or <xref href="./publiccloud/index.dita#disablenet" >disable</xref> networks, as needed.</p>
 <section>
 <title>
-<!-- id="enablenet" -->
 <!-- id="enablenet" -->
 <!-- id="enablenet" -->Enable a network</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
@@ -43,14 +42,12 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="disablenet" -->
-<!-- id="disablenet" -->
+<title id="disablenet">
 <!-- id="disablenet" -->Disable a network</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
@@ -68,7 +65,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1120/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

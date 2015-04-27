@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1177">
-<title>HP Helion OpenStack® Carrier Grade (Alpha): Viewing all projects in the domain</title>
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic860">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Viewing projects usage</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Viewing all projects in the domain</searchtitle>
+</titlealts>
 <prolog>
 <metadata>
 <othermeta name="layout" content="default"/>
@@ -15,43 +18,28 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
 -->
-<p>As an admin, you can view a list of all projects in a domain and view information on each project.</p>
+<p>As an admin, you can view usage information on each project.</p>
 <section>
-<title>
-<!-- id="view-projects" -->
-<!-- id="view-projects" -->
-<!-- id="view-projects" -->View projects</title>
+<title id="view-project-usage">
+<!-- id="view-project-usage" -->View project usage</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Projects</b> link on the <b>Admin</b> dashboard <b>Identity</b> panel.</p>
+<p>Click the <b>Identity</b> dashboard, then the <b>Projects</b> link.</p>
 
 <p>A list of all projects in the current domain is displayed. You can see the name, ID and status (enabled or disabled).</p>
 </li>
 <li>
-<p>To view information on a project, click <b>More &gt; Edit Project</b>.</p>
-
-<p>The project name and details; users associated with the project, and project quotas are displayed.</p>
-
-<p>For information on modifying these settings, see <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Projects/carrier-grade.managing.projects.dita" >Managing Projects</xref>.</p>
-</li>
-<li>
-<p>Click <b>Cancel</b> to exit the screen.</p>
-</li>
-<li>
-<p>To view usage information on a project, click <b>More &gt; View Usage</b>.</p>
+<p>To view information on a project, click the arrow icon in the <b>Actions</b> menu and select <b>View Usage</b>.</p>
 
 <p>The instances associated with the project are listed, with memory and uptime information.</p>
 </li>
-<li>
-<p>Click <b>Cancel</b> to exit the screen.</p>
-</li>
 </ol>
 <p>
-  <xref href="#topic1177/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

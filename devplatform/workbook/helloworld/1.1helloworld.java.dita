@@ -25,18 +25,17 @@
 <section>
 <title>
 <!-- id="prerequisites" -->
-<!-- id="prerequisites" -->
 <!-- id="prerequisites" -->Prerequisites</title>
-<p>If you are missing any of these items, you must <xref href="../../../devplatform/1.1devplatform.appdev.dita" >install them</xref>.</p>
+<p>If you are missing any of these items, you must <xref href="./devplatform/1.1devplatform.appdev.dita" >install them</xref>.</p>
 <ul>
-<li>Access to an Application Lifecycle Service (ALS) <xref href="../../../devplatform/helion/admin/cluster/1.1index.dita" >Cluster</xref>
+<li>Access to an Application Lifecycle Service (ALS) <xref href="./devplatform/helion/admin/cluster/1.1index.dita" >Cluster</xref>
 </li>
-<li>The  <xref href="../../../devplatform/helion/user/client/1.1index.dita" >Helion command-line interface (CLI)</xref> must be installed.</li>
-<li>Access to the web-based <xref href="../../../devplatform/helion/user/console/1.1index.dita" >Helion Management Console</xref>.</li>
+<li>The  <xref href="./devplatform/helion/user/client/1.1index.dita" >Helion command-line interface (CLI)</xref> must be installed.</li>
+<li>Access to the web-based <xref href="./devplatform/helion/user/console/1.1index.dita" >Helion Management Console</xref>.</li>
 </ul>
 </section>
 <section>
-<title id="jdk">
+<title>
 <!-- id="jdk" -->
 <!-- id="jdk" -->JDK</title>
 <p>Install the Java Development Kit (JDK) before installing other prerequisites.</p>
@@ -56,7 +55,6 @@
 </section>
 <section>
 <title id="maven">
-<!-- id="maven" -->
 <!-- id="maven" -->Maven</title>
 <p>
 <xref href="http://maven.apache.org/" scope="external" format="html" >Maven</xref> must be installed.</p>
@@ -75,9 +73,7 @@
 </ul>
 </section>
 <section>
-<title>
-<!-- id="download-the-application-files" -->
-<!-- id="download-the-application-files" -->
+<title id="download-the-application-files">
 <!-- id="download-the-application-files" -->Download the Application Files</title>
 <p>
   <xref href="https://github.com/HelionDevPlatform/helion-hello-world-java" scope="external" format="html" >Click here to access the code repository.</xref>
@@ -85,7 +81,6 @@
 </section>
 <section>
 <title id="build-the-application">
-<!-- id="build-the-application" -->
 <!-- id="build-the-application" -->Build the Application</title>
 <p>In the root directory of the sample package, execute the following command:</p>
 <codeblock>
@@ -96,13 +91,12 @@
 </section>
 <section>
 <title id="deploy-the-application">
-<!-- id="deploy-the-application" -->
 <!-- id="deploy-the-application" -->Deploy the Application</title>
 <p>
-<b>Note</b>: Application Lifecycle Service clusters that require an upstream HTTP proxy to access the internet will need to be <xref href="/helion/devplatform/1.1/als/admin/server/configuration#staging-cache-app-http-proxy" >made aware of the proxy</xref>. The sample applications require access to the Internet in order to download dependent packages.</p>
-<p>Use the Helion client to deploy your app to Helion Development Platform.  If you have Eclipse installed, you have the option to <xref href="../../../devplatform/1.1devplatform.eclipse.dita" >use the plugin</xref> to deploy.</p>
+<b>Note</b>: Application Lifecycle Service clusters that require an upstream HTTP proxy to access the internet will need to be <xref href="./devplatform/helion/admin/server/1.1configuration.dita#staging-cache-app-http-proxy" >made aware of the proxy</xref>. The sample applications require access to the Internet in order to download dependent packages.</p>
+<p>Use the Helion client to deploy your app to Helion Development Platform.  If you have Eclipse installed, you have the option to <xref href="./devplatform/1.1devplatform.eclipse.dita" >use the plugin</xref> to deploy.</p>
 <ol>
-<li>Open the <xref href="../../../devplatform/helion/user/reference/1.1client-ref.dita" >Helion command-line interface (CLI)</xref>
+<li>Open the <xref href="./devplatform/helion/user/reference/1.1client-ref.dita" >Helion command-line interface (CLI)</xref>
 </li>
 <li>
 <p>Ensure that you are targeting your desired environment.  <!--A BR tag was used here in the original source.--> If you are not, execute</p>
@@ -141,9 +135,7 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="key-code-snippets" -->
-<!-- id="key-code-snippets" -->
+<title id="key-code-snippets">
 <!-- id="key-code-snippets" -->Key Code Snippets</title>
 <p>This simple Servlet prints "Hello World".</p>
 <codeblock>
@@ -195,7 +187,6 @@ public class HelloServlet extends HttpServlet {
 </section>
 <section>
 <title id="run-the-application">
-<!-- id="run-the-application" -->
 <!-- id="run-the-application" -->Run the Application</title>
 <ol>
 <li>Open the Helion Management Console. This is the web-based administrative interface that can be reached by typing the ALS endpoint URL into a browser window.</li>
@@ -208,14 +199,13 @@ public class HelloServlet extends HttpServlet {
 </section>
 <section>
 <title id="key-learnings">
-<!-- id="key-learnings" -->
 <!-- id="key-learnings" -->Key Learnings</title>
 <ol>
 <li>ALS requires configuration information to create an environment for your app. Configuration information is contained in the <i>pom.xml</i> file. Tools like Maven can generate this configuration file for you.</li>
-<li>You can deploy your app using either the Helion CLI or the <xref href="../../../devplatform/1.1devplatform.eclipse.dita" >Eclipse plugin</xref>.</li>
+<li>You can deploy your app using either the Helion CLI or the <xref href="./devplatform/1.1devplatform.eclipse.dita" >Eclipse plugin</xref>.</li>
 </ol>
 <p>
-<xref href="/helion/devplatform/1.1/appdev" >Exit Samples</xref> | <xref href="../../../devplatform/workbook/messaging/1.1messaging.java.dita/" >Previous Sample</xref> | <xref href="./devplatform/workbook/database/1.1database.java.dita" >Next Sample</xref>
+<xref href="/helion/devplatform/1.1/appdev" >Exit Samples</xref> | <xref href="./devplatform/workbook/messaging/1.1messaging.java.dita" >Previous Sample</xref> | <xref href="./devplatform/workbook/database/1.1database.java.dita" >Next Sample</xref>
 </p>
 </section>
 </body>

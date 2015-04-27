@@ -15,10 +15,9 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/1.1/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/1.1/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/1.1/ga1/">NEXT &#9654;</a></p> 
 -->
-<p>You can <xref href="#topic4536/creategroups">create your own security groups</xref> or you can <xref href="#topic4536/editgroups">edit the rules in an existing group</xref> to suit your needs.</p>
+<p>You can <xref href="./publiccloud/index.dita#creategroups" >create your own security groups</xref> or you can <xref href="./publiccloud/index.dita#editgroups" >edit the rules in an existing group</xref> to suit your needs.</p>
 <section>
 <title>
-<!-- id="about-security-groups-and-rules" -->
 <!-- id="about-security-groups-and-rules" -->
 <!-- id="about-security-groups-and-rules" -->About Security Groups and Rules</title>
 <p>Access to your instances is controlled by security groups which are a collection of inbound (ingress) and outbound (egress) rules about which sources, protocols and ports a server can send/receive traffic from. No traffic can be received by a server unless a security group rule explicitly allows it.</p>
@@ -34,7 +33,7 @@
 <p>You can create your own security groups or you can change the default group to suit your needs.</p>
 </section>
 <section>
-<title id="cidr">
+<title>
 <!-- id="cidr" -->
 <!-- id="cidr" -->Using CIDR to Control Traffic</title>
 <p>Understanding how the CIDR field works is important to understanding how to control the access to your instances. If you use a CIDR of 0.0.0.0/0 then that is allowing traffic over the port you specified for all IP addresses. Here is how you can restrict access to a specific IP address:</p>
@@ -48,14 +47,14 @@
 </ul>
 </section>
 <section>
-<title id="creategroups">
+<title>
 <!-- id="creategroups" -->
 <!-- id="creategroups" -->Create a security group</title>
 <p>To create a security group, do the following:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Access &amp; Security</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -84,14 +83,14 @@
 </ol>
 </section>
 <section>
-<title id="editgroups">
+<title>
 <!-- id="editgroups" -->
 <!-- id="editgroups" -->Create security group rules</title>
 <p>To create security group rules, do the following:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Access &amp; Security</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -123,7 +122,7 @@
 <li>
 <b>Remote</b> - Select either <b>CIDR</b> to specify an IP range or <b>Security Group</b> to allow a specific security group.</li>
 <li>
-<b>CIDR</b> - If you chose this option, enter an IP range. For more information, see <xref href="#topic4536/cidr">Using CIDR to Control Traffic</xref>.</li>
+<b>CIDR</b> - If you chose this option, enter an IP range. For more information, see <xref href="./publiccloud/index.dita#cidr" >Using CIDR to Control Traffic</xref>.</li>
 <li>
 <b>Security Group</b> - if you chose this option, select the security group to allow access to and the IP version.
 Selecting a security group as the source will allow any other instance in that security group access to any other instance via this rule.</li>
@@ -136,7 +135,7 @@ Selecting a security group as the source will allow any other instance in that s
 <p>The security rule is added to the security group.</p>
 <p>Once you make a change to the security group rules and save the change, the change you made will immediately go into effect for all instances using that security group.</p>
 <p>
-  <xref href="#topic4536/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

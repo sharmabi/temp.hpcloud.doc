@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic2821">
+<title>HP Helion OpenStack® Carrier Grade (Alpha): Deploying the DCN Cloud</title>
+<titlealts>
+<searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Deploying the Cloud</searchtitle>
+</titlealts>
+<prolog>
+<metadata>
+<othermeta name="layout" content="default"/>
+<othermeta name="product-version" content="HP Helion OpenStack 1.1"/>
+<othermeta name="role" content="Storage Administrator"/>
+<othermeta name="role" content="Storage Architect"/>
+<othermeta name="role" content="Michael B, "/>
+<othermeta name="product-version1" content="HP Helion OpenStack 1.1"/>
+</metadata>
+</prolog>
+<body>
+<p>
+<!--UNDER REVISION-->
+ <!--./commercial/GA1/CarrierGrade/Admin_Guide/DCN/carrier-grade-install-bm-dcn-cloud.md-->
+ <!--permalink: /helion/openstack/carrier/install/bm/dcn-cloud/--></p>
+<!--
+<p style="font-size: small;"><a href="./commercial/GA1/CarrierGrade/carrier-grade-install-bm-environment.dita">&#9664; Configuring the installation Environment</a> | <a href="./commercial/GA1/CarrierGrade/carrier-grade-install-bm-overview.dita">&#9650; Installation Overview</a>  </p> 
+-->
+<p>After the <xref href="./commercial/GA1/CarrierGrade/carrier-grade-install-bm-hlm-cloud.dita" >HLM and Helion clouds are installed and running</xref>, you can install the HP Distributed Cloud Networking (DCN).</p>
+<p>The DCN install uses the same scripts and JSON files to create a DCN cloud.</p>
+<p>The DCN install requires two systems (nodes): one for the HP Virtualized Services Controller (VSC) and the HP Virtualized Services Directory (VSD) and one for the HP Virtual Routing and Switching Gateway (VRS-G)</p>
+<section>
+<title>
+<!-- id="deploy-the-dcn-cloud" -->
+<!-- id="deploy-the-dcn-cloud" -->Deploy the DCN cloud</title>
+<p>To deploy the DCN cloud:</p>
+<ol>
+<li>
+<p>Use the following commands to create new cloud template. This command will create a directory <required-cleanup remap="cloudname">
+<ph> in root folder)</ph>
+</required-cleanup>
+</p>
+
+<codeblock>
+<codeph>cd ~
+hnewcloud &lt;cloudname&gt; &lt;template_name&gt;
+</codeph>
+</codeblock>
+
+<p>
+<b>Example</b>
+</p>
+
+<codeblock>
+<codeph>hnewcloud DemoCloud demo
+</codeph>
+</codeblock>
+
+<p>This command creates a new cloud called DemoCloud from the <i>demo</i> template.</p>
+</li>
+<li>
+<p>Change to the new cloud directory:</p>
+
+<p>cd ~/<required-cleanup remap="cloudname">
+<ph/>
+</required-cleanup>
+</p>
+</li>
+<li>
+<p>Update cloud template json files:</p>
+
+<p>a. Modify the <codeph>nodes.json</codeph> file to configure the IP address of the PXE eth1 interface of the cloud nodes</p>
+
+<p>b. Modify the <codeph>environment.json</codeph> file to configure the VLANs and network addresses that need to be configured for the cloud nodes.</p>
+
+<ul>
+<li>The VSD/VSC node should have CLM, PXE, DCM on eth0 and TUL on eth1. </li>
+<li>
+<ul>
+<li>The VRS-G node should have CLM, PXE, EXT on eth0 and TUL on eth1. </li>
+</ul>
+</li>
+</ul>
+<p>c. Modify <codeph>lnet-control-data.json</codeph> to configure the details of desired logical networks that have mapping to <codeph>environmentConfig.json</codeph> file.</p>
+
+<p>d. Modify the <codeph>ccp-3-1-1-1-dcn.json</codeph> file to set the number of controllers on the plane to 2.</p>
+
+<codeblock>
+<codeph>"member-count": 2, //number of controllers on the plane
+</codeph>
+</codeblock>
+</li>
+<li>
+<p>Run the Helion Configuration Processor on the configuration files you have modified:</p>
+
+<codeblock>
+<codeph>hcfgproc -d definition.json
+</codeph>
+</codeblock>
+
+<p>The <codeph>hcfgproc script</codeph> is installed in <codeph>/usr/local/bin</codeph> by the <codeph>prepare-env</codeph> script and generates a <codeph>clouds/</codeph> directory in the <required-cleanup remap="cloudname">
+<ph> dir.</ph>
+</required-cleanup>
+</p>
+</li>
+<li>
+<p>In this generated cloud, review the CloudDiagram, <codeph>hosts.hf</codeph>, and <codeph>net/interfaces.d/eth.cfg</codeph> files to make sure the network settings are correct.</p>
+</li>
+<li>
+<p>Initialize network interfaces on all the cloud nodes using the following command:</p>
+
+<codeblock>
+<codeph>hnetinit &lt;cloudname&gt; 
+</codeph>
+</codeblock>
+
+<p>You can run this command from any directory.</p>
+
+<p>After this command completes, all cloud nodes and CLM network interfaces should be set correctly.</p>
+</li>
+<li>
+<p>Deploy and configure the cloud services using the following command:</p>
+
+<codeblock>
+<codeph>hdeploy &lt;cloudname&gt; 
+</codeph>
+</codeblock>
+
+<p>You can run this command from anywhere.</p>
+</li>
+</ol>
+<p>When this command completes, the HP Helion OpenStack Carrier Grade (Alpha) installation is complete.</p>
+<p>Basic cloud operations can be performed by logging into the Horizon interface using <codeph>CAN</codeph> IP address specified in <codeph>/etc/hosts</codeph> file on any cloud node.</p>
+<p>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
+</p>
+<!-- ===================== horizontal rule ===================== -->
+</section>
+</body>
+</topic>

@@ -21,26 +21,25 @@
 <p>As an admin, you can:</p>
 <ul>
 <li>
-<xref href="#topic3013/createport">create a port</xref>
+<xref href="./publiccloud/index.dita#createport" >create a port</xref>
 </li>
 <li>
-<xref href="#topic3013/editport">change the device associated with the port</xref>
+<xref href="./publiccloud/index.dita#editport" >change the device associated with the port</xref>
 </li>
 <li>
-<xref href="#topic3013/editport">change the admin state between Up or Down</xref>
+<xref href="./publiccloud/index.dita#editport" >change the admin state between Up or Down</xref>
 </li>
 <li>
-<xref href="#topic3013/deleteport">delete a port</xref>
+<xref href="./publiccloud/index.dita#deleteport" >delete a port</xref>
 </li>
 </ul>
 <section>
 <title id="createport">
-<!-- id="createport" -->
 <!-- id="createport" -->Create a port</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -76,12 +75,11 @@
 </section>
 <section>
 <title id="editport">
-<!-- id="editport" -->
 <!-- id="editport" -->Edit a port</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -111,14 +109,12 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="deleteport" -->
-<!-- id="deleteport" -->
+<title id="deleteport">
 <!-- id="deleteport" -->Delete a port</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -138,7 +134,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic3013/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3150">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3162">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Create a New Compute Instance</title>
 <titlealts>
 <searchtitle>HP Helion OpenStack® Carrier Grade (Alpha): Creating Instances</searchtitle>
@@ -21,16 +21,15 @@
 <p>Compute instances are virtual machines that run inside the cloud.</p>
 <section>
 <title id="create-an-instance">
-<!-- id="create-an-instance" -->
 <!-- id="create-an-instance" -->Create an instance</title>
 <p>To create an instance:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Instances</b> link.</p>
 </li>
 <li>
 <p>In the <b>Instances</b> screen, for the instance you want to modify, click <b>Launch Instance</b>.</p>
@@ -63,7 +62,7 @@
 <li>
 <p>Select the volume, snapshot, or image from the list that appears.</p>
 
-<p>Additonal fields appear for the boot source option that create a new volume. For more information, refer to <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.managing.volumes.dita" >Managing Block Storage Volumes</xref>.</p>
+<p>Additonal fields appear for the boot source option that create a new volume. For more information, refer to <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.managing.volumes.dita" >Managing Block Storage Volumes</xref>.</p>
 </li>
 </ul>
 </li>
@@ -71,7 +70,7 @@
 <p>On the <b>Access &amp; Security</b> tab, perform the following tasks:.</p>
 
 <ul>
-<li>From the <b>Keypair</b> list, select the <b>keypair</b> to use with the instance. If there is no key pair, click the <b>+</b> button to <xref href="/helion/commercial/carrier/dashboard/managing/security/keypairs#importKeypairs" >import a key pair</xref>.</li>
+<li>From the <b>Keypair</b> list, select the <b>keypair</b> to use with the instance. If there is no key pair, click the <b>+</b> button to <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Security/carrier-grade.dashboard.security.keypairs.dita#importKeypairs" >import a key pair</xref>.</li>
 <li>Select the security group to use with the instance.</li>
 </ul>
 <p>
@@ -81,7 +80,7 @@
 <li>
 <p>On the <b>Networking</b> tab, from the <b>Available Networks</b> list, select the required network. The network is displayed in the Selected Networks box.</p>
 
-<p>A default network is always available. You can also <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >create custom networks</xref> which will appear in this list.</p>
+<p>A default network is always available. You can also <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Networks/carrier-grade.dashboard.network.create.dita" >create custom networks</xref> which will appear in this list.</p>
 
 <p>
 <image href="../../../../../../media/CGH-Helion-Instance-Launch-Networking.png"/>
@@ -117,7 +116,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic3150/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

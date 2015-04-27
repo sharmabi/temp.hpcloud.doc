@@ -16,15 +16,14 @@
 <p style="font-size: small;"> <a href="/helion/commercial/1.1/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/1.1/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/1.1/ga1/">NEXT &#9654;</a></p> 
 -->
 <p>Compute flavors are machine configurations that describe the amount of memory, number of CPUs, and storage capacity of instances.</p>
-<p>As an admin, you can <xref href="#topic1718/add">allow specific projects to have access to a flavor</xref> or <xref href="#topic1718/remove">prevent a project from accessing a flavor</xref>.</p>
+<p>As an admin, you can <xref href="./publiccloud/index.dita#add" >allow specific projects to have access to a flavor</xref> or <xref href="./publiccloud/index.dita#remove" >prevent a project from accessing a flavor</xref>.</p>
 <section>
 <title id="add">
-<!-- id="add" -->
 <!-- id="add" -->Allowing a project to access a flavor</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Flavors</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -48,12 +47,11 @@
 </section>
 <section>
 <title id="remove">
-<!-- id="remove" -->
 <!-- id="remove" -->Preventing a project from accessing a flavor</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Flavors</b> link on the <b>Admin</b> dashboard <b>System</b> panel.</p>
@@ -74,7 +72,7 @@ A message is displayed on successful change.</p>
 </li>
 </ol>
 <p>
-  <xref href="#topic1718/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

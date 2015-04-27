@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic31294">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic31270">
 <title>HP Helion 1.1 Development Platform: Detailed Configuration</title>
 <prolog>
 <metadata>
@@ -24,10 +24,10 @@
  <!--./devplatform/helion/admin/server/1.1configuration.md-->
  <!--permalink: /helion/devplatform/1.1/als/admin/server/configuration/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/admin/server/1.0configuration.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/admin/server/1.0configuration.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
 <p>After booting the VM, run <i>kato process ready all</i> before starting the following configuration steps. This command returns <b>READY</b> when all configured system processes have started, and is particularly important when using <i>kato</i> commands in automated configuration scripts which run immediately after boot (the
-<xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-process-ready" >
+<xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-process-ready" >
 <i>--block</i>
 </xref>
 option is useful in this scenario).</p>
@@ -35,93 +35,93 @@ option is useful in this scenario).</p>
 <b>Warning</b>: All  <i>kato</i>  commands should be run as the 'helion' system user, <b>not as root</b>. Kato will prompt for the 'helion' user password if sudo permissions are required for a specific operation.</p>
 <ul>
 <li>
-<xref href="#topic31294/changing-the-password">Changing the Password</xref>
+<xref href="./publiccloud/index.dita#changing-the-password" >Changing the Password</xref>
 </li>
 <li>
-<xref href="#topic31294/network-setup">Network Setup</xref>
+<xref href="./publiccloud/index.dita#network-setup" >Network Setup</xref>
 
 <ul>
 <li>
-<xref href="#topic31294/changing-the-hostname">Changing the Hostname</xref>
+<xref href="./publiccloud/index.dita#changing-the-hostname" >Changing the Hostname</xref>
 </li>
 <li>
-<xref href="#topic31294/changing-ip-addresses">Changing IP Addresses</xref>
+<xref href="./publiccloud/index.dita#changing-ip-addresses" >Changing IP Addresses</xref>
 </li>
 <li>
-<xref href="#topic31294/setting-a-static-ip">Setting a Static IP</xref>
+<xref href="./publiccloud/index.dita#setting-a-static-ip" >Setting a Static IP</xref>
 </li>
 <li>
-<xref href="#topic31294/modifying-etc-hosts">Modifying the hosts file</xref>
+<xref href="./publiccloud/index.dita#modifying-etc-hosts" >Modifying the hosts file</xref>
 </li>
 <li>
-<xref href="#topic31294/server-config-dns">DNS</xref>
+<xref href="./publiccloud/index.dita#server-config-dns" >DNS</xref>
 </li>
 <li>
-<xref href="#topic31294/dynamic-dns">Dynamic DNS</xref>
+<xref href="./publiccloud/index.dita#dynamic-dns" >Dynamic DNS</xref>
 </li>
 <li>
-<xref href="#topic31294/alternate-dns-techniques">Alternate DNS Techniques</xref>
+<xref href="./publiccloud/index.dita#alternate-dns-techniques" >Alternate DNS Techniques</xref>
 
 <ul>
 <li>
-<xref href="#topic31294/xip-io">xip.io</xref>
+<xref href="./publiccloud/index.dita#xip-io" >xip.io</xref>
 </li>
 <li>
-<xref href="#topic31294/dnsmasq">dnsmasq</xref>
+<xref href="./publiccloud/index.dita#dnsmasq" >dnsmasq</xref>
 </li>
 <li>
-<xref href="#topic31294/adding-dns-nameservers">Adding DNS Nameservers</xref>
+<xref href="./publiccloud/index.dita#adding-dns-nameservers" >Adding DNS Nameservers</xref>
 </li>
 <li>
-<xref href="#topic31294/tcp-udp-port-configuration">TCP/UDP Port Configuration</xref>
+<xref href="./publiccloud/index.dita#tcp-udp-port-configuration" >TCP/UDP Port Configuration</xref>
 </li>
 <li>
-<xref href="#topic31294/http-proxy">Upstream HTTP Proxy Settings</xref>
+<xref href="./publiccloud/index.dita#http-proxy" >Upstream HTTP Proxy Settings</xref>
 </li>
 <li>
-<xref href="#topic31294/staging-cache-app-http-proxy">Staging Cache &amp; App HTTP Proxy</xref>
+<xref href="./publiccloud/index.dita#staging-cache-app-http-proxy" >Staging Cache &amp; App HTTP Proxy</xref>
 </li>
 </ul>
 </li>
 <li>
-<xref href="#topic31294/vm-filesystem-setup">VM Filesystem Setup</xref>
+<xref href="./publiccloud/index.dita#vm-filesystem-setup" >VM Filesystem Setup</xref>
 </li>
 <li>
-<xref href="#topic31294/helion-data-services-vs-high-availability-databases">Application Lifecycle Service Data Services vs. High Availability Databases</xref>
+<xref href="./publiccloud/index.dita#helion-data-services-vs-high-availability-databases" >Application Lifecycle Service Data Services vs. High Availability Databases</xref>
 </li>
 <li>
-<xref href="#topic31294/https-ssl">HTTPS &amp; SSL</xref>
+<xref href="./publiccloud/index.dita#https-ssl" >HTTPS &amp; SSL</xref>
 
 <ul>
 <li>
-<xref href="#topic31294/using-your-own-ssl-certificate">Using your own SSL certificate</xref>
+<xref href="./publiccloud/index.dita#using-your-own-ssl-certificate" >Using your own SSL certificate</xref>
 </li>
 <li>
-<xref href="#topic31294/adding-custom-ssl-certs-sni">Adding More SSL Certificates (SNI)</xref>
+<xref href="./publiccloud/index.dita#adding-custom-ssl-certs-sni" >Adding More SSL Certificates (SNI)</xref>
 </li>
 <li>
-<xref href="#topic31294/ca-certificate-chaining">CA Certificate Chaining</xref>
+<xref href="./publiccloud/index.dita#ca-certificate-chaining" >CA Certificate Chaining</xref>
 </li>
 <li>
-<xref href="#topic31294/cipher">Customizing the Cipher Suites</xref>
+<xref href="./publiccloud/index.dita#cipher" >Customizing the Cipher Suites</xref>
 </li>
 <li>
-<xref href="#topic31294/generating-a-self-signed-ssl-certificate">Generating a self-signed SSL certificate</xref>
+<xref href="./publiccloud/index.dita#generating-a-self-signed-ssl-certificate" >Generating a self-signed SSL certificate</xref>
 </li>
 <li>
-<xref href="#topic31294/using-your-own-ssl-certificate">Replacing the Default SSL Certificate</xref>
+<xref href="./publiccloud/index.dita#using-your-own-ssl-certificate" >Replacing the Default SSL Certificate</xref>
 </li>
 </ul>
 </li>
 <li>
-<xref href="#topic31294/quota-definitions">Quota Definitions</xref>
+<xref href="./publiccloud/index.dita#quota-definitions" >Quota Definitions</xref>
 
 <ul>
 <li>
-<xref href="#topic31294/sudo">sudo</xref>
+<xref href="./publiccloud/index.dita#sudo" >sudo</xref>
 </li>
 <li>
-<xref href="#topic31294/allowed-repositories">Allowed Repositories</xref>
+<xref href="./publiccloud/index.dita#allowed-repositories" >Allowed Repositories</xref>
 </li>
 </ul>
 </li>
@@ -130,33 +130,28 @@ option is useful in this scenario).</p>
 </ul>
 <section>
 <title>
-<!-- id="changing-the-password" -->
 <!-- id="changing-the-password" -->
 <!-- id="changing-the-password" -->Changing the Password</title>
 <p>The default password for the Helion system user is <b>helion</b>.  In clusters created by Helion Orchestration tools (the Horizon Management Console and Installer CLI VM), access after cluster setup is only available by SSH key pair.</p>
 <p>This password is changed to match the one set for the first administrative user created in the Management Console. Once you've set up the primary Application Lifecycle Service admin account, use that account's password when logging in to the VM at the command line.</p>
-<p>In an Application Lifecycle Service cluster, this change only happens on the node serving the Management Console pages (which could be one of <xref href="/helion/devplatform/1.1/als/admin/cluster#cluster-multi-controllers" >multiple Controller nodes</xref>). In this case, it's best to log in to each node in the cluster to change the password
+<p>In an Application Lifecycle Service cluster, this change only happens on the node serving the Management Console pages (which could be one of <xref href="./devplatform/helion/admin/cluster/1.1index.dita#cluster-multi-controllers" >multiple Controller nodes</xref>). In this case, it's best to log in to each node in the cluster to change the password
 manually with the <i>passwd</i> command.</p>
 </section>
 <section>
-<title>
-<!-- id="network-setup" -->
-<!-- id="network-setup" -->
+<title id="network-setup">
 <!-- id="network-setup" -->Network Setup</title>
 </section>
 <section>
-<title>
-<!-- id="changing-the-hostname" -->
-<!-- id="changing-the-hostname" -->
+<title id="changing-the-hostname">
 <!-- id="changing-the-hostname" -->Changing the Hostname</title>
-<p>You may want or need to change the hostname of the Application Lifecycle Service system, either to match a DNS record you've created or just to make the system URLs more convenient. This can be done using the <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref" >kato node rename</xref> command:</p>
+<p>You may want or need to change the hostname of the Application Lifecycle Service system, either to match a DNS record you've created or just to make the system URLs more convenient. This can be done using the <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref" >kato node rename</xref> command:</p>
 <codeblock>
   <codeph>kato node rename mynewname.example.com
 </codeph>
 </codeblock>
-<p>This command will change the system hostname in <i>/etc/hostname</i> and <i>/etc/hosts,</i> as well as performing some internal configuration for Application Lifecycle Service such as generating a new server certificate for the <xref href="/helion/devplatform/1.1/als/user/console#management-console" >Management Console</xref>.</p>
+<p>This command will change the system hostname in <i>/etc/hostname</i> and <i>/etc/hosts,</i> as well as performing some internal configuration for Application Lifecycle Service such as generating a new server certificate for the <xref href="./devplatform/helion/user/console/1.1index.dita#management-console" >Management Console</xref>.</p>
 <p>mDNS is only supported with ".local" hostnames. If you want to give the
-VM a canonical hostname on an existing network, <xref href="#topic31294/server-config-dns">configure DNS</xref> and disable the <b>mdns</b> role:</p>
+VM a canonical hostname on an existing network, <xref href="./publiccloud/index.dita#server-config-dns" >configure DNS</xref> and disable the <b>mdns</b> role:</p>
 <codeblock>
   <codeph>kato role remove mdns
 </codeph>
@@ -164,26 +159,24 @@ VM a canonical hostname on an existing network, <xref href="#topic31294/server-c
 <p>
 <b>Note</b>: Application Lifecycle Service takes a while to configure itself at boot (longer at first boot). Check <i>kato status</i> to see that core services are running before
 executing <i>kato node rename</i>.</p>
-<p>In a <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-cluster" >cluster</xref>, you
-may also need to manually <xref href="#topic31294/server-config-etc-hosts">modify the <i>/etc/hosts file</i>
+<p>In a <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-cluster" >cluster</xref>, you
+may also need to manually <xref href="./publiccloud/index.dita#server-config-etc-hosts" >modify the <i>/etc/hosts file</i>
 </xref>.</p>
 </section>
 <section>
-<title>
-<!-- id="changing-ip-addresses" -->
-<!-- id="changing-ip-addresses" -->
+<title id="changing-ip-addresses">
 <!-- id="changing-ip-addresses" -->Changing IP Addresses</title>
-<p>The Application Lifecycle Service <i>micro cloud</i> server is initially set up for <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-dhcp" >DHCP</xref> and <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-multicast-dns" >multicast DNS</xref>. This is
+<p>The Application Lifecycle Service <i>micro cloud</i> server is initially set up for <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-dhcp" >DHCP</xref> and <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-multicast-dns" >multicast DNS</xref>. This is
 often sufficient for local testing, but in this configuration has only a
 single node and can only be privately routed.</p>
 <p>As you move toward production use of the server, further configuration
 of IP addresses and hostnames will therefore be required. A production
 Application Lifecycle Service server will most likely be a
-<xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-cluster" >cluster</xref> consisting
+<xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-cluster" >cluster</xref> consisting
 of several nodes and some of them will require IP addresses and corresponding hostnames.</p>
 <p>If your server is to be exposed to the Internet, these addresses must be
 routable and the hostnames must appear in the global DNS. Even if your
-server is to be part of a <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-private-paas" >
+server is to be part of a <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-private-paas" >
 <i>private
 PaaS</i>
 </xref> for
@@ -191,9 +184,9 @@ organizational use only, it must still integrate fully with your network
 services, DHCP and DNS in particular. Finally, in the rare case that
 such services are not available, the Application Lifecycle Service can be configured with static IP addresses and hostnames.</p>
 <p>Before we examine these scenarios in detail, let's review the separation
-of roles in a <xref href="/helion/devplatform/1.1/als/admin/cluster#cluster-setup" >cluster</xref>:</p>
+of roles in a <xref href="./devplatform/helion/admin/cluster/1.1index.dita#cluster-setup" >cluster</xref>:</p>
 <ul>
-<li>The <b>core</b> node which we conventionally call <codeph>api.helion-xxxx.local</codeph> in a micro cloud will be given its own hostname and IP address in a cluster so that you can reach it from both the <xref href="/helion/devplatform/1.1/als/user/console#management-console" >Management Console</xref> and the command line.</li>
+<li>The <b>core</b> node which we conventionally call <codeph>api.helion-xxxx.local</codeph> in a micro cloud will be given its own hostname and IP address in a cluster so that you can reach it from both the <xref href="./devplatform/helion/user/console/1.1index.dita#management-console" >Management Console</xref> and the command line.</li>
 <li>At the same time, the other nodes in the cluster will also need to reach the core node, so whatever address is configured on its network interface will have to be known to the network, the primary node, and all the other nodes. This can be the same as the primary address assigned to the core, or a secondary address used purely within the cluster.</li>
 <li>The <b>router</b> nodes, if separate from the primary, will each require IP addresses of their own, reachable from any load balancer and through any firewall that you put in front of them.</li>
 </ul>
@@ -209,10 +202,10 @@ will obtain an appropriate IP address automatically. DNS at your site
 may establish a similar convention, which you will want to follow when
 making any name or address changes within the cluster.</p>
 <p>Having determined the hostnames of cluster nodes to be managed by
-<xref href="#topic31294/server-config-dns">
+<xref href="./publiccloud/index.dita#server-config-dns" >
 <i>DNS</i>
 </xref>, the hostname on the primary node should be
-set using <xref href="#topic31294/server-config-hostname">
+set using <xref href="./publiccloud/index.dita#server-config-hostname" >
 <i>kato node rename</i>
 </xref>.</p>
 <p>Finally, if you must set a static IP on any cluster node, be sure to
@@ -243,9 +236,8 @@ administrator for their addresses.</p>
 </section>
 <section>
 <title id="setting-a-static-ip">
-<!-- id="setting-a-static-ip" -->
 <!-- id="setting-a-static-ip" -->Setting a Static IP</title>
-<p>The easiest way to configure an Application Lifecycle Service VM with a static IP address is to use the <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-op" >kato op static_ip</xref> command.</p>
+<p>The easiest way to configure an Application Lifecycle Service VM with a static IP address is to use the <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-op" >kato op static_ip</xref> command.</p>
 <p>This command will prompt for the following inputs:</p>
 <ul>
 <li>static IP address (e.g. 10.0.0.1)</li>
@@ -270,7 +262,7 @@ prompt for the <i>sudo</i> password to write the changes.</p>
 <li>--dns-search-domains (set empty "" to skip)</li>
 <li>--restart-network</li>
 </ul>
-<p>If the IP address provided differs from the previous one, and the node isn't configured as a micro cloud, <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-node-migrate" >kato node migrate</xref> is run automatically.</p>
+<p>If the IP address provided differs from the previous one, and the node isn't configured as a micro cloud, <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-node-migrate" >kato node migrate</xref> is run automatically.</p>
 <p>As a precaution, the command does not automatically restart networking
 services. To do so, run the following commands:</p>
 <codeblock>
@@ -280,7 +272,7 @@ services. To do so, run the following commands:</p>
 <p>You will see a deprecation warning about the <codeph>restart</codeph> option, which can safely be ignored in this context.</p>
 <p>
 <b>Note</b>
-If you are setting a new static IP <i>after</i> having configured a cluster, you must reconfigure all other nodes in the cluster to use the new MBUS IP address. Run <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-node-attach" >kato node attach</xref> on all non-Core nodes.</p>
+If you are setting a new static IP <i>after</i> having configured a cluster, you must reconfigure all other nodes in the cluster to use the new MBUS IP address. Run <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-node-attach" >kato node attach</xref> on all non-Core nodes.</p>
 <p>Alternatively, these changes could be made by editing the <i>/etc/network/interfaces</i> file manually. For example:</p>
 <codeblock>
   <codeph>auto eth0
@@ -323,23 +315,22 @@ secondary IP address (<xref href="http://tools.ietf.org/html/rfc1918" scope="ext
 that the other nodes can be assured of routing directly to it. See your
 network administrator for advice on which addresses and subnets are
 permissible. Once you have this secondary address set up, see the
-<xref href="#topic31294/server-config-etc-hosts">
+<xref href="./publiccloud/index.dita#server-config-etc-hosts" >
 <i>/etc/hosts</i>
 </xref> section for final configuration
 of the server.</p>
 </section>
 <section>
 <title id="modifying-etc-hosts">
-<!-- id="modifying-etc-hosts" -->
 <!-- id="modifying-etc-hosts" -->Modifying /etc/hosts</title>
 <p>The <codeph>/etc/hosts</codeph> file is used to resolve certain
 essential or local hostnames without calling upon the DNS. Unless you
-need to <xref href="#topic31294/server-config-hostname">change the local hostname</xref>, you will
+need to <xref href="./publiccloud/index.dita#server-config-hostname" >change the local hostname</xref>, you will
 in general <i>not</i> have to edit <codeph>/etc/hosts</codeph> manually,
 but when troubleshooting network issues it never hurts to verify that
 the file is configured correctly.</p>
 <p>As well, various components in a
-<xref href="/helion/devplatform/1.1/als/admin/cluster#cluster-setup" >Cluster</xref> rely on finding the
+<xref href="./devplatform/helion/admin/cluster/1.1index.dita#cluster-setup" >Cluster</xref> rely on finding the
 cluster nodes in <codeph>/etc/hosts</codeph>: the Cloud Controller
 and the RabbitMQ service in particular.</p>
 <p>Application Lifecycle Service will automatically configure <codeph>/etc/hosts</codeph>
@@ -348,11 +339,11 @@ the cluster's Primary node, for example "10.0.0.1" or "192.168.0.1". All
 communication between cluster nodes should be strictly through their
 private IP addresses and not on routable addresses provided by the DNS.</p>
 <p>Remember that <codeph>/etc/hosts</codeph> does not support
-wildcards. You must use some form of <xref href="#topic31294/server-config-dns">DNS</xref> for
+wildcards. You must use some form of <xref href="./publiccloud/index.dita#server-config-dns" >DNS</xref> for
 that.</p>
 <p>Consider an Application Lifecycle Service instance called <codeph>helion-test</codeph>
 in domain <codeph>example.com</codeph>. The following example is
-what you should expect to see on a <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-micro-cloud" >micro cloud</xref>
+what you should expect to see on a <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-micro-cloud" >micro cloud</xref>
 installation, where all roles are running on the same node:</p>
 <codeblock>
   <codeph>hostname
@@ -371,7 +362,7 @@ cat /etc/hosts
 10.0.0.1        helion-test.example.com api.helion-test.example.com
 </codeph>
 </codeblock>
-<p>On a <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-cluster" >cluster</xref>
+<p>On a <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-cluster" >cluster</xref>
 installation, the IP address in /etc/hosts will identify the node
 hosting the MBUS, usually the same as the Cloud Controller. On this
 node, you will see a correspondence between the network interface
@@ -389,9 +380,8 @@ example:</p>
 </section>
 <section>
 <title id="server-config-dns">
-<!-- id="server-config-dns" -->
 <!-- id="server-config-dns" -->DNS</title>
-<p>The Application Lifecycle Service micro cloud uses <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-multicast-dns" >multicast DNS</xref> to broadcast its generated hostname (e.g. <codeph>helion-xxxx.local</codeph>). This mechanism is intended for VMs running on a local machine or subnet.</p>
+<p>The Application Lifecycle Service micro cloud uses <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-multicast-dns" >multicast DNS</xref> to broadcast its generated hostname (e.g. <codeph>helion-xxxx.local</codeph>). This mechanism is intended for VMs running on a local machine or subnet.</p>
 <p>For production use, the server will need:</p>
 <ul>
 <li>a public DNS record,</li>
@@ -417,7 +407,7 @@ Console (e.g. api.helion.example.com)</li>
 aok.helion.example.com)</li>
 </ul>
 <p>If you intend to expose your applications at URLs on other domains (e.g.
-using <xref href="/helion/devplatform/1.1/als/user/reference/client-ref#command-map" >helion map</xref> add these names
+using <xref href="./devplatform/helion/user/reference/1.1client-ref.dita#command-map" >helion map</xref> add these names
 to the DNS zone file as well. For example:</p>
 <codeblock>
   <codeph>app.domain.com              IN    CNAME    helion.example.com
@@ -441,7 +431,6 @@ necessary. To turn it off on the Application Lifecycle Service server, use the c
 </section>
 <section>
 <title id="dynamic-dns">
-<!-- id="dynamic-dns" -->
 <!-- id="dynamic-dns" -->Dynamic DNS</title>
 <p>If you don't have access to a DNS server, you can use a dynamic DNS
 provider, such as <xref href="http://www.changeip.com/freedomains.asp" scope="external" format="html" >ChangeIP</xref>
@@ -459,7 +448,6 @@ authorization email, and verify the zone transfer before proceeding.</p>
 </section>
 <section>
 <title id="alternate-dns-techniques-alternate-dns-techniques">
-<!-- id="alternate-dns-techniques-alternate-dns-techniques" -->
 <!-- id="alternate-dns-techniques-alternate-dns-techniques" -->Alternate DNS Techniques {#alternate-dns-techniques)</title>
 <p>For situations where mDNS will not work (e.g. running in a cloud hosting
 environment or connecting from a Windows system without mDNS support)
@@ -467,13 +455,13 @@ but which do not merit the effort of manually configuring a DNS record
 (e.g. a test server) alternative methods are available.</p>
 </section>
 <section>
-<title id="xip-io">
+<title>
 <!-- id="xip-io" -->
 <!-- id="xip-io" -->xip.io</title>
 <p>The quickest way to get wildcard DNS resolution is to use the
 <xref href="http://xip.io/" scope="external" format="html" >xip.io</xref> service.  This is the approach taken on clusters created with the Horizon Management Console panel or Application Lifecycle Service Installer CLI, and is done as part of the setup process.</p>
 <p>
-<xref href="#topic31294/server-config-hostname">Change your hostname</xref> using <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-node-attach" >kato node
+<xref href="./publiccloud/index.dita#server-config-hostname" >Change your hostname</xref> using <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-node-attach" >kato node
 rename</xref> to
 match the external IP address with the 'xip.io' domain appended. For
 example:</p>
@@ -487,11 +475,11 @@ Application Lifecycle Service settings. The xip.io DNS servers will resolve the 
 private subnets as well as public IP addresses.</p>
 </section>
 <section>
-<title id="dnsmasq">
+<title>
 <!-- id="dnsmasq" -->
 <!-- id="dnsmasq" -->dnsmasq</title>
 <p>Locally, you can run
-<xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-dnsmasq" >dnsmasq</xref> as a simple
+<xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-dnsmasq" >dnsmasq</xref> as a simple
 DNS proxy which resolves wildcards for
 <codeph>*.helion-test.example.com</codeph> to
 <codeph>10.9.8.7</codeph> when line such as the following is
@@ -507,7 +495,7 @@ present in any of its configuration files:</p>
 </codeblock>
 </section>
 <section>
-<title id="adding-dns-nameservers">
+<title>
 <!-- id="adding-dns-nameservers" -->
 <!-- id="adding-dns-nameservers" -->Adding DNS Nameservers</title>
 <p>You may need to add site-specific DNS nameservers manually if the
@@ -523,13 +511,12 @@ For example:</p>
 <p>Reboot to apply the changes.</p>
 <p>For Application Lifecycle Service VMs with a static IP, add the nameservers when prompted
 when running the <codeph>kato op static_ip</codeph> command (see
-<xref href="#topic31294/server-config-static-ip">Setting a Static IP</xref> above).</p>
+<xref href="./publiccloud/index.dita#server-config-static-ip" >Setting a Static IP</xref> above).</p>
 </section>
 <section>
 <title id="tcp-udp-port-configuration">
-<!-- id="tcp-udp-port-configuration" -->
 <!-- id="tcp-udp-port-configuration" -->TCP/UDP Port Configuration</title>
-<p>The Application Lifecycle Service <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-micro-cloud" >micro cloud</xref> runs with
+<p>The Application Lifecycle Service <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-micro-cloud" >micro cloud</xref> runs with
 the following ports exposed:</p>
 <table>
 <tgroup cols="3">
@@ -625,7 +612,7 @@ port.</p>
 </tbody>
 </tgroup>
 </table>
-<p>More on  <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-nats" >NATS</xref> communication
+<p>More on  <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-nats" >NATS</xref> communication
     with the MBUS IP (core Cloud Controller)10 is available in the glossary.</p>
 <p>Each node can be internally firewalled using
 <xref href="http://manpages.ubuntu.com/manpages/man8/iptables.8" scope="external" format="html" >iptables</xref> to
@@ -634,7 +621,7 @@ apply the above rules.</p>
 <ul>
 <li>Ports 80 and 443 need only be open to the world on router nodes.</li>
 <li>Port 4222 should be open on all nodes for
-<xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-nats" >NATS</xref> communication
+<xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-nats" >NATS</xref> communication
 with the MBUS IP (core Cloud Controller)</li>
 <li>Port 9022 should be open to allow transfer of droplets to and from
 the DEAs, and Cloud Controllers.</li>
@@ -657,7 +644,6 @@ nodes (via SSHFS).</li>
 </section>
 <section>
 <title id="http-proxy">
-<!-- id="http-proxy" -->
 <!-- id="http-proxy" -->HTTP Proxy</title>
 <p>
   <b>Note</b>
@@ -671,7 +657,7 @@ the proxy. To work around this problem in Windows, enable
 <p>In some cases, it may be a requirement that any HTTP request is first
 handled through an upstream or parent proxy (HTTP requests may not be
 directly routable otherwise).</p>
-<p>In this case it is necessary to tell <xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-polipo" >Polipo</xref> about the proxy so it knows how to handle this correctly.</p>
+<p>In this case it is necessary to tell <xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-polipo" >Polipo</xref> about the proxy so it knows how to handle this correctly.</p>
 <p>Open the Polipo config file <codeph>/etc/polipo/config</codeph> and
 add the lines:</p>
 <codeblock>
@@ -701,9 +687,8 @@ Application Lifecycle Service server in <codeph>/var/log/polipo/polipo.log</code
 </section>
 <section>
 <title id="staging-cache-app-http-proxy">
-<!-- id="staging-cache-app-http-proxy" -->
 <!-- id="staging-cache-app-http-proxy" -->Staging Cache &amp; App HTTP Proxy</title>
-<p>Application Lifecycle Service caches all application dependencies that are downloaded by module managers that support the <xref href="/helion/devplatform/1.1/als/user/reference/environment#term-http-proxy" >HTTP_PROXY</xref> environment variable (e.g. pip, PyPM, PPM, NPM, etc). This is limited to 100MB of in-memory cache.</p>
+<p>Application Lifecycle Service caches all application dependencies that are downloaded by module managers that support the <xref href="./devplatform/helion/user/reference/1.1environment.dita#term-http-proxy" >HTTP_PROXY</xref> environment variable (e.g. pip, PyPM, PPM, NPM, etc). This is limited to 100MB of in-memory cache.</p>
 <p>If you have an upstream HTTP proxy that deployed applications and the
 staging system need to traverse to access the internet, use the
 <codeph>kato op upstream_proxy ...</codeph> command on all DEA
@@ -718,7 +703,7 @@ nodes:</p>
 </codeph>
 </codeblock>
 <p>To set an HTTP proxy exclusively for apps, add an <b>environment\app_http_proxy</b> setting in the dea_ng
-config using <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-config" >kato config set</xref>. For example:</p>
+config using <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-config" >kato config set</xref>. For example:</p>
 <codeblock>
   <codeph>kato config set dea_ng environment/app_http_proxy 10.0.0.47:3000
 </codeph>
@@ -732,12 +717,10 @@ within all subsequently created application containers.</p>
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="vm-filesystem-setup-vm-filesystem-setup" -->
-<!-- id="vm-filesystem-setup-vm-filesystem-setup" -->
+<title id="vm-filesystem-setup-vm-filesystem-setup">
 <!-- id="vm-filesystem-setup-vm-filesystem-setup" -->VM Filesystem Setup {#vm-filesystem-setup)</title>
 <p>The Application Lifecycle Service VM is distributed with a simple default partitioning scheme
-(i.e. everything but "/boot" mounted on "./publiccloud/index.dita/").</p>
+(i.e. everything but "/boot" mounted on "/").</p>
 <p>Warning</p>
 <p>When setting up a production cluster, additional filesystem
 configuration is necessary to prevent certain nodes from running out of
@@ -750,12 +733,11 @@ on external block storage for:</p>
 <li>containers (DEA and Stager nodes)</li>
 </ul>
 <p>Suggestions for mounting block storage and instructions for relocating
-data can be found in the <xref href="/helion/devplatform/1.1/als/admin/best-practices#bestpractices-persistent-storage" >Persistent Storage</xref>
+data can be found in the <xref href="./devplatform/helion/admin/best-practices/1.1index.dita#bestpractices-persistent-storage" >Persistent Storage</xref>
 section.</p>
 </section>
 <section>
 <title>
-<!-- id="helion-data-services-vs-high-availability-databases" -->
 <!-- id="helion-data-services-vs-high-availability-databases" -->
 <!-- id="helion-data-services-vs-high-availability-databases" -->Application Lifecycle Service Data Services vs. High Availability Databases</title>
 <p>Application Lifecycle Service data services do not offer any built-in redundancy. For
@@ -764,19 +746,19 @@ is recommended.</p>
 <p>To use an external database instead of the data services provided by
 Application Lifecycle Service, specify the database credentials directly in your application
 code instead of using the credentials from the
-<xref href="/helion/devplatform/1.1/als/user/reference/environment#term-vcap-services" >VCAP_SERVICES</xref>
+<xref href="./devplatform/helion/user/reference/1.1environment.dita#term-vcap-services" >VCAP_SERVICES</xref>
 environment variable.</p>
 <p>To tie external databases to Application Lifecycle Service as a data service, see the
-examples in the <xref href="/helion/devplatform/1.1/als/admin/reference/add-service#add-service" >Adding System
+examples in the <xref href="./devplatform/helion/admin/reference/1.1add-service.dita#add-service" >Adding System
 Services</xref> section.</p>
 </section>
 <section>
-<title id="https-ssl">
+<title>
 <!-- id="https-ssl" -->
 <!-- id="https-ssl" -->HTTPS &amp; SSL</title>
 <p>HTTPS mode provides access to the provisioned apps using wild card SSL
 certificates through the router or
-<xref href="/helion/devplatform/1.1/als/user/reference/glossary#term-nginx" >Nginx</xref> web server.</p>
+<xref href="./devplatform/helion/user/reference/1.1glossary.dita#term-nginx" >Nginx</xref> web server.</p>
 <p>The ALS VM generates self-signed wildcard SSL certificates to match the unique <codeph>.local</codeph> hostname it assigns itself at first boot. These certificates can be found in:</p>
 <ul>
 <li>
@@ -789,7 +771,7 @@ certificates through the router or
 <p>For additional Org-owned and Shared domains, SSL certificates can be added using the SNI method described further below.</p>
 </section>
 <section>
-<title id="using-your-own-ssl-certificate">
+<title>
 <!-- id="using-your-own-ssl-certificate" -->
 <!-- id="using-your-own-ssl-certificate" -->Replacing the Default SSL Certificate</title>
 <p>On all router and controller nodes, upload your <i>.key</i> file to the <i>/etc/ssl/private/</i> directory and your <i>.crt</i> file to <i>/etc/ssl/certs/</i>.</p>
@@ -807,12 +789,11 @@ certificates through the router or
 </section>
 <section>
 <title id="adding-custom-ssl-certs-sni">
-<!-- id="adding-custom-ssl-certs-sni" -->
 <!-- id="adding-custom-ssl-certs-sni" -->Adding More SSL Certs (SNI)</title>
 <p>The Application Lifecycle Service router supports
 <xref href="http://en.wikipedia.org/wiki/Server_Name_Indication" scope="external" format="html" >SNI</xref>, and custom
 SSL certificates for domains resolving to the system can be added using
-the <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-op" >kato op custom_ssl_cert
+the <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-op" >kato op custom_ssl_cert
 install</xref> command.
 Usage:</p>
 <codeblock>
@@ -830,7 +811,6 @@ Nginx, Application Lifecycle Service load balancer).</p>
 </section>
 <section>
 <title id="ca-certificate-chaining">
-<!-- id="ca-certificate-chaining" -->
 <!-- id="ca-certificate-chaining" -->CA Certificate Chaining</title>
 <p>When using a signed certificate for Application Lifecycle Service, the certificates in the
 chain must be concatenated in a specific order:</p>
@@ -868,7 +848,6 @@ Certificate chain
 </section>
 <section>
 <title id="generating-a-self-signed-ssl-certificate">
-<!-- id="generating-a-self-signed-ssl-certificate" -->
 <!-- id="generating-a-self-signed-ssl-certificate" -->Generating a self-signed SSL certificate</title>
 <p>You can re-generate Application Lifecycle Service's self-signed SSL certificate by running
 the following command on the VM:</p>
@@ -896,7 +875,7 @@ chmod 400 host.key host.crt
 </codeph>
 </codeblock>
 <p>To get the router to use the new certificate and key files, follow the
-steps in the <xref href="#topic31294/server-config-ssl-cert-own-use">
+steps in the <xref href="./publiccloud/index.dita#server-config-ssl-cert-own-use" >
 <i>Using your own SSL
 certificate</i>
 </xref> section above.</p>
@@ -907,7 +886,6 @@ apps via HTTPS for the first time.</p>
 </section>
 <section>
 <title id="cipher">
-<!-- id="cipher" -->
 <!-- id="cipher" -->Customizing the Cipher Suites</title>
 <p>The router's TLS cipher suite can be modified using <i>kato config</i>. For example:</p>
 <codeblock>
@@ -917,7 +895,7 @@ apps via HTTPS for the first time.</p>
 <p>The setting above is the default for the Helion router minus SSLv3. See OpenSSL's <xref href="https://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT" scope="external" format="html" >Cipher List Format</xref> and <xref href="https://www.openssl.org/docs/apps/ciphers.html#CIPHER_STRINGS" scope="external" format="html" >Cipher Strings</xref> documentation for other valid values.</p>
 </section>
 <section>
-<title id="quota-definitions">
+<title>
 <!-- id="quota-definitions" -->
 <!-- id="quota-definitions" -->Quota Definitions</title>
 <p>Quota definitions define limits for:</p>
@@ -933,46 +911,45 @@ organization share the defined limits.</p>
 quota definitions:</p>
 <ul>
 <li>
-<xref href="/helion/devplatform/1.1/als/user/reference/client-ref#command-quota-configure" >
+<xref href="./devplatform/helion/user/reference/1.1client-ref.dita#command-quota-configure" >
 <i>helion quota configure</i>
 </xref>
 </li>
 <li>
-<xref href="/helion/devplatform/1.1/als/user/reference/client-ref#command-quota-create" >
+<xref href="./devplatform/helion/user/reference/1.1client-ref.dita#command-quota-create" >
 <i>helion quota
 create</i>
 </xref>
 </li>
 <li>
-<xref href="/helion/devplatform/1.1/als/user/reference/client-ref#command-quota-delete" >
+<xref href="./devplatform/helion/user/reference/1.1client-ref.dita#command-quota-delete" >
 <i>helion quota
 delete</i>
 </xref>
 </li>
 <li>
-<xref href="/helion/devplatform/1.1/als/user/reference/client-ref#command-quota-list" >
+<xref href="./devplatform/helion/user/reference/1.1client-ref.dita#command-quota-list" >
 <i>helion quota
 list</i>
 </xref>
 </li>
 </ul>
 <p>Existing quota definitions can also be viewed and edited in the
-Management Console <xref href="/helion/devplatform/1.1/als/admin/console/customize#console-settings-quota-definitions" >Quota Definitions settings</xref>
+Management Console <xref href="./devplatform/helion/admin/console/1.1customize.dita#console-settings-quota-definitions" >Quota Definitions settings</xref>
 </p>
 </section>
 <section>
 <title>
 <!-- id="sudo" -->
-<!-- id="sudo" -->
 <!-- id="sudo" -->sudo</title>
 <p>Quota Definitions can give all users in an Organization the use of the <b>sudo</b> command within application containers. This option is disabled by default as a security precaution, and should only be enabled for Organizations where all users are trusted.</p>
 </section>
 <section>
-<title id="allowed-repositories">
+<title>
 <!-- id="allowed-repositories" -->
 <!-- id="allowed-repositories" -->Allowed Repositories</title>
 <p>Users (with our without <i>sudo</i> permissions) can install Ubuntu packages in application containers by requesting them in the requirements section of an application's <i>manifest.yml</i> file. The system allows package installation only from those repositories specified in the <b>Allowed Repos</b> list in the Management Console.</p>
-<p>This list can also be viewed and modified at the command line using <xref href="/helion/devplatform/1.1/als/admin/reference/kato-ref#kato-command-ref-config" >kato config</xref>. For example, to view the 
+<p>This list can also be viewed and modified at the command line using <xref href="./devplatform/helion/admin/reference/1.1kato-ref.dita#kato-command-ref-config" >kato config</xref>. For example, to view the 
  current list:</p>
 <codeblock>
   <codeph>   kato config get cloud_controller_ng allowed_repos 
@@ -990,7 +967,7 @@ Management Console <xref href="/helion/devplatform/1.1/als/admin/console/customi
     - deb http://apt.newrelic.com/debian/ newrelic non-free 
 </codeph>
 </codeblock>
-<p>Once a repository has been added to the list, <b>the GPG key must also be added</b> to the <xref href="/helion/devplatform/1.1/als/admin/server/docker#modifying-or-updating-the-container-image" >Docker base image</xref> on each DEA (or the <xref href="/helion/devplatform/1.1/als/admin/server/docker#creating-a-docker-registry" >Docker registry</xref> server if configured).</p>
+<p>Once a repository has been added to the list, <b>the GPG key must also be added</b> to the <xref href="./devplatform/helion/admin/server/1.1docker.dita#modifying-or-updating-the-container-image" >Docker base image</xref> on each DEA (or the <xref href="./devplatform/helion/admin/server/1.1docker.dita#creating-a-docker-registry" >Docker registry</xref> server if configured).</p>
 <p>For example, to trust the GPG for the New Relic repository, add the following line to the <i>Dockerfile</i> for the base image:</p>
 <codeblock>
   <codeph>RUN wget -O- https://download.newrelic.com/548C16BF.gpg | apt-key add -
@@ -998,13 +975,13 @@ Management Console <xref href="/helion/devplatform/1.1/als/admin/console/customi
 </codeblock>
 </section>
 <section>
-<title id="container_NFS">
+<title>
 <!-- id="container_NFS" -->
 <!-- id="container_NFS" -->Container NFS Mounts</title>
 <p>
-<b>Warning</b>: Reconfiguring ALS to allow user applications to mount NFS partitions has serious security implications. See the <xref href="/helion/devplatform/1.1/als/admin/server/docker#docker-privileged-containers" >Privileged Containers</xref> section for details.</p>
-<p>By default, application containers are unable to mount external filesystems (other than the built-in <xref href="../../../../devplatform/helion/user/services/1.1filesystem.dita" >Filesystem Service</xref> via network protocols such as NFS.</p>
-<p>If the system has been configured to use <xref href="/helion/devplatform/1.1/als/admin/server/docker#docker-privileged-containers" >privileged containers</xref> and <i>sudo</i> permissions have been explicitly allowed in the quota, NFS partitions can be mounted in application containers using application configuration similar to the following manifest.yml excerpt:
+<b>Warning</b>: Reconfiguring ALS to allow user applications to mount NFS partitions has serious security implications. See the <xref href="./devplatform/helion/admin/server/1.1docker.dita#docker-privileged-containers" >Privileged Containers</xref> section for details.</p>
+<p>By default, application containers are unable to mount external filesystems (other than the built-in <xref href="./devplatform/helion/user/services/1.1filesystem.dita" >Filesystem Service</xref> via network protocols such as NFS.</p>
+<p>If the system has been configured to use <xref href="./devplatform/helion/admin/server/1.1docker.dita#docker-privileged-containers" >privileged containers</xref> and <i>sudo</i> permissions have been explicitly allowed in the quota, NFS partitions can be mounted in application containers using application configuration similar to the following manifest.yml excerpt:
 requirements:</p>
 <codeblock>
   <codeph>  ubuntu:

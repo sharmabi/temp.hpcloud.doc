@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1102">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1166">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Disabling and Enabling Users</title>
 <prolog>
 <metadata>
@@ -16,22 +16,21 @@
 <p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
 -->
 <p>Users can be disabled in the domain. After you disable a user, the user account remains in the domain, but cannot be used to log in.</p>
-<p>As an admin, you can <xref href="#topic1102/disableuser">disable</xref> and <xref href="#topic1102/enableuser">enable</xref> users, as needed.</p>
+<p>As an admin, you can <xref href="./publiccloud/index.dita#disableuser" >disable</xref> and <xref href="./publiccloud/index.dita#enableuser" >enable</xref> users, as needed.</p>
 <section>
 <title id="disableuser">
-<!-- id="disableuser" -->
 <!-- id="disableuser" -->Disable a user</title>
 <p>To disable a user:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the Users link on the Admin dashboard Identity panel.</p>
+<p>Click the <b>Identity</b> dashboard, then the <b>Users</b> link.</p>
 </li>
 <li>
-<p>In the Users screen, for the user you want to disable, click More &gt; Disable User.</p>
+<p>In the <b>Users</b> screen, for the user you want to disable, click the arrow icon in the <b>Actions</b> menu and select <b>Disable User</b>.</p>
 
 <p>The user is disabled and cannot be used to log in.</p>
 </li>
@@ -39,25 +38,24 @@
 </section>
 <section>
 <title id="enableuser">
-<!-- id="enableuser" -->
 <!-- id="enableuser" -->Enable a user</title>
 <p>To enable a user:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the Users link on the Admin dashboard Identity panel.</p>
+<p>Click the <b>Identity</b> dashboard, then the <b>Users</b> link.</p>
 </li>
 <li>
-<p>In the Users screen, for the user you want to enable, click More &gt; Enable User.</p>
+<p>In the <b>Users **screen, for the user you want to enable, click the arrow icon in the **Actions</b> menu and select <b>Enable User</b>.</p>
 
 <p>The user is enabled and can be used to log in.</p>
 </li>
 </ol>
 <p>
-  <xref href="#topic1102/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

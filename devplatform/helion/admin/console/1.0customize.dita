@@ -22,17 +22,16 @@
  <!--./devplatform/helion/admin/console/1.0customize.md-->
  <!--permalink: /als/v1/admin/console/customize/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/admin/console/1.1customize.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/admin/console/1.1customize.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <p>An Application Lifecycle Service PaaS can be extensively customized and themed. PaaS
 administrators can add or remove runtimes, frameworks and services from
-the system, and change the look and content of the <xref href="/als/v1/user/console#management-console" >
+the system, and change the look and content of the <xref href="./devplatform/helion/user/console/1.0index.dita#management-console" >
 <i>Management
 Console</i>
 </xref> interface.</p>
 <section>
 <title>
-<!-- id="table-of-contents" -->
 <!-- id="table-of-contents" -->
 <!-- id="table-of-contents" -->Table Of Contents</title>
 <ul>
@@ -41,44 +40,44 @@ Console</i>
 
 <ul>
 <li>
-<xref href="#topic4462/console-settings">Console Settings</xref>
+<xref href="./publiccloud/index.dita#console-settings" >Console Settings</xref>
 
 <ul>
 <li>
-<xref href="#topic4462/product">Product</xref>
+<xref href="./publiccloud/index.dita#product" >Product</xref>
 </li>
 <li>
-<xref href="#topic4462/look-and-feel">Look and Feel</xref>
+<xref href="./publiccloud/index.dita#look-and-feel" >Look and Feel</xref>
 </li>
 <li>
-<xref href="#topic4462/welcome-page">Welcome Page</xref>
+<xref href="./publiccloud/index.dita#welcome-page" >Welcome Page</xref>
 </li>
 <li>
-<xref href="#topic4462/support-page">Support Page</xref>
+<xref href="./publiccloud/index.dita#support-page" >Support Page</xref>
 </li>
 <li>
-<xref href="#topic4462/eula-content">Eula Content</xref>
+<xref href="./publiccloud/index.dita#eula-content" >Eula Content</xref>
 </li>
 <li>
-<xref href="#topic4462/custom-stylesheet">Custom Stylesheet</xref>
+<xref href="./publiccloud/index.dita#custom-stylesheet" >Custom Stylesheet</xref>
 </li>
 <li>
-<xref href="#topic4462/settings-variables">Settings Variables</xref>
+<xref href="./publiccloud/index.dita#settings-variables" >Settings Variables</xref>
 </li>
 <li>
-<xref href="#topic4462/restoring-values">Restoring values</xref>
+<xref href="./publiccloud/index.dita#restoring-values" >Restoring values</xref>
 </li>
 </ul>
 </li>
 <li>
-<xref href="#topic4462/renaming-the-client">Renaming the Client</xref>
+<xref href="./publiccloud/index.dita#renaming-the-client" >Renaming the Client</xref>
 </li>
 </ul>
 </li>
 </ul>
 </section>
 <section>
-<title id="console-settings">
+<title>
 <!-- id="console-settings" -->
 <!-- id="console-settings" -->Console Settings</title>
 <p>The Management Console is modified mainly through the <b>Settings &gt;
@@ -88,7 +87,6 @@ be used in HTML pages via the <xref href="http://embeddedjs.com/" scope="externa
 </section>
 <section>
 <title id="product">
-<!-- id="product" -->
 <!-- id="product" -->Product</title>
 <ul>
 <li>
@@ -111,9 +109,7 @@ be ignored and the docs from the VM will be served instead.</li>
 </ul>
 </section>
 <section>
-<title>
-<!-- id="look-and-feel" -->
-<!-- id="look-and-feel" -->
+<title id="look-and-feel">
 <!-- id="look-and-feel" -->Look and Feel</title>
 <ul>
 <li>
@@ -133,32 +129,31 @@ above but height is about 40px before distortion occurs.</li>
 <section>
 <title>
 <!-- id="welcome-page" -->
-<!-- id="welcome-page" -->
 <!-- id="welcome-page" -->Welcome Page</title>
-<p>The HTML/EJS to show on the Welcome page. The <xref href="#topic4462/customize-settings-vars">
+<p>The HTML/EJS to show on the Welcome page. The <xref href="./publiccloud/index.dita#customize-settings-vars" >
 <i>settings-variables</i>
 </xref> and <codeph>username</codeph>
 variable (current user) are available via EJS, but plain HTML will work
 for simple use cases.</p>
 </section>
 <section>
-<title id="support-page">
+<title>
 <!-- id="support-page" -->
 <!-- id="support-page" -->Support Page</title>
-<p>The HTML/EJS to show on the Support page. The <xref href="#topic4462/customize-settings-vars">
+<p>The HTML/EJS to show on the Support page. The <xref href="./publiccloud/index.dita#customize-settings-vars" >
 <i>settings-variables</i>
 </xref> and <codeph>support_email</codeph> variable (see Settings &gt; Controller) are available.</p>
 </section>
 <section>
-<title id="eula-content">
+<title>
 <!-- id="eula-content" -->
 <!-- id="eula-content" -->Eula Content</title>
-<p>The HTML/EJS to show in the EULA overlay. The <xref href="#topic4462/customize-settings-vars">
+<p>The HTML/EJS to show in the EULA overlay. The <xref href="./publiccloud/index.dita#customize-settings-vars" >
 <i>settings-variables</i>
 </xref> are available.</p>
 </section>
 <section>
-<title id="custom-stylesheet">
+<title>
 <!-- id="custom-stylesheet" -->
 <!-- id="custom-stylesheet" -->Custom Stylesheet</title>
 <p>CSS defined here will be applied to the page after the default CSS has
@@ -169,7 +164,6 @@ and find the relevant styles.</p>
 </section>
 <section>
 <title>
-<!-- id="settings-variables" -->
 <!-- id="settings-variables" -->
 <!-- id="settings-variables" -->Settings Variables</title>
 <p>The following variables (with their default values) are available in the
@@ -194,9 +188,7 @@ EJS templates on the settings object (e.g.
 </ul>
 </section>
 <section>
-<title>
-<!-- id="restoring-values" -->
-<!-- id="restoring-values" -->
+<title id="restoring-values">
 <!-- id="restoring-values" -->Restoring values</title>
 <p>Each setting has an individual <b>Load Default</b> button (refresh icon to
 the left of the value field) which will replace the customized value
@@ -214,9 +206,7 @@ format:</p>
 above and that value will be reset to the default.</p>
 </section>
 <section>
-<title>
-<!-- id="renaming-the-client" -->
-<!-- id="renaming-the-client" -->
+<title id="renaming-the-client">
 <!-- id="renaming-the-client" -->Renaming the Client</title>
 <p>The <codeph>helion</codeph> client is distributed as a single
 file executable for Windows, OS X and Linux (x86 and x86_64). Zip files

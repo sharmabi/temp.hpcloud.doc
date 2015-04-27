@@ -19,12 +19,11 @@
 <section>
 <title>
 <!-- id="attach-a-volume-to-an-instance" -->
-<!-- id="attach-a-volume-to-an-instance" -->
 <!-- id="attach-a-volume-to-an-instance" -->Attach a volume to an instance</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
@@ -48,13 +47,13 @@
 <p>The dashboard shows the instance to which the volume is now attached and the device name. You can view the status of a volume in the Volumes tab of the dashboard. The volume is either Available or In-use. Now you can log in to the instance and mount, format, and use the disk.</p>
 </section>
 <section>
-<title id="detach-a-volume-from-a-vm-instance">
+<title>
 <!-- id="detach-a-volume-from-a-vm-instance" -->
 <!-- id="detach-a-volume-from-a-vm-instance" -->Detach a volume from a VM instance</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
@@ -70,7 +69,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1521/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

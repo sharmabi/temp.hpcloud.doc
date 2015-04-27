@@ -40,50 +40,46 @@ so there is no need to create a separate app.psgi for them.</p>
 <xref href="https://github.com/Stackato-Apps/mojo-helloworld/app.pl" scope="external" format="html" >app.pl</xref>. You
 could rename <codeph>app.pl</codeph> to <codeph>app.psgi</codeph> instead, but using the approach above
 allows you to set PSGI-specific configurations in a separate file.</p>
-<p>It is possible to <xref href="#topic8895/uwsgi-perl-static-files">serve static files with uWSGI</xref>.</p>
-<p>The <xref href="/helion/devplatform/1.2/als/user/deploy/languages/perl/perlcgi#perlcgi" >
+<p>It is possible to <xref href="./publiccloud/index.dita#uwsgi-perl-static-files" >serve static files with uWSGI</xref>.</p>
+<p>The <xref href="./devplatform/1.2/helion/user/deploy/languages/perl/1.2perlcgi.dita#perlcgi" >
 <i>perlcgi</i>
 </xref> framework is also available for
 running traditional Perl CGI applications without PSGI.</p>
 <section>
 <title id="deploying-applications">
-<!-- id="deploying-applications" -->
 <!-- id="deploying-applications" -->Deploying Applications</title>
 <p>The following is a list of pages with details for deploying various
 application types.</p>
 <ul>
 <li>
-<xref href="../../../../../../../devplatform/1.2/helion/user/deploy/languages/perl/1.2cgiapppsgi.dita" >CGI:Application:PSGI</xref>
+<xref href="./devplatform/1.2/helion/user/deploy/languages/perl/1.2cgiapppsgi.dita" >CGI:Application:PSGI</xref>
 </li>
 <li>
-<xref href="../../../../../../../devplatform/1.2/helion/user/deploy/languages/perl/1.2perlcgi.dita" >Perl CGI</xref>
+<xref href="./devplatform/1.2/helion/user/deploy/languages/perl/1.2perlcgi.dita" >Perl CGI</xref>
 </li>
 <li>
-<xref href="../../../../../../../devplatform/1.2/helion/user/deploy/languages/perl/1.2catalyst.dita" >Catalyst</xref>
+<xref href="./devplatform/1.2/helion/user/deploy/languages/perl/1.2catalyst.dita" >Catalyst</xref>
 </li>
 <li>
-<xref href="../../../../../../../devplatform/1.2/helion/user/deploy/languages/perl/1.2mason.dita" >Mason</xref>
+<xref href="./devplatform/1.2/helion/user/deploy/languages/perl/1.2mason.dita" >Mason</xref>
 </li>
 <li>
-<xref href="../../../../../../../devplatform/1.2/helion/user/deploy/languages/perl/1.2mojo.dita" >Mojolicious</xref>
+<xref href="./devplatform/1.2/helion/user/deploy/languages/perl/1.2mojo.dita" >Mojolicious</xref>
 </li>
 <li>
-<xref href="../../../../../../../devplatform/1.2/helion/user/deploy/languages/perl/1.2dancer.dita" >Dancer</xref>
+<xref href="./devplatform/1.2/helion/user/deploy/languages/perl/1.2dancer.dita" >Dancer</xref>
 </li>
 </ul>
 </section>
 <section>
 <title id="database-services">
-<!-- id="database-services" -->
 <!-- id="database-services" -->Database Services</title>
 <p>Authentication details for your configured database services can be
 found in the <codeph>$ENV</codeph> variable, under
 <codeph>DATABASE_URL</codeph> or <codeph>VCAP_SERVICES</codeph>. Here is an example of getting the correct credentials.</p>
 </section>
 <section>
-<title>
-<!-- id="mysql-url" -->
-<!-- id="mysql-url" -->
+<title id="mysql-url">
 <!-- id="mysql-url" -->MYSQL_URL</title>
 <codeblock>
   <codeph>my($user,$password,$host,$port,$name) = $ENV{MYSQL_URL} =~ m{mysql://(.+?):(.+)\@(.+?):(\d+)/(.*)}
@@ -97,9 +93,7 @@ print $user;
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="vcap-services" -->
-<!-- id="vcap-services" -->
+<title id="vcap-services">
 <!-- id="vcap-services" -->VCAP_SERVICES</title>
 <codeblock>
   <codeph>use DBI;
@@ -129,15 +123,14 @@ else {
 </section>
 <section>
 <title id="worker-applications">
-<!-- id="worker-applications" -->
 <!-- id="worker-applications" -->Worker Applications</title>
 <p>Non-HTTP apps that run as an Application Lifecycle Service application under the control of
 the Health Manager.</p>
 <p>To deploy worker applications, you need to use the
-<xref href="/helion/devplatform/1.2/als/user/deploy/manifestyml#command" >
+<xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita#command" >
 <i>command</i>
 </xref> key and set the
-<xref href="/helion/devplatform/1.2/als/user/deploy/manifestyml#web" >
+<xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita#web" >
 <i>processes:
 web</i>
 </xref> key to
@@ -145,7 +138,6 @@ Null ("\~").</p>
 </section>
 <section>
 <title id="example">
-<!-- id="example" -->
 <!-- id="example" -->Example</title>
 <codeblock>
   <codeph>name: perl-app
@@ -157,7 +149,7 @@ processes:
 </codeblock>
 </section>
 <section>
-<title id="installing-module-dependencies">
+<title>
 <!-- id="installing-module-dependencies" -->
 <!-- id="installing-module-dependencies" -->Installing module dependencies</title>
 <p>If the modules your app needs are available via PPM or CPAN, let
@@ -167,7 +159,6 @@ application code.</p>
 </section>
 <section>
 <title id="cpan-modules-via-ppm">
-<!-- id="cpan-modules-via-ppm" -->
 <!-- id="cpan-modules-via-ppm" -->CPAN Modules via PPM</title>
 <p>
 <xref href="http://code.activestate.com/ppm" scope="external" format="html" >PPM</xref> is the binary package manager for
@@ -176,7 +167,7 @@ installing CPAN modules in the Application Lifecycle Service application droplet
 versions of most CPAN modules and frameworks are available.</p>
 <p>Modules required by your app can be specified by adding a
 <codeph>requirements:</codeph> section to the
-<xref href="../../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >
+<xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >
 <i>manifest.yml</i>
 </xref> file. For example:</p>
 <codeblock>
@@ -220,7 +211,6 @@ packed in the application droplet.</p>
 </section>
 <section>
 <title id="cpan-modules-via-cpanm">
-<!-- id="cpan-modules-via-cpanm" -->
 <!-- id="cpan-modules-via-cpanm" -->CPAN Modules via cpanm</title>
 <p>If the module you require is not available in the HP PPM
 repositories, or if you need a
@@ -233,7 +223,6 @@ by including them in one of the following files:</p>
 </section>
 <section>
 <title id="manifest-yml">
-<!-- id="manifest-yml" -->
 <!-- id="manifest-yml" -->manifest.yml</title>
 <p>Add a <codeph>cpan:</codeph> section to <i>manifest.yml</i> that
 specifies version conditions, requests a module via HTTP URL, or fetches
@@ -253,7 +242,7 @@ the try-tiny.git repository (could also be a branch or commit name), and
 finally installs Data-Dump-1.20.tar.gz from an absolute download URL.</p>
 </section>
 <section>
-<title id="makefile-pl">
+<title>
 <!-- id="makefile-pl" -->
 <!-- id="makefile-pl" -->Makefile.PL</title>
 <p>
@@ -263,7 +252,6 @@ Application Lifecycle Service will use this if there is no <i>cpanfile</i> or <i
 </section>
 <section>
 <title id="cpanfile">
-<!-- id="cpanfile" -->
 <!-- id="cpanfile" -->cpanfile</title>
 <p>The <xref href="https://metacpan.org/module/MIYAGAWA/Module-CPANfile-0.9031/lib/cpanfile.pod" scope="external" format="html" >cpanfile</xref> format is preferable for Perl web applications, as <i>Makefile.PL</i> is
 generally intended for Perl modules. It allows for more elaborate
@@ -273,7 +261,6 @@ for more information).</p>
 </section>
 <section>
 <title id="carton-lock">
-<!-- id="carton-lock" -->
 <!-- id="carton-lock" -->carton.lock</title>
 <p>The <xref href="https://metacpan.org/module/Carton" scope="external" format="html" >carton</xref> module dependency
 manager is similar in concept to Ruby's Bundler.</p>
@@ -288,16 +275,14 @@ packages in a <i>local/cache</i> sub-directory of the application. Application L
 will install those modules from the cached files.</p>
 </section>
 <section>
-<title>
-<!-- id="disable-testing" -->
-<!-- id="disable-testing" -->
+<title id="disable-testing">
 <!-- id="disable-testing" -->Disable Testing</title>
 <p>Disabling tests in cpanm can decrease staging times for applications
 with numerous module dependencies, especially if those dependencies have
 large test suites.</p>
 <p>To disable testing for cpanm in staging, set
 <xref href="http://search.cpan.org/dist/App-cpanminus/bin/cpanm#OPTIONS" scope="external" format="html" >PERL_CPANM_OPT</xref>
-to '--notest' in <xref href="../../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >
+to '--notest' in <xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >
 <i>manifest.yml</i>
 </xref>:</p>
 <codeblock>
@@ -308,9 +293,7 @@ env:
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="custom-cpan-mirror" -->
-<!-- id="custom-cpan-mirror" -->
+<title id="custom-cpan-mirror">
 <!-- id="custom-cpan-mirror" -->Custom CPAN Mirror</title>
 <p>To make cpanminus use a specific CPAN repository (e.g. a local mirror or
 private repo), instead of the default public ones, set the
@@ -324,11 +307,10 @@ options in PERL_CPANM_OPT:</p>
 </section>
 <section>
 <title id="serving-static-files-with-uwsgi">
-<!-- id="serving-static-files-with-uwsgi" -->
 <!-- id="serving-static-files-with-uwsgi" -->Serving Static Files with uWSGI</title>
 <p>It is possible to serve static files with uWSGI using
 <codeph>processes: web:</codeph> in the
-<xref href="../../../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >
+<xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >
 <i>manifest.yml</i>
 </xref> file to specify
 folders that will be served statically and not by the app.</p>
@@ -354,18 +336,16 @@ frameworks.</p>
 </section>
 <section>
 <title id="runtime">
-<!-- id="runtime" -->
 <!-- id="runtime" -->Runtime</title>
 <p>Application Lifecycle Service deploys Perl applications with <xref href="http://docs.activestate.com/activeperl/5.14/" scope="external" format="html" >ActivePerl
 5.14</xref>.</p>
 </section>
 <section>
 <title id="troubleshooting">
-<!-- id="troubleshooting" -->
 <!-- id="troubleshooting" -->Troubleshooting</title>
 </section>
 <section>
-<title id="general">
+<title>
 <!-- id="general" -->
 <!-- id="general" -->General</title>
 <p>If your application fails to stage or launch successfully, use the
@@ -381,7 +361,6 @@ helion files myapp logs/ppm4.log
 </section>
 <section>
 <title id="other-issues">
-<!-- id="other-issues" -->
 <!-- id="other-issues" -->Other Issues</title>
 <dl>
 <dlentry>
@@ -420,7 +399,6 @@ builder {
 </section>
 <section>
 <title id="examples">
-<!-- id="examples" -->
 <!-- id="examples" -->Examples</title>
 <p>Several Perl samples are available in
 <xref href="https://github.com/Stackato-Apps" scope="external" format="html" >Application Lifecycle Service-Apps</xref> on GitHub.</p>

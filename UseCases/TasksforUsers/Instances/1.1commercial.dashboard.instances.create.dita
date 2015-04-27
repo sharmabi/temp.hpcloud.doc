@@ -23,13 +23,12 @@
 </ul>
 <section>
 <title id="create-an-instance">
-<!-- id="create-an-instance" -->
 <!-- id="create-an-instance" -->Create an instance</title>
 <p>To create an instance:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Instances</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -61,7 +60,7 @@
 <li>
 <p>Select the volume, snapshot, or image from the list that appears.</p>
 
-<p>Additonal fields appear for the boot source option that create a new volume. For more information, refer to <xref href="../../../UseCases/TasksforUsers/Volumes/1.1commercial.managing.volumes.dita" >Managing Block Storage Volumes</xref>.</p>
+<p>Additonal fields appear for the boot source option that create a new volume. For more information, refer to <xref href="./UseCases/TasksforUsers/Volumes/1.1commercial.managing.volumes.dita" >Managing Block Storage Volumes</xref>.</p>
 </li>
 </ul>
 </li>
@@ -91,7 +90,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic2713/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

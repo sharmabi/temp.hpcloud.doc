@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1026">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1239">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Modifying Images</title>
 <prolog>
 <metadata>
@@ -16,21 +16,28 @@
 <p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
 -->
 <p>You can modify images, as needed, to change the name and description of the image, or protect and un-protect the image.</p>
+<ul>
+<li>
+<xref href="./publiccloud/index.dita#edit" >Modify an image</xref>
+</li>
+<li>
+<xref href="./publiccloud/index.dita#editmeta" >Edit image metadata</xref>
+</li>
+</ul>
 <section>
 <title>
-<!-- id="modify-an-image" -->
-<!-- id="modify-an-image" -->
-<!-- id="modify-an-image" -->Modify an image</title>
+<!-- id="edit" -->
+<!-- id="edit" -->Modify an image</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Images</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Images</b> link.</p>
 </li>
 <li>
-<p>In the <b>Images</b> screen, click <b>More</b> then click <b>Edit</b> next to the image you want to modify.</p>
+<p>In the <b>Images</b> screen, click <b>Edit</b> next to the image you want to modify.</p>
 </li>
 <li>
 <p>Update the image information:</p>
@@ -45,8 +52,14 @@
 </li>
 </ol>
 <p>5, When complete, click <b>Update Image</b>.</p>
+</section>
+<section>
+<title id="editmeta">
+<!-- id="editmeta" -->Managing Metadata</title>
+<p>Compute uses a metadata service for virtual machine instances to retrieve instance-specific data.</p>
+<p>You can add and remove metadata for flavors, see <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/carrier-grade.dashboard.metadata.dita" >Managing Metadata</xref>.</p>
 <p>
-  <xref href="#topic1026/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

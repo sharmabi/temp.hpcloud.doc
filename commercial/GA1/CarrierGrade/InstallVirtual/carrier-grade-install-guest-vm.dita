@@ -61,7 +61,6 @@ up route add -net 10.20.20.50 netmask 255.255.255.0 gw 10.20.20.1
 </ol>
 <section>
 <title id="install-the-packages-on-the-guest-vm-to-get-the-browser-and-gnome-tools">
-<!-- id="install-the-packages-on-the-guest-vm-to-get-the-browser-and-gnome-tools" -->
 <!-- id="install-the-packages-on-the-guest-vm-to-get-the-browser-and-gnome-tools" -->Install the packages on the guest VM to get the browser and Gnome tools</title>
 <p>You can install the below list of packages on your guest VM to get xrdp session and other packages:</p>
 <ul>
@@ -97,7 +96,6 @@ export https_proxy=&lt;ip_address&gt;
 </section>
 <section>
 <title id="configure-xrdp-for-the-remote-desktop-connection-to-access-the-server-remotely-as-follows">
-<!-- id="configure-xrdp-for-the-remote-desktop-connection-to-access-the-server-remotely-as-follows" -->
 <!-- id="configure-xrdp-for-the-remote-desktop-connection-to-access-the-server-remotely-as-follows" -->Configure XRDP for the remote desktop connection to access the server remotely as follows.</title>
 <ol>
 <li>
@@ -129,7 +127,6 @@ MaxSessions=1 to 50
 </section>
 <section>
 <title id="configure-the-xrdp-display">
-<!-- id="configure-the-xrdp-display" -->
 <!-- id="configure-the-xrdp-display" -->Configure the xrdp display</title>
 <p>When you connect to xrdp from some remote desktop applications, the xrdp display might appear gray. Use the following steps before starting the HP Helion OpenStack Carrier Grade installation to prevent the problem.</p>
 <ol>
@@ -168,9 +165,7 @@ fi
 </ol>
 </section>
 <section>
-<title>
-<!-- id="install-google-chrome-browser" -->
-<!-- id="install-google-chrome-browser" -->
+<title id="install-google-chrome-browser">
 <!-- id="install-google-chrome-browser" -->Install Google Chrome Browser</title>
 <p>Use the following commands to install Google Chrome browser on the guest VM.</p>
 <ol>
@@ -222,13 +217,12 @@ deb http://dl.google.com/linux/deb/ stable non-free main
 </section>
 <section>
 <title id="next-step">
-<!-- id="next-step" -->
 <!-- id="next-step" -->Next Step</title>
 <p>
-  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsd-node.dita" >Create the VSD Node</xref>
+  <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsd-node.dita" >Create the VSD Node</xref>
 </p>
 <p>
-  <xref href="#topic4107/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

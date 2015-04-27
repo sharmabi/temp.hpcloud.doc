@@ -19,12 +19,11 @@
 <section>
 <title>
 <!-- id="modify-an-image" -->
-<!-- id="modify-an-image" -->
 <!-- id="modify-an-image" -->Modify an image</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Images</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -46,7 +45,7 @@
 </ol>
 <p>5, When complete, click <b>Update Image</b>.</p>
 <p>
-  <xref href="#topic990/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

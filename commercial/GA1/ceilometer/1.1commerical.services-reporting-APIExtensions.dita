@@ -21,7 +21,6 @@
 <section>
 <title>
 <!-- id="health-check-api" -->
-<!-- id="health-check-api" -->
 <!-- id="health-check-api" -->Health Check API</title>
 <p>Currently the HA Proxy (Load Balancer) can validate that there is IP/HTTP connectivity with the service. If connected, it is safe to assume that it is alive; however, this assumption is not a guarantee that the service is actually functional. It could be alive but completely unable to retrieve data or perform write operations. This API extension further assesses the health of the service beyond the basic connectivity check.</p>
 <p>

@@ -15,19 +15,18 @@
 <!--
 <p style="font-size: small;"> <a href="/helion/commercial/1.1/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/1.1/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/1.1/ga1/">NEXT &#9654;</a></p> 
 -->
-<p>As an admin, you can <xref href="#topic1584/createuser">create</xref> and <xref href="#topic1584/deleteuser">delete</xref> users.</p>
+<p>As an admin, you can <xref href="./publiccloud/index.dita#createuser" >create</xref> and <xref href="./publiccloud/index.dita#deleteuser" >delete</xref> users.</p>
 <section>
 <title>
-<!-- id="createuser" -->
 <!-- id="createuser" -->
 <!-- id="createuser" -->Create a user</title>
 <p>To create a user:</p>
 <p>
-<b>Note:</b> At least <xref href="../../../UseCases/TasksforAdmins/Projects/1.1commercial.managing.projects.dita" >one project must exist</xref> before you can create users.</p>
+<b>Note:</b> At least <xref href="./UseCases/TasksforAdmins/Projects/1.1commercial.managing.projects.dita" >one project must exist</xref> before you can create users.</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the Users link on the Admin dashboard Identity panel.</p>
@@ -55,15 +54,13 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="deleteuser" -->
-<!-- id="deleteuser" -->
+<title id="deleteuser">
 <!-- id="deleteuser" -->Delete a user</title>
 <p>To delete a user:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the Users link on the Admin dashboard Identity panel.</p>
@@ -78,7 +75,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1584/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -24,48 +24,45 @@
  <!--./devplatform/helion/admin/server/1.0aok.md-->
  <!--permalink: /als/v1/admin/server/aok/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/admin/server/1.1aok.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/admin/server/1.1aok.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
-<p>AOK is Application Lifecycle Service's authentication management service (replacing Cloud Foundry's UAA Server). It issues tokens via OAuth2 for client applications such as the ALS client and the Management Console. AOK can connect to other back-end SSO services such as LDAP by using different <xref href="#topic7330/aok-strategies">Strategies</xref>.</p>
+<p>AOK is Application Lifecycle Service's authentication management service (replacing Cloud Foundry's UAA Server). It issues tokens via OAuth2 for client applications such as the ALS client and the Management Console. AOK can connect to other back-end SSO services such as LDAP by using different <xref href="./publiccloud/index.dita#aok-strategies" >Strategies</xref>.</p>
 <ul>
 <li>
-<xref href="#topic7330/end-user-login">End User Login</xref>
+<xref href="./publiccloud/index.dita#end-user-login" >End User Login</xref>
 
 <ul>
 <li>
-<xref href="#topic7330/web">Web</xref>
+<xref href="./publiccloud/index.dita#web" >Web</xref>
 </li>
 <li>
-<xref href="#topic7330/client">Client</xref>
+<xref href="./publiccloud/index.dita#client" >Client</xref>
 </li>
 </ul>
 </li>
 <li>
-<xref href="#topic7330/strategies">Strategies</xref>
+<xref href="./publiccloud/index.dita#strategies" >Strategies</xref>
 </li>
 <li>
-<xref href="#topic7330/configuration">Configuration</xref>
+<xref href="./publiccloud/index.dita#configuration" >Configuration</xref>
 </li>
 <li>
-<xref href="#topic7330/user-management">User Management</xref>
+<xref href="./publiccloud/index.dita#user-management" >User Management</xref>
 </li>
 <li>
-<xref href="#topic7330/first-admin-user-setup">First Admin User Setup</xref>
+<xref href="./publiccloud/index.dita#first-admin-user-setup" >First Admin User Setup</xref>
 </li>
 <li>
-<xref href="#topic7330/regular-ldap-user-setup">Regular LDAP User Setup</xref>
+<xref href="./publiccloud/index.dita#regular-ldap-user-setup" >Regular LDAP User Setup</xref>
 </li>
 </ul>
 <section>
 <title>
-<!-- id="end-user-login" -->
 <!-- id="end-user-login" -->
 <!-- id="end-user-login" -->End User Login</title>
 </section>
 <section>
-<title>
-<!-- id="web" -->
-<!-- id="web" -->
+<title id="web">
 <!-- id="web" -->Web</title>
 <p>Users log in to the web Management Console as they would with any other
 web application. The Management Console checks with the AOK endpoint
@@ -73,17 +70,16 @@ web application. The Management Console checks with the AOK endpoint
 </section>
 <section>
 <title id="client">
-<!-- id="client" -->
 <!-- id="client" -->Client</title>
 <p>If the strategy has been changed to something other than builtin (see
 below), then users connecting with the
-<xref href="/als/v1/user/client#client" >
+<xref href="./devplatform/helion/user/client/1.0index.dita#client" >
 <i>helion</i>
 </xref> client should be aware
 that:</p>
 <ul>
 <li>The user must enter their identifier in the format expected by the
-<xref href="#topic7330/aok-strategies">
+<xref href="./publiccloud/index.dita#aok-strategies" >
 <i>strategy</i>
 </xref> used by AOK (e.g. username or email
 address).</li>
@@ -97,7 +93,6 @@ clients.</p>
 </section>
 <section>
 <title id="strategies">
-<!-- id="strategies" -->
 <!-- id="strategies" -->Strategies</title>
 <p>The term <i>strategy</i> refers to the method used to authenticate users.
 There are currently two supported strategies:</p>
@@ -110,7 +105,7 @@ users and passwords to authenticate.</p>
 <li>
 <p>
 <b>ldap</b>: The ldap strategy authenticates using the LDAP server
-specified in <xref href="#topic7330/aok-configuration">
+specified in <xref href="./publiccloud/index.dita#aok-configuration" >
 <i>kato config</i>
 </xref>. Any user that can
 successfully authenticate with the LDAP server will be allowed to
@@ -130,9 +125,8 @@ names.</p>
 </section>
 <section>
 <title id="configuration">
-<!-- id="configuration" -->
 <!-- id="configuration" -->Configuration</title>
-<p>To configure AOK, set the following keys in the AOK config using <xref href="/als/v1/admin/reference/kato-ref#kato-command-ref-config" >
+<p>To configure AOK, set the following keys in the AOK config using <xref href="./devplatform/helion/admin/reference/1.0kato-ref.dita#kato-command-ref-config" >
 <i>kato
 config set</i>
 </xref>:</p>
@@ -245,7 +239,6 @@ specify the full config path to that option. For example:</p>
 </section>
 <section>
 <title id="user-management">
-<!-- id="user-management" -->
 <!-- id="user-management" -->User Management</title>
 <p>When using AOK with any strategy other than 'builtin', users in Application Lifecycle Service
 will be created automatically for any user who successfully
@@ -269,7 +262,6 @@ external authentication system.</li>
 </section>
 <section>
 <title id="first-admin-user-setup">
-<!-- id="first-admin-user-setup" -->
 <!-- id="first-admin-user-setup" -->First Admin User Setup</title>
 <p>When setting up an Application Lifecycle Service system using AOK, complete the "Set Up First
 Admin User" form shown by the web Management Console before configuring
@@ -287,7 +279,7 @@ is configured.</p>
 </li>
 <li>
 <p>
-<xref href="#topic7330/aok-configuration">
+<xref href="./publiccloud/index.dita#aok-configuration" >
 <i>Configure AOK</i>
 </xref> to use LDAP</p>
 </li>
@@ -310,7 +302,6 @@ first time.</p>
 </section>
 <section>
 <title id="regular-ldap-user-setup">
-<!-- id="regular-ldap-user-setup" -->
 <!-- id="regular-ldap-user-setup" -->Regular LDAP User Setup</title>
 <p>New users logging in to the Management Console for the first time using
 LDAP authentication will not be a member of any organization (and won't

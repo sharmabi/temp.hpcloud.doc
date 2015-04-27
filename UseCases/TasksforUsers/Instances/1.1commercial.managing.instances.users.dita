@@ -19,30 +19,30 @@
 <p>Use the <b>Compute</b> panel on the <b>Project</b> dashboard to:</p>
 <ul>
 <li>
-<xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.create.dita" >Create a new instance</xref>
+<xref href="./UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.create.dita" >Create a new instance</xref>
 </li>
 <li>
-<xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.terminate.dita" >Terminate an instance</xref>
+<xref href="./UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.terminate.dita" >Terminate an instance</xref>
 </li>
 <li>
-<xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.reboot.dita" >Reboot an instance</xref>
+<xref href="./UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.reboot.dita" >Reboot an instance</xref>
 </li>
 <li>
-<xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.rebuild.dita" >Rebuild an instance</xref>
+<xref href="./UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.rebuild.dita" >Rebuild an instance</xref>
 </li>
 <li>
-<xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.suspend.dita" >Suspend and resume an instance</xref>
+<xref href="./UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.suspend.dita" >Suspend and resume an instance</xref>
 </li>
 <li>
-<xref href="../../../UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.pause.dita" >Pause and resume an instance</xref>
+<xref href="./UseCases/TasksforUsers/Instances/1.1commercial.dashboard.instances.pause.dita" >Pause and resume an instance</xref>
 </li>
 <li>
-<xref href="../../../UseCases/TasksforAdmins/Images/1.1commercial.dashboard.snapshot.public.dita" >Create an instance snapshot</xref>
+<xref href="./UseCases/TasksforAdmins/Images/1.1commercial.dashboard.snapshot.public.dita" >Create an instance snapshot</xref>
 </li>
 </ul>
-<p>You can also <xref href="../../../UseCases/TasksforUsers/IP_Addresses/1.1commercial.managing.ipaddress.dita" >associate, or assign, a floating IP address</xref> to an instance. A floating IP address makes the instance available on the external network.</p>
+<p>You can also <xref href="./UseCases/TasksforUsers/IP_Addresses/1.1commercial.managing.ipaddress.dita" >associate, or assign, a floating IP address</xref> to an instance. A floating IP address makes the instance available on the external network.</p>
 <p>
-  <xref href="#topic754/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </body>

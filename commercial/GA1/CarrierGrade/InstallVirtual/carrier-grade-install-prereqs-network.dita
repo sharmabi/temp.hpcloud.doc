@@ -17,12 +17,11 @@
 <!--UNDER REVISION-->
  <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-prereqs-network.md-->
  <!--permalink: /helion/openstack/carrier/install/prereqs/network/--></p>
-<p> <xref href="../../../../commercial/GA1/1.1commercial.install-GA-prereqs.dita" >▲ Installation Prerequisites</xref>  </p>
+<p> <xref href="./commercial/GA1/1.1commercial.install-GA-prereqs.dita" >▲ Installation Prerequisites</xref>  </p>
 <p>Before installing HP Helion OpenStack, you are responsible for preparing the network for all installations. You must also prepare the network based on the type of hypervisor you are installing, KVM or ESX.</p>
 <p>The network is not installed or managed by the cloud. You must install and manage the network and make sure there is a route to the Management network as described in this section.</p>
 <section>
 <title>
-<!-- id="network" -->
 <!-- id="network" -->
 <!-- id="network" -->Preparing all networks</title>
 <p>To ensure a successful installation, you must satisfy these network configuration requirements:</p>
@@ -46,12 +45,10 @@
 <p>The network interface intended as the bridge interface should be configured and working before running the installer. The installer creates a network bridge on the system running the installer, attaching the bridge interface to the network bridge. The installer uses the IP address of the bridge interface for the network bridge.</p>
 </li>
 </ul>
-<p>In addition to preparing all HP Helion OpenStack cloud networks, you need perform additional  tasks based on which hypervisor you are using: <xref href="#topic5299/network_KVM">KVM</xref> or <xref href="#topic5299/network_ESX">ESX</xref>.</p>
+<p>In addition to preparing all HP Helion OpenStack cloud networks, you need perform additional  tasks based on which hypervisor you are using: <xref href="./publiccloud/index.dita#network_KVM" >KVM</xref> or <xref href="./publiccloud/index.dita#network_ESX" >ESX</xref>.</p>
 </section>
 <section>
-<title>
-<!-- id="network_KVM" -->
-<!-- id="network_KVM" -->
+<title id="network_KVM">
 <!-- id="network_KVM" -->Preparing the network for a KVM installation</title>
 <p>If you are installing HP Helion OpenStack with KVM hypervisor support, you must configure your network as shown in the following diagram.</p>
 <p>
@@ -67,9 +64,7 @@
 </ul>
 </section>
 <section>
-<title>
-<!-- id="network_ESX" -->
-<!-- id="network_ESX" -->
+<title id="network_ESX">
 <!-- id="network_ESX" -->Preparing the network for an ESX installation</title>
 <p>If you are installing HP Helion OpenStack for ESX hypervisor support, you must configure your network as shown in the following diagram.</p>
 <p>
@@ -83,7 +78,6 @@
 </section>
 <section>
 <title id="install_network_ESX">
-<!-- id="install_network_ESX" -->
 <!-- id="install_network_ESX" -->Installing networks for ESX</title>
 <p>For ESX deployments, you must install and configure two specific networks:</p>
 <ol>
@@ -112,7 +106,6 @@
 </section>
 <section>
 <title id="other_network_ESX">
-<!-- id="other_network_ESX" -->
 <!-- id="other_network_ESX" -->Other customer responsibilities and requirements for ESX</title>
 <p>You are responsible for the following before beginning the HP Helion OpenStack installation:</p>
 <ul>

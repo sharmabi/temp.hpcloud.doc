@@ -22,7 +22,7 @@
  <!--./devplatform/helion/admin/reference/1.0add-service.md-->
  <!--permalink: /als/v1/admin/reference/add-service/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/admin/reference/1.1add-service.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/admin/reference/1.1add-service.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
 <p>Application Lifecycle Service has two Service definitions:</p>
 <ul>
@@ -31,7 +31,7 @@ available for use on the system</li>
 <li>Provisioned Services: Instances of the System Services created for
 end user applications</li>
 </ul>
-<p>The <xref href="/als/v1/user/reference/client-ref#command-services" >
+<p>The <xref href="./devplatform/helion/user/reference/1.0client-ref.dita#command-services" >
 <i>helion
 services</i>
 </xref>

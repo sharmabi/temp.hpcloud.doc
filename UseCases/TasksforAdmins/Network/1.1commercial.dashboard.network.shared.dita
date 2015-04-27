@@ -19,12 +19,11 @@
 <p>An admin user can create a shared network as needed.</p>
 <section>
 <title id="create-a-network">
-<!-- id="create-a-network" -->
 <!-- id="create-a-network" -->Create a network</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Networks</b> link on the <b>Admin</b> dashboard <b>Network</b> panel.</p>
@@ -48,7 +47,7 @@ e. Leave <b>External Network</b> clear to make the network internally accessible
 </li>
 </ol>
 <p>
-  <xref href="#topic1162/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

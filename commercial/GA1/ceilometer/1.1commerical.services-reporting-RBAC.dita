@@ -20,36 +20,35 @@
 <p>Keystone has a set of users that are associated with each project. Each user has one or more roles. After a user has Authenticated with Keystone using a valid set of credentials, typically User Name and Password or Token, Keystone will augment that request with the Roles that are associated with that user. These roles are added to the Request Header under the X-Roles attribute and are presented as a comma-separated list.</p>
 <ul>
 <li>
-<xref href="#topic14998/display_users">Displaying All Users</xref>
+<xref href="./publiccloud/index.dita#display_users" >Displaying All Users</xref>
 </li>
 <li>
-<xref href="#topic14998/display_roles">Displaying All Roles</xref>
+<xref href="./publiccloud/index.dita#display_roles" >Displaying All Roles</xref>
 </li>
 <li>
-<xref href="#topic14998/assign_role">Assigning a Role to a User</xref>
+<xref href="./publiccloud/index.dita#assign_role" >Assigning a Role to a User</xref>
 </li>
 <li>
-<xref href="#topic14998/create_role">Creating a New Role</xref>
+<xref href="./publiccloud/index.dita#create_role" >Creating a New Role</xref>
 </li>
 <li>
-<xref href="#topic14998/access_policies">Ceilometer Access Policies</xref>
+<xref href="./publiccloud/index.dita#access_policies" >Ceilometer Access Policies</xref>
 
 <ul>
 <li>
-<xref href="#topic14998/newfile">New RBAC Policy File</xref>
+<xref href="./publiccloud/index.dita#newfile" >New RBAC Policy File</xref>
 </li>
 <li>
-<xref href="#topic14998/apply_policy">Applying Policies to Roles</xref>
+<xref href="./publiccloud/index.dita#apply_policy" >Applying Policies to Roles</xref>
 </li>
 <li>
-<xref href="#topic14998/write_policy">Writing a Policy</xref>
+<xref href="./publiccloud/index.dita#write_policy" >Writing a Policy</xref>
 </li>
 </ul>
 </li>
 </ul>
 <section>
 <title id="display_users">
-<!-- id="display_users" -->
 <!-- id="display_users" -->Displaying All Users</title>
 <p>To discover the list of users available in the system, an administrator can run the following command using the Keystone command-line interface:</p>
 <codeblock>
@@ -88,7 +87,6 @@
 </section>
 <section>
 <title id="display_roles">
-<!-- id="display_roles" -->
 <!-- id="display_roles" -->Displaying All Roles</title>
 <p>To see all the roles that are currently available in the deployment, an administrator can run the following command:</p>
 <codeblock>
@@ -111,9 +109,7 @@
 </codeblock>
 </section>
 <section>
-<title>
-<!-- id="assign_role" -->
-<!-- id="assign_role" -->
+<title id="assign_role">
 <!-- id="assign_role" -->Assigning a Role to a User</title>
 <p>In this example, we want to add the role <b>ResellerAdmin</b> to the demo user who has the ID <b>d2ff982a0b6547d0921b94957db714d6</b>.</p>
 <ol>
@@ -203,7 +199,6 @@
 </section>
 <section>
 <title id="create_role">
-<!-- id="create_role" -->
 <!-- id="create_role" -->Creating a New Role</title>
 <p>In this example, we will create a Level 3 Support role called <b>L3Support</b>.</p>
 <ol>
@@ -263,13 +258,11 @@
 </section>
 <section>
 <title id="access_policies">
-<!-- id="access_policies" -->
 <!-- id="access_policies" -->Access Policies</title>
 <p>Before introducing RBAC, Ceilometer had very simple access control. There were two types of user: admins and users. Admins could access any API and perform any operation. Users could only access non-admin API and perform operations only on the Project/Tenant where they belonged.</p>
 </section>
 <section>
 <title id="newfile">
-<!-- id="newfile" -->
 <!-- id="newfile" -->New RBAC Policy File</title>
 <p>This is the policy file for Ceilometer without RBAC (<i>etc/ceilometer/policy.json</i>)</p>
 <codeblock>
@@ -306,15 +299,12 @@
 <p>Note that the API action names are namespaced using the <b>telemetry:</b> prefix. This avoids potential confusion if other services have policies with the same name.</p>
 </section>
 <section>
-<title>
-<!-- id="apply_policy" -->
-<!-- id="apply_policy" -->
+<title id="apply_policy">
 <!-- id="apply_policy" -->Applying Policies to Roles</title>
 <p>Copy the <i>rbac_policy.json</i> file over the <i>policy.json</i> file and make any required changes.</p>
 </section>
 <section>
 <title id="apply-a-policy-to-multiple-roles">
-<!-- id="apply-a-policy-to-multiple-roles" -->
 <!-- id="apply-a-policy-to-multiple-roles" -->Apply a policy to multiple roles</title>
 <p>For example, the ResellerAdmin role could also be permitted to access <b>compute_statistics</b>. This change would require the following changes in the <i>rbac_policy.json</i> policy file:</p>
 <codeblock>
@@ -330,11 +320,10 @@
 }
 </codeph>
 </codeblock>
-<p>After a policy change has been made all the API services will need to be <xref href="/helion/openstack/1.1/services/reporting/components#centralagent" >restarted</xref>.</p>
+<p>After a policy change has been made all the API services will need to be <xref href="./commercial/GA1/ceilometer/1.1commerical.services-reporting-components.dita#centralagent" >restarted</xref>.</p>
 </section>
 <section>
 <title id="apply-a-policy-to-a-non-default-role-only">
-<!-- id="apply-a-policy-to-a-non-default-role-only" -->
 <!-- id="apply-a-policy-to-a-non-default-role-only" -->Apply a policy to a non-default role only</title>
 <p>Another example: assign the L3Support role to the <b>get_meters</b> API and exclude all other roles.</p>
 <codeblock>
@@ -355,7 +344,6 @@
 </section>
 <section>
 <title id="write_policy">
-<!-- id="write_policy" -->
 <!-- id="write_policy" -->Writing a Policy</title>
 <p>The Policy Engine capabilities are as expressible using a set of rules and guidelines.
 For a complete reference, please see the <xref href="https://github.com/openstack/oslo-incubator/blob/master/openstack/common/policy.py" scope="external" format="html" >OSLO policy documentation</xref>.</p>

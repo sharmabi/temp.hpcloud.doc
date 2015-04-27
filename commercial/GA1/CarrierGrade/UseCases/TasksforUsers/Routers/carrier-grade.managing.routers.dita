@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1640">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1476">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Managing Routers</title>
 <prolog>
 <metadata>
@@ -23,41 +23,36 @@
 <section>
 <title>
 <!-- id="managing-your-router-as-a-user" -->
-<!-- id="managing-your-router-as-a-user" -->
 <!-- id="managing-your-router-as-a-user" -->Managing your router as a user</title>
 <p>As a user, you can work with the router in the active project.</p>
 <p>Access the router commands using the Networks panel on the Project dashboard.</p>
 <p>The Network panel contains commands to view a visual representation of your network and to enable you to work with your router.</p>
 <ul>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.dashboard.router.create.dita" >Create a Router</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.dashboard.router.create.dita" >Create a Router</xref>
 </li>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.dashboard.router.delete.dita" >Delete a Router</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.dashboard.router.delete.dita" >Delete a Router</xref>
 </li>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.dashboard.router.connect.dita" >Connect a network to a router</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Routers/carrier-grade.dashboard.router.connect.dita" >Connect a network to a router</xref>
 </li>
 <li>Add / Remove an external network to/from a Router</li>
 </ul>
 </section>
 <section>
-<title id="managing-your-router-as-an-admin">
+<title>
 <!-- id="managing-your-router-as-an-admin" -->
 <!-- id="managing-your-router-as-an-admin" -->Managing your router as an admin</title>
-<p>As an admin user, you can work on all of the network(s) in your domain, regardless of which project the network is associated with.</p>
-<p>An admin can create a shared network, which can be seen in every project in the domain. You can also create an external network.</p>
+<p>As an admin user, you can work on all of the router(s) in your domain, regardless of which project the network is associated with.</p>
 <ul>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Network/carrier-grade.dashboard.network.shared.dita" >Create a shared network</xref>
-</li>
-<li>
-<xref href="/helion/commercial/carrier/dashboard/managing/network/external/" >Create an external network</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Routers/carrier-grade.dashboard.router.admin.delete.dita" >Delete a router</xref>
 </li>
 </ul>
 <p>Access the router commands using the System panel on the Admin dashboard.</p>
 <p>
-  <xref href="#topic1640/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

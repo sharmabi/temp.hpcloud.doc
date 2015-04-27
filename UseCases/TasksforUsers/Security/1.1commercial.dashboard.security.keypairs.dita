@@ -20,24 +20,23 @@
 <p>The following tasks can be performed by a user:</p>
 <ul>
 <li>
-<xref href="#topic2328/createKeypairs">Create Keypairs</xref>
+<xref href="./publiccloud/index.dita#createKeypairs" >Create Keypairs</xref>
 </li>
 <li>
-<xref href="#topic2328/deleteKeypairs">Delete Keypairs</xref>
+<xref href="./publiccloud/index.dita#deleteKeypairs" >Delete Keypairs</xref>
 </li>
 <li>
-<xref href="#topic2328/importKeypairs">Import Keypairs</xref>
+<xref href="./publiccloud/index.dita#importKeypairs" >Import Keypairs</xref>
 </li>
 </ul>
 <section>
 <title id="createKeypairs">
-<!-- id="createKeypairs" -->
 <!-- id="createKeypairs" -->Create Keypairs</title>
 <p>To create a keypair, do the following:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Access &amp; Security</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -67,13 +66,12 @@
 </section>
 <section>
 <title id="deleteKeypair">
-<!-- id="deleteKeypair" -->
 <!-- id="deleteKeypair" -->Delete Keypairs</title>
 <p>To delete a keypair, do the following:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Access &amp; Security</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -93,13 +91,12 @@
 </section>
 <section>
 <title id="import-keypairs-import-keypairs">
-<!-- id="import-keypairs-import-keypairs" -->
 <!-- id="import-keypairs-import-keypairs" -->Import Keypairs {#Import Keypairs}</title>
 <p>To import a keypair, do the following:</p>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Access &amp; Security</b> link on the <b>Project</b> dashboard <b>Compute</b> panel.</p>
@@ -123,7 +120,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic2328/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

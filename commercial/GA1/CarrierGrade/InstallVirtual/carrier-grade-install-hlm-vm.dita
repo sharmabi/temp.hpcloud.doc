@@ -18,12 +18,11 @@
  <!--./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-hlm-vm.md-->
  <!--permalink: /helion/openstack/carrier/install/hlm-vm/--></p>
 <!--
-<p style="font-size: small;"><a href="../../../../commercial/GA1/1.1commercial.technical-overview.ga.dita/">&#9664; Technical Overview</a> | <a href="./commercial/GA1/1.1commercial.install-GA-overview.dita">&#9650; Installation Overview</a> | <a href="/helion/openstack/1.1/install/kvm">Installing on a KVM hypervisor &#9654;</a> OR <a href="/helion/openstack/1.1/install/esx"> Installing on an ESX hypervisor&#9654;</a> </p> 
+<p style="font-size: small;"><a href="./commercial/GA1/1.1commercial.technical-overview.ga.dita">&#9664; Technical Overview</a> | <a href="./commercial/GA1/1.1commercial.install-GA-overview.dita">&#9650; Installation Overview</a> | <a href="./commercial/GA1/1.1commercial.install-GA-kvm.dita">Installing on a KVM hypervisor &#9654;</a> OR <a href="./commercial/GA1/1.1commercial.install-GA-esx.dita"> Installing on an ESX hypervisor&#9654;</a> </p> 
 -->
 <p>Helion Lifecycle Management (HLM) consists of the ongoing operations /maintenance as well as the initial deployment of the Helion system as shown above.</p>
 <section>
 <title id="create-the-hlm-vm">
-<!-- id="create-the-hlm-vm" -->
 <!-- id="create-the-hlm-vm" -->Create the HLM VM</title>
 <ol>
 <li>
@@ -108,13 +107,12 @@ ovs_version: "2.0.2"
 </section>
 <section>
 <title id="nextstep">
-<!-- id="nextstep" -->
 <!-- id="nextstep" -->Next step</title>
 <p>
-  <xref href="../../../../commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Install HP Helion OpenStack</xref>
+  <xref href="./commercial/GA1/CarrierGrade/InstallVirtual/carrier-grade-install-vsc-node.dita" >Install HP Helion OpenStack</xref>
 </p>
 <p>
-  <xref href="#topic2120/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -22,7 +22,7 @@
  <!--./devplatform/1.2/helion/user/services/1.2filesystem.md-->
  <!--permalink: /helion/devplatform/1.2/als/user/services/filesystem/--></p>
 <p>
-  <xref href="../../../../../devplatform/helion/user/services/1.0filesystem.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/user/services/1.0filesystem.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 </p>
 <p>The file system of application containers are ephemeral. Any application
 data or files stored locally within these containers is lost when the
@@ -36,7 +36,6 @@ and even between applications deployed to the same space.</p>
 </ul>
 <section>
 <title>
-<!-- id="creating-a-persistent-file-system" -->
 <!-- id="creating-a-persistent-file-system" -->
 <!-- id="creating-a-persistent-file-system" -->Creating A Persistent File System</title>
 <p>A filesystem service can be configured in your <i>manifest.yml</i> file:</p>
@@ -64,7 +63,7 @@ command:</p>
 </codeblock>
 </section>
 <section>
-<title id="using-a-persistent-file-system">
+<title>
 <!-- id="using-a-persistent-file-system" -->
 <!-- id="using-a-persistent-file-system" -->Using A Persistent File System</title>
 <p>
@@ -111,7 +110,7 @@ mkdir ${!FOO}/myapp
   <b>Note</b>
 </p>
 <p>To use declarations like these in
-<xref href="/helion/devplatform/1.2/als/user/deploy/manifestyml#hooks" >
+<xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita#hooks" >
 <i>hooks</i>
 </xref>, put them in a
 separate bash script. Brace expansion and grouping cannot be used
@@ -139,12 +138,12 @@ information for all services:
                 }
         }
 -->
-Since the <xref href="/helion/devplatform/1.2/als/user/reference/environment#environment-variables" >
+Since the <xref href="./devplatform/1.2/helion/user/reference/1.2environment.dita#environment-variables" >
 <i>environment
 variables</i>
 </xref> are
 available during the staging process, it is possible to make use of them
-in the <xref href="../../../../../devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >
+in the <xref href="./devplatform/1.2/helion/user/deploy/1.2manifestyml.dita" >
 <i>manifest.yml</i>
 </xref> file to
 configure a filesystem service and create a symlink to it for use by the
@@ -152,7 +151,6 @@ app. (see example below)</p>
 </section>
 <section>
 <title id="example-of-using-a-persistent-file-system">
-<!-- id="example-of-using-a-persistent-file-system" -->
 <!-- id="example-of-using-a-persistent-file-system" -->Example of Using A Persistent File System</title>
 <p>
 <b>Note</b>: When linking the file system service to the application, using <i>symlinks</i>

@@ -19,20 +19,20 @@
 <p>As an admin, you can use the dashboards to:</p>
 <ul>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.create.dita" >Create and delete users</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.create.dita" >Create and delete users</xref>
 </li>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.enable.dita" >Disable and enable a user</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.enable.dita" >Disable and enable a user</xref>
 </li>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.password.dita" >Change a user password</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.users.password.dita" >Change a user password</xref>
 </li>
 <li>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.projects.primary.dita" >Specify a primary project for a user</xref>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforAdmins/Users/1.1commercial.dashboard.projects.primary.dita" >Specify a primary project for a user</xref>
 </li>
 </ul>
 <p>
-  <xref href="#topic544/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </body>

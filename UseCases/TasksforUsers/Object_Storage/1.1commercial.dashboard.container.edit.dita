@@ -19,12 +19,11 @@
 <section>
 <title>
 <!-- id="edit-an-object-in-a-container" -->
-<!-- id="edit-an-object-in-a-container" -->
 <!-- id="edit-an-object-in-a-container" -->Edit an object in a container</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Object Store</b> tab on the dashboard <b>Project</b> panel.</p>
@@ -50,13 +49,13 @@
 </ol>
 </section>
 <section>
-<title id="delete-an-object-from-a-container">
+<title>
 <!-- id="delete-an-object-from-a-container" -->
 <!-- id="delete-an-object-from-a-container" -->Delete an object from a container</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Object Store</b> tab on the dashboard <b>Project</b> panel.</p>
@@ -78,7 +77,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1473/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

@@ -22,15 +22,14 @@
  <!--./devplatform/helion/user/services/1.0port-service.md-->
  <!--permalink: /als/v1/user/services/port-service/--></p>
 <p>
-  <xref href="../../../../devplatform/helion/user/services/1.1port-service.dita" >See the Helion 1.1 Development Platform version of this page</xref>
+  <xref href="./devplatform/helion/user/services/1.1port-service.dita" >See the Helion 1.1 Development Platform version of this page</xref>
 </p>
-<p>HTTP and HTTPS ports and routing are provided automatically for all web applications deployed to Application Lifecycle Service (unless <xref href="/als/v1/user/deploy/manifestyml#web" >processes:
+<p>HTTP and HTTPS ports and routing are provided automatically for all web applications deployed to Application Lifecycle Service (unless <xref href="./devplatform/helion/user/deploy/1.0manifestyml.dita#web" >processes:
 web:</xref> is set to
 "\~").</p>
 <p>If your application requires additional TCP or UDP ports, use the Harbor service to allocate them.</p>
 <section>
 <title>
-<!-- id="requesting-a-port" -->
 <!-- id="requesting-a-port" -->
 <!-- id="requesting-a-port" -->Requesting a Port</title>
 <p>Additional ports are provisioned like any other data service. To request a port with the Helion command-line client:</p>
@@ -38,7 +37,7 @@ web:</xref> is set to
   <codeph>helion create-service harbor debug-port
 </codeph>
 </codeblock>
-<p>To request a port from Harbor in the <b>manifest.yml</b> file, add it in the <xref href="/als/v1/user/deploy/manifestyml#services" >
+<p>To request a port from Harbor in the <b>manifest.yml</b> file, add it in the <xref href="./devplatform/helion/user/deploy/1.0manifestyml.dita#services" >
 <b>services</b>
 </xref> block.
 For example:</p>
@@ -88,7 +87,7 @@ port number.</li>
 <b>node_id</b>: The Harbor node ID (Application Lifecycle Service internal).</li>
 <li>
 <b>int_port</b>: The port on the application container which forwards
-to Harbor (see also <xref href="#topic7405/port-service-env-vars">Harbor Environment
+to Harbor (see also <xref href="./publiccloud/index.dita#port-service-env-vars" >Harbor Environment
 Variables</xref>). Application(s) bound to the
 service should connect to this port.</li>
 </ul>
@@ -107,15 +106,13 @@ port.</li>
   <b>Note</b>
 </p>
 <p>To remotely check the settings and credentials of any Application Lifecycle Service service,
-use the <xref href="/als/v1/user/reference/client-ref#command-services" >
+use the <xref href="./devplatform/helion/user/reference/1.0client-ref.dita#command-services" >
 <b>helion
 service</b>
 </xref> command.</p>
 </section>
 <section>
-<title>
-<!-- id="harbor-environment-variables" -->
-<!-- id="harbor-environment-variables" -->
+<title id="harbor-environment-variables">
 <!-- id="harbor-environment-variables" -->Harbor Environment Variables</title>
 <p>If there is only one Harbor service, the <b>HELION_HARBOR</b> environment variable can be used to get the internal port
 number.</p>
@@ -154,14 +151,13 @@ UDP_SERVICE_PORT=${!UDP_SERVICE_NAME}
   <b>Note</b>
 </p>
 <p>To use declarations like these in
-<xref href="/als/v1/user/deploy/manifestyml#hooks" >
+<xref href="./devplatform/helion/user/deploy/1.0manifestyml.dita#hooks" >
 <i>hooks</i>
 </xref>, put them in a
 separate bash script. Brace expansion and grouping cannot be used directly in YAML files.</p>
 </section>
 <section>
 <title id="setting-the-port-protocols">
-<!-- id="setting-the-port-protocols" -->
 <!-- id="setting-the-port-protocols" -->Setting the Port Protocols</title>
 <p>Harbor supports both the TCP and UDP protocols. When you provision a service with Harbor it will create a TCP enabled port by default. If you want to have a UDP port provisioned instead, you simply prefix your
 service name with udp, for example:</p>
@@ -179,7 +175,6 @@ For example:</p>
 </section>
 <section>
 <title id="multiple-application-instances">
-<!-- id="multiple-application-instances" -->
 <!-- id="multiple-application-instances" -->Multiple Application Instances</title>
 <p>Harbor recognizes when you have multiple instances of your app running and will update the available app backends accordingly.</p>
 <ul>
@@ -194,7 +189,6 @@ added later are queued.</li>
 </section>
 <section>
 <title id="https-via-harbor">
-<!-- id="https-via-harbor" -->
 <!-- id="https-via-harbor" -->HTTPS via Harbor</title>
 <p>SSL termination of HTTPS to applications hosted on Application Lifecycle Service normally
 happens at the Router.</p>
@@ -215,7 +209,6 @@ specification must always be added.</p>
 </section>
 <section>
 <title id="https-container-proxy">
-<!-- id="https-container-proxy" -->
 <!-- id="https-container-proxy" -->HTTPS Container Proxy</title>
 <p>If you are using a framework such as Python or Perl which sets up uWSGI
 (or any other framework that provides its own intermediate web server)
@@ -245,7 +238,6 @@ own intermediate web server instead.</p>
 </section>
 <section>
 <title id="multiple-ssl-certificates">
-<!-- id="multiple-ssl-certificates" -->
 <!-- id="multiple-ssl-certificates" -->Multiple SSL Certificates</title>
 <p>If your application uses multiple SSL certificates, use the following
 naming scheme:</p>

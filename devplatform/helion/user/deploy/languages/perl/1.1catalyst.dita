@@ -27,7 +27,6 @@ at the Application Lifecycle Service sample apps listed below to see some workin
 examples.</p>
 <section>
 <title id="home-directory">
-<!-- id="home-directory" -->
 <!-- id="home-directory" -->Home Directory</title>
 <p>Catalyst makes different assumptions on its Home directory depending on
 whether or not it is installed in @INC. It makes this distinction based
@@ -45,7 +44,6 @@ variables. For example, you could set CATALYST_HOME in <i>manifest.yml</i>:</p>
 </section>
 <section>
 <title id="examples">
-<!-- id="examples" -->
 <!-- id="examples" -->Examples</title>
 <ul>
 <li>

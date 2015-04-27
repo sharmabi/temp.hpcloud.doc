@@ -19,12 +19,11 @@
 <section>
 <title>
 <!-- id="uploading-an-object-into-a-container" -->
-<!-- id="uploading-an-object-into-a-container" -->
 <!-- id="uploading-an-object-into-a-container" -->Uploading an object into a container</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Object Store</b> tab on the dashboard <b>Project</b> panel.</p>
@@ -59,14 +58,12 @@
 </ol>
 </section>
 <section>
-<title>
-<!-- id="downloading-objects-from-a-container" -->
-<!-- id="downloading-objects-from-a-container" -->
+<title id="downloading-objects-from-a-container">
 <!-- id="downloading-objects-from-a-container" -->Downloading objects from a container</title>
 <ol>
 <li>
 <p>
-<xref href="../../../commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/1.1commercial.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
 <p>Click the <b>Object Store</b> tab on the dashboard <b>Project</b> panel.</p>
@@ -82,7 +79,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1511/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

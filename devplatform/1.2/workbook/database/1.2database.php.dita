@@ -22,20 +22,19 @@
  <!--./devplatform/1.2/workbook/database/1.2database.php.md-->
  <!--permalink: /helion/devplatform/1.2/workbook/database/php/--></p>
 <p>
-<xref href="../../../../devplatform/workbook/database/1.0database.php.dita" >See the Helion 1.0 Development Platform version of this page</xref>
+<xref href="./devplatform/workbook/database/1.0database.php.dita" >See the Helion 1.0 Development Platform version of this page</xref>
 This very simple PHP web app displays the text "Executed query "SELECT "Hello World!"".", and then the result of that query "Hello World!" This is a demonstration of the minimum requirements to build an application that can connect to a MySQL database provided by ALS and run queries against it. Use this sample to ensure that you have set up your environment for connecting to and working with MySQL on the Helion Development Platform.</p>
 <section>
 <title>
 <!-- id="prerequisites" -->
-<!-- id="prerequisites" -->
 <!-- id="prerequisites" -->Prerequisites</title>
 <ul>
-<li>An installation of the <xref href="../../../../devplatform/1.2/1.2devplatform_commercial_install.dita" >HP Helion Development Platform</xref>.</li>
-<li>Access to an Application Lifecycle Service (ALS) <xref href="../../../../devplatform/1.2/helion/admin/cluster/1.2index.dita" >Cluster</xref>
+<li>An installation of the <xref href="./devplatform/1.2/1.2devplatform_commercial_install.dita" >HP Helion Development Platform</xref>.</li>
+<li>Access to an Application Lifecycle Service (ALS) <xref href="./devplatform/1.2/helion/admin/cluster/1.2index.dita" >Cluster</xref>
 </li>
-<li>Access to the <xref href="../../../../devplatform/1.2/helion/user/client/1.2index.dita" >Helion command-line client (CLI)</xref>.</li>
-<li>Access to the web-based <xref href="../../../../devplatform/1.2/helion/user/console/1.2index.dita" >ALS Management Console</xref>.</li>
-<li>The MySQL service is not enabled by default. Check and <xref href="#topic6969/enablemysql">make sure it is enabled</xref>.</li>
+<li>Access to the <xref href="./devplatform/1.2/helion/user/client/1.2index.dita" >Helion command-line client (CLI)</xref>.</li>
+<li>Access to the web-based <xref href="./devplatform/1.2/helion/user/console/1.2index.dita" >ALS Management Console</xref>.</li>
+<li>The MySQL service is not enabled by default. Check and <xref href="./publiccloud/index.dita#enablemysql" >make sure it is enabled</xref>.</li>
 <li>Register for access to the <xref href="https://helion.hpwsportal.com/catalog.html#/Home/Show" scope="external" format="html" >HP Helion Development Platform</xref> (HDN).</li>
 </ul>
 <!--
@@ -47,15 +46,11 @@ instructions further down. But before you push the button, ensure that you have 
 -->
 </section>
 <section>
-<title>
-<!-- id="deployment-instructions" -->
-<!-- id="deployment-instructions" -->
+<title id="deployment-instructions">
 <!-- id="deployment-instructions" -->Deployment Instructions</title>
 </section>
 <section>
-<title>
-<!-- id="enablemysql" -->
-<!-- id="enablemysql" -->
+<title id="enablemysql">
 <!-- id="enablemysql" -->Enable the MySQL Service</title>
 <p>If the MySQL service is not enabled on your cluster, or if you are not sure, follow these steps:</p>
 <ol>
@@ -67,11 +62,10 @@ instructions further down. But before you push the button, ensure that you have 
 <li>Click <b>Save</b>.</li>
 </ol>
 <p>
-<b>Note</b>: If a more durable or scalable MySQL database service is needed, configure your ALS cluster to use a database instance or master/slave pair provided by the Database Service. For more information, refer to <xref href="../../../../devplatform/1.2/1.2devplatform.database-instance.dita/" >Using the Database Service</xref> and <xref href="./devplatform/1.2/1.2devplatform.database-ALS.dita" >Connecting the Database Service with ALS</xref>.</p>
+<b>Note</b>: If a more durable or scalable MySQL database service is needed, configure your ALS cluster to use a database instance or master/slave pair provided by the Database Service. For more information, refer to <xref href="./devplatform/1.2/1.2devplatform.database-instance.dita" >Using the Database Service</xref> and <xref href="./devplatform/1.2/1.2devplatform.database-ALS.dita" >Connecting the Database Service with ALS</xref>.</p>
 </section>
 <section>
 <title id="download-the-application-files">
-<!-- id="download-the-application-files" -->
 <!-- id="download-the-application-files" -->Download the Application Files</title>
 <p>
 <xref href="https://github.com/HelionDevPlatform/helion-mysql-php/" scope="external" format="html" >Click here to access the code repository</xref>.</p>
@@ -81,13 +75,12 @@ instructions further down. But before you push the button, ensure that you have 
 </section>
 <section>
 <title id="deploy-the-application">
-<!-- id="deploy-the-application" -->
 <!-- id="deploy-the-application" -->Deploy the Application</title>
 <p>
-<b>Note</b>: Application Lifecycle Service clusters that require an upstream HTTP proxy to access the internet will need to be <xref href="/helion/devplatform/1.2/als/admin/server/configuration#staging-cache-app-http-proxy" >made aware of the proxy</xref>. The sample applications require access to the Internet in order to download dependent packages.</p>
-<p>Use the Helion client to deploy your app to Helion Development Platform.  If you have Eclipse installed, you have the option to use the <xref href="../../../../devplatform/1.2/1.2devplatform.eclipse.dita" >plugin</xref>.</p>
+<b>Note</b>: Application Lifecycle Service clusters that require an upstream HTTP proxy to access the internet will need to be <xref href="./devplatform/1.2/helion/admin/server/1.2configuration.dita#staging-cache-app-http-proxy" >made aware of the proxy</xref>. The sample applications require access to the Internet in order to download dependent packages.</p>
+<p>Use the Helion client to deploy your app to Helion Development Platform.  If you have Eclipse installed, you have the option to use the <xref href="./devplatform/1.2/1.2devplatform.eclipse.dita" >plugin</xref>.</p>
 <ol>
-<li>Open the <xref href="../../../../devplatform/1.2/helion/user/reference/1.2client-ref.dita" >Helion command-line interface (CLI)</xref>
+<li>Open the <xref href="./devplatform/1.2/helion/user/reference/1.2client-ref.dita" >Helion command-line interface (CLI)</xref>
 </li>
 <li>
 <p>Ensure that you are targeting your desired environment.  <!--A BR tag was used here in the original source.--> If you are not, execute</p>
@@ -128,7 +121,6 @@ instructions further down. But before you push the button, ensure that you have 
 </section>
 <section>
 <title id="view-and-run-the-application">
-<!-- id="view-and-run-the-application" -->
 <!-- id="view-and-run-the-application" -->View and Run the Application</title>
 <ol>
 <li>Open the Helion Management Console. This is the web-based administrative interface. </li>
@@ -144,7 +136,6 @@ instructions further down. But before you push the button, ensure that you have 
 </section>
 <section>
 <title id="key-code-snippets">
-<!-- id="key-code-snippets" -->
 <!-- id="key-code-snippets" -->Key Code Snippets</title>
 <p>This first line in this section of the index.php file shows how to retrieve the connection information for the MySQL instance from the application's environment variables. The connection information is represented using JSON.</p>
 <p>The rest of the code shown here parses the JSON string that was retrieved and builds the appropriate connection string. Once the connection has been made, the code executes a query, reads the results, and closes the connection.</p>
@@ -203,16 +194,15 @@ applications:
 </section>
 <section>
 <title id="key-learnings">
-<!-- id="key-learnings" -->
 <!-- id="key-learnings" -->Key Learnings</title>
 <ul>
 <li>ALS requires configuration information so that it can bind to a MySQL service. Configuration information is contained in the <i>manifest.yml</i> file.</li>
 <li>You will need to provide information about which build pack to use for PHP so that ALS can create an environment for your app. Configuration information is contained in the <i>manifest.yml</i> file.</li>
 <li>You will need to retrieve connection information for MySQL from the application's environment variables and then parse that information into a connection string that can be used by PHP.</li>
-<li>You interact with and deploy your app using the <xref href="../../../../devplatform/1.2/helion/user/reference/1.2client-ref.dita/" >ALS command line client</xref> or the web-based <xref href="./devplatform/1.2/helion/user/console/1.2index.dita" >ALS Management Console</xref>.</li>
+<li>You interact with and deploy your app using the <xref href="./devplatform/1.2/helion/user/reference/1.2client-ref.dita" >ALS command line client</xref> or the web-based <xref href="./devplatform/1.2/helion/user/console/1.2index.dita" >ALS Management Console</xref>.</li>
 </ul>
 <p>
-<xref href="/helion/devplatform/1.2/appdev" >Exit Samples</xref> | <xref href="../../../../devplatform/1.2/workbook/helloworld/1.2helloworld.php.dita/" >Previous Sample</xref> | <xref href="./devplatform/1.2/workbook/messaging/1.2messaging.php.dita" >Next Sample</xref>
+<xref href="/helion/devplatform/1.2/appdev" >Exit Samples</xref> | <xref href="./devplatform/1.2/workbook/helloworld/1.2helloworld.php.dita" >Previous Sample</xref> | <xref href="./devplatform/1.2/workbook/messaging/1.2messaging.php.dita" >Next Sample</xref>
 </p>
 </section>
 </body>

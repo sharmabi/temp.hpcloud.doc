@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3304">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic3328">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Creating or Deleting Networks</title>
 <prolog>
 <metadata>
@@ -16,18 +16,17 @@
 <p style="font-size: small;"> <a href="/helion/commercial/carrier/ga1/install/">&#9664; PREV</a> | <a href="/helion/commercial/carrier/ga1/install-overview/">&#9650; UP</a> | <a href="/helion/commercial/carrier/ga1/">NEXT &#9654;</a></p> 
 -->
 <p>A network is a pluggable, scalable and API-driven system for managing networks and IP addresses.</p>
-<p>A non-admin user or admin user can <xref href="#topic3304/createnet">create</xref> and <xref href="#topic3304/deletenet">delete</xref> networks as needed.</p>
+<p>A non-admin user or admin user can <xref href="./publiccloud/index.dita#createnet" >create</xref> and <xref href="./publiccloud/index.dita#deletenet" >delete</xref> networks as needed.</p>
 <section>
 <title id="createnet">
-<!-- id="createnet" -->
 <!-- id="createnet" -->Create a network</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Networks</b> link.</p>
 
 <p>The network(s) for the selected project appear.</p>
 </li>
@@ -92,15 +91,14 @@
 </section>
 <section>
 <title id="deletenet">
-<!-- id="deletenet" -->
 <!-- id="deletenet" -->Delete a network</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Networks</b> link on the <b>Project</b> dashboard <b>Network</b> panel.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Networks</b> link.</p>
 
 <p>The network(s) for the selected project appear.</p>
 </li>
@@ -114,11 +112,11 @@
 <p>The network is deleted and any instances attached to the networks are disconnected.</p>
 <ol>
 <li>
-<xref href="#topic3304/top"> Return to Top ↑ </xref>
+<xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </li>
 </ol>
 <p>
-  <xref href="#topic3304/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>

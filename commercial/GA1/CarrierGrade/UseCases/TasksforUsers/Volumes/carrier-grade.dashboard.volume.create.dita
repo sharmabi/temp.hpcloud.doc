@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1975">
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd" ><topic xml:lang="en-us" id="topic1927">
 <title>HP Helion OpenStack® Carrier Grade (Alpha): Creating, Editing, and Deleting Volumes</title>
 <prolog>
 <metadata>
@@ -19,18 +19,14 @@
 <section>
 <title>
 <!-- id="create-a-volume" -->
-<!-- id="create-a-volume" -->
 <!-- id="create-a-volume" -->Create a volume</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
-</li>
-<li>
-<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Volumes</b> link.</p>
 </li>
 <li>
 <p>Click <b>Create Volume</b>.</p>
@@ -65,18 +61,14 @@
 <section>
 <title>
 <!-- id="edit-a-volume" -->
-<!-- id="edit-a-volume" -->
 <!-- id="edit-a-volume" -->Edit a volume</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
-</li>
-<li>
-<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Volumes</b> link.</p>
 </li>
 <li>
 <p>Under the <b>Actions</b> column, click <b>Edit Volume</b>, next to the volume you want to edit.    .</p>
@@ -88,25 +80,21 @@
 <p>Click <b>Edit Volume</b> to confirm.</p>
 
 <p>
-<b>Note:</b> You can <xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.extend.dita" >extend a volume</xref> by using the <b>Extend Volume</b> option available in the <b>More</b> drop-down list and entering the new value for volume size.</p>
+<b>Note:</b> You can <xref href="./commercial/GA1/CarrierGrade/UseCases/TasksforUsers/Volumes/carrier-grade.dashboard.volume.extend.dita" >extend a volume</xref> by using the <b>Extend Volume</b> option available in the <b>More</b> drop-down list and entering the new value for volume size.</p>
 </li>
 </ol>
 </section>
 <section>
 <title>
 <!-- id="delete-a-volume" -->
-<!-- id="delete-a-volume" -->
 <!-- id="delete-a-volume" -->Delete a volume</title>
 <ol>
 <li>
 <p>
-<xref href="../../../../../../commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
+<xref href="./commercial/GA1/CarrierGrade/UseCases/carrier-grade.dashboard.launch.dita" >Launch the HP Helion OpenStack Helion Dashboard</xref>.</p>
 </li>
 <li>
-<p>Click the <b>Compute</b> tab on the dashboard <b>Project</b> panel.</p>
-</li>
-<li>
-<p>In the <b>Compute</b> panel, click <b>Volumes</b>.</p>
+<p>Click the <b>Project</b> dashboard, then the <b>System</b> panel, then the <b>Volumes</b> link.</p>
 </li>
 <li>
 <p>Select the volume(s) that you want to delete.</p>
@@ -116,7 +104,7 @@
 </li>
 </ol>
 <p>
-  <xref href="#topic1975/top"> Return to Top ↑ </xref>
+  <xref href="./publiccloud/index.dita#top" > Return to Top ↑ </xref>
 </p>
 <!-- ===================== horizontal rule ===================== -->
 </section>
